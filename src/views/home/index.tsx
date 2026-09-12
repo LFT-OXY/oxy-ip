@@ -13,6 +13,7 @@ import { t } from "@/i18n";
 import { companyTypeColors } from "@/lib/ip-badge-colors";
 import { ipScoreColor } from "@/lib/ip-score";
 import { BrowserSummary } from "@/views/browser/summary";
+import { ThirdPartyIpCheck } from "@/views/components/third-party-ip-check";
 import { lookupIp } from "@/views/ip/api";
 import { testConnectivity, type ProbeResult } from "@/views/link/api";
 import { useQueries, useQueryClient } from "@tanstack/react-query";
@@ -331,6 +332,7 @@ export function HomePage() {
         </Card>
       </div>
       <SplitResults summary />
+      <ThirdPartyIpCheck />
       <PlatformSummary />
       <QuickChecks />
       <BrowserSummary />

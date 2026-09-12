@@ -1,0 +1,76 @@
+[
+  {
+    "label": "综合查询",
+    "sites": [
+      {
+        "name": "CleanIP",
+        "url": "https://cleanip.io/",
+        "purpose": "前往 CleanIP 进行 IP 检测。",
+        "hint": "第三方结果供交叉参考；网站暂时不可访问时可稍后自行重试，不把外部故障解释为当前 IP 不安全。"
+      },
+      {
+        "name": "IPSuper",
+        "url": "https://ipsuper.com/",
+        "purpose": "聚合查看 IP 风险、代理、ASN 与定位信息。",
+        "hint": "对照多个数据源；数据库覆盖和更新时间不同，结果可能不一致，不能只凭总分定性。"
+      },
+      {
+        "name": "MeowVPS",
+        "url": "https://meowvps.com/tools/ip-check/",
+        "purpose": "查看多源 IP 质量与风险信息。",
+        "hint": "在其工具内选择或输入要查询的地址；本站不自动预填 IP，也不承诺聚合数据一定完整。"
+      }
+    ]
+  },
+  {
+    "label": "归属与用途",
+    "sites": [
+      {
+        "name": "IP2Location",
+        "url": "https://www.ip2location.com/demo",
+        "purpose": "查看 Region、Usage Type、AS Usage Type 与 ASN。",
+        "hint": "Region 为地区或州；Usage Type 与 ISP/company 类型相关，AS Usage Type 与 AS 注册主体类型相关，ASN 是自治系统编号。这些分类不单独证明某个 IP 一定是住宅或机房。"
+      },
+      {
+        "name": "IPLark",
+        "url": "https://iplark.com/",
+        "purpose": "查看 IP 归属、ASN、使用场景与代理线索。",
+        "hint": "可比较不同数据源的地理位置和使用类型；未识别代理不等于绝对无代理，部分扩展信息可能受其服务限制。"
+      }
+    ]
+  },
+  {
+    "label": "滥用与信誉",
+    "sites": [
+      {
+        "name": "IPQS",
+        "url": "https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test",
+        "purpose": "查看近期滥用、代理/VPN/Tor 与欺诈风险信号。",
+        "hint": "重点关注滥用及相关风险信息；不把低分或未命中滥用视为安全保证。主入口为公开查询页，不额外增加账号登录入口。"
+      },
+      {
+        "name": "ipdata",
+        "url": "https://ipdata.co/",
+        "purpose": "查看 Threats 中的滥用、Tor 和代理标记。",
+        "hint": "关注 abuse、tor、proxy 等信号。Threats 为 0 仅表示当前未命中该站展示的威胁标记，不保证安全、住宅属性或目标网站可用性。"
+      },
+      {
+        "name": "Scamalytics",
+        "url": "https://scamalytics.com/",
+        "purpose": "查看欺诈风险评分与黑名单线索。",
+        "hint": "关注欺诈分与垃圾邮件、abuse 等黑名单线索；高分需要警惕，低分不保证安全。总分是其可见 Web 流量的风险意见，不是专门的垃圾邮件评分。"
+      }
+    ]
+  },
+  {
+    "label": "流量趋势",
+    "sites": [
+      {
+        "name": "Cloudflare Radar",
+        "url": "https://radar.cloudflare.com/",
+        "purpose": "查看机器人与人类流量趋势，作为辅助参考。",
+        "hint": "数据是特定全球、地区或 ASN 范围的请求聚合统计；不能直接推断单个 IP 的家宽概率，也不用于判断是否会触发 Cloudflare 验证。机器人流量本身不等同于恶意流量。"
+      }
+    ]
+  }
+]

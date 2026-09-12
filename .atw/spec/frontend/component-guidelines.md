@@ -43,6 +43,12 @@ export function ActionButton({
 - `src/index.css` 提供 Tailwind v4 与主题变量；`src/app.css` 引入它并维护应用布局/语义类。组件同时使用工具类和 `lookup-page`、`tool-card` 等现有类；不要宣称项目只用 Tailwind，也不要引入 CSS-in-JS 来替代现状。
 - 用户可见文案调用 `src/i18n/index.ts` 的 `t("中文消息")`，英文映射在 `src/i18n/en.json`；动态参数用 `{0}` 等占位。示例见 `LookupForm`、`ErrorNotice`、WHOIS 页面。不要绕开映射硬编码一套独立语言逻辑。
 
+### 第三方 IP 目录
+
+`src/views/components/third-party-ip-check.tsx` 的 `ThirdPartyIpCheck()` 无查询参数，首页及 IP 页复用同目录 JSON 的 `label/sites/name/url/purpose/hint`。页面依既有 `query.data` 决定有结果或搜索区下方的位置，不在目录组件中读取 IP、查询或管理缓存。
+
+导航与提示是两个独立操作：`<a target="_blank" rel="noopener noreferrer">` 放在 `<details><summary>…</summary>…</details>` 外。保留站名相关的可访问名称、外链标识和焦点样式；不设置 `open`、互斥 `name` 或持久化状态。链接保持目录固定网址，图标来自本地 lucide，不追加 IP 或自动访问外站。
+
 ## 无障碍与响应式
 
 - 表单保留 `aria-label`、`aria-invalid` 和 `FieldError`；`LookupForm` 使用 react-hook-form + Zod，不能仅依靠 placeholder 展示错误。

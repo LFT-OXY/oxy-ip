@@ -57,6 +57,13 @@ test("零分仍是有效分数", () => {
 - `tests/query-subscription.test.mjs`：使用 QueryClient/QueryObserver 验证订阅、主动刷新和重置；结束时取消订阅并清空 client。
 - `tests/content.test.mjs`：有源码约束及构建产物断言，不能被描述为端到端浏览器交互测试。
 
+- `tests/third-party-ip-check.test.mjs`：用独立于生产数据的期望校验 JSON 目录成员、分组、固定网址和用途，并逐站检查中英文风险限定。不能把测试期望改为从生产目录生成，否则目录遗漏也会同步消失在期望中。
+- 动态 `t(site.purpose)` / `t(site.hint)` 不在 `tests/i18n.test.mjs` 的字面量调用扫描范围；修改此类目录时，须枚举目录中的动态文案键，通过真实英文 `t()` 检查翻译、占位符、中文回退及具体限定，而不只验证键存在。
+
+```bash
+node --import ./tests/register-paths.mjs --test tests/third-party-ip-check.test.mjs tests/i18n.test.mjs
+```
+
 不因补文档引入测试框架。涉及 UI 的变更还需按实际范围检查移动/桌面、深浅主题、键盘焦点和中英文；现有 Node 测试不证明这些交互全部通过。
 
 ## 检查清单与边界

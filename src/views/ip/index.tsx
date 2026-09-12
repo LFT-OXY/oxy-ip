@@ -5,6 +5,7 @@ import { IpText, ErrorNotice, Pending } from "@/components/toolkit";
 import { Button } from "@/components/ui/button";
 import { useLookupHistory } from "@/hooks/use-lookup-history";
 import { t } from "@/i18n";
+import { ThirdPartyIpCheck } from "@/views/components/third-party-ip-check";
 import { useQuery } from "@tanstack/react-query";
 import { gsap } from "gsap";
 import { Search, X } from "lucide-react";
@@ -136,13 +137,16 @@ export default function IpPage() {
       {query.data ? (
         <IpDetails data={query.data} search={search} recent={recent} />
       ) : (
-        <div className="ip-dossier-top">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-semibold">{t("IP 信息查询")}</span>
+        <>
+          <div className="ip-dossier-top">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-semibold">{t("IP 信息查询")}</span>
+            </div>
+            {search}
+            {recent}
           </div>
-          {search}
-          {recent}
-        </div>
+          <ThirdPartyIpCheck />
+        </>
       )}
     </div>
   );

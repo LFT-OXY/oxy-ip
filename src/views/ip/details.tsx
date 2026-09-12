@@ -10,6 +10,7 @@ import { t } from "@/i18n";
 import { companyTypeColors } from "@/lib/ip-badge-colors";
 import { ipScoreColor } from "@/lib/ip-score";
 import type { Geo } from "@/lib/types";
+import { ThirdPartyIpCheck } from "@/views/components/third-party-ip-check";
 import type { CoffeeLookup } from "./coffee";
 import { IpFacts } from "./field-help";
 import { IpLatency } from "./latency";
@@ -239,6 +240,7 @@ export function IpDetails({
           ]}
         />
       </ToolCard>
+      <ThirdPartyIpCheck />
       <ToolCard title={t("地理位置 · 多源对比")}>
         <DataTable<Geo>
           className="ip-geo-table"
