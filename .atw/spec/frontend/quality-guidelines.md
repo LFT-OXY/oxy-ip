@@ -66,6 +66,8 @@ node --import ./tests/register-paths.mjs --test tests/third-party-ip-check.test.
 
 不因补文档引入测试框架。涉及 UI 的变更还需按实际范围检查移动/桌面、深浅主题、键盘焦点和中英文；现有 Node 测试不证明这些交互全部通过。
 
+卡片对齐的验收不能只检查“不溢出”：第三方 IP 目录还须通过实际 DOM 的 `getBoundingClientRect()` 比较同排高度、站名及提示入口纵坐标（误差不超过 1 CSS 像素），覆盖全收起、首项展开及全部展开。分别验证三列、两列、单站横向及移动端堆叠，并查看截图；数值检查通过不代替用户的视觉验收。
+
 ## 检查清单与边界
 
 - 查询是否带正确 key、取消信号、错误/加载状态，是否保留未知值与失败值的区别？参照 IP、WHOIS 页面和 `src/components/connectivity.tsx`。

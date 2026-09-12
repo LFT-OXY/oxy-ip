@@ -49,6 +49,8 @@ export function ActionButton({
 
 导航与提示是两个独立操作：`<a target="_blank" rel="noopener noreferrer">` 放在 `<details><summary>…</summary>…</details>` 外。保留站名相关的可访问名称、外链标识和焦点样式；不设置 `open`、互斥 `name` 或持久化状态。链接保持目录固定网址，图标来自本地 lucide，不追加 IP 或自动访问外站。
 
+该目录的多站卡片用 `row-span-3 grid-rows-subgrid` 共享站名、用途及提示行，避免 `items-start` 造成高度参差，或仅拉齐边框却仍使提示入口错位。桌面三站三列、两站两列；单站横排，展开的 `details` 跨入全宽行。移动端自然堆叠，不能以固定高度、截断文案或 JS 测高代替内容驱动布局。
+
 ## 无障碍与响应式
 
 - 表单保留 `aria-label`、`aria-invalid` 和 `FieldError`；`LookupForm` 使用 react-hook-form + Zod，不能仅依靠 placeholder 展示错误。
