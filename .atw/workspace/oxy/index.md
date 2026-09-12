@@ -9,8 +9,8 @@
 <!-- @@@auto:current-status -->
 
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 1
-- **Last Active**: 2026-09-12
+- **Total Sessions**: 2
+- **Last Active**: 2026-09-13
 
 <!-- @@@/auto:current-status -->
 
@@ -22,7 +22,7 @@
 
 | File           | Lines | Status |
 | -------------- | ----- | ------ |
-| `journal-1.md` | ~29   | Active |
+| `journal-1.md` | ~53   | Active |
 
 <!-- @@@/auto:active-documents -->
 
@@ -32,9 +32,10 @@
 
 <!-- @@@auto:session-history -->
 
-| #   | Date       | Title                             | Commits              | Branch |
-| --- | ---------- | --------------------------------- | -------------------- | ------ |
-| 1   | 2026-09-12 | 完成前端规范初始化与 ATW 配置入库 | `709b6ee`, `5c0d381` | `main` |
+| #   | Date       | Title                             | Commits                         | Branch |
+| --- | ---------- | --------------------------------- | ------------------------------- | ------ |
+| 2   | 2026-09-13 | 第三方 IP 核验 A 清单交付与验收   | `24200d9`, `e759dd8`, `fc6c52f` | `main` |
+| 1   | 2026-09-12 | 完成前端规范初始化与 ATW 配置入库 | `709b6ee`, `5c0d381`            | `main` |
 
 <!-- @@@/auto:session-history -->
 
