@@ -9,8 +9,8 @@
 <!-- @@@auto:current-status -->
 
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 0
-- **Last Active**: -
+- **Total Sessions**: 1
+- **Last Active**: 2026-09-12
 
 <!-- @@@/auto:current-status -->
 
@@ -22,7 +22,7 @@
 
 | File           | Lines | Status |
 | -------------- | ----- | ------ |
-| `journal-1.md` | ~0    | Active |
+| `journal-1.md` | ~29   | Active |
 
 <!-- @@@/auto:active-documents -->
 
@@ -32,8 +32,9 @@
 
 <!-- @@@auto:session-history -->
 
-| #   | Date | Title | Commits | Branch |
-| --- | ---- | ----- | ------- | ------ |
+| #   | Date       | Title                             | Commits              | Branch |
+| --- | ---------- | --------------------------------- | -------------------- | ------ |
+| 1   | 2026-09-12 | 完成前端规范初始化与 ATW 配置入库 | `709b6ee`, `5c0d381` | `main` |
 
 <!-- @@@/auto:session-history -->
 
