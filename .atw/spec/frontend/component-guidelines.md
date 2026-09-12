@@ -49,7 +49,7 @@ export function ActionButton({
 
 导航与提示是两个独立操作：`<a target="_blank" rel="noopener noreferrer">` 放在 `<details><summary>…</summary>…</details>` 外。保留站名相关的可访问名称、外链标识和焦点样式；不设置 `open`、互斥 `name` 或持久化状态。链接保持目录固定网址，图标来自本地 lucide，不追加 IP 或自动访问外站。
 
-该目录的多站卡片用 `row-span-3 grid-rows-subgrid` 共享站名、用途及提示行，避免 `items-start` 造成高度参差，或仅拉齐边框却仍使提示入口错位。桌面三站三列、两站两列；单站横排，展开的 `details` 跨入全宽行。移动端自然堆叠，不能以固定高度、截断文案或 JS 测高代替内容驱动布局。
+该目录采用用户确认的 A「轻量清单」，不再嵌套网站小卡片。`md`（768px）起表头和各站共用 `7rem 10rem minmax(0,1fr) 5.5rem` 四列，依次为类别、网站、用途和提示入口；移动端单列堆叠。`details` 跨满整行，桌面 `summary` 定位在本行预留的末列，提示正文保留在正常文档流中占满下一行，避免开合移动入口或压缩用途列。短入口文案仍需以 `aria-label` 包含站名。不能用固定行高、截断文案或 JS 测高代替内容驱动布局。
 
 ## 无障碍与响应式
 
