@@ -1,0 +1,129 @@
+# Bootstrap Task: Fill Project Development Guidelines
+
+**You (the AI) are running this task. The developer does not read this file.**
+
+The developer just ran `atw init` on this project for the first time.
+`.atw/` now exists with empty spec scaffolding, and this bootstrap task
+exists under `.atw/tasks/`. When they want to work on it, they should start
+this task from a session that provides ATW session identity.
+
+**Your job**: help them populate `.atw/spec/` with the team's real
+coding conventions. Every future AI session — the `/atw-implement` run
+and this project's `atw-review` sub-agents — reads spec files
+listed in per-task jsonl manifests. Empty spec = the AI writes generic
+code. Real spec = the AI matches the team's actual patterns.
+
+Don't dump instructions. Open with a short greeting, figure out if the repo
+has any existing convention docs (CLAUDE.md, .cursorrules, etc.), and drive
+the rest conversationally.
+
+---
+
+## Status (update the checkboxes as you complete each item)
+
+- [x] Fill frontend guidelines
+- [x] Add code examples
+
+实施范围、源码依据与验证结果见 [规范初始化记录](./research/bootstrap-guidelines.md)。交付后仍需用户验收，未自动归档。
+
+---
+
+## Spec files to populate
+
+### Frontend guidelines
+
+| File                                         | What to document                          |
+| -------------------------------------------- | ----------------------------------------- |
+| `.atw/spec/frontend/directory-structure.md`  | Component/page/hook organization          |
+| `.atw/spec/frontend/component-guidelines.md` | Component patterns, props conventions     |
+| `.atw/spec/frontend/hook-guidelines.md`      | Custom hook naming, patterns              |
+| `.atw/spec/frontend/state-management.md`     | State library, patterns, what goes where  |
+| `.atw/spec/frontend/type-safety.md`          | TypeScript conventions, type organization |
+| `.atw/spec/frontend/quality-guidelines.md`   | Linting, testing, accessibility           |
+
+### Thinking guides (already populated)
+
+`.atw/spec/guides/` contains general thinking guides pre-filled with
+best practices. Customize only if something clearly doesn't fit this project.
+
+---
+
+## How to fill the spec
+
+### Step 1: Import from existing convention files first (preferred)
+
+Search the repo for existing convention docs. If any exist, read them and
+extract the relevant rules into the matching `.atw/spec/` files —
+usually much faster than documenting from scratch.
+
+| File / Directory                                                            | Tool                                         |
+| --------------------------------------------------------------------------- | -------------------------------------------- |
+| `CLAUDE.md` / `CLAUDE.local.md`                                             | Claude Code                                  |
+| `AGENTS.md`                                                                 | Codex / Claude Code / agent-compatible tools |
+| `.cursorrules`                                                              | Cursor                                       |
+| `.cursor/rules/*.mdc`                                                       | Cursor (rules directory)                     |
+| `.windsurfrules`                                                            | Windsurf                                     |
+| `.clinerules`                                                               | Cline                                        |
+| `.roomodes`                                                                 | Roo Code                                     |
+| `.github/copilot-instructions.md`                                           | GitHub Copilot                               |
+| `.vscode/settings.json` → `github.copilot.chat.codeGeneration.instructions` | VS Code Copilot                              |
+| `CONVENTIONS.md` / `.aider.conf.yml`                                        | aider                                        |
+| `CONTRIBUTING.md`                                                           | General project conventions                  |
+| `.editorconfig`                                                             | Editor formatting rules                      |
+
+### Step 2: Analyze the codebase for anything not covered by existing docs
+
+Scan real code to discover patterns. Before writing each spec file:
+
+- Find 2-3 real examples of each pattern in the codebase.
+- Reference real file paths (not hypothetical ones).
+- Document anti-patterns the team clearly avoids.
+
+### Step 3: Document reality, not ideals
+
+**Critical**: write what the code _actually does_, not what it should do.
+Sub-agents match the spec, so aspirational patterns that don't exist in the
+codebase will cause sub-agents to write code that looks out of place.
+
+If the team has known tech debt, document the current state — improvement
+is a separate conversation, not a bootstrap concern.
+
+---
+
+## Quick explainer of the runtime (share when they ask "why do we need spec at all")
+
+- Every ticket runs through `/atw-implement` in the main session (writes
+  code), which dispatches two `atw-review` sub-agents (verify quality).
+  No implementation sub-agent is spawned.
+- Each task has `implement.jsonl` / `check.jsonl` manifests listing which
+  spec files to load.
+- The platform hook auto-injects those spec files + the task's `prd.md`
+  into every sub-agent prompt, so the sub-agent codes/reviews per team
+  conventions without anyone pasting them manually.
+- Source of truth: `.atw/spec/`. That's why filling it well now pays
+  off forever.
+
+---
+
+## Completion
+
+When the developer confirms the checklist items above are done with real
+examples (not placeholders), guide them to run:
+
+```bash
+python3 ./.atw/scripts/task.py finish
+python3 ./.atw/scripts/task.py archive 00-bootstrap-guidelines
+```
+
+After archive, every new developer who joins this project will get a
+`00-join-<slug>` onboarding task instead of this bootstrap task.
+
+---
+
+## Suggested opening line
+
+"Welcome to ATW! Your init just set me up to help you fill the project
+spec — a one-time setup so every future AI session follows the team's
+conventions instead of writing generic code. Before we start, do you have
+any existing convention docs (CLAUDE.md, .cursorrules, CONTRIBUTING.md,
+etc.) I can pull from, or should I scan the codebase from scratch?"
