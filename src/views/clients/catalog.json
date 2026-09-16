@@ -1,0 +1,121 @@
+[
+  {
+    "id": "shadowrocket",
+    "name": "Shadowrocket",
+    "aliases": ["小火箭"],
+    "description": "基于规则的代理工具，支持域名、IP 与 GeoIP 分流和网络请求记录。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "美国区 App Store US$2.99；地区价格以商店为准。",
+    "developers": ["Shadow Launch Technology Limited"],
+    "sources": ["https://apps.apple.com/us/app/shadowrocket/id932747118"],
+    "icon": "/client-icons/shadowrocket.webp"
+  },
+  {
+    "id": "flclash",
+    "name": "FlClash",
+    "aliases": [],
+    "description": "基于 Mihomo 的多平台代理客户端，支持订阅导入、WebDAV 同步与自适应界面。",
+    "platforms": ["android", "windows", "macos", "linux"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["chen08209"],
+    "sources": ["https://github.com/chen08209/FlClash"],
+    "icon": "/client-icons/flclash.webp"
+  },
+  {
+    "id": "sing-box",
+    "name": "sing-box",
+    "aliases": ["官方核心与客户端"],
+    "description": "通用代理平台与官方客户端，支持多协议、DNS 和规则路由；OpenWrt 使用核心软件包。",
+    "platforms": ["android", "ios", "windows", "macos", "linux", "openwrt"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["nekohasekai"],
+    "sources": [
+      "https://github.com/SagerNet/sing-box",
+      "https://sing-box.sagernet.org/clients/apple/"
+    ],
+    "icon": "/client-icons/sing-box.webp"
+  },
+  {
+    "id": "clash-verge-rev",
+    "name": "Clash Verge Rev",
+    "aliases": [],
+    "description": "基于 Tauri 的桌面 Mihomo 客户端，提供配置管理、系统代理和 TUN 模式。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["clash-verge-rev"],
+    "sources": ["https://github.com/clash-verge-rev/clash-verge-rev"],
+    "icon": "/client-icons/clash-verge-rev.webp"
+  },
+  {
+    "id": "v2rayng",
+    "name": "v2rayNG",
+    "aliases": [],
+    "description": "Android 代理客户端，支持 Xray 与 V2Ray 内核、节点导入和 GeoIP / GeoSite 路由。",
+    "platforms": ["android"],
+    "cores": ["Xray", "V2Ray"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["2dust"],
+    "sources": ["https://github.com/2dust/v2rayNG"],
+    "icon": "/client-icons/v2rayng.webp"
+  },
+  {
+    "id": "clash-meta-for-android",
+    "name": "Clash Meta for Android",
+    "aliases": ["CMFA"],
+    "description": "MetaCubeX 的 Android Mihomo 图形客户端，使用规则隧道与 Clash 配置。",
+    "platforms": ["android"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["MetaCubeX"],
+    "sources": ["https://github.com/MetaCubeX/ClashMetaForAndroid"],
+    "icon": "/client-icons/clash-meta-for-android.webp"
+  },
+  {
+    "id": "stash",
+    "name": "Stash",
+    "aliases": [],
+    "description": "兼容 Clash 配置的规则代理与网络调试工具；功能与授权因平台而异。",
+    "platforms": ["ios", "macos", "android", "windows"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "iOS / tvOS：美国区 US$5.99 买断；Mac：£12/年（3 台）、£18/年（6 台），或 Stash 4 £48 买断（6 台）；Windows 早期版本暂免，Android 价格以官方商店为准。",
+    "developers": ["Stash Networks Limited"],
+    "sources": [
+      "https://stash.ws/download",
+      "https://stash.ws/zh/macos/pricing",
+      "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349"
+    ],
+    "icon": "/client-icons/stash.webp"
+  },
+  {
+    "id": "bettbox",
+    "name": "Bettbox",
+    "aliases": [],
+    "description": "从 FlClash 早期版本重构的多平台 Mihomo 客户端，提供规则分流、智能启停与 Android 休眠控制。",
+    "platforms": ["android", "windows", "macos", "linux"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["appshubcc"],
+    "sources": ["https://github.com/appshubcc/Bettbox"],
+    "icon": "/client-icons/bettbox.webp"
+  }
+]

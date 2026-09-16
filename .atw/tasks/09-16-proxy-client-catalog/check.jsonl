@@ -1,0 +1,11 @@
+{"file": ".atw/spec/frontend/index.md", "reason": "前端规范总览与现有架构约束"}
+{"file": ".atw/spec/frontend/directory-structure.md", "reason": "新栏目、懒加载路由、导航及维护脚本的归属"}
+{"file": ".atw/spec/frontend/component-guidelines.md", "reason": "卡片和详情复用组件，兼容主题、语言、响应式和无障碍"}
+{"file": ".atw/spec/frontend/state-management.md", "reason": "搜索筛选的 URL 状态和详情返回行为"}
+{"file": ".atw/spec/frontend/type-safety.md", "reason": "应用元数据、官方发布信息及抓取结果的类型与运行时校验"}
+{"file": ".atw/spec/frontend/quality-guidelines.md", "reason": "构建、测试、翻译及桌面移动端视觉验收要求"}
+{"file": "docs/adr/0001-proxy-client-catalog-data-boundary.md", "reason": "人工资料与自动更新的所有权边界，以及仅提供官方获取入口的决策"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/research/catalog-baseline.json", "reason": "独立于生产数据的 154 项收录基线、应用身份及票据归属，核验批次与全量覆盖"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/issues/01-initial-catalog.md", "reason": "ATW current ticket"}
+{"file": ".atw/spec/frontend/client-catalog.md", "reason": "首票数据与交互契约，供后续同步和扩充遵循"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/research/01-official-sources.md", "reason": "首票逐项官方资料依据、发布快照与已知平台限制"}

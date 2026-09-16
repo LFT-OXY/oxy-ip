@@ -1,0 +1,1405 @@
+[
+  {
+    "appId": "shadowrocket",
+    "platform": "ios",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+      }
+    ],
+    "version": "2.2.92",
+    "publishedAt": "2026-09-07T04:14:10Z"
+  },
+  {
+    "appId": "shadowrocket",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "flclash",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.98-android-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClash-0.8.98-android-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClash-0.8.98-android-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ],
+    "version": "v0.8.98",
+    "publishedAt": "2026-09-14T03:20:30Z"
+  },
+  {
+    "appId": "flclash",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.98-windows-amd64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-amd64-setup.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClash-0.8.98-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "FlClash-0.8.98-windows-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClash-0.8.98-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ],
+    "version": "v0.8.98",
+    "publishedAt": "2026-09-14T03:20:30Z"
+  },
+  {
+    "appId": "flclash",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.98-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "FlClash-0.8.98-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ],
+    "version": "v0.8.98",
+    "publishedAt": "2026-09-14T03:20:30Z"
+  },
+  {
+    "appId": "flclash",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.98-linux-amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "FlClash-0.8.98-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "FlClash-0.8.98-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "FlClash-0.8.98-linux-arm64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.AppImage",
+        "arch": "arm64",
+        "format": "AppImage"
+      },
+      {
+        "id": "FlClash-0.8.98-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "FlClash-0.8.98-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      }
+    ],
+    "version": "v0.8.98",
+    "publishedAt": "2026-09-14T03:20:30Z"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "SFA-1.14.1-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFA-1.14.1-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "SFA-1.14.1-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFA-1.14.1-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "SFA-1.14.1-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFA-1.14.1-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "SFA-1.14.1-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFA-1.14.1-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "SFA-1.14.1-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFA-1.14.1-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "ios",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "SFI-1.14.1-iphoneos-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFI-1.14.1-iphoneos-arm64.deb",
+        "arch": "iphoneos-arm64",
+        "format": "deb"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z",
+    "note": "此正式安装包仅适用于已越狱的 rootless iOS 15+；官方 App Store 更新暂停，不提供 TestFlight 测试版。"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "SFW-1.14.1-arm64.exe",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFW-1.14.1-arm64.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "SFW-1.14.1-x64.exe",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFW-1.14.1-x64.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "SFW-1.14.1-x86.exe",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFW-1.14.1-x86.exe",
+        "arch": "x86",
+        "format": "exe"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "SFM-1.14.1-Apple.pkg",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFM-1.14.1-Apple.pkg",
+        "arch": "Apple",
+        "format": "pkg"
+      },
+      {
+        "id": "SFM-1.14.1-Intel.pkg",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFM-1.14.1-Intel.pkg",
+        "arch": "Intel",
+        "format": "pkg"
+      },
+      {
+        "id": "SFM-1.14.1-Universal.pkg",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFM-1.14.1-Universal.pkg",
+        "arch": "Universal",
+        "format": "pkg"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "SFL-1.14.1-aarch64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-aarch64.pkg.tar.zst",
+        "arch": "aarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "SFL-1.14.1-aarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-aarch64.rpm",
+        "arch": "aarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "SFL-1.14.1-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "SFL-1.14.1-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "SFL-1.14.1-armv7l.deb",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-armv7l.deb",
+        "arch": "armv7l",
+        "format": "deb"
+      },
+      {
+        "id": "SFL-1.14.1-armv7l.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-armv7l.pkg.tar.zst",
+        "arch": "armv7l",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "SFL-1.14.1-armv7l.rpm",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-armv7l.rpm",
+        "arch": "armv7l",
+        "format": "rpm"
+      },
+      {
+        "id": "SFL-1.14.1-x64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-x64.pkg.tar.zst",
+        "arch": "x64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "SFL-1.14.1-x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/SFL-1.14.1-x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z"
+  },
+  {
+    "appId": "sing-box",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.1"
+    },
+    "downloads": [
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a53.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a53.apk",
+        "arch": "aarch64_cortex-a53",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a53.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a53.ipk",
+        "arch": "aarch64_cortex-a53",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a72.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a72.apk",
+        "arch": "aarch64_cortex-a72",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a72.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a72.ipk",
+        "arch": "aarch64_cortex-a72",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a76.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a76.apk",
+        "arch": "aarch64_cortex-a76",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_cortex-a76.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_cortex-a76.ipk",
+        "arch": "aarch64_cortex-a76",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_generic.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_generic.apk",
+        "arch": "aarch64_generic",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_aarch64_generic.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_aarch64_generic.ipk",
+        "arch": "aarch64_generic",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_arm1176jzf-s_vfp.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_arm1176jzf-s_vfp.apk",
+        "arch": "arm_arm1176jzf-s_vfp",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_arm1176jzf-s_vfp.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_arm1176jzf-s_vfp.ipk",
+        "arch": "arm_arm1176jzf-s_vfp",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_arm926ej-s.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_arm926ej-s.apk",
+        "arch": "arm_arm926ej-s",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_arm926ej-s.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_arm926ej-s.ipk",
+        "arch": "arm_arm926ej-s",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a15_neon-vfpv4.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a15_neon-vfpv4.apk",
+        "arch": "arm_cortex-a15_neon-vfpv4",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a15_neon-vfpv4.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a15_neon-vfpv4.ipk",
+        "arch": "arm_cortex-a15_neon-vfpv4",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a5_vfpv4.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a5_vfpv4.apk",
+        "arch": "arm_cortex-a5_vfpv4",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a5_vfpv4.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a5_vfpv4.ipk",
+        "arch": "arm_cortex-a5_vfpv4",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7.apk",
+        "arch": "arm_cortex-a7",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7.ipk",
+        "arch": "arm_cortex-a7",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7_neon-vfpv4.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7_neon-vfpv4.apk",
+        "arch": "arm_cortex-a7_neon-vfpv4",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7_neon-vfpv4.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7_neon-vfpv4.ipk",
+        "arch": "arm_cortex-a7_neon-vfpv4",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7_vfpv4.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7_vfpv4.apk",
+        "arch": "arm_cortex-a7_vfpv4",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a7_vfpv4.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a7_vfpv4.ipk",
+        "arch": "arm_cortex-a7_vfpv4",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a8_vfpv3.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a8_vfpv3.apk",
+        "arch": "arm_cortex-a8_vfpv3",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a8_vfpv3.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a8_vfpv3.ipk",
+        "arch": "arm_cortex-a8_vfpv3",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9.apk",
+        "arch": "arm_cortex-a9",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9.ipk",
+        "arch": "arm_cortex-a9",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9_neon.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9_neon.apk",
+        "arch": "arm_cortex-a9_neon",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9_neon.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9_neon.ipk",
+        "arch": "arm_cortex-a9_neon",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9_vfpv3-d16.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9_vfpv3-d16.apk",
+        "arch": "arm_cortex-a9_vfpv3-d16",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_cortex-a9_vfpv3-d16.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_cortex-a9_vfpv3-d16.ipk",
+        "arch": "arm_cortex-a9_vfpv3-d16",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_fa526.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_fa526.apk",
+        "arch": "arm_fa526",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_fa526.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_fa526.ipk",
+        "arch": "arm_fa526",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_xscale.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_xscale.apk",
+        "arch": "arm_xscale",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_arm_xscale.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_arm_xscale.ipk",
+        "arch": "arm_xscale",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_i386_pentium-mmx.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_i386_pentium-mmx.apk",
+        "arch": "i386_pentium-mmx",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_i386_pentium-mmx.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_i386_pentium-mmx.ipk",
+        "arch": "i386_pentium-mmx",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_i386_pentium4.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_i386_pentium4.apk",
+        "arch": "i386_pentium4",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_i386_pentium4.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_i386_pentium4.ipk",
+        "arch": "i386_pentium4",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_loongarch64_generic.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_loongarch64_generic.apk",
+        "arch": "loongarch64_generic",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_loongarch64_generic.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_loongarch64_generic.ipk",
+        "arch": "loongarch64_generic",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64el_mips64r2.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64el_mips64r2.apk",
+        "arch": "mips64el_mips64r2",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64el_mips64r2.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64el_mips64r2.ipk",
+        "arch": "mips64el_mips64r2",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64_mips64r2.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64_mips64r2.apk",
+        "arch": "mips64_mips64r2",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64_mips64r2.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64_mips64r2.ipk",
+        "arch": "mips64_mips64r2",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64_octeonplus.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64_octeonplus.apk",
+        "arch": "mips64_octeonplus",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips64_octeonplus.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips64_octeonplus.ipk",
+        "arch": "mips64_octeonplus",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_24kc.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_24kc.apk",
+        "arch": "mipsel_24kc",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_24kc.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_24kc.ipk",
+        "arch": "mipsel_24kc",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_24kc_24kf.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_24kc_24kf.apk",
+        "arch": "mipsel_24kc_24kf",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_24kc_24kf.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_24kc_24kf.ipk",
+        "arch": "mipsel_24kc_24kf",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_74kc.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_74kc.apk",
+        "arch": "mipsel_74kc",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_74kc.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_74kc.ipk",
+        "arch": "mipsel_74kc",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_mips32.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_mips32.apk",
+        "arch": "mipsel_mips32",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mipsel_mips32.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mipsel_mips32.ipk",
+        "arch": "mipsel_mips32",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_24kc.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_24kc.apk",
+        "arch": "mips_24kc",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_24kc.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_24kc.ipk",
+        "arch": "mips_24kc",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_4kec.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_4kec.apk",
+        "arch": "mips_4kec",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_4kec.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_4kec.ipk",
+        "arch": "mips_4kec",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_mips32.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_mips32.apk",
+        "arch": "mips_mips32",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_mips_mips32.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_mips_mips32.ipk",
+        "arch": "mips_mips32",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_riscv64_generic.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_riscv64_generic.apk",
+        "arch": "riscv64_generic",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_riscv64_generic.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_riscv64_generic.ipk",
+        "arch": "riscv64_generic",
+        "format": "ipk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      },
+      {
+        "id": "sing-box_1.14.1_openwrt_x86_64.ipk",
+        "kind": "direct",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.1/sing-box_1.14.1_openwrt_x86_64.ipk",
+        "arch": "x86_64",
+        "format": "ipk"
+      }
+    ],
+    "version": "v1.14.1",
+    "publishedAt": "2026-09-15T00:06:50Z",
+    "note": "OpenWrt 核心软件包：按路由器架构及包管理器选择，不是 Android APK。"
+  },
+  {
+    "appId": "clash-verge-rev",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "downloads": [
+      {
+        "id": "Clash.Verge_2.5.2_arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "Clash.Verge_2.5.2_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ],
+    "version": "v2.5.2",
+    "publishedAt": "2026-07-19T17:00:26Z"
+  },
+  {
+    "appId": "clash-verge-rev",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "downloads": [
+      {
+        "id": "Clash.Verge_2.5.2_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "Clash.Verge_2.5.2_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ],
+    "version": "v2.5.2",
+    "publishedAt": "2026-07-19T17:00:26Z"
+  },
+  {
+    "appId": "clash-verge-rev",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2"
+    },
+    "downloads": [
+      {
+        "id": "Clash.Verge-2.5.2-1.aarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge-2.5.2-1.aarch64.rpm",
+        "arch": "aarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "Clash.Verge-2.5.2-1.armhfp.rpm",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge-2.5.2-1.armhfp.rpm",
+        "arch": "armhfp",
+        "format": "rpm"
+      },
+      {
+        "id": "Clash.Verge-2.5.2-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge-2.5.2-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "Clash.Verge_2.5.2_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "Clash.Verge_2.5.2_arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "Clash.Verge_2.5.2_armhf.deb",
+        "kind": "direct",
+        "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_armhf.deb",
+        "arch": "armhf",
+        "format": "deb"
+      }
+    ],
+    "version": "v2.5.2",
+    "publishedAt": "2026-07-19T17:00:26Z"
+  },
+  {
+    "appId": "v2rayng",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/2dust/v2rayNG/releases/tag/2.2.6"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/2dust/v2rayNG/releases/tag/2.2.6"
+    },
+    "downloads": [
+      {
+        "id": "v2rayNG_2.2.6_arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "v2rayNG_2.2.6_armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "v2rayNG_2.2.6_x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "v2rayNG_2.2.6_x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ],
+    "version": "2.2.6",
+    "publishedAt": "2026-07-05T10:17:21Z"
+  },
+  {
+    "appId": "clash-meta-for-android",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/v2.11.34"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/v2.11.34"
+    },
+    "downloads": [
+      {
+        "id": "cmfa-2.11.34-meta-arm64-v8a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.34/cmfa-2.11.34-meta-arm64-v8a-release.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "cmfa-2.11.34-meta-armeabi-v7a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.34/cmfa-2.11.34-meta-armeabi-v7a-release.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "cmfa-2.11.34-meta-universal-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.34/cmfa-2.11.34-meta-universal-release.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "cmfa-2.11.34-meta-x86-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.34/cmfa-2.11.34-meta-x86-release.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "cmfa-2.11.34-meta-x86_64-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.34/cmfa-2.11.34-meta-x86_64-release.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ],
+    "version": "v2.11.34",
+    "publishedAt": "2026-09-14T13:24:09Z"
+  },
+  {
+    "appId": "stash",
+    "platform": "ios",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349?uo=4"
+      }
+    ],
+    "version": "3.4.1",
+    "publishedAt": "2026-07-16T17:06:42Z"
+  },
+  {
+    "appId": "stash",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方页面",
+      "url": "https://stash.ws/download"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://stash.ws/download"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://stash.ws/download"
+      }
+    ]
+  },
+  {
+    "appId": "stash",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方页面",
+      "url": "https://stash.ws/download"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://stash.ws/download"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://stash.ws/download"
+      }
+    ],
+    "note": "官方目前仅提供早期体验版；本站不收录其测试版版本号或安装包，请在官方页面确认正式版可用性。"
+  },
+  {
+    "appId": "stash",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方页面",
+      "url": "https://stash.ws/download"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://stash.ws/download"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://stash.ws/download"
+      }
+    ],
+    "note": "官方目前仅提供早期体验版；本站不收录其测试版版本号或安装包，请在官方页面确认正式版可用性。"
+  },
+  {
+    "appId": "bettbox",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "downloads": [
+      {
+        "id": "Bettbox-1.19.1-android-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-android-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "Bettbox-1.19.1-android-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-android-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "Bettbox-1.19.1-android-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-android-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "Bettbox-1.19.1-android-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-android-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ],
+    "version": "v1.19.1",
+    "publishedAt": "2026-09-09T15:56:57Z"
+  },
+  {
+    "appId": "bettbox",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "downloads": [
+      {
+        "id": "Bettbox-1.19.1-windows-amd64-compatible-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-windows-amd64-compatible-setup.exe",
+        "arch": "amd64-compatible",
+        "format": "exe"
+      },
+      {
+        "id": "Bettbox-1.19.1-windows-amd64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-windows-amd64-setup.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "Bettbox-1.19.1-windows-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-windows-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      }
+    ],
+    "version": "v1.19.1",
+    "publishedAt": "2026-09-09T15:56:57Z"
+  },
+  {
+    "appId": "bettbox",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "downloads": [
+      {
+        "id": "Bettbox-1.19.1-macos-amd64-compatible.dmg",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-macos-amd64-compatible.dmg",
+        "arch": "amd64-compatible",
+        "format": "dmg"
+      },
+      {
+        "id": "Bettbox-1.19.1-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "Bettbox-1.19.1-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ],
+    "version": "v1.19.1",
+    "publishedAt": "2026-09-09T15:56:57Z"
+  },
+  {
+    "appId": "bettbox",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/appshubcc/Bettbox/releases/tag/v1.19.1"
+    },
+    "downloads": [
+      {
+        "id": "Bettbox-1.19.1-linux-amd64-compatible.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64-compatible.AppImage",
+        "arch": "amd64-compatible",
+        "format": "AppImage"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-amd64-compatible.deb",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64-compatible.deb",
+        "arch": "amd64-compatible",
+        "format": "deb"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-amd64-compatible.rpm",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64-compatible.rpm",
+        "arch": "amd64-compatible",
+        "format": "rpm"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "Bettbox-1.19.1-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/appshubcc/Bettbox/releases/download/v1.19.1/Bettbox-1.19.1-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      }
+    ],
+    "version": "v1.19.1",
+    "publishedAt": "2026-09-09T15:56:57Z"
+  }
+]

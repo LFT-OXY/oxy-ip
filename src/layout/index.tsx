@@ -12,7 +12,14 @@ import { UnderlineHover } from "@/components/underline-hover";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTheme } from "@/hooks/use-theme";
 import { t } from "@/i18n";
-import { Search, Globe, Cable, Activity, Sparkles } from "lucide-react";
+import {
+  Search,
+  Globe,
+  Cable,
+  Activity,
+  Sparkles,
+  Grid2X2,
+} from "lucide-react";
 import { Tabs } from "radix-ui";
 import { Toaster } from "sonner";
 import { RouteErrorBoundary } from "./route-error-boundary";
@@ -26,6 +33,7 @@ const menuIcons = {
   "/network/": Cable,
   "/ai/": Sparkles,
   "/status/": Activity,
+  "/clients/": Grid2X2,
 };
 
 const options = navigationRoutes.map((route) => {

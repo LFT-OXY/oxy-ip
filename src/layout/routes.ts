@@ -7,6 +7,7 @@ export const navigationRoutes = [
   { value: "/browser/", label: t("浏览器检测"), short: t("浏览器") },
   { value: "/ai/", label: t("AI 检测"), short: "AI" },
   { value: "/status/", label: t("服务状态"), short: t("状态") },
+  { value: "/clients/", label: t("代理客户端"), short: t("客户端") },
 ] as const;
 export const toolGroups = {
   network: [
@@ -62,6 +63,7 @@ export function activeNavigationRoute(pathname: string) {
       return `/${group}/`;
   }
   if (/^\/network\/ip\/[^/]+$/.test(path)) return "/network/";
+  if (/^\/clients(?:\/[^/]+)?$/.test(path)) return "/clients/";
   return /^\/status(?:\/(?:openai|claude))?$/.test(path)
     ? "/status/"
     : "not-found";

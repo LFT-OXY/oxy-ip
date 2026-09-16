@@ -31,6 +31,7 @@ const ClaudeStatusPage = lazy(() => import("@/views/claude/status"));
 const GptStatusPage = lazy(() => import("@/views/gpt/status"));
 const CdnPage = lazy(() => import("@/views/cdn"));
 const DnsExitPage = lazy(() => import("@/views/dns-exit"));
+const ClientCatalog = lazy(() => import("@/views/clients"));
 function Redirect({ to }: { to: string }) {
   const { search, hash } = useLocation();
   const { ip } = useParams();
@@ -101,6 +102,10 @@ export function App() {
                 }
               />
             ))}
+        </Route>
+        <Route path="clients">
+          <Route index element={<ClientCatalog />} />
+          <Route path=":appId" element={<ClientCatalog />} />
         </Route>
         <Route path="status">
           <Route
