@@ -2,7 +2,10 @@
   {
     "appId": "shadowrocket",
     "platform": "ios",
-    "maintenance": "manual",
+    "version": "2.2.92",
+    "publishedAt": "2026-09-07T04:14:10Z",
+    "lastCheckedAt": "2026-09-16T09:46:22.736Z",
+    "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
       "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
@@ -17,9 +20,7 @@
         "kind": "store",
         "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?uo=4"
       }
-    ],
-    "version": "2.2.92",
-    "publishedAt": "2026-09-07T04:14:10Z"
+    ]
   },
   {
     "appId": "shadowrocket",
@@ -1137,7 +1138,10 @@
   {
     "appId": "stash",
     "platform": "ios",
-    "maintenance": "manual",
+    "version": "3.4.1",
+    "publishedAt": "2026-07-16T17:06:42Z",
+    "lastCheckedAt": "2026-09-16T09:46:22.736Z",
+    "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
       "url": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349?uo=4"
@@ -1152,17 +1156,18 @@
         "kind": "store",
         "url": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349?uo=4"
       }
-    ],
-    "version": "3.4.1",
-    "publishedAt": "2026-07-16T17:06:42Z"
+    ]
   },
   {
     "appId": "stash",
     "platform": "macos",
-    "maintenance": "manual",
+    "version": "4.2.1",
+    "publishedAt": "2026-07-15T23:30:50.000Z",
+    "lastCheckedAt": "2026-09-16T09:46:22.736Z",
+    "maintenance": "automatic",
     "source": {
-      "label": "官方页面",
-      "url": "https://stash.ws/download"
+      "label": "Stash 官方更新源",
+      "url": "https://mac-release.stash.ws/appcast.xml"
     },
     "fallback": {
       "kind": "page",
@@ -1170,9 +1175,11 @@
     },
     "downloads": [
       {
-        "id": "official-page",
-        "kind": "page",
-        "url": "https://stash.ws/download"
+        "id": "Stash-build-487.zip",
+        "kind": "direct",
+        "url": "https://releases.stash.ws/Stash-build-487.zip",
+        "arch": "universal",
+        "format": "zip"
       }
     ]
   },

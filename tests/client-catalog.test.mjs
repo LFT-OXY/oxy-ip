@@ -61,7 +61,14 @@ test("首票独立名单、全部平台与人工资料完整且无重复", () =>
         assert.ok(!download.url.includes("huarun.win"));
         if (download.kind === "direct") {
           assert.ok(download.arch && download.format && release.version);
-          assert.ok(download.url.includes(release.version.replace(/^v/, "")));
+          if (app.id === "stash" && platform === "macos") {
+            // Stash 以构建号命名；展示版本与构建号的绑定由官方 feed 回归验证。
+            assert.match(
+              download.url,
+              /^https:\/\/releases\.stash\.ws\/Stash-build-\d+\.zip$/,
+            );
+          } else
+            assert.ok(download.url.includes(release.version.replace(/^v/, "")));
         }
       }
     }

@@ -1147,6 +1147,7 @@
   "从 FlClash 早期版本重构的多平台 Mihomo 客户端，提供规则分流、智能启停与 Android 休眠控制。": "A multi-platform Mihomo client reworked from an early FlClash version, with rule-based routing, smart start/stop and Android sleep controls.",
   "官方页面": "Official page",
   "App Store（美国区）": "App Store (US)",
+  "Stash 官方更新源": "Stash official update feed",
   "此正式安装包仅适用于已越狱的 rootless iOS 15+；官方 App Store 更新暂停，不提供 TestFlight 测试版。": "This stable package requires jailbroken rootless iOS 15+; official App Store updates are paused. TestFlight beta builds are not listed.",
   "OpenWrt 核心软件包：按路由器架构及包管理器选择，不是 Android APK。": "OpenWrt core packages: choose your router architecture and package manager; these are not Android APKs.",
   "官方目前仅提供早期体验版；本站不收录其测试版版本号或安装包，请在官方页面确认正式版可用性。": "The official channel currently offers early-access builds only. Beta versions and packages are not listed here; check the official page for stable availability.",

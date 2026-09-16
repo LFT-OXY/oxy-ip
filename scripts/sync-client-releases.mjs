@@ -2,7 +2,11 @@ import { readFile, open, rename, unlink } from "node:fs/promises";
 import { resolve, dirname, basename, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { githubSources } from "./client-release-sources.mjs";
+import {
+  officialClient,
+  parseOfficialRelease,
+} from "./client-official-sync.mjs";
+import { githubSources, officialSources } from "./client-release-sources.mjs";
 import { githubClient, syncReleases } from "./client-release-sync.mjs";
 
 const { values } = parseArgs({
@@ -19,11 +23,23 @@ const catalog = fileURLToPath(
 );
 if (output === catalog) throw new Error("不可写入人工基础目录");
 const previous = JSON.parse(await readFile(snapshot, "utf8"));
-const { rows, errors } = await syncReleases(
-  previous,
-  githubSources,
-  githubClient(),
+const github = githubClient();
+const checkedAt = new Date().toISOString();
+const githubResult = await syncReleases(previous, githubSources, {
+  ...github,
+  now: checkedAt,
+});
+const { rows, errors: officialErrors } = await syncReleases(
+  githubResult.rows,
+  officialSources,
+  {
+    ...officialClient(),
+    checkLink: github.checkLink,
+    parse: parseOfficialRelease,
+    now: checkedAt,
+  },
 );
+const errors = [...githubResult.errors, ...officialErrors];
 for (const error of errors)
   console.error(`${error.appId}/${error.platform}: ${error.message}`);
 if (values["dry-run"]) console.log(JSON.stringify(rows, null, 2));

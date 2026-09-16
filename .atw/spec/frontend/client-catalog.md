@@ -4,7 +4,7 @@
 
 `src/views/clients/` 拥有人工目录、按平台发布快照、列表筛选和精简详情。`/clients/` 与 `/clients/:appId` 在 `App.tsx` 注册，导航同时更新 `layout/routes.ts` 和 `layout/index.tsx` 的图标映射。
 
-本契约覆盖首票目录及第 02 票 GitHub 手动同步；6 小时调度尚未实现。
+本契约覆盖首票目录、第 02 票 GitHub 手动同步及第 03 票商店／官网更新源；6 小时调度尚未实现。
 
 ## 2. 签名
 
@@ -60,14 +60,14 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 
 ### 8.1 范围
 
-`scripts/client-release-sources.mjs` 维护已核验的仓库和平台包命名规则，目前仅 FlClash 四平台、v2rayNG Android。未配置的快照原样保留；扩充来源不得按文件后缀猜测平台。调度、商店同步和生产部署不在此实现中。
+`scripts/client-release-sources.mjs` 维护已核验的仓库和平台包命名规则，目前仅 FlClash 四平台、v2rayNG Android。未配置的快照原样保留；扩充来源不得按文件后缀猜测平台。商店／官网来源见第 9 节；调度和生产部署不在此实现中。
 
 ### 8.2 签名
 
 - `pnpm clients:sync`：同步并原子替换 `src/views/clients/releases.json`。
 - `node scripts/sync-client-releases.mjs --dry-run`：JSON 输出到 stdout，不写文件。
 - `pnpm clients:sync --output <path>`：写指定输出；与 `--dry-run` 互斥，禁止指向人工 `catalog.json`。
-- `syncReleases(previous, sources, { loadRelease, checkLink, now? })`：异步返回 `{ rows, errors }`，不修改输入；`errors` 每项含 `appId/platform/message`。
+- `syncReleases(previous, sources, { loadRelease, checkLink, parse?, now? })`：异步返回 `{ rows, errors }`，不修改输入；`errors` 每项含 `appId/platform/message`。
 - `githubClient({ fetcher?, token?, timeoutMs? })`：提供 `loadRelease(source)` 与 `checkLink(url)`；后者返回 `valid/temporary/missing`，网络异常交由同步层保守处理。
 - `selectStableRelease(raw)` 与 `parseRelease(raw, source, previous, now)`：正式版筛选和单平台快照解析；代码位于 `scripts/client-release-sync.mjs`。
 
@@ -102,3 +102,52 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 错误：以 `prerelease=false` 单独证明正式性；或以 `download.kind === "direct"` 作为多选项选择器唯一显示条件。
 
 正确：同时检查测试渠道标识；选择器在单直链或 `release.downloads.length > 1` 时可见。未知命名或临时失败保留旧值，不猜测新包。
+
+## 9. 官方商店与官网更新源
+
+### 9.1 范围
+
+`scripts/client-official-sync.mjs` 适配 Apple lookup 与 Stash Mac appcast；`officialSources` 只包含 Shadowrocket iOS、Stash iOS、Stash Mac。Shadowrocket Mac 及 Stash Android / Windows 仍人工维护。新增平台需要单独的官方版本依据，不能扩展一个 iOS 来源去覆盖 Mac。
+
+### 9.2 签名
+
+- `officialClient({ fetcher?, timeoutMs? })` 提供 `loadRelease(source)`，返回商店 JSON 或官网 XML；默认超时 15 秒，不发送 token。
+- `parseOfficialRelease(raw, source, previous, now)` 返回既有 `releaseSchema` 快照，解析失败抛错。
+- `syncReleases` 的可选 `parse` 默认 `parseRelease`（GitHub）；官方来源传入 `parseOfficialRelease`，直链核验复用 `githubClient().checkLink` 的通用 HEAD 行为。
+- CLI 依次同步 GitHub 与官方来源，共用本轮核验时间、合并错误、原子保存；命令及退出语义与第 8 节一致。
+
+### 9.3 数据契约
+
+- App Store 配置：`kind=app-store`、`appId`、`platforms: { ios: true }`、`trackId`、`bundleId`、`country=us`。请求 `https://itunes.apple.com/lookup?id=…&country=us&entity=software`，核对唯一结果的身份、`kind/wrapperType=software`、美国区 Apple HTTPS 入口及纯数字点分版本。
+- `version` 与 `publishedAt` 分别取 `version`、可选 `currentVersionReleaseDate`。后者缺失时删除旧发布日期，不退回应用首发 `releaseDate`；成功才设置 `maintenance=automatic` 与 `lastCheckedAt`。
+- Stash 配置：`kind=stash-macos`、`platforms: { macos: true }`、官方 `url` 与 `fallback`。XML 必须是 Stash 标题和 Sparkle 命名空间的 RSS，使用 `fast-xml-parser`（仅维护脚本开发依赖），不解析实体、不接受 DOCTYPE，解析前限制为 100 万字符。
+- 仅选不含 `sparkle:channel` 且标题／版本无测试标记的 item，按 `pubDate` 排序。同一个 item 的 `sparkle:shortVersionString` 是展示版本，`sparkle:version` 是构建号；enclosure 必须为 `https://releases.stash.ws/Stash-build-<构建号>.zip`。官网明确支持 Apple Silicon 与 Intel，因此标记 `universal/zip`；未来出现硬件约束或非 Mac enclosure 时保守拒绝，不猜架构。
+- 商店快照输出 `store`；官网 feed 输出版本绑定的 `direct`，fallback 为 `https://stash.ws/download`。人工 `catalog.json` 不受同步影响。
+
+### 9.4 校验与错误矩阵
+
+| 场景                                                                   | 行为                                             |
+| ---------------------------------------------------------------------- | ------------------------------------------------ |
+| 商店空结果、多结果、身份／地区／类型不符、测试版本、HTTP/JSON/超时错误 | 保留该平台旧数据和核验时间，其他来源继续         |
+| 新商店版本无当前发布日期                                               | 发布日期留空，不沿用旧版或首发日期               |
+| feed 只有 Beta／自定义渠道、坏 XML、错应用、错构建包、未知硬件约束     | 保留旧快照；不自动改用 latest 包                 |
+| 候选或旧直链暂时失败／两次确认失效                                     | 复用第 8 节临时保留／失效 fallback 规则          |
+| 无可靠自动版本源的平台                                                 | 不配置自动来源；人工页面、未知版本与时间原样保留 |
+
+### 9.5 正常、基础与错误场景
+
+- 正常：Stash iOS 3.4.1 与 Mac 4.2.1 独立展示；Mac 4.2.1 对应 build 487。
+- 基础：Stash Windows 仅展示官方页与早期版本说明；版本、发布时间和成功核验时间均为未知。
+- 错误：Homebrew 或 feed 中较新的 4.3.0 / 497 不等于正式版；官方 feed 的 beta 渠道不能被第三方版本号覆盖。
+
+### 9.6 必需测试
+
+`tests/client-official-sync.test.mjs` 用裁剪真实 lookup / appcast 与明确变异覆盖身份隔离、空结果、HTTP/超时/JSON 错误、日期缺失、默认渠道、构建号包绑定、XML 拒绝与直链回退。CLI 子进程测试同时覆盖 GitHub 与官方源成功、商店部分失败后的退出 1 和其他结果仍写入，且生产文件及人工目录不变。
+
+目录直链测试不能要求所有 URL 含展示版本：GitHub 维持版本匹配断言，Stash 按构建号 URL 规则检查，展示版本和构建号的绑定由独立 feed fixture 断言。新增来源标签须通过真实英文 `t()` 测试。页面回归覆盖 store/direct/page、Mac 未知值、实际主题、语言、平台切换与键盘返回筛选。
+
+### 9.7 易错对照
+
+错误：把官网 `Stash-latest.zip` 配上 feed 的正式版号；把 Apple 软件兼容 Mac 当作独立 Mac 版本依据；HTTP 200 就刷新人工页的核验时间。
+
+正确：使用同一正式 item 的构建号固定地址；独立配置平台来源；无可核验版本时保留人工状态与未知时间。

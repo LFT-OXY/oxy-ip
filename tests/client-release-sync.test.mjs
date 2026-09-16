@@ -6,6 +6,8 @@ import { join, resolve } from "node:path";
 import { test } from "node:test";
 import { pathToFileURL } from "node:url";
 import flclash from "./fixtures/client-releases/flclash.json" with { type: "json" };
+import shadowrocket from "./fixtures/client-releases/shadowrocket-store.json" with { type: "json" };
+import stash from "./fixtures/client-releases/stash-store.json" with { type: "json" };
 import v2rayng from "./fixtures/client-releases/v2rayng.json" with { type: "json" };
 import { githubSources } from "../scripts/client-release-sources.mjs";
 import {
@@ -271,15 +273,27 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   const loader = join(directory, "fetch.mjs");
   const output = join(directory, "releases.json");
   const fixtures = [flclash, v2rayng];
+  const appcast = await readFile(
+    new URL("./fixtures/client-releases/stash-appcast.xml", import.meta.url),
+    "utf8",
+  );
   await writeFile(
     loader,
     `const releases = ${JSON.stringify(fixtures)};
+    const stores = ${JSON.stringify([shadowrocket, stash])};
+    const appcast = ${JSON.stringify(appcast)};
     globalThis.fetch = async (url, init) => {
       if (init.method === 'HEAD') return new Response(null, {status: 200});
+      if (url.startsWith('https://itunes.apple.com/')) {
+        if (process.env.STORE_FAILURE && url.includes('932747118')) return new Response(null, {status: 429});
+        return Response.json(url.includes('932747118') ? stores[0] : stores[1]);
+      }
+      if (url === 'https://mac-release.stash.ws/appcast.xml') return new Response(appcast);
       const release = url.includes('chen08209') ? releases[0] : releases[1];
       return Response.json(url.includes('/assets?') ? release.assets : [release]);
     };`,
   );
+  let storeFailure = false;
   const run = (...args) =>
     execFileSync(
       process.execPath,
@@ -289,7 +303,11 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
         resolve("scripts/sync-client-releases.mjs"),
         ...args,
       ],
-      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] },
+      {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+        env: { ...process.env, STORE_FAILURE: storeFailure ? "1" : "" },
+      },
     );
   try {
     run("--output", output);
@@ -299,9 +317,46 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
         .maintenance,
       "automatic",
     );
+    assert.equal(
+      result.find((r) => r.appId === "shadowrocket" && r.platform === "ios")
+        .maintenance,
+      "automatic",
+    );
+    assert.equal(
+      result.find((r) => r.appId === "stash" && r.platform === "macos").version,
+      "4.2.1",
+    );
     assert.equal(JSON.parse(run("--dry-run")).length, releases.length);
     assert.throws(() => run("--output", catalog), /不可写入人工基础目录/);
     assert.throws(() => run("--output", output, "--dry-run"), /不能同时使用/);
+    storeFailure = true;
+    assert.throws(
+      () => run("--output", output),
+      (error) => {
+        assert.equal(error.status, 1);
+        assert.match(error.stderr, /shadowrocket\/ios: 官方来源 HTTP 429/);
+        return true;
+      },
+    );
+    const partial = JSON.parse(await readFile(output, "utf8"));
+    assert.deepEqual(
+      partial.find((r) => r.appId === "shadowrocket" && r.platform === "ios"),
+      releases.find((r) => r.appId === "shadowrocket" && r.platform === "ios"),
+    );
+    assert.equal(
+      partial.find((r) => r.appId === "stash" && r.platform === "ios")
+        .maintenance,
+      "automatic",
+    );
+    assert.equal(
+      partial.find((r) => r.appId === "stash" && r.platform === "macos")
+        .version,
+      "4.2.1",
+    );
+    assert.equal(
+      partial.find((r) => r.appId === "v2rayng").maintenance,
+      "automatic",
+    );
     assert.deepEqual(
       await Promise.all([
         readFile(snapshot, "utf8"),

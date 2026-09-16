@@ -21,3 +21,30 @@ export const githubSources = [
     },
   },
 ];
+
+// 每个来源只核验明确的平台；iOS lookup 不代表 Mac 版本。
+export const officialSources = [
+  {
+    appId: "shadowrocket",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 932747118,
+    bundleId: "com.liguangming.Shadowrocket",
+    country: "us",
+  },
+  {
+    appId: "stash",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 1596063349,
+    bundleId: "ws.stash.app",
+    country: "us",
+  },
+  {
+    appId: "stash",
+    kind: "stash-macos",
+    platforms: { macos: true },
+    url: "https://mac-release.stash.ws/appcast.xml",
+    fallback: "https://stash.ws/download",
+  },
+];

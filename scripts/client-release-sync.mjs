@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { releaseSchema } from "../src/views/clients/model.ts";
 
-const testChannel =
+export const testChannel =
   /(?:alpha|beta|nightly|preview|canary|snapshot|unstable|(?:^|[^a-z])(?:rc|test|testing|dev|development)\d*(?:$|[^a-z]))/i;
 const metadataSchema = z.object({
   id: z.number().int().positive(),
@@ -110,7 +110,12 @@ async function inspectDownloads(row, checkLink) {
 export async function syncReleases(
   previous,
   sources,
-  { loadRelease, checkLink, now = new Date().toISOString() },
+  {
+    loadRelease,
+    checkLink,
+    parse = parseRelease,
+    now = new Date().toISOString(),
+  },
 ) {
   z.array(releaseSchema).parse(previous);
   const rows = structuredClone(previous);
@@ -133,7 +138,7 @@ export async function syncReleases(
       try {
         if (failure) throw failure;
         if (!raw) throw new Error("没有正式版");
-        const candidate = parseRelease(raw, source, old, now);
+        const candidate = parse(raw, source, old, now);
         const inspected = await inspectDownloads(candidate, checkLink);
         if (inspected.temporary) throw new Error("安装包临时访问失败");
         rows[i] = inspected.row;
