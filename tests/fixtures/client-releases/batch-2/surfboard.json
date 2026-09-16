@@ -1,0 +1,42 @@
+{
+  "id": 380635669,
+  "tag_name": "mobile-2.34.4",
+  "name": null,
+  "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.4",
+  "published_at": "2026-09-01T15:48:02Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "**New Features**\n- **Pinned Profile Shortcuts**: Pinned profiles now appear as dynamic launcher shortcuts; long-press the app icon to switch profiles directly.\n- Hysteria2: support the `gecko-password` parameter.\n- VMess: support the `encrypt-method` parameter.\n- Maximum MTU raised from 32000 to 64000.\n\n**Fixes**\n- Fixed screen flicker when starting the VPN via a deep link.\n- Fixed WireGuard profiles failing to connect when the endpoint is an IPv6 address.\n- Fixed a rare crash when stopping and immediately restarting the VPN.\n- Fixed the selected profile occasionally reverting to the previous one after a switch.\n- Show a toast instead of crashing when the system blocks VPN auto-start.\n- Fixed crash when the VPN permission dialog cannot be launched.\n- Fixed crash when opening the file picker.\n- Fixed a rare crash during dashboard animations.\n- Fixed VPN being disconnected when exporting a backup.\n- Fixed timestamp wrapping in the Last Exit Reason section of Developer Options.\n\n**Improvements**\n- Reduced app size.\n",
+  "assets": [
+    {
+      "id": 539772323,
+      "name": "mobile-arm64-v8a-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-arm64-v8a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 539772446,
+      "name": "mobile-armeabi-v7a-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-armeabi-v7a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 539772602,
+      "name": "mobile-universal-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-universal-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 539772863,
+      "name": "mobile-x86-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 539772972,
+      "name": "mobile-x86_64-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86_64-release.apk",
+      "state": "uploaded"
+    }
+  ]
+}

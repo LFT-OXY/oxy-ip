@@ -1,0 +1,1053 @@
+{
+  "id": "surfboard",
+  "referenceUrl": "https://huarun.win/apps/surfboard",
+  "referenceText": "Title: Surfboard：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/surfboard\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Surfboard\n\n![Image 1: Surfboard 应用图标](https://huarun.win/app-icons/surfboard.webp)\n\n兼容 Surge 配置的 Android 代理工具，以规则分流、策略组与订阅管理为主要能力。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 未公开\n\n完整功能费用 免费\n\n代理内核 自研（暂定）本分类暂按「自研」展示，具体内核实现尚待逐项核实；源码未公开不等于已确认自研。\n\n版本号 mobile-2.34.4\n\n最后更新时间 2026年9月1日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\nNew Features\n- Pinned Profile Shortcuts: Pinned profiles now appear as dynamic launcher shortcuts; long-press the app icon to switch profiles directly.\n- Hysteria2: support the gecko-password parameter.\n- VMess: support the encrypt-method parameter.\n- Maximum MTU raised from 32000 to 64000.\n\nFixes\n- Fixed screen flicker when starting the VPN via a deep link.\n- Fixed WireGuard profiles failing to connect when the endpoint is an IPv6 address.\n- Fixed a rare crash when stopping and immediately restarting the VPN.\n- Fixed the selected profile occasionally reverting to the previous one after a switch.\n- Show a toast instead of crashing when the system blocks VPN auto-start.\n- Fixed crash when the VPN permission dialog cannot be launched.\n- Fixed crash when opening the file picker.\n- Fixed a rare crash during dashboard animations.\n- Fixed VPN being disconnected when exporting a backup.\n- Fixed timestamp wrapping in the Last Exit Reason section of Developer Options.\n\nImprovements\n- Reduced app size.[查看官方版本来源 ↗](https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.4)\n应用简介\n\n## 关于 Surfboard\n\n兼容 Surge 配置的 Android 代理工具，以规则分流、策略组与订阅管理为主要能力。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/surfboard)\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://getsurfboard.com/",
+  "repository": {
+    "full_name": "getsurfboard/surfboard",
+    "html_url": "https://github.com/getsurfboard/surfboard",
+    "description": "https://getsurfboard.com",
+    "default_branch": "master",
+    "archived": false,
+    "license": null,
+    "homepage": null
+  },
+  "readme": "{\"name\":\"README.md\",\"path\":\"README.md\",\"sha\":\"5304dbfd48b4d006c5eeefbc78b6e91cca31ac8a\",\"size\":38,\"url\":\"https://api.github.com/repos/getsurfboard/surfboard/contents/README.md?ref=master\",\"html_url\":\"https://github.com/getsurfboard/surfboard/blob/master/README.md\",\"git_url\":\"https://api.github.com/repos/getsurfboard/surfboard/git/blobs/5304dbfd48b4d006c5eeefbc78b6e91cca31ac8a\",\"download_url\":\"https://raw.githubusercontent.com/getsurfboard/surfboard/master/README.md\",\"type\":\"file\",\"content\":\"IyBTdXJmYm9hcmQKCmh0dHBzOi8vZ2V0c3VyZmJvYXJkLmNvbS8=\\n\",\"encoding\":\"base64\",\"_links\":{\"self\":\"https://api.github.com/repos/getsurfboard/surfboard/contents/README.md?ref=master\",\"git\":\"https://api.github.com/repos/getsurfboard/surfboard/git/blobs/5304dbfd48b4d006c5eeefbc78b6e91cca31ac8a\",\"html\":\"https://github.com/getsurfboard/surfboard/blob/master/README.md\"}}",
+  "releaseList": [
+    {
+      "id": 329572999,
+      "tag_name": "tv-1.1.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.1.1",
+      "published_at": "2026-05-26T17:23:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 328541909,
+      "tag_name": "tv-1.1.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.1.0",
+      "published_at": "2026-05-24T16:50:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 380635669,
+      "tag_name": "mobile-2.34.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.4",
+      "published_at": "2026-09-01T15:48:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 375879071,
+      "tag_name": "mobile-2.34.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.3",
+      "published_at": "2026-08-24T17:38:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 375256642,
+      "tag_name": "mobile-2.34.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.2",
+      "published_at": "2026-08-23T16:00:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 364335655,
+      "tag_name": "mobile-2.34.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.1",
+      "published_at": "2026-08-03T16:00:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 356164776,
+      "tag_name": "mobile-2.33.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.33.0",
+      "published_at": "2026-07-18T18:18:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 349110300,
+      "tag_name": "mobile-2.32.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.32.4",
+      "published_at": "2026-07-05T07:09:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 348110358,
+      "tag_name": "mobile-2.32.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.32.3",
+      "published_at": "2026-07-02T14:48:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 345728415,
+      "tag_name": "mobile-2.32.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.32.2",
+      "published_at": "2026-06-27T16:04:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 336049259,
+      "tag_name": "mobile-2.31.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.31.1",
+      "published_at": "2026-06-08T15:48:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 329583987,
+      "tag_name": "mobile-2.31.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.31.0",
+      "published_at": "2026-05-26T17:45:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 317285796,
+      "tag_name": "mobile-2.30.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.30.0",
+      "published_at": "2026-05-04T15:53:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 312371330,
+      "tag_name": "mobile-2.29.6",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.6",
+      "published_at": "2026-04-22T18:04:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 310907685,
+      "tag_name": "mobile-2.29.5",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.5",
+      "published_at": "2026-04-19T17:54:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 308483836,
+      "tag_name": "mobile-2.29.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.4",
+      "published_at": "2026-04-13T18:01:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 308048402,
+      "tag_name": "mobile-2.29.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.3",
+      "published_at": "2026-04-12T17:07:40Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 307168418,
+      "tag_name": "mobile-2.29.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.2",
+      "published_at": "2026-04-09T16:35:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 302869819,
+      "tag_name": "mobile-2.29.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.1",
+      "published_at": "2026-03-29T15:43:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299899907,
+      "tag_name": "mobile-2.29.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.0",
+      "published_at": "2026-03-22T13:16:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 295806757,
+      "tag_name": "mobile-2.28.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.28.1",
+      "published_at": "2026-03-11T18:08:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 292169029,
+      "tag_name": "mobile-2.28.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.28.0",
+      "published_at": "2026-03-02T17:13:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 290460832,
+      "tag_name": "mobile-2.27.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.27.1",
+      "published_at": "2026-02-25T16:41:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 286417049,
+      "tag_name": "mobile-2.27.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.27.0",
+      "published_at": "2026-02-14T19:14:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 285803376,
+      "tag_name": "mobile-2.26.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.26.2",
+      "published_at": "2026-02-12T18:07:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 186671550,
+      "tag_name": "2.24.5",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.24.5",
+      "published_at": "2024-11-21T15:20:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 161802158,
+      "tag_name": "2.24.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.24.3",
+      "published_at": "2024-06-22T17:23:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 161800192,
+      "tag_name": "2.24.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.24.2",
+      "published_at": "2024-06-22T16:50:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 147282055,
+      "tag_name": "2.24.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.24.1",
+      "published_at": "2024-03-19T17:00:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 145881543,
+      "tag_name": "2.24.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.24.0",
+      "published_at": "2024-03-11T16:56:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 137894479,
+      "tag_name": "2.23.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.23.4",
+      "published_at": "2024-01-21T17:51:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 137606249,
+      "tag_name": "2.23.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.23.3",
+      "published_at": "2024-01-18T17:40:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 136987961,
+      "tag_name": "2.23.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.23.2",
+      "published_at": "2024-01-14T17:21:49Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 136205093,
+      "tag_name": "2.23.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.23.1",
+      "published_at": "2024-01-08T16:05:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 135846961,
+      "tag_name": "2.23.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.23.0",
+      "published_at": "2024-01-04T15:54:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 134979474,
+      "tag_name": "2.22.9",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.9",
+      "published_at": "2023-12-23T16:00:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 134212108,
+      "tag_name": "2.22.8",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.8",
+      "published_at": "2023-12-17T08:09:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 134181366,
+      "tag_name": "2.22.7",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.7",
+      "published_at": "2023-12-16T11:38:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 133200010,
+      "tag_name": "2.22.6",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.6",
+      "published_at": "2023-12-08T16:33:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 132386155,
+      "tag_name": "2.22.5",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.5",
+      "published_at": "2023-12-02T17:56:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 129055158,
+      "tag_name": "2.22.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.4",
+      "published_at": "2023-11-12T14:49:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 129015055,
+      "tag_name": "2.22.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.3",
+      "published_at": "2023-11-11T10:36:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 127732152,
+      "tag_name": "2.22.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.2",
+      "published_at": "2023-11-02T17:11:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 127553888,
+      "tag_name": "2.22.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.1",
+      "published_at": "2023-11-01T16:31:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 124054543,
+      "tag_name": "2.22.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.22.0",
+      "published_at": "2023-10-06T14:14:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 122342073,
+      "tag_name": "2.21.5",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.5",
+      "published_at": "2023-09-24T09:15:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 119112771,
+      "tag_name": "2.21.4",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.4",
+      "published_at": "2023-08-29T17:47:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 117921769,
+      "tag_name": "2.21.3",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.3",
+      "published_at": "2023-08-20T17:54:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 117490693,
+      "tag_name": "2.21.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.2",
+      "published_at": "2023-08-16T16:20:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 117339434,
+      "tag_name": "2.21.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.1",
+      "published_at": "2023-08-15T17:15:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 109013455,
+      "tag_name": "2.21.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.21.0",
+      "published_at": "2023-06-18T16:41:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 108144431,
+      "tag_name": "2.20.10",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.10",
+      "published_at": "2023-06-11T16:34:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 105004103,
+      "tag_name": "2.20.9",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.9",
+      "published_at": "2023-05-28T16:00:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 100140685,
+      "tag_name": "2.20.8",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.8",
+      "published_at": "2023-04-20T02:56:48Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 97871275,
+      "tag_name": "2.20.7",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.7",
+      "published_at": "2023-04-03T15:23:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 93680182,
+      "tag_name": "2.20.6",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.6",
+      "published_at": "2023-02-25T13:59:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 92910376,
+      "tag_name": "2.20.5",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.5",
+      "published_at": "2023-02-18T10:21:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 92400797,
+      "tag_name": "2.20.4",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.4",
+      "published_at": "2023-02-14T17:43:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 92243789,
+      "tag_name": "2.20.3",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.3",
+      "published_at": "2023-02-13T16:46:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 90596425,
+      "tag_name": "2.20.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.2",
+      "published_at": "2023-01-29T15:43:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 90530054,
+      "tag_name": "2.20.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.1",
+      "published_at": "2023-01-28T16:42:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 89810180,
+      "tag_name": "2.20.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.20.0",
+      "published_at": "2023-01-21T17:43:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 89017249,
+      "tag_name": "2.19.4",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.19.4",
+      "published_at": "2023-01-15T12:02:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 87199939,
+      "tag_name": "2.19.3",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.19.3",
+      "published_at": "2022-12-25T07:42:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 86056688,
+      "tag_name": "2.19.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.19.2",
+      "published_at": "2022-12-14T16:58:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 85632998,
+      "tag_name": "2.19.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.19.1",
+      "published_at": "2022-12-10T17:30:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84916032,
+      "tag_name": "2.19.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.19.0",
+      "published_at": "2022-12-04T13:16:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 83681935,
+      "tag_name": "2.18.8",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.8",
+      "published_at": "2022-11-20T15:23:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 83648489,
+      "tag_name": "2.18.7",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.7",
+      "published_at": "2022-11-19T17:25:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 83014550,
+      "tag_name": "2.18.6",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.6",
+      "published_at": "2022-11-14T17:01:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82909022,
+      "tag_name": "2.18.5",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.5",
+      "published_at": "2022-11-13T13:32:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82715667,
+      "tag_name": "2.18.4",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.4",
+      "published_at": "2022-11-10T17:55:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82200884,
+      "tag_name": "2.18.3",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.3",
+      "published_at": "2022-11-06T16:17:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82171007,
+      "tag_name": "2.18.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.2",
+      "published_at": "2022-11-05T18:22:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 81577627,
+      "tag_name": "2.18.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.1",
+      "published_at": "2022-10-31T17:17:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 81466462,
+      "tag_name": "2.18.0",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.18.0",
+      "published_at": "2022-10-29T18:35:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 81375350,
+      "tag_name": "2.17.6",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.6",
+      "published_at": "2022-10-28T17:13:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 81082373,
+      "tag_name": "2.17.5",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.5",
+      "published_at": "2022-10-26T17:07:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 80735616,
+      "tag_name": "2.17.4",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.4",
+      "published_at": "2022-10-23T17:10:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 80706267,
+      "tag_name": "2.17.3",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.3",
+      "published_at": "2022-10-22T17:14:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 183636855,
+      "tag_name": "tv-1.0.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.0.3",
+      "published_at": "2024-11-05T14:55:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 173085048,
+      "tag_name": "tv-1.0.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.0.2",
+      "published_at": "2024-09-02T16:29:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 171315723,
+      "tag_name": "tv-1.0.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.0.1",
+      "published_at": "2024-08-21T16:48:49Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 170752352,
+      "tag_name": "tv-1.0.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.0.0",
+      "published_at": "2024-08-18T09:50:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 284487788,
+      "tag_name": "mobile-2.26.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.26.1",
+      "published_at": "2026-02-09T17:38:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 284204292,
+      "tag_name": "mobile-2.26.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.26.0",
+      "published_at": "2026-02-08T18:59:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 280395138,
+      "tag_name": "mobile-2.25.5",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.5",
+      "published_at": "2026-01-27T17:27:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279998012,
+      "tag_name": "mobile-2.25.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.4",
+      "published_at": "2026-01-26T17:03:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 238852509,
+      "tag_name": "mobile-2.25.3",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.3",
+      "published_at": "2025-08-10T14:37:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 236632953,
+      "tag_name": "mobile-2.25.2",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.2",
+      "published_at": "2025-07-31T16:17:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 232286306,
+      "tag_name": "mobile-2.25.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.1",
+      "published_at": "2025-07-14T16:54:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 232064924,
+      "tag_name": "mobile-2.25.0",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.25.0",
+      "published_at": "2025-07-13T16:52:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 195677302,
+      "tag_name": "mobile-2.24.9",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.9",
+      "published_at": "2025-01-20T15:45:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 192617173,
+      "tag_name": "mobile-2.24.8",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.8",
+      "published_at": "2024-12-29T15:28:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 191975464,
+      "tag_name": "mobile-2.24.7",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.7",
+      "published_at": "2024-12-21T15:46:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 189545365,
+      "tag_name": "mobile-2.24.6",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.6",
+      "published_at": "2024-12-07T15:39:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 171113540,
+      "tag_name": "mobile-2.24.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.4",
+      "published_at": "2024-08-20T16:37:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 209404940,
+      "tag_name": "mobile-2.24.10",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.24.10",
+      "published_at": "2025-03-31T17:21:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 79995888,
+      "tag_name": "2.17.2",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.2",
+      "published_at": "2022-10-15T18:44:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 79560054,
+      "tag_name": "2.17.1",
+      "name": "",
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/2.17.1",
+      "published_at": "2022-10-11T17:21:24Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 380635669,
+      "tag_name": "mobile-2.34.4",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.4",
+      "published_at": "2026-09-01T15:48:02Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "**New Features**\n- **Pinned Profile Shortcuts**: Pinned profiles now appear as dynamic launcher shortcuts; long-press the app icon to switch profiles directly.\n- Hysteria2: support the `gecko-password` parameter.\n- VMess: support the `encrypt-method` parameter.\n- Maximum MTU raised from 32000 to 64000.\n\n**Fixes**\n- Fixed screen flicker when starting the VPN via a deep link.\n- Fixed WireGuard profiles failing to connect when the endpoint is an IPv6 address.\n- Fixed a rare crash when stopping and immediately restarting the VPN.\n- Fixed the selected profile occasionally reverting to the previous one after a switch.\n- Show a toast instead of crashing when the system blocks VPN auto-start.\n- Fixed crash when the VPN permission dialog cannot be launched.\n- Fixed crash when opening the file picker.\n- Fixed a rare crash during dashboard animations.\n- Fixed VPN being disconnected when exporting a backup.\n- Fixed timestamp wrapping in the Last Exit Reason section of Developer Options.\n\n**Improvements**\n- Reduced app size.\n",
+      "assets": [
+        {
+          "id": 539772323,
+          "name": "mobile-arm64-v8a-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-arm64-v8a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 539772446,
+          "name": "mobile-armeabi-v7a-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-armeabi-v7a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 539772602,
+          "name": "mobile-universal-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-universal-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 539772863,
+          "name": "mobile-x86-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 539772972,
+          "name": "mobile-x86_64-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86_64-release.apk",
+          "state": "uploaded"
+        }
+      ]
+    },
+    {
+      "id": 329572999,
+      "tag_name": "tv-1.1.1",
+      "name": null,
+      "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.1.1",
+      "published_at": "2026-05-26T17:23:33Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "**Fixes**\n- Fixed some HTTPS proxies not working\n- Fixed incorrect parsing of trailing comments in profile files\n- Fixed inaccurate rule count for DOMAIN-SET and nested RULE-SET\n- Fixed mobile version checker incorrectly prompting for TV app updates\n- Fixed some DOMAIN-SET/RULE-SET not taking effect\n",
+      "assets": [
+        {
+          "id": 430358355,
+          "name": "tv-arm64-v8a-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-arm64-v8a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 430358429,
+          "name": "tv-armeabi-v7a-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-armeabi-v7a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 430358489,
+          "name": "tv-release.apks",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-release.apks",
+          "state": "uploaded"
+        },
+        {
+          "id": 430358673,
+          "name": "tv-universal-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-universal-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 430358909,
+          "name": "tv-x86-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-x86-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 430358955,
+          "name": "tv-x86_64-release.apk",
+          "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-x86_64-release.apk",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "additionalOfficialText": {
+    "surfboard-install": "Title: Installation | Surfboard Manual\n\nURL Source: https://getsurfboard.com/docs/installation\n\nMarkdown Content:\n*   Apps distributed by APKPure and Telegram channels are generally the same.\n\n*   Apps distributed by APKPure are generally relatively stable, but update less frequently.\n\n*   Telegram channels are updated more frequently, but there may be unknown issues.\n\nGenerally speaking, stable versions verified by telegram channels are regularly released to APKPure.\n\nYou can choose the installation and update channel according to your actual needs.\n",
+    "surfboard-official": "Title: Surfboard Manual\n\nURL Source: https://getsurfboard.com/\n\nMarkdown Content:\nA network traffic processing tools on Android platform\n\n![Image 1](https://getsurfboard.com/assets/images/dashboard-242a0d7e46c30bbf027d7e07292f29c5.png)\n\n### Beautiful dashboard UI\n\n![Image 2](https://getsurfboard.com/assets/images/profiles-ca5d22598374915383b2f44475328b54.png)\n\n### Profiles management\n\n![Image 3](https://getsurfboard.com/assets/images/editor-6ed1902455561d89f908ca985652325d.png)\n\n### Embeded editor\n\n![Image 4](https://getsurfboard.com/assets/images/tools-3b26c77c0a42ad41dadd62a9b24ae50d.png)\n\n### Tools for debug\n\n![Image 5](https://getsurfboard.com/assets/images/dark_mode-9b8f75487b18e8b8066c8bc876130022.png)\n\n### Dark mode support\n\n![Image 6](https://getsurfboard.com/assets/images/settings-31f4c4bbc851e8e74450a6d51ea021fc.png)\n\n### More to explore...\n"
+  },
+  "officialHtmlLinks": [
+    "/img/favicon.ico",
+    "https://getsurfboard.com/docs/installation",
+    "https://getsurfboard.com/zh-Hans/docs/installation",
+    "/blog/rss.xml",
+    "/blog/atom.xml",
+    "https://www.google-analytics.com",
+    "https://www.googletagmanager.com",
+    "https://www.googletagmanager.com/gtag/js?id=G-W110JC8TM1",
+    "/img/logo.png",
+    "/manifest.json",
+    "/assets/css/styles.1620e16f.css",
+    "/assets/js/runtime~main.12571cd1.js",
+    "/assets/js/main.25d7e7ee.js",
+    "#__docusaurus_skipToContent_fallback",
+    "/",
+    "/docs/installation",
+    "/blog",
+    "#",
+    "/zh-Hans/docs/installation",
+    "https://github.com/getsurfboard/manual",
+    "#theme-svg-external-link",
+    "/docs/how_to_use_this_app",
+    "/docs/profile-format/overview",
+    "/docs/profile-example/global",
+    "/docs/ai-profile-guide/",
+    "/docs/sshdump",
+    "/docs/changelog",
+    "/docs/faq",
+    "/docs/deeplink",
+    "/docs/bypass",
+    "/docs/location_permision",
+    "/docs/agreement/privacy_policy",
+    "https://t.me/surfboardnews",
+    "https://apkpure.com/surfboard/com.getsurfboard",
+    "https://github.com/getsurfboard/surfboard/releases/latest",
+    "https://github.com/getsurfboard/manual/edit/main/docs/installation.md",
+    "https://twitter.com/getsurfboard"
+  ]
+}

@@ -47,7 +47,7 @@ const previous = (id, platform) =>
 
 test("本批16个 GitHub 来源的真实资产按平台隔离，固定名称也绑定发布标签", () => {
   assert.deepEqual(
-    githubSources.slice(2).map((source) => source.appId),
+    githubSources.slice(2, 18).map((source) => source.appId),
     Object.keys(counts),
   );
   for (const [id, platforms] of Object.entries(counts)) {
@@ -155,7 +155,7 @@ test("本批10个 App Store 真实身份不串配，iOS 不更新 Mac", async ()
     "streisand",
   ];
   assert.deepEqual(
-    officialSources.slice(3).map((source) => source.appId),
+    officialSources.slice(3, 13).map((source) => source.appId),
     expected,
   );
   for (const id of expected) {

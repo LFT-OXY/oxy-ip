@@ -54,10 +54,10 @@ test("第04票固定25项与首票合计33项，身份、平台、图标、逐�
     expected.map((app) => app.id),
   );
   assert.deepEqual(
-    apps.map((app) => app.id),
+    apps.slice(0, 33).map((app) => app.id),
     baseline.apps.slice(0, 33).map((app) => app.id),
   );
-  assert.equal(new Set(apps.map((app) => app.id)).size, 33);
+  assert.equal(new Set(apps.slice(0, 33).map((app) => app.id)).size, 33);
   for (const item of expected) {
     const app = apps.find((app) => app.id === item.id);
     assert.equal(app.name, item.name);
@@ -114,7 +114,7 @@ test("源码可见的新状态使用真实英文翻译且可筛选", async () =>
     assert.equal(t(codeLabels.available), "Source available");
     assert.deepEqual(
       filterApps(
-        apps,
+        apps.slice(0, 33),
         releases,
         readFilters(new URLSearchParams("code=available")),
         t,

@@ -1,0 +1,36 @@
+{
+  "id": 374888957,
+  "tag_name": "1.4.2-rev-24",
+  "name": "1.4.2-rev-24",
+  "html_url": "https://github.com/starifly/NekoBoxForAndroid/releases/tag/1.4.2-rev-24",
+  "published_at": "2026-08-22T09:36:54Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "",
+  "assets": [
+    {
+      "id": 524887103,
+      "name": "NekoBoxF-1.4.2-rev-24-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 524887100,
+      "name": "NekoBoxF-1.4.2-rev-24-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 524887101,
+      "name": "NekoBoxF-1.4.2-rev-24-x86.apk",
+      "browser_download_url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 524887102,
+      "name": "NekoBoxF-1.4.2-rev-24-x86_64.apk",
+      "browser_download_url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86_64.apk",
+      "state": "uploaded"
+    }
+  ]
+}

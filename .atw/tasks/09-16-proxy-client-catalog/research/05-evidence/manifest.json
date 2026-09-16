@@ -1,0 +1,105 @@
+{
+  "note": "2026-09-16实际HTTP/API响应裁剪；未改写版本、URL或资产。readme/reference/page为抓取文本；没有进行全量包HEAD或生产同步。releaseList仅已读首页最多100项，不声称穷尽历史。",
+  "files": [
+    {
+      "file": "clashx-meta.json",
+      "sha256": "64b0f035fb0c15306090f2af8b879ef7f5671c92cc1e6cb6637d172009d76016"
+    },
+    {
+      "file": "v2rayu.json",
+      "sha256": "dca780bda388eb45f9b6f450b6bb69dc77d3ee70e14594e237fd483121754966"
+    },
+    {
+      "file": "surfboard.json",
+      "sha256": "796094fb8d421242b06e7cd5db94e624144886f45c2097aebebdd771e5f2b34a"
+    },
+    {
+      "file": "insightbox.json",
+      "sha256": "e3ddbb1b2b5d57aaffdfd4a28ef942bb6452d96fc49efac4684e530f542cde76"
+    },
+    {
+      "file": "xray-gui.json",
+      "sha256": "e034348b28fdb0f4c7e8a16446170c16f853969a307e42dd8e4814c2043c1a4c"
+    },
+    {
+      "file": "clash-mi.json",
+      "sha256": "16d70c93260ee556c4fde581950f9429b5cf485928b76fc65d093257223e1078"
+    },
+    {
+      "file": "flclashx.json",
+      "sha256": "f1268eb4fb118e28ccea78ee2666b8d767387915b3f707aa7d53daa31c06c82b"
+    },
+    {
+      "file": "mikubox-for-android.json",
+      "sha256": "bb01b4957dea18898ff99849e211b787f1623829cce75bdefad9124708e25d26"
+    },
+    {
+      "file": "kunbox.json",
+      "sha256": "bab976b134ad6244966646d49e479697760c3767dd44c2224ec39f286789812b"
+    },
+    {
+      "file": "nekobox-by-starifly.json",
+      "sha256": "8cf6eb6f3fddf9fe1590c2d86e91363ef8ca5cb248979afee7929c90c5379fcd"
+    },
+    {
+      "file": "happ-proxy.json",
+      "sha256": "91447996a0502c6fb33b47cd1b2cfb46724f2102249d4cc4846945c62703ea94"
+    },
+    {
+      "file": "clash-xiaoy.json",
+      "sha256": "b0576093cda3b26114c6d7d50b7e47cef1045bf8ba6e8b88932159cca15bff62"
+    },
+    {
+      "file": "monadbox.json",
+      "sha256": "b7c9aecc63f30701eb7fdc7603a617395c481af8e476e1794ba57afdb826fa45"
+    },
+    {
+      "file": "mconnect.json",
+      "sha256": "c505893c3314a43490ccfdab78a720d619afa2a53af418959112718f11433b0b"
+    },
+    {
+      "file": "vproxy.json",
+      "sha256": "7ab833944762ce1ce06eb6a056bde3cad47dc78c4ec88f229caf655d558134e8"
+    },
+    {
+      "file": "flyclash.json",
+      "sha256": "2f6bb28fe7026879e375c8e76f9553eea9fda7111836f70e3ed76f5f45cef125"
+    },
+    {
+      "file": "flyclash-android.json",
+      "sha256": "63c39f88260af8ddb031e46d438652c03b59229845d05c26bdd86a09c489171f"
+    },
+    {
+      "file": "sudodroid.json",
+      "sha256": "91272becac66fe143df217aac23896bc5c3108991c177614bca4ca422454d747"
+    },
+    {
+      "file": "box-for-root.json",
+      "sha256": "d0d6185022d10747d8c00e1e0642ea6ca266d1242c560f18f6fbf4732cd15d37"
+    },
+    {
+      "file": "surfing.json",
+      "sha256": "f564eb68fd726da968bd907bef0aa6ff4dc8df3a24adf7109bc9064aa96a1047"
+    },
+    {
+      "file": "box4magisk.json",
+      "sha256": "eca2df3cabd94d536b5265087cb2102679c829507daca071d092f400af60bc18"
+    },
+    {
+      "file": "box-for-android.json",
+      "sha256": "c0b33b9493711dfc2dcee5e8faa67d329ccb241db631b0aeed7a585f7d78bc6c"
+    },
+    {
+      "file": "akashaproxy.json",
+      "sha256": "ac8f1ee72bcc92f0420a2d75b093a2bab271c87260446ae602d90afa673f1ee6"
+    },
+    {
+      "file": "clash-mix.json",
+      "sha256": "ef878cf4d69977017c2e2bb857507747e0201b235832cb6b2fc88aea946ded5e"
+    },
+    {
+      "file": "anywhere.json",
+      "sha256": "21307f577ca6dafbbb127e5b1b3b1752c42b21af0d490332b4019a7a8d959004"
+    }
+  ]
+}

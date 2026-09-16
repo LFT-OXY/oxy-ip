@@ -1,0 +1,180 @@
+{
+  "id": 356079968,
+  "tag_name": "v0.4.2",
+  "name": "v0.4.2",
+  "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2",
+  "published_at": "2026-07-18T10:51:50Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "- fix macos zashboard webview lingering after close\r\n- macos config editor close without prompt when unchanged\r\n- fix macos editor window engine leak on close\r\n- macos config editor auto-update prompt\r\n- macos config editor in native window\r\n- macos zashboard in native webview window\r\n- fix server card and hero location display\r\n- fix file_picker oom, remove file upload buttons, local zashboard, fix fgs startForeground crash\r\n- fix macos zashboard, tv proxy dpad nav, zashboard auto controller, linux journal icons\r\n\r\n<div align=center>\r\n\r\n[![Release Downloads](https://img.shields.io/github/downloads/pluralplay/FlClashX/v0.4.2/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/pluralplay/FlClashX/v0.4.2/)\r\n\r\n</div>\r\n\r\n**Download based on your OS:**\r\n\r\n<div align=left>\r\n<table>\r\n    <thead align=left>\r\n        <tr>\r\n            <th>OS</th>\r\n            <th>Download</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody align=left>\r\n        <tr>\r\n        <td>Android</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk\"><img src=\"https://img.shields.io/badge/APK-universal-96ed89.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>Windows</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-arm-2d7d9a.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm.zip\"><img src=\"https://img.shields.io/badge/Portable-arm-67b7d1.svg?logo=windows\"></a>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>macOS</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple\"></a><br>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>Linux</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage\"><img src=\"https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb\"><img src=\"https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm\"><img src=\"https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat\"></a><br>\r\n                <a href=\"https://aur.archlinux.org/packages/flclashx-bin\"><img src=\"https://img.shields.io/aur/version/flclashx-bin\"></a>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n\r\n\r\n</div>\r\n\r\n<div dir=\"ltr\">\r\n\r\n**List of all changes:** [ChangeLog](https://github.com/pluralplay/FlClashX/blob/main/CHANGELOG.md)\r\n\r\n</div>\r\n",
+  "assets": [
+    {
+      "id": 481390071,
+      "name": "FlClashX-android-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390068,
+      "name": "FlClashX-android-arm64-v8a.apk.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390075,
+      "name": "FlClashX-android-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390059,
+      "name": "FlClashX-android-armeabi-v7a.apk.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390080,
+      "name": "FlClashX-android-universal.apk",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390062,
+      "name": "FlClashX-android-universal.apk.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390070,
+      "name": "FlClashX-android-x86_64.apk",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390060,
+      "name": "FlClashX-android-x86_64.apk.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390073,
+      "name": "FlClashX-linux-amd64.AppImage",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390058,
+      "name": "FlClashX-linux-amd64.AppImage.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390072,
+      "name": "FlClashX-linux-amd64.deb",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390064,
+      "name": "FlClashX-linux-amd64.deb.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390066,
+      "name": "FlClashX-linux-amd64.rpm",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390051,
+      "name": "FlClashX-linux-amd64.rpm.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390078,
+      "name": "FlClashX-linux-arm64.deb",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390077,
+      "name": "FlClashX-linux-arm64.deb.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390067,
+      "name": "FlClashX-macos-amd64.dmg",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390061,
+      "name": "FlClashX-macos-amd64.dmg.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390069,
+      "name": "FlClashX-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390076,
+      "name": "FlClashX-macos-arm64.dmg.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390074,
+      "name": "FlClashX-windows-amd64-setup.exe",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390054,
+      "name": "FlClashX-windows-amd64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390063,
+      "name": "FlClashX-windows-amd64.zip",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390057,
+      "name": "FlClashX-windows-amd64.zip.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390055,
+      "name": "FlClashX-windows-arm64-setup.exe",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390052,
+      "name": "FlClashX-windows-arm64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390056,
+      "name": "FlClashX-windows-arm64.zip",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 481390053,
+      "name": "FlClashX-windows-arm64.zip.sha256",
+      "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip.sha256",
+      "state": "uploaded"
+    }
+  ]
+}

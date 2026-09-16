@@ -1,0 +1,411 @@
+{
+  "id": "sudodroid",
+  "referenceUrl": "https://huarun.win/apps/sudodroid",
+  "referenceText": "Title: Sudodroid：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/sudodroid\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Sudodroid\n\n![Image 1: Sudodroid 应用图标](https://huarun.win/app-icons/sudodroid.webp)\n\nSudoku 协议的 Android 官方客户端，专用于 sudoku:// 节点，并通过 VPN/TUN 接管设备流量。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Sudoku[查看依据](https://github.com/SUDOKU-ASCII/sudoku-android/blob/b4725b46066fa6be899611c6f2436e9a2dc79890/README.md)\n\n主导开发[SUDOKU-ASCII 团队](https://huarun.win/history/people/sudoku-ascii)SUDOKU-ASCII\n\n**40** Star**3** Fork\n\n[查看代码仓库](https://github.com/SUDOKU-ASCII/sudoku-android)\n统计更新于 2026年9月16日\n\n版本号 v0.3.1\n\n最后更新时间 2026年9月6日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n- Upgrade the bundled Sudoku core to upstream v0.5.0 and build it with Go 1.26.4.\n- Update hev-socks5-tunnel to stable commit 9a06bc6e7989da54e3d32ff701ef7a7ce4995d3a (release 2.17.1).[查看官方版本来源 ↗](https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.1)\n应用简介\n\n## 关于 Sudodroid\n\nSudoku 协议的 Android 官方客户端，专用于 sudoku:// 节点，并通过 VPN/TUN 接管设备流量。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/sudodroid)\n人物关联\n\n## 与 Sudodroid 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/sudoku-ascii.webp)**SUDOKU-ASCII 团队**Sudodroid 核心团队 由该开发者主导开发或长期维护](https://huarun.win/history/people/sudoku-ascii)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/SUDOKU-ASCII/sudoku-android",
+  "repository": {
+    "full_name": "SUDOKU-ASCII/sudoku-android",
+    "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android",
+    "description": "The client apk for sudoku protocol",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "homepage": null
+  },
+  "readme": "# Sudodroid (Android client for sudoku)\n\n\n[![Latest Release](https://img.shields.io/github/v/release/SUDOKU-ASCII/sudoku-android?style=for-the-badge)](https://github.com/SUDOKU-ASCII/sudoku-android/releases)\n[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=for-the-badge)](./LICENSE)\n\nCurrent release: `v0.4.0-rc.1` (release candidate) with Sudoku core commit `4889b53cb35355123bebd40e6c76a9582de7c23d` (post-`v0.5.0` main) and hev-socks5-tunnel `2.17.1`.\n\nSudodroid is a thin Android shell around the upstream [sudoku](https://github.com/SUDOKU-ASCII/sudoku) Go core. The UI is written with Kotlin + Jetpack Compose, while all protocol/transport logic is compiled into an AAR via `gomobile`. Highlights:\n\n- Full node editor with validation, per-node transport tuning (padding / HTTP mask / custom tables), and a toggle for packed (bandwidth-optimized) downlink.\n- Global network settings card (shared by all nodes): routing mode (Global/Direct/PAC) and PAC rule URLs, including direct rules, `-`/`_`-prefixed proxy rules, and `!`-prefixed reject rules.\n- Routing mode changes are saved immediately and restart the active proxy core; the PAC save button only applies edited rule URLs.\n- URL rule downloads use the upstream persistent cache with an Android app-private cache directory for offline startup fallback.\n- Proxy-only mode (no VPN required): starts Sudoku core and local mixed proxy directly for app-level proxy use cases.\n- Reverse TCP-over-WebSocket local forwarder UI (no VPN needed), equivalent to `./sudoku -rev-dial ... -rev-listen ...` for local SSH/RDP style hops.\n- Quick Settings tile to start/stop the VPN, plus notification traffic stats split by DIRECT vs PROXY.\n- Import/export `sudoku://` short links, copy them straight into the clipboard, and rename nodes inline.\n- Foreground VPN service that starts the Go core, binds a local mixed proxy, and bridges the device TUN interface through `hev-socks5-tunnel`.\n- Built-in latency probes for each node (runs the thin Kotlin dialer without affecting the active tunnel).\n- Keeps all configuration inside Jetpack DataStore; node selection survives process restarts.\n\n## Architecture\n\n```\n┌──────────────┐    gomobile bind     ┌────────────────────┐\n│  Android UI  │ ───────────────►     │  mobile/ (Go pkg)  │\n│ (Compose)    │                      │  uses internal/app │\n└──────────────┘                      └────────┬───────────┘\n        │                                      │\n        │ start/stop                           │ listens on 127.0.0.1:mixed_port\n        ▼                                      ▼\n┌──────────────────────┐      socks5      ┌─────────────────────┐\n│ SudokuVpnService     │ ◄─────────────── │ hev-socks5-tunnel   │\n│  (VpnService)        │   tun fd via JNI │  (ndk-build)        │\n└──────────────────────┘                  └─────────────────────┘\n```\n\nThe Go binding lives in `/mobile` and emits `sudodroid/app/libs/sudoku.aar`. `GoCoreClient` calls into that AAR to start/stop the upstream mixed proxy. The Kotlin UI is strictly for data entry, persistence, and calling into the native cores.\n\n## Native tunnel\n\nWe pull [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel) as a submodule and build it via `ndk-build`, with a tiny JNI bridge that feeds the TUN fd and socks5 upstream (local mixed proxy). Make sure the submodule is present (if you unpacked a ZIP, clone it into `sudodroid/third_party/hev-socks5-tunnel`), and have NDK r26.1 available:\n\n```bash\ngit submodule update --init --recursive   # or git clone https://github.com/heiher/hev-socks5-tunnel sudodroid/third_party/hev-socks5-tunnel\n./gradlew assembleRelease\n```\n\n## Build\n\n- Install Go 1.26.4 (or enable Go toolchain auto-selection), Android cmdline-tools, and NDK r26.1.\n- `./gradlew assembleRelease`\n\nDuring `preBuild`, Gradle will:\n\n1. Ensure `third_party/hev-socks5-tunnel` (and its submodules) are present.\n2. Run `scripts/build_sudoku_aar.sh`, which clones upstream `sudoku` at `SUDOKU_REF` (default: commit `4889b53cb35355123bebd40e6c76a9582de7c23d`, the latest upstream `main`), overlays the Android mobile entrypoints under `scripts/sudoku_patches/`, executes `gomobile bind` (default targets: `android/arm,android/arm64`) on `./pkg/mobile`, and drops the AAR into `app/libs/`.\n\nArtifacts live in `app/build/outputs/apk/<variant>/`.\n\n## Notes\n\n- Sudoku tables are generated with a Go-compatible RNG and key normalization, so keys pasted from the Go CLI (private or public) produce matching tables.\n- The VPN service creates the VPN session, excludes the app itself from the VPN to avoid socket loops, and hands the TUN file descriptor to `hev-socks5-tunnel`.\n- Downlink mode (pure Sudoku vs. packed) is controlled via the node editor and matches the upstream `enable_pure_downlink` flag and `sudoku://` short link `x` field.\n\n## Continuous integration\n\n`.github/workflows/android.yml` contains the GitHub Actions recipe used locally:\n\n- Installs Temurin JDK 17, Go 1.26.4, Android cmdline-tools + platform packages, and NDK r26.1.\n- Builds the `gomobile` AAR via `scripts/build_sudoku_aar.sh`.\n- Runs `./gradlew :app:assembleRelease` and uploads the resulting APK as an artifact.\n",
+  "treeSha": "b4725b46066fa6be899611c6f2436e9a2dc79890",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/res/drawable/ic_launcher.png",
+    "app/src/main/res/drawable/ic_launcher_background.xml",
+    "app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "app/src/main/res/drawable/ic_launcher_monochrome.xml",
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "app/src/main/res/raw/logo.svg",
+    "app/src/main/res/raw/logo_png.png",
+    "app/src/main/res/values/colors.xml",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values/themes.xml"
+  ],
+  "releaseList": [
+    {
+      "id": 386338937,
+      "tag_name": "v0.4.0-rc.1",
+      "name": "Sudodroid v0.4.0-rc.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.4.0-rc.1",
+      "published_at": "2026-09-10T14:06:40Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 383458161,
+      "tag_name": "v0.3.1",
+      "name": "Sudodroid v0.3.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.1",
+      "published_at": "2026-09-06T03:57:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 352597534,
+      "tag_name": "v0.3.0",
+      "name": "Sudodroid v0.3.0",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.0",
+      "published_at": "2026-07-11T20:09:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 333134715,
+      "tag_name": "v0.2.15",
+      "name": "Sudodroid v0.2.15",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.15",
+      "published_at": "2026-06-02T13:37:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 320116083,
+      "tag_name": "v0.2.14",
+      "name": "Sudodroid v0.2.14",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.14",
+      "published_at": "2026-05-10T12:11:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 317057583,
+      "tag_name": "v0.2.13",
+      "name": "Sudodroid v0.2.13",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.13",
+      "published_at": "2026-05-04T07:57:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 306250788,
+      "tag_name": "v0.2.12",
+      "name": "Sudodroid v0.2.12",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.12",
+      "published_at": "2026-04-07T19:06:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 305409937,
+      "tag_name": "v0.2.11",
+      "name": "Sudodroid v0.2.11",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.11",
+      "published_at": "2026-04-05T11:16:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 304598598,
+      "tag_name": "v0.2.9",
+      "name": "Sudodroid v0.2.9",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.9",
+      "published_at": "2026-04-02T10:02:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 303617912,
+      "tag_name": "v0.2.8",
+      "name": "Sudodroid v0.2.8",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.8",
+      "published_at": "2026-03-31T10:00:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299576383,
+      "tag_name": "v0.2.6",
+      "name": "Sudodroid v0.2.6",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.6",
+      "published_at": "2026-03-20T19:47:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 296169685,
+      "tag_name": "v0.2.5",
+      "name": "Sudodroid v0.2.5",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.5",
+      "published_at": "2026-03-12T12:56:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 295320865,
+      "tag_name": "v0.2.4",
+      "name": "Sudodroid v0.2.4",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.4",
+      "published_at": "2026-03-10T18:52:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 294102294,
+      "tag_name": "v0.2.3",
+      "name": "Sudodroid v0.2.3",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.3",
+      "published_at": "2026-03-06T21:14:40Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 293991457,
+      "tag_name": "v0.2.2",
+      "name": "Sudodroid v0.2.2",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.2",
+      "published_at": "2026-03-06T15:41:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 292866379,
+      "tag_name": "v0.2.1",
+      "name": "Sudodroid v0.2.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.1",
+      "published_at": "2026-03-04T08:02:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 291680298,
+      "tag_name": "v0.2.0",
+      "name": "Sudodroid v0.2.0",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.2.0",
+      "published_at": "2026-02-28T20:48:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289359093,
+      "tag_name": "v0.1.8",
+      "name": "Sudodroid v0.1.8",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.8",
+      "published_at": "2026-02-23T10:39:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 288360742,
+      "tag_name": "v0.1.7",
+      "name": "Sudodroid v0.1.7",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.7",
+      "published_at": "2026-02-19T18:21:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 287280793,
+      "tag_name": "v0.1.6",
+      "name": "Sudodroid v0.1.6",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.6",
+      "published_at": "2026-02-17T14:24:16Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 286434649,
+      "tag_name": "v0.1.4",
+      "name": "Sudodroid v0.1.4",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.4",
+      "published_at": "2026-02-14T21:22:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 285881687,
+      "tag_name": "v0.1.3",
+      "name": "Sudodroid v0.1.3",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.3",
+      "published_at": "2026-02-12T21:45:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283620956,
+      "tag_name": "v0.1.2",
+      "name": "Sudodroid v0.1.2",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.2",
+      "published_at": "2026-02-06T05:35:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283492691,
+      "tag_name": "v0.1.1",
+      "name": "Sudodroid v0.1.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.1",
+      "published_at": "2026-02-05T19:29:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281626727,
+      "tag_name": "v0.1.0",
+      "name": "Sudodroid v0.1.0",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.1.0",
+      "published_at": "2026-01-30T18:44:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279155539,
+      "tag_name": "v0.0.13",
+      "name": "Sudodroid v0.0.13",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.13",
+      "published_at": "2026-01-22T20:58:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 276731740,
+      "tag_name": "v0.0.12",
+      "name": "Sudodroid v0.0.12",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.12",
+      "published_at": "2026-01-14T13:55:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 274589010,
+      "tag_name": "v0.0.11",
+      "name": "Sudodroid v0.0.11",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.11",
+      "published_at": "2026-01-06T17:25:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273349495,
+      "tag_name": "v0.0.10",
+      "name": "Sudodroid v0.0.10",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.10",
+      "published_at": "2025-12-30T07:29:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272467543,
+      "tag_name": "v0.0.9",
+      "name": "Sudodroid v0.0.9",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.9",
+      "published_at": "2025-12-23T13:06:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272214122,
+      "tag_name": "v0.0.8",
+      "name": "Sudodroid v0.0.8",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.8",
+      "published_at": "2025-12-22T13:50:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 269052336,
+      "tag_name": "v0.0.5",
+      "name": "Sudodroid v0.0.5",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.5",
+      "published_at": "2025-12-10T09:55:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 268080814,
+      "tag_name": "v0.0.4",
+      "name": "Sudodroid v0.0.4",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.4",
+      "published_at": "2025-12-07T08:19:09Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 267771627,
+      "tag_name": "v0.0.3",
+      "name": "Sudodroid v0.0.3",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.3",
+      "published_at": "2025-12-05T14:04:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 267689266,
+      "tag_name": "v0.0.2",
+      "name": "Sudodroid v0.0.2",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.2",
+      "published_at": "2025-12-05T08:45:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 265911858,
+      "tag_name": "v0.0.1",
+      "name": "Sudodroid v0.0.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.0.1",
+      "published_at": "2025-11-28T07:48:59Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 383458161,
+      "tag_name": "v0.3.1",
+      "name": "Sudodroid v0.3.1",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.1",
+      "published_at": "2026-09-06T03:57:24Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "- Upgrade the bundled Sudoku core to upstream `v0.5.0` and build it with Go `1.26.4`.\r\n- Update hev-socks5-tunnel to stable commit `9a06bc6e7989da54e3d32ff701ef7a7ce4995d3a` (release `2.17.1`).\r\n",
+      "assets": [
+        {
+          "id": 547308331,
+          "name": "sudodroid-v0.3.1-arm64-v8a.apk",
+          "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-arm64-v8a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 547308333,
+          "name": "sudodroid-v0.3.1-armeabi-v7a.apk",
+          "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-armeabi-v7a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 547308329,
+          "name": "sudodroid-v0.3.1-universal.apk",
+          "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-universal.apk",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "additionalOfficialText": {
+    "sudodroid-license": "Copyright (C) 2026 by saba <contact me via issue>\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program. If not, see <http://www.gnu.org/licenses/>.\n\nIn addition, no derivative work may use the name or imply association\nwith this application without prior consent."
+  }
+}

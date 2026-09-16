@@ -1,0 +1,321 @@
+{
+  "now": "2026-09-16T13:37:18.253Z",
+  "errors": [
+    {
+      "appId": "v2rayu",
+      "platform": "macos",
+      "message": "安装包临时访问失败"
+    },
+    {
+      "appId": "flclashx",
+      "platform": "android",
+      "message": "fetch failed"
+    },
+    {
+      "appId": "flclashx",
+      "platform": "windows",
+      "message": "fetch failed"
+    },
+    {
+      "appId": "flclashx",
+      "platform": "macos",
+      "message": "fetch failed"
+    },
+    {
+      "appId": "flclashx",
+      "platform": "linux",
+      "message": "fetch failed"
+    },
+    {
+      "appId": "happ-proxy",
+      "platform": "windows",
+      "message": "安装包临时访问失败"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.45/ClashX.Meta.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-arm64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-arm64-v8a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-armeabi-v7a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-universal-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86_64-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1201.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1202.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1203.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1204.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_armeabi-v7a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_macos_universal.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.AppImage",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-armeabi-v7a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86_64.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-arm64-v8a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-armeabi-v7a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-armeabi-v7a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86_64.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.pkg.tar.zst",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.pkg.tar.zst",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64-setup.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x86_64_portable.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_aarch64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.AppImage",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-arm64-v8a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-armeabi-v7a-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-universal-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86_64-release.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-universal.apk.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/VXInstaller.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.7z",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-arm64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-armeabi-v7a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-universal.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/GitMetaio/Surfing/releases/download/v7.8.4/Surfing_v7.8.4_release.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/CHIZI-0618/box4magisk/releases/download/v5.1/box4_v5.1.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/boxproxy/box/releases/download/1.2.8/box-1.2.8.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/akashaProxy/akashaProxy/releases/download/20260825-e3ba5d6/akashaProxy-20260825-e3ba5d6.zip",
+      "result": "valid"
+    }
+  ]
+}

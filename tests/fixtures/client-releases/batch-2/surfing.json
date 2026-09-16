@@ -1,0 +1,18 @@
+{
+  "id": 383778205,
+  "tag_name": "v7.8.4",
+  "name": "v7.8.4",
+  "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4",
+  "published_at": "2026-09-07T01:21:28Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "# What's Changed\n### 📦 Sync Latest Branch\n- Remove SurfingTile submodule\n- Network filtering supports SSID/MAC matching\n\n### 📱 SurfingTile v6.0.0\n- New package `com.github.surfing`\n- [View detailed changelog](https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/main/app/version/com.github.surfing/release.json)\n\n",
+  "assets": [
+    {
+      "id": 547938285,
+      "name": "Surfing_v7.8.4_release.zip",
+      "browser_download_url": "https://github.com/GitMetaio/Surfing/releases/download/v7.8.4/Surfing_v7.8.4_release.zip",
+      "state": "uploaded"
+    }
+  ]
+}

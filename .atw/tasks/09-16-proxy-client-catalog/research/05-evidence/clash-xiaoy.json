@@ -1,0 +1,382 @@
+{
+  "id": "clash-xiaoy",
+  "referenceUrl": "https://huarun.win/apps/clash-xiaoy",
+  "referenceText": "Title: clash-xiaoy：Windows、macOS、Linux 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/clash-xiaoy\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Windows](https://huarun.win/platform/windows)\n3.   clash-xiaoy\n\n![Image 1: clash-xiaoy 应用图标](https://huarun.win/app-icons/clash-xiaoy.webp)\n\nClash Nyanpasu 的 UI 增强分支，保留原代理逻辑，重点改造界面、内核管理和安装体验。\n\n设备：未识别 GitHub Release\n\n适用平台[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)[Linux](https://huarun.win/platform/linux)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/aimy1/clash-xiaoy/blob/d4ea2cf59d97b68faf3cb4b1a92e28145005fa69/README.md)\n\n主导开发[Asniya](https://huarun.win/history/people/aimy1)aimy1\n\n**90** Star**3** Fork\n\n[查看代码仓库](https://github.com/aimy1/clash-xiaoy)\n统计更新于 2026年9月16日 仓库已归档\n\n版本号 v2.7.20\n\n最后更新时间 2026年4月25日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n✨ Update: UI Simplification & Experimental Cleanup\n\n🧹 Removed Experimental UI\n\n- Completely removed the experimental UI system\n- Deleted src/pages/(experimental) and all related pages:\n\n- Dashboard\n- Proxy\n- Profiles\n- Rules\n- Settings\n- Removed all related routing to prevent invalid navigation\n\n🔘 Removed Experimental Entry\n\n- Removed \"Switch to Experimental UI\" button from settings\n- Deleted ExperimentalSwitch component (TSX & JSX)\n- Cleaned up:\n\n- useNavigate usage\n- setEnabledExperimentalRouter references\n\nThe UI now only exposes stable and supported features.\n\n🎨 UI Redesign (Windows-style)\n\nRefactored the overall interface to align with a cleaner, native desktop experience:\n\nRemoved Effects\n\n- Removed cyber-glass, glow, and neon effects\n- Removed motion/animation classes:\n\n- animate-float\n- ios-motion\n- Removed decorative visual noise (scanlines, glow layers)\n\nUpdated Layout & Components\n\n- Simplified sidebar layout and spacing\n- Updated navigation buttons:\n\n- Removed glow effects\n- Added subtle hover transitions\n- Refined main content container:\n\n- Cleaner background & borders\n- Improved visual hierarchy\n- Updated top bar to a card-style layout\n\n🧩 Design Adjustments\n\n- Unified border radius:\n\n- Main layout container now uses border-radius: 9px\n- Increased logo size:\n\n- Updated to h-28 w-28 for better visibility\n- Improved spacing and padding consistency\n\n✅ Result\n\n- Cleaner and more maintainable codebase\n- Fully stable routing (no dead links)\n- More consistent and minimal UI\n- Improved usability and readability\n- Better alignment with native Windows design language\n\n⚠️ Notes\n\n- Experimental UI is no longer available\n- Future updates will focus on stability and core features\n\n🚀 Status\n\nFrontend is now fully functional and ready for daily use.[查看官方版本来源 ↗](https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20)\n应用简介\n\n## 关于 clash-xiaoy\n\nClash Nyanpasu 的 UI 增强分支，保留原代理逻辑，重点改造界面、内核管理和安装体验。\n\n适用于 Windows、macOS、Linux。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/clash-xiaoy)\n人物关联\n\n## 与 clash-xiaoy 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/aimy1.webp)**Asniya**clash-xiaoy 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/aimy1)\n*   [![Image 3](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 4](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/aimy1/clash-xiaoy",
+  "repository": {
+    "full_name": "aimy1/clash-xiaoy",
+    "html_url": "https://github.com/aimy1/clash-xiaoy",
+    "description": "# clash-xiaoy 是一个基于 Clash Nyanpasu 的 UI 深度增强版本，   在完全不影响原有功能逻辑的前提下，对 UI、内核下载方式、安装流程与视觉系统进行了系统性重构。",
+    "default_branch": "main",
+    "archived": true,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": ""
+  },
+  "readme": "# 🚀 Clash-Xiaoy\n\n\n[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/clashxiaoy)\n[![GitHub Release](https://img.shields.io/github/v/release/aimy1/clash-xiaoy?style=for-the-badge&logo=github)](https://github.com/aimy1/clash-xiaoy/releases)\n[![License](https://img.shields.io/github/license/aimy1/clash-xiaoy?style=for-the-badge&logo=gnu)](https://github.com/aimy1/clash-xiaoy/blob/main/LICENSE)\n[![Stars](https://img.shields.io/github/stars/aimy1/clash-xiaoy?style=for-the-badge&logo=github)](https://github.com/aimy1/clash-xiaoy/stargazers)\n[![Forks](https://img.shields.io/github/forks/aimy1/clash-xiaoy?style=for-the-badge&logo=github)](https://github.com/aimy1/clash-xiaoy/network/members)\n\n**A Modern UI Enhancement Fork Based on Clash Nyanpasu**\n\n*[简体中文](./README_zh-CN.md) • [繁體中文](./README_zh-TW.md)*\n\n</div>\n\n---\n\n## ✨ Why Clash-Xiaoy?\n\n> 🎯 **Engineering-level UI Reconstruction + Installation Experience Optimization**\n\nClash-Xiaoy is a modern UI enhancement fork that completely reimagines the Clash Nyanpasu experience. Without modifying the core proxy logic, we've systematically reconstructed the user interface, kernel management, and visual identity to deliver an unparalleled level of polish and reliability.\n\nUnlike simple \"skins\" or superficial modifications, Clash-Xiaoy represents a genuine engineering effort focused on **stability**, **usability**, and **completeness**.\n\n---\n\n## 🎨 Features\n\n### 🔧 Kernel Management\n| Feature | Description |\n|---------|-------------|\n| 🚀 **Stable Downloads** | Use more reliable download sources with higher success rates |\n| ⚡ **Automated Installation** | Streamlined installation process with clear progress indicators |\n| 🎯 **Clear Error Messages** | Download failures are now easier to diagnose and resolve |\n| ✅ **High Reliability** | Significantly improved overall success rate |\n\n### 🎨 Modern Interface\n| Feature | Description |\n|---------|-------------|\n| 🌙 **Dark Theme** | Modern dark theme optimized for extended use |\n| 📐 **Clean Layout** | Revamped interface structure with better information hierarchy |\n| 📱 **Responsive Design** | Adapts seamlessly to different screen sizes |\n| ✨ **Visual Consistency** | Higher visual completeness across all components |\n\n### 🖼️ Brand Identity\n| Feature | Description |\n|---------|-------------|\n| 🎨 **New Logo** | Completely redesigned logo |\n| 🎯 **Unified Style** | Consistent visual language throughout |\n| 🖥️ **Multi-platform Icons** | Adapted for window, tray, and startup |\n\n### 🔗 Links & Resources\n| Feature | Description |\n|---------|-------------|\n| ✔️ **Verified Links** | All links tested and confirmed working |\n| 📦 **Kernel Downloads** | Stable and reliable kernel download sources |\n| 🔄 **Auto Updates** | Seamless update checking and installation |\n\n---\n\n\n## 📥 Installation\n\n### Windows\n```powershell\n# Download from GitHub Releases\n# Run the installer and follow the prompts\n# Launch Clash-Xiaoy\n```\n\n### macOS\n```bash\n# Download DMG from GitHub Releases\n# Drag to Applications folder\n# Launch Clash-Xiaoy\n```\n\n### Linux\n```bash\n# AppImage\nchmod +x Clash-Xiaoy-*.AppImage\n./Clash-Xiaoy-*.AppImage\n\n# DEB Package\nsudo dpkg -i clash-xiaoy_*.deb\n```\n\n[![Download Latest](https://img.shields.io/badge/Download-Latest%20Release-2CA5E0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aimy1/clash-xiaoy/releases)\n\n---\n\n## 🛠️ Development\n\n### Prerequisites\n- Node.js 16+\n- Rust 1.60+\n- Tauri CLI\n\n### Quick Start\n```bash\n# Clone the repository\ngit clone https://github.com/aimy1/clash-xiaoy.git\ncd clash-xiaoy\n\n# Install frontend dependencies\ncd frontend/clash-xiaoy\nnpm install\n\n# Start development server\nnpm run dev\n```\n\n### Build from Source\n```bash\n# Build backend\ncd ../../backend/tauri\ncargo tauri build\n```\n\n---\n\n## 💡 Design Philosophy\n\n> **\"Only enhance experience, not break original functionality.\"**\n\n- ✅ Core Clash behavior remains unchanged\n- ✅ Rule system compatibility maintained\n- ✅ Policy group logic preserved\n- ✅ Configuration file format unchanged\n- ✅ 100% compatible with Clash ecosystem\n\n---\n\n## 📊 Feature Matrix\n\n| Feature | Status |\n|---------|:------:|\n| Node Management & Switching | ✅ |\n| Policy Groups | ✅ |\n| Configuration Loading | ✅ |\n| Subscription Updates | ✅ |\n| Traffic Statistics | ✅ |\n| System Tray | ✅ |\n| Startup on Boot | ✅ |\n| Proxy Start/Stop | ✅ |\n\n---\n\n## ⚠️ Disclaimer\n\n- This project does not provide proxy services\n- No node resources included\n- No network content recommendation or guidance\n- Only enhances Clash-Xiaoy's interface and user experience\n- Please comply with local laws and regulations\n\n---\n\n## 🙏 Acknowledgments\n\n<div align=\"center\">\n\n| Project | Description |\n|---------|-------------|\n| [Clash](https://github.com/Dreamacro/clash) | Core proxy engine |\n| [Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu) | Base project |\n| [Tauri](https://tauri.app/) | Cross-platform framework |\n| [React](https://react.dev/) | UI library |\n| [MUI](https://mui.com/) | Component library |\n\n*And all open source contributors*\n\n</div>\n\n---\n\n## 📞 Contact\n\n<div align=\"center\">\n\n[![Email](https://img.shields.io/badge/Email-aisaniya12@proton.me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aisaniya12@proton.me)\n[![Telegram](https://img.shields.io/badge/Telegram-Join%20Community-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/clashxiaoy)\n\n</div>\n\n---\n\n<div align=\"center\">\n  <p>\n    <strong>Made with ❤️ by the Clash-Xiaoy Team</strong>\n  </p>\n  <p>\n    <sub>© 2024 Clash-Xiaoy. All rights reserved.</sub>\n  </p>\n</div>\n",
+  "treeSha": "d4ea2cf59d97b68faf3cb4b1a92e28145005fa69",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_zh-CN.md",
+    "README_zh-TW.md",
+    "backend/clash-xiaoy-egui/assets/down.svg",
+    "backend/clash-xiaoy-egui/assets/download.svg",
+    "backend/clash-xiaoy-egui/assets/icon.png",
+    "backend/clash-xiaoy-egui/assets/tray-icon.png",
+    "backend/clash-xiaoy-egui/assets/up.svg",
+    "backend/clash-xiaoy-egui/assets/upload.svg",
+    "backend/tauri-plugin-deep-link/LICENSE_APACHE-2.0",
+    "backend/tauri-plugin-deep-link/LICENSE_MIT",
+    "backend/tauri-plugin-deep-link/README.md",
+    "backend/tauri/icons/128x128.png",
+    "backend/tauri/icons/128x128@2x.png",
+    "backend/tauri/icons/32x32.png",
+    "backend/tauri/icons/64x64.png",
+    "backend/tauri/icons/Square107x107Logo.png",
+    "backend/tauri/icons/Square142x142Logo.png",
+    "backend/tauri/icons/Square150x150Logo.png",
+    "backend/tauri/icons/Square284x284Logo.png",
+    "backend/tauri/icons/Square30x30Logo.png",
+    "backend/tauri/icons/Square310x310Logo.png",
+    "backend/tauri/icons/Square44x44Logo.png",
+    "backend/tauri/icons/Square71x71Logo.png",
+    "backend/tauri/icons/Square89x89Logo.png",
+    "backend/tauri/icons/StoreLogo.png",
+    "backend/tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+    "backend/tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+    "backend/tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+    "backend/tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+    "backend/tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+    "backend/tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+    "backend/tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+    "backend/tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+    "backend/tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+    "backend/tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+    "backend/tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "backend/tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+    "backend/tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+    "backend/tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "backend/tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+    "backend/tauri/icons/icon-shrink.png",
+    "backend/tauri/icons/icon.png",
+    "backend/tauri/icons/ios/AppIcon-20x20@1x.png",
+    "backend/tauri/icons/ios/AppIcon-20x20@2x-1.png",
+    "backend/tauri/icons/ios/AppIcon-20x20@2x.png",
+    "backend/tauri/icons/ios/AppIcon-20x20@3x.png",
+    "backend/tauri/icons/ios/AppIcon-29x29@1x.png",
+    "backend/tauri/icons/ios/AppIcon-29x29@2x-1.png",
+    "backend/tauri/icons/ios/AppIcon-29x29@2x.png",
+    "backend/tauri/icons/ios/AppIcon-29x29@3x.png",
+    "backend/tauri/icons/ios/AppIcon-40x40@1x.png",
+    "backend/tauri/icons/ios/AppIcon-40x40@2x-1.png",
+    "backend/tauri/icons/ios/AppIcon-40x40@2x.png",
+    "backend/tauri/icons/ios/AppIcon-40x40@3x.png",
+    "backend/tauri/icons/ios/AppIcon-512@2x.png",
+    "backend/tauri/icons/ios/AppIcon-60x60@2x.png",
+    "backend/tauri/icons/ios/AppIcon-60x60@3x.png",
+    "backend/tauri/icons/ios/AppIcon-76x76@1x.png",
+    "backend/tauri/icons/ios/AppIcon-76x76@2x.png",
+    "backend/tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+    "backend/tauri/icons/tray-icon.png",
+    "backend/tauri/icons/win-tray-icon-blue.png",
+    "backend/tauri/icons/win-tray-icon-pink.png",
+    "backend/tauri/icons/win-tray-icon.png",
+    "frontend/clash-xiaoy/src/assets/image/christmas-hat.svg",
+    "frontend/clash-xiaoy/src/assets/image/core/clash-rs.png",
+    "frontend/clash-xiaoy/src/assets/image/core/clash.meta.png",
+    "frontend/clash-xiaoy/src/assets/image/core/clash.png",
+    "frontend/clash-xiaoy/src/assets/image/logo-black.svg",
+    "frontend/clash-xiaoy/src/assets/image/logo-blue.svg",
+    "frontend/clash-xiaoy/src/assets/image/logo-box.png",
+    "frontend/clash-xiaoy/src/assets/image/logo-christmas.png",
+    "frontend/clash-xiaoy/src/assets/image/logo-pink.svg",
+    "frontend/clash-xiaoy/src/assets/image/logo-white.svg",
+    "frontend/clash-xiaoy/src/assets/image/logo.svg",
+    "frontend/clash-xiaoy/src/assets/image/win-tray-icon-blue.png",
+    "scripts/deno/README.md"
+  ],
+  "releaseList": [
+    {
+      "id": 313634684,
+      "tag_name": "v2.7.20",
+      "name": "Clash-Xiaoy v2.7.20",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20",
+      "published_at": "2026-04-25T19:45:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313581255,
+      "tag_name": "v2.7.18",
+      "name": "Clash-xiaoy V2.7.18",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.18",
+      "published_at": "2026-04-25T13:04:13Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 303606597,
+      "tag_name": "v2.7.17-r8",
+      "name": "v2.7.17",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.17-r8",
+      "published_at": "2026-03-31T09:31:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 288652114,
+      "tag_name": "2.7.16",
+      "name": "2.7.16",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/2.7.16",
+      "published_at": "2026-02-20T10:01:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283704276,
+      "tag_name": "2.7.15",
+      "name": "2.7.15",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/2.7.15",
+      "published_at": "2026-02-06T10:58:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283248150,
+      "tag_name": "2.7.14",
+      "name": ".clash-xiaoy-W(UI调整)",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/2.7.14",
+      "published_at": "2026-02-05T07:51:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 282800494,
+      "tag_name": "clash-xiaoy-lgS2.6.13",
+      "name": ".clash-xiaoy-lgS（多语言的添加，此版本用作测试）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lgS2.6.13",
+      "published_at": "2026-02-04T02:55:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281807718,
+      "tag_name": "clash-xiaoy-W1.3",
+      "name": ".clash-xiaoy-W1.3",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-W1.3",
+      "published_at": "2026-01-31T18:15:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281454554,
+      "tag_name": "clas-xiaoy-W1.0",
+      "name": ".clash-xiaoy-W（做了些优化）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clas-xiaoy-W1.0",
+      "published_at": "2026-01-30T10:39:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281102590,
+      "tag_name": "clash-xiaoy-w",
+      "name": ".clash-xiaoy-W（第一个稳定版）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-w",
+      "published_at": "2026-01-29T13:20:57Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 280760879,
+      "tag_name": "clash-xiaoy-lgS2.11.1",
+      "name": ".clash-xiaoy-lgS（第一个安卓版本的测试）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lgS2.11.1",
+      "published_at": "2026-01-28T15:57:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279843378,
+      "tag_name": "clash-xiaoy-lgs2.3",
+      "name": ".clash-xiaoy-lgS（添加了新功能）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lgs2.3",
+      "published_at": "2026-01-26T07:55:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279610550,
+      "tag_name": "clash-xiaoy-lgS1.1",
+      "name": ".clash-xiaoy-lgS(做了细节处理)",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lgS1.1",
+      "published_at": "2026-01-24T09:24:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279867452,
+      "tag_name": "clah-xiaoy-lgS2.3.1",
+      "name": ".clash-xiaoy-lgS（修复bug）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clah-xiaoy-lgS2.3.1",
+      "published_at": "2026-01-26T09:46:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278230955,
+      "tag_name": "clash-xiaoy2.0",
+      "name": ".clash-xiaoy-2.0",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy2.0",
+      "published_at": "2026-01-20T11:47:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278011632,
+      "tag_name": "clash-xiaoy1.6.2",
+      "name": ".clash-xiaoy（已修复我已发现的bug）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy1.6.2",
+      "published_at": "2026-01-19T17:37:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278965337,
+      "tag_name": "clash-xiaoy-lgS1.0",
+      "name": "clah-xiaoy-lgS(稳定版)",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lgS1.0",
+      "published_at": "2026-01-22T11:36:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278608643,
+      "tag_name": "clash-xiaoy-lg2.3",
+      "name": ".clash-xiaoy-lg2.3",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lg2.3",
+      "published_at": "2026-01-21T12:24:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278385785,
+      "tag_name": "clash-xiaoy-lg2.1",
+      "name": ".clash-xiaoy-lg（bug已修复）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lg2.1",
+      "published_at": "2026-01-20T19:24:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278361594,
+      "tag_name": "clash-xiaoy-lg2.0",
+      "name": ".clash-xiaoy-lg",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-lg2.0",
+      "published_at": "2026-01-20T17:51:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277810352,
+      "tag_name": "clash-xiaoy1.6.1",
+      "name": ".clash-xiaoy1.6.1（能用，有点小问题，自己解决吧！）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy1.6.1",
+      "published_at": "2026-01-19T06:09:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278186812,
+      "tag_name": "clash-xiaoy-ui",
+      "name": ".clash-xiaoy（做了细节处理）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash-xiaoy-ui",
+      "published_at": "2026-01-20T09:44:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277745247,
+      "tag_name": "clash",
+      "name": ".clash-xiaoy（不推荐使用）",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/clash",
+      "published_at": "2026-01-18T19:47:03Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 313634684,
+      "tag_name": "v2.7.20",
+      "name": "Clash-Xiaoy v2.7.20",
+      "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20",
+      "published_at": "2026-04-25T19:45:27Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "# ✨ Update: UI Simplification & Experimental Cleanup\r\n\r\n## 🧹 Removed Experimental UI\r\n\r\n* Completely removed the `experimental` UI system\r\n* Deleted `src/pages/(experimental)` and all related pages:\r\n\r\n  * Dashboard\r\n  * Proxy\r\n  * Profiles\r\n  * Rules\r\n  * Settings\r\n* Removed all related routing to prevent invalid navigation\r\n\r\n## 🔘 Removed Experimental Entry\r\n\r\n* Removed \"Switch to Experimental UI\" button from settings\r\n* Deleted `ExperimentalSwitch` component (TSX & JSX)\r\n* Cleaned up:\r\n\r\n  * `useNavigate` usage\r\n  * `setEnabledExperimentalRouter` references\r\n\r\n> The UI now only exposes stable and supported features.\r\n\r\n---\r\n\r\n## 🎨 UI Redesign (Windows-style)\r\n\r\nRefactored the overall interface to align with a cleaner, native desktop experience:\r\n\r\n### Removed Effects\r\n\r\n* Removed `cyber-glass`, glow, and neon effects\r\n* Removed motion/animation classes:\r\n\r\n  * `animate-float`\r\n  * `ios-motion`\r\n* Removed decorative visual noise (scanlines, glow layers)\r\n\r\n### Updated Layout & Components\r\n\r\n* Simplified sidebar layout and spacing\r\n* Updated navigation buttons:\r\n\r\n  * Removed glow effects\r\n  * Added subtle hover transitions\r\n* Refined main content container:\r\n\r\n  * Cleaner background & borders\r\n  * Improved visual hierarchy\r\n* Updated top bar to a card-style layout\r\n\r\n---\r\n\r\n## 🧩 Design Adjustments\r\n\r\n* Unified border radius:\r\n\r\n  * Main layout container now uses `border-radius: 9px`\r\n* Increased logo size:\r\n\r\n  * Updated to `h-28 w-28` for better visibility\r\n* Improved spacing and padding consistency\r\n\r\n---\r\n\r\n## ✅ Result\r\n\r\n* Cleaner and more maintainable codebase\r\n* Fully stable routing (no dead links)\r\n* More consistent and minimal UI\r\n* Improved usability and readability\r\n* Better alignment with native Windows design language\r\n\r\n---\r\n\r\n## ⚠️ Notes\r\n\r\n* Experimental UI is **no longer available**\r\n* Future updates will focus on stability and core features\r\n\r\n---\r\n\r\n## 🚀 Status\r\n\r\nFrontend is now fully functional and ready for daily use.\r\n",
+      "assets": [
+        {
+          "id": 405483380,
+          "name": "clash-xiaoy-2.7.20-1.x86_64.rpm",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 405483443,
+          "name": "clash-xiaoy-2.7.20-1.x86_64.rpm.sha256",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 405486954,
+          "name": "clash-xiaoy_2.7.20_aarch64.dmg",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_aarch64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 405483399,
+          "name": "clash-xiaoy_2.7.20_amd64.AppImage",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.AppImage",
+          "state": "uploaded"
+        },
+        {
+          "id": 405483361,
+          "name": "clash-xiaoy_2.7.20_amd64.deb",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 405483451,
+          "name": "clash-xiaoy_2.7.20_amd64.deb.sha256",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 405486348,
+          "name": "clash-xiaoy_2.7.20_x64-setup.exe",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64-setup.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 405487079,
+          "name": "clash-xiaoy_2.7.20_x64.dmg",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 405486439,
+          "name": "clash-xiaoy_2.7.20_x86_64_portable.zip",
+          "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x86_64_portable.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

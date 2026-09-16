@@ -106,7 +106,7 @@ export default function ClientCatalog() {
   const { appId } = useParams();
   useEffect(() => {
     document.title = appId
-      ? `${apps.find((app) => app.id === appId)?.name ?? t("应用不存在")} · ${t("代理客户端")}`
+      ? `${t(apps.find((app) => app.id === appId)?.name ?? "应用不存在")} · ${t("代理客户端")}`
       : t("代理客户端");
   }, [appId]);
   return appId ? <ClientDetail key={appId} appId={appId} /> : <ClientList />;
@@ -241,7 +241,7 @@ function ClientList() {
                 <div className="client-card-heading">
                   <AppIcon app={app} />
                   <div>
-                    <h2>{app.name}</h2>
+                    <h2>{t(app.name)}</h2>
                     {app.aliases.length > 0 && (
                       <p className="client-alias">
                         {app.aliases.map((alias) => t(alias)).join(" / ")}
@@ -331,14 +331,14 @@ function ClientDetail({ appId }: { appId: string }) {
           {t("返回应用列表")}
         </Link>
         <span aria-hidden="true">/</span>
-        <span aria-current="page">{app.name}</span>
+        <span aria-current="page">{t(app.name)}</span>
       </nav>
       <ToolCard
         title={
           <div className="client-detail-heading">
             <AppIcon app={app} />
             <div>
-              <h1>{app.name}</h1>
+              <h1>{t(app.name)}</h1>
               {app.aliases.length > 0 && (
                 <p className="client-alias">
                   {app.aliases.map((alias) => t(alias)).join(" / ")}

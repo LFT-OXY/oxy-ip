@@ -272,21 +272,19 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   ]);
   const loader = join(directory, "fetch.mjs");
   const output = join(directory, "releases.json");
-  const batchDirectory = new URL(
-    "./fixtures/client-releases/batch-1/",
-    import.meta.url,
-  );
-  const batch = await Promise.all(
-    (await readdir(batchDirectory))
-      .filter(
-        (name) =>
-          name.endsWith(".json") &&
-          !["clashfest.json", "shadowsocks-nightly.json"].includes(name),
-      )
-      .map(async (name) =>
+  const batch = [];
+  for (const directory of ["batch-1", "batch-2"]) {
+    const batchDirectory = new URL(
+      `./fixtures/client-releases/${directory}/`,
+      import.meta.url,
+    );
+    for (const name of await readdir(batchDirectory)) {
+      if (!name.endsWith(".json")) continue;
+      batch.push(
         JSON.parse(await readFile(new URL(name, batchDirectory), "utf8")),
-      ),
-  );
+      );
+    }
+  }
   const fixtures = [flclash, v2rayng, ...batch.filter((raw) => raw.tag_name)];
   const stores = [
     shadowrocket,
@@ -312,9 +310,13 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
       }
       if (url === 'https://mac-release.stash.ws/appcast.xml') return new Response(appcast);
       const repo = new URL(url).pathname.split('/').slice(2,4).join('/');
-      const release = releases.find(r => r.html_url.startsWith('https://github.com/' + repo + '/releases/'));
-      if (!release) throw new Error('Missing release fixture: ' + url);
-      return Response.json(url.includes('/assets?') ? release.assets : [release]);
+      const matches = releases.filter(r => r.html_url.startsWith('https://github.com/' + repo + '/releases/'));
+      if (!matches.length) throw new Error('Missing release fixture: ' + url);
+      if (!url.includes('/assets?')) return Response.json(matches);
+      const releaseId = Number(new URL(url).pathname.split('/').at(-2));
+      const release = matches.find(r => r.id === releaseId);
+      if (!release) throw new Error('Missing asset fixture: ' + url);
+      return Response.json(release.assets);
     };`,
   );
   let storeFailure = false;

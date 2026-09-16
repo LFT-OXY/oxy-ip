@@ -1,0 +1,30 @@
+{
+  "id": 383458161,
+  "tag_name": "v0.3.1",
+  "name": "Sudodroid v0.3.1",
+  "html_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.1",
+  "published_at": "2026-09-06T03:57:24Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "- Upgrade the bundled Sudoku core to upstream `v0.5.0` and build it with Go `1.26.4`.\r\n- Update hev-socks5-tunnel to stable commit `9a06bc6e7989da54e3d32ff701ef7a7ce4995d3a` (release `2.17.1`).\r\n",
+  "assets": [
+    {
+      "id": 547308331,
+      "name": "sudodroid-v0.3.1-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547308333,
+      "name": "sudodroid-v0.3.1-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547308329,
+      "name": "sudodroid-v0.3.1-universal.apk",
+      "browser_download_url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-universal.apk",
+      "state": "uploaded"
+    }
+  ]
+}

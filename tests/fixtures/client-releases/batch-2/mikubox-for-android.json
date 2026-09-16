@@ -1,0 +1,36 @@
+{
+  "id": 289162447,
+  "tag_name": "1.4.3-UwU-2",
+  "name": "1.4.3-UwU-2",
+  "html_url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/tag/1.4.3-UwU-2",
+  "published_at": "2026-02-22T16:51:21Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "![512714592-75380d02-5e9c-4f76-be33-646442a2623c](https://github.com/user-attachments/assets/7c3c15a7-b7d7-43da-b071-69bffcda121f)\r\n## Changelog\r\n• sync to latest NekoBox version (1.4.2)\r\n• add disabled bottom sheet menu\r\n• add reverse to old style\r\n• add gif support in all banner (but, if it's a GIF, the cropping process won't work. Basically, GIFs can't be cropped.)\r\n• add hide particles animation in banner\r\n• add host checker\r\n• add new banner home\r\n• add share button to bottom sheet (This can be disabled if you enable \"disabled bottomsheet in homepage\" in Miku's wardrobe)\r\n• dropped support xhttp transport because official nekobox not supported this transport\r\n• fixed and improvement\r\n\r\n## Notes\r\nIf some subscriptions do not find the proxy, please change the user agent to NekoBox, thx\r\n![Screenshot_20260222-234201_MikuBox~2](https://github.com/user-attachments/assets/322be61d-facf-45c5-82b6-729179241f85)\r\n\r\n# End of Life version, I will not update anymore, from now on I will just follow what the NekoBox developers do.",
+  "assets": [
+    {
+      "id": 360268659,
+      "name": "MikuBox-1.4.3-UwU-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 360268661,
+      "name": "MikuBox-1.4.3-UwU-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 360268658,
+      "name": "MikuBox-1.4.3-UwU-x86.apk",
+      "browser_download_url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 360268660,
+      "name": "MikuBox-1.4.3-UwU-x86_64.apk",
+      "browser_download_url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86_64.apk",
+      "state": "uploaded"
+    }
+  ]
+}

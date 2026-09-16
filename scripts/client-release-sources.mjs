@@ -180,6 +180,174 @@ export const githubSources = [
       linux: /^anyportal-linux()\.(zip)$/,
     },
   },
+  {
+    appId: "clashx-meta",
+    repo: "MetaCubeX/ClashX.Meta",
+    architectures: { macos: "universal" },
+    platforms: { macos: /^ClashX\.Meta()\.(zip)$/ },
+  },
+  {
+    appId: "v2rayu",
+    repo: "yanue/V2rayU",
+    // v5.2.0 构建脚本将同一通用应用打包为两个历史文件名。
+    architectureAliases: { 64: "universal", arm64: "universal" },
+    platforms: { macos: /^V2rayU-(64|arm64)\.(dmg)$/ },
+  },
+  {
+    appId: "surfboard",
+    repo: "getsurfboard/surfboard",
+    releaseTag: /^mobile-\d+(?:\.\d+)+$/,
+    platforms: {
+      android:
+        /^mobile-(arm64-v8a|armeabi-v7a|universal|x86|x86_64)-release\.(apk)$/,
+    },
+  },
+  {
+    appId: "xray-gui",
+    repo: "SaeedDev94/Xray",
+    // 官方 README：versionCode 的末位 1–4 分别对应四种 CPU 架构。
+    architectureAliases: {
+      1: "armeabi-v7a",
+      2: "arm64-v8a",
+      3: "x86",
+      4: "x86_64",
+    },
+    platforms: { android: /^Xray-v{version}-\d+([1-4])\.(apk)$/ },
+  },
+  {
+    appId: "clash-mi",
+    repo: "KaringX/clashmi",
+    platforms: {
+      android: /^clashmi_{version}_android_(arm|arm64-v8a|armeabi-v7a)\.(apk)$/,
+      windows: /^clashmi_{version}_windows_(x64)\.(exe|zip)$/,
+      macos: /^clashmi_{version}_macos_(universal)\.(dmg)$/,
+      linux: /^clashmi_{version}_linux_(amd64)\.(AppImage|deb|rpm)$/,
+    },
+  },
+  {
+    appId: "flclashx",
+    repo: "pluralplay/FlClashX",
+    platforms: {
+      android:
+        /^FlClashX-android-(arm64-v8a|armeabi-v7a|universal|x86_64)\.(apk)$/,
+      windows: /^FlClashX-windows-(amd64|arm64)(?:-setup)?\.(exe|zip)$/,
+      macos: /^FlClashX-macos-(amd64|arm64)\.(dmg)$/,
+      linux: /^FlClashX-linux-(amd64|arm64)\.(AppImage|deb|rpm)$/,
+    },
+  },
+  {
+    appId: "mikubox-for-android",
+    repo: "HatsuneMikuUwU/MikuBoxForAndroid",
+    releaseTag: /^1\.4\.3-UwU-2$/,
+    platforms: {
+      android:
+        /^MikuBox-1\.4\.3-UwU-(arm64-v8a|armeabi-v7a|x86|x86_64)\.(apk)$/,
+    },
+  },
+  {
+    appId: "kunbox",
+    repo: "roseforljh/KunBox",
+    platforms: { android: /^app-(arm64-v8a|armeabi-v7a)-release\.(apk)$/ },
+  },
+  {
+    appId: "nekobox-by-starifly",
+    repo: "starifly/NekoBoxForAndroid",
+    platforms: {
+      android: /^NekoBoxF-{version}-(arm64-v8a|armeabi-v7a|x86|x86_64)\.(apk)$/,
+    },
+  },
+  {
+    appId: "happ-proxy",
+    repo: "Happ-proxy/happ-android",
+    architectures: { android: "universal" },
+    platforms: { android: /^Happ()\.(apk)$/ },
+  },
+  {
+    appId: "happ-proxy",
+    repo: "Happ-proxy/happ-desktop",
+    platforms: {
+      windows: /^setup-Happ\.(arm64|x64)\.(exe)$/,
+      macos: /^Happ\.macOS\.(universal)\.(dmg)$/,
+      linux: /^Happ\.linux\.(arm64|x64)\.(deb|rpm|pkg\.tar\.zst)$/,
+    },
+  },
+  {
+    appId: "clash-xiaoy",
+    repo: "aimy1/clash-xiaoy",
+    platforms: {
+      windows:
+        /^clash-xiaoy_{version}_(x64|x86_64)(?:-setup|_portable)\.(exe|zip)$/,
+      macos: /^clash-xiaoy_{version}_(aarch64|x64)\.(dmg)$/,
+      linux:
+        /^clash-xiaoy[-_]{version}(?=(?:_|-1\.)(amd64|x86_64)\.)(?:_amd64|-1\.x86_64)\.(deb|AppImage|rpm)$/,
+    },
+  },
+  {
+    appId: "monadbox",
+    repo: "MonadBoxLab/MonadBox",
+    releaseTag: /^meta-v\d+(?:\.\d+)+-[a-f0-9]+$/,
+    platforms: {
+      android:
+        /^monadbox-meta-MonadBox-(arm64-v8a|armeabi-v7a|universal|x86|x86_64)-release\.(apk)$/,
+    },
+  },
+  {
+    appId: "vproxy",
+    repo: "5VNetwork/VX",
+    architectures: { windows: "x64" },
+    platforms: {
+      android: /^vx-(arm64-v8a|universal)\.(apk|apk\.zip)$/,
+      windows: /^VXInstaller()\.(exe)$/,
+      linux: /^vx-(arm64|x64)\.(deb|rpm)$/,
+    },
+  },
+  {
+    appId: "flyclash",
+    repo: "GtxFury/FlyClash",
+    platforms: {
+      windows: /^FlyClash-{version}-(x64)-setup\.(exe|7z)$/,
+      macos: /^FlyClash-{version}-(arm64|x64)\.(dmg)$/,
+    },
+  },
+  {
+    appId: "sudodroid",
+    repo: "SUDOKU-ASCII/sudoku-android",
+    platforms: {
+      android:
+        /^sudodroid-v{version}-(arm64-v8a|armeabi-v7a|universal)\.(apk)$/,
+    },
+  },
+  {
+    appId: "box-for-root",
+    repo: "taamarin/box_for_magisk",
+    architectures: { android: "noarch" },
+    platforms: { android: /^box_for_root-v{version}()\.(zip)$/ },
+  },
+  {
+    appId: "surfing",
+    repo: "GitMetaio/Surfing",
+    architectures: { android: "arm64-v8a" },
+    platforms: { android: /^Surfing_v{version}_release()\.(zip)$/ },
+  },
+  {
+    appId: "box4magisk",
+    repo: "CHIZI-0618/box4magisk",
+    architectures: { android: "noarch" },
+    platforms: { android: /^box4_v{version}()\.(zip)$/ },
+  },
+  {
+    appId: "box-for-android",
+    repo: "boxproxy/box",
+    architectures: { android: "noarch" },
+    platforms: { android: /^box-{version}()\.(zip)$/ },
+  },
+  {
+    appId: "akashaproxy",
+    repo: "akashaProxy/akashaProxy",
+    releaseTag: /^\d{8}-[a-f0-9]{7}$/,
+    architectures: { android: "arm64-v8a" },
+    platforms: { android: /^akashaProxy-{version}()\.(zip)$/ },
+  },
 ];
 
 // 每个来源只核验明确的平台；iOS lookup 不代表 Mac 版本。
@@ -285,6 +453,38 @@ export const officialSources = [
     platforms: { ios: true },
     trackId: 6450534064,
     bundleId: "com.effect.streisand",
+    country: "us",
+  },
+  {
+    appId: "clash-mi",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6744321968,
+    bundleId: "com.nebula.clashmi",
+    country: "us",
+  },
+  {
+    appId: "happ-proxy",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6504287215,
+    bundleId: "su.ffg.happ",
+    country: "us",
+  },
+  {
+    appId: "vproxy",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6744701950,
+    bundleId: "com.5vnetwork.x",
+    country: "us",
+  },
+  {
+    appId: "anywhere",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6758235178,
+    bundleId: "com.argsment.Anywhere",
     country: "us",
   },
 ];

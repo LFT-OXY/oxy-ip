@@ -1,0 +1,19 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "trackId": 6758235178,
+      "bundleId": "com.argsment.Anywhere",
+      "trackName": "Anywhere Proxy",
+      "sellerName": "Argsment Limited",
+      "kind": "software",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4",
+      "version": "2.2",
+      "currentVersionReleaseDate": "2026-09-14T13:58:32Z",
+      "price": 0.0,
+      "currency": "USD",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0c/dc/74/0cdc746f-0939-84cb-9ab0-20be889da9d4/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg"
+    }
+  ]
+}

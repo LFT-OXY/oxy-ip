@@ -1,0 +1,162 @@
+{
+  "id": "surfing",
+  "referenceUrl": "https://huarun.win/apps/surfing",
+  "referenceText": "Title: Surfing：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/surfing\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Surfing\n\n![Image 1: Surfing 应用图标](https://huarun.win/app-icons/surfing.webp)\n\n面向 Root Android 设备的透明代理模块，可运行 Mihomo、sing-box、Xray 等核心并提供预配置。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/GitMetaio/Surfing/blob/fbcc2763896dc0aa0d36b14e1fb42ff650835d67/README.md)\n\n主导开发[GitMetaio 团队](https://huarun.win/history/people/gitmetaio)GitMetaio\n\n**2,410** Star**144** Fork\n\n[查看代码仓库](https://github.com/GitMetaio/Surfing)\n统计更新于 2026年9月16日\n\n版本号 v7.8.4\n\n最后更新时间 2026年9月7日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\nWhat's Changed\n📦 Sync Latest Branch\n- Remove SurfingTile submodule\n- Network filtering supports SSID/MAC matching\n\n📱 SurfingTile v6.0.0\n- New package com.github.surfing\n- View detailed changelog[查看官方版本来源 ↗](https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4)\n应用简介\n\n## 关于 Surfing\n\n面向 Root Android 设备的透明代理模块，可运行 Mihomo、sing-box、Xray 等核心并提供预配置。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/surfing)\n人物关联\n\n## 与 Surfing 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/gitmetaio.webp)**GitMetaio 团队**主导开发 Surfing 核心开发团队 由该开发者主导开发或长期维护](https://huarun.win/history/people/gitmetaio)\n*   [![Image 3](https://huarun.win/people-avatars/chizi-0618.webp)**CHIZI-0618**分叉血缘 Box4Magisk 架构师 由该开发者主导的项目派生而来](https://huarun.win/history/people/chizi-0618)\n*   [![Image 4](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 5](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n继续浏览\n\n## 相似平台的其他客户端\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/GitMetaio/Surfing",
+  "repository": {
+    "full_name": "GitMetaio/Surfing",
+    "html_url": "https://github.com/GitMetaio/Surfing",
+    "description": "Magisk and KernelSU modules for  Clash/mihomo services.",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": "https://github.com/GitMetaio/SurfingWin"
+  },
+  "readme": "<h1 align=\"center\">\n  <img src=\"./folder/logo.svg\" alt=\"logo\" width=\"200\">\n  <br>Surfing<br>\n</h1>\n\n<h3 align=\"center\">Magisk, Kernelsu, APatch</h3>\n\n<div align=\"center\">\n    <a href=\"https://github.com/GitMetaio/Surfing/releases/tag/Prerelease-Alpha\">\n        <img alt=\"Android\" src=\"https://img.shields.io/badge/Module Latestsnapshot-F05033.svg?logo=android&logoColor=white\">\n    </a>\n    <a href=\"https://github.com/GitMetaio/Surfing/releases\">\n    <img alt=\"Downloads\" src=\"https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/GitMetaio/Surfing/data/stats.json\">\n</a>\n</div>\n<br>\n<div align=\"center\">\n    <strong>English</strong> | <a href=\"./README_CN.md\">简体中文</a>\n</div>\n\n---\n\nThis project is a [Magisk](https://github.com/topjohnwu/Magisk), [Kernelsu](https://github.com/tiann/KernelSU), [APatch](https://github.com/bmax121/APatch) module for Clash/mihomo, sing-box, v2ray, xray, hysteria. It supports REDIRECT (TCP only), TPROXY (TCP + UDP) transparent proxy, TUN (TCP + UDP), and hybrid mode REDIRECT (TCP) + TUN (UDP) proxy.\n\nBased on upstream integration for one-stop service, ready to use. Suitable for:\n- Lazy people\n- Beginners\n\nThe project's theme and configuration focus on [Clash/mihomo.Meta](https://github.com/MetaCubeX/Clash.Meta).\n\nThis module needs to be used in a Magisk/Kernelsu environment. If you don't know how to configure the required environment, you might need applications like ClashForAndroid, v2rayNG, surfboard, SagerNet, AnXray.\n\n# Surfing User Declaration and Disclaimer\n\nWelcome to use Surfing. Before using this project, please carefully read and understand the following statements and disclaimers. By using this project, you agree to accept the following terms and conditions. Hereinafter referred to as **Surfing**.\n\n## Disclaimer\n\n1. **This project is an open-source project for learning and research purposes only and does not provide any form of guarantee. Users must bear full responsibility for the risks and consequences of using this project.**\n\n2. **This project is only for the convenience of simplifying the installation and configuration of Surfing for Clash services in the Android Magisk environment. It does not make any guarantees about the functionality and performance of Surfing. The developer of this project is not responsible for any problems or losses.**\n\n3. **The use of this projects Surfing module may violate the laws and regulations of your region or the terms of service of service providers. You need to bear the risks of using this project on your own. The developer of this project is not responsible for your actions or the consequences of use.**\n\n4. **The developer of this project is not responsible for any direct or indirect losses or damages resulting from the use of this project, including but not limited to data loss, device damage, service interruption, personal privacy leaks, etc.**\n\n## Instructions for Use\n\n1. **Before using the Surfing module, please make sure you have carefully read and understood the usage instructions and related documents of Clash and Magisk and comply with their rules and terms.**\n\n2. **Before using this project, back up your device data and related settings to prevent unexpected situations. The developer of this project is not responsible for your data loss or damage.**\n\n3. **Please comply with local laws and regulations and respect the legitimate rights and interests of other users when using this project. It is forbidden to use this project for illegal, abusive, or infringing activities.**\n\n4. **If you encounter any problems or have any suggestions when using this project, you are welcome to provide feedback to the developer of this project, but the developer is not obligated to resolve issues or respond to feedback.**\n\nPlease decide whether to use the Surfing module only after clearly understanding and accepting the above statements and disclaimers. If you do not agree or cannot accept the above terms, please stop using this project immediately.\n\n## Applicable Law\n\n**During the use of this project, you must comply with the laws and regulations of your region. In case of any disputes, interpretation and resolution should be carried out in accordance with local laws and regulations.**\n\n## Installation\n\n- Download the module zip file from the [Release](https://github.com/GitMetaio/Surfing/releases) page and install it via Magisk Manager, KernelSU Manager, or APatch.\n- Version changes: [📲log](changelog.md)\n\n## Uninstall\n\n- Uninstall this module directly from **Magisk Manager / KernelSU Manager / APatch**  \n  [👉🏻 Force Remove Script](https://github.com/GitMetaio/Surfing/blob/main/uninstall.sh#L3-L4)\n\n> Uninstalling this module via the manager will remove all related service data, including Web and SurfingTile tile app data.\n\n## Group Telegram\n\n<a href=\"https://t.me/Surfingbox\">\n  <img src=\"./folder/Group.png\" alt=\"Group\" width=\"100\">\n</a>\n\n## Wiki\n\n<details>\n<summary>1. First Time Use</summary>\n\n- After the module is installed for the first time, **please first** add your subscription URL to  \n  `/data/adb/box_bll/clash/config.yaml`, or add it through the desktop App  \n  (**Note: SurfingTile requires Root permission to operate**), then manually reboot your device once.\n- After rebooting, open the **SurfingTile App** from the desktop to start using it.\n- Due to network issues, **rules**/**subscriptions** may not be fully downloaded automatically; please manually refresh them from the panel.\n- If the subscription fails to load, try switching the **Ua** in the configuration.\n- If the issue persists, make sure your network environment is working properly.\n\n- SurfingTile App:\n    - Can be used to add subscriptions via Menu → Config Override → Fill in subscription\n    - Used for portable browsing and managing backend routing data\n\n> If the panel content is displayed incorrectly or cannot be displayed,  \nplease update the `com.google.android.webview` component through the Google Play Store.\n\n</details>\n\n#\n\n<details>\n<summary>2. Controlling Operation</summary>\n\n- You can control start/stop via **WiFi SSID/MAC**.\n- You can control service using the module toggle switch  \n  `Changes take effect in real time, no reboot required`\n- You can add the module's control tile to the system status bar  \n  `If SurfingTile is already installed`\n\n</details>\n\n#\n\n<details>\n<summary>3. Routing Rules</summary>\n\n- GitHub Actions builds automatically  \n  All routing rules use online subscriptions to ensure they are always up-to-date\n\n> Automatically updates every 24 hours\n\n</details>\n\n#\n\n<details>\n<summary>4. Future Updates</summary>\n\n- If you are using all default configurations, updates will be seamless.\n- Supports online updates from the client; reboot is not required, but still recommended.\n- During updates, configuration files will be backed up to:\n   - `config.yaml.bak`\n- User configuration files will be backed up to:\n   - `box.config.bak`\n- Subscription URLs will be automatically extracted and backed up to:\n   - `proxies/subscribe_urls_backup.txt`\n   - The backup will be automatically restored into the new configuration, suitable for default configuration usage.\n\n> Ps: Mainly follows upstream updates and pushes some configuration adjustments.\n\n</details>\n\n#\n\n<details>\n<summary>5. Usage Issues</summary>\n\n### Proxy Specific Apps (Blacklist / Whitelist)\n\n- To proxy all apps except certain ones, open `/data/adb/box_bll/scripts/box.config`,  \n  set `proxy_mode` to `blacklist` (default), and add elements to the `user_packages_list` array.  \n  The element format is `id:package_name`, separated by spaces.  \n  These apps will **not** be proxied.  \n  Example: `user_packages_list=(\"id:package_name\" \"id:package_name\")`\n\n- To proxy only specific apps, open `/data/adb/box_bll/scripts/box.config`,  \n  set `proxy_mode` to `whitelist`, and add elements to the `user_packages_list` array.  \n  The element format is `id:package_name`, separated by spaces.  \n  Only these apps will be proxied.  \n  Example: `user_packages_list=(\"id:package_name\" \"id:package_name\")`\n\nAndroid user group IDs:\n\n| User Type       | ID  |\n| --------------- | --- |\n| Owner           | 0   |\n| Phone Clone     | 10  |\n| Multiple Apps   | 999 |\n\n> You can usually find all user group IDs and app package names under `/data/user/`.\n\n### Tun Mode\n- Disabled by default\n- When using blacklist/whitelist, exclude the corresponding package names\n\n> Can be enabled or disabled manually via configuration if required.\n\n### Routing Rules\n- Optimized for Mainland China\n- Meets most daily usage requirements\n\n> With increasingly robust routing rules, blacklist/whitelist is becoming less necessary.\n\n### Panel Management\n- Magisk font modules\n\n> May affect proper display of panel fonts.\n\n### LAN Sharing\n- Enable hotspot to allow other devices to connect\n- Tun Gateway: `198.18.0.0`\n\n> To access the backend console from other devices:  \n> `http://<CurrentWiFi>/<TunGateway>:9090/ui`\n\n### Host File\n- No need to mount: just delete the file\n- To remount: create a new one in the **etc folder**\n- All changes take effect immediately\n- During update/installation, you can use volume keys Up(**Mount**) / Down(**Unmount**) to choose\n\n> Local IP redirection for domains, forced binding\n\n</details>\n\n#\n\n<details>\n<summary>6. SurfingTile</summary>\n\n### APP Service\n### 📱 Device Requirements\n> Supports Android 10+\n\n- Must run in **system space** and require **Root** permission\n- ~~For **KSU** users, you need to install the **\"Meta Module\"** to obtain mount permissions~~ `com.github.surfing v6.0.0 is now standalone`\n- The tile works entirely based on the **Clash API**, please check if the API settings are correct\n  - **Path:** → Home Settings → More Settings → Port Settings\n\n### Hidden Easter Egg\n> Long press the home icon to toggle **Gold Privilege**\n\n- Preview\n  ![App Interface](folder/SurfingTilePreview.png)\n\n</details>\n\n---\n\n<a href=\"./LICENSE\">\n    <img alt=\"License\" src=\"https://img.shields.io/github/license/GitMetaio/Surfing.svg\">\n</a>\n\n## Acknowledgements\n\n<div align=\"center\">\n  <a href=\"https://github.com/CHIZI-0618\">\n    <img src=\"https://github.com/CHIZI-0618.png\" width=\"100\" height=\"100\" alt=\"CHIZI-0618\">\n    <br>\n    <strong>CHIZI-0618</strong>\n  </a>\n</div>\n\n<div align=\"center\">\n  <p> > Thanks for providing valuable foundation for the implementation of this project. < </p>\n</div>",
+  "treeSha": "fbcc2763896dc0aa0d36b14e1fb42ff650835d67",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_CN.md",
+    "app/icon/Ai.svg",
+    "app/icon/All.svg",
+    "app/icon/Apple.svg",
+    "app/icon/BiliBili.svg",
+    "app/icon/CN.svg",
+    "app/icon/DNS.svg",
+    "app/icon/Discord.svg",
+    "app/icon/DouYin.svg",
+    "app/icon/Facebook.svg",
+    "app/icon/GitHub.svg",
+    "app/icon/Globe.svg",
+    "app/icon/Google.svg",
+    "app/icon/GoogleFCM.svg",
+    "app/icon/HBASE-copy.svg",
+    "app/icon/HK.svg",
+    "app/icon/JP.svg",
+    "app/icon/Meter.svg",
+    "app/icon/Microsoft.svg",
+    "app/icon/Netflix.svg",
+    "app/icon/No-ads-all.svg",
+    "app/icon/OpenAI.svg",
+    "app/icon/Return.svg",
+    "app/icon/Singapore.svg",
+    "app/icon/Spotify.svg",
+    "app/icon/Steam.svg",
+    "app/icon/Telegram.svg",
+    "app/icon/TikTok.svg",
+    "app/icon/Twitter.svg",
+    "app/icon/US.svg",
+    "app/icon/Update.svg",
+    "app/icon/User.svg",
+    "app/icon/WebRTC.svg",
+    "app/icon/XiaoHongShu.svg",
+    "app/icon/YouTube.svg",
+    "app/icon/logo.svg",
+    "folder/Group.png",
+    "folder/SurfingTilePreview.png",
+    "folder/logo.svg",
+    "module.prop"
+  ],
+  "releaseList": [
+    {
+      "id": 120703502,
+      "tag_name": "Prerelease-Alpha",
+      "name": "Prerelease-Alpha",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/Prerelease-Alpha",
+      "published_at": "2023-09-11T21:09:23Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 383778205,
+      "tag_name": "v7.8.4",
+      "name": "v7.8.4",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4",
+      "published_at": "2026-09-07T01:21:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 369919143,
+      "tag_name": "v7.8.3",
+      "name": "v7.8.3",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.3",
+      "published_at": "2026-08-13T13:03:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 348994671,
+      "tag_name": "v7.8.2",
+      "name": "v7.8.2",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.2",
+      "published_at": "2026-07-04T16:55:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 347509866,
+      "tag_name": "v7.8.1",
+      "name": "v7.8.1",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.1",
+      "published_at": "2026-07-01T14:18:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 325147939,
+      "tag_name": "v7.8.0",
+      "name": "v7.8.0",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.0",
+      "published_at": "2026-05-19T16:10:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 316868673,
+      "tag_name": "v7.7.1",
+      "name": "v7.7.1",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.7.1",
+      "published_at": "2026-05-03T14:15:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 309465516,
+      "tag_name": "v7.7.0",
+      "name": "v7.7.0",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.7.0",
+      "published_at": "2026-04-15T16:53:58Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 383778205,
+      "tag_name": "v7.8.4",
+      "name": "v7.8.4",
+      "html_url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4",
+      "published_at": "2026-09-07T01:21:28Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "# What's Changed\n### 📦 Sync Latest Branch\n- Remove SurfingTile submodule\n- Network filtering supports SSID/MAC matching\n\n### 📱 SurfingTile v6.0.0\n- New package `com.github.surfing`\n- [View detailed changelog](https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/main/app/version/com.github.surfing/release.json)\n\n",
+      "assets": [
+        {
+          "id": 547938285,
+          "name": "Surfing_v7.8.4_release.zip",
+          "browser_download_url": "https://github.com/GitMetaio/Surfing/releases/download/v7.8.4/Surfing_v7.8.4_release.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

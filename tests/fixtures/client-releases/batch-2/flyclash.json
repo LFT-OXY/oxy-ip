@@ -1,0 +1,36 @@
+{
+  "id": 323823847,
+  "tag_name": "v0.2.9",
+  "name": "FlyClash Desktop v0.2.9",
+  "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9",
+  "published_at": "2026-05-17T05:09:56Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "1. 修复了一些BUG\r\n2.部分细节优化\r\n",
+  "assets": [
+    {
+      "id": 422290640,
+      "name": "FlyClash-0.2.9-arm64.dmg",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 422292044,
+      "name": "FlyClash-0.2.9-x64-setup.7z",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 422292013,
+      "name": "FlyClash-0.2.9-x64-setup.exe",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 422290571,
+      "name": "FlyClash-0.2.9-x64.dmg",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64.dmg",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 329572999,
+  "tag_name": "tv-1.1.1",
+  "name": null,
+  "html_url": "https://github.com/getsurfboard/surfboard/releases/tag/tv-1.1.1",
+  "published_at": "2026-05-26T17:23:33Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "**Fixes**\n- Fixed some HTTPS proxies not working\n- Fixed incorrect parsing of trailing comments in profile files\n- Fixed inaccurate rule count for DOMAIN-SET and nested RULE-SET\n- Fixed mobile version checker incorrectly prompting for TV app updates\n- Fixed some DOMAIN-SET/RULE-SET not taking effect\n",
+  "assets": [
+    {
+      "id": 430358355,
+      "name": "tv-arm64-v8a-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-arm64-v8a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 430358429,
+      "name": "tv-armeabi-v7a-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-armeabi-v7a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 430358489,
+      "name": "tv-release.apks",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-release.apks",
+      "state": "uploaded"
+    },
+    {
+      "id": 430358673,
+      "name": "tv-universal-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-universal-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 430358909,
+      "name": "tv-x86-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-x86-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 430358955,
+      "name": "tv-x86_64-release.apk",
+      "browser_download_url": "https://github.com/getsurfboard/surfboard/releases/download/tv-1.1.1/tv-x86_64-release.apk",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="speedGradient" x1="100" y1="412" x2="412" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#004e92" /> <stop offset="50%" stop-color="#0072ff" /> <stop offset="100%" stop-color="#00c6ff" /> </linearGradient>
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 0.5  0 0 0 0 1  0 0 0 0.3 0" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <path d="M148.5 363.5C135.7 376.3 114.9 376.3 102.1 363.5C89.3 350.7 89.3 329.9 102.1 317.1L215.4 203.8C221.6 197.6 230.5 194.9 239 196.6L287.6 206.3C292.5 207.3 297.6 205.7 301.1 202.2L389.9 113.4C402.7 100.6 423.5 100.6 436.3 113.4C449.1 126.2 449.1 147 436.3 159.8L323 273.1C316.8 279.3 307.9 282 299.4 280.3L250.8 270.6C245.9 269.6 240.8 271.2 237.3 274.7L148.5 363.5Z"
+          fill="url(#speedGradient)"
+          filter="url(#softGlow)"
+          stroke="white" stroke-width="8" stroke-linejoin="round"/>
+
+</svg>

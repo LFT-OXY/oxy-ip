@@ -3840,5 +3840,1559 @@
         "format": "zip"
       }
     ]
+  },
+  {
+    "appId": "clashx-meta",
+    "platform": "macos",
+    "version": "v1.4.45",
+    "publishedAt": "2026-09-14T14:23:24Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/tag/v1.4.45"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MetaCubeX/ClashX.Meta/releases"
+    },
+    "downloads": [
+      {
+        "id": "ClashX.Meta.zip",
+        "kind": "direct",
+        "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.45/ClashX.Meta.zip",
+        "arch": "universal",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "v2rayu",
+    "platform": "macos",
+    "version": "v5.2.0",
+    "publishedAt": "2026-08-02T13:11:02Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/yanue/V2rayU/releases/tag/v5.2.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/yanue/V2rayU/releases"
+    },
+    "note": "源码与内核依据 v5.2.0 正式标签；两个 DMG 的官方构建脚本均打包 arm64 与 x86_64 通用应用。",
+    "downloads": [
+      {
+        "id": "V2rayU-64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-64.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      },
+      {
+        "id": "V2rayU-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-arm64.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "surfboard",
+    "platform": "android",
+    "version": "mobile-2.34.4",
+    "publishedAt": "2026-09-01T15:48:02Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.34.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/getsurfboard/surfboard/releases"
+    },
+    "note": "此处版本与安装包仅属于手机版；TV 版独立发布，请通过官方发布页获取。",
+    "downloads": [
+      {
+        "id": "mobile-arm64-v8a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-arm64-v8a-release.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "mobile-armeabi-v7a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-armeabi-v7a-release.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "mobile-universal-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-universal-release.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "mobile-x86-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86-release.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "mobile-x86_64-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/getsurfboard/surfboard/releases/download/mobile-2.34.4/mobile-x86_64-release.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "insightbox",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://t.me/v2rayInsight/287"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://t.me/v2rayInsight/287"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://t.me/v2rayInsight/287"
+      }
+    ],
+    "note": "官方 Telegram 帖子人工维护；无稳定直链，不采用同频道另一款应用的版本。图标为文字占位。",
+    "version": "1.1.2"
+  },
+  {
+    "appId": "xray-gui",
+    "platform": "android",
+    "version": "v12.6.0",
+    "publishedAt": "2026-08-23T14:42:13Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.6.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SaeedDev94/Xray/releases"
+    },
+    "downloads": [
+      {
+        "id": "Xray-v12.6.0-1201.apk",
+        "kind": "direct",
+        "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1201.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "Xray-v12.6.0-1202.apk",
+        "kind": "direct",
+        "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1202.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "Xray-v12.6.0-1203.apk",
+        "kind": "direct",
+        "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1203.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "Xray-v12.6.0-1204.apk",
+        "kind": "direct",
+        "url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1204.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mi",
+    "platform": "android",
+    "version": "v1.0.29.1503",
+    "publishedAt": "2026-09-02T01:37:32Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/clashmi/releases"
+    },
+    "downloads": [
+      {
+        "id": "clashmi_1.0.29.1503_android_arm.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm.apk",
+        "arch": "arm",
+        "format": "apk"
+      },
+      {
+        "id": "clashmi_1.0.29.1503_android_arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "clashmi_1.0.29.1503_android_armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mi",
+    "platform": "ios",
+    "version": "1.0.29.1503",
+    "publishedAt": "2026-09-02T13:22:54Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/clash-mi/id6744321968?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-mi/id6744321968?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-mi/id6744321968?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mi",
+    "platform": "windows",
+    "version": "v1.0.29.1503",
+    "publishedAt": "2026-09-02T01:37:32Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/clashmi/releases"
+    },
+    "downloads": [
+      {
+        "id": "clashmi_1.0.29.1503_windows_x64.exe",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "clashmi_1.0.29.1503_windows_x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mi",
+    "platform": "macos",
+    "version": "v1.0.29.1503",
+    "publishedAt": "2026-09-02T01:37:32Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/clashmi/releases"
+    },
+    "downloads": [
+      {
+        "id": "clashmi_1.0.29.1503_macos_universal.dmg",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_macos_universal.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mi",
+    "platform": "linux",
+    "version": "v1.0.29.1503",
+    "publishedAt": "2026-09-02T01:37:32Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/clashmi/releases"
+    },
+    "downloads": [
+      {
+        "id": "clashmi_1.0.29.1503_linux_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "clashmi_1.0.29.1503_linux_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "clashmi_1.0.29.1503_linux_amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "flclashx",
+    "platform": "android",
+    "version": "v0.4.2",
+    "publishedAt": "2026-07-18T10:51:50Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/pluralplay/FlClashX/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClashX-android-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClashX-android-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClashX-android-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "FlClashX-android-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "flclashx",
+    "platform": "windows",
+    "version": "v0.4.2",
+    "publishedAt": "2026-07-18T10:51:50Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/pluralplay/FlClashX/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClashX-windows-amd64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClashX-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "FlClashX-windows-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClashX-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "flclashx",
+    "platform": "macos",
+    "version": "v0.4.2",
+    "publishedAt": "2026-07-18T10:51:50Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/pluralplay/FlClashX/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClashX-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "FlClashX-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "flclashx",
+    "platform": "linux",
+    "version": "v0.4.2",
+    "publishedAt": "2026-07-18T10:51:50Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/pluralplay/FlClashX/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClashX-linux-amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "FlClashX-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "FlClashX-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "FlClashX-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "mikubox-for-android",
+    "platform": "android",
+    "version": "1.4.3-UwU-2",
+    "publishedAt": "2026-02-22T16:51:21Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/tag/1.4.3-UwU-2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases"
+    },
+    "note": "此正式版已停止维护，使用 sing-box；开发主分支的 Mihomo 改版不代表当前正式包。",
+    "downloads": [
+      {
+        "id": "MikuBox-1.4.3-UwU-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "MikuBox-1.4.3-UwU-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "MikuBox-1.4.3-UwU-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "MikuBox-1.4.3-UwU-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases/download/1.4.3-UwU-2/MikuBox-1.4.3-UwU-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "kunbox",
+    "platform": "android",
+    "version": "v2.24.1",
+    "publishedAt": "2026-09-03T12:16:44Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/roseforljh/KunBox/releases/tag/v2.24.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/roseforljh/KunBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "app-arm64-v8a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-arm64-v8a-release.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "app-armeabi-v7a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-armeabi-v7a-release.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "nekobox-by-starifly",
+    "platform": "android",
+    "version": "1.4.2-rev-24",
+    "publishedAt": "2026-08-22T09:36:54Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases/tag/1.4.2-rev-24"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/starifly/NekoBoxForAndroid/releases"
+    },
+    "note": "仅使用此维护分支的官方发布；项目提示原 Play 入口已由第三方控制。",
+    "downloads": [
+      {
+        "id": "NekoBoxF-1.4.2-rev-24-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBoxF-1.4.2-rev-24-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBoxF-1.4.2-rev-24-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBoxF-1.4.2-rev-24-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/starifly/NekoBoxForAndroid/releases/download/1.4.2-rev-24/NekoBoxF-1.4.2-rev-24-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "happ-proxy",
+    "platform": "android",
+    "version": "4.4.1",
+    "publishedAt": "2026-09-11T07:39:57Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.4.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Happ-proxy/happ-android/releases"
+    },
+    "downloads": [
+      {
+        "id": "Happ.apk",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ.apk",
+        "arch": "universal",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "happ-proxy",
+    "platform": "ios",
+    "version": "5.8.0",
+    "publishedAt": "2026-09-14T03:10:38Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "happ-proxy",
+    "platform": "windows",
+    "version": "4.2.1",
+    "publishedAt": "2026-09-04T15:46:15Z",
+    "lastCheckedAt": "2026-09-16T13:40:53.802Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "setup-Happ.arm64.exe",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "setup-Happ.x64.exe",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "happ-proxy",
+    "platform": "macos",
+    "version": "4.2.1",
+    "publishedAt": "2026-09-04T15:46:15Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "Happ.macOS.universal.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "happ-proxy",
+    "platform": "linux",
+    "version": "4.2.1",
+    "publishedAt": "2026-09-04T15:46:15Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "Happ.linux.arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "Happ.linux.arm64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.pkg.tar.zst",
+        "arch": "arm64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "Happ.linux.arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "Happ.linux.x64.deb",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.deb",
+        "arch": "x64",
+        "format": "deb"
+      },
+      {
+        "id": "Happ.linux.x64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.pkg.tar.zst",
+        "arch": "x64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "Happ.linux.x64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.rpm",
+        "arch": "x64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "clash-xiaoy",
+    "platform": "windows",
+    "version": "v2.7.20",
+    "publishedAt": "2026-04-25T19:45:27Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-xiaoy_2.7.20_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "clash-xiaoy_2.7.20_x86_64_portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x86_64_portable.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clash-xiaoy",
+    "platform": "macos",
+    "version": "v2.7.20",
+    "publishedAt": "2026-04-25T19:45:27Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-xiaoy_2.7.20_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "clash-xiaoy_2.7.20_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "clash-xiaoy",
+    "platform": "linux",
+    "version": "v2.7.20",
+    "publishedAt": "2026-04-25T19:45:27Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/aimy1/clash-xiaoy/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-xiaoy-2.7.20-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "clash-xiaoy_2.7.20_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "clash-xiaoy_2.7.20_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "monadbox",
+    "platform": "android",
+    "version": "meta-v1.19.31-ab405bad",
+    "publishedAt": "2026-09-14T21:51:52Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases/tag/meta-v1.19.31-ab405bad"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MonadBoxLab/MonadBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "monadbox-meta-MonadBox-arm64-v8a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-arm64-v8a-release.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "monadbox-meta-MonadBox-armeabi-v7a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-armeabi-v7a-release.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "monadbox-meta-MonadBox-universal-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-universal-release.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "monadbox-meta-MonadBox-x86-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86-release.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "monadbox-meta-MonadBox-x86_64-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86_64-release.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "mconnect",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://668993.xyz/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://668993.xyz/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://668993.xyz/"
+      }
+    ],
+    "note": "各平台通过官网获取，版本与发布时间尚未逐平台确认，人工维护；HarmonyOS 包需自行签名。"
+  },
+  {
+    "appId": "mconnect",
+    "platform": "harmonyos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://668993.xyz/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://668993.xyz/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://668993.xyz/"
+      }
+    ],
+    "note": "各平台通过官网获取，版本与发布时间尚未逐平台确认，人工维护；HarmonyOS 包需自行签名。"
+  },
+  {
+    "appId": "mconnect",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://668993.xyz/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://668993.xyz/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://668993.xyz/"
+      }
+    ],
+    "note": "各平台通过官网获取，版本与发布时间尚未逐平台确认，人工维护；HarmonyOS 包需自行签名。"
+  },
+  {
+    "appId": "mconnect",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://668993.xyz/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://668993.xyz/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://668993.xyz/"
+      }
+    ],
+    "note": "各平台通过官网获取，版本与发布时间尚未逐平台确认，人工维护；HarmonyOS 包需自行签名。"
+  },
+  {
+    "appId": "mconnect",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://668993.xyz/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://668993.xyz/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://668993.xyz/"
+      }
+    ],
+    "note": "各平台通过官网获取，版本与发布时间尚未逐平台确认，人工维护；HarmonyOS 包需自行签名。"
+  },
+  {
+    "appId": "vproxy",
+    "platform": "android",
+    "version": "v3.10.5",
+    "publishedAt": "2026-09-06T13:34:09Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/5VNetwork/VX/releases"
+    },
+    "downloads": [
+      {
+        "id": "vx-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "vx-arm64-v8a.apk.zip",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk.zip",
+        "arch": "arm64-v8a",
+        "format": "apk.zip"
+      },
+      {
+        "id": "vx-universal.apk.zip",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-universal.apk.zip",
+        "arch": "universal",
+        "format": "apk.zip"
+      }
+    ]
+  },
+  {
+    "appId": "vproxy",
+    "platform": "ios",
+    "version": "3.10.4",
+    "publishedAt": "2026-09-04T07:27:07Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/vx-proxy-client/id6744701950?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/vx-proxy-client/id6744701950?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/vx-proxy-client/id6744701950?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "vproxy",
+    "platform": "windows",
+    "version": "v3.10.5",
+    "publishedAt": "2026-09-06T13:34:09Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/5VNetwork/VX/releases"
+    },
+    "downloads": [
+      {
+        "id": "VXInstaller.exe",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/VXInstaller.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "vproxy",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/5VNetwork/VX/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/5VNetwork/VX/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/5VNetwork/VX/releases"
+      }
+    ],
+    "note": "官方 Mac DMG 有发布记录，但本轮未确认独立安装包架构，保留官方发布页并人工维护；不套用 iOS 版本。"
+  },
+  {
+    "appId": "vproxy",
+    "platform": "linux",
+    "version": "v3.10.5",
+    "publishedAt": "2026-09-06T13:34:09Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/5VNetwork/VX/releases"
+    },
+    "downloads": [
+      {
+        "id": "vx-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "vx-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "vx-x64.deb",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.deb",
+        "arch": "x64",
+        "format": "deb"
+      },
+      {
+        "id": "vx-x64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.rpm",
+        "arch": "x64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "flyclash",
+    "platform": "windows",
+    "version": "v0.2.9",
+    "publishedAt": "2026-05-17T05:09:56Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GtxFury/FlyClash/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlyClash-0.2.9-x64-setup.7z",
+        "kind": "direct",
+        "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.7z",
+        "arch": "x64",
+        "format": "7z"
+      },
+      {
+        "id": "FlyClash-0.2.9-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "flyclash",
+    "platform": "macos",
+    "version": "v0.2.9",
+    "publishedAt": "2026-05-17T05:09:56Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GtxFury/FlyClash/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlyClash-0.2.9-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "FlyClash-0.2.9-x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "flyclash",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/GtxFury/FlyClash/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GtxFury/FlyClash/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/GtxFury/FlyClash/releases"
+      }
+    ],
+    "note": "Linux 当前仅确认测试版，保留官方获取页，不提供测试包冒充正式包。"
+  },
+  {
+    "appId": "flyclash-android",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/GtxFury/FlyClash-Android/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GtxFury/FlyClash-Android/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/GtxFury/FlyClash-Android/releases"
+      }
+    ],
+    "note": "当前仅核实到 Alpha 测试版，正式版本与日期留空；图标取自官方包，不提供测试包冒充正式下载。"
+  },
+  {
+    "appId": "sudodroid",
+    "platform": "android",
+    "version": "v0.3.1",
+    "publishedAt": "2026-09-06T03:57:24Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/tag/v0.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases"
+    },
+    "downloads": [
+      {
+        "id": "sudodroid-v0.3.1-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "sudodroid-v0.3.1-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "sudodroid-v0.3.1-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-android/releases/download/v0.3.1/sudodroid-v0.3.1-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "box-for-root",
+    "platform": "android",
+    "version": "v1.10.2",
+    "publishedAt": "2025-09-05T12:45:22Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/taamarin/box_for_magisk/releases"
+    },
+    "note": "需要 Android Root 和模块管理器。noarch 表示不含平台二进制的脚本模块，核心按设备另行获取；BFR APK 管理器不与模块版本混配。",
+    "downloads": [
+      {
+        "id": "box_for_root-v1.10.2.zip",
+        "kind": "direct",
+        "url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip",
+        "arch": "noarch",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "surfing",
+    "platform": "android",
+    "version": "v7.8.4",
+    "publishedAt": "2026-09-07T01:21:28Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GitMetaio/Surfing/releases"
+    },
+    "note": "需要 Android Root；当前模块包含 arm64 原生工具。配置错误可能导致设备或数据损失，安装前请备份并阅读官方说明。",
+    "downloads": [
+      {
+        "id": "Surfing_v7.8.4_release.zip",
+        "kind": "direct",
+        "url": "https://github.com/GitMetaio/Surfing/releases/download/v7.8.4/Surfing_v7.8.4_release.zip",
+        "arch": "arm64-v8a",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "box4magisk",
+    "platform": "android",
+    "version": "v5.1",
+    "publishedAt": "2024-09-16T05:42:02Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v5.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/CHIZI-0618/box4magisk/releases"
+    },
+    "note": "需要 Android Root 和模块管理器。noarch 表示不含平台二进制的脚本模块，不含代理核心，请自行安装适合设备架构的核心。图标为文字占位。",
+    "downloads": [
+      {
+        "id": "box4_v5.1.zip",
+        "kind": "direct",
+        "url": "https://github.com/CHIZI-0618/box4magisk/releases/download/v5.1/box4_v5.1.zip",
+        "arch": "noarch",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "box-for-android",
+    "platform": "android",
+    "version": "1.2.8",
+    "publishedAt": "2026-06-13T09:50:17Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/boxproxy/box/releases/tag/1.2.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/boxproxy/box/releases"
+    },
+    "note": "需要 Android Root 和模块管理器。noarch 表示不含平台二进制的脚本模块，组件在安装时按设备获取；图标为文字占位。",
+    "downloads": [
+      {
+        "id": "box-1.2.8.zip",
+        "kind": "direct",
+        "url": "https://github.com/boxproxy/box/releases/download/1.2.8/box-1.2.8.zip",
+        "arch": "noarch",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "akashaproxy",
+    "platform": "android",
+    "version": "20260825-e3ba5d6",
+    "publishedAt": "2026-08-25T03:05:40Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/akashaProxy/akashaProxy/releases/tag/20260825-e3ba5d6"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/akashaProxy/akashaProxy/releases"
+    },
+    "note": "需要 Android Root；官方构建仅覆盖 arm64-v8a，使用原生 Mihomo 而非 Smart 内核。图标为文字占位。",
+    "downloads": [
+      {
+        "id": "akashaProxy-20260825-e3ba5d6.zip",
+        "kind": "direct",
+        "url": "https://github.com/akashaProxy/akashaProxy/releases/download/20260825-e3ba5d6/akashaProxy-20260825-e3ba5d6.zip",
+        "arch": "arm64-v8a",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clash-mix",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/AXEVO/Clash-MIX"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/AXEVO/Clash-MIX"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/AXEVO/Clash-MIX"
+      }
+    ],
+    "note": "仅提供官方源码页，当前未确认可安装的官方正式包；需要 Android Root。版本、日期与核验时间留空，图标为文字占位。"
+  },
+  {
+    "appId": "anywhere",
+    "platform": "ios",
+    "version": "2.2",
+    "publishedAt": "2026-09-14T13:58:32Z",
+    "lastCheckedAt": "2026-09-16T13:37:18.253Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "anywhere",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/anywhere-proxy/id6758235178?uo=4"
+      }
+    ],
+    "note": "商店声明支持 Apple Silicon Mac，但没有独立 Mac 版本依据，版本与日期留空。"
   }
 ]

@@ -1,0 +1,376 @@
+{
+  "id": "flyclash-android",
+  "referenceUrl": "https://huarun.win/apps/flyclash-android",
+  "referenceText": "Title: FlyClash Android：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/flyclash-android\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   FlyClash Android\n\n![Image 1: FlyClash Android 应用图标](https://huarun.win/app-icons/flyclash-android-20260914-v1.webp)\n\n基于 Clash Meta 的 Android 代理客户端，支持订阅、脚本覆写、配置编辑和跨设备备份；当前收录普通 Alpha（pbMeta）通道。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 未公开\n\n完整功能费用 免费\n\n代理内核 Clash Meta / Mihomo（普通 pbMeta 通道，官方文档）[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://gtxfury.github.io/FlyClash-docs/)\n\n主导开发[GtxFury](https://huarun.win/history/people/gtxfury)GtxFury\n\n版本号 v0.2.1.9-Alpha\n\n最后更新时间 2026年9月7日\n\n数据来源 Android 普通 Alpha / pbMeta 测试版，不含 Alpha-Smart\n\n## 官方变更日志\n\n1.全新跨设备导入功能，支持从三端（Windows、Mac、Android）互相备份导入，实现多设备互通。\n2.高级材质液态玻璃效果优化，观感更高级，适配更多交互组件（开关、滑杆等）。\n3.覆写新增测速链接覆写功能选项。\n4.更新内核。\n5.其他细节优化。[查看官方版本来源 ↗](https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.9-Alpha)\n应用简介\n\n## 关于 FlyClash Android\n\n基于 Clash Meta 的 Android 代理客户端，支持订阅、脚本覆写、配置编辑和跨设备备份；当前收录普通 Alpha（pbMeta）通道。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n*   [**官方文档**使用说明与项目资料](https://gtxfury.github.io/FlyClash-docs/)\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/flyclash-android)\n人物关联\n\n## 与 FlyClash Android 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/gtxfury.webp)**GtxFury**FlyClash 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/gtxfury)\n*   [![Image 3](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 4](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/GtxFury/FlyClash-Android",
+  "repository": {
+    "full_name": "GtxFury/FlyClash-Android",
+    "html_url": "https://github.com/GtxFury/FlyClash-Android",
+    "description": "FlyClash Android",
+    "default_branch": "main",
+    "archived": false,
+    "license": null,
+    "homepage": ""
+  },
+  "readme": "\n<a href=\"https://www.stromsend.xyz/#/register?code=tIhaARYV\">\n  <img src=\"screenshots/unnamed.jpg\" alt=\"友情推荐\" />\n</a>\n  <img src=\"screenshots/screenshot.png\">\n",
+  "treeSha": "01b387fd69bfe1d02cfc95ebfe6c79abbb681b00",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "README.md",
+    "screenshots/file_000000009a5c720bbf9028b8da087f14.png",
+    "screenshots/screenshot.png",
+    "screenshots/unnamed.jpg"
+  ],
+  "releaseList": [
+    {
+      "id": 384089027,
+      "tag_name": "v0.2.1.9-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.9 Smart-Alpha-ver2",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.9-Alpha-Smart",
+      "published_at": "2026-09-07T12:57:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 384086980,
+      "tag_name": "v0.2.1.9-Alpha",
+      "name": "FlyClash Android v0.2.1.9-Alpha-ver2",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.9-Alpha",
+      "published_at": "2026-09-07T12:53:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 363708069,
+      "tag_name": "v0.2.1.8-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.8 Smart-Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.8-Alpha-Smart",
+      "published_at": "2026-08-02T05:35:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 363707846,
+      "tag_name": "v0.2.1.8-Alpha",
+      "name": "FlyClash Android v0.2.1.8-Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.8-Alpha",
+      "published_at": "2026-08-02T05:34:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 342644289,
+      "tag_name": "v0.2.1.7-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.7 Smart-Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.7-Alpha-Smart",
+      "published_at": "2026-06-22T02:11:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 342642547,
+      "tag_name": "v0.2.1.7-Alpha",
+      "name": "FlyClash Android v0.2.1.7-alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.7-Alpha",
+      "published_at": "2026-06-22T01:58:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 328415372,
+      "tag_name": "v0.2.1.6-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.6 Smart Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.6-Alpha-Smart",
+      "published_at": "2026-05-24T00:42:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 328414981,
+      "tag_name": "v0.2.1.6-Alpha",
+      "name": "FlyClash Android v0.2.1.6",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.6-Alpha",
+      "published_at": "2026-05-24T00:37:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 325687789,
+      "tag_name": "v0.2.1.5-per3-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.5-per3 Smart Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.5-per3-Alpha-Smart",
+      "published_at": "2026-05-20T06:59:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 325682457,
+      "tag_name": "v0.2.1.5-per3-Alpha",
+      "name": "FlyClash Android v0.2.1.5-per3 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.5-per3-Alpha",
+      "published_at": "2026-05-20T06:56:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 323822428,
+      "tag_name": "v0.2.1.5-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.5 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.5-Alpha-Smart",
+      "published_at": "2026-05-17T04:50:40Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 323822300,
+      "tag_name": "v0.2.1.5-Alpha",
+      "name": "FlyClash Android v0.2.1.5 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.5-Alpha",
+      "published_at": "2026-05-17T04:49:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 309247431,
+      "tag_name": "v0.2.1.4-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.4 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.4-Alpha-Smart",
+      "published_at": "2026-04-15T09:29:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 309246722,
+      "tag_name": "v0.2.1.4-Alpha",
+      "name": "FlyClash Android v0.2.1.4",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.4-Alpha",
+      "published_at": "2026-04-15T09:28:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299221148,
+      "tag_name": "v0.2.1.3-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.3-per2 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.3-Alpha-Smart",
+      "published_at": "2026-03-20T01:35:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299220974,
+      "tag_name": "v0.2.1.3-Alpha",
+      "name": "FlyClash Android v0.2.1.3per-2 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.3-Alpha",
+      "published_at": "2026-03-20T01:33:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 294530665,
+      "tag_name": "v0.2.1.2-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.2 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.2-Alpha-Smart",
+      "published_at": "2026-03-09T04:35:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 294530211,
+      "tag_name": "v0.2.1.2-Alpha",
+      "name": "FlyClash Android v0.2.1.2 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.2-Alpha",
+      "published_at": "2026-03-09T04:32:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283597691,
+      "tag_name": "v0.2.1.1-Alpha-Smart",
+      "name": "FlyClash-Android v0.2.1.1 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.1-Alpha-Smart",
+      "published_at": "2026-02-06T03:26:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283597192,
+      "tag_name": "v0.2.1.1-Alpha",
+      "name": "FlyClash Android v0.2.1.1 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.1-Alpha",
+      "published_at": "2026-02-06T03:22:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 274039577,
+      "tag_name": "v0.2.1.0-Alpha-Smart",
+      "name": "FlyClash-Android v0.2.1.0 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.0-Alpha-Smart",
+      "published_at": "2026-01-04T08:57:57Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 274039267,
+      "tag_name": "v0.2.1.0-Alpha",
+      "name": "FlyClash Android v0.2.1.0 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.0-Alpha",
+      "published_at": "2026-01-04T08:52:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 266294385,
+      "tag_name": "v0.2.0.9-Alpha-Smart",
+      "name": "FlyClash-Android v0.2.0.9 Alpha Smart",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.9-Alpha-Smart",
+      "published_at": "2025-12-01T07:26:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 266293807,
+      "tag_name": "v0.2.0.9-Alpha",
+      "name": "FlyClash-Android v0.2.0.9 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.9-Alpha",
+      "published_at": "2025-12-01T07:24:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 259734066,
+      "tag_name": "v0.2.0.8-Alpha",
+      "name": "FlyClash-Android v0.2.0.8 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.8-Alpha",
+      "published_at": "2025-11-05T01:06:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 255645713,
+      "tag_name": "v0.2.0.7-Alpha",
+      "name": "FlyClash-Android v0.2.0.7 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.7-Alpha",
+      "published_at": "2025-10-20T02:11:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 253787443,
+      "tag_name": "v0.2.0.6-Alpha",
+      "name": "FlyClash-Android v0.2.0.6 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.6-Alpha",
+      "published_at": "2025-10-11T03:39:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 251004392,
+      "tag_name": "v0.2.0.5-Alpha",
+      "name": "FlyClash-Android v0.2.0.5 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.5-Alpha",
+      "published_at": "2025-09-30T06:06:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 249640349,
+      "tag_name": "v0.2.0.4-Alpha",
+      "name": "FlyClash-Android v0.2.0.4 Alpha ",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.4-Alpha",
+      "published_at": "2025-09-24T11:43:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 247978449,
+      "tag_name": "v0.2.0.3-Alpha",
+      "name": "FlyClash-Android v0.2.0.3 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.3-Alpha",
+      "published_at": "2025-09-18T00:50:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246340574,
+      "tag_name": "v0.2.0.2-Alpha",
+      "name": "FlyClash-Android v0.2.0.2 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.2-Alpha",
+      "published_at": "2025-09-11T01:26:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245728970,
+      "tag_name": "v0.2.0.0-Alpha",
+      "name": "FlyClash-Android v0.2.0.0 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.0.0-Alpha",
+      "published_at": "2025-09-09T06:43:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 225494469,
+      "tag_name": "v0.1.7.6-Alpha",
+      "name": "FlyClash-Android v0.1.7.6 Alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.1.7.6-Alpha",
+      "published_at": "2025-06-16T08:52:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 220905355,
+      "tag_name": "alpha-v0.1",
+      "name": "flyclash-0.1.6.3-alpha",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/alpha-v0.1",
+      "published_at": "2025-05-26T04:44:43Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 384089027,
+      "tag_name": "v0.2.1.9-Alpha-Smart",
+      "name": "FlyClash Android v0.2.1.9 Smart-Alpha-ver2",
+      "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.9-Alpha-Smart",
+      "published_at": "2026-09-07T12:57:35Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "<a href=\"https://www.stromsend.xyz/#/register?code=tIhaARYV\">\r\n  <img src=\"screenshots/unnamed.jpg\" alt=\"友情推荐\" />\r\n</a>",
+      "assets": [
+        {
+          "id": 567536510,
+          "name": "flyclash-0.2.1.9-pbSmart-arm64-v8a-release.apk",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-arm64-v8a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 567540272,
+          "name": "flyclash-0.2.1.9-pbSmart-armeabi-v7a-release.apk",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-armeabi-v7a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 567533863,
+          "name": "flyclash-0.2.1.9-pbSmart-universal-release.apk",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-universal-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 567540056,
+          "name": "flyclash-0.2.1.9-pbSmart-x86-release.apk",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-x86-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 567536064,
+          "name": "flyclash-0.2.1.9-pbSmart-x86_64-release.apk",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-x86_64-release.apk",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 386858162,
+  "tag_name": "4.4.1",
+  "name": "4.4.1",
+  "html_url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.4.1",
+  "published_at": "2026-09-11T07:39:57Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "* Improved json servers' ping stability",
+  "assets": [
+    {
+      "id": 562780923,
+      "name": "Happ.apk",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 556749483,
+      "name": "Happ_beta.apk",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ_beta.apk",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "id": "clash-mi",
+  "referenceUrl": "https://huarun.win/apps/clash-mi",
+  "referenceText": "Title: Clash Mi：Android、iOS、Windows、macOS、Linux 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/clash-mi\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Clash Mi\n\n![Image 1: Clash Mi 应用图标](https://huarun.win/app-icons/clash-mi.webp)\n\n基于 Flutter 与 Mihomo 的多平台图形客户端，支持 YAML 配置、订阅导入和内置 Zashboard。\n\n设备：未识别 GitHub Release · 核验 2026.09.14\n\n适用平台[Android](https://huarun.win/platform/android)[iOS](https://huarun.win/platform/ios)[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)[Linux](https://huarun.win/platform/linux)\n代码状态 源码不完整\n\n完整功能费用 免费\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/KaringX/clashmi/blob/a034641c4fb6157bd1f9a92562b5df0f508eba2a/README.md)\n\n主导开发[KaringX](https://huarun.win/history/people/karingx)KaringX\n\n**9,331** Star**582** Fork\n\n[查看代码仓库](https://github.com/KaringX/clashmi)\n统计更新于 2026年9月16日\n\n版本号 v1.0.29.1503\n\n最后更新时间 2026年9月2日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n1. Windows: Fixed an issue where the old process's window would not activate when a new process was started after minimizing the app to the system tray (#561).\n2. Fixed an issue where the read status of VPN provider notifications could be incorrect.\n\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968[查看官方版本来源 ↗](https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503)\n应用简介\n\n## 关于 Clash Mi\n\n基于 Flutter 与 Mihomo 的多平台图形客户端，支持 YAML 配置、订阅导入和内置 Zashboard。\n\n适用于 Android、iOS、Windows、macOS、Linux。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/clash-mi)\n人物关联\n\n## 与 Clash Mi 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/karingx.webp)**KaringX**Karing 与 Clash Mi 核心开发组 由该开发者主导开发或长期维护](https://huarun.win/history/people/karingx)\n*   [![Image 3](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 4](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/KaringX/clashmi",
+  "repository": {
+    "full_name": "KaringX/clashmi",
+    "html_url": "https://github.com/KaringX/clashmi",
+    "description": "Clash Mihomo for iOS/MacOS/Android/Windows/Linux",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": "https://clashmi.app/"
+  },
+  "readme": "<h1 align=\"center\">\n  <img src=\"./assets/demo/icon_256.png\" alt=\"Clash Mi\" width=\"256\" />\n  <br>\n  Clash Mi - 又一款mihomo核心的代理工具\n  <br>\n</h1>\n\n<h3 align=\"center\">\n基于 <a href=\"https://github.com/flutter/flutter\">flutter</a> 的 <a href=\"https://github.com/MetaCubeX/mihomo\">mihomo(clash.meta)</a> 图形用户界面。\n</h3>\n\n\n## 特点\n- 内置Mihomo内核\n    - 基于最新且持续更新的Mihomo(Clash.Meta)内核. 内核及客户端均持续更新维护，放心使用.\n- 操作简单\n    - 支持metacubex的推荐配置, 内核基于yaml配置运行. 小白用户使用机场订阅即可使用.\n- 自带[zashboard面板](https://github.com/Zephyruso/zashboard)\n    - web面板 或许你更加熟悉.\n- 官网/用户手册: [clashmi.app](https://clashmi.app)\n\n##### 注意: \n- **Clash Mi或KaringX未在任何视频平台开设过任何频道**\n- [Clash Mi唯一官网](https://clashmi.app): https://clashmi.app\n\t- **请勿相信其他网址提供的信息、下载二次打包的软件**\n\n## 推广\n<details>\n<summary>查看所有推广\n\n\n\n### ✈️推荐机场\n\n[🐶狗狗加速 —— 技术流机场 Doggygo VPN](https://2.x31415926.top/redir.html?url=aHR0cHM6Ly93d3cuZGc2LnRvcC8jL3JlZ2lzdGVyP2NvZGU9bEZINGlpOUQ=&i=3eb&t=1723644053)\n\n- 高性能海外机场，海外团队，无跑路风险\n- 专属链接注册送 3 天，每天 1G 流量 [免费试用](https://2.x31415926.top/redir.html?url=aHR0cHM6Ly93d3cuZGc2LnRvcC8jL3JlZ2lzdGVyP2NvZGU9bEZINGlpOUQ=&i=3eb&t=1723644053)\n- 优惠套餐每月仅需 15.8 元，160G 流量，年付 8 折\n- 全球首家支持`Hysteria2` 协议，集群负载均衡设计，高速专线，极低延迟，无视晚高峰，4K 秒开\n- 解锁流媒体及 ChatGPT\n\n[👉更多机场优惠 每日更新](https://2.x31415926.top/)\n\n</summary>\n\n### 🤝机场合作招募\n- 👉[联系方式与合作形式](https://karing.app/blog/isp/cooperation)👈\n</details>\n\n\n\n\n## 安装\n- **IOS AppStore**: （搜索关键词：clash mi）\n  - https://apps.apple.com/us/app/clash-mi/id6744321968\n- **IOS TestFlight**:\n  - https://testflight.apple.com/join/bjHXktB3\n- **MacOS/Android/Windows/Linux**:\n  - https://clashmi.app/download\n  - https://github.com/KaringX/clashmi/releases/latest\n  - ```sh\n    brew install clash-mi\n    ```\n\n\n### 系统要求\n\n- IOS >= 15\n- MacOS >= 12 (Intel, Apple Silicon)\n- Android >= 8  (arm64-v8a, armeabi-v7a)\n- Windows >= 10 （amd64）\n- Linux （amd64）\n\n### 常见问题\n\n> [FAQ|cn](https://clashmi.app/guide/faq)\n\n\n### 截图\n\n<div align=\"center\">\n  <img src=\"./assets/demo/home.png\" alt=\"app: home\" width=\"50%\" />\n  </br></br>\n</div>\n\n## 提交需求/bug\n- [欢迎报告bug及需求！](https://github.com/KaringX/clashmi/issues)\n- [ClashMiApp 电报群](https://t.me/ClashMiApp)\n\n\n## 捐赠\n- [请开发者喝一杯](https://clashmi.app/donate)\n\n## Projects \n\n### 致谢: Clash Mi 基于或受到这些项目的启发：\n\n- [flutter](https://flutter.dev/)：使构建美观应用变得轻松快捷.\n- [mihomo](https://github.com/MetaCubeX/mihomo)：另一款 clash核心.\n- [zashboard](https://github.com/Zephyruso/zashboard): 使用 Clash API 的仪表板.\n\n\n### Karing Team:\n- [Karing](https://karing.app): https://karing.app\n- [Clash Mi](https://clashmi.app/): https://clashmi.app/\n- [sing-poet](https://github.com/KaringX/sing-poet)\n\n",
+  "treeSha": "887568aaeabcf2d8762ed9b9606da9a41482c7aa",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "android/app/src/main/AndroidManifest.xml",
+    "android/app/src/main/res/drawable-v21/play.xml",
+    "android/app/src/main/res/drawable-v21/stop.xml",
+    "android/app/src/main/res/drawable/ic_statusbar.png",
+    "android/app/src/main/res/drawable/ic_tile.xml",
+    "android/app/src/main/res/drawable/ic_tile_backup.png",
+    "android/app/src/main/res/drawable/ic_tv_banner.png",
+    "android/app/src/main/res/drawable/ic_tv_banner_background.png",
+    "android/app/src/main/res/drawable/splash_icon.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_tv_banner.xml",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "android/app/src/main/res/values-night-v31/styles.xml",
+    "android/app/src/main/res/values-night/styles.xml",
+    "android/app/src/main/res/values-v31/styles.xml",
+    "android/app/src/main/res/values/styles.xml",
+    "android/app/src/main/res/xml/file_paths.xml",
+    "android/libclash/readme.txt",
+    "assets/demo/home.png",
+    "assets/demo/icon_256.png",
+    "assets/images/app_icon_128.png",
+    "assets/images/app_icon_256.png",
+    "assets/images/grey_tray.png",
+    "assets/images/tray.png",
+    "assets/zashboard/apple-touch-icon.png",
+    "assets/zashboard/assets/metacubex-BlQkOUXT.jpg",
+    "assets/zashboard/assets/sing-box-BxTzB1AI.svg",
+    "assets/zashboard/favicon-dark.svg",
+    "assets/zashboard/favicon.svg",
+    "assets/zashboard/icon.svg",
+    "assets/zashboard/pwa-192x192.png",
+    "assets/zashboard/pwa-512x512.png",
+    "assets/zashboard/pwa-maskable-192x192.png",
+    "assets/zashboard/pwa-maskable-512x512.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+    "ios/clashmiWidget/Assets.xcassets/control_widget.symbolset/control_widget.svg",
+    "logo-round-macos.png",
+    "logo-round.png",
+    "logo-round_grey.png",
+    "logo-trans.png",
+    "logo.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png"
+  ],
+  "releaseList": [
+    {
+      "id": 389623964,
+      "tag_name": "v1.0.30.1604",
+      "name": "v1.0.30.1604",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.30.1604",
+      "published_at": "2026-09-16T03:58:16Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 388840630,
+      "tag_name": "v1.0.30.1603",
+      "name": "v1.0.30.1603",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.30.1603",
+      "published_at": "2026-09-15T04:19:29Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 385199879,
+      "tag_name": "v1.0.30.1602",
+      "name": "v1.0.30.1602",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.30.1602",
+      "published_at": "2026-09-09T03:24:53Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 383795292,
+      "tag_name": "v1.0.30.1601",
+      "name": "v1.0.30.1601",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.30.1601",
+      "published_at": "2026-09-07T02:58:54Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 381709753,
+      "tag_name": "v1.0.30.1600",
+      "name": "v1.0.30.1600",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.30.1600",
+      "published_at": "2026-09-03T03:53:34Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 380917279,
+      "tag_name": "v1.0.29.1503",
+      "name": "v1.0.29.1503",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503",
+      "published_at": "2026-09-02T01:37:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 378291911,
+      "tag_name": "v1.0.29.1502",
+      "name": "v1.0.29.1502",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1502",
+      "published_at": "2026-08-28T06:58:13Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 376861530,
+      "tag_name": "v1.0.29.1501",
+      "name": "v1.0.29.1501",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1501",
+      "published_at": "2026-08-26T03:43:01Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 375449061,
+      "tag_name": "v1.0.29.1500",
+      "name": "v1.0.29.1500",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1500",
+      "published_at": "2026-08-24T04:59:36Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 367641358,
+      "tag_name": "v1.0.28.1406",
+      "name": "v1.0.28.1406",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1406",
+      "published_at": "2026-08-10T02:10:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 365481808,
+      "tag_name": "v1.0.28.1404",
+      "name": "v1.0.28.1404",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1404",
+      "published_at": "2026-08-05T11:49:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 364617558,
+      "tag_name": "v1.0.28.1403",
+      "name": "v1.0.28.1403",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1403",
+      "published_at": "2026-08-04T04:36:02Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 363957716,
+      "tag_name": "v1.0.28.1402",
+      "name": "v1.0.28.1402",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1402",
+      "published_at": "2026-08-03T02:49:31Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 359697491,
+      "tag_name": "v1.0.28.1401",
+      "name": "v1.0.28.1401",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1401",
+      "published_at": "2026-07-25T07:18:32Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 359151761,
+      "tag_name": "v1.0.28.1400",
+      "name": "v1.0.28.1400",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.28.1400",
+      "published_at": "2026-07-24T08:29:40Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 352883087,
+      "tag_name": "v1.0.27.1301",
+      "name": "v1.0.27.1301",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.27.1301",
+      "published_at": "2026-07-13T01:10:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 350014550,
+      "tag_name": "v1.0.26.1206",
+      "name": "v1.0.26.1206",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.26.1206",
+      "published_at": "2026-07-07T04:36:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 343250019,
+      "tag_name": "v1.0.25.1108",
+      "name": "v1.0.25.1108",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.25.1108",
+      "published_at": "2026-06-23T02:53:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 331264574,
+      "tag_name": "v1.0.24.1006",
+      "name": "v1.0.24.1006",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.24.1006",
+      "published_at": "2026-05-29T03:56:35Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 380917279,
+      "tag_name": "v1.0.29.1503",
+      "name": "v1.0.29.1503",
+      "html_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.29.1503",
+      "published_at": "2026-09-02T01:37:32Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "1. Windows: Fixed an issue where the old process's window would not activate when a new process was started after minimizing the app to the system tray (#561).\r\n2. Fixed an issue where the read status of VPN provider notifications could be incorrect.\r\n\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
+      "assets": [
+        {
+          "id": 540428639,
+          "name": "clashmi_1.0.29.1503_android_arm.apk",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 540431475,
+          "name": "clashmi_1.0.29.1503_android_arm64-v8a.apk",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_arm64-v8a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 540432694,
+          "name": "clashmi_1.0.29.1503_android_armeabi-v7a.apk",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_android_armeabi-v7a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 540437671,
+          "name": "clashmi_1.0.29.1503_linux_amd64.AppImage",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.AppImage",
+          "state": "uploaded"
+        },
+        {
+          "id": 540435888,
+          "name": "clashmi_1.0.29.1503_linux_amd64.deb",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 540436124,
+          "name": "clashmi_1.0.29.1503_linux_amd64.rpm",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_linux_amd64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 540870810,
+          "name": "clashmi_1.0.29.1503_macos_universal.dmg",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_macos_universal.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 540427090,
+          "name": "clashmi_1.0.29.1503_windows_x64.exe",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 540427270,
+          "name": "clashmi_1.0.29.1503_windows_x64.zip",
+          "browser_download_url": "https://github.com/KaringX/clashmi/releases/download/v1.0.29.1503/clashmi_1.0.29.1503_windows_x64.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "lookup": {
+    "resultCount": 1,
+    "results": [
+      {
+        "trackId": 6744321968,
+        "bundleId": "com.nebula.clashmi",
+        "trackName": "Clash Mi",
+        "sellerName": "SUPERNOVA NEBULA LLC",
+        "kind": "software",
+        "wrapperType": "software",
+        "trackViewUrl": "https://apps.apple.com/us/app/clash-mi/id6744321968?uo=4",
+        "version": "1.0.29.1503",
+        "currentVersionReleaseDate": "2026-09-02T13:22:54Z",
+        "price": 0.0,
+        "currency": "USD",
+        "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/18/e1/1018e181-bce0-1389-bc94-a03e0b848b0e/AppIcon-0-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg"
+      }
+    ]
+  },
+  "applePage": "Title: Clash Mi App - App Store\n\nURL Source: https://apps.apple.com/us/app/clash-mi/id6744321968\n\nMarkdown Content:\nSearch \n\n*   [Today](https://apps.apple.com/us/iphone/today)\n*   [Games](https://apps.apple.com/us/iphone/games)\n*   [Apps](https://apps.apple.com/us/iphone/apps)\n*   [Arcade](https://apps.apple.com/us/iphone/arcade)\n\nPlatform\n*   [iPhone](https://apps.apple.com/us/iphone/today)\n*   [iPad](https://apps.apple.com/us/ipad/today)\n*   [Mac](https://apps.apple.com/us/mac/discover)\n*   [Vision](https://apps.apple.com/us/vision/apps-and-games)\n*   [Watch](https://apps.apple.com/us/watch/apps-and-games)\n*   [TV](https://apps.apple.com/us/tv/discover)\n\n![Image 1](https://apps.apple.com/assets/artwork/1x1.gif)\n\n![Image 2](https://apps.apple.com/assets/artwork/1x1.gif)\n\n# Clash Mi\n\nBased on mihomo core, powerful\n\nFree\n\n Share \n\n*   \n[430 Ratings 4.7 5.](https://apps.apple.com/us/app/clash-mi/id6744321968#productRatings)\n\n*   [Age Rating 4+Years](https://apps.apple.com/us/app/clash-mi/id6744321968#information) \n*   [Chart #190 Utilities](https://apps.apple.com/us/iphone/charts/6002?chart=top-free) \n*   [Developer Supernova Nebula LLC](https://apps.apple.com/us/developer/supernova-nebula-llc/id1717024808?platform=iphone) \n*   [Language EN English](https://apps.apple.com/us/app/clash-mi/id6744321968#information) \n*   [Size 109.9 MB](https://apps.apple.com/us/app/clash-mi/id6744321968#information) \n\n*   ![Image 3](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 4](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 5](https://apps.apple.com/assets/artwork/1x1.gif)    \n\niPhone, iPad\n\nBased on mihomo(meta) core, simple and powerful, rule-based network proxy tool Official website: https://clashmi.app 1. Support full meta functions 2. Powerful overwrite support, including customization 3. Easy to use 4. Built-in board, running information can be viewed at any time 5. Official website: https://clashmi.app\n\nmore\n\n## [Ratings & Reviews](https://apps.apple.com/us/app/6744321968?see-all=reviews&platform=iphone)\n\n*   4.7 out of 5  430 Ratings                                        \n\n*   \n### Not bad \n\nMay 18\n\nAmigoforver\n\nBut it have a little slow when you take up you phone after you locked\n\n# Not bad\n\nMay 18\n\nAmigoforver\n\nBut it have a little slow when you take up you phone after you locked\n\n*   \n### 快捷指令 shortcut \n\nAug 21\n\ndzshuai\n\nYou can add a toggle type in Apple Shortcuts to quickly switch between on and off. The current on/off shortcuts don't seem to work either.可以在苹果快捷指令增加toggle类型 快速切换开启与关闭。现有的快捷指令on/off 好像也无法使用\n\n# 快捷指令 shortcut\n\nAug 21\n\ndzshuai\n\nYou can add a toggle type in Apple Shortcuts to quickly switch between on and off. The current on/off shortcuts don't seem to work either.可以在苹果快捷指令增加toggle类型 快速切换开启与关闭。现有的快捷指令on/off 好像也无法使用\n\n*   \n### Any plans to support smart mode? \n\nJul 29\n\ntyronesaint\n\nI’ve become a bit too dependent on smart mode recently.\n\n# Any plans to support smart mode?\n\nJul 29\n\ntyronesaint\n\nI’ve become a bit too dependent on smart mode recently.\n\n*   \n### Hope to add desktop widgets \n\nMar 27\n\nCathouun\n\nWidgets in Control Center are not as convenient as desktop widgets， thx\n\n# Hope to add desktop widgets\n\nMar 27\n\nCathouun\n\nWidgets in Control Center are not as convenient as desktop widgets， thx\n\n## What’s New\n\n# Version History\n\n*   1. Bug fix and improvements\n\n1.0.29.1503 Sep 2   \n*   1. Bug fix and improvements\n\n1.0.28.1406 Aug 11   \n*   1. Bug fix and improvements\n\n1.0.27.1301 Jul 17   \n*   1. Bug fix and improvements\n\n1.0.26.1206 Jul 8   \n*   1. Bug fix and improvements\n\n1.0.25.1108 Jun 25   \n*   1. Bug fix and improvements\n\n1.0.24.1006 Jun 2   \n*   1. Bug fix and improvements\n\n1.0.23.904 May 12   \n*   1. Bug fix and improvements\n\n1.0.22.802 May 5   \n*   1. Bug fix and improvements\n\n1.0.21.703 Apr 23   \n*   1. Bug fix and improvements\n\n1.0.20.607 Apr 8   \n*   1. Bug fix and improvements\n\n1.0.19.502 Mar 11   \n*   1. Adapted to dark mode on the launch screen 2. Improved HWID information 3. Added support for Japanese/Korean/Traditional Chinese 4. Fixed some errors in Geo rule conversion 5. Other improvements and fixes\n\n1.0.18.403 Feb 10   \n*   1. Fixed the issue where proxy nodes were not displayed. 2. Fixed the issue where the proxy node sorting was inconsistent with the panel. 3. Fixed the issue where geosite and geoip were not correctly converted in the rules and, or, not, causing connection failures\n\n1.0.17.300 Jan 28   \n*   1. Added a control center widget 2. Improved overwrite support 3. Added support for manually adding rules, etc. 4. Fixed the issue of some nodes not displaying 5. Updated resources 6. Updated the core 7. Other improvements and fixes\n\n1.0.16.211 Jan 25   \n*   1. Updated core 2. Updated zashboard 3. Added/edited options including useragent #256 4. TUN: Added 'ICMP forwarding' setting 5. Fixed decompression errors\n\n1.0.15.191 Jan 7   \n*   Bug fixes and improvements\n\n1.0.14.181 12/09/2025   \n*   Bug fixes and improvements\n\n1.0.13.171 11/18/2025   \n*   Bug fixes and improvements\n\n1.0.12.162 10/31/2025   \n*   Bug fixes and improvements\n\n1.0.11.150 10/19/2025   \n*   Bug fixes and improvements\n\n1.0.10.141 10/09/2025   \n*   Bug fixes and improvements\n\n1.0.9.137 09/28/2025   \n*   1. bug fix\n\n1.0.8.123 09/04/2025   \n*   1. bug fix\n\n1.0.7.115 08/07/2025   \n*   1. Bug fixes and improvements\n\n1.0.6.105 07/23/2025   \n*   1. bug fix\n\n1.0.5.91 07/03/2025   \n\n1. Bug fix and improvements\n\nmore\n\nVersion 1.0.29.1503 Sep 2\n\n## [App Privacy](https://apps.apple.com/us/app/clash-mi/id6744321968#)\n\n# App Privacy\n\nThe developer, **Supernova Nebula LLC**, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the [developer’s privacy policy](https://clashmi.app/privacy_policy.txt).\n\nTo help you better understand the developer’s responses, see [Privacy Definitions and Examples](https://apps.apple.com/us/iphone/story/id1539235847).\n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n### Data Not Collected\n\nThe developer does not collect any data from this app.\n\nThe developer, **Supernova Nebula LLC**, indicated that the app’s privacy practices may include handling of data as described below. For more information, see the [developer’s privacy policy](https://clashmi.app/privacy_policy.txt).\n\n*   ### Data Not Collected\n\nThe developer does not collect any data from this app. \n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n## Accessibility\n\nThe developer has not yet indicated which accessibility features this app supports. [Learn More](https://apps.apple.com/story/id1814164299)\n\n## Information\n\nSeller\n*   SUPERNOVA NEBULA LLC\n\nSize\n*   109.9 MB\n\nCategory\n*   Utilities\n\nCompatibility\n\nRequires iOS 15 or later. \n*   **iPhone**  \nRequires iOS 15 or later.\n*    \n*   **iPad**  \nRequires iPadOS 15 or later.\n*    \n*   **iPod touch**  \nRequires iOS 15 or later.\n*    \n*   **Apple Vision**  \nRequires visionOS 1.0 or later.\n\nLanguages\n*   English\n\nAge Rating\n\n4+ \n*   4+  \n*   [Learn More](https://apps.apple.com/us/iphone/story/id1825160725) \n\nCopyright\n*   © 2026 SUPERNOVA NEBULA LLC\n\n*   [Privacy Policy](https://clashmi.app/privacy_policy.txt) \n\n## [More by Supernova Nebula LLC](https://apps.apple.com/us/developer/supernova-nebula-llc/id1717024808)\n\n*   [View ![Image 6](https://apps.apple.com/assets/artwork/1x1.gif) Karing Clash-compat proxy utility](https://apps.apple.com/us/app/karing/id6472431552)   \n*   [View ![Image 7](https://apps.apple.com/assets/artwork/1x1.gif) SkiVPN Utilities](https://apps.apple.com/us/app/skivpn/id6760533891)   \n\n## [You Might Also Like](https://apps.apple.com/us/app/6744321968?see-all=customers-also-bought-apps&platform=iphone)\n\n*   [View ![Image 8](https://apps.apple.com/assets/artwork/1x1.gif) Nextin Proxy client powered by Clash](https://apps.apple.com/us/app/nextin/id6754002454)   \n*   [View ![Image 9](https://apps.apple.com/assets/artwork/1x1.gif) ClashX Pro - Server Manager Clash dashboard manage client.](https://apps.apple.com/us/app/clashx-pro-server-manager/id6749874545)   \n*   [View ![Image 10](https://apps.apple.com/assets/artwork/1x1.gif) Hiddify Proxy & VPN VPN, Clash, SingBox,XRay,V2Ray](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532)   \n*   [View ![Image 11](https://apps.apple.com/assets/artwork/1x1.gif) Shadowrocket Rule based proxy utility](https://apps.apple.com/us/app/shadowrocket/id932747118)   \n*   [View ![Image 12](https://apps.apple.com/assets/artwork/1x1.gif) Shadowrocket-小火箭VPN安全网络加速器 Utilities](https://apps.apple.com/us/app/shadowrocket-%E5%B0%8F%E7%81%AB%E7%AE%ADvpn%E5%AE%89%E5%85%A8%E7%BD%91%E7%BB%9C%E5%8A%A0%E9%80%9F%E5%99%A8/id6742070311)   \n*   [View ![Image 13](https://apps.apple.com/assets/artwork/1x1.gif) LightXtreme VPN:Fast Unlimited Unlimited Proxy, WiFi Security](https://apps.apple.com/us/app/lightxtreme-vpn-fast-unlimited/id6476379983)   \n*   [View ![Image 14](https://apps.apple.com/assets/artwork/1x1.gif) Egern Utilities](https://apps.apple.com/us/app/egern/id1616105820)   \n*   [View ![Image 15](https://apps.apple.com/assets/artwork/1x1.gif) 快连VPN 永远都能连上的VPN](https://apps.apple.com/us/app/%E5%BF%AB%E8%BF%9Evpn/id1471102783)   \n*   [View ![Image 16](https://apps.apple.com/assets/artwork/1x1.gif) PikPak - Cloud Storage & Saver Cloud Storage for Photos&Files](https://apps.apple.com/us/app/pikpak-cloud-storage-saver/id1616861537)   \n*   [View ![Image 17](https://apps.apple.com/assets/artwork/1x1.gif) Rocket VPN-VPN Config Your Ultimate VPN Configurator](https://apps.apple.com/us/app/rocket-vpn-vpn-config/id6451073299)   \n\nUnited States\n*   [Español (México)](https://apps.apple.com/us/app/clash-mi/id6744321968?l=es-MX)\n*   [العربية](https://apps.apple.com/us/app/clash-mi/id6744321968?l=ar)\n*   [Русский](https://apps.apple.com/us/app/clash-mi/id6744321968?l=ru)\n*   [简体中文](https://apps.apple.com/us/app/clash-mi/id6744321968?l=zh-Hans-CN)\n*   [Français (France)](https://apps.apple.com/us/app/clash-mi/id6744321968?l=fr-FR)\n*   [한국어](https://apps.apple.com/us/app/clash-mi/id6744321968?l=ko)\n*   [Português (Brazil)](https://apps.apple.com/us/app/clash-mi/id6744321968?l=pt-BR)\n*   [Tiếng Việt](https://apps.apple.com/us/app/clash-mi/id6744321968?l=vi)\n*   [繁體中文 (台灣)](https://apps.apple.com/us/app/clash-mi/id6744321968?l=zh-Hant-TW)\n\nSelect a country or region\n\n## Africa, Middle East, and India\n\nSee All \n\n*   [Algeria](https://apps.apple.com/dz/iphone/today)\n*   [Angola](https://apps.apple.com/ao/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Azerbaijan](https://apps.apple.com/az/iphone/today)\n*   [Bahrain](https://apps.apple.com/bh/iphone/today)\n*   [Benin](https://apps.apple.com/bj/iphone/today)\n*   [Botswana](https://apps.apple.com/bw/iphone/today)\n*   [Burkina Faso](https://apps.apple.com/bf/iphone/today)\n*   [Cameroun](https://apps.apple.com/cm/iphone/today)\n*   [Cape Verde](https://apps.apple.com/cv/iphone/today)\n*   [Chad](https://apps.apple.com/td/iphone/today)\n*   [Côte d’Ivoire](https://apps.apple.com/ci/iphone/today)\n*   [Congo, The Democratic Republic Of The](https://apps.apple.com/cd/iphone/today)\n*   [Egypt](https://apps.apple.com/eg/iphone/today)\n*   [Eswatini](https://apps.apple.com/sz/iphone/today)\n*   [Gabon](https://apps.apple.com/ga/iphone/today)\n*   [Gambia](https://apps.apple.com/gm/iphone/today)\n*   [Ghana](https://apps.apple.com/gh/iphone/today)\n*   [Guinea-Bissau](https://apps.apple.com/gw/iphone/today)\n*   [India](https://apps.apple.com/in/iphone/today)\n*   [Iraq](https://apps.apple.com/iq/iphone/today)\n*   [Israel](https://apps.apple.com/il/iphone/today)\n*   [Jordan](https://apps.apple.com/jo/iphone/today)\n*   [Kenya](https://apps.apple.com/ke/iphone/today)\n*   [Kuwait](https://apps.apple.com/kw/iphone/today)\n*   [Lebanon](https://apps.apple.com/lb/iphone/today)\n*   [Liberia](https://apps.apple.com/lr/iphone/today)\n*   [Libya](https://apps.apple.com/ly/iphone/today)\n*   [Madagascar](https://apps.apple.com/mg/iphone/today)\n*   [Malawi](https://apps.apple.com/mw/iphone/today)\n*   [Mali](https://apps.apple.com/ml/iphone/today)\n*   [Mauritania](https://apps.apple.com/mr/iphone/today)\n*   [Mauritius](https://apps.apple.com/mu/iphone/today)\n*   [Morocco](https://apps.apple.com/ma/iphone/today)\n*   [Mozambique](https://apps.apple.com/mz/iphone/today)\n*   [Namibia](https://apps.apple.com/na/iphone/today)\n*   [Niger (English)](https://apps.apple.com/ne/iphone/today)\n*   [Nigeria](https://apps.apple.com/ng/iphone/today)\n*   [Oman](https://apps.apple.com/om/iphone/today)\n*   [Qatar](https://apps.apple.com/qa/iphone/today)\n*   [Congo, Republic of](https://apps.apple.com/cg/iphone/today)\n*   [Rwanda](https://apps.apple.com/rw/iphone/today)\n*   [São Tomé and Príncipe](https://apps.apple.com/st/iphone/today)\n*   [Saudi Arabia](https://apps.apple.com/sa/iphone/today)\n*   [Senegal](https://apps.apple.com/sn/iphone/today)\n*   [Seychelles](https://apps.apple.com/sc/iphone/today)\n*   [Sierra Leone](https://apps.apple.com/sl/iphone/today)\n*   [South Africa](https://apps.apple.com/za/iphone/today)\n*   [Sri Lanka](https://apps.apple.com/lk/iphone/today)\n*   [Tajikistan](https://apps.apple.com/tj/iphone/today)\n*   [Tanzania, United Republic Of](https://apps.apple.com/tz/iphone/today)\n*   [Tunisia](https://apps.apple.com/tn/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [United Arab Emirates](https://apps.apple.com/ae/iphone/today)\n*   [Uganda](https://apps.apple.com/ug/iphone/today)\n*   [Yemen](https://apps.apple.com/ye/iphone/today)\n*   [Zambia](https://apps.apple.com/zm/iphone/today)\n*   [Zimbabwe](https://apps.apple.com/zw/iphone/today)\n\n## Asia Pacific\n\nSee All \n\n*   [Afghanistan](https://apps.apple.com/af/iphone/today)\n*   [Australia](https://apps.apple.com/au/iphone/today)\n*   [Bhutan](https://apps.apple.com/bt/iphone/today)\n*   [Brunei Darussalam](https://apps.apple.com/bn/iphone/today)\n*   [Cambodia](https://apps.apple.com/kh/iphone/today)\n*   [中国大陆](https://apps.apple.com/cn/iphone/today)\n*   [Fiji](https://apps.apple.com/fj/iphone/today)\n*   [香港](https://apps.apple.com/hk/iphone/today)\n*   [Indonesia (English)](https://apps.apple.com/id/iphone/today)\n*   [日本](https://apps.apple.com/jp/iphone/today)\n*   [Kazakhstan](https://apps.apple.com/kz/iphone/today)\n*   [대한민국](https://apps.apple.com/kr/iphone/today)\n*   [Kyrgyzstan](https://apps.apple.com/kg/iphone/today)\n*   [Lao People's Democratic Republic](https://apps.apple.com/la/iphone/today)\n*   [澳門](https://apps.apple.com/mo/iphone/today)\n*   [Malaysia (English)](https://apps.apple.com/my/iphone/today)\n*   [Maldives](https://apps.apple.com/mv/iphone/today)\n*   [Micronesia, Federated States of](https://apps.apple.com/fm/iphone/today)\n*   [Mongolia](https://apps.apple.com/mn/iphone/today)\n*   [Myanmar](https://apps.apple.com/mm/iphone/today)\n*   [Nauru](https://apps.apple.com/nr/iphone/today)\n*   [Nepal](https://apps.apple.com/np/iphone/today)\n*   [New Zealand](https://apps.apple.com/nz/iphone/today)\n*   [Pakistan](https://apps.apple.com/pk/iphone/today)\n*   [Palau](https://apps.apple.com/pw/iphone/today)\n*   [Papua New Guinea](https://apps.apple.com/pg/iphone/today)\n*   [Philippines](https://apps.apple.com/ph/iphone/today)\n*   [Singapore](https://apps.apple.com/sg/iphone/today)\n*   [Solomon Islands](https://apps.apple.com/sb/iphone/today)\n*   [台灣](https://apps.apple.com/tw/iphone/today)\n*   [Thailand](https://apps.apple.com/th/iphone/today)\n*   [Tonga](https://apps.apple.com/to/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [Uzbekistan](https://apps.apple.com/uz/iphone/today)\n*   [Vanuatu](https://apps.apple.com/vu/iphone/today)\n*   [Vietnam](https://apps.apple.com/vn/iphone/today)\n\n## Europe\n\nSee All \n\n*   [Albania](https://apps.apple.com/al/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Österreich](https://apps.apple.com/at/iphone/today)\n*   [Belarus](https://apps.apple.com/by/iphone/today)\n*   [Belgium](https://apps.apple.com/be/iphone/today)\n*   [Bosnia and Herzegovina](https://apps.apple.com/ba/iphone/today)\n*   [Bulgaria](https://apps.apple.com/bg/iphone/today)\n*   [Croatia](https://apps.apple.com/hr/iphone/today)\n*   [Cyprus](https://apps.apple.com/cy/iphone/today)\n*   [Czechia](https://apps.apple.com/cz/iphone/today)\n*   [Denmark](https://apps.apple.com/dk/iphone/today)\n*   [Estonia](https://apps.apple.com/ee/iphone/today)\n*   [Finland](https://apps.apple.com/fi/iphone/today)\n*   [France (Français)](https://apps.apple.com/fr/iphone/today)\n*   [Georgia](https://apps.apple.com/ge/iphone/today)\n*   [Deutschland](https://apps.apple.com/de/iphone/today)\n*   [Greece](https://apps.apple.com/gr/iphone/today)\n*   [Hungary](https://apps.apple.com/hu/iphone/today)\n*   [Iceland](https://apps.apple.com/is/iphone/today)\n*   [Ireland](https://apps.apple.com/ie/iphone/today)\n*   [Italia](https://apps.apple.com/it/iphone/today)\n*   [Kosovo](https://apps.apple.com/xk/iphone/today)\n*   [Latvia](https://apps.apple.com/lv/iphone/today)\n*   [Lithuania](https://apps.apple.com/lt/iphone/today)\n*   [Luxembourg (English)](https://apps.apple.com/lu/iphone/today)\n*   [Malta](https://apps.apple.com/mt/iphone/today)\n*   [Moldova, Republic Of](https://apps.apple.com/md/iphone/today)\n*   [Montenegro](https://apps.apple.com/me/iphone/today)\n*   [Nederland](https://apps.apple.com/nl/iphone/today)\n*   [North Macedonia](https://apps.apple.com/mk/iphone/today)\n*   [Norway](https://apps.apple.com/no/iphone/today)\n*   [Poland](https://apps.apple.com/pl/iphone/today)\n*   [Portugal (Português)](https://apps.apple.com/pt/iphone/today)\n*   [Romania](https://apps.apple.com/ro/iphone/today)\n*   [Россия](https://apps.apple.com/ru/iphone/today)\n*   [Serbia](https://apps.apple.com/rs/iphone/today)\n*   [Slovakia](https://apps.apple.com/sk/iphone/today)\n*   [Slovenia](https://apps.apple.com/si/iphone/today)\n*   [España](https://apps.apple.com/es/iphone/today)\n*   [Sverige](https://apps.apple.com/se/iphone/today)\n*   [Schweiz](https://apps.apple.com/ch/iphone/today)\n*   [Türkiye (English)](https://apps.apple.com/tr/iphone/today)\n*   [Ukraine](https://apps.apple.com/ua/iphone/today)\n*   [United Kingdom](https://apps.apple.com/gb/iphone/today)\n\n## Latin America and the Caribbean\n\nSee All \n\n*   [Anguilla](https://apps.apple.com/ai/iphone/today)\n*   [Antigua and Barbuda](https://apps.apple.com/ag/iphone/today)\n*   [Argentina (Español)](https://apps.apple.com/ar/iphone/today)\n*   [Bahamas](https://apps.apple.com/bs/iphone/today)\n*   [Barbados](https://apps.apple.com/bb/iphone/today)\n*   [Belize](https://apps.apple.com/bz/iphone/today)\n*   [Bermuda](https://apps.apple.com/bm/iphone/today)\n*   [Bolivia (Español)](https://apps.apple.com/bo/iphone/today)\n*   [Brasil](https://apps.apple.com/br/iphone/today)\n*   [Virgin Islands, British](https://apps.apple.com/vg/iphone/today)\n*   [Cayman Islands](https://apps.apple.com/ky/iphone/today)\n*   [Chile (Español)](https://apps.apple.com/cl/iphone/today)\n*   [Colombia (Español)](https://apps.apple.com/co/iphone/today)\n*   [Costa Rica (Español)](https://apps.apple.com/cr/iphone/today)\n*   [Dominica](https://apps.apple.com/dm/iphone/today)\n*   [República Dominicana](https://apps.apple.com/do/iphone/today)\n*   [Ecuador (Español)](https://apps.apple.com/ec/iphone/today)\n*   [El Salvador (Español)](https://apps.apple.com/sv/iphone/today)\n*   [Grenada](https://apps.apple.com/gd/iphone/today)\n*   [Guatemala (Español)](https://apps.apple.com/gt/iphone/today)\n*   [Guyana](https://apps.apple.com/gy/iphone/today)\n*   [Honduras (Español)](https://apps.apple.com/hn/iphone/today)\n*   [Jamaica](https://apps.apple.com/jm/iphone/today)\n*   [México](https://apps.apple.com/mx/iphone/today)\n*   [Montserrat](https://apps.apple.com/ms/iphone/today)\n*   [Nicaragua (Español)](https://apps.apple.com/ni/iphone/today)\n*   [Panamá](https://apps.apple.com/pa/iphone/today)\n*   [Paraguay (Español)](https://apps.apple.com/py/iphone/today)\n*   [Perú](https://apps.apple.com/pe/iphone/today)\n*   [St. Kitts and Nevis](https://apps.apple.com/kn/iphone/today)\n*   [Saint Lucia](https://apps.apple.com/lc/iphone/today)\n*   [St. Vincent and The Grenadines](https://apps.apple.com/vc/iphone/today)\n*   [Suriname](https://apps.apple.com/sr/iphone/today)\n*   [Trinidad and Tobago](https://apps.apple.com/tt/iphone/today)\n*   [Turks and Caicos](https://apps.apple.com/tc/iphone/today)\n*   [Uruguay (English)](https://apps.apple.com/uy/iphone/today)\n*   [Venezuela (Español)](https://apps.apple.com/ve/iphone/today)\n\n## The United States and Canada\n\nSee All \n\n*   [Canada (English)](https://apps.apple.com/ca/iphone/today)\n*   [Canada (Français)](https://apps.apple.com/ca/iphone/today?l=fr-CA)\n*   [United States](https://apps.apple.com/us/iphone/today)\n*   [Estados Unidos (Español México)](https://apps.apple.com/us/iphone/today?l=es-MX)\n*   [الولايات المتحدة](https://apps.apple.com/us/iphone/today?l=ar)\n*   [США](https://apps.apple.com/us/iphone/today?l=ru)\n*   [美国 (简体中文)](https://apps.apple.com/us/iphone/today?l=zh-Hans-CN)\n*   [États-Unis (Français France)](https://apps.apple.com/us/iphone/today?l=fr-FR)\n*   [미국](https://apps.apple.com/us/iphone/today?l=ko)\n*   [Estados Unidos (Português Brasil)](https://apps.apple.com/us/iphone/today?l=pt-BR)\n*   [Hoa Kỳ](https://apps.apple.com/us/iphone/today?l=vi)\n*   [美國 (繁體中文台灣)](https://apps.apple.com/us/iphone/today?l=zh-Hant-TW)\n\nCopyright © 2026[Apple Inc.](https://www.apple.com/)All rights reserved.\n\n*   [Internet Service Terms](https://www.apple.com/legal/internet-services/)\n*   [App Store & Privacy](https://www.apple.com/legal/privacy/data/en/app-store/)\n*   [Cookie Warning](https://www.apple.com/privacy/use-of-cookies/)\n*   [Support](https://support.apple.com/billing)\n"
+}

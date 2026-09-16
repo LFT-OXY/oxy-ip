@@ -214,6 +214,7 @@ test("动态资料使用真实英文翻译，不回退中文或丢失占位", as
   try {
     const { t } = await import("../src/i18n/index.ts?catalog-english");
     const keys = apps.flatMap((a) => [
+      a.name,
       a.description,
       a.priceDetails,
       ...a.aliases,

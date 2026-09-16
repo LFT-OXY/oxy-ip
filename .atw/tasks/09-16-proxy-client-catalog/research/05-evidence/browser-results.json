@@ -1,0 +1,405 @@
+{
+  "ui-matrix": {
+    "results": [
+      {
+        "width": 390,
+        "lang": "zh",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "lang": "zh",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "lang": "en",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "lang": "en",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "lang": "zh",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "lang": "zh",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "lang": "en",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "lang": "en",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "lang": "zh",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "lang": "zh",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "theme": "light",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "theme": "dark",
+        "count": 58,
+        "keyboard": "Tab/Enter/Space",
+        "overflow": false
+      }
+    ],
+    "pageErrors": []
+  },
+  "ui-details": [
+    {
+      "id": "clashx-meta",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "v2rayu",
+      "platform": "macos",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "surfboard",
+      "platform": "android",
+      "downloads": 5,
+      "icon": "已加载"
+    },
+    {
+      "id": "insightbox",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "xray-gui",
+      "platform": "android",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mi",
+      "platform": "android",
+      "downloads": 3,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mi",
+      "platform": "ios",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mi",
+      "platform": "windows",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mi",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mi",
+      "platform": "linux",
+      "downloads": 3,
+      "icon": "已加载"
+    },
+    {
+      "id": "flclashx",
+      "platform": "android",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "flclashx",
+      "platform": "windows",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "flclashx",
+      "platform": "macos",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "flclashx",
+      "platform": "linux",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "mikubox-for-android",
+      "platform": "android",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "kunbox",
+      "platform": "android",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "nekobox-by-starifly",
+      "platform": "android",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "happ-proxy",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "happ-proxy",
+      "platform": "ios",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "happ-proxy",
+      "platform": "windows",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "happ-proxy",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "happ-proxy",
+      "platform": "linux",
+      "downloads": 6,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-xiaoy",
+      "platform": "windows",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-xiaoy",
+      "platform": "macos",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-xiaoy",
+      "platform": "linux",
+      "downloads": 3,
+      "icon": "已加载"
+    },
+    {
+      "id": "monadbox",
+      "platform": "android",
+      "downloads": 5,
+      "icon": "已加载"
+    },
+    {
+      "id": "mconnect",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "mconnect",
+      "platform": "harmonyos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "mconnect",
+      "platform": "windows",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "mconnect",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "mconnect",
+      "platform": "linux",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "vproxy",
+      "platform": "android",
+      "downloads": 3,
+      "icon": "已加载"
+    },
+    {
+      "id": "vproxy",
+      "platform": "ios",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "vproxy",
+      "platform": "windows",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "vproxy",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "vproxy",
+      "platform": "linux",
+      "downloads": 4,
+      "icon": "已加载"
+    },
+    {
+      "id": "flyclash",
+      "platform": "windows",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "flyclash",
+      "platform": "macos",
+      "downloads": 2,
+      "icon": "已加载"
+    },
+    {
+      "id": "flyclash",
+      "platform": "linux",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "flyclash-android",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "sudodroid",
+      "platform": "android",
+      "downloads": 3,
+      "icon": "已加载"
+    },
+    {
+      "id": "box-for-root",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "surfing",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "box4magisk",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "box-for-android",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "akashaproxy",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "clash-mix",
+      "platform": "android",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "anywhere",
+      "platform": "ios",
+      "downloads": 1,
+      "icon": "已加载"
+    },
+    {
+      "id": "anywhere",
+      "platform": "macos",
+      "downloads": 1,
+      "icon": "已加载"
+    }
+  ],
+  "bfr-mihomo-regression": {
+    "app": "box-for-root",
+    "filter": "android+Mihomo",
+    "detail": "六内核匹配",
+    "url": "http://127.0.0.1:4185/clients/box-for-root?lang=en&platform=android&core=Mihomo"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 388735686,
+  "tag_name": "meta-v1.19.31-ab405bad",
+  "name": "meta-v1.19.31-ab405bad",
+  "html_url": "https://github.com/MonadBoxLab/MonadBox/releases/tag/meta-v1.19.31-ab405bad",
+  "published_at": "2026-09-14T21:51:52Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "**Full Changelog**: https://github.com/MonadBoxLab/MonadBox/compare/alpha-Prerelease-Alpha-dca26db0...meta-v1.19.31-ab405bad",
+  "assets": [
+    {
+      "id": 564301539,
+      "name": "monadbox-meta-MonadBox-arm64-v8a-release.apk",
+      "browser_download_url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-arm64-v8a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 564301535,
+      "name": "monadbox-meta-MonadBox-armeabi-v7a-release.apk",
+      "browser_download_url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-armeabi-v7a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 564301537,
+      "name": "monadbox-meta-MonadBox-universal-release.apk",
+      "browser_download_url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-universal-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 564301536,
+      "name": "monadbox-meta-MonadBox-x86-release.apk",
+      "browser_download_url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 564301538,
+      "name": "monadbox-meta-MonadBox-x86_64-release.apk",
+      "browser_download_url": "https://github.com/MonadBoxLab/MonadBox/releases/download/meta-v1.19.31-ab405bad/monadbox-meta-MonadBox-x86_64-release.apk",
+      "state": "uploaded"
+    }
+  ]
+}

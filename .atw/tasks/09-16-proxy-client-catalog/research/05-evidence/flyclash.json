@@ -1,0 +1,318 @@
+{
+  "id": "flyclash",
+  "referenceUrl": "https://huarun.win/apps/flyclash",
+  "referenceText": "Title: FlyClash 桌面版：Windows、macOS 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/flyclash\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Windows](https://huarun.win/platform/windows)\n3.   FlyClash 桌面版\n\n![Image 1: FlyClash 桌面版 应用图标](https://huarun.win/app-icons/flyclash.webp)\n\n基于 Mihomo 的 Windows/macOS 代理客户端，提供订阅管理、系统代理、测速和媒体服务检测；当前收录 Electron 稳定版 v0.2.9。\n\n设备：未识别 GitHub Release · 核验 2026.09.14\n\n适用平台[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)\n代码状态 源码不完整\n\n完整功能费用 费用待核实 免费下载\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/GtxFury/FlyClash/blob/v0.2.9/scripts/prepare.mjs)\n\n主导开发[GtxFury](https://huarun.win/history/people/gtxfury)GtxFury\n\n**1,354** Star**78** Fork\n\n[查看代码仓库](https://github.com/GtxFury/FlyClash)\n统计更新于 2026年9月16日\n\n版本号 v0.2.9\n\n最后更新时间 2026年5月17日\n\n数据来源 Windows/macOS Electron 稳定版；源码状态随版本人工复核\n\n## 官方变更日志\n\n1. 修复了一些BUG\n2.部分细节优化[查看官方版本来源 ↗](https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9)\n应用简介\n\n## 关于 FlyClash 桌面版\n\n基于 Mihomo 的 Windows/macOS 代理客户端，提供订阅管理、系统代理、测速和媒体服务检测；当前收录 Electron 稳定版 v0.2.9。\n\n适用于 Windows、macOS。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/flyclash)\n人物关联\n\n## 与 FlyClash 桌面版 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/gtxfury.webp)**GtxFury**FlyClash 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/gtxfury)\n*   [![Image 3](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 4](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/GtxFury/FlyClash",
+  "repository": {
+    "full_name": "GtxFury/FlyClash",
+    "html_url": "https://github.com/GtxFury/FlyClash",
+    "description": "简洁美观的代理工具",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": ""
+  },
+  "readme": "<a href=\"https://www.stromsend.xyz/#/register?code=tIhaARYV\">\n  <img src=\"https://raw.githubusercontent.com/GtxFury/FlyClash-Android/main/screenshots/unnamed.jpg\" alt=\"友情推荐\" />\n</a>\n\n# FlyClash - 简洁优雅的代理工具\n\nFlyClash是一个基于Clash内核的现代化代理客户端，拥有美观的界面和强大的功能。\n\n## 功能特点\n\n- 🚀 集成最新的Clash内核\n- 📊 简洁直观的控制面板\n- 🎬 支持媒体服务检测\n- ⚡ 支持测速分享功能\n- 🔧 方便的订阅管理\n- 🌐 支持系统代理切换\n- 💡 明暗主题适配\n- 🔔 托盘图标支持\n- 🎨 基于现代设计语言\n\n## 交流社区\n\n加入我们的 [Telegram 交流群](https://t.me/flyclash_chat) 获取最新消息、使用帮助和与其他用户交流。\n\n## 安装\n\n### 从发布版下载\n\n访问[发布页面](https://github.com/GtxFury/FlyClash/releases)下载最新版本的安装包。\n\n### 从源码构建\n\n```bash\n# 克隆仓库\ngit clone https://github.com/GtxFury/FlyClash.git\ncd flyclash\n\n# 安装依赖\nnpm install\n\n# Tauri 开发模式运行\nnpm run tauri:dev\n\n# 构建安装包\nnpm run tauri:build\n```\n\n## 使用方法\n\n1. 添加订阅：在\"订阅管理\"页面添加您的订阅链接\n2. 选择配置：在控制面板选择添加的配置文件\n3. 启动服务：点击\"启动\"按钮开始代理服务\n4. 系统代理：通过系统托盘菜单启用/禁用系统代理\n\n## 常见问题\n\n### 无法启动Clash内核\n\n确保您没有其他同类软件占用了相同的端口（默认7890）。\n\n### 系统代理设置失败\n\n请尝试以管理员身份运行FlyClash，或手动设置系统代理。\n\n## 致谢\n\n- [Clash](https://github.com/MetaCubeX/mihomo) - 优秀的代理内核\n- [Next.js](https://nextjs.org) - React框架\n- [Electron](https://www.electronjs.org) - 桌面应用框架\n- [Radix UI](https://www.radix-ui.com) - 无障碍UI组件\n- [Tailwind CSS](https://tailwindcss.com) - CSS框架\n\n## 许可证\n\n[MIT License](LICENSE)\n",
+  "treeSha": "8409477ec91e9f741df16c3b04249cd43ecd0a4d",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "public/Doodle.png",
+    "public/gold.png",
+    "public/icons.png",
+    "public/logo.png",
+    "public/logo2Template.png",
+    "public/logoTemplate.png",
+    "screenshots/unnamed.jpg",
+    "src-tauri/icons/128x128.png",
+    "src-tauri/icons/128x128@2x.png",
+    "src-tauri/icons/32x32.png",
+    "src-tauri/icons/512x512.png",
+    "src-tauri/icons/64x64.png",
+    "src-tauri/icons/Square107x107Logo.png",
+    "src-tauri/icons/Square142x142Logo.png",
+    "src-tauri/icons/Square150x150Logo.png",
+    "src-tauri/icons/Square284x284Logo.png",
+    "src-tauri/icons/Square30x30Logo.png",
+    "src-tauri/icons/Square310x310Logo.png",
+    "src-tauri/icons/Square44x44Logo.png",
+    "src-tauri/icons/Square71x71Logo.png",
+    "src-tauri/icons/Square89x89Logo.png",
+    "src-tauri/icons/StoreLogo.png",
+    "src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+    "src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+    "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+    "src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+    "src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+    "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+    "src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+    "src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+    "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+    "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+    "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+    "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+    "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+    "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+    "src-tauri/icons/android/values/ic_launcher_background.xml",
+    "src-tauri/icons/icon-1024.png",
+    "src-tauri/icons/icon.png",
+    "src-tauri/icons/ios/AppIcon-20x20@1x.png",
+    "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+    "src-tauri/icons/ios/AppIcon-20x20@2x.png",
+    "src-tauri/icons/ios/AppIcon-20x20@3x.png",
+    "src-tauri/icons/ios/AppIcon-29x29@1x.png",
+    "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+    "src-tauri/icons/ios/AppIcon-29x29@2x.png",
+    "src-tauri/icons/ios/AppIcon-29x29@3x.png",
+    "src-tauri/icons/ios/AppIcon-40x40@1x.png",
+    "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+    "src-tauri/icons/ios/AppIcon-40x40@2x.png",
+    "src-tauri/icons/ios/AppIcon-40x40@3x.png",
+    "src-tauri/icons/ios/AppIcon-512@2x.png",
+    "src-tauri/icons/ios/AppIcon-60x60@2x.png",
+    "src-tauri/icons/ios/AppIcon-60x60@3x.png",
+    "src-tauri/icons/ios/AppIcon-76x76@1x.png",
+    "src-tauri/icons/ios/AppIcon-76x76@2x.png",
+    "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+    "src-tauri/icons/tray-icon-32.png",
+    "src-tauri/icons/tray-icon.png"
+  ],
+  "releaseList": [
+    {
+      "id": 377858514,
+      "tag_name": "v0.3.3",
+      "name": "FlyClash Desktop v0.3.3 测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.3.3",
+      "published_at": "2026-08-27T13:48:28Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 375233055,
+      "tag_name": "v0.3.2",
+      "name": "FlyClash Desktop v0.3.2 测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.3.2",
+      "published_at": "2026-08-23T14:24:13Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 375223566,
+      "tag_name": "v0.3.1",
+      "name": "FlyClash Desktop v0.3.1 测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.3.1",
+      "published_at": "2026-08-23T13:45:36Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 359974099,
+      "tag_name": "v0.3.0-ver2",
+      "name": "FlyClash Desktop v0.3.0-ver2 测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.3.0-ver2",
+      "published_at": "2026-07-26T09:38:43Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 356556283,
+      "tag_name": "tarui-latest",
+      "name": "FlyClash Desktop v0.3.0 测试版 (tarui)",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/tarui-latest",
+      "published_at": "2026-07-20T07:30:08Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 356567122,
+      "tag_name": "v0.3.0",
+      "name": "FlyClash v0.3.0 测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.3.0",
+      "published_at": "2026-07-20T07:56:25Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 323823847,
+      "tag_name": "v0.2.9",
+      "name": "FlyClash Desktop v0.2.9",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9",
+      "published_at": "2026-05-17T05:09:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 291378437,
+      "tag_name": "v0.2.7",
+      "name": "FlyClash Desktop v0.2.7",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.7",
+      "published_at": "2026-02-27T14:32:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 285261035,
+      "tag_name": "v0.2.6",
+      "name": "FlyClash Desktop v0.2.6",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.6",
+      "published_at": "2026-02-11T13:49:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271677463,
+      "tag_name": "v0.2.5",
+      "name": "FlyClash Desktop v0.2.5",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.5",
+      "published_at": "2025-12-19T08:19:00Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 269763413,
+      "tag_name": "v0.2.4",
+      "name": "FlyClash Desktop v0.2.4",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.4",
+      "published_at": "2025-12-12T04:52:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 267317096,
+      "tag_name": "v0.2.3",
+      "name": "FlyClash Desktop v0.2.3",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.3",
+      "published_at": "2025-12-04T06:07:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 263205617,
+      "tag_name": "v0.2.2",
+      "name": "FlyClash Desktop v0.2.2",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.2",
+      "published_at": "2025-11-18T08:33:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 253975607,
+      "tag_name": "v0.1.7",
+      "name": "FlyClash v0.1.7",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.7",
+      "published_at": "2025-10-13T06:35:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 218729013,
+      "tag_name": "v0.1.6",
+      "name": "FlyClash v0.1.6 ",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.6",
+      "published_at": "2025-05-15T05:53:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 213638344,
+      "tag_name": "v0.1.5",
+      "name": "",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.5",
+      "published_at": "2025-04-21T08:50:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 213523695,
+      "tag_name": "v0.1.4",
+      "name": "FlyClash 0.1.4 Beta更新",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.4",
+      "published_at": "2025-04-20T03:10:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 212093205,
+      "tag_name": "v0.1.3",
+      "name": "",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.3",
+      "published_at": "2025-04-14T01:27:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 211539380,
+      "tag_name": "v0.1.2",
+      "name": "FlyClash v0.12 Beta",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.2",
+      "published_at": "2025-04-10T12:13:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 211423841,
+      "tag_name": "v0.1.1",
+      "name": "FlyClash v0.1.1 Beta",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.1",
+      "published_at": "2025-04-10T02:46:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 211411235,
+      "tag_name": "v0.1.0",
+      "name": "FlyClash v0.1.0测试版",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.1.0",
+      "published_at": "2025-04-10T00:47:26Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 323823847,
+      "tag_name": "v0.2.9",
+      "name": "FlyClash Desktop v0.2.9",
+      "html_url": "https://github.com/GtxFury/FlyClash/releases/tag/v0.2.9",
+      "published_at": "2026-05-17T05:09:56Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "1. 修复了一些BUG\r\n2.部分细节优化\r\n",
+      "assets": [
+        {
+          "id": 422290640,
+          "name": "FlyClash-0.2.9-arm64.dmg",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-arm64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 422292044,
+          "name": "FlyClash-0.2.9-x64-setup.7z",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.7z",
+          "state": "uploaded"
+        },
+        {
+          "id": 422292013,
+          "name": "FlyClash-0.2.9-x64-setup.exe",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64-setup.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 422290571,
+          "name": "FlyClash-0.2.9-x64.dmg",
+          "browser_download_url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.9/FlyClash-0.2.9-x64.dmg",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "id": "box4magisk",
+  "referenceUrl": "https://huarun.win/apps/box4magisk",
+  "referenceText": "Title: Box4Magisk：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/box4magisk\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Box4Magisk\n\n![Image 1: Box4Magisk 应用图标](https://huarun.win/app-icons/box4magisk.webp)\n\nAndroid Root 透明代理框架，可管理 Mihomo、sing-box、V2Ray、Xray 等核心；模块本身不附带核心二进制，需另行安装。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Mihomo / sing-box / V2Ray / Xray / Clash 等（需自备核心）[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[了解 sing-box 内核 →](https://huarun.win/cores/sing-box)[了解 Xray-core 内核 →](https://huarun.win/cores/xray)[了解 V2Ray 内核 →](https://huarun.win/cores/v2ray)[查看依据](https://github.com/CHIZI-0618/box4magisk/blob/7652f170ce8d5f22ca201d013b644d5b7475d3f5/README.md)\n\n主导开发[CHIZI-0618](https://huarun.win/history/people/chizi-0618)CHIZI-0618\n\n**1,907** Star**303** Fork\n\n[查看代码仓库](https://github.com/CHIZI-0618/box4magisk)\n统计更新于 2026年9月16日\n\n版本号 v5.1\n\n最后更新时间 2024年9月16日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\nWhat's Changed\n- chore: provide old clash dns forwarding compatibility for mihomo transparent proxy https://github.com/CHIZI-0618/box4magisk/commit/ae31f1918e6f19d399caba516234a8fdec7ec54a\n- improvement: independent local IP anti-loopback rules https://github.com/CHIZI-0618/box4magisk/commit/a05e0b0892a7423fc477f6f917f3a19924acb467\n- chore: Update the sample configuration file https://github.com/CHIZI-0618/box4magisk/commit/fac50be611c99494a5e374e943ce579397af30bb\n- chore: add USB Tethering to default ap_list https://github.com/CHIZI-0618/box4magisk/commit/44e397d987bac5d6d1fb8a00e44fd9e3a213aace\n\nNew Contributors\n- @JasonKhew96  made their first contribution.[查看官方版本来源 ↗](https://github.com/CHIZI-0618/box4magisk/releases/tag/v5.1)\n应用简介\n\n## 关于 Box4Magisk\n\nAndroid Root 透明代理框架，可管理 Mihomo、sing-box、V2Ray、Xray 等核心；模块本身不附带核心二进制，需另行安装。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/box4magisk)\n人物关联\n\n## 与 Box4Magisk 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/chizi-0618.webp)**CHIZI-0618**Box4Magisk 架构师 由该开发者主导开发或长期维护](https://huarun.win/history/people/chizi-0618)\n*   [![Image 3](https://huarun.win/people-avatars/rprx.webp)**RPRX**内核血缘 Project X 与 Xray-core 创始人 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/rprx)\n*   [![Image 4](https://huarun.win/people-avatars/nekohasekai.webp)**nekohasekai**内核血缘 sing-box 创始开发者与 SagerNet 核心维护者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/nekohasekai)\n*   [![Image 5](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 6](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/CHIZI-0618/box4magisk",
+  "repository": {
+    "full_name": "CHIZI-0618/box4magisk",
+    "html_url": "https://github.com/CHIZI-0618/box4magisk",
+    "description": "Use sing-box, clash, v2ray, xray tunnel proxy on Android devices.",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": ""
+  },
+  "readme": "# Box4Magisk / KernelSU / APatch\n\n[English](README.md) | [中文](README_zh.md)\n\nThis project is a Magisk / KernelSU / APatch module designed to deploy various proxy cores on Android devices, including **clash**, **mihomo**, **sing-box**, **v2ray**, **xray**, and **hysteria**.\n\nSupported transparent proxy modes:\n- **REDIRECT**: TCP only\n- **TPROXY**: TCP + UDP (default priority)\n- **TUN**: TCP + UDP (provided by the core; only supported by sing-box, clash, mihomo, and xray)\n- **Hybrid mode**: REDIRECT (TCP) + TUN (UDP)\n\nThis project essentially combines a proxy core launcher with [AndroidTProxyShell](https://github.com/CHIZI-0618/AndroidTProxyShell) to implement transparent proxying.\n\n## Disclaimer\n\nThis project is not responsible for device bricking, data corruption, or any other hardware/software issues.\n\n**Important Warning**: Please ensure your configuration file does not cause traffic looping, otherwise it may lead to infinite device reboots!\n\nIf you are not familiar with proxy configuration, it is recommended to first use user-friendly apps (such as ClashForAndroid, sing-box for Android, v2rayNG, SagerNet, etc.) to learn the basic concepts.\n\n## Installation\n\n1. Download the latest module ZIP package from [Releases](https://github.com/CHIZI-0618/box4magisk/releases).\n2. Install it in Magisk Manager, KernelSU Manager, or APatch Manager.\n3. Online update is supported (changes take effect immediately without rebooting after update).\n\n**Note**: The module does not include any proxy core binary files.\n\nAfter installation, please manually download the core executable files for your device architecture and place them in the `/data/adb/box/bin/` directory.\n\n## Configuration\n\n### Selecting the Proxy Core\n\nCore working directory: `/data/adb/box/<core_name>`  \nThe core is determined by the `bin_name` variable in `/data/adb/box/scripts/box.config`. Available options:\n\n- `sing-box` (recommended, default)\n- `clash`\n- `mihomo`\n- `xray`\n- `v2ray`\n- `hysteria`\n\n**Tip**: `mihomo` and `sing-box` come with default configuration files that are pre-configured to work with transparent proxy. It is recommended to directly edit the `proxy-providers` or `outbounds` sections to add your nodes.  \nFor advanced configuration, please refer to the official documentation:\n- [Clash](https://github.com/Dreamacro/clash/wiki/configuration)\n- [Mihomo](https://wiki.metacubex.one)\n- [sing-box](https://sing-box.sagernet.org/)\n- [V2Ray](https://www.v2fly.org/)\n- [Xray](https://xtls.github.io/)\n- [Hysteria](https://v2.hysteria.network/)\n\nThe module will automatically check the validity of the configuration file, with results saved in `/data/adb/box/run/check.log`.\n\n### Main Configuration Options\n\nThe following are the key options in `/data/adb/box/scripts/tproxy.conf`. Pay special attention to correctly configuring the `*_INTERFACE` variables (e.g., `MOBILE_INTERFACE=\"rmnet_data+\"`, `WIFI_INTERFACE=\"wlan0\"`, `HOTSPOT_INTERFACE=\"wlan2\"`, `USB_INTERFACE=\"rndis+\"`) to match your device's actual interface names (check with `ifconfig` or `ip link`).\n\n| Configuration Item              | Default Value       | Description |\n|---------------------------------|---------------------|-------------|\n| `CORE_USER_GROUP`               | `root:net_admin`    | User and group under which the proxy core runs. Advanced users can customize this (requires setcap support). **Must be consistent with the `box_user_group` variable in box.config** |\n| `PROXY_TCP_PORT` / `PROXY_UDP_PORT` | `1536`            | Transparent proxy listening port |\n| `PROXY_MODE`                    | `0`                 | Proxy mode: `0=auto` (TPROXY preferred), `1=TPROXY`, `2=REDIRECT`, `any other value` (only start the core to support native TUN) |\n| `DNS_HIJACK_ENABLE`             | `1`                 | DNS hijacking (0=disable, 1=enable TPROXY, 2=enable REDIRECT; no need to change unless necessary) |\n| `DNS_PORT`                      | `1053`              | DNS listening port |\n| `MOBILE_INTERFACE`              | `rmnet_data+`       | Mobile data interface name |\n| `WIFI_INTERFACE`                | `wlan0`             | WiFi interface name |\n| `HOTSPOT_INTERFACE`             | `wlan2`             | Hotspot interface name |\n| `USB_INTERFACE`                 | `rndis+`            | USB tethering interface name |\n| `PROXY_MOBILE`                  | `1`                 | Whether to proxy mobile data traffic (1=proxy, 0=do not proxy; supports any combination with other interfaces) |\n| `PROXY_WIFI`                    | `1`                 | Whether to proxy WiFi traffic (1=proxy, 0=do not proxy; supports any combination with other interfaces) |\n| `PROXY_HOTSPOT`                 | `0`                 | Whether to proxy hotspot traffic (1=proxy, 0=do not proxy; supports any combination with other interfaces; MAC filtering takes effect when enabled) |\n| `PROXY_USB`                     | `0`                 | Whether to proxy USB tethering traffic (1=proxy, 0=do not proxy; supports any combination with other interfaces) |\n| `PROXY_TCP` / `PROXY_UDP`       | `1` / `1`           | Whether to proxy TCP/UDP traffic (1=proxy, 0=do not proxy) |\n| `PROXY_IPV6`                    | `0`                 | Whether to proxy IPv6 (1=proxy, 0=disable; in REDIRECT mode, the module will automatically check kernel support for `IP6_NF_NAT` and `IP6_NF_TARGET_REDIRECT`. If not supported, IPv6 proxy will be disabled) |\n| `APP_PROXY_ENABLE`              | `0`                 | Enable per-app proxy (1=enable) |\n| `APP_PROXY_MODE`                | `blacklist`         | `blacklist` (bypass specified apps) or `whitelist` (proxy only specified apps) |\n| `BYPASS_APPS_LIST` / `PROXY_APPS_LIST` | empty          | App list, format: `\"userID:packageName\"` (multiple entries separated by spaces, e.g. `\"0:com.android.systemui 10:com.tencent.mm\"`) |\n| `BYPASS_CN_IP`                  | `0`                 | Whether to bypass mainland China IPs (1=enable, 0=disable; requires kernel support for `ipset`. The module will check automatically; if not supported, the feature will be disabled. When enabled, IP lists will be downloaded from the specified URL) |\n| `MAC_FILTER_ENABLE`             | `0`                 | Enable MAC address filtering (1=enable, 0=disable; only effective when `PROXY_HOTSPOT=1`) |\n| `MAC_PROXY_MODE`                | `blacklist`         | `blacklist` (bypass specified MACs) or `whitelist` (proxy only specified MACs) |\n| `BYPASS_MACS_LIST` / `PROXY_MACS_LIST` | empty          | MAC address list (multiple entries separated by spaces, e.g. `\"AA:BB:CC:DD:EE:FF 11:22:33:44:55:66\"`) |\n\nFor other configuration options, please refer to [AndroidTProxyShell](https://github.com/CHIZI-0618/AndroidTProxyShell?tab=readme-ov-file#full-configuration-variables).\n\n## Usage\n\n### Normal Usage (Recommended)\n\n- The service is enabled by default on boot.\n- Enable/disable the module via **Magisk / KernelSU / APatch Manager** to start/stop the service in real time (no device reboot required).\n\n#### Per-App Proxy (Routing)\n\nAfter enabling `APP_PROXY_ENABLE=1`:\n- **Blacklist mode** (default): Proxy all apps except those in the specified list (use `BYPASS_APPS_LIST`).\n- **Whitelist mode**: Proxy only the specified apps (use `PROXY_APPS_LIST` and set `APP_PROXY_MODE=whitelist`).\n\n#### Using Only the Core's Native TUN (No Transparent Proxy)\n\nSet `PROXY_MODE=core` or any value other than 0-2. Transparent proxy rules will not be loaded; only the core will be started (suitable for sing-box/clash/mihomo TUN inbound).\n\n### Manual Mode\n\nAfter creating an empty file `/data/adb/box/manual`:\n- The service will no longer start on boot and cannot be controlled via the Manager.\n- Manual commands:\n  - Service: `/data/adb/box/scripts/box.service start|stop|restart|status`\n  - Transparent proxy: `/data/adb/box/scripts/box.tproxy start|stop|restart`\n\n## Additional Notes\n\n- After modifying the core configuration file, please ensure the ports and other settings are consistent with those in `box.config` and `tproxy.conf`.\n- The module automatically prevents looping (bypasses local IP and utilizes the NETFILTER_XT_MATCH_ADDRTYPE feature). However, if your device has a public IP, it is still recommended to manually add [bypass rules](box/scripts/tproxy.conf#L55-L58).\n- Logs are located in the `/data/adb/box/run/` directory.\n\n## Uninstallation\n\n- Uninstalling the module from Magisk Manager, KernelSU Manager, or APatch will remove the `/data/adb/service.d/box4_service.sh` file but retain the Box data directory `/data/adb/box`.\n- To clear Box data, use the command: `rm -rf /data/adb/box`\n\n## Changelog\n\n[CHANGELOG](changelog.md)\n\n\n## Project Star Growth Trend Chart\n\n[![Stargazers over time](https://starchart.cc/CHIZI-0618/box4magisk.svg)](https://starchart.cc/CHIZI-0618/box4magisk)",
+  "treeSha": "7652f170ce8d5f22ca201d013b644d5b7475d3f5",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_zh.md",
+    "module.prop",
+    "webui/README.md",
+    "webui/public/favicon.svg",
+    "webui/public/icons.svg",
+    "webui/src/assets/hero.png",
+    "webui/src/assets/react.svg",
+    "webui/src/assets/vite.svg"
+  ],
+  "releaseList": [
+    {
+      "id": 274106435,
+      "tag_name": "Prerelease",
+      "name": "Prerelease",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/Prerelease",
+      "published_at": "2026-01-05T01:51:09Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 175161730,
+      "tag_name": "v5.1",
+      "name": "v5.1",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v5.1",
+      "published_at": "2024-09-16T05:42:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 169523775,
+      "tag_name": "v5.0",
+      "name": "v5.0",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v5.0",
+      "published_at": "2024-08-09T13:55:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 165288029,
+      "tag_name": "v4.9",
+      "name": "v4.9",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.9",
+      "published_at": "2024-07-13T06:01:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 153094796,
+      "tag_name": "v4.8",
+      "name": "v4.8",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.8",
+      "published_at": "2024-04-27T14:56:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 116017442,
+      "tag_name": "v4.7",
+      "name": "v4.7",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.7",
+      "published_at": "2023-08-11T05:19:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 98306318,
+      "tag_name": "v4.6",
+      "name": "v4.6",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.6",
+      "published_at": "2023-04-06T06:33:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 97100172,
+      "tag_name": "v4.5",
+      "name": "v4.5",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.5",
+      "published_at": "2023-03-28T01:11:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 86427766,
+      "tag_name": "v4.4",
+      "name": "v4.4",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.4",
+      "published_at": "2022-12-18T03:57:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84397795,
+      "tag_name": "v4.3",
+      "name": "v4.3",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.3",
+      "published_at": "2022-11-29T01:44:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84291709,
+      "tag_name": "v4.2",
+      "name": "v4.2",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.2",
+      "published_at": "2022-11-28T06:17:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84254451,
+      "tag_name": "v4.1",
+      "name": "v4.1",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.1",
+      "published_at": "2022-11-27T07:05:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84230629,
+      "tag_name": "v4.0",
+      "name": "v4.0",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v4.0",
+      "published_at": "2022-11-26T08:38:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84075562,
+      "tag_name": "v3.9",
+      "name": "v3.9",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.9",
+      "published_at": "2022-11-24T09:22:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 84058853,
+      "tag_name": "v3.8",
+      "name": "v3.8",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.8",
+      "published_at": "2022-11-24T04:50:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 83847642,
+      "tag_name": "v3.7",
+      "name": "v3.7",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.7",
+      "published_at": "2022-11-22T09:55:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82883968,
+      "tag_name": "v3.6",
+      "name": "v3.6",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.6",
+      "published_at": "2022-11-12T16:24:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82619013,
+      "tag_name": "v3.5",
+      "name": "v3.5",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.5",
+      "published_at": "2022-11-10T01:01:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82545824,
+      "tag_name": "v3.4",
+      "name": "v3.4",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.4",
+      "published_at": "2022-11-09T12:53:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82378808,
+      "tag_name": "v3.3",
+      "name": "v3.3",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.3",
+      "published_at": "2022-11-08T11:55:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82162360,
+      "tag_name": "v3.2",
+      "name": "v3.2",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.2",
+      "published_at": "2022-11-05T13:22:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82072121,
+      "tag_name": "v3.1",
+      "name": "v3.1",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.1",
+      "published_at": "2022-11-04T12:41:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 82035388,
+      "tag_name": "v3.0",
+      "name": "v3.0",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v3.0",
+      "published_at": "2022-11-04T03:28:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 81632561,
+      "tag_name": "v2.0",
+      "name": "v2.0",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v2.0",
+      "published_at": "2022-11-01T08:28:46Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 175161730,
+      "tag_name": "v5.1",
+      "name": "v5.1",
+      "html_url": "https://github.com/CHIZI-0618/box4magisk/releases/tag/v5.1",
+      "published_at": "2024-09-16T05:42:02Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "## What's Changed\r\n- chore: provide old clash dns forwarding compatibility for mihomo transparent proxy https://github.com/CHIZI-0618/box4magisk/commit/ae31f1918e6f19d399caba516234a8fdec7ec54a\r\n- improvement: independent local IP anti-loopback rules https://github.com/CHIZI-0618/box4magisk/commit/a05e0b0892a7423fc477f6f917f3a19924acb467\r\n- chore: Update the sample configuration file https://github.com/CHIZI-0618/box4magisk/commit/fac50be611c99494a5e374e943ce579397af30bb\r\n- chore: add USB Tethering to default ap_list https://github.com/CHIZI-0618/box4magisk/commit/44e397d987bac5d6d1fb8a00e44fd9e3a213aace\r\n\r\n## New Contributors\r\n* @JasonKhew96  made their first contribution in https://github.com/CHIZI-0618/box4magisk/pull/72\r\n\r\n**Full Changelog**: https://github.com/CHIZI-0618/box4magisk/compare/v5.0...v5.1",
+      "assets": [
+        {
+          "id": 192869970,
+          "name": "box4_v5.1.zip",
+          "browser_download_url": "https://github.com/CHIZI-0618/box4magisk/releases/download/v5.1/box4_v5.1.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

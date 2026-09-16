@@ -1,0 +1,721 @@
+{
+  "id": "flclashx",
+  "referenceUrl": "https://huarun.win/apps/flclashx",
+  "referenceText": "Title: FlClashX：Android、Windows、macOS、Linux 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/flclashx\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   FlClashX\n\n![Image 1: FlClashX 应用图标](https://huarun.win/app-icons/flclashx-20260916-v1.webp)\n\nFlClash 的社区分支，在原有多平台 Mihomo 客户端基础上加入 Android 120Hz、配置清理等改动。\n\n设备：未识别 GitHub Release · 核验 2026.09.14\n\n适用平台[Android](https://huarun.win/platform/android)[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)[Linux](https://huarun.win/platform/linux)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/pluralplay/FlClashX/blob/dc77f6f9714958403e2bd7ccbe8bcac6f80855bb/README.md)\n\n主导开发[pluralplay](https://huarun.win/history/people/pluralplay)pluralplay\n\n**1,414** Star**70** Fork\n\n[查看代码仓库](https://github.com/pluralplay/FlClashX)\n统计更新于 2026年9月16日\n\n版本号 v0.4.2\n\n最后更新时间 2026年7月18日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n- fix macos zashboard webview lingering after close\n- macos config editor close without prompt when unchanged\n- fix macos editor window engine leak on close\n- macos config editor auto-update prompt\n- macos config editor in native window\n- macos zashboard in native webview window\n- fix server card and hero location display\n- fix file_picker oom, remove file upload buttons, local zashboard, fix fgs startForeground crash\n- fix macos zashboard, tv proxy dpad nav, zashboard auto controller, linux journal icons[查看官方版本来源 ↗](https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2)\n应用简介\n\n## 关于 FlClashX\n\nFlClash 的社区分支，在原有多平台 Mihomo 客户端基础上加入 Android 120Hz、配置清理等改动。\n\n适用于 Android、Windows、macOS、Linux。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/flclashx)\n人物关联\n\n## 与 FlClashX 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/pluralplay.webp)**pluralplay**FlClashX 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/pluralplay)\n*   [![Image 3](https://huarun.win/people-avatars/chen08209.webp)**chen08209**分叉血缘 FlClash 创始开发者 由该开发者主导的项目派生而来](https://huarun.win/history/people/chen08209)\n*   [![Image 4](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 5](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/pluralplay/FlClashX",
+  "repository": {
+    "full_name": "pluralplay/FlClashX",
+    "html_url": "https://github.com/pluralplay/FlClashX",
+    "description": "A fork of the multi-platform proxy client FlClash, based on original Mihomo Core, simple and easy to use, open source and ad-free.",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": ""
+  },
+  "readme": "<div>\n\n[**English**](README_EN.md)\n\n</div>\n\n## FlClashX\n\n[![Downloads](https://img.shields.io/github/downloads/pluralplay/FlClashX/total?style=flat-square&logo=github)](https://github.com/pluralplay/FlClashX/releases/)\n[![Last Version](https://img.shields.io/github/release/pluralplay/FlClashX/all.svg?style=flat-square)](https://github.com/pluralplay/FlClashX/releases/)\n[![License](https://img.shields.io/github/license/pluralplay/FlClashX?style=flat-square)](LICENSE)\n\n[![Channel](https://img.shields.io/badge/Telegram-Chat-blue?style=flat-square&logo=telegram)](https://t.me/FlClashX)\n\nФорк многоплатформенного прокси-клиента FlClash на основе ClashMeta, простого и удобного в использовании, с открытым исходным кодом и без рекламы.\n\nДесктопный вид:\n\n<p style=\"text-align: center;\">\n    <img alt=\"desktop\" src=\"snapshots/desktop.gif\">\n</p>\n\nМобильный вид:\n\n<p style=\"text-align: center;\">\n    <img alt=\"mobile\" src=\"snapshots/mobile.gif\">\n</p>\n\n## Добавленный функционал\n\n🛠️ Исправлены стандартные настройки: режим поиска процессов вкл, режим tun вкл, режим системного прокси выкл, режим отображения списка прокси list, изменена работа камеры при добавлении подписки через QR.\n\n📱 **Поддержка 120Гц дисплеев на Android:** Добавлена поддержка высокочастотных дисплеев (120Гц) на устройствах Android для более плавных анимаций и прокрутки.\n\n🗑️ **Очистка данных приложения:** Добавлена кнопка \"Очистить данные\" в настройках приложения, которая удаляет все профили из папки profiles. Полезно для устранения неполадок или сброса приложения.\n\n🇷🇺 Добавлен русский язык в установщик и переработана локаль в приложении\n\n✈️ Передача HWID в панель (Работает только с <a href=\"https://github.com/remnawave/panel\">Remnawave</a>)\n\n💻 Добавлен новый виджет \"Анонсы\". Передаёт анонсы из панели в виджет. (Работает только с <a href=\"https://github.com/remnawave/panel\">Remnawave</a>)\n\n📺 Оптимизация управления на Android TV\n\n- добавлена кнопка \"Вставить\" для меню добавления подписки по ссылке\n- добавлена кнопка выбора профиля\n- добавлена передача профиля с мобильного приложения через QR-код\n\n💻 macOS - приложение в нативной строке состояния (status bar) вместо оконного интерфейса.\n\n🪪 Переработана карточка профиля на странице профиля и виджет на главной:\n\n- Используется индикатор объёма трафика с изменением цвета (не отображается, если трафик неограничен).\n- Отображается дата окончания подписки (если год — 2099, выводится «Ваша подписка вечная»).\n- Добавлена новая кнопка «Поддержка» в профиле, которая подтягивает supportUrl с панели.\n- Параметр autoupdateinterval для профиля теперь корректно передаётся с панели.\n- Добавлен виджет \"MetaInfo\". Передаёт параметры с подписки на виджет. Сколько трафика осталось, когда заканчивается подписка, имя профиля, и крупно отображает сколько дней до окончании подписки осталось (за 3 дня до окончания).\n- Добавлен виджет \"serviceInfo\". Передаёт название вашего сервиса. Можно передать дополнительно хедер `flclashx-servicelogo` для кастомного лого (поддерживается ссылка svg/png), дополнительно по клику открыватеся ссылка на поддержку (supportURL)\n- Добавлен виджет \"changeServerButton\". По клику перенаправляет на страницу прокси.\n\n### Добавлен парсинг кастомных хедеров со страницы подписки:\n\n<details>\n<summary><strong>flclashx-widgets</strong></summary>\n\nВыстраивает виджеты в порядке, полученным с подписки\n\n|       Значение       | Виджет                                                      |\n| :------------------: | ----------------------------------------------------------- |\n|      `announce`      | Анонсы                                                      |\n|    `networkSpeed`    | Скорость сети                                               |\n|   `outboundModeV2`   | Режим работы прокси (новый вид)                             |\n|    `outboundMode`    | Режим работы прокси (старый вид)                            |\n|    `trafficUsage`    | Использование трафика                                       |\n|  `networkDetection`  | Определение локации и IP                                    |\n|     `tunButton`      | Кнопка TUN (только Desktop)                                 |\n|     `vpnButton`      | Кнопка VPN (только Android)                                 |\n| `systemProxyButton`  | Кнопка системного прокси (только Desktop)                   |\n|     `intranetIp`     | Локальный IP-адрес                                          |\n|     `memoryInfo`     | Использование памяти                                        |\n|      `metainfo`      | Информация о подписке                                       |\n| `changeServerButton` | Кнопка смены сервера                                        |\n|    `serviceInfo`     | Информация о сервисе (работает только с header flclashx-servicename) |\n\nИспользование:\n\n```bash\nflclashx-widgets: announce,metainfo,outboundModeV2,networkDetection\n```\n</details>\n\n<details>\n<summary><strong>flclashx-view</strong></summary>\n\nНастраивает вид страницы прокси, полученным с подписки\n\n| Значение | Описание                            | Возможные значения                |\n| :------: | ----------------------------------- | --------------------------------- |\n|  `type`  | Режим отображения                   | `list`,`tab`                      |\n|  `sort`  | Тип сортировки                      | `none`,`delay`,`name`             |\n| `layout` | Макет                               | `loose`,`standard`,`tight`        |\n|  `icon`  | Стиль иконок (для list-отображения) | `none`,`icon`          |\n|  `card`  | Размер карточки                     | `expand`,`shrink`,`min`,`oneline` |\n\nИспользование:\n\n```bash\nflclashx-view: type:list; sort:delay; layout:tight; icon:icon; card:shrink\n```\n</details>\n\n<details>\n<summary><strong>flclashx-custom</strong></summary>\n\nУправляет состоянием применения стилей для Dashboard и ProxyView\n\n| Значение | Описание                                                |\n| :------: | ------------------------------------------------------- |\n|  `add`   | Стиль страницы прокси и виджеты применяются только при первом добавлении подписки |\n| `update` | Стиль страницы прокси и виджеты применяются каждый раз при обновлении подписки    |\n\nИспользование:\n\n```bash\nflclashx-custom: update\n```\n</details>\n\n<details>\n<summary><strong>flclashx-denywidgets</strong></summary>\n\nПри true — запрещает редактировать страницу Dashboard. Имеет значение true/false.\n\nИспользование:\n\n```bash\nflclashx-denywidgets: true\n```\n</details>\n\n<details>\n<summary><strong>flclashx-servicename</strong></summary>\n\nНазвание вашего сервиса, отображаемое в виджете ServiceInfo.\n\nИспользование:\n\n```bash\nflclashx-servicename: FlClashX\n```\n</details>\n\n<details>\n<summary><strong>flclashx-servicelogo</strong></summary>\n\nВаш логотип, используемый в виджете ServiceInfo (работает только с активным хедером flclashx-servicename). Поддерживает png/svg.\n\nИспользование:\n\n```bash\nflclashx-servicelogo: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/remnawave.svg\n```\n</details>\n\n<details>\n<summary><strong>flclashx-serverinfo</strong></summary>\n\nНазвание прокси-группы для отображения в виджете ChangeServerButton. Виджет показывает активный сервер из указанной группы с флагом страны, пингом и кнопкой для быстрого переключения. Если не передаётся — работает фолбек на «Изменить сервер»\n\n**Отображаемые элементы:**\n- Флаг страны (автоматически извлекается из имени прокси, если отсутствует — фолбек иконка)\n- Название активного сервера\n- Текущий пинг с цветовой индикацией (зелёный < 600ms, оранжевый >= 600ms, красный — timeout)\n- Кнопка быстрого перехода на страницу прокси\n\nИспользование:\n\n```bash\nflclashx-serverinfo: Proxy\n```\n</details>\n\n<details>\n<summary><strong>flclashx-background</strong></summary>\n\nУстанавливает пользовательское фоновое изображение для приложения. Укажите прямую ссылку на изображение. Опционально через запятую можно задать прозрачность (видимость) фона от 1 до 100 (чем больше — тем заметнее изображение; без параметра — стандартный приглушённый вид).\n\n**Рекомендации для изображения:**\n- Формат: PNG, JPG или WebP\n- Разрешение: 1920x1080 или выше для десктопа, 1080x1920 для мобильных устройств\n- Размер файла: Желательно до 2МБ для лучшей производительности\n- Содержание: Используйте изображения с тонкими узорами или градиентами; избегайте слишком ярких или загруженных изображений\n- Контраст: Обеспечьте хорошую читаемость текста на фоне\n\nИспользование:\n\n```bash\nflclashx-background: https://example.com/background.jpg\n# с прозрачностью (1-100, выше = заметнее фон):\nflclashx-background: https://example.com/background.jpg,30\n```\n</details>\n\n<details>\n<summary><strong>flclashx-settings</strong></summary>\n\nУправление настройками приложения через хедер (с возможностью переопределения со стороны клиента). По умолчанию все параметры выключены. Если вы передаёте параметр, то он будет включён. Если не передаёте — останется выключенным.\n\n|   Параметр    | Описание                                                 | По умолчанию |\n| :-----------: | -------------------------------------------------------- | :----------: |\n|  `minimize`   | Сворачивать приложение при выходе вместо закрытия        | ❌ Выкл      |\n|   `autorun`   | Запускать приложение при старте системы                  | ❌ Выкл      |\n| `shadowstart` | Запускать приложение свернутым в трей                    | ❌ Выкл      |\n|  `autostart`  | Автоматически запускать прокси при запуске приложения    | ❌ Выкл      |\n| `autoupdate`  | Автоматически проверять обновления приложения            | ❌ Выкл      |\n|  `openlogs`   | Включить логирование (вкладка «Логи» и стрим логов ядра) | ❌ Выкл      |\n|`closeconnections`| Разрывать активные соединения при смене прокси/режима | ❌ Выкл      |\n\n> Примечание: `closeconnections` в самом приложении по умолчанию включён, но при использовании `flclashx-settings` состояние задаётся явно — если не передать токен, опция будет выключена.\n\nПереопределение на стороне клиента: Пользователи могут включить «Переопределить настройки провайдера» в настройках приложения, чтобы применять свою локальную конфигурацию вместо настроек из подписки. Соответствующие переключатели в настройках (в т.ч. «Логи» и «Разрывать соединения») редактируются только при включённом «Переопределить настройки провайдера».\n\nИспользование:\n\n```bash\nflclashx-settings: minimize, autorun, shadowstart, autostart, autoupdate, openlogs, closeconnections\n```\n</details>\n\n<details>\n<summary><strong>flclashx-globalmode</strong></summary>\n\nДанный хедер при FALSE позволяет скрыть все настройки режима прокси из клиента (трей, страница прокси, виджеты смены режима)\n\nИспользование:\n```bash\nflclashx-globalmode: false\n```\n</details>\n\n<details>\n<summary><strong>flclashx-hex</strong></summary>\n\nДанный хедер позволяет настроить тему в приложении, возможность передать основной цвет, вариант, и выбрать \"Чисто черный режим\" параметром `pureBlack`\n\nВарианты:\n|   Вариант    | Название|\n| :-----------: | ------ |\n|  `tonalSpot`   | Тональный акцент|\n|   `fidelity`   | Точная передача |\n| `monochrome` | Монохром |\n|  `neutral`  | Нейтральные |\n| `vibrant`  | Яркие |\n| `expressive`  | Экспрессивные |\n| `content`  | Контентная тема |\n| `rainbow`  | Радужные |\n| `fruitSalad`  | Фруктовый микс |\n\nИспользование:\n```bash\nflclashx-hex: FF5733\nflclashx-hex: FF5733:vibrant\nflclashx-hex: FF5733:vibrant:pureblack\n```\nТак-же можно параметры использовать по отдельности:\n```bash\nflclashx-hex: FF5733\nflclashx-hex: vibrant\nflclashx-hex: pureblack\n```\nHEX-коды стандартных тем:\n|   HEX    | ЦВЕТ|\n| :-----------: | ------ |\n|  `795548`   | Brown (Коричневый)|\n|   `03A9F4`   | Light Blue (Светло-голубой) - по умолчанию |\n| `FFFF00` | Yellow (Желтый) |\n|  `BBC9CC`  | Light Blue Grey (Светло-серо-голубой) |\n| `ABD397`  | Light Green (Светло-зеленый) |\n| `D8C0C3`  | Light Pink (Светло-розовый) |\n| `665390`  | Deep Purple (Темно-фиолетовый) |\n</details>\n\n<details>\n<summary><strong>flclashx-androidsecure</strong></summary>\n\nДанный хедер позволяет принудительно включить Mixed-port:0 только на Андроид-девайсах, при активном 7890 (например) в конфиге.\n\nИспользование:\n```bash\nflclashx-androidsecure: true\n```\n</details>\n\n<details>\n<summary><strong>flclashx-newboard</strong></summary>\n\nПри `true` включает новый вид главной страницы вместо сетки виджетов: крупное лого и название сервиса, карточка трафика/срока, панель активного сервера (флаг, IP, пинг) с веером доступных локаций, кнопка подключения и нижняя навигация. Редактирование виджетов в этом режиме скрыто. Пользователь может включить тот же вид локально настройкой «Новый вид».\n\nИспользование:\n```bash\nflclashx-newboard: true\n```\n</details>\n\n<details>\n<summary><strong>flclashx-newdomain</strong></summary>\n\nМиграция домена подписки. Если значение отличается от текущего хоста ссылки профиля, при следующем обновлении клиент автоматически заменит хост в URL подписки на указанный (путь и параметры сохраняются). Удобно при переезде страницы подписки на новый домен без переустановки профиля у пользователей.\n\nИспользование:\n```bash\nflclashx-newdomain: new.example.com\n```\n</details>\n\n<details>\n<summary><strong>flclashx-buyplan</strong></summary>\n\nПрямая ссылка на оплату/продление подписки. Кнопка «Продлить подписку» появляется под карточкой трафика на новой главной (`flclashx-newboard`) только когда до конца подписки остаётся меньше 3 дней (в т.ч. если подписка уже истекла). По нажатию открывается переданная ссылка.\n\nИспользование:\n```bash\nflclashx-buyplan: https://example.com/pay\n```\n</details>\n\n<details>\n<summary><strong>flclashx-buytraffic</strong></summary>\n\nПрямая ссылка на докупку трафика. Кнопка «Докупить трафик» появляется под карточкой трафика на новой главной (`flclashx-newboard`) только когда остаётся меньше 10% от лимита трафика. Если сработали оба триггера (`flclashx-buyplan` и `flclashx-buytraffic`), кнопки показываются в один ряд.\n\nИспользование:\n```bash\nflclashx-buytraffic: https://example.com/buy-traffic\n```\n</details>\n\n### YAML-ключи в конфиге\n\nЭти ключи указываются не в HTTP-заголовках ответа, а прямо в YAML-конфиге подписки (в секции `proxy-groups`).\n\n<details>\n<summary><strong>flclashx-override</strong> (в группе GLOBAL)</summary>\n\nУказывается внутри прокси-группы `GLOBAL`. При `flclashx-override: true` клиент берёт список и порядок прокси из этой группы как «курированный GLOBAL»: в режиме «Глобальный» в разделе Proxies показывается только группа `GLOBAL` ровно с этими элементами и в этом порядке, а сервисные группы (нужные для rule-режима) скрываются. Без флага поведение прежнее — `GLOBAL` формируется ядром автоматически из всех групп.\n\nИспользование:\n```yaml\nproxy-groups:\n  - name: GLOBAL\n    flclashx-override: true\n    type: select\n    proxies:\n      - 🎲 Любой доступный\n      - 🔓 Без VPN\n      - 🌍 Основной VPN\n      - 🇩🇪 Германия\n      - 🇫🇮 Финляндия\n```\n</details>\n\n<details>\n<summary><strong>description</strong> (в любой прокси-группе)</summary>\n\nКастомный подзаголовок группы в разделе Proxies. По умолчанию под названием группы показывается её тип (Selector/URLTest/Fallback…) либо текущий выбранный узел; если задать `description`, вместо этого выводится указанный текст. Удобно для понятных подписей вложенных групп.\n\nИспользование:\n```yaml\nproxy-groups:\n  - name: 🌍 Основной VPN\n    type: select\n    description: Авто-выбор лучшей локации\n    proxies:\n      - 🇩🇪 Германия\n      - 🇫🇮 Финляндия\n```\n</details>\n\n### Переопределение настроек конфигурации\nПо умолчанию следующие параметры конфигурации, полученные от подписки, **не переопределяются** клиентом:\n\n- `allow-lan` - Разрешить подключения из локальной сети\n- `ipv6` - Включить поддержку IPv6\n- `find-process-mode` - Режим поиска процессов\n- `tun-stack` - Сетевой стек режима TUN\n- `mixed-port` - Смешанный порт для HTTP/SOCKS прокси\n\n**Переопределение на стороне клиента:** Пользователи могут включить \"Переопределить настройки провайдера\" или \"Переопределить сетевые настройки\" в настройках приложения, чтобы применять свою локальную конфигурацию вместо настроек из подписки. Это полезно, когда нужны кастомные сетевые настройки.\n\n## Использование\n\n### Linux\n\n⚠️ Перед использованием убедитесь, что установлены следующие зависимости:\n\n```bash\n sudo apt-get install libayatana-appindicator3-dev\n sudo apt-get install libkeybinder-3.0-dev\n```\n\n### Android\n\nПоддерживаются следующие действия:\n\n```bash\n com.follow.clashx.action.START\n\n com.follow.clashx.action.STOP\n\n com.follow.clashx.action.CHANGE\n```\n\n## Скачать\n\n<a href=\"https://github.com/pluralplay/FlClashX/releases\"><img alt=\"Get it on GitHub\" src=\"snapshots/get-it-on-github.svg\" width=\"200px\"/></a>\n<a href=\"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.follow.clashx%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fpluralplay%2FFlClashX%22%2C%22author%22%3A%22pluralplay%22%2C%22name%22%3A%22FlClashX%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Afalse%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Atrue%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22includeZips%5C%22%3Afalse%2C%5C%22zippedApkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22includeTarballs%5C%22%3Afalse%2C%5C%22tarballedApkFilterRegEx%5C%22%3A%5C%22%5C%22%7D%22%2C%22overrideSource%22%3Anull%7D\n\"><img alt=\"Get it on Obtanium\" src=\"snapshots/get-it-on-obtanium.svg\" width=\"200px\"/></a>\n\n## Star\n\n<p style=\"text-align: center;\">\nСамый простой способ поддержать разработчиков — нажать на звездочку (⭐) в верхней части страницы.<br>\nЕсли хотите поддержать копеечкой, то можно <a href=\"https://t.me/tribute/app?startapp=dtyh\">сделать это тут.</a></p>\n\n**TON USDT:** `UQDSfrJ_k1BdsknhdR_zj4T3Is3OdMylD8PnDJ9mxO35i-TE`\n",
+  "treeSha": "dc77f6f9714958403e2bd7ccbe8bcac6f80855bb",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_EN.md",
+    "android/app/src/debug/AndroidManifest.xml",
+    "android/app/src/main/AndroidManifest.xml",
+    "android/app/src/main/ic_launcher-playstore.png",
+    "android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-hdpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-mdpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-xhdpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-xxhdpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+    "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_monochrome.png",
+    "android/app/src/main/res/drawable/ic.xml",
+    "android/app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "android/app/src/main/res/drawable/ic_widget_play.xml",
+    "android/app/src/main/res/drawable/ic_widget_stop.xml",
+    "android/app/src/main/res/drawable/widget_bg.xml",
+    "android/app/src/main/res/drawable/widget_fab_off.xml",
+    "android/app/src/main/res/drawable/widget_fab_on.xml",
+    "android/app/src/main/res/drawable/widget_logo_color.xml",
+    "android/app/src/main/res/drawable/widget_logo_mono.xml",
+    "android/app/src/main/res/drawable/widget_mode_btn_active.xml",
+    "android/app/src/main/res/drawable/widget_mode_btn_inactive.xml",
+    "android/app/src/main/res/drawable/widget_toggle_bg.xml",
+    "android/app/src/main/res/layout/widget_mode.xml",
+    "android/app/src/main/res/layout/widget_on_off.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_banner.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "android/app/src/main/res/values-night-v27/styles.xml",
+    "android/app/src/main/res/values-night-v36/styles.xml",
+    "android/app/src/main/res/values-night/styles.xml",
+    "android/app/src/main/res/values-ru/strings.xml",
+    "android/app/src/main/res/values-v27/styles.xml",
+    "android/app/src/main/res/values-v36/styles.xml",
+    "android/app/src/main/res/values/colors.xml",
+    "android/app/src/main/res/values/strings.xml",
+    "android/app/src/main/res/values/styles.xml",
+    "android/app/src/main/res/xml/file_paths.xml",
+    "android/app/src/main/res/xml/network_security_config.xml",
+    "android/app/src/main/res/xml/shortcuts.xml",
+    "android/app/src/main/res/xml/widget_mode_info.xml",
+    "android/app/src/main/res/xml/widget_on_off_info.xml",
+    "android/app/src/profile/AndroidManifest.xml",
+    "android/common/src/main/AndroidManifest.xml",
+    "android/common/src/main/res/values-ja/strings.xml",
+    "android/common/src/main/res/values-ru/strings.xml",
+    "android/common/src/main/res/values-zh-rCN/strings.xml",
+    "android/common/src/main/res/values/strings.xml",
+    "android/core/src/main/AndroidManifest.xml",
+    "android/service/src/main/AndroidManifest.xml",
+    "android/service/src/main/res/drawable/ic_notification.xml",
+    "assets/images/avatars/arpic.jpg",
+    "assets/images/avatars/cool_coala.jpg",
+    "assets/images/avatars/kastov.jpg",
+    "assets/images/avatars/katsukibtw.jpg",
+    "assets/images/avatars/legiz.jpg",
+    "assets/images/avatars/pluralplay.jpg",
+    "assets/images/avatars/x_kit_.jpg",
+    "assets/images/icon.png",
+    "assets/images/icon_black.png",
+    "assets/images/icon_stop_black.png",
+    "assets/images/icon_stop_white.png",
+    "assets/images/icon_white.png",
+    "assets/images/icons/zashboard.svg",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+    "plugins/proxy/LICENSE",
+    "plugins/proxy/README.md",
+    "plugins/window_ext/LICENSE",
+    "plugins/window_ext/README.md",
+    "snapshots/get-it-on-fdroid.svg",
+    "snapshots/get-it-on-github.svg",
+    "snapshots/get-it-on-obtanium.svg"
+  ],
+  "releaseList": [
+    {
+      "id": 381222039,
+      "tag_name": "core-v1.19.30",
+      "name": "Core v1.19.30",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/core-v1.19.30",
+      "published_at": "2026-09-02T12:05:38Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 356079968,
+      "tag_name": "v0.4.2",
+      "name": "v0.4.2",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2",
+      "published_at": "2026-07-18T10:51:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 356434051,
+      "tag_name": "core-v1.19.29",
+      "name": "Core v1.19.29",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/core-v1.19.29",
+      "published_at": "2026-07-19T21:09:46Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 355935943,
+      "tag_name": "v0.4.1",
+      "name": "v0.4.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.1",
+      "published_at": "2026-07-17T21:42:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 354806255,
+      "tag_name": "v0.4.0",
+      "name": "v0.4.0",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0",
+      "published_at": "2026-07-16T00:34:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 349959226,
+      "tag_name": "v0.4.0-pre.18",
+      "name": "v0.4.0-pre.18",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.18",
+      "published_at": "2026-07-07T00:40:06Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 335531048,
+      "tag_name": "v0.4.0-pre.17",
+      "name": "v0.4.0-pre.17",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.17",
+      "published_at": "2026-06-07T04:46:28Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 335468035,
+      "tag_name": "v0.4.0-pre.16",
+      "name": "v0.4.0-pre.16",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.16",
+      "published_at": "2026-06-06T19:44:39Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 332318994,
+      "tag_name": "v0.4.0-pre.15",
+      "name": "v0.4.0-pre.15",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.15",
+      "published_at": "2026-06-01T06:43:00Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 332286510,
+      "tag_name": "v0.4.0-pre.14",
+      "name": "v0.4.0-pre.14",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.14",
+      "published_at": "2026-06-01T04:51:56Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 332008698,
+      "tag_name": "v0.4.0-pre.13",
+      "name": "v0.4.0-pre.13",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.13",
+      "published_at": "2026-05-30T21:07:15Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 315510573,
+      "tag_name": "v0.4.0-pre.12",
+      "name": "v0.4.0-pre.12",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.12",
+      "published_at": "2026-04-30T00:13:09Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 314808114,
+      "tag_name": "v0.4.0-pre.10",
+      "name": "v0.4.0-pre.10",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.10",
+      "published_at": "2026-04-28T20:04:02Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313908716,
+      "tag_name": "v0.4.0-pre.9",
+      "name": "v0.4.0-pre.9",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.9",
+      "published_at": "2026-04-27T06:56:59Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313878873,
+      "tag_name": "v0.4.0-pre.8",
+      "name": "v0.4.0-pre.8",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.8",
+      "published_at": "2026-04-27T04:45:34Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313830452,
+      "tag_name": "v0.4.0-pre.7",
+      "name": "v0.4.0-pre.7",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.7",
+      "published_at": "2026-04-26T22:59:33Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313619212,
+      "tag_name": "v0.4.0-pre.6",
+      "name": "v0.4.0-pre.6",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.6",
+      "published_at": "2026-04-25T17:41:53Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313538195,
+      "tag_name": "v0.4.0-pre.5",
+      "name": "v0.4.0-pre.5",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.5",
+      "published_at": "2026-04-25T07:23:17Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313523004,
+      "tag_name": "v0.4.0-pre.4",
+      "name": "v0.4.0-pre.4",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.4",
+      "published_at": "2026-04-25T05:11:24Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 313030005,
+      "tag_name": "v0.4.0-pre.3",
+      "name": "v0.4.0-pre.3",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.3",
+      "published_at": "2026-04-24T03:36:57Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 335462563,
+      "tag_name": "core-v1.19.27",
+      "name": "Core v1.19.27",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/core-v1.19.27",
+      "published_at": "2026-06-06T19:06:48Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 310733201,
+      "tag_name": "v0.4.0-pre.2",
+      "name": "v0.4.0-pre.2",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.0-pre.2",
+      "published_at": "2026-04-18T16:53:28Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 309097604,
+      "tag_name": "v.0.4.0-pre.1",
+      "name": "v0.4.0-pre.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v.0.4.0-pre.1",
+      "published_at": "2026-04-14T23:43:32Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 279191665,
+      "tag_name": "v0.3.2",
+      "name": "v0.3.2",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.2",
+      "published_at": "2026-01-22T23:18:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279126683,
+      "tag_name": "v0.3.1",
+      "name": "v0.3.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.1",
+      "published_at": "2026-01-22T19:04:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279067550,
+      "tag_name": "v0.3.1-pre.1",
+      "name": "v0.3.1-pre.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.1-pre.1",
+      "published_at": "2026-01-22T16:04:52Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 278357081,
+      "tag_name": "v0.3.0",
+      "name": "v0.3.0",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0",
+      "published_at": "2026-01-20T17:34:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 276538129,
+      "tag_name": "v0.3.0-pre.13",
+      "name": "v0.3.0-pre.13",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.13",
+      "published_at": "2026-01-13T22:20:28Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 267241102,
+      "tag_name": "v0.3.0-pre.12",
+      "name": "v0.3.0-pre.12",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.12",
+      "published_at": "2025-12-03T21:46:31Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 267220361,
+      "tag_name": "v0.3.0-pre.11",
+      "name": "v0.3.0-pre.11",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.11",
+      "published_at": "2025-12-03T20:24:00Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 266859091,
+      "tag_name": "v0.3.0-pre.10",
+      "name": "v0.3.0-pre.10",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.10",
+      "published_at": "2025-12-02T19:33:29Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 266560638,
+      "tag_name": "v0.3.0-pre.9",
+      "name": "v0.3.0-pre.9",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.9",
+      "published_at": "2025-12-02T00:13:42Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 266276418,
+      "tag_name": "v0.3.0-pre.8",
+      "name": "v0.3.0-pre.8",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.8",
+      "published_at": "2025-12-01T05:32:12Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 266177630,
+      "tag_name": "v0.3.0-pre.7",
+      "name": "v0.3.0-pre.7",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.7",
+      "published_at": "2025-11-30T03:42:25Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 263789513,
+      "tag_name": "v0.3.0-pre.6",
+      "name": "v0.3.0-pre.6",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.6",
+      "published_at": "2025-11-19T21:14:59Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 260884010,
+      "tag_name": "v0.3.0-pre.5",
+      "name": "v0.3.0-pre.5",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.5",
+      "published_at": "2025-11-09T02:00:50Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 260874872,
+      "tag_name": "v0.3.0-pre.3",
+      "name": "v0.3.0-pre.3",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.3.0-pre.3",
+      "published_at": "2025-11-08T23:00:02Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 246617535,
+      "tag_name": "v0.2.1",
+      "name": "v0.2.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.2.1",
+      "published_at": "2025-09-11T21:06:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 238863923,
+      "tag_name": "v0.2.0",
+      "name": "v0.2.0",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.2.0",
+      "published_at": "2025-08-10T18:38:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 237141084,
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.1.0",
+      "published_at": "2025-08-03T15:30:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 235466269,
+      "tag_name": "v0.0.7",
+      "name": "v0.0.7",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.7",
+      "published_at": "2025-07-27T18:15:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 235381255,
+      "tag_name": "v0.0.6",
+      "name": "v0.0.6",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.6",
+      "published_at": "2025-07-26T14:43:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 235023851,
+      "tag_name": "v0.0.5",
+      "name": "v0.0.5",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.5",
+      "published_at": "2025-07-24T22:03:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 235016001,
+      "tag_name": "v0.0.4",
+      "name": "v0.0.4",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.4",
+      "published_at": "2025-07-24T21:19:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 234752442,
+      "tag_name": "v0.0.3",
+      "name": "v0.0.3",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.3",
+      "published_at": "2025-07-24T04:44:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 234742961,
+      "tag_name": "v0.0.2",
+      "name": "v0.0.2",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.2",
+      "published_at": "2025-07-24T03:37:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 234716379,
+      "tag_name": "v0.0.1",
+      "name": "v0.0.1",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.0.1",
+      "published_at": "2025-07-23T23:07:53Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 356079968,
+      "tag_name": "v0.4.2",
+      "name": "v0.4.2",
+      "html_url": "https://github.com/pluralplay/FlClashX/releases/tag/v0.4.2",
+      "published_at": "2026-07-18T10:51:50Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "- fix macos zashboard webview lingering after close\r\n- macos config editor close without prompt when unchanged\r\n- fix macos editor window engine leak on close\r\n- macos config editor auto-update prompt\r\n- macos config editor in native window\r\n- macos zashboard in native webview window\r\n- fix server card and hero location display\r\n- fix file_picker oom, remove file upload buttons, local zashboard, fix fgs startForeground crash\r\n- fix macos zashboard, tv proxy dpad nav, zashboard auto controller, linux journal icons\r\n\r\n<div align=center>\r\n\r\n[![Release Downloads](https://img.shields.io/github/downloads/pluralplay/FlClashX/v0.4.2/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/pluralplay/FlClashX/v0.4.2/)\r\n\r\n</div>\r\n\r\n**Download based on your OS:**\r\n\r\n<div align=left>\r\n<table>\r\n    <thead align=left>\r\n        <tr>\r\n            <th>OS</th>\r\n            <th>Download</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody align=left>\r\n        <tr>\r\n        <td>Android</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk\"><img src=\"https://img.shields.io/badge/APK-universal-96ed89.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>Windows</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-arm-2d7d9a.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm.zip\"><img src=\"https://img.shields.io/badge/Portable-arm-67b7d1.svg?logo=windows\"></a>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>macOS</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple\"></a><br>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>Linux</td>\r\n            <td>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage\"><img src=\"https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb\"><img src=\"https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian\"></a><br>\r\n                <a href=\"https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm\"><img src=\"https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat\"></a><br>\r\n                <a href=\"https://aur.archlinux.org/packages/flclashx-bin\"><img src=\"https://img.shields.io/aur/version/flclashx-bin\"></a>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n\r\n\r\n</div>\r\n\r\n<div dir=\"ltr\">\r\n\r\n**List of all changes:** [ChangeLog](https://github.com/pluralplay/FlClashX/blob/main/CHANGELOG.md)\r\n\r\n</div>\r\n",
+      "assets": [
+        {
+          "id": 481390071,
+          "name": "FlClashX-android-arm64-v8a.apk",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390068,
+          "name": "FlClashX-android-arm64-v8a.apk.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390075,
+          "name": "FlClashX-android-armeabi-v7a.apk",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390059,
+          "name": "FlClashX-android-armeabi-v7a.apk.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390080,
+          "name": "FlClashX-android-universal.apk",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390062,
+          "name": "FlClashX-android-universal.apk.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390070,
+          "name": "FlClashX-android-x86_64.apk",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390060,
+          "name": "FlClashX-android-x86_64.apk.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390073,
+          "name": "FlClashX-linux-amd64.AppImage",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390058,
+          "name": "FlClashX-linux-amd64.AppImage.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390072,
+          "name": "FlClashX-linux-amd64.deb",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390064,
+          "name": "FlClashX-linux-amd64.deb.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390066,
+          "name": "FlClashX-linux-amd64.rpm",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390051,
+          "name": "FlClashX-linux-amd64.rpm.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390078,
+          "name": "FlClashX-linux-arm64.deb",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390077,
+          "name": "FlClashX-linux-arm64.deb.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390067,
+          "name": "FlClashX-macos-amd64.dmg",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390061,
+          "name": "FlClashX-macos-amd64.dmg.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390069,
+          "name": "FlClashX-macos-arm64.dmg",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390076,
+          "name": "FlClashX-macos-arm64.dmg.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390074,
+          "name": "FlClashX-windows-amd64-setup.exe",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390054,
+          "name": "FlClashX-windows-amd64-setup.exe.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390063,
+          "name": "FlClashX-windows-amd64.zip",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390057,
+          "name": "FlClashX-windows-amd64.zip.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390055,
+          "name": "FlClashX-windows-arm64-setup.exe",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390052,
+          "name": "FlClashX-windows-arm64-setup.exe.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe.sha256",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390056,
+          "name": "FlClashX-windows-arm64.zip",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip",
+          "state": "uploaded"
+        },
+        {
+          "id": 481390053,
+          "name": "FlClashX-windows-arm64.zip.sha256",
+          "browser_download_url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip.sha256",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

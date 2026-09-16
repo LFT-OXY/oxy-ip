@@ -1,0 +1,946 @@
+{
+  "id": "xray-gui",
+  "referenceUrl": "https://huarun.win/apps/xray-gui",
+  "referenceText": "Title: Xray GUI：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/xray-gui\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Xray GUI\n\n![Image 1: Xray GUI 应用图标](https://huarun.win/app-icons/xray-gui.webp)\n\n使用 Xray-core 的 Android 图形客户端，主要提供 XTLS/Xray 节点的基础连接和配置入口。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Xray[了解 Xray-core 内核 →](https://huarun.win/cores/xray)[查看依据](https://github.com/SaeedDev94/Xray/blob/2409f561585ad769b741e51d0ce6956961472916/README.md)\n\n主导开发[SaeedDev94](https://huarun.win/history/people/saeeddev94)Saeed\n\n**513** Star**60** Fork\n\n[查看代码仓库](https://github.com/SaeedDev94/Xray)\n统计更新于 2026年9月16日\n\n版本号 v12.6.0\n\n最后更新时间 2026年8月23日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n- Fix Broken links (#85)\n- Run custom script on tunnel start, stop[查看官方版本来源 ↗](https://github.com/SaeedDev94/Xray/releases/tag/v12.6.0)\n应用简介\n\n## 关于 Xray GUI\n\n使用 Xray-core 的 Android 图形客户端，主要提供 XTLS/Xray 节点的基础连接和配置入口。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/xray-gui)\n人物关联\n\n## 与 Xray GUI 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/saeeddev94.webp)**SaeedDev94**主导开发 Xray GUI 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/saeeddev94)\n*   [![Image 3](https://huarun.win/people-avatars/rprx.webp)**RPRX**内核血缘 Project X 与 Xray-core 创始人 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/rprx)\n\n继续浏览\n\n## 相似平台的其他客户端\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/SaeedDev94/Xray",
+  "repository": {
+    "full_name": "SaeedDev94/Xray",
+    "html_url": "https://github.com/SaeedDev94/Xray",
+    "description": "Xray GUI Client For Android",
+    "default_branch": "master",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": ""
+  },
+  "readme": "# Xray\n<img src=\"metadata/en-US/images/featureGraphic.png\" alt=\"App Cover\" height=\"150\" />  \nThis is a simple GUI client for <a href=\"https://github.com/XTLS/Xray-core\">XTLS/Xray-core</a>\n\n# Screenshots\n<img src=\"metadata/en-US/images/phoneScreenshots/screenshot-01-home.png\" alt=\"MainActivity\" height=\"666\" /><img src=\"metadata/en-US/images/phoneScreenshots/screenshot-02-assets.png\" alt=\"AssetsActivity\" height=\"666\" /><img src=\"metadata/en-US/images/phoneScreenshots/screenshot-03-settings-basic.png\" alt=\"SettingsActivity: Basic Tab\" height=\"666\" /><img src=\"metadata/en-US/images/phoneScreenshots/screenshot-04-settings-advanced.png\" alt=\"SettingsActivity: Advanced Tab\" height=\"666\" />\n\n# APK variants guide\n- arm32 => versionCode + 1\n- arm64 => versionCode + 2\n- x86 => versionCode + 3\n- amd64 => versionCode + 4\n\n# Download\n[![Release CI](https://github.com/SaeedDev94/Xray/actions/workflows/release.yml/badge.svg)](https://github.com/SaeedDev94/Xray/actions)  \n<a href=\"https://github.com/SaeedDev94/Xray/releases\"><img src=\"get-it-on-github.png\" alt=\"Get it on GitHub\" height=\"100\" /></a>\n<a href=\"https://f-droid.org/packages/io.github.saeeddev94.xray\"><img src=\"get-it-on-fdroid.png\" alt=\"Get it on F-Droid\" height=\"100\" /></a>\n",
+  "treeSha": "2409f561585ad769b741e51d0ce6956961472916",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/res/drawable-v26/ic_launcher.xml",
+    "app/src/main/res/drawable/baseline_adb.xml",
+    "app/src/main/res/drawable/baseline_add.xml",
+    "app/src/main/res/drawable/baseline_alt_route.xml",
+    "app/src/main/res/drawable/baseline_config.xml",
+    "app/src/main/res/drawable/baseline_content_copy.xml",
+    "app/src/main/res/drawable/baseline_delete.xml",
+    "app/src/main/res/drawable/baseline_done.xml",
+    "app/src/main/res/drawable/baseline_download.xml",
+    "app/src/main/res/drawable/baseline_edit.xml",
+    "app/src/main/res/drawable/baseline_file_open.xml",
+    "app/src/main/res/drawable/baseline_folder_open.xml",
+    "app/src/main/res/drawable/baseline_link.xml",
+    "app/src/main/res/drawable/baseline_refresh.xml",
+    "app/src/main/res/drawable/baseline_settings.xml",
+    "app/src/main/res/drawable/baseline_vpn_key.xml",
+    "app/src/main/res/drawable/baseline_vpn_lock.xml",
+    "app/src/main/res/drawable/ic_xray.xml",
+    "app/src/main/res/layout/activity_apps_routing.xml",
+    "app/src/main/res/layout/activity_assets.xml",
+    "app/src/main/res/layout/activity_configs.xml",
+    "app/src/main/res/layout/activity_links.xml",
+    "app/src/main/res/layout/activity_logs.xml",
+    "app/src/main/res/layout/activity_main.xml",
+    "app/src/main/res/layout/activity_profile.xml",
+    "app/src/main/res/layout/activity_scanner.xml",
+    "app/src/main/res/layout/activity_settings.xml",
+    "app/src/main/res/layout/item_recycler_exclude.xml",
+    "app/src/main/res/layout/item_recycler_main.xml",
+    "app/src/main/res/layout/layout_link_form.xml",
+    "app/src/main/res/layout/layout_link_item.xml",
+    "app/src/main/res/layout/layout_tun_routes.xml",
+    "app/src/main/res/layout/loading_dialog.xml",
+    "app/src/main/res/layout/tab_advanced_settings.xml",
+    "app/src/main/res/layout/tab_basic_settings.xml",
+    "app/src/main/res/layout/tab_config.xml",
+    "app/src/main/res/menu/menu_apps_routing.xml",
+    "app/src/main/res/menu/menu_configs.xml",
+    "app/src/main/res/menu/menu_drawer.xml",
+    "app/src/main/res/menu/menu_links.xml",
+    "app/src/main/res/menu/menu_logs.xml",
+    "app/src/main/res/menu/menu_main.xml",
+    "app/src/main/res/menu/menu_profile.xml",
+    "app/src/main/res/menu/menu_settings.xml",
+    "app/src/main/res/mipmap/banner.png",
+    "app/src/main/res/values/array.xml",
+    "app/src/main/res/values/colors.xml",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values/themes.xml",
+    "app/src/main/res/xml/network_security_config.xml",
+    "get-it-on-fdroid.png",
+    "get-it-on-github.png",
+    "metadata/en-US/images/featureGraphic.png",
+    "metadata/en-US/images/icon.png",
+    "metadata/en-US/images/phoneScreenshots/screenshot-01-home.png",
+    "metadata/en-US/images/phoneScreenshots/screenshot-02-assets.png",
+    "metadata/en-US/images/phoneScreenshots/screenshot-03-settings-basic.png",
+    "metadata/en-US/images/phoneScreenshots/screenshot-04-settings-advanced.png"
+  ],
+  "releaseList": [
+    {
+      "id": 375237542,
+      "tag_name": "v12.6.0",
+      "name": "v12.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.6.0",
+      "published_at": "2026-08-23T14:42:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 370066366,
+      "tag_name": "v12.5.0",
+      "name": "v12.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.5.0",
+      "published_at": "2026-08-13T16:44:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 367567257,
+      "tag_name": "v12.4.0",
+      "name": "v12.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.4.0",
+      "published_at": "2026-08-09T19:35:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 328316923,
+      "tag_name": "v12.3.0",
+      "name": "v12.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.3.0",
+      "published_at": "2026-05-23T14:06:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 317367216,
+      "tag_name": "v12.2.1",
+      "name": "v12.2.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.2.1",
+      "published_at": "2026-05-04T18:37:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 310896796,
+      "tag_name": "v12.2.0",
+      "name": "v12.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.2.0",
+      "published_at": "2026-04-19T16:31:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 287796758,
+      "tag_name": "v12.1.1",
+      "name": "v12.1.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.1.1",
+      "published_at": "2026-02-18T17:32:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 286548180,
+      "tag_name": "v12.1.0",
+      "name": "v12.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.1.0",
+      "published_at": "2026-02-15T15:41:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 268130618,
+      "tag_name": "v12.0.0",
+      "name": "v12.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.0.0",
+      "published_at": "2025-12-07T17:44:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 254772474,
+      "tag_name": "v11.9.0",
+      "name": "v11.9.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.9.0",
+      "published_at": "2025-10-15T17:18:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 252928992,
+      "tag_name": "v11.8.7",
+      "name": "v11.8.7",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.7",
+      "published_at": "2025-10-08T07:12:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 252257699,
+      "tag_name": "v11.8.6",
+      "name": "v11.8.6",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.6",
+      "published_at": "2025-10-05T13:07:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 247685094,
+      "tag_name": "v11.8.5",
+      "name": "v11.8.5",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.5",
+      "published_at": "2025-09-16T15:40:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246580606,
+      "tag_name": "v11.8.4",
+      "name": "v11.8.4",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.4",
+      "published_at": "2025-09-11T18:29:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246561716,
+      "tag_name": "v11.8.2",
+      "name": "v11.8.2",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.2",
+      "published_at": "2025-09-11T17:07:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246159737,
+      "tag_name": "v11.8.1",
+      "name": "v11.8.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.1",
+      "published_at": "2025-09-10T12:38:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246141838,
+      "tag_name": "v11.8.0",
+      "name": "v11.8.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.8.0",
+      "published_at": "2025-09-10T11:33:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245491144,
+      "tag_name": "v11.7.0",
+      "name": "v11.7.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.7.0",
+      "published_at": "2025-09-08T11:21:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245031209,
+      "tag_name": "v11.6.0",
+      "name": "v11.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.6.0",
+      "published_at": "2025-09-05T10:15:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 244523521,
+      "tag_name": "v11.5.1",
+      "name": "v11.5.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.5.1",
+      "published_at": "2025-09-03T17:28:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 244232056,
+      "tag_name": "v11.5.0",
+      "name": "v11.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.5.0",
+      "published_at": "2025-09-02T19:35:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 243955092,
+      "tag_name": "v11.4.1",
+      "name": "v11.4.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.4.1",
+      "published_at": "2025-09-01T20:11:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 243878975,
+      "tag_name": "v11.4.0",
+      "name": "v11.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.4.0",
+      "published_at": "2025-09-01T13:09:31Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 242629352,
+      "tag_name": "v11.3.2",
+      "name": "v11.3.2",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.3.2",
+      "published_at": "2025-08-26T16:22:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242188234,
+      "tag_name": "v11.3.1",
+      "name": "v11.3.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.3.1",
+      "published_at": "2025-08-25T08:02:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242127256,
+      "tag_name": "v11.3.0",
+      "name": "v11.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.3.0",
+      "published_at": "2025-08-24T22:00:14Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 242044561,
+      "tag_name": "v11.2.0",
+      "name": "v11.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.2.0",
+      "published_at": "2025-08-23T17:30:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 241887605,
+      "tag_name": "v11.1.1",
+      "name": "v11.1.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.1.1",
+      "published_at": "2025-08-22T16:08:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 241270298,
+      "tag_name": "v11.1.0",
+      "name": "v11.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.1.0",
+      "published_at": "2025-08-20T16:38:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 238859179,
+      "tag_name": "v11.0.1",
+      "name": "v11.0.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.0.1",
+      "published_at": "2025-08-10T16:56:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 237174323,
+      "tag_name": "v11.0.0",
+      "name": "v11.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v11.0.0",
+      "published_at": "2025-08-03T17:25:49Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 225684196,
+      "tag_name": "v10.9.1",
+      "name": "v10.9.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.9.1",
+      "published_at": "2025-06-16T20:53:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 224388419,
+      "tag_name": "v10.9.0",
+      "name": "v10.9.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.9.0",
+      "published_at": "2025-06-10T16:44:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 221609853,
+      "tag_name": "v10.8.4",
+      "name": "v10.8.4",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.8.4",
+      "published_at": "2025-05-28T16:24:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 221064234,
+      "tag_name": "v10.8.3",
+      "name": "v10.8.3",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.8.3",
+      "published_at": "2025-05-26T18:25:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 220808731,
+      "tag_name": "v10.8.2",
+      "name": "v10.8.2",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.8.2",
+      "published_at": "2025-05-24T19:52:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 220680298,
+      "tag_name": "v10.8.1",
+      "name": "v10.8.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.8.1",
+      "published_at": "2025-05-23T15:31:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 219186629,
+      "tag_name": "v10.8.0",
+      "name": "v10.8.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.8.0",
+      "published_at": "2025-05-16T19:55:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 217839209,
+      "tag_name": "v10.7.1",
+      "name": "v10.7.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.7.1",
+      "published_at": "2025-05-11T14:33:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 216786235,
+      "tag_name": "v10.6.0",
+      "name": "v10.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.6.0",
+      "published_at": "2025-05-06T15:11:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 216064262,
+      "tag_name": "v10.5.0",
+      "name": "v10.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.5.0",
+      "published_at": "2025-05-01T21:11:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 211781888,
+      "tag_name": "v10.4.0",
+      "name": "v10.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.4.0",
+      "published_at": "2025-04-11T09:16:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 210345202,
+      "tag_name": "v10.3.0",
+      "name": "v10.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.3.0",
+      "published_at": "2025-04-04T11:54:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 202035328,
+      "tag_name": "v10.2.0",
+      "name": "v10.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.2.0",
+      "published_at": "2025-02-24T13:36:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 200537379,
+      "tag_name": "v10.1.0",
+      "name": "v10.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.1.0",
+      "published_at": "2025-02-15T18:48:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 200401601,
+      "tag_name": "v10.0.0",
+      "name": "v10.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v10.0.0",
+      "published_at": "2025-02-14T14:43:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 200199319,
+      "tag_name": "v9.1.0",
+      "name": "v9.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v9.1.0",
+      "published_at": "2025-02-13T17:34:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 199388047,
+      "tag_name": "v9.0.3",
+      "name": "v9.0.3",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v9.0.3",
+      "published_at": "2025-02-10T14:20:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 199266409,
+      "tag_name": "v9.0.1",
+      "name": "v9.0.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v9.0.1",
+      "published_at": "2025-02-09T21:27:16Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 195210333,
+      "tag_name": "v9.0.0",
+      "name": "v9.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v9.0.0",
+      "published_at": "2025-01-16T20:19:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 192854853,
+      "tag_name": "v8.4.0",
+      "name": "v8.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v8.4.0",
+      "published_at": "2025-01-01T16:35:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 191855097,
+      "tag_name": "v8.3.0",
+      "name": "v8.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v8.3.0",
+      "published_at": "2024-12-20T13:22:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 190835597,
+      "tag_name": "v8.2.0",
+      "name": "v8.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v8.2.0",
+      "published_at": "2024-12-15T19:15:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 183811988,
+      "tag_name": "v8.1.0",
+      "name": "v8.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v8.1.0",
+      "published_at": "2024-11-05T20:53:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 182979804,
+      "tag_name": "v8.0.0",
+      "name": "v8.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v8.0.0",
+      "published_at": "2024-10-31T17:59:49Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 175014992,
+      "tag_name": "v7.6.3",
+      "name": "v7.6.3",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.6.3",
+      "published_at": "2024-09-13T18:09:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 174391561,
+      "tag_name": "v7.6.2",
+      "name": "v7.6.2",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.6.2",
+      "published_at": "2024-09-10T17:46:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 173808672,
+      "tag_name": "v7.6.1",
+      "name": "v7.6.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.6.1",
+      "published_at": "2024-09-06T10:07:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 173711364,
+      "tag_name": "v7.6.0",
+      "name": "v7.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.6.0",
+      "published_at": "2024-09-05T18:44:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 173106260,
+      "tag_name": "v7.5.0",
+      "name": "v7.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.5.0",
+      "published_at": "2024-09-02T20:29:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 167699732,
+      "tag_name": "v7.4.0",
+      "name": "v7.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.4.0",
+      "published_at": "2024-07-29T17:29:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 166771793,
+      "tag_name": "v7.3.0",
+      "name": "v7.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.3.0",
+      "published_at": "2024-07-23T18:55:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 166099462,
+      "tag_name": "v7.2.0",
+      "name": "v7.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.2.0",
+      "published_at": "2024-07-18T17:16:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 165703041,
+      "tag_name": "v7.1.0",
+      "name": "v7.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.1.0",
+      "published_at": "2024-07-16T18:05:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 161679050,
+      "tag_name": "v7.0.0",
+      "name": "v7.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v7.0.0",
+      "published_at": "2024-06-21T14:02:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 159521305,
+      "tag_name": "v6.9.0",
+      "name": "v6.9.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.9.0",
+      "published_at": "2024-06-08T17:33:55Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 157188546,
+      "tag_name": "v6.8.0",
+      "name": "v6.8.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.8.0",
+      "published_at": "2024-05-23T18:37:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 155312006,
+      "tag_name": "v6.7.0",
+      "name": "v6.7.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.7.0",
+      "published_at": "2024-05-10T19:35:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 153041687,
+      "tag_name": "v6.6.0",
+      "name": "v6.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.6.0",
+      "published_at": "2024-04-26T18:55:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 149137678,
+      "tag_name": "v6.5.0",
+      "name": "v6.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.5.0",
+      "published_at": "2024-03-31T13:12:48Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 147887886,
+      "tag_name": "v6.4.2",
+      "name": "v6.4.2",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.4.2",
+      "published_at": "2024-03-22T11:15:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 147219462,
+      "tag_name": "v6.4.0",
+      "name": "v6.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.4.0",
+      "published_at": "2024-03-19T11:44:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 145851223,
+      "tag_name": "v6.3.0",
+      "name": "v6.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.3.0",
+      "published_at": "2024-03-11T14:42:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 145322835,
+      "tag_name": "v6.2.0",
+      "name": "v6.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.2.0",
+      "published_at": "2024-03-07T18:24:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 144406830,
+      "tag_name": "v6.1.0",
+      "name": "v6.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.1.0",
+      "published_at": "2024-03-01T17:30:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 143854755,
+      "tag_name": "v6.0.0",
+      "name": "v6.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v6.0.0",
+      "published_at": "2024-02-27T17:46:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 143708278,
+      "tag_name": "v5.9.0",
+      "name": "v5.9.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.9.0",
+      "published_at": "2024-02-26T21:38:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 143491014,
+      "tag_name": "v5.8.0",
+      "name": "v5.8.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.8.0",
+      "published_at": "2024-02-24T18:20:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 143377759,
+      "tag_name": "v5.7.0",
+      "name": "v5.7.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.7.0",
+      "published_at": "2024-02-23T15:59:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 142515105,
+      "tag_name": "v5.6.1",
+      "name": "v5.6.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.6.1",
+      "published_at": "2024-02-18T22:37:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 142456669,
+      "tag_name": "v5.6.0",
+      "name": "v5.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.6.0",
+      "published_at": "2024-02-17T14:58:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 142211227,
+      "tag_name": "v5.5.0",
+      "name": "v5.5.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.5.0",
+      "published_at": "2024-02-15T18:38:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 141540644,
+      "tag_name": "v5.4.0",
+      "name": "v5.4.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.4.0",
+      "published_at": "2024-02-11T17:14:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 141273960,
+      "tag_name": "v5.3.1",
+      "name": "v5.3.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.3.1",
+      "published_at": "2024-02-10T12:26:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 141147778,
+      "tag_name": "v5.3.0",
+      "name": "v5.3.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.3.0",
+      "published_at": "2024-02-10T08:54:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 140572639,
+      "tag_name": "v5.2.0",
+      "name": "v5.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.2.0",
+      "published_at": "2024-02-08T15:33:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 140149336,
+      "tag_name": "v5.1.0",
+      "name": "v5.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.1.0",
+      "published_at": "2024-02-06T18:45:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 139723208,
+      "tag_name": "v5.0.0",
+      "name": "v5.0.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v5.0.0",
+      "published_at": "2024-02-02T19:50:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 139167500,
+      "tag_name": "v4.2.1",
+      "name": "v4.2.1",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v4.2.1",
+      "published_at": "2024-01-30T16:56:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 138989002,
+      "tag_name": "v4.2.0",
+      "name": "v4.2.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v4.2.0",
+      "published_at": "2024-01-29T18:17:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 138622169,
+      "tag_name": "v4.1.0",
+      "name": "v4.1.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v4.1.0",
+      "published_at": "2024-01-26T07:16:53Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 375237542,
+      "tag_name": "v12.6.0",
+      "name": "v12.6.0",
+      "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.6.0",
+      "published_at": "2026-08-23T14:42:13Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "- Fix Broken links (#85)\n- Run custom script on tunnel start, stop\n",
+      "assets": [
+        {
+          "id": 526317358,
+          "name": "Xray-v12.6.0-1201.apk",
+          "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1201.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 526317356,
+          "name": "Xray-v12.6.0-1202.apk",
+          "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1202.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 526317359,
+          "name": "Xray-v12.6.0-1203.apk",
+          "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1203.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 526317357,
+          "name": "Xray-v12.6.0-1204.apk",
+          "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1204.apk",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

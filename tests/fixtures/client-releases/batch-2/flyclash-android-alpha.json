@@ -1,0 +1,42 @@
+{
+  "id": 384089027,
+  "tag_name": "v0.2.1.9-Alpha-Smart",
+  "name": "FlyClash Android v0.2.1.9 Smart-Alpha-ver2",
+  "html_url": "https://github.com/GtxFury/FlyClash-Android/releases/tag/v0.2.1.9-Alpha-Smart",
+  "published_at": "2026-09-07T12:57:35Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "<a href=\"https://www.stromsend.xyz/#/register?code=tIhaARYV\">\r\n  <img src=\"screenshots/unnamed.jpg\" alt=\"\u53cb\u60c5\u63a8\u8350\" />\r\n</a>",
+  "assets": [
+    {
+      "id": 567536510,
+      "name": "flyclash-0.2.1.9-pbSmart-arm64-v8a-release.apk",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-arm64-v8a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567540272,
+      "name": "flyclash-0.2.1.9-pbSmart-armeabi-v7a-release.apk",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-armeabi-v7a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567533863,
+      "name": "flyclash-0.2.1.9-pbSmart-universal-release.apk",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-universal-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567540056,
+      "name": "flyclash-0.2.1.9-pbSmart-x86-release.apk",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-x86-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567536064,
+      "name": "flyclash-0.2.1.9-pbSmart-x86_64-release.apk",
+      "browser_download_url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-x86_64-release.apk",
+      "state": "uploaded"
+    }
+  ]
+}

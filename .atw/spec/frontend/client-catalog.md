@@ -191,3 +191,41 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 错误：`SSRVPN.apk` 后缀能证明 Android arm64；Apple 兼容 Mac 能证明独立 Mac 版本。
 
 正确：平台与架构取已核验官方资料；每个平台仅写本平台成功核验的发布信息。
+
+## 11. 第二批渠道与架构映射
+
+### 11.1 范围
+
+同仓库有手机／TV独立发布或包名使用数字架构编码时，扩充现有GitHub来源配置，不扩展前端平台枚举和快照身份。数据验收仍以独立冻结基线为准。
+
+### 11.2 签名
+
+- `selectStableRelease(raw, releaseTag?: RegExp)`：在正式版筛选基础上匹配可选标签渠道，再按发布日期取最新。
+- `source.releaseTag?: RegExp`：由 `githubClient().loadRelease` 和 `parseRelease` 同时执行；来源配置只用不含 `g/y` 的无状态正则。
+- `source.architectureAliases?: Record<string, string>`：把第一个捕获组映射成实际架构；未配置时保留原捕获组，空捕获组仍走 `architectures[platform]`。
+
+### 11.3 契约
+
+Surfboard手机渠道为 `mobile-*`，不能被较新的TV发布覆盖；MikuBox旧正式版的sing-box代际固定标签，不以Mihomo开发分支资料解释旧包。Xray GUI包编号末位1–4分别映射arm32、arm64、x86、x86_64。源码构建为通用应用但保留历史架构文件名时，以实际构建为准；V2rayU两个DMG均为universal。
+
+Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明确核心需按设备另行安装。包含arm64原生工具的Surfing、akashaProxy不得归为noarch。所有直链仍绑定同一个release标签和资产，不按扩展名推断架构。
+
+### 11.4 校验与错误
+
+- 渠道不匹配：选择阶段跳过；直接传入解析器时抛错并保留旧快照。
+- 配置了映射但没有该捕获值：不回退数字原文，schema拒绝并保留旧快照。
+- 临时HEAD/API失败：保留人工入口或旧成功数据，不写新的成功核验时间。
+
+### 11.5 场景
+
+正常：手机渠道选择mobile，忽略较新TV。基础：旧来源无新增配置，行为不变。错误：把1202当CPU架构或把TV1.x与mobile2.x资产合到同一快照。
+
+### 11.6 测试
+
+`client-batch-2-sources.test.mjs`覆盖21条GitHub与4条商店配置、真实资产数量及遗漏、错误版本URL、API层手机渠道选择、未知映射拒绝、Root架构边界、Alpha误标正式及单平台失败保留。离线CLI夹具应返回同仓库全部发布，并按实际release id返回资产，不能固定只返回第一份夹具。
+
+### 11.7 易错对照
+
+错误：扩批后把旧测试的期望直接改成生产目录；或每张票仍断言全站永远只有本票截止数量。
+
+正确：旧批次验证各自冻结子集；最新批次以独立基线验证累计覆盖、顺序与唯一性。内核覆盖也须包含独立的官方期望，例如Box for Root在v1.10.2支持Mihomo；只遍历生产`app.cores`无法发现漏填内核。图标例外只按PRD中明确获批的应用执行，不能由一个缺图案例扩用至其他应用。

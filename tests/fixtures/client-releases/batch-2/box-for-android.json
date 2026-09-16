@@ -1,0 +1,18 @@
+{
+  "id": 338943206,
+  "tag_name": "1.2.8",
+  "name": "1.2.8",
+  "html_url": "https://github.com/boxproxy/box/releases/tag/1.2.8",
+  "published_at": "2026-06-13T09:50:17Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "#### Changelog 1.2.8\n\n自 1.2.7 以来的变更\n\n- fix(log): 统一脚本日志输出 (dfa2661)\n- fix(net): 修复 TUN 模式下黑白名单与 fake-ip 连接异常 (ec78ef8)\n- fix(net): 移除 net.inotify 并发锁，优化日志输出与防回环规则更新 (461f767)\n- 提交上一版缺失的 box.tool 修改 (f98a590)\n- feat: 优化网络规则刷新 (9f615f4)\n- refactor: 重构代理规则与内核配置覆写，新增性能模式与其余模式 CNIP 兼容 (ea408a1)\n",
+  "assets": [
+    {
+      "id": 446480783,
+      "name": "box-1.2.8.zip",
+      "browser_download_url": "https://github.com/boxproxy/box/releases/download/1.2.8/box-1.2.8.zip",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": 382840978,
+  "tag_name": "4.2.1",
+  "name": "4.2.1",
+  "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1",
+  "published_at": "2026-09-04T15:46:15Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "* Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers\r\n* Improved ping tests are more reliable and no longer leave stray helper processes running\r\n* Improved the Windows installer now ships fully signed binaries\r\n* \r\n* Added a Reset action that repairs the background service on Windows, macOS and Linux, with its health checks included in the diagnostic report\r\n* Added an editable system proxy exception list in Advanced settings\r\n* Added Per-App Proxy support when running Xray TUN\r\n* \r\n* Fixed encrypted subscriptions revealing their server details after the first refresh\r\n* Fixed subscriptions failing to decrypt when delivered through a fronting proxy\r\n* Fixed subscription links that redirect to a happ:// address not being added\r\n* Fixed server configs that use the vcn alias for certificate verification not importing\r\n* Fixed DNS going dead on Xray TUN\r\n* Fixed proxy ping showing n/a on Xray TUN\r\n* Fixed the buttons and AI Helper disappearing after deleting the last server from the list\r\n* Fixed LAN sharing showing a virtual machine adapter address instead of the real local network one\r\n* Fixed no error appearing when an invalid routing profile is imported in global routing settings\r\n* Fixed the HTTP inbound toggle and user agent fields staying greyed out after a subscription lost premium\r\n* Fixed the tunnel type from a subscription not being applied to free subscriptions",
+  "assets": [
+    {
+      "id": 544543830,
+      "name": "Happ.linux.arm64.deb",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 544544654,
+      "name": "Happ.linux.arm64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 544546501,
+      "name": "Happ.linux.arm64.rpm",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 544546960,
+      "name": "Happ.linux.x64.deb",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 544547693,
+      "name": "Happ.linux.x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 544547925,
+      "name": "Happ.linux.x64.rpm",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 544548351,
+      "name": "Happ.macOS.universal.dmg",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 544549015,
+      "name": "setup-Happ.arm64.exe",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 544546230,
+      "name": "setup-Happ.x64.exe",
+      "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+      "state": "uploaded"
+    }
+  ]
+}

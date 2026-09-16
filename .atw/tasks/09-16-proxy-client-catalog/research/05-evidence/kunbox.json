@@ -1,0 +1,963 @@
+{
+  "id": "kunbox",
+  "referenceUrl": "https://huarun.win/apps/kunbox",
+  "referenceText": "Title: KunBox：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/kunbox\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   KunBox\n\n![Image 1: KunBox 应用图标](https://huarun.win/app-icons/kunbox.webp)\n\n基于 sing-box（libbox）的 Android 代理客户端，使用 Jetpack Compose 界面，并提供 ARM32 与 ARM64 构建。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 sing-box[了解 sing-box 内核 →](https://huarun.win/cores/sing-box)[查看依据](https://github.com/roseforljh/KunBox/blob/99fad5866b0c62eaa248a2e7dcbc20e296410e85/README.md)\n\n主导开发[roseforljh](https://huarun.win/history/people/roseforljh)Only\n\n**345** Star**25** Fork\n\n[查看代码仓库](https://github.com/roseforljh/KunBox)\n统计更新于 2026年9月16日\n\n版本号 v2.24.1\n\n最后更新时间 2026年9月3日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n2.24.1 (2026-09-03)\n\nBug Fixes\n\n- 优化 Root 模式停止流程与配置生成状态检查 (fa8dcf1)\n- 升级内核同步配置与 libbox.aar 二进制依赖 (98df8cb)\n- 完善后台服务平台接口实现与 Root 应急清理流程 (93c12ed)\n- 适配新版 PlatformInterface 接口与延迟探测运行时 (720e4b6)\n- 重构配置生成规则、Endpoint 转换与运行时 DNS 规范化 (13f5a6c)[查看官方版本来源 ↗](https://github.com/roseforljh/KunBox/releases/tag/v2.24.1)\n应用简介\n\n## 关于 KunBox\n\n基于 sing-box（libbox）的 Android 代理客户端，使用 Jetpack Compose 界面，并提供 ARM32 与 ARM64 构建。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/kunbox)\n人物关联\n\n## 与 KunBox 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/roseforljh.webp)**roseforljh**主导开发 KunBox 核心创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/roseforljh)\n*   [![Image 3](https://huarun.win/people-avatars/nekohasekai.webp)**nekohasekai**内核血缘 sing-box 创始开发者与 SagerNet 核心维护者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/nekohasekai)\n\n继续浏览\n\n## 相似平台的其他客户端\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/roseforljh/KunBox",
+  "repository": {
+    "full_name": "roseforljh/KunBox",
+    "html_url": "https://github.com/roseforljh/KunBox",
+    "description": null,
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": ""
+  },
+  "readme": "<div align=\"center\">\n\n# KunBox for Android\n\n[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-purple.svg?style=flat&logo=kotlin)](https://kotlinlang.org)\n[![Compose](https://img.shields.io/badge/Jetpack%20Compose-Material3-4285F4.svg?style=flat&logo=android)](https://developer.android.com/jetpack/compose)\n[![Sing-box](https://img.shields.io/badge/Core-Sing--box-success.svg?style=flat)](https://github.com/SagerNet/sing-box)\n[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](LICENSE)\n[![Telegram](https://img.shields.io/badge/Telegram-Chat-blue?style=flat&logo=telegram)](https://t.me/+978J0WfmJLk4ZmQ1)\n[![Downloads](https://img.shields.io/github/downloads/roseforljh/KunBox/total.svg?style=flat&logo=github)](https://github.com/roseforljh/KunBox/releases)\n\n> **OLED Hyper-Minimalist**\n>\n> A next-generation Android proxy client designed for those who pursue ultimate performance and visual purity.\n> <br/>Cut the clutter, return to the essence of networking.\n\n[Download](#-download-and-installation) • [Features](#-core-features) • [Protocols](#-protocol-matrix) • [Architecture](#-project-structure) • [Quick Start](#-build-guide) • [Community](https://t.me/+978J0WfmJLk4ZmQ1)\n\n**[中文文档](README_CN.md)**\n\n</div>\n\n---\n\n## 💖 Sponsorship\n\nThanks to the following users for their generous support:\n\nThanks to [ForZTN](https://sponsorship.forzth.com/github/roseforljh/KunBox) for supporting KunBox.\n\n| Sponsor | Amount |\n|:---|:---|\n| [@WestWood](https://github.com/yuedaochangmendian) | ¥30 |\n\n> Your support is our motivation for continuous development! If you wish to sponsor, please contact us via [Telegram](https://t.me/+978J0WfmJLk4ZmQ1).\n\n---\n\n## 📥 Download and Installation\n\n### Download from GitHub Releases\n\nVisit the [Releases page](https://github.com/roseforljh/KunBox/releases) to download the latest APK file.\n\n> **Note**: Release assets include `arm64-v8a` and `armeabi-v7a` builds.\n\n### System Requirements\n\n| Item | Minimum Requirement |\n|:---|:---|\n| Android Version | Android 7.0 (API 24) |\n| Architecture | arm64-v8a / armeabi-v7a |\n| Storage | ~15MB |\n\n### Installation Methods\n\n1. **Direct Install**: Download APK and tap to install (requires permission to install from unknown sources)\n2. **ADB Install**: `adb install KunBox-x.x.x.apk`\n\n---\n\n## ✨ Core Features\n\n### 🎨 OLED Pure Black Aesthetics (Hyper-Minimalist UI)\nUnlike traditional Material Design, we've adopted a deeply customized **True Black** interface. Not only does it achieve pixel-level power saving on OLED screens, but it also brings a deep, immersive visual experience. The distraction-free UI design makes key information (latency, traffic, nodes) clear at a glance.\n\n- **Gengar Dynamic Effect**: Unique Gengar character on the home page switches with VPN status\n- **Smooth Animations**: Silky transition animations based on Jetpack Compose\n- **Adaptive Icons**: Support for Android 13+ themed adaptive icons\n\n### 🚀 High-Performance Core\nBased on the **Sing-box (libbox)** next-generation universal proxy core written in Golang.\n- **Memory Usage**: 30%+ lower than traditional cores\n- **Startup Speed**: Millisecond-level cold start\n- **Connection Stability**: Excellent connection reuse and keepalive mechanisms\n- **Hot Reload Support**: Configuration changes without restarting VPN service\n\n### 🛡️ Smart Routing & RuleSet Hub\nBuilt-in powerful routing engine supporting complex rule set matching.\n- **RuleSet Hub**: Online download and management of massive rule sets (GeoSite/GeoIP/AdGuard, etc.), supporting both Source and Binary formats.\n- **Precise App Routing**: Uses `UID` + `Package Name` dual matching mechanism, effectively solving app routing issues in some system environments.\n- **Flexible Policies**: Supports GeoSite, GeoIP, domain suffix, keyword, process name, and other matching dimensions.\n- **Auto Update**: Rule sets support scheduled automatic updates\n\n### ⚡ Quick Actions\n- **Quick Settings Tile**: Support system dropdown quick toggle, no need to enter the app to start/stop VPN.\n- **Desktop Shortcuts**: Support node selection and VPN toggle shortcuts\n- **Real Latency Test**: URL-Test based real connection testing, accurately reflecting actual loading speed of YouTube/Google and other target websites.\n- **Real-time Traffic Monitoring**: Notification bar displays real-time upload/download speed\n\n### 🔄 Background Keepalive & Power Saving\n- **Smart Keepalive**: Multi-level screen-off keepalive mechanism\n- **Background Power Saving**: Configurable auto-sleep in background, balancing battery life and availability\n- **Quick Recovery**: Optimized reconnection speed when returning from background\n\n---\n\n## 🌐 Protocol Matrix\n\nWe've built a comprehensive protocol support network, compatible with most proxy protocols and advanced features on the market.\n\n### Core Proxy Protocols\n\n| Protocol | Identifier | Link Format | Core Feature Support |\n|:---|:---|:---|:---|\n| **Shadowsocks** | `SS` | `ss://` | SIP002, SIP008, AEAD (AES-128/256-GCM, Chacha20-Poly1305) |\n| **VMess** | `VMess` | `vmess://` | WS, gRPC, HTTP/2, Auto Secure, Packet Encoding |\n| **VLESS** | `VLESS` | `vless://` | **Reality**, **Vision**, XTLS Flow, uTLS |\n| **Trojan** | `Trojan` | `trojan://` | Trojan-Go compatible, Mux |\n| **Hysteria 2** | `Hy2` | `hysteria2://` | Latest QUIC protocol, Port Hopping, Congestion Control |\n| **TUIC v5** | `TUIC` | `tuic://` | 0-RTT, BBR congestion control, QUIC transport |\n| **WireGuard** | `WG` | `wireguard://` | Kernel-level VPN tunnel, Pre-shared Key (PSK) |\n| **SSH** | `SSH` | `ssh://` | Secure tunnel proxy, Private Key authentication |\n| **HTTP(S)** | `HTTP(S)` | `http(s)://` | HTTP/HTTPS proxy support |\n| **SOCKS5** | `SOCKS5` | `socks5://` | SOCKS5 proxy support |\n| **AnyTLS** | `AnyTLS` | `anytls://` | Universal TLS wrapper, Traffic obfuscation |\n| **Naive** | `Naive` | `naive+https://` | Native sing-box Naive protocol support |\n\n### Subscription Ecosystem Support\n- **Sing-box JSON**: Native support with full features.\n- **Clash YAML**: Perfect compatibility with Clash / Clash Meta (Mihomo) configurations, automatic policy group conversion.\n- **Standard Base64**: Compatible with V2RayN / Shadowrocket subscription formats.\n- **Import Methods**: Supports clipboard import, URL subscription import, QR code scanning, local file import.\n\n---\n\n## 🏗️ Project Structure\n\nThis project follows best practices of modern Android architecture, adopting MVVM pattern and Clean Architecture design principles.\n\n```\nKunBox-Android/\n├── app/src/main/java/com/kunk/singbox/\n│   ├── core/              # libbox JNI wrapper (BoxWrapperManager, SingBoxCore)\n│   ├── database/          # Room database (dao/, entity/)\n│   ├── ipc/               # VPN inter-process communication (SingBoxIpcHub, VpnStateStore)\n│   ├── model/             # Data models (SingBoxConfig, RoutingModels, Settings)\n│   ├── repository/        # Data repository layer\n│   │   ├── config/        # Configuration builders (InboundBuilder, OutboundFixer)\n│   │   ├── store/         # Settings storage\n│   │   └── subscription/  # Subscription fetcher\n│   ├── service/           # Android services\n│   │   ├── manager/       # VPN lifecycle management (CoreManager, ConnectManager)\n│   │   ├── network/       # Network monitoring\n│   │   └── tun/           # TUN device management\n│   ├── ui/                # Jetpack Compose UI\n│   │   ├── components/    # Reusable components\n│   │   ├── screens/       # Screen-level Composables\n│   │   └── navigation/    # Navigation configuration\n│   ├── utils/parser/      # Protocol parsers (NodeLinkParser, ClashYamlParser)\n│   └── viewmodel/         # ViewModel layer\n│\n├── .kernel-sync-local/    # Local-only sing-box sync workspace and one-click script\n│   ├── sync-kernel.ps1    # Re-sync the latest official stable upstream, build and replace libbox.aar\n│   └── patches/           # Exact-version minimal KunBox patches\n│\n└── config/detekt/         # Code quality check configuration\n```\n\n### Architecture Highlights\n\n#### Multi-process Architecture\n- VPN service runs in a separate process (`:vpn_service`)\n- UI communicates across processes via `SingBoxIpcHub`\n- Uses `VpnStateStore` (MMKV) for cross-process state synchronization\n\n#### VPN Data Flow\n```\nSingBoxService -> CoreManager -> BoxWrapperManager -> libbox.aar\n```\n\n---\n\n## 🛠️ Tech Stack Details\n\n| Dimension | Technology | Description |\n|:---|:---|:---|\n| **Language** | Kotlin 1.9 | 100% pure Kotlin code, using Coroutines and Flow for async streams |\n| **UI Framework** | Jetpack Compose | Declarative UI, Material 3 design specification |\n| **Architecture** | MVVM | Separation of concerns with ViewModel and Repository |\n| **Core Engine** | Sing-box (Go) | Communicates with Go core library via JNI |\n| **Database** | Room | Local data persistence |\n| **KV Storage** | MMKV | High-performance cross-process key-value storage |\n| **Network** | OkHttp 4 | For subscription updates, latency tests, and other network requests |\n| **Serialization** | Gson & SnakeYAML | High-performance JSON and YAML parsing |\n| **Build System** | Gradle 8.x | Hybrid build system support |\n| **Code Quality** | Detekt | Static code analysis and formatting |\n\n---\n\n## 🚀 Build Guide\n\n### Environment Requirements\n\n- **JDK**: 17 or higher\n- **Android Studio**: Hedgehog (2023.1.1) or higher\n- **Go**: 1.24+ (only needed when compiling libbox core)\n- **NDK**: r29 or higher\n\n### Clone Project\n\n```bash\ngit clone https://github.com/roseforljh/KunBox.git\ncd KunBox\n```\n\n### Build Debug APK\n\n```powershell\n# Windows\n.\\gradlew assembleDebug\n\n# macOS/Linux\n./gradlew assembleDebug\n```\n\n### Build Release APK\n\nRelease builds require signing configuration. Create a `signing.properties` file:\n\n```properties\nSTORE_FILE=release.keystore\nKEYSTORE_PASSWORD=your_keystore_password\nKEY_ALIAS=your_key_alias\nKEY_PASSWORD=your_key_password\n```\n\nThen execute:\n\n```powershell\n.\\gradlew assembleRelease\n```\n\n### Sync libbox Core (Local-only)\n\nKunBox uses the local workspace `.kernel-sync-local/` for kernel sync. This directory is **not committed to git**. By default, the script resolves the latest official stable `SagerNet/sing-box` tag and skips GitHub prerelease entries plus tags with `alpha`, `beta`, or `rc` suffixes.\n\nEach sync shallow-clones the exact official tag into a controlled temporary directory. Patched sources and build artifacts are never reused from an old upstream worktree. The script removes only its own temporary directory when it exits and keeps the newest 3 `libbox.aar.backup-before-replace.*` files.\n\nRun the one-click script from the repository root:\n\n```powershell\n.\\.kernel-sync-local\\sync-kernel.ps1\n```\n\nIf you need to pin a specific official tag manually, pass it explicitly:\n\n```powershell\n.\\.kernel-sync-local\\sync-kernel.ps1 -Tag v1.13.14\n```\n\nAt the time of writing, the latest official stable release is `v1.13.14`; the script still trusts the live official release API by default.\n\nThe script performs these stages in order:\n\n1. Check Git, Go, Java 17, Android SDK, Android NDK, `gomobile`, and `gobind`, then resolve the target official tag\n2. Shallow-clone that exact tag into the controlled temporary directory and verify its origin, HEAD tag, and clean state\n3. Build the untouched official AAR as the API and ABI baseline\n4. Apply only `patches/kunbox-<tag>.patch`, then run `go test`, race tests, and `go vet` for the affected VLESS package\n5. Build the patched AAR\n6. Compare the official and patched Java class sets, public APIs, and non-empty JNI entry sets; require the public API to match official sing-box exactly and reject the six removed private recovery methods\n7. Backup and replace `app/libs/libbox.aar`\n8. Run `assembleDebug`, `testDebugUnitTest`, and `detekt`; restore the backup on failure and keep only the newest 3 backups on success\n\nThe script removes only `.kernel-sync-local/tmp-sync-kernel-current`, so unrelated local kernel worktrees are never deleted.\n\nThe script stops when it cannot resolve a stable tag, the exact-version patch is missing, the fresh official tree becomes dirty, or `git apply --check`, Go tests, AAR method validation, or Gradle validation fails. Fix the reported version coupling and rerun it.\n\n### Run Tests\n\n```powershell\n# Run all unit tests\n.\\gradlew testDebugUnitTest\n\n# Run specific test class\n.\\gradlew testDebugUnitTest --tests \"com.kunk.singbox.utils.parser.NodeLinkParserTest\"\n\n# Run specific test method\n.\\gradlew testDebugUnitTest --tests \"com.kunk.singbox.utils.parser.NodeLinkParserTest.testVmessLink\"\n\n# Run Detekt code check\n.\\gradlew detekt\n```\n\n### Clean Build\n\n```powershell\n.\\gradlew clean\n```\n\n---\n\n## 📝 URL Scheme Support\n\nKunBox supports quick configuration import via URL Scheme:\n\n```\nkunbox://import?url=<subscription_url>\n```\n\nExample:\n```\nkunbox://import?url=https%3A%2F%2Fexample.com%2Fsubscription\n```\n\n---\n\n## 🧪 Testing\n\nThe project includes complete unit test coverage:\n\n| Test Class | Description |\n|:---|:---|\n| `NodeLinkParserTest` | Protocol link parsing tests |\n| `ClashConfigParserTest` | Clash configuration parsing tests |\n| `ConfigRepositoryTest` | Configuration generation tests |\n| `ModelSerializationTest` | Model serialization tests |\n| `VpnStateStoreTest` | IPC state storage tests |\n\nBefore running tests, ensure:\n1. Android SDK is configured\n2. NDK is installed\n3. Test database directory is writable\n\n---\n\n## 🤝 Contributing Guide\n\nWe welcome all forms of contributions!\n\n### Submit Issues\n\n- Use a clear title to describe the problem\n- Provide device model, Android version, app version\n- Include reproduction steps and relevant logs\n\n### Submit PRs\n\n1. Fork this repository\n2. Create a feature branch (`git checkout -b feature/amazing-feature`)\n3. Commit changes (`git commit -m 'Add amazing feature'`)\n4. Push branch (`git push origin feature/amazing-feature`)\n5. Create a Pull Request\n\n### Code Standards\n\n- Use 4-space indentation (no tabs)\n- Maximum line length 120 characters\n- Class names use PascalCase, functions and variables use camelCase\n- Run `./gradlew detekt` before committing to ensure code check passes\n- No empty catch blocks, use `Log.e()` instead of `printStackTrace()`\n\n---\n\n## 📋 FAQ\n\n### Q: Why can't I connect after installation?\nA: Please check:\n1. Whether VPN permission is granted\n2. Whether node configuration is correct\n3. Try switching different DNS settings\n\n### Q: How to import subscriptions?\nA: Multiple methods supported:\n1. Click \"+\" in the top right corner and select \"Import from Clipboard\"\n2. Long press subscription link and select \"Open with KunBox\"\n3. Use URL Scheme: `kunbox://import?url=<url>`\n\n### Q: What to do about high battery usage?\nA: Suggestions:\n1. Enable \"Background Power Saving\" feature\n2. Reduce unnecessary rule sets\n3. Turn off unused features (like detailed logs)\n\n### Q: Which Android versions are supported?\nA: Minimum support is Android 7.0 (API 24), Android 10+ recommended for best experience.\n\n## ❤️ Acknowledgments\n\nThis project stands on the shoulders of giants, special thanks to the following open source projects:\n\n* **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)**: Next-generation universal proxy platform core\n* **[MatsuriDayo/NekoBoxForAndroid](https://github.com/MatsuriDayo/NekoBoxForAndroid)**: Excellent Android proxy client reference\n* **[v2ray/v2ray-core](https://github.com/v2ray/v2ray-core)**: V2Ray team's pioneering contribution to the proxy ecosystem\n* **[Jetpack Compose](https://developer.android.com/jetpack/compose)**: Modern Android UI toolkit\n\n---\n\n## 📝 License\n\n```\nCopyright © 2024-2025 KunK.\n\nLicensed under the MIT License.\nYou may obtain a copy of the License at\n\n    https://opensource.org/licenses/MIT\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n```\n\n---\n\n<div align=\"center\">\n\n**[⬆ Back to Top](#kunbox-for-android)**\n\n<sub>This project is for learning and researching network technology only. Please comply with local laws and regulations.</sub>\n\n</div>\n",
+  "treeSha": "99fad5866b0c62eaa248a2e7dcbc20e296410e85",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_CN.md",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/res/anim/fade_in.xml",
+    "app/src/main/res/anim/fade_out.xml",
+    "app/src/main/res/anim/hold.xml",
+    "app/src/main/res/drawable/gengar_awake.webp",
+    "app/src/main/res/drawable/gengar_sleep.webp",
+    "app/src/main/res/drawable/ic_launcher_background.xml",
+    "app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "app/src/main/res/drawable/ic_notification.xml",
+    "app/src/main/res/drawable/ic_qs_tile.xml",
+    "app/src/main/res/drawable/ic_shortcut_scan.xml",
+    "app/src/main/res/drawable/ic_shortcut_toggle.xml",
+    "app/src/main/res/layout/activity_none.xml",
+    "app/src/main/res/layout/activity_qr_scanner.xml",
+    "app/src/main/res/layout/custom_barcode_scanner.xml",
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+    "app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+    "app/src/main/res/values-en/strings.xml",
+    "app/src/main/res/values/colors.xml",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values/themes.xml",
+    "app/src/main/res/values/zxing_colors.xml",
+    "app/src/main/res/xml/backup_rules.xml",
+    "app/src/main/res/xml/data_extraction_rules.xml",
+    "app/src/main/res/xml/file_paths.xml",
+    "app/src/main/res/xml/shortcuts.xml",
+    "config/detekt/baseline.xml"
+  ],
+  "releaseList": [
+    {
+      "id": 381993895,
+      "tag_name": "v2.24.1",
+      "name": "v2.24.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.24.1",
+      "published_at": "2026-09-03T12:16:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 379335840,
+      "tag_name": "v2.24.0",
+      "name": "v2.24.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.24.0",
+      "published_at": "2026-08-30T16:24:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 367323378,
+      "tag_name": "v2.23.1",
+      "name": "v2.23.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.23.1",
+      "published_at": "2026-08-08T22:55:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 367104967,
+      "tag_name": "v2.23.0",
+      "name": "v2.23.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.23.0",
+      "published_at": "2026-08-08T04:12:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 363354654,
+      "tag_name": "v2.22.0",
+      "name": "v2.22.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.22.0",
+      "published_at": "2026-07-31T22:31:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 361988730,
+      "tag_name": "v2.21.0",
+      "name": "v2.21.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.21.0",
+      "published_at": "2026-07-29T19:02:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 356071979,
+      "tag_name": "v2.20.0",
+      "name": "v2.20.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.20.0",
+      "published_at": "2026-07-18T10:02:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 353457381,
+      "tag_name": "v2.19.2",
+      "name": "v2.19.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.19.2",
+      "published_at": "2026-07-13T21:50:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 352678828,
+      "tag_name": "v2.19.1",
+      "name": "v2.19.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.19.1",
+      "published_at": "2026-07-12T05:27:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 350993961,
+      "tag_name": "v2.19.0",
+      "name": "v2.19.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.19.0",
+      "published_at": "2026-07-08T14:45:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 342942974,
+      "tag_name": "v2.18.1",
+      "name": "v2.18.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.18.1",
+      "published_at": "2026-06-22T14:02:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 342601352,
+      "tag_name": "v2.18.0",
+      "name": "v2.18.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.18.0",
+      "published_at": "2026-06-21T21:02:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 339060884,
+      "tag_name": "v2.17.0",
+      "name": "v2.17.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.17.0",
+      "published_at": "2026-06-13T22:39:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 334634478,
+      "tag_name": "v2.16.2",
+      "name": "v2.16.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.16.2",
+      "published_at": "2026-06-04T21:49:48Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 333415707,
+      "tag_name": "v2.16.1",
+      "name": "v2.16.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.16.1",
+      "published_at": "2026-06-02T22:48:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 328360940,
+      "tag_name": "v2.16.0",
+      "name": "v2.16.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.16.0",
+      "published_at": "2026-05-23T17:46:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 327251279,
+      "tag_name": "v2.15.0",
+      "name": "v2.15.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.15.0",
+      "published_at": "2026-05-21T20:06:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 324546599,
+      "tag_name": "v2.14.0",
+      "name": "v2.14.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.14.0",
+      "published_at": "2026-05-18T20:42:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 323752101,
+      "tag_name": "v2.13.4",
+      "name": "v2.13.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.13.4",
+      "published_at": "2026-05-16T18:42:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 323665292,
+      "tag_name": "v2.13.3",
+      "name": "v2.13.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.13.3",
+      "published_at": "2026-05-16T11:46:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313565870,
+      "tag_name": "v2.13.2",
+      "name": "v2.13.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.13.2",
+      "published_at": "2026-04-25T11:14:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313366269,
+      "tag_name": "v2.13.1",
+      "name": "v2.13.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.13.1",
+      "published_at": "2026-04-24T18:40:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313009847,
+      "tag_name": "v2.13.0",
+      "name": "v2.13.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.13.0",
+      "published_at": "2026-04-24T01:48:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 310743747,
+      "tag_name": "v2.12.1",
+      "name": "v2.12.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.12.1",
+      "published_at": "2026-04-18T18:17:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 305258390,
+      "tag_name": "v2.12.0",
+      "name": "v2.12.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.12.0",
+      "published_at": "2026-04-04T09:41:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 302900234,
+      "tag_name": "v2.11.7",
+      "name": "v2.11.7",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.7",
+      "published_at": "2026-03-29T19:42:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 302878769,
+      "tag_name": "v2.11.6",
+      "name": "v2.11.6",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.6",
+      "published_at": "2026-03-29T16:51:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 302849068,
+      "tag_name": "v2.11.5",
+      "name": "v2.11.5",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.5",
+      "published_at": "2026-03-29T13:00:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 302789449,
+      "tag_name": "v2.11.4",
+      "name": "v2.11.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.4",
+      "published_at": "2026-03-29T04:10:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299565679,
+      "tag_name": "v2.11.3",
+      "name": "v2.11.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.3",
+      "published_at": "2026-03-20T19:16:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 293875250,
+      "tag_name": "v2.11.2",
+      "name": "v2.11.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.2",
+      "published_at": "2026-03-06T10:20:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 293622968,
+      "tag_name": "v2.11.1",
+      "name": "v2.11.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.1",
+      "published_at": "2026-03-05T18:28:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 291797645,
+      "tag_name": "v2.11.0",
+      "name": "v2.11.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.11.0",
+      "published_at": "2026-03-01T13:53:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289574001,
+      "tag_name": "v2.10.3",
+      "name": "v2.10.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.10.3",
+      "published_at": "2026-02-23T20:14:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289570377,
+      "tag_name": "v2.10.2",
+      "name": "v2.10.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.10.2",
+      "published_at": "2026-02-23T20:03:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289568784,
+      "tag_name": "v2.10.1",
+      "name": "v2.10.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.10.1",
+      "published_at": "2026-02-23T19:59:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289564743,
+      "tag_name": "v2.10.0",
+      "name": "v2.10.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.10.0",
+      "published_at": "2026-02-23T19:45:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 288963196,
+      "tag_name": "v2.9.0",
+      "name": "v2.9.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.9.0",
+      "published_at": "2026-02-21T07:26:40Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 286189021,
+      "tag_name": "v2.8.1",
+      "name": "v2.8.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.8.1",
+      "published_at": "2026-02-13T18:02:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 285939286,
+      "tag_name": "v2.8.0",
+      "name": "v2.8.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.8.0",
+      "published_at": "2026-02-13T02:44:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 282395708,
+      "tag_name": "v2.7.3",
+      "name": "v2.7.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.7.3",
+      "published_at": "2026-02-03T03:25:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 282098658,
+      "tag_name": "v2.7.2",
+      "name": "v2.7.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.7.2",
+      "published_at": "2026-02-02T09:18:41Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281808737,
+      "tag_name": "v2.7.1",
+      "name": "v2.7.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.7.1",
+      "published_at": "2026-01-31T17:13:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281728476,
+      "tag_name": "v2.7.0",
+      "name": "v2.7.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.7.0",
+      "published_at": "2026-01-31T01:33:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281505855,
+      "tag_name": "v2.6.8",
+      "name": "v2.6.8",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.8",
+      "published_at": "2026-01-30T13:32:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 281228610,
+      "tag_name": "v2.6.7",
+      "name": "v2.6.7",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.7",
+      "published_at": "2026-01-29T18:33:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 280441526,
+      "tag_name": "v2.6.6",
+      "name": "v2.6.6",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.6",
+      "published_at": "2026-01-27T19:50:57Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 280222203,
+      "tag_name": "v2.6.5",
+      "name": "v2.6.5",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.5",
+      "published_at": "2026-01-27T09:39:40Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279927521,
+      "tag_name": "v2.6.4",
+      "name": "v2.6.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.4",
+      "published_at": "2026-01-26T13:36:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279746186,
+      "tag_name": "v2.6.3",
+      "name": "v2.6.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.3",
+      "published_at": "2026-01-25T15:58:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279279235,
+      "tag_name": "v2.6.2",
+      "name": "v2.6.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.2",
+      "published_at": "2026-01-23T08:31:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279213623,
+      "tag_name": "v2.6.1",
+      "name": "v2.6.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.1",
+      "published_at": "2026-01-23T01:53:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279028429,
+      "tag_name": "v2.6.0",
+      "name": "v2.6.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.6.0",
+      "published_at": "2026-01-22T14:27:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277692887,
+      "tag_name": "v2.4.5",
+      "name": "v2.4.5",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.5",
+      "published_at": "2026-01-18T08:25:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277690418,
+      "tag_name": "v2.4.4",
+      "name": "v2.4.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.4",
+      "published_at": "2026-01-18T07:47:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277673479,
+      "tag_name": "v2.4.3",
+      "name": "v2.4.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.3",
+      "published_at": "2026-01-18T02:50:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277671299,
+      "tag_name": "v2.4.2",
+      "name": "v2.4.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.2",
+      "published_at": "2026-01-18T02:13:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277594339,
+      "tag_name": "v2.4.1",
+      "name": "v2.4.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.1",
+      "published_at": "2026-01-17T06:50:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277576701,
+      "tag_name": "v2.4.0",
+      "name": "v2.4.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.4.0",
+      "published_at": "2026-01-17T02:37:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277231037,
+      "tag_name": "v2.3.1",
+      "name": "v2.3.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.3.1",
+      "published_at": "2026-01-15T23:51:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277223191,
+      "tag_name": "v2.3.0",
+      "name": "v2.3.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.3.0",
+      "published_at": "2026-01-15T22:59:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 276671151,
+      "tag_name": "v2.2.0",
+      "name": "v2.2.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.2.0",
+      "published_at": "2026-01-14T10:55:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 275738984,
+      "tag_name": "v2.1.8",
+      "name": "v2.1.8",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.8",
+      "published_at": "2026-01-10T18:53:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 275518048,
+      "tag_name": "v2.1.7",
+      "name": "v2.1.7",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.7",
+      "published_at": "2026-01-09T14:46:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 275340642,
+      "tag_name": "v2.1.6",
+      "name": "v2.1.6",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.6",
+      "published_at": "2026-01-08T23:33:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 274070601,
+      "tag_name": "v2.1.5",
+      "name": "v2.1.5",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.5",
+      "published_at": "2026-01-04T17:04:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273984269,
+      "tag_name": "v2.1.4",
+      "name": "v2.1.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.4",
+      "published_at": "2026-01-03T17:48:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273588260,
+      "tag_name": "v2.1.3",
+      "name": "v2.1.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.3",
+      "published_at": "2025-12-31T12:25:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273473188,
+      "tag_name": "v2.1.2",
+      "name": "v2.1.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.2",
+      "published_at": "2025-12-30T20:11:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273391839,
+      "tag_name": "v2.1.1",
+      "name": "v2.1.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.1",
+      "published_at": "2025-12-30T12:23:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273390615,
+      "tag_name": "v2.1.0",
+      "name": "v2.1.0",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.1.0",
+      "published_at": "2025-12-30T12:15:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272710348,
+      "tag_name": "v2.0.7",
+      "name": "Release v2.0.7",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.7",
+      "published_at": "2025-12-24T16:11:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272552602,
+      "tag_name": "v2.0.6",
+      "name": "Release v2.0.6",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.6",
+      "published_at": "2025-12-23T19:08:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272470600,
+      "tag_name": "v2.0.5",
+      "name": "Release v2.0.5",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.5",
+      "published_at": "2025-12-23T13:20:00Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272298166,
+      "tag_name": "v2.0.4",
+      "name": "Release v2.0.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.4",
+      "published_at": "2025-12-22T19:33:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272077027,
+      "tag_name": "v2.0.3",
+      "name": "Release v2.0.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.3",
+      "published_at": "2025-12-22T02:25:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272074258,
+      "tag_name": "v2.0.2",
+      "name": "Release v2.0.2",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.2",
+      "published_at": "2025-12-22T01:54:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272065865,
+      "tag_name": "v2.0.1",
+      "name": "Release v2.0.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.0.1",
+      "published_at": "2025-12-22T00:17:00Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271812991,
+      "tag_name": "v1.0.8",
+      "name": "Release v1.0.8",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.8",
+      "published_at": "2025-12-19T16:53:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271681329,
+      "tag_name": "v1.0.7",
+      "name": "Release v1.0.7",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.7",
+      "published_at": "2025-12-19T08:30:42Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271337521,
+      "tag_name": "v1.0.124",
+      "name": "Release v1.0.124",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.124",
+      "published_at": "2025-12-18T07:47:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271334614,
+      "tag_name": "v1.0.123",
+      "name": "Release v1.0.123",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.123",
+      "published_at": "2025-12-18T07:32:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271326600,
+      "tag_name": "v1.0.122",
+      "name": "Release v1.0.122",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.122",
+      "published_at": "2025-12-18T06:49:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271324136,
+      "tag_name": "v1.0.121",
+      "name": "Release v1.0.121",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.121",
+      "published_at": "2025-12-18T06:36:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271318980,
+      "tag_name": "v1.0.119",
+      "name": "Release v1.0.119",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.119",
+      "published_at": "2025-12-18T05:59:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271315598,
+      "tag_name": "v1.0.118",
+      "name": "Release v1.0.118",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.118",
+      "published_at": "2025-12-18T05:31:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271314102,
+      "tag_name": "v1.0.116",
+      "name": "Release v1.0.116",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.116",
+      "published_at": "2025-12-18T05:17:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271313863,
+      "tag_name": "v1.0.115",
+      "name": "Release v1.0.115",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.115",
+      "published_at": "2025-12-18T05:15:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271309611,
+      "tag_name": "v1.0.114",
+      "name": "Release v1.0.114",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.114",
+      "published_at": "2025-12-18T04:37:26Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271303068,
+      "tag_name": "v1.0.113",
+      "name": "Release v1.0.113",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.113",
+      "published_at": "2025-12-18T04:14:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271288455,
+      "tag_name": "v1.0.112",
+      "name": "Release v1.0.112",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.112",
+      "published_at": "2025-12-18T02:56:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271280655,
+      "tag_name": "v1.0.111",
+      "name": "Release v1.0.111",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.111",
+      "published_at": "2025-12-18T01:53:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271276146,
+      "tag_name": "v1.0.110",
+      "name": "Release v1.0.110",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.110",
+      "published_at": "2025-12-18T01:13:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271394402,
+      "tag_name": "v1.0.4",
+      "name": "Release v1.0.4",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.4",
+      "published_at": "2025-12-18T10:46:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271340510,
+      "tag_name": "v1.0.3",
+      "name": "Release v1.0.3",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.3",
+      "published_at": "2025-12-18T08:02:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271259069,
+      "tag_name": "v1.0.109",
+      "name": "Release v1.0.109",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.109",
+      "published_at": "2025-12-17T23:01:48Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271257946,
+      "tag_name": "v1.0.108",
+      "name": "Release v1.0.108",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v1.0.108",
+      "published_at": "2025-12-17T22:55:02Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 381993895,
+      "tag_name": "v2.24.1",
+      "name": "v2.24.1",
+      "html_url": "https://github.com/roseforljh/KunBox/releases/tag/v2.24.1",
+      "published_at": "2026-09-03T12:16:44Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "## [2.24.1](https://github.com/roseforljh/KunBox/compare/v2.24.0...v2.24.1) (2026-09-03)\n\n\n### Bug Fixes\n\n* 优化 Root 模式停止流程与配置生成状态检查 ([fa8dcf1](https://github.com/roseforljh/KunBox/commit/fa8dcf1facffd8dcf8f419607770946e4a3c4b36))\n* 升级内核同步配置与 libbox.aar 二进制依赖 ([98df8cb](https://github.com/roseforljh/KunBox/commit/98df8cb39cae38f75da8973ec9aee0db743b881f))\n* 完善后台服务平台接口实现与 Root 应急清理流程 ([93c12ed](https://github.com/roseforljh/KunBox/commit/93c12ed8691caadcf7f58adfeb465dee419f9e3c))\n* 适配新版 PlatformInterface 接口与延迟探测运行时 ([720e4b6](https://github.com/roseforljh/KunBox/commit/720e4b626a198272a846b4e21a64b420915a061b))\n* 重构配置生成规则、Endpoint 转换与运行时 DNS 规范化 ([13f5a6c](https://github.com/roseforljh/KunBox/commit/13f5a6c2f94b74375a7e25d5abfbc9e7e1142482))",
+      "assets": [
+        {
+          "id": 542742045,
+          "name": "app-arm64-v8a-release.apk",
+          "browser_download_url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-arm64-v8a-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 542742048,
+          "name": "app-armeabi-v7a-release.apk",
+          "browser_download_url": "https://github.com/roseforljh/KunBox/releases/download/v2.24.1/app-armeabi-v7a-release.apk",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "additionalOfficialText": {
+    "kunbox-icon": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    \n    <!-- Modern Abstract Box Design -->\n    <!-- Using thick strokes for a bold, clean look -->\n    \n    <!-- Main Box Outline (Hexagon shape for isometric box feel) -->\n    <!-- Scaled down by 60% and centered -->\n    <path\n        android:fillColor=\"#00000000\"\n        android:strokeColor=\"#FFFFFF\"\n        android:strokeWidth=\"6\"\n        android:strokeLineJoin=\"round\"\n        android:strokeLineCap=\"round\"\n        android:pathData=\"M54,36 L72,45 L72,63 L54,72 L36,63 L36,45 Z\" />\n        \n    <!-- Inner Y shape to define the 3 faces -->\n    <path\n        android:fillColor=\"#00000000\"\n        android:strokeColor=\"#FFFFFF\"\n        android:strokeWidth=\"6\"\n        android:strokeLineJoin=\"round\"\n        android:strokeLineCap=\"round\"\n        android:pathData=\"M54,54 L54,72 M54,54 L36,45 M54,54 L72,45\" />\n        \n    <!-- \"S\" stylized inside the box faces? Or maybe just a clean box is better. -->\n    <!-- Let's add a subtle detail to make it look like a package/singbox -->\n    \n    <!-- A simple dot or line on the top face to suggest a lid or opening -->\n    <path\n        android:fillColor=\"#FFFFFF\"\n        android:pathData=\"M54,42 L60,45 L54,48 L48,45 Z\" />\n        \n</vector>",
+    "kunbox-background": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    <path\n        android:fillColor=\"#000000\"\n        android:pathData=\"M0,0h108v108h-108z\"/>\n</vector>"
+  }
+}

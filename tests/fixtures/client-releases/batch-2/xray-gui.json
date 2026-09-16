@@ -1,0 +1,36 @@
+{
+  "id": 375237542,
+  "tag_name": "v12.6.0",
+  "name": "v12.6.0",
+  "html_url": "https://github.com/SaeedDev94/Xray/releases/tag/v12.6.0",
+  "published_at": "2026-08-23T14:42:13Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "- Fix Broken links (#85)\n- Run custom script on tunnel start, stop\n",
+  "assets": [
+    {
+      "id": 526317358,
+      "name": "Xray-v12.6.0-1201.apk",
+      "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1201.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 526317356,
+      "name": "Xray-v12.6.0-1202.apk",
+      "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1202.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 526317359,
+      "name": "Xray-v12.6.0-1203.apk",
+      "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1203.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 526317357,
+      "name": "Xray-v12.6.0-1204.apk",
+      "browser_download_url": "https://github.com/SaeedDev94/Xray/releases/download/v12.6.0/Xray-v12.6.0-1204.apk",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "trackId": 6744701950,
+      "bundleId": "com.5vnetwork.x",
+      "trackName": "VX Proxy Client",
+      "sellerName": "5V Network LLC",
+      "kind": "software",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/vx-proxy-client/id6744701950?uo=4",
+      "version": "3.10.4",
+      "currentVersionReleaseDate": "2026-09-04T07:27:07Z",
+      "price": 0.0,
+      "currency": "USD",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/f1/f5/45f1f54f-59b8-c7c7-8c3a-ba0125816b36/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+    }
+  ]
+}

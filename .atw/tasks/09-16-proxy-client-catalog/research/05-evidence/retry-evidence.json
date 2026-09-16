@@ -1,0 +1,78 @@
+{
+  "now": "2026-09-16T13:40:53.802Z",
+  "checks": [
+    {
+      "url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-arm64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-arm64-v8a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-armeabi-v7a.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-universal.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-android-x86_64.apk",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64-setup.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-amd64.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64-setup.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-windows-arm64.zip",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-amd64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-macos-arm64.dmg",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.AppImage",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-amd64.rpm",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/pluralplay/FlClashX/releases/download/v0.4.2/FlClashX-linux-arm64.deb",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+      "result": "valid"
+    },
+    {
+      "url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+      "result": "valid"
+    }
+  ],
+  "errors": []
+}

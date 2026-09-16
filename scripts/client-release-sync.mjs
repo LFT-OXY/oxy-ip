@@ -19,7 +19,7 @@ const assetSchema = z.object({
   state: z.literal("uploaded"),
 });
 
-export function selectStableRelease(raw) {
+export function selectStableRelease(raw, releaseTag) {
   if (!Array.isArray(raw)) throw new Error("GitHub 列表格式错误");
   return raw
     .filter((item) => {
@@ -28,14 +28,18 @@ export function selectStableRelease(raw) {
         .parse(item);
       if (flags.draft || flags.prerelease) return false;
       const r = metadataSchema.parse(item);
-      return !testChannel.test(`${r.tag_name} ${r.name ?? ""}`);
+      return (
+        !testChannel.test(`${r.tag_name} ${r.name ?? ""}`) &&
+        (!releaseTag || releaseTag.test(r.tag_name))
+      );
     })
     .sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at))[0];
 }
 
 export function parseRelease(raw, source, previous, now) {
   const release = metadataSchema.parse(raw);
-  if (!selectStableRelease([release])) throw new Error("没有正式版");
+  if (!selectStableRelease([release], source.releaseTag))
+    throw new Error("没有正式版或发布渠道不匹配");
   const base = `https://github.com/${source.repo}/releases`;
   if (
     release.html_url !== `${base}/tag/${encodeURIComponent(release.tag_name)}`
@@ -60,7 +64,11 @@ export function parseRelease(raw, source, previous, now) {
       kind: "direct",
       url: asset.browser_download_url,
       // 少数官方包名不含架构；仅使用来源中逐平台核实的固定值。
-      arch: match[1] || source.architectures?.[previous.platform],
+      arch: match[1]
+        ? source.architectureAliases
+          ? source.architectureAliases[match[1]]
+          : match[1]
+        : source.architectures?.[previous.platform],
       format: match[2],
     });
   }
@@ -189,6 +197,7 @@ export function githubClient({
     async loadRelease(source) {
       const release = selectStableRelease(
         await pages(`${source.repo}/releases`),
+        source.releaseTag,
       );
       if (!release) return undefined;
       return {

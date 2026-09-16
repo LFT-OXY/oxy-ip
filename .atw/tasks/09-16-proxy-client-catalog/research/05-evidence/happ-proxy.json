@@ -1,0 +1,808 @@
+{
+  "id": "happ-proxy",
+  "referenceUrl": "https://huarun.win/apps/happ-proxy",
+  "referenceText": "Title: Happ Proxy：Android、iOS、Windows、macOS、Linux 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/happ-proxy\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Happ Proxy\n\n![Image 1: Happ Proxy 应用图标](https://huarun.win/app-icons/happ-proxy.webp)\n\n基于 Xray-core 的跨平台节点管理客户端，支持多协议节点、订阅和灵活的规则路由。\n\n适用平台[Android](https://huarun.win/platform/android)[iOS](https://huarun.win/platform/ios)[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)[Linux](https://huarun.win/platform/linux)\n代码状态 未公开\n\n完整功能费用 免费\n\n代理内核 Xray[了解 Xray-core 内核 →](https://huarun.win/cores/xray)[查看依据](https://github.com/Happ-proxy/happ-desktop/blob/bd22000fc1446d1e8516be67dda4266f46bd8fd7/README.md)\n\n主导开发[Happ Proxy 团队](https://huarun.win/history/people/happ-proxy)Happ\n\n版本号 4.2.1\n\n最后更新时间 2026年9月4日\n\n数据来源 GitHub 桌面版\n\n## 官方变更日志\n\n- Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers\n- Improved ping tests are more reliable and no longer leave stray helper processes running\n- Improved the Windows installer now ships fully signed binaries\n-\n- Added a Reset action that repairs the background service on Windows, macOS and Linux, with its health checks included in the diagnostic report\n- Added an editable system proxy exception list in Advanced settings\n- Added Per-App Proxy support when running Xray TUN\n-\n- Fixed encrypted subscriptions revealing their server details after the first refresh\n- Fixed subscriptions failing to decrypt when delivered through a fronting proxy\n- Fixed subscription links that redirect to a happ:// address not being added\n- Fixed server configs that use the vcn alias for certificate verification not importing\n- Fixed DNS going dead on Xray TUN\n- Fixed proxy ping showing n/a on Xray TUN\n- Fixed the buttons and AI Helper disappearing after deleting the last server from the list\n- Fixed LAN sharing showing a virtual machine adapter address instead of the real local network one\n- Fixed no error appearing when an invalid routing profile is imported in global routing settings\n- Fixed the HTTP inbound toggle and user agent fields staying greyed out after a subscription lost premium\n- Fixed the tunnel type from a subscription not being applied to free subscriptions[查看官方版本来源 ↗](https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1)\n应用简介\n\n## 关于 Happ Proxy\n\n基于 Xray-core 的跨平台节点管理客户端，支持多协议节点、订阅和灵活的规则路由。\n\n适用于 Android、iOS、Windows、macOS、Linux。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/happ-proxy)\n人物关联\n\n## 与 Happ Proxy 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/happ-proxy.webp)**Happ Proxy 团队**Happ Proxy 核心团队 由该开发者主导开发或长期维护](https://huarun.win/history/people/happ-proxy)\n*   [![Image 3](https://huarun.win/people-avatars/rprx.webp)**RPRX**内核血缘 Project X 与 Xray-core 创始人 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/rprx)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/Happ-proxy/happ-desktop",
+  "repository": {
+    "full_name": "Happ-proxy/happ-desktop",
+    "html_url": "https://github.com/Happ-proxy/happ-desktop",
+    "description": null,
+    "default_branch": "main",
+    "archived": false,
+    "license": null,
+    "homepage": null
+  },
+  "readme": "# Happ - Proxy Utility\n\n| iOS                                                                        | Android                                                                                                | Desktop                                                                                                         |\n| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |\n| [App Store-Global](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215) | [Google Play](https://play.google.com/store/apps/details?id=com.happproxy)                      | [Windows](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)/[mirror](https://files-hub.com/download/windows/latest?arch=x64)        |\n| [App Store-Only RU](https://apps.apple.com/ru/app/happ-lite/id6799917773) | [Download APK](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)/[mirror](https://files-hub.com/download/android/latest?arch=universal) | [macOS(arm64/intel)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.macOS.universal.dmg)/[mirror](https://files-hub.com/download/macos/latest?arch=universal)|\n| [Testflight-Global](https://testflight.apple.com/join/XMls6Ckd)            | [Download Beta APK](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ_beta.apk) | [Linux-x64(.deb)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x64.deb)/[mirror](https://files-hub.com/download/linux/latest?arch=x64&package=deb) |\n| [Testflight-Only RU](https://testflight.apple.com/join/ystvnbsP)           |                                                                                                        | [Linux-arm64(.deb)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.arm64.deb)/[mirror](https://files-hub.com/download/linux/latest?arch=arm64&package=deb) |\n|                                                                            |                                                                                                        | [Linux-x64(.rpm)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x64.rpm)/[mirror](https://files-hub.com/download/linux/latest?arch=x64&package=rpm) |\n|                                                                            |                                                                                                        | [Linux-arm64(.rpm)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.arm64.rpm)/[mirror](https://files-hub.com/download/linux/latest?arch=arm64&package=rpm) |\n|                                                                            |                                                                                                        | [ArchLinux-x64(.pkg)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x64.pkg.tar.zst)/[mirror](https://files-hub.com/download/linux/latest?arch=x64&package=pkg) |\n|                                                                            |                                                                                                        | [ArchLinux-arm64(.pkg)](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.arm64.pkg.tar.zst)/[mirror](https://files-hub.com/download/linux/latest?arch=arm64&package=pkg) |\n\nHapp is a mobile application designed for convenient proxy server management, powered by the robust Xray core. The app features an intuitive interface and a range of useful functions, making it an essential tool for managing connections.\n\n**Key features of Happ include:**\n\n* Configuration of proxy servers based on flexible routing rules.\n* Support for multiple modern protocols, including:\n  * **VLESS (Reality)**\n  * **VMess**\n  * **Trojan**\n  * **Shadowsocks**\n  * **Socks**\n\nHapp ensures your network activity remains private by not collecting any data; your information remains solely on your device without being sent to external servers.\n\nIt's important to highlight that Happ does not provide VPN services for purchase. Users are responsible for acquiring or setting up their own servers. Users should also comply with applicable laws in their jurisdiction when utilizing the app.\n\nTo report a problem, use our [service](https://issues.happ.su/)\n",
+  "treeSha": "4c6011018e1d0c40865bb010f5a9f8ecce9a397d",
+  "treeTruncated": false,
+  "resourcePaths": ["README.md"],
+  "releaseList": [
+    {
+      "id": 389253206,
+      "tag_name": "4.3.0",
+      "name": "4.3.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.3.0",
+      "published_at": "2026-09-15T15:27:48Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 382840978,
+      "tag_name": "4.2.1",
+      "name": "4.2.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1",
+      "published_at": "2026-09-04T15:46:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 379574953,
+      "tag_name": "4.1.3",
+      "name": "4.1.3",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.1.3",
+      "published_at": "2026-08-31T07:31:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 378510219,
+      "tag_name": "4.1.2",
+      "name": "4.1.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.1.2",
+      "published_at": "2026-08-28T13:41:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 374658387,
+      "tag_name": "4.1.1",
+      "name": "4.1.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.1.1",
+      "published_at": "2026-08-21T20:27:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 369241544,
+      "tag_name": "4.0.5",
+      "name": "4.0.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.0.5",
+      "published_at": "2026-08-12T13:01:08Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 356604102,
+      "tag_name": "3.3.6",
+      "name": "3.3.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/3.3.6",
+      "published_at": "2026-07-20T09:09:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 355750531,
+      "tag_name": "3.3.5",
+      "name": "3.3.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/3.3.5",
+      "published_at": "2026-07-17T15:00:02Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 351951074,
+      "tag_name": "3.1.0",
+      "name": "3.1.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/3.1.0",
+      "published_at": "2026-07-10T08:11:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 347885990,
+      "tag_name": "3.0.2",
+      "name": "3.0.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/3.0.2",
+      "published_at": "2026-07-02T07:25:51Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 344231506,
+      "tag_name": "2.18.3",
+      "name": "2.18.3",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.18.3",
+      "published_at": "2026-06-24T16:21:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 341768086,
+      "tag_name": "2.18.1",
+      "name": "2.18.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.18.1",
+      "published_at": "2026-06-19T05:52:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 332952536,
+      "tag_name": "2.17.1",
+      "name": "2.17.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.17.1",
+      "published_at": "2026-06-02T07:20:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 327830140,
+      "tag_name": "2.16.2",
+      "name": "2.16.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.16.2",
+      "published_at": "2026-05-22T12:51:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 321091585,
+      "tag_name": "2.15.0",
+      "name": "2.15.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.15.0",
+      "published_at": "2026-05-12T10:59:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 318930633,
+      "tag_name": "2.14.0",
+      "name": "",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.14.0",
+      "published_at": "2026-05-07T12:54:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 317645798,
+      "tag_name": "2.12.0",
+      "name": "",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.12.0",
+      "published_at": "2026-05-05T07:13:46Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 315773995,
+      "tag_name": "2.11.0",
+      "name": "2.11.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.11.0",
+      "published_at": "2026-04-30T12:26:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313272288,
+      "tag_name": "2.10.0",
+      "name": "2.10.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.10.0",
+      "published_at": "2026-04-24T15:07:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 313270385,
+      "tag_name": "2.9.1",
+      "name": "2.9.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.9.1",
+      "published_at": "2026-04-24T15:03:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 310357352,
+      "tag_name": "2.9.0",
+      "name": "2.9.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.9.0",
+      "published_at": "2026-04-17T13:12:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 308821642,
+      "tag_name": "2.8.0",
+      "name": "2.8.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.8.0",
+      "published_at": "2026-04-14T12:47:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 305087454,
+      "tag_name": "2.7.0",
+      "name": "2.7.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.7.0",
+      "published_at": "2026-04-03T16:01:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 299443400,
+      "tag_name": "2.6.0",
+      "name": "2.6.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.6.0",
+      "published_at": "2026-03-20T14:23:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 296763858,
+      "tag_name": "2.5.2",
+      "name": "",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.5.2",
+      "published_at": "2026-03-13T16:04:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 292090213,
+      "tag_name": "2.4.0",
+      "name": "2.4.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.4.0",
+      "published_at": "2026-03-02T15:17:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 289742785,
+      "tag_name": "2.2.0",
+      "name": "2.2.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.2.0",
+      "published_at": "2026-02-24T09:15:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 286077398,
+      "tag_name": "2.1.0",
+      "name": "",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.1.0",
+      "published_at": "2026-02-13T12:42:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283804533,
+      "tag_name": "2.0.6",
+      "name": "2.0.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.6",
+      "published_at": "2026-02-06T15:55:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 283628056,
+      "tag_name": "2.0.5",
+      "name": "2.0.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.5",
+      "published_at": "2026-02-06T10:19:23Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 279392936,
+      "tag_name": "2.0.3",
+      "name": "2.0.3",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.3",
+      "published_at": "2026-01-23T14:52:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277915551,
+      "tag_name": "2.0.2",
+      "name": "",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.2",
+      "published_at": "2026-01-19T12:50:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277854385,
+      "tag_name": "2.0.1",
+      "name": "2.0.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.1",
+      "published_at": "2026-01-19T09:36:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 277349282,
+      "tag_name": "2.0.0",
+      "name": "2.0.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/2.0.0",
+      "published_at": "2026-01-16T10:32:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273193469,
+      "tag_name": "1.5.2",
+      "name": "1.5.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.5.2",
+      "published_at": "2025-12-29T13:13:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272892238,
+      "tag_name": "1.5.1",
+      "name": "1.5.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.5.1",
+      "published_at": "2025-12-26T12:49:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 270343094,
+      "tag_name": "1.4.9",
+      "name": "1.4.9",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.4.9",
+      "published_at": "2025-12-15T10:11:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 270011937,
+      "tag_name": "1.4.7",
+      "name": "1.4.7",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.4.7",
+      "published_at": "2025-12-12T20:59:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 269997319,
+      "tag_name": "1.4.5",
+      "name": "1.4.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.4.5",
+      "published_at": "2025-12-12T19:34:46Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 269490078,
+      "tag_name": "1.4.2",
+      "name": "1.4.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.4.2",
+      "published_at": "2025-12-11T11:55:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 269084258,
+      "tag_name": "1.4.0",
+      "name": "1.4.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.4.0",
+      "published_at": "2025-12-10T12:13:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 266136008,
+      "tag_name": "1.2.6",
+      "name": "1.2.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.2.6",
+      "published_at": "2025-11-29T12:59:22Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 265043912,
+      "tag_name": "1.2.4",
+      "name": "1.2.4",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.2.4",
+      "published_at": "2025-11-25T08:58:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 264870400,
+      "tag_name": "1.2.2",
+      "name": "1.2.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.2.2",
+      "published_at": "2025-11-24T17:21:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 264807162,
+      "tag_name": "1.2.0",
+      "name": "1.2.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.2.0",
+      "published_at": "2025-11-24T14:03:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 264373613,
+      "tag_name": "1.1.0",
+      "name": "1.1.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.1.0",
+      "published_at": "2025-11-21T15:33:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 261410769,
+      "tag_name": "1.0.2",
+      "name": "1.0.2",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.2",
+      "published_at": "2025-11-11T12:23:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 260580586,
+      "tag_name": "1.0.1",
+      "name": "1.0.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.1",
+      "published_at": "2025-11-07T10:44:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 259295868,
+      "tag_name": "1.0.0-rc0",
+      "name": "1.0.0-rc0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.0-rc0",
+      "published_at": "2025-11-03T15:53:31Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 255699342,
+      "tag_name": "alpha_0.7.1",
+      "name": "0.7.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.7.1",
+      "published_at": "2025-10-20T10:08:21Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 255675859,
+      "tag_name": "alpha_0.7.0",
+      "name": "alpha_0.7.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.7.0",
+      "published_at": "2025-10-20T07:20:09Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 253571472,
+      "tag_name": "alpha_0.6.0",
+      "name": "alpha_0.6.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.6.0",
+      "published_at": "2025-10-10T08:51:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 252007537,
+      "tag_name": "alpha_0.5.6",
+      "name": "alpha_0.5.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.5.6",
+      "published_at": "2025-10-03T13:48:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 251467947,
+      "tag_name": "alpha_0.5.5",
+      "name": "alpha_0.5.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.5.5",
+      "published_at": "2025-10-01T15:18:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 250341740,
+      "tag_name": "alpha_0.5.0",
+      "name": "alpha_0.5.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.5.0",
+      "published_at": "2025-09-26T15:26:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 248656431,
+      "tag_name": "alpha_0.4.6",
+      "name": "alpha_0.4.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.4.6",
+      "published_at": "2025-09-19T16:06:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246784763,
+      "tag_name": "alpha_0.4.1",
+      "name": "alpha_0.4.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.4.1",
+      "published_at": "2025-09-12T13:41:50Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 246763030,
+      "tag_name": "alpha_0.4.0",
+      "name": "alpha_0.4.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.4.0",
+      "published_at": "2025-09-12T12:15:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245495052,
+      "tag_name": "alpha_0.3.7",
+      "name": "alpha_0.3.7",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.3.7",
+      "published_at": "2025-09-08T11:41:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245253256,
+      "tag_name": "alpha_0.3.6",
+      "name": "alpha_0.3.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.3.6",
+      "published_at": "2025-09-06T08:50:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245042831,
+      "tag_name": "alpha_0.3.5",
+      "name": "alpha_0.3.5",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.3.5",
+      "published_at": "2025-09-05T11:14:30Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 243474170,
+      "tag_name": "alpha_0.3.0",
+      "name": "alpha_0.3.0",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.3.0",
+      "published_at": "2025-08-29T13:15:09Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242104871,
+      "tag_name": "alpha_0.2.6",
+      "name": "alpha_0.2.6",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.2.6",
+      "published_at": "2025-08-24T14:13:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 240190082,
+      "tag_name": "0.2.5_alpha",
+      "name": "0.2.5_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.2.5_alpha",
+      "published_at": "2025-08-15T09:59:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 238592549,
+      "tag_name": "0.2.3_alpha",
+      "name": "0.2.3_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.2.3_alpha",
+      "published_at": "2025-08-08T13:20:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 236913441,
+      "tag_name": "0.2.1_alpha",
+      "name": "0.2.1_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.2.1_alpha",
+      "published_at": "2025-08-01T14:44:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 235695194,
+      "tag_name": "0.2.0_alpha",
+      "name": "0.2.0_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.2.0_alpha",
+      "published_at": "2025-07-28T16:12:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 233208536,
+      "tag_name": "0.1.5_alpha",
+      "name": "0.1.5_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.5_alpha",
+      "published_at": "2025-07-17T14:09:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 232419575,
+      "tag_name": "0.1.4_alpha",
+      "name": "0.1.4_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.4_alpha",
+      "published_at": "2025-07-15T06:59:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 231789243,
+      "tag_name": "0.1.3_alpha",
+      "name": "0.1.3_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.3_alpha",
+      "published_at": "2025-07-11T13:46:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 230032800,
+      "tag_name": "0.1.2_alpha",
+      "name": "0.1.2_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.2_alpha",
+      "published_at": "2025-07-04T12:25:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 228295629,
+      "tag_name": "0.1.1_alpha",
+      "name": "0.1.1_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.1_alpha",
+      "published_at": "2025-06-27T08:54:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 227380734,
+      "tag_name": "0.1.0_alpha",
+      "name": "0.1.0_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.1.0_alpha",
+      "published_at": "2025-06-24T14:14:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 215948465,
+      "tag_name": "0.0.23_alpha",
+      "name": "0.0.23_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/0.0.23_alpha",
+      "published_at": "2025-05-01T07:33:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 216313553,
+      "tag_name": "alpha_0.0.24",
+      "name": "0.0.24_alpha",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/alpha_0.0.24",
+      "published_at": "2025-05-03T17:42:23Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 382840978,
+      "tag_name": "4.2.1",
+      "name": "4.2.1",
+      "html_url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.2.1",
+      "published_at": "2026-09-04T15:46:15Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "* Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers\r\n* Improved ping tests are more reliable and no longer leave stray helper processes running\r\n* Improved the Windows installer now ships fully signed binaries\r\n* \r\n* Added a Reset action that repairs the background service on Windows, macOS and Linux, with its health checks included in the diagnostic report\r\n* Added an editable system proxy exception list in Advanced settings\r\n* Added Per-App Proxy support when running Xray TUN\r\n* \r\n* Fixed encrypted subscriptions revealing their server details after the first refresh\r\n* Fixed subscriptions failing to decrypt when delivered through a fronting proxy\r\n* Fixed subscription links that redirect to a happ:// address not being added\r\n* Fixed server configs that use the vcn alias for certificate verification not importing\r\n* Fixed DNS going dead on Xray TUN\r\n* Fixed proxy ping showing n/a on Xray TUN\r\n* Fixed the buttons and AI Helper disappearing after deleting the last server from the list\r\n* Fixed LAN sharing showing a virtual machine adapter address instead of the real local network one\r\n* Fixed no error appearing when an invalid routing profile is imported in global routing settings\r\n* Fixed the HTTP inbound toggle and user agent fields staying greyed out after a subscription lost premium\r\n* Fixed the tunnel type from a subscription not being applied to free subscriptions",
+      "assets": [
+        {
+          "id": 544543830,
+          "name": "Happ.linux.arm64.deb",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 544544654,
+          "name": "Happ.linux.arm64.pkg.tar.zst",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.pkg.tar.zst",
+          "state": "uploaded"
+        },
+        {
+          "id": 544546501,
+          "name": "Happ.linux.arm64.rpm",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.arm64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 544546960,
+          "name": "Happ.linux.x64.deb",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 544547693,
+          "name": "Happ.linux.x64.pkg.tar.zst",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.pkg.tar.zst",
+          "state": "uploaded"
+        },
+        {
+          "id": 544547925,
+          "name": "Happ.linux.x64.rpm",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.linux.x64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 544548351,
+          "name": "Happ.macOS.universal.dmg",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/Happ.macOS.universal.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 544549015,
+          "name": "setup-Happ.arm64.exe",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+          "state": "uploaded"
+        },
+        {
+          "id": 544546230,
+          "name": "setup-Happ.x64.exe",
+          "browser_download_url": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "lookup": {
+    "resultCount": 1,
+    "results": [
+      {
+        "trackId": 6504287215,
+        "bundleId": "su.ffg.happ",
+        "trackName": "Happ - Proxy Utility",
+        "sellerName": "Flyfrog LLC",
+        "kind": "software",
+        "wrapperType": "software",
+        "trackViewUrl": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4",
+        "version": "5.8.0",
+        "currentVersionReleaseDate": "2026-09-14T03:10:38Z",
+        "price": 0.0,
+        "currency": "USD",
+        "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/fd/dd/c6fddd03-9e7f-8fa5-dce5-ac7c9e3999c6/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg"
+      }
+    ]
+  },
+  "applePage": "Title: Happ - Proxy Utility App - App Store\n\nURL Source: https://apps.apple.com/us/app/happ-proxy-utility/id6504287215\n\nMarkdown Content:\nSearch \n\n*   [Today](https://apps.apple.com/us/iphone/today)\n*   [Games](https://apps.apple.com/us/iphone/games)\n*   [Apps](https://apps.apple.com/us/iphone/apps)\n*   [Arcade](https://apps.apple.com/us/iphone/arcade)\n\nPlatform\n*   [iPhone](https://apps.apple.com/us/iphone/today)\n*   [iPad](https://apps.apple.com/us/ipad/today)\n*   [Mac](https://apps.apple.com/us/mac/discover)\n*   [Vision](https://apps.apple.com/us/vision/apps-and-games)\n*   [Watch](https://apps.apple.com/us/watch/apps-and-games)\n*   [TV](https://apps.apple.com/us/tv/discover)\n\n![Image 1](https://apps.apple.com/assets/artwork/1x1.gif)\n\n![Image 2](https://apps.apple.com/assets/artwork/1x1.gif)\n\n# Happ - Proxy Utility\n\nNew level of security by Xray\n\nFree\n\n Share \n\n*   \n[14K Ratings 4.6 5.](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215#productRatings)\n\n*   [Age Rating 4+Years](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215#information) \n*   [Chart #21 Utilities](https://apps.apple.com/us/iphone/charts/6002?chart=top-free) \n*   [Developer Flyfrog LLC](https://apps.apple.com/us/developer/flyfrog-llc/id1729134548?platform=iphone) \n*   [Language EN+ 4 More](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215#information) \n*   [Size 360.2 MB](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215#information) \n\n*   ![Image 3](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 4](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 5](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 6](https://apps.apple.com/assets/artwork/1x1.gif)    \n\niPhone, iPad, Mac\n\nImportant Notice Happ does not sell or provide VPN services. Beware of scammers claiming to offer “official Happ VPNs” — they are not affiliated with us. Users must set up their own servers and follow local laws when using the app. Happ is a mobile app that makes using proxy and vpn servers easy, offering a user-friendly interface and useful features. Main functionalities include: Configuration of proxies based on rules. Support for multiple protocol types. Hidden subscriptions. Encrypted subscriptions. Protocols supported are: VLESS(Reality) VMess Trojan Shadowsocks Socks Hysteria2 Happ ensures your network activity remains private by not collecting any data; your information remains solely on your device without being sent to external servers. It's important to highlight that Happ does not provide VPN services for purchase. Users are responsible for acquiring or setting up their own servers. Users should also comply with applicable laws in their jurisdiction when utilizing the app.\n\nmore\n\n## [Ratings & Reviews](https://apps.apple.com/us/app/6504287215?see-all=reviews&platform=iphone)\n\n*   4.6 out of 5  14K Ratings                                        \n\n*   \n### Excellent and Reliable! \n\nJan 27\n\nPX_ZEVEN\n\nI’ve been using Happ for a while now, and it’s honestly one of the best proxy utilities out there. The interface is clean, modern, and very user-friendly. The connection stability is top-notch. Highly recommended for anyone looking for a reliable Xray client!\n\n# Excellent and Reliable!\n\nJan 27\n\nPX_ZEVEN\n\nI’ve been using Happ for a while now, and it’s honestly one of the best proxy utilities out there. The interface is clean, modern, and very user-friendly. The connection stability is top-notch. Highly recommended for anyone looking for a reliable Xray client!\n\n*   \n### Bug or major problem \n\n5d ago\n\nBehnamGharjeloo\n\nThe happ program is one of the top filter-breaking programs in Iran and this popular program has excellent performance, but a big problem always bothers us, this problem is that when the pinging operation starts, the configurations (configs) are not sorted during the work and you have to wait until the end of the work and if the number of configurations is high, this waiting becomes annoying and there is also no option to automatically delete invalid configurations and they have to be deleted manually one by one. Please address this big problem, thank you, I am Behnam Gharjeloo from Iran - Zanjan\n\n# Bug or major problem\n\n5d ago\n\nBehnamGharjeloo\n\nThe happ program is one of the top filter-breaking programs in Iran and this popular program has excellent performance, but a big problem always bothers us, this problem is that when the pinging operation starts, the configurations (configs) are not sorted during the work and you have to wait until the end of the work and if the number of configurations is high, this waiting becomes annoying and there is also no option to automatically delete invalid configurations and they have to be deleted manually one by one. Please address this big problem, thank you, I am Behnam Gharjeloo from Iran - Zanjan\n\n*   \n### A bug \n\nJun 17\n\nPeymangooki\n\nIt’s a really good app, but when you start pinging, it does not sort the configs during pinging, and you have to wait until the pinging process finishes so it would not working when you have a subscription with 1000 configs (like what we have in IRAN cause of severe censorship), second there is no option to auto-delete invalid configs. You have to do it one by one.\n\n# A bug\n\nJun 17\n\nPeymangooki\n\nIt’s a really good app, but when you start pinging, it does not sort the configs during pinging, and you have to wait until the pinging process finishes so it would not working when you have a subscription with 1000 configs (like what we have in IRAN cause of severe censorship), second there is no option to auto-delete invalid configs. You have to do it one by one.\n\n*   \n### Lack of sorting function \n\n10/29/2025\n\nLin-yun\n\nDear author, this very good software lacks a function to automatically sort the available options after the speed measurement. Looking forward to your update. Thank you.\n\nDeveloper Response\n\nGo to subscriptions-> sortBy\n\n# Lack of sorting function\n\n10/29/2025\n\nLin-yun\n\nDear author, this very good software lacks a function to automatically sort the available options after the speed measurement. Looking forward to your update. Thank you.\n\nDeveloper Response 10/31/2025\n\nGo to subscriptions-> sortBy\n\n## What’s New\n\n# Version History\n\n*   What’s New in This Release Smart Sleep Mode: Automatically pauses and resumes the tunnel connection when your device goes to sleep or wakes up, optimizing battery life. Per-ProviderList UserAgent: You can now configure custom UserAgents independently for each config list. UI Enhancements: Added dynamic scroll shadows to the bottom action buttons (QR / Clipboard) for improved visual clarity and depth. Bug Fixes: Under-the-hood stability improvements and minor bug fixes.\n\n5.8.0 2d ago   \n*   Connection sharing via LAN refactor - Please be aware that device persists WiFi while connected via HAPP using \"Allow connections from LAN\" and app is not terminated. Device battery can drain fast cause default behaviour disconnects wifi when device is in sleep mode (app overrides this to persist connection sharing with your other devices). Dont forget to turn that feature OFF if not using it. TY\n\n5.7.0 Sep 3   \n*   - fixed various bugs, including issues related to routing profiles - improved handling of errors reported by the core - server list refresh states are now handled separately - general stability and performance improvements\n\n5.6.0 Aug 20   \n*   - various fixes and improvements under the hood\n\n5.5.0 Aug 12   \n*   - bugfix update - Xray v26.7.28\n\n5.4.0 Aug 10   \n*   - huge bugfix update - updated Xray to v26.7.11 - added threads limit for Xray - new bundled geofiles\n\n5.2.0 Jul 22   \n*   - Introduced a new, more flexible routing system - Introduced a new geofiles downloader - Fixed DoU-related issues - Fixed various bugs and resolved several issues to improve stability\n\n5.1.0 Jul 16   \n*   - Updated to Xray-core v26.6.27 - Added new Ping Proxy Mode for enhanced proxy testing - Numerous minor improvements and bug fixes for a smoother, more reliable experience\n\n4.14.0 Jul 13   \n*   - minor bug fixes and under-the-hood improvements\n\n4.13.0 Jun 24   \n*   - Updated Live Activity widget with two selectable designs - Fixed ping host resolution for JSON configurations with custom outbound tags - Added support for the \"pcn\" parameter in TLS configuration\n\n4.11.0 Jun 8   \n*   authorization parsing fix\n\n4.10.2 May 26   \n*   - inbound auth update (now only inbounds with certain ports will be modied. socks/http port update moved from \"allow connections from LAN\" to \"Inbound settings\" screen - Picker font change fix - Final hysteria config parsing fix\n\n4.10.1 May 22   \n*   Subscription reordering mode via context menu on \"Settings\" Gear (iOS: long press + dragging using the new icon) Full application reset feature when adding a subscription Fixes for core 26.3.27 (Hysteria) support Hysteria TCP ping is now always ICMP Added the ability to change the powerIcon color on the VPN power button when in the ON state\n\n4.10.0 May 20   \n*   • A ton of minor bug fixes like validation translations, etc. • Scroll Indicator toggle • Reworked \"Floating Button\" feature • New core 26.3.27 • Inbounds configuration • Selectable timeout for subscription request • Ping UX (async, threading, all that stuff + full cancellation when VPN is off) • ProviderID verification via file (bundle/cached) • Fronting fix\n\n4.9.0 May 7   \n*   Minor keychain fix\n\n4.8.3 Apr 29   \n*   This release includes minor build update with no functional changes\n\n4.8.2 Apr 25   \n*   This release includes minor build update with no functional changes\n\n4.8.1 Apr 22   \n*   - Inbound Authorization: Added authorization support for HTTP and SOCKS inbound protocols. - Ping Customization: You can now configure the connection check (ping) timeout. - Geo-file Presets: Added User-Agent presets for reliable geo-file downloads. - Proxy Stealth Mode: Added a toggle to hide proxy presence in Developer Settings. - Live Activities: New \"Connection Status\" tracking on the Lock Screen and Dynamic Island. - Bug Fixes: Resolved minor issues and improved overall performance.\n\n4.8.0 Apr 20   \n*   - fixed ping issues affecting users with complex network configurations\n\n4.7.4 Apr 15   \n*   IMPORTANT: API 'HandlerService' removed from configurations! - widgets ui improvements - ignore provider color profile toggle added - fixed rare server loss state (race) when launching app - hotfix: resolved a minor ping issue\n\n4.7.3 Apr 14   \n*   - Widgets ux fixes and improvements + lock screen widget toggle - Hysteria configuration ping fix\n\n4.7.1 Apr 7   \n*   - New widgets + redesign old widgets - New feature `Use DNS from JSON` that will set tunnel dns from your custom JSON - Noise export fix - Parsing non encrypted subscription with \"key\" path fix - Lots of minor UI/UX emprovements\n\n4.7.0 Apr 3   \n*   - this update includes even more behind-the-scenes bug fixes to improve stability and performance\n\n4.6.0 Mar 20   \n*   - Xray Core Updated to v26.2.6 Includes the latest Xray core with configuration updates related to \"finalMask\". - TLS Enhancements Added support for \"echConfigList\" and \"echForceQuery\". - Minor Improvements & Fixes Various small improvements and non-critical bug fixes to enhance overall stability.\n\n4.5.0 Mar 11   \n*   - Hysteria configuration parsing fix (when downloading subscription) - VMESS pinSHACert added to manualInput UI - Accessibility (VoiceOver) small improvements - UI/UX emprovements as usual\n\n4.4.3 Feb 28   \n\nWhat’s New in This Release Smart Sleep Mode: Automatically pauses and resumes the tunnel connection when your device goes to sleep or wakes up, optimizing battery life. Per-ProviderList UserAgent: You can now configure custom UserAgents independently for each config list. UI Enhancements: Added dynamic scroll shadows to the bottom action buttons (QR / Clipboard) for improved visual clarity and depth. Bug Fixes: Under-the-hood stability improvements and minor bug fixes.\n\nmore\n\nVersion 5.8.0 2d ago\n\n## [App Privacy](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215#)\n\n# App Privacy\n\nThe developer, **Flyfrog LLC**, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the [developer’s privacy policy](https://www.happ.su/main/privacy-policy).\n\nTo help you better understand the developer’s responses, see [Privacy Definitions and Examples](https://apps.apple.com/us/iphone/story/id1539235847).\n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n### Data Not Linked to You\n\nThe following data, which may be collected but is not linked to your identity, may be used for the following purposes:\n\n#### App Functionality\n\n*   Diagnostics\n    *   Crash Data\n\nThe developer, **Flyfrog LLC**, indicated that the app’s privacy practices may include handling of data as described below. For more information, see the [developer’s privacy policy](https://www.happ.su/main/privacy-policy).\n\n*   \n### Data Not Linked to You\n\nThe following data may be collected but it is not linked to your identity:\n\n    *    Diagnostics \n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n## Accessibility\n\nThe developer has not yet indicated which accessibility features this app supports. [Learn More](https://apps.apple.com/story/id1814164299)\n\n## Information\n\nSeller\n*   Flyfrog LLC\n\nSize\n*   360.2 MB\n\nCategory\n*   Utilities\n\nCompatibility\n\nRequires iOS 15.0 or later. \n*   **iPhone**  \nRequires iOS 15.0 or later.\n*    \n*   **iPad**  \nRequires iPadOS 15.0 or later.\n*    \n*   **iPod touch**  \nRequires iOS 15.0 or later.\n*    \n*   **Mac**  \nRequires macOS 12.0 or later.\n*    \n*   **Apple Vision**  \nRequires visionOS 1.0 or later.\n\nLanguages\n\nEnglish and 4 more \n*   English, Persian, Russian, Simplified Chinese, Traditional Chinese\n\nAge Rating\n\n4+ \n*   4+  \n*   [Learn More](https://apps.apple.com/us/iphone/story/id1825160725) \n\nCopyright\n*   © Flyfrog LLC\n\n*   [Privacy Policy](https://www.happ.su/main/privacy-policy) \n\n## [More by Flyfrog LLC](https://apps.apple.com/us/developer/flyfrog-llc/id1729134548)\n\n*   [View ![Image 7](https://apps.apple.com/assets/artwork/1x1.gif) Razze The easy way to proxy](https://apps.apple.com/us/app/razze/id6752694105)   \n\n## [You Might Also Like](https://apps.apple.com/us/app/6504287215?see-all=customers-also-bought-apps&platform=iphone)\n\n*   [View ![Image 8](https://apps.apple.com/assets/artwork/1x1.gif) AmneziaVPN Multi protocol VPN client](https://apps.apple.com/us/app/amneziavpn/id1600529900)   \n*   [View ![Image 9](https://apps.apple.com/assets/artwork/1x1.gif) Hiddify Proxy & VPN VPN, Clash, SingBox,XRay,V2Ray](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532)   \n*   [View ![Image 10](https://apps.apple.com/assets/artwork/1x1.gif) HitProxy Fast VPN utility](https://apps.apple.com/us/app/hitproxy/id6502572134)   \n*   [View ![Image 11](https://apps.apple.com/assets/artwork/1x1.gif) VPN Lite - FREE VPN Fast ® Fast VPN by FREE VPN Fast®](https://apps.apple.com/us/app/vpn-lite-free-vpn-fast/id6736641897)   \n*   [View ![Image 12](https://apps.apple.com/assets/artwork/1x1.gif) FKey: Boost Game & Reduce Ping Utilities](https://apps.apple.com/us/app/fkey-boost-game-reduce-ping/id6758829249)   \n*   [View ![Image 13](https://apps.apple.com/assets/artwork/1x1.gif) Super VPN Fly 2026 VPN, VpnFly](https://apps.apple.com/us/app/super-vpn-fly-2026/id6754668686)   \n*   [View ![Image 14](https://apps.apple.com/assets/artwork/1x1.gif) Bear VPN - Fast VPN Proxy Unlimited VPN, Best VPN Master](https://apps.apple.com/us/app/bear-vpn-fast-vpn-proxy/id6739120018)   \n*   [View ![Image 15](https://apps.apple.com/assets/artwork/1x1.gif) VPN - Lite Cat VPN 2027 VPN Unlimited, VPN Buck](https://apps.apple.com/us/app/vpn-lite-cat-vpn-2027/id6743688429)   \n*   [View ![Image 16](https://apps.apple.com/assets/artwork/1x1.gif) Streisand Flexible Proxy Client](https://apps.apple.com/us/app/streisand/id6450534064)   \n*   [View ![Image 17](https://apps.apple.com/assets/artwork/1x1.gif) incy Your network, your control](https://apps.apple.com/us/app/incy/id6756943388)   \n\nUnited States\n*   [Español (México)](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=es-MX)\n*   [العربية](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=ar)\n*   [Русский](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=ru)\n*   [简体中文](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=zh-Hans-CN)\n*   [Français (France)](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=fr-FR)\n*   [한국어](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=ko)\n*   [Português (Brazil)](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=pt-BR)\n*   [Tiếng Việt](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=vi)\n*   [繁體中文 (台灣)](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=zh-Hant-TW)\n\nSelect a country or region\n\n## Africa, Middle East, and India\n\nSee All \n\n*   [Algeria](https://apps.apple.com/dz/iphone/today)\n*   [Angola](https://apps.apple.com/ao/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Azerbaijan](https://apps.apple.com/az/iphone/today)\n*   [Bahrain](https://apps.apple.com/bh/iphone/today)\n*   [Benin](https://apps.apple.com/bj/iphone/today)\n*   [Botswana](https://apps.apple.com/bw/iphone/today)\n*   [Burkina Faso](https://apps.apple.com/bf/iphone/today)\n*   [Cameroun](https://apps.apple.com/cm/iphone/today)\n*   [Cape Verde](https://apps.apple.com/cv/iphone/today)\n*   [Chad](https://apps.apple.com/td/iphone/today)\n*   [Côte d’Ivoire](https://apps.apple.com/ci/iphone/today)\n*   [Congo, The Democratic Republic Of The](https://apps.apple.com/cd/iphone/today)\n*   [Egypt](https://apps.apple.com/eg/iphone/today)\n*   [Eswatini](https://apps.apple.com/sz/iphone/today)\n*   [Gabon](https://apps.apple.com/ga/iphone/today)\n*   [Gambia](https://apps.apple.com/gm/iphone/today)\n*   [Ghana](https://apps.apple.com/gh/iphone/today)\n*   [Guinea-Bissau](https://apps.apple.com/gw/iphone/today)\n*   [India](https://apps.apple.com/in/iphone/today)\n*   [Iraq](https://apps.apple.com/iq/iphone/today)\n*   [Israel](https://apps.apple.com/il/iphone/today)\n*   [Jordan](https://apps.apple.com/jo/iphone/today)\n*   [Kenya](https://apps.apple.com/ke/iphone/today)\n*   [Kuwait](https://apps.apple.com/kw/iphone/today)\n*   [Lebanon](https://apps.apple.com/lb/iphone/today)\n*   [Liberia](https://apps.apple.com/lr/iphone/today)\n*   [Libya](https://apps.apple.com/ly/iphone/today)\n*   [Madagascar](https://apps.apple.com/mg/iphone/today)\n*   [Malawi](https://apps.apple.com/mw/iphone/today)\n*   [Mali](https://apps.apple.com/ml/iphone/today)\n*   [Mauritania](https://apps.apple.com/mr/iphone/today)\n*   [Mauritius](https://apps.apple.com/mu/iphone/today)\n*   [Morocco](https://apps.apple.com/ma/iphone/today)\n*   [Mozambique](https://apps.apple.com/mz/iphone/today)\n*   [Namibia](https://apps.apple.com/na/iphone/today)\n*   [Niger (English)](https://apps.apple.com/ne/iphone/today)\n*   [Nigeria](https://apps.apple.com/ng/iphone/today)\n*   [Oman](https://apps.apple.com/om/iphone/today)\n*   [Qatar](https://apps.apple.com/qa/iphone/today)\n*   [Congo, Republic of](https://apps.apple.com/cg/iphone/today)\n*   [Rwanda](https://apps.apple.com/rw/iphone/today)\n*   [São Tomé and Príncipe](https://apps.apple.com/st/iphone/today)\n*   [Saudi Arabia](https://apps.apple.com/sa/iphone/today)\n*   [Senegal](https://apps.apple.com/sn/iphone/today)\n*   [Seychelles](https://apps.apple.com/sc/iphone/today)\n*   [Sierra Leone](https://apps.apple.com/sl/iphone/today)\n*   [South Africa](https://apps.apple.com/za/iphone/today)\n*   [Sri Lanka](https://apps.apple.com/lk/iphone/today)\n*   [Tajikistan](https://apps.apple.com/tj/iphone/today)\n*   [Tanzania, United Republic Of](https://apps.apple.com/tz/iphone/today)\n*   [Tunisia](https://apps.apple.com/tn/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [United Arab Emirates](https://apps.apple.com/ae/iphone/today)\n*   [Uganda](https://apps.apple.com/ug/iphone/today)\n*   [Yemen](https://apps.apple.com/ye/iphone/today)\n*   [Zambia](https://apps.apple.com/zm/iphone/today)\n*   [Zimbabwe](https://apps.apple.com/zw/iphone/today)\n\n## Asia Pacific\n\nSee All \n\n*   [Afghanistan](https://apps.apple.com/af/iphone/today)\n*   [Australia](https://apps.apple.com/au/iphone/today)\n*   [Bhutan](https://apps.apple.com/bt/iphone/today)\n*   [Brunei Darussalam](https://apps.apple.com/bn/iphone/today)\n*   [Cambodia](https://apps.apple.com/kh/iphone/today)\n*   [中国大陆](https://apps.apple.com/cn/iphone/today)\n*   [Fiji](https://apps.apple.com/fj/iphone/today)\n*   [香港](https://apps.apple.com/hk/iphone/today)\n*   [Indonesia (English)](https://apps.apple.com/id/iphone/today)\n*   [日本](https://apps.apple.com/jp/iphone/today)\n*   [Kazakhstan](https://apps.apple.com/kz/iphone/today)\n*   [대한민국](https://apps.apple.com/kr/iphone/today)\n*   [Kyrgyzstan](https://apps.apple.com/kg/iphone/today)\n*   [Lao People's Democratic Republic](https://apps.apple.com/la/iphone/today)\n*   [澳門](https://apps.apple.com/mo/iphone/today)\n*   [Malaysia (English)](https://apps.apple.com/my/iphone/today)\n*   [Maldives](https://apps.apple.com/mv/iphone/today)\n*   [Micronesia, Federated States of](https://apps.apple.com/fm/iphone/today)\n*   [Mongolia](https://apps.apple.com/mn/iphone/today)\n*   [Myanmar](https://apps.apple.com/mm/iphone/today)\n*   [Nauru](https://apps.apple.com/nr/iphone/today)\n*   [Nepal](https://apps.apple.com/np/iphone/today)\n*   [New Zealand](https://apps.apple.com/nz/iphone/today)\n*   [Pakistan](https://apps.apple.com/pk/iphone/today)\n*   [Palau](https://apps.apple.com/pw/iphone/today)\n*   [Papua New Guinea](https://apps.apple.com/pg/iphone/today)\n*   [Philippines](https://apps.apple.com/ph/iphone/today)\n*   [Singapore](https://apps.apple.com/sg/iphone/today)\n*   [Solomon Islands](https://apps.apple.com/sb/iphone/today)\n*   [台灣](https://apps.apple.com/tw/iphone/today)\n*   [Thailand](https://apps.apple.com/th/iphone/today)\n*   [Tonga](https://apps.apple.com/to/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [Uzbekistan](https://apps.apple.com/uz/iphone/today)\n*   [Vanuatu](https://apps.apple.com/vu/iphone/today)\n*   [Vietnam](https://apps.apple.com/vn/iphone/today)\n\n## Europe\n\nSee All \n\n*   [Albania](https://apps.apple.com/al/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Österreich](https://apps.apple.com/at/iphone/today)\n*   [Belarus](https://apps.apple.com/by/iphone/today)\n*   [Belgium](https://apps.apple.com/be/iphone/today)\n*   [Bosnia and Herzegovina](https://apps.apple.com/ba/iphone/today)\n*   [Bulgaria](https://apps.apple.com/bg/iphone/today)\n*   [Croatia](https://apps.apple.com/hr/iphone/today)\n*   [Cyprus](https://apps.apple.com/cy/iphone/today)\n*   [Czechia](https://apps.apple.com/cz/iphone/today)\n*   [Denmark](https://apps.apple.com/dk/iphone/today)\n*   [Estonia](https://apps.apple.com/ee/iphone/today)\n*   [Finland](https://apps.apple.com/fi/iphone/today)\n*   [France (Français)](https://apps.apple.com/fr/iphone/today)\n*   [Georgia](https://apps.apple.com/ge/iphone/today)\n*   [Deutschland](https://apps.apple.com/de/iphone/today)\n*   [Greece](https://apps.apple.com/gr/iphone/today)\n*   [Hungary](https://apps.apple.com/hu/iphone/today)\n*   [Iceland](https://apps.apple.com/is/iphone/today)\n*   [Ireland](https://apps.apple.com/ie/iphone/today)\n*   [Italia](https://apps.apple.com/it/iphone/today)\n*   [Kosovo](https://apps.apple.com/xk/iphone/today)\n*   [Latvia](https://apps.apple.com/lv/iphone/today)\n*   [Lithuania](https://apps.apple.com/lt/iphone/today)\n*   [Luxembourg (English)](https://apps.apple.com/lu/iphone/today)\n*   [Malta](https://apps.apple.com/mt/iphone/today)\n*   [Moldova, Republic Of](https://apps.apple.com/md/iphone/today)\n*   [Montenegro](https://apps.apple.com/me/iphone/today)\n*   [Nederland](https://apps.apple.com/nl/iphone/today)\n*   [North Macedonia](https://apps.apple.com/mk/iphone/today)\n*   [Norway](https://apps.apple.com/no/iphone/today)\n*   [Poland](https://apps.apple.com/pl/iphone/today)\n*   [Portugal (Português)](https://apps.apple.com/pt/iphone/today)\n*   [Romania](https://apps.apple.com/ro/iphone/today)\n*   [Россия](https://apps.apple.com/ru/iphone/today)\n*   [Serbia](https://apps.apple.com/rs/iphone/today)\n*   [Slovakia](https://apps.apple.com/sk/iphone/today)\n*   [Slovenia](https://apps.apple.com/si/iphone/today)\n*   [España](https://apps.apple.com/es/iphone/today)\n*   [Sverige](https://apps.apple.com/se/iphone/today)\n*   [Schweiz](https://apps.apple.com/ch/iphone/today)\n*   [Türkiye (English)](https://apps.apple.com/tr/iphone/today)\n*   [Ukraine](https://apps.apple.com/ua/iphone/today)\n*   [United Kingdom](https://apps.apple.com/gb/iphone/today)\n\n## Latin America and the Caribbean\n\nSee All \n\n*   [Anguilla](https://apps.apple.com/ai/iphone/today)\n*   [Antigua and Barbuda](https://apps.apple.com/ag/iphone/today)\n*   [Argentina (Español)](https://apps.apple.com/ar/iphone/today)\n*   [Bahamas](https://apps.apple.com/bs/iphone/today)\n*   [Barbados](https://apps.apple.com/bb/iphone/today)\n*   [Belize](https://apps.apple.com/bz/iphone/today)\n*   [Bermuda](https://apps.apple.com/bm/iphone/today)\n*   [Bolivia (Español)](https://apps.apple.com/bo/iphone/today)\n*   [Brasil](https://apps.apple.com/br/iphone/today)\n*   [Virgin Islands, British](https://apps.apple.com/vg/iphone/today)\n*   [Cayman Islands](https://apps.apple.com/ky/iphone/today)\n*   [Chile (Español)](https://apps.apple.com/cl/iphone/today)\n*   [Colombia (Español)](https://apps.apple.com/co/iphone/today)\n*   [Costa Rica (Español)](https://apps.apple.com/cr/iphone/today)\n*   [Dominica](https://apps.apple.com/dm/iphone/today)\n*   [República Dominicana](https://apps.apple.com/do/iphone/today)\n*   [Ecuador (Español)](https://apps.apple.com/ec/iphone/today)\n*   [El Salvador (Español)](https://apps.apple.com/sv/iphone/today)\n*   [Grenada](https://apps.apple.com/gd/iphone/today)\n*   [Guatemala (Español)](https://apps.apple.com/gt/iphone/today)\n*   [Guyana](https://apps.apple.com/gy/iphone/today)\n*   [Honduras (Español)](https://apps.apple.com/hn/iphone/today)\n*   [Jamaica](https://apps.apple.com/jm/iphone/today)\n*   [México](https://apps.apple.com/mx/iphone/today)\n*   [Montserrat](https://apps.apple.com/ms/iphone/today)\n*   [Nicaragua (Español)](https://apps.apple.com/ni/iphone/today)\n*   [Panamá](https://apps.apple.com/pa/iphone/today)\n*   [Paraguay (Español)](https://apps.apple.com/py/iphone/today)\n*   [Perú](https://apps.apple.com/pe/iphone/today)\n*   [St. Kitts and Nevis](https://apps.apple.com/kn/iphone/today)\n*   [Saint Lucia](https://apps.apple.com/lc/iphone/today)\n*   [St. Vincent and The Grenadines](https://apps.apple.com/vc/iphone/today)\n*   [Suriname](https://apps.apple.com/sr/iphone/today)\n*   [Trinidad and Tobago](https://apps.apple.com/tt/iphone/today)\n*   [Turks and Caicos](https://apps.apple.com/tc/iphone/today)\n*   [Uruguay (English)](https://apps.apple.com/uy/iphone/today)\n*   [Venezuela (Español)](https://apps.apple.com/ve/iphone/today)\n\n## The United States and Canada\n\nSee All \n\n*   [Canada (English)](https://apps.apple.com/ca/iphone/today)\n*   [Canada (Français)](https://apps.apple.com/ca/iphone/today?l=fr-CA)\n*   [United States](https://apps.apple.com/us/iphone/today)\n*   [Estados Unidos (Español México)](https://apps.apple.com/us/iphone/today?l=es-MX)\n*   [الولايات المتحدة](https://apps.apple.com/us/iphone/today?l=ar)\n*   [США](https://apps.apple.com/us/iphone/today?l=ru)\n*   [美国 (简体中文)](https://apps.apple.com/us/iphone/today?l=zh-Hans-CN)\n*   [États-Unis (Français France)](https://apps.apple.com/us/iphone/today?l=fr-FR)\n*   [미국](https://apps.apple.com/us/iphone/today?l=ko)\n*   [Estados Unidos (Português Brasil)](https://apps.apple.com/us/iphone/today?l=pt-BR)\n*   [Hoa Kỳ](https://apps.apple.com/us/iphone/today?l=vi)\n*   [美國 (繁體中文台灣)](https://apps.apple.com/us/iphone/today?l=zh-Hant-TW)\n\nCopyright © 2026[Apple Inc.](https://www.apple.com/)All rights reserved.\n\n*   [Internet Service Terms](https://www.apple.com/legal/internet-services/)\n*   [App Store & Privacy](https://www.apple.com/legal/privacy/data/en/app-store/)\n*   [Cookie Warning](https://www.apple.com/privacy/use-of-cookies/)\n*   [Support](https://support.apple.com/billing)\n",
+  "androidReleaseSample": {
+    "id": 386858162,
+    "tag_name": "4.4.1",
+    "name": "4.4.1",
+    "html_url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.4.1",
+    "published_at": "2026-09-11T07:39:57Z",
+    "draft": false,
+    "prerelease": false,
+    "body": "* Improved json servers' ping stability",
+    "assets": [
+      {
+        "id": 562780923,
+        "name": "Happ.apk",
+        "browser_download_url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 556749483,
+        "name": "Happ_beta.apk",
+        "browser_download_url": "https://github.com/Happ-proxy/happ-android/releases/download/4.4.1/Happ_beta.apk",
+        "state": "uploaded"
+      }
+    ]
+  }
+}

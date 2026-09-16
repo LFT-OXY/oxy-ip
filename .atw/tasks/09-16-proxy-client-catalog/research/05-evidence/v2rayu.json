@@ -1,0 +1,581 @@
+{
+  "id": "v2rayu",
+  "referenceUrl": "https://huarun.win/apps/v2rayu",
+  "referenceText": "Title: V2rayU：macOS 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/v2rayu\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [macOS](https://huarun.win/platform/macos)\n3.   V2rayU\n\n![Image 1: V2rayU 应用图标](https://huarun.win/app-icons/v2rayu.webp)\n\n使用 Swift 开发的 macOS V2Ray 客户端，支持订阅、二维码、剪贴板和手动导入多类节点。\n\n适用平台[macOS](https://huarun.win/platform/macos)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Xray[了解 Xray-core 内核 →](https://huarun.win/cores/xray)[查看依据](https://github.com/yanue/V2rayU/tree/dac0036d7f5a27ce788fe9027fc92524128b5035/Build)\n\n主导开发[yanue](https://huarun.win/history/people/yanue)yanue\n\n**20,145** Star**2,966** Fork\n\n[查看代码仓库](https://github.com/yanue/V2rayU)\n统计更新于 2026年9月16日\n\n版本号 v5.2.0\n\n最后更新时间 2026年8月2日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\nWhat's Changed\n- 改进 TUN 路由排除与启动就绪检查.\n- 增加 TUN 应用与进程路由规则.\n- Fix workspace sleep and wake notification observers.\n\nNew Contributors\n- @johnymoo made their first contribution.\n- @Harviewang made their first contribution.[查看官方版本来源 ↗](https://github.com/yanue/V2rayU/releases/tag/v5.2.0)\n应用简介\n\n## 关于 V2rayU\n\n使用 Swift 开发的 macOS V2Ray 客户端，支持订阅、二维码、剪贴板和手动导入多类节点。\n\n适用于 macOS。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n[了解 V2rayU 在《翻墙纪 · 纪事》中的历史背景（核心与界面分离） →](https://huarun.win/history#core-interface-separation)\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/v2rayu)\n人物关联\n\n## 与 V2rayU 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/yanue.webp)**yanue**V2rayU 创作者 由该开发者主导开发或长期维护](https://huarun.win/history/people/yanue)\n*   [![Image 3](https://huarun.win/people-avatars/rprx.webp)**RPRX**内核血缘 Project X 与 Xray-core 创始人 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/rprx)\n*   [![Image 4](https://huarun.win/people-avatars/victoriaraymond.webp)**Victoria Raymond**协议奠基 V2Ray / Project V 创始开发者与 VMess 协议设计者 支持由该开发者创立的代理协议](https://huarun.win/history/people/victoriaraymond)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/yanue/V2rayU",
+  "repository": {
+    "full_name": "yanue/V2rayU",
+    "html_url": "https://github.com/yanue/V2rayU",
+    "description": "V2rayU,基于v2ray核心的mac版客户端,用于科学上网,使用swift编写,支持trojan,vmess,shadowsocks,socks5等服务协议,支持订阅, 支持二维码,剪贴板导入,手动配置,二维码分享等",
+    "default_branch": "rm",
+    "archived": false,
+    "license": null,
+    "homepage": "https://github.com/yanue/V2rayU"
+  },
+  "readme": "rm",
+  "treeSha": "43b709fdbf7346441f0d541b898dcd09a4741c47",
+  "treeTruncated": false,
+  "resourcePaths": ["README.md"],
+  "releaseList": [
+    {
+      "id": 360058319,
+      "tag_name": "v5.2.0",
+      "name": "v5.2.0 - bug修复与功能优化",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.2.0",
+      "published_at": "2026-08-02T13:11:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 342553730,
+      "tag_name": "v5.1.0",
+      "name": "v5.1.0 - 全新ui正式版",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.1.0",
+      "published_at": "2026-06-21T15:56:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 339193522,
+      "tag_name": "v5.0.3",
+      "name": "v5.0.3 - 全新ui(预览版) - 功能增强",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.0.3",
+      "published_at": "2026-06-14T15:24:50Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 308913273,
+      "tag_name": "v5.0.2",
+      "name": "v5.0.2 - 全新ui(预览版) - 修复权限问题",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.0.2",
+      "published_at": "2026-04-14T15:41:58Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 308388476,
+      "tag_name": "v5.0.1",
+      "name": "v5.0.1 - 全新ui(预览版) - bug修复",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.0.1",
+      "published_at": "2026-04-13T14:47:51Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 307142502,
+      "tag_name": "v5.0.0",
+      "name": "v5.0.0 -  全新ui(预览版)",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.0.0",
+      "published_at": "2026-04-09T15:43:24Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 258212898,
+      "tag_name": "v4.2.8",
+      "name": "v4.2.8",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.8",
+      "published_at": "2025-10-29T15:44:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 257804091,
+      "tag_name": "v4.2.7",
+      "name": "v4.2.7",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.7",
+      "published_at": "2025-10-28T12:24:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 225390295,
+      "tag_name": "v4.2.6",
+      "name": "v4.2.6",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.6",
+      "published_at": "2025-06-15T10:56:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 167508809,
+      "tag_name": "v4.2.5",
+      "name": "v4.2.5",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.5",
+      "published_at": "2024-07-28T07:38:46Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 166530675,
+      "tag_name": "v4.2.4",
+      "name": "v4.2.4",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.4",
+      "published_at": "2024-07-22T14:37:55Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 166397388,
+      "tag_name": "v4.2.3",
+      "name": "v4.2.3",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.3",
+      "published_at": "2024-07-21T11:01:45Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 164302516,
+      "tag_name": "v4.2.2",
+      "name": "",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.2",
+      "published_at": "2024-07-07T16:11:22Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 164297617,
+      "tag_name": "v4.2.1",
+      "name": "v4.2.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.1",
+      "published_at": "2024-07-07T13:34:28Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 164299789,
+      "tag_name": "v3.9.0",
+      "name": "v3.9.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.9.0",
+      "published_at": "2024-07-07T15:21:04Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 164253149,
+      "tag_name": "v4.2.0",
+      "name": "v4.2.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.2.0",
+      "published_at": "2024-07-06T11:47:30Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 131578924,
+      "tag_name": "v4.1.0",
+      "name": "v4.1.0 预览版",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.1.0",
+      "published_at": "2023-11-27T16:03:26Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 125086684,
+      "tag_name": "v4.0.0",
+      "name": "4.0预览版",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v4.0.0",
+      "published_at": "2023-10-14T12:25:21Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 112515689,
+      "tag_name": "v3.8.0",
+      "name": "v3.8.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.8.0",
+      "published_at": "2023-07-17T15:13:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 112113248,
+      "tag_name": "v3.7.0",
+      "name": "v3.7.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.7.0",
+      "published_at": "2023-07-13T13:37:44Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 111957035,
+      "tag_name": "v3.6.0",
+      "name": "v3.6.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.6.0",
+      "published_at": "2023-07-12T13:57:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 111815861,
+      "tag_name": "v3.5.0",
+      "name": "v3.5.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.5.0",
+      "published_at": "2023-07-11T15:27:09Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 111010807,
+      "tag_name": "v3.4.0-preview",
+      "name": "v3.4.0-preview",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v3.4.0-preview",
+      "published_at": "2023-07-04T15:51:08Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 74835095,
+      "tag_name": "3.3.0",
+      "name": "支持apple arm64,修复trojan导入问题",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/3.3.0",
+      "published_at": "2022-08-19T13:30:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 45032632,
+      "tag_name": "3.2.0",
+      "name": "修复地址乱码,修复越界导致崩溃",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/3.2.0",
+      "published_at": "2021-06-22T14:14:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 44531447,
+      "tag_name": "3.1.0",
+      "name": "core替换为xray, 支持vless,Trojan导入分享",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/3.1.0",
+      "published_at": "2021-06-13T07:08:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 39009348,
+      "tag_name": "3.0.3",
+      "name": "3.0 正式版",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/3.0.3",
+      "published_at": "2021-02-28T07:43:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 32520255,
+      "tag_name": "3.0.0.preview",
+      "name": "3.0预览版: 新增Trojan和vless支持",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/3.0.0.preview",
+      "published_at": "2020-10-13T16:47:00Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 29663094,
+      "tag_name": "2.3.1",
+      "name": "【紧急修复】自动更新v2ray-core失败导致无法使用问题",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/2.3.1",
+      "published_at": "2020-08-13T16:44:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 29564239,
+      "tag_name": "2.3.0",
+      "name": "【紧急修复】自动更新v2ray-core失败导致无法使用问题",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/2.3.0",
+      "published_at": "2020-08-11T15:14:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 26998705,
+      "tag_name": "2.2.0",
+      "name": "2.2.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/2.2.0",
+      "published_at": "2020-05-28T16:23:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 24179876,
+      "tag_name": "2.1.0",
+      "name": "2.1.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/2.1.0",
+      "published_at": "2020-03-03T17:15:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 23514874,
+      "tag_name": "2.0.0",
+      "name": "",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/2.0.0",
+      "published_at": "2020-02-09T16:21:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 21905440,
+      "tag_name": "1.5.1",
+      "name": "1.5.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.5.1",
+      "published_at": "2019-12-02T17:56:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 21875598,
+      "tag_name": "1.5.0",
+      "name": "1.5.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.5.0",
+      "published_at": "2019-12-01T03:42:08Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 20129892,
+      "tag_name": "1.4.1",
+      "name": "1.4.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.4.1",
+      "published_at": "2019-09-20T06:51:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 18705352,
+      "tag_name": "1.4.0",
+      "name": "1.4.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.4.0",
+      "published_at": "2019-07-18T13:42:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 18575537,
+      "tag_name": "1.3.3",
+      "name": "1.3.3",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.3.3",
+      "published_at": "2019-07-12T10:38:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 17853801,
+      "tag_name": "1.3.2",
+      "name": "1.3.2",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.3.2",
+      "published_at": "2019-06-07T14:23:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 17592517,
+      "tag_name": "1.3.1",
+      "name": "1.3.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.3.1",
+      "published_at": "2019-05-26T10:44:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 17505204,
+      "tag_name": "1.3.0",
+      "name": "1.3.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.3.0",
+      "published_at": "2019-05-22T03:59:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 17276114,
+      "tag_name": "1.2.3",
+      "name": "1.2.3",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.2.3",
+      "published_at": "2019-05-10T13:33:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 15947088,
+      "tag_name": "1.2.2",
+      "name": "1.2.2",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.2.2",
+      "published_at": "2019-03-06T14:47:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 15945506,
+      "tag_name": "1.2.1",
+      "name": "1.2.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.2.1",
+      "published_at": "2019-03-06T13:54:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 15309452,
+      "tag_name": "1.2.0",
+      "name": "1.2.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.2.0",
+      "published_at": "2019-02-01T07:09:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14643253,
+      "tag_name": "1.1.1",
+      "name": "1.1.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.1.1",
+      "published_at": "2018-12-20T16:49:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14639550,
+      "tag_name": "1.1.0",
+      "name": "1.1.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.1.0",
+      "published_at": "2018-12-20T14:20:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14428445,
+      "tag_name": "1.0.6",
+      "name": "1.0.6",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.6",
+      "published_at": "2018-12-09T12:44:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14426599,
+      "tag_name": "1.0.5",
+      "name": "1.0.5",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.5",
+      "published_at": "2018-12-09T04:19:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14426559,
+      "tag_name": "1.0.4",
+      "name": "1.0.4",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.4",
+      "published_at": "2018-12-09T04:07:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14355228,
+      "tag_name": "1.0.3",
+      "name": "1.0.3",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.3",
+      "published_at": "2018-12-05T06:38:24Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14316836,
+      "tag_name": "1.0.2",
+      "name": "1.0.2",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.2",
+      "published_at": "2018-12-03T14:54:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14272996,
+      "tag_name": "1.0.1",
+      "name": "1.0.1",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.1",
+      "published_at": "2018-11-30T04:10:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 14248702,
+      "tag_name": "1.0.0",
+      "name": "1.0.0",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/1.0.0",
+      "published_at": "2018-11-29T06:15:33Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 360058319,
+      "tag_name": "v5.2.0",
+      "name": "v5.2.0 - bug修复与功能优化",
+      "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.2.0",
+      "published_at": "2026-08-02T13:11:02Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "## What's Changed\r\n* 改进 TUN 路由排除与启动就绪检查 by @johnymoo in https://github.com/yanue/V2rayU/pull/1681\r\n* 增加 TUN 应用与进程路由规则 by @johnymoo in https://github.com/yanue/V2rayU/pull/1683\r\n* Fix workspace sleep and wake notification observers by @Harviewang in https://github.com/yanue/V2rayU/pull/1685\r\n\r\n## New Contributors\r\n* @johnymoo made their first contribution in https://github.com/yanue/V2rayU/pull/1681\r\n* @Harviewang made their first contribution in https://github.com/yanue/V2rayU/pull/1685\r\n\r\n**Full Changelog**: https://github.com/yanue/V2rayU/compare/v5.1.0...v5.2.0",
+      "assets": [
+        {
+          "id": 498909811,
+          "name": "V2rayU-64.dmg",
+          "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 498909348,
+          "name": "V2rayU-arm64.dmg",
+          "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-arm64.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 498910345,
+          "name": "V2rayU-dSYM.zip",
+          "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-dSYM.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "stableTagReadme": "<picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"./V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/128.png\"><img alt=\"V2rayU\" src=\"./V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/128.png\" width=\"64\"></picture>\n\n# V2rayU \n\nmacOS 平台下的代理客户端，基于 [Xray-core](https://github.com/XTLS/Xray-core) 与 [sing-box](https://github.com/SagerNet/sing-box)，支持 VMess、VLESS、Trojan、Shadowsocks、SSR、SOCKS5、Hysteria、Hysteria2、Tuic、AnyTLS、Naive 等多种协议。SwiftUI 编写，支持 macOS 14+。\n\n> 旧版(5.0以下)基于 V2Ray-core 的项目请查看 [master](https://github.com/yanue/V2rayU/tree/master) 分支。\n\n---\n\n## 功能特性\n\n- **多协议支持** — VMess、VLESS、Trojan、Shadowsocks、SSR、SOCKS5、Hysteria、Hysteria2、Tuic、AnyTLS、Naive 等\n- **双核心引擎** — 智能选择 Xray-core 或 sing-box，根据协议/传输/安全配置自动匹配最兼容的核心\n- **运行模式** — PAC 模式、全局代理、手动代理、TUN 模式（虚拟网卡全局代理）\n- **订阅管理** — 支持 V2Ray、SS、SSR 订阅，可自动更新\n- **导入方式** — 二维码扫码、剪贴板粘贴、本地文件、URL 导入\n- **路由规则** — 内置常见路由规则组，支持自定义\n- **组合负载均衡** — 多服务器组合与负载均衡\n- **兼容性规则引擎** — 自动检测核心版本对各协议/传输方式的支持能力\n- **延迟测试** — 内置 Ping / HTTP 延迟测试\n- **诊断工具** — 内置网络诊断功能\n- **自动更新** — 支持应用与核心自动更新\n- **多语言** — 中文简体、中文繁體、English\n\n## 下载安装\n\n从 [Releases](https://github.com/yanue/V2rayU/releases) 下载最新 DMG 安装包\n\n## 功能预览\n\n<p>\n  <img src=\"./Docs/screenshots/appmenu.png\" height=\"320\">\n</p>\n<p>\n  <img src=\"./Docs/screenshots/server.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/subscription.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/combination.png\" height=\"280\">\n</p>\n<p>\n  <img src=\"./Docs/screenshots/route.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/core.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/diagnostics.png\" height=\"280\">\n</p>\n<p>\n  <img src=\"./Docs/screenshots/about.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/setting-general.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/setting-pac.png\" height=\"280\">\n</p>\n<p>\n  <img src=\"./Docs/screenshots/setting-advance.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/setting-dns.png\" height=\"280\">\n  <img src=\"./Docs/screenshots/setting-tun.png\" height=\"280\">\n</p>\n<p>\n  <img src=\"./Docs/screenshots/setting-shortcut.png\" height=\"280\">\n</p>\n\n## 运行模式\n\n| 模式 | 说明 |\n|------|------|\n| **Global** | 设置系统 HTTP/HTTPS/SOCKS 代理为本地代理端口 |\n| **PAC** | 基于 PAC 规则的自动代理，自动判断直连或走代理 |\n| **Manual** | 手动模式，需配合浏览器插件（如 SwitchyOmega）使用 |\n| **TUN** | 虚拟网卡级全局代理，所有流量经 sing-box 转发 |\n\n## 核心引擎\n\nV2rayU 根据配置自动选择最佳核心：\n\n- **Xray-core** — 成熟的代理核心，协议/传输方式支持丰富\n- **sing-box** — 通用代理平台，支持 TUN 模式、Hysteria、Hysteria2、Tuic、AnyTLS、Naive 等协议\n\n通过内置的兼容性规则引擎（[CoreCapabilityRules](./V2rayU/Core/Utilities/CoreCapabilityRules.swift)），自动检测核心版本对每个协议、传输方式和安全配置的支持情况，在不兼容时给出警告提示。\n\n## 相关路径\n\n| 路径 | 说明 |\n|------|------|\n| `~/.V2rayU/V2rayU.log` | 应用程序日志 |\n| `~/.V2rayU/core.log` | 核心引擎日志 |\n| `~/.V2rayU/tun.log` | TUN 模式日志 |\n| `~/.V2rayU/config.json` | 当前核心配置文件 |\n| `~/.V2rayU/tun.json` | TUN 模式配置文件 |\n| `~/.V2rayU/.V2rayU.db` | SQLite 数据库（GRDB） |\n| `~/Library/LaunchAgents/yanue.v2rayu.xray-core.plist` | Xray-core LaunchAgent |\n| `~/Library/LaunchAgents/yanue.v2rayu.sing-box.plist` | sing-box LaunchAgent |\n| `/Library/LaunchDaemons/yanue.v2rayu.tun-helper.plist` | TUN 辅助 LaunchDaemon |\n| `/usr/local/v2rayu/` | 核心二进制及辅助工具目录 |\n\n## 构建\n\n```bash\ngit clone https://github.com/yanue/V2rayU.git\ncd V2rayU\n\n# 构建通用二进制 + DMG\n./Build/build.sh\n```\n\n构建要求：Xcode 15+，macOS 14+ SDK。\n\n## 测试\n\n```bash\n# 运行单元测试\nxcodebuild test -project V2rayU.xcodeproj -scheme V2rayU -destination 'platform=macOS'\n\n# 运行兼容性测试\n./Build/tests/run-compatibility-test.sh --download\n```\n\n## 技术栈\n\n- **语言**: Swift 5+\n- **UI 框架**: SwiftUI + AppKit (菜单栏)\n- **数据库**: GRDB (SQLite)\n- **本地 PAC 服务器**: FlyingFox (HTTP)\n- **包管理**: Swift Package Manager\n- **分析统计**: Firebase / AppCenter\n\n## 贡献\n\n欢迎提交 Issue 和 Pull Request。请阅读 [AGENTS.md](./AGENTS.md) 了解项目结构和开发指南。\n\n## License\n\n[GPLv3](./LICENSE)\n\n## 致谢\n\n- Logo 设计：@小文\n- 感谢 opencode\n",
+  "stableTagResourcePaths": [
+    "Build/V2rayU-dmg@2x.png",
+    "Docs/screenshots/about.png",
+    "Docs/screenshots/appmenu.png",
+    "Docs/screenshots/combination.png",
+    "Docs/screenshots/core.png",
+    "Docs/screenshots/diagnostics.png",
+    "Docs/screenshots/route.png",
+    "Docs/screenshots/server.png",
+    "Docs/screenshots/setting-advance.png",
+    "Docs/screenshots/setting-dns.png",
+    "Docs/screenshots/setting-general.png",
+    "Docs/screenshots/setting-pac.png",
+    "Docs/screenshots/setting-shortcut.png",
+    "Docs/screenshots/setting-tun.png",
+    "Docs/screenshots/subscription.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/1024.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/128.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/16.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/256.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/32.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/512.png",
+    "V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/64.png",
+    "V2rayU/Resources/Assets.xcassets/IconOff.imageset/icon.png",
+    "V2rayU/Resources/Assets.xcassets/IconOff.imageset/icon@2x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOff.imageset/icon@3x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnG.imageset/G.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnG.imageset/G@2x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnG.imageset/G@3x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnM.imageset/M.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnM.imageset/M@2x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnM.imageset/M@3x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnP.imageset/P.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnP.imageset/P@2x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnP.imageset/P@3x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnT.imageset/T.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnT.imageset/T@2x.png",
+    "V2rayU/Resources/Assets.xcassets/IconOnT.imageset/T@3x.png",
+    "V2rayU/Resources/Assets.xcassets/V2rayU.imageset/1024.png",
+    "V2rayU/Resources/Assets.xcassets/V2rayU.imageset/128.png"
+  ]
+}

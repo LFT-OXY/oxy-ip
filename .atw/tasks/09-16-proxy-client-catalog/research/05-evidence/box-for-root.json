@@ -1,0 +1,424 @@
+{
+  "id": "box-for-root",
+  "referenceUrl": "https://huarun.win/apps/box-for-root",
+  "referenceText": "Title: Box for Root（BFR）：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/box-for-root\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Box for Root\n\n![Image 1: Box for Root 应用图标](https://huarun.win/app-icons/box-for-root.webp)\n\nBFR\n\n面向 Root Android 的透明代理模块，通过 Magisk、KernelSU 或 APatch 管理 Clash、sing-box、V2Ray、Xray 等核心。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Clash / sing-box / V2Ray / Xray[了解 sing-box 内核 →](https://huarun.win/cores/sing-box)[了解 Xray-core 内核 →](https://huarun.win/cores/xray)[了解 V2Ray 内核 →](https://huarun.win/cores/v2ray)[查看依据](https://github.com/taamarin/box_for_magisk/blob/a87244943abdd1cf0f278c708001b2aef56adb9c/README.md)\n\n主导开发[taamarin](https://huarun.win/history/people/taamarin)t@marin\n\n**2,516** Star**279** Fork\n\n[查看代码仓库](https://github.com/taamarin/box_for_magisk)\n统计更新于 2026年9月16日\n\n版本号 v1.10.2\n\n最后更新时间 2025年9月5日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\nChangelog v1.10.2\n\nBox / Scripts\n- fix(scripts): use /system/bin/sh and add curl timeout options in box.tool\n- fix: escape special characters in restore_ini sed replacement\n- box.tool(subs): extend protocol detection & clarify error log\n- feat: support Base64 subscription (Clash/MoMo) file in box.tool\n- refactor(settings): move GID list to separate gid.list.cfg\n- feat: add restore and apply settings.ini functionality\n- box: switch sing-box to single config file\n\nBFR (APK) Manager\n- fix: ColorOS tiles not displayed\n- remove: redundant settings:\n- Background status monitoring\n- Auto-open panel on startup\n- feat:\n- Network interface display for intranet IP\n- Vibration feedback setting\n- Module detection (in addition to root detection)\n- Subscription status card\n- Option to hide/show the home page card\n- Crontab option in subscription settings\n- Auto-refresh button for logs\n- improve:\n- Reduced top bar margin\n- Timeout handling for IP lookup\n- Error display for subscriptions\n- Logs now auto-scroll to bottom (latest entries visible)\n- change: Subscription over 10 years or no expiry shown as \"Long-term valid\"\n- ui:\n- Status bar immersive mode enabled\n- WebUI interface not immersive[查看官方版本来源 ↗](https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2)\n应用简介\n\n## 关于 Box for Root\n\n面向 Root Android 的透明代理模块，通过 Magisk、KernelSU 或 APatch 管理 Clash、sing-box、V2Ray、Xray 等核心。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n社区与订阅\n\n## 获取更新与授权信息\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/box-for-root)\n人物关联\n\n## 与 Box for Root 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/taamarin.webp)**taamarin**Box for Root 架构师 由该开发者主导开发或长期维护](https://huarun.win/history/people/taamarin)\n*   [![Image 3](https://huarun.win/people-avatars/rprx.webp)**RPRX**内核血缘 Project X 与 Xray-core 创始人 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/rprx)\n*   [![Image 4](https://huarun.win/people-avatars/nekohasekai.webp)**nekohasekai**内核血缘 sing-box 创始开发者与 SagerNet 核心维护者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/nekohasekai)\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/taamarin/box_for_magisk",
+  "repository": {
+    "full_name": "taamarin/box_for_magisk",
+    "html_url": "https://github.com/taamarin/box_for_magisk",
+    "description": "Transparent Proxy for Android(root) ",
+    "default_branch": "master",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": "https://t.me/nothing_taamarin"
+  },
+  "readme": "# Box for Root\n\n[![ID](https://img.shields.io/badge/id-blue.svg?style=for-the-badge)](docs/index_id.md) [![EN](https://img.shields.io/badge/en-blue.svg?style=for-the-badge)](docs/index_en.md) [![ZH](https://img.shields.io/badge/zh-blue.svg?style=for-the-badge)](docs/index_zh.md)\n\n<h1 align=\"center\">\n  <img src=\"https://github.com/taamarin/box_for_magisk/blob/master/docs/box.svg\" alt=\"BOX\" width=\"200\">\n  <br>BOX<br>\n</h1>\n<h4 align=\"center\">Transparent Proxy for Android (Root)</h4>\n\n<div align=\"center\">\n  <a href=\"https://github.com/taamarin/box_for_magisk/releases\">\n    <img src=\"https://img.shields.io/github/downloads/taamarin/box_for_magisk/total.svg?style=for-the-badge\" alt=\"Releases\">\n  </a>\n  <a href=\"#\">\n    <img src=\"https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white\" alt=\"Android\">\n  </a>\n</div>\n\n## Introduction\n`Box for Root` (BFR) is a [Magisk](https://github.com/topjohnwu/Magisk), [KernelSU](https://github.com/tiann/KernelSU), [APatch](https://github.com/bmax121/APatch), module that provides a suite of proxy tools, including `clash`, `sing-box`, `v2ray`, `hysteria` and `xray`. It allows you to configure a transparent proxy on Android devices with root access.\n\n## Features\n- Support for multiple proxy tools: `clash`, `sing-box`, `v2ray`, `hysteria`, and `xray`.\n- Transparent proxy for Android with root access.\n- Seamless integration with Magisk, KernelSU, and APatch.\n- Manage proxy services with ease.\n\n## Apk Manager\nYou can use the **BFR Manager** app (optional) to manage Box for Root on your device.\n[Download BFR Manager](https://t.me/nothing_taamarin)\n> ⚠️ If you receive continuous notifications, open Magisk Manager, navigate to SuperUser, search for `BoxForRoot`, and disable logs and notifications.\n\n## Module Directory\nThe core files of the module are stored in the following directories:\n- `MODDIR=/data/adb/box`\n- `MODLOG=/data/adb/box/run`\n- `SETTINGS=/data/adb/box/settings.ini`\n> ⚠️ Before editing the `settings.ini` file located at `/data/adb/box/settings.ini`, ensure that BFR is turned off to avoid configuration issues.\n\n## Manage Service Start/Stop\nThe following core services are collectively referred to as **BFR**. By default, the BFR service auto-starts after a system boot. You can manage the service through Magisk/KernelSU Manager App, with the service start taking a few seconds, and stopping it taking effect immediately.\n\n### To start the service:\n```bash\nsu -c /data/adb/box/scripts/box.service start && su -c /data/adb/box/scripts/box.iptables enable\n```\n### To stop the service:\n```bash\nsu -c /data/adb/box/scripts/box.iptables disable && su -c /data/adb/box/scripts/box.service stop\n```\n\n## Here are some additional instructions:\n- When modifying any of the core configuration files, ensure that the tproxy-related configurations match the definitions in the **/data/adb/box/settings.ini** file.\n- If your device has a public IP address, you can add that IP address to the internal network in the **/data/adb/box/scripts/box.iptables** file to prevent loopback traffic.\n- The logs for the BFM service can be found in the directory **/data/adb/box/run**.\n- Please note that modifying these files requires appropriate permissions. Make sure to carefully follow the instructions and validate any changes made to the configuration files.\n\nYou can run the following command to get other related operating instructions:\n```bash\n  su -c /data/adb/box/scripts/box.tool\n  # usage: {check|geosub|geox|subs|upkernel|upxui|upyq|upcurl|reload|all}\n  su -c /data/adb/box/scripts/box.service\n  # usage: $0 {start|stop|restart|status|cron|kcron}\n  su -c /data/adb/box/scripts/box.iptables\n  # usage: $0 {enable|disable|renew}\n```\n\n## Uninstall\nRemove the module from `Magisk/KernelSU/APatch Manager` and run the following command to wipe the data:\n```bash\nsu -c rm -rf /data/adb/box\nsu -c rm -rf /data/adb/service.d/box_service.sh\nsu -c rm -rf /data/adb/modules/box_for_root\n```\n\n## Credits\n- [CHIZI-0618/box4magisk](https://github.com/CHIZI-0618/box4magisk) for the original Box for Magisk module.\n\n## License\nThis project is licensed under the GPL-3.0 license - see the [LICENSE](https://github.com/taamarin/box_for_magisk/blob/master/LICENSE) file for details.\n",
+  "treeSha": "a87244943abdd1cf0f278c708001b2aef56adb9c",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "box/clash/README.md",
+    "box/hysteria/README.md",
+    "box/sing-box/README.md",
+    "box/v2fly/README.md",
+    "box/xray/README.md",
+    "docs/box.png",
+    "docs/box.svg",
+    "module.prop"
+  ],
+  "releaseList": [
+    {
+      "id": 255982297,
+      "tag_name": "pre-v1.10.2(4cec20f)",
+      "name": "Pre-release v1.10.2(4cec20f)",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/pre-v1.10.2(4cec20f)",
+      "published_at": "2025-10-21T11:56:29Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 245064425,
+      "tag_name": "v1.10.2",
+      "name": "v1.10.2",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2",
+      "published_at": "2025-09-05T12:45:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242000146,
+      "tag_name": "v1.10.1",
+      "name": "v1.10.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.1",
+      "published_at": "2025-08-23T04:35:35Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 241408162,
+      "tag_name": "v1.10.0",
+      "name": "v1.10.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.0",
+      "published_at": "2025-08-21T06:36:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 237047723,
+      "tag_name": "v1.9.1",
+      "name": "v1.9.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.9.1",
+      "published_at": "2025-08-02T07:27:01Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 233717249,
+      "tag_name": "v1.9.0",
+      "name": "v1.9.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.9.0",
+      "published_at": "2025-07-19T23:25:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 192010214,
+      "tag_name": "v1.8",
+      "name": "v1.8",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.8",
+      "published_at": "2024-12-22T11:12:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 185802920,
+      "tag_name": "v1.7.5",
+      "name": "v1.7.5",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.5",
+      "published_at": "2024-11-17T10:52:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 182735790,
+      "tag_name": "v1.7.4",
+      "name": "v1.7.4",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.4",
+      "published_at": "2024-10-30T16:13:52Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 178472599,
+      "tag_name": "v1.7.3",
+      "name": "v1.7.3",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.3",
+      "published_at": "2024-10-04T19:39:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 175453598,
+      "tag_name": "v1.7.2",
+      "name": "",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.2",
+      "published_at": "2024-09-17T13:07:09Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 169693016,
+      "tag_name": "v1.7.1",
+      "name": "v1.7.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.1",
+      "published_at": "2024-08-12T01:08:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 169614086,
+      "tag_name": "v1.7.0",
+      "name": "v1.7.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.7.0",
+      "published_at": "2024-08-10T06:13:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 165360038,
+      "tag_name": "v1.6.0",
+      "name": "v1.6.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.6.0",
+      "published_at": "2024-07-14T18:58:25Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 148417868,
+      "tag_name": "v1.5.0",
+      "name": "v1.5.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.5.0",
+      "published_at": "2024-03-26T07:46:20Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 138953442,
+      "tag_name": "v1.4.5",
+      "name": "v1.4.5",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.5",
+      "published_at": "2024-01-29T16:15:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 135007360,
+      "tag_name": "v1.4.4",
+      "name": "v1.4.4",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.4",
+      "published_at": "2023-12-24T11:51:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 132384230,
+      "tag_name": "v1.4.3",
+      "name": "v1.4.3",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.3",
+      "published_at": "2023-12-02T16:31:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 131234500,
+      "tag_name": "v1.4.2",
+      "name": "v1.4.2",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.2",
+      "published_at": "2023-11-23T13:38:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 126445848,
+      "tag_name": "v1.4.1",
+      "name": "v1.4.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.1",
+      "published_at": "2023-10-24T15:43:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 125213501,
+      "tag_name": "v1.4.0",
+      "name": "v1.4.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.4.0",
+      "published_at": "2023-10-16T11:12:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 117151226,
+      "tag_name": "v1.3.0",
+      "name": "v1.3.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.3.0",
+      "published_at": "2023-08-14T11:56:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 115137575,
+      "tag_name": "v1.2.1",
+      "name": "v1.2.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.2.1",
+      "published_at": "2023-08-04T16:15:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 114673646,
+      "tag_name": "v1.2.0",
+      "name": "v1.2.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.2.0",
+      "published_at": "2023-08-01T15:27:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 113481568,
+      "tag_name": "v1.1",
+      "name": "v1.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.1",
+      "published_at": "2023-07-25T11:41:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 112899127,
+      "tag_name": "v1.0",
+      "name": "v1.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.0",
+      "published_at": "2023-07-20T02:23:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 108919649,
+      "tag_name": "v0.9.1",
+      "name": "v0.9.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.9.1",
+      "published_at": "2023-06-16T18:48:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 108134328,
+      "tag_name": "v0.9.0",
+      "name": "v0.9.0",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.9.0",
+      "published_at": "2023-06-11T10:03:38Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 103018264,
+      "tag_name": "v0.8.2",
+      "name": "v0.8.2",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.8.2",
+      "published_at": "2023-05-15T14:31:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 102177016,
+      "tag_name": "v0.8.1",
+      "name": "v0.8.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.8.1",
+      "published_at": "2023-05-08T08:35:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 102099525,
+      "tag_name": "v0.8",
+      "name": "v0.8",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.8",
+      "published_at": "2023-05-06T16:15:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 98082686,
+      "tag_name": "v0.7",
+      "name": "v0.7",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.7",
+      "published_at": "2023-04-04T18:53:10Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 97510490,
+      "tag_name": "v0.6",
+      "name": "v0.6",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.6",
+      "published_at": "2023-03-30T16:19:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 96291921,
+      "tag_name": "v0.5.1",
+      "name": "v0.5.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.5.1",
+      "published_at": "2023-03-21T04:29:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 96111603,
+      "tag_name": "v0.5",
+      "name": "",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.5",
+      "published_at": "2023-03-19T15:31:50Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 94568120,
+      "tag_name": "v0.4.1",
+      "name": "v0.4.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.4.1",
+      "published_at": "2023-03-05T21:47:31Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 94520448,
+      "tag_name": "v0.4",
+      "name": "v0.4",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.4",
+      "published_at": "2023-03-04T17:55:23Z",
+      "draft": false,
+      "prerelease": true
+    },
+    {
+      "id": 92988459,
+      "tag_name": "v0.2.1",
+      "name": "v0.2.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.2.1",
+      "published_at": "2023-02-20T07:26:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 92830810,
+      "tag_name": "v0.2",
+      "name": "v0.2",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.2",
+      "published_at": "2023-02-17T12:18:53Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 92035451,
+      "tag_name": "v0.1",
+      "name": "v0.1",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v0.1",
+      "published_at": "2023-02-10T15:00:47Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 245064425,
+      "tag_name": "v1.10.2",
+      "name": "v1.10.2",
+      "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2",
+      "published_at": "2025-09-05T12:45:22Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "## Changelog v1.10.2\r\n\r\n### Box / Scripts\r\n- **fix(scripts):** use `/system/bin/sh` and add `curl` timeout options in `box.tool`\r\n- **fix:** escape special characters in `restore_ini` sed replacement\r\n- **box.tool(subs):** extend protocol detection & clarify error log\r\n- **feat:** support Base64 subscription (Clash/MoMo) file in `box.tool`\r\n- **refactor(settings):** move GID list to separate `gid.list.cfg`\r\n- **feat:** add restore and apply `settings.ini` functionality\r\n- **box:** switch sing-box to single config file\r\n\r\n### BFR (APK) Manager\r\n- **fix:** ColorOS tiles not displayed\r\n- **remove:** redundant settings:  \r\n  - Background status monitoring  \r\n  - Auto-open panel on startup\r\n- **feat:**  \r\n  - Network interface display for intranet IP  \r\n  - Vibration feedback setting  \r\n  - Module detection (in addition to root detection)  \r\n  - Subscription status card  \r\n  - Option to hide/show the home page card  \r\n  - Crontab option in subscription settings  \r\n  - Auto-refresh button for logs\r\n- **improve:**  \r\n  - Reduced top bar margin  \r\n  - Timeout handling for IP lookup  \r\n  - Error display for subscriptions  \r\n  - Logs now auto-scroll to bottom (latest entries visible)\r\n- **change:** Subscription over 10 years or no expiry shown as **\"Long-term valid\"**\r\n- **ui:**  \r\n  - Status bar immersive mode enabled  \r\n  - WebUI interface not immersive\r\n\r\n---\r\n\r\n**Full Changelog**: [v1.10.1...v1.10.2](https://github.com/taamarin/box_for_magisk/compare/v1.10.1...v1.10.2)",
+      "assets": [
+        {
+          "id": 290009812,
+          "name": "BFR-20250905-1227-release.apk",
+          "browser_download_url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/BFR-20250905-1227-release.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 290009249,
+          "name": "box_for_root-v1.10.2.zip",
+          "browser_download_url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ]
+}

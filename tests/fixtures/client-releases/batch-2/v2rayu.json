@@ -1,0 +1,30 @@
+{
+  "id": 360058319,
+  "tag_name": "v5.2.0",
+  "name": "v5.2.0 - bug修复与功能优化",
+  "html_url": "https://github.com/yanue/V2rayU/releases/tag/v5.2.0",
+  "published_at": "2026-08-02T13:11:02Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "## What's Changed\r\n* 改进 TUN 路由排除与启动就绪检查 by @johnymoo in https://github.com/yanue/V2rayU/pull/1681\r\n* 增加 TUN 应用与进程路由规则 by @johnymoo in https://github.com/yanue/V2rayU/pull/1683\r\n* Fix workspace sleep and wake notification observers by @Harviewang in https://github.com/yanue/V2rayU/pull/1685\r\n\r\n## New Contributors\r\n* @johnymoo made their first contribution in https://github.com/yanue/V2rayU/pull/1681\r\n* @Harviewang made their first contribution in https://github.com/yanue/V2rayU/pull/1685\r\n\r\n**Full Changelog**: https://github.com/yanue/V2rayU/compare/v5.1.0...v5.2.0",
+  "assets": [
+    {
+      "id": 498909811,
+      "name": "V2rayU-64.dmg",
+      "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 498909348,
+      "name": "V2rayU-arm64.dmg",
+      "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 498910345,
+      "name": "V2rayU-dSYM.zip",
+      "browser_download_url": "https://github.com/yanue/V2rayU/releases/download/v5.2.0/V2rayU-dSYM.zip",
+      "state": "uploaded"
+    }
+  ]
+}

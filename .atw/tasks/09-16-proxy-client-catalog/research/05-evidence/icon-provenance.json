@@ -1,0 +1,160 @@
+[
+  {
+    "id": "clashx-meta",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/ClashX.Meta/v1.4.45/ClashX/Images.xcassets/AppIcon.appiconset/icon_256x256.png",
+    "ok": true,
+    "local": "public/client-icons/clashx-meta.png",
+    "sha256": "64649a351425ddb09c933d84b9cb8952e992b9b5e45b38580fc24b24ea96447a"
+  },
+  {
+    "id": "v2rayu",
+    "url": "https://raw.githubusercontent.com/yanue/V2rayU/v5.2.0/V2rayU/Resources/Assets.xcassets/AppIcon.appiconset/256.png",
+    "ok": true,
+    "local": "public/client-icons/v2rayu.png",
+    "sha256": "9a9bed83357dc70f238539fb9a0eb5d329f84a53d7f381f546743bb62ffaeb87"
+  },
+  {
+    "id": "xray-gui",
+    "url": "https://raw.githubusercontent.com/SaeedDev94/Xray/v12.6.0/metadata/en-US/images/icon.png",
+    "ok": true,
+    "local": "public/client-icons/xray-gui.png",
+    "sha256": "0cac9a235addd8a3c9ffae53e8608b38dd6893528283883bb5231a5d5a39228b"
+  },
+  {
+    "id": "clash-mi",
+    "url": "https://raw.githubusercontent.com/KaringX/clashmi/v1.0.29.1503/assets/demo/icon_256.png",
+    "ok": true,
+    "local": "public/client-icons/clash-mi.png",
+    "sha256": "5eae49fb48e75c122f621951cd136526ae5e28222c4c2ec4270c09ea9b017ec0"
+  },
+  {
+    "id": "flclashx",
+    "url": "https://raw.githubusercontent.com/pluralplay/FlClashX/v0.4.2/assets/images/icon.png",
+    "ok": true,
+    "local": "public/client-icons/flclashx.png",
+    "sha256": "894b72ee39c95f0b09f3cd6035d9451542bb18654206484c4bd0554117f2568e"
+  },
+  {
+    "id": "mikubox-for-android",
+    "url": "https://raw.githubusercontent.com/HatsuneMikuUwU/MikuBoxForAndroid/1.4.3-UwU-2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "ok": true,
+    "local": "public/client-icons/mikubox-for-android.png",
+    "sha256": "130bcd1ba15abc956bebe79db0c4123ad8cc5c6036bdf938c67573e9671eaede"
+  },
+  {
+    "id": "nekobox-by-starifly",
+    "url": "https://raw.githubusercontent.com/starifly/NekoBoxForAndroid/1.4.2-rev-24/app/src/main/ic_launcher-playstore.png",
+    "ok": true,
+    "local": "public/client-icons/nekobox-by-starifly.png",
+    "sha256": "0f3a2473a063d099489514023a291b2500538fe18c7da921ca5b8385fd80014f"
+  },
+  {
+    "id": "clash-xiaoy",
+    "url": "https://raw.githubusercontent.com/aimy1/clash-xiaoy/v2.7.20/backend/tauri/icons/128x128@2x.png",
+    "ok": true,
+    "local": "public/client-icons/clash-xiaoy.png",
+    "sha256": "bff37ca9aa76c615e94ef13a5565d9945064a236a9e91aa70696c542dd30de84"
+  },
+  {
+    "id": "monadbox",
+    "url": "https://raw.githubusercontent.com/MonadBoxLab/MonadBox/Monad/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "ok": true,
+    "local": "public/client-icons/monadbox.png",
+    "sha256": "dc45e2242d2337263d9945142fb92c236da73b573ae19c357b8f074d18ec3690"
+  },
+  {
+    "id": "vproxy",
+    "url": "https://raw.githubusercontent.com/5VNetwork/VX/v3.10.5/assets/dev/icon.png",
+    "ok": true,
+    "local": "public/client-icons/vproxy.png",
+    "sha256": "fd9ae5fe23c721a6413ad64d46ab0162cd86794299a3011ecb48cdf81f32d1c5"
+  },
+  {
+    "id": "flyclash",
+    "url": "https://raw.githubusercontent.com/GtxFury/FlyClash/main/src-tauri/icons/128x128@2x.png",
+    "ok": true,
+    "local": "public/client-icons/flyclash.png",
+    "sha256": "80278d751f2d1e62bb80e0a3eb4938c97f8add9e8ca71e8fd768afcd78a135be"
+  },
+  {
+    "id": "sudodroid",
+    "url": "https://raw.githubusercontent.com/SUDOKU-ASCII/sudoku-android/v0.3.1/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "ok": true,
+    "local": "public/client-icons/sudodroid.png",
+    "sha256": "97f0610d3f1d27454491889165e6b9c405f5a103ee2d5791775b749dc50bb182"
+  },
+  {
+    "id": "box-for-root",
+    "url": "https://raw.githubusercontent.com/taamarin/box_for_magisk/v1.10.2/docs/box.png",
+    "ok": true,
+    "local": "public/client-icons/box-for-root.png",
+    "sha256": "e4ecd0005f09cd3b6f1ecc074034d1edae7c6e20b7130c14f8e7309b54038f58"
+  },
+  {
+    "id": "surfing",
+    "url": "https://raw.githubusercontent.com/GitMetaio/Surfing/main/folder/logo.svg",
+    "ok": true,
+    "local": "public/client-icons/surfing.svg",
+    "sha256": "fa7ba18847e1f7a08859f44c5ee3df083925d343e1ea16b4da36e0c0e45a718d"
+  },
+  {
+    "id": "surfboard",
+    "url": "https://getsurfboard.com/img/logo.png",
+    "ok": true,
+    "local": "public/client-icons/surfboard.png",
+    "sha256": "823b83152aa0ff2a896d9f196f2e2d3ff0185192f0f82e95d2d6579b197b0893"
+  },
+  {
+    "id": "mconnect",
+    "url": "https://668993.xyz/assets/images/logo.svg",
+    "ok": true,
+    "local": "public/client-icons/mconnect.svg",
+    "sha256": "23192b43d95a8821a966389fa635be3336e7a01c602f7787a2d126c16720ddad",
+    "note": "仅规范化换行和行尾空白，保留官方SVG路径、颜色与滤镜"
+  },
+  {
+    "id": "anywhere",
+    "url": "https://storage.argsment.com/Anywhere-AppIcon-iOS.png",
+    "ok": true,
+    "local": "public/client-icons/anywhere.png",
+    "sha256": "2544f1c82793796a61643ae0f824662c7d8ec3857132f72380cfc8a4ef3f64eb"
+  },
+  {
+    "id": "happ-proxy",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/fd/dd/c6fddd03-9e7f-8fa5-dce5-ac7c9e3999c6/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+    "ok": true,
+    "local": "public/client-icons/happ-proxy.png",
+    "sha256": "c63b5b01cb27b1401fd99a2dd9492bc5e6ba8b0306d3dc1862255854bc9d47fc"
+  },
+  {
+    "id": "kunbox",
+    "url": "https://github.com/roseforljh/KunBox/blob/v2.24.1/app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "note": "官方adaptive-icon引用前景与黑色背景，按相同path/颜色转SVG"
+  },
+  {
+    "id": "flyclash-android",
+    "url": "https://github.com/GtxFury/FlyClash-Android/releases/download/v0.2.1.9-Alpha-Smart/flyclash-0.2.1.9-pbSmart-arm64-v8a-release.apk",
+    "note": "仅图标，未分发测试包；get_app_icon定位res/BW.xml，白色背景与0x7F0E0002最高密度res/5c.webp，合成PNG",
+    "apkSha256": "ac9bb55b21bcfd4e7b5d01279ee05a74f00b994cfcf76b19e43176737845b44d"
+  },
+  {
+    "id": "box4magisk",
+    "status": "用户已明确授权文字占位图，见PRD；不采用Vite/React默认素材"
+  },
+  {
+    "id": "insightbox",
+    "status": "用户已明确授权文字占位图，见PRD"
+  },
+  {
+    "id": "box-for-android",
+    "status": "用户已明确授权文字占位图，见PRD"
+  },
+  {
+    "id": "akashaproxy",
+    "status": "用户已明确授权文字占位图，见PRD"
+  },
+  {
+    "id": "clash-mix",
+    "status": "用户已明确授权文字占位图，见PRD"
+  }
+]

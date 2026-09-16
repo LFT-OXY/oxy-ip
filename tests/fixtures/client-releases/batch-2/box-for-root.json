@@ -1,0 +1,24 @@
+{
+  "id": 245064425,
+  "tag_name": "v1.10.2",
+  "name": "v1.10.2",
+  "html_url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2",
+  "published_at": "2025-09-05T12:45:22Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "## Changelog v1.10.2\r\n\r\n### Box / Scripts\r\n- **fix(scripts):** use `/system/bin/sh` and add `curl` timeout options in `box.tool`\r\n- **fix:** escape special characters in `restore_ini` sed replacement\r\n- **box.tool(subs):** extend protocol detection & clarify error log\r\n- **feat:** support Base64 subscription (Clash/MoMo) file in `box.tool`\r\n- **refactor(settings):** move GID list to separate `gid.list.cfg`\r\n- **feat:** add restore and apply `settings.ini` functionality\r\n- **box:** switch sing-box to single config file\r\n\r\n### BFR (APK) Manager\r\n- **fix:** ColorOS tiles not displayed\r\n- **remove:** redundant settings:  \r\n  - Background status monitoring  \r\n  - Auto-open panel on startup\r\n- **feat:**  \r\n  - Network interface display for intranet IP  \r\n  - Vibration feedback setting  \r\n  - Module detection (in addition to root detection)  \r\n  - Subscription status card  \r\n  - Option to hide/show the home page card  \r\n  - Crontab option in subscription settings  \r\n  - Auto-refresh button for logs\r\n- **improve:**  \r\n  - Reduced top bar margin  \r\n  - Timeout handling for IP lookup  \r\n  - Error display for subscriptions  \r\n  - Logs now auto-scroll to bottom (latest entries visible)\r\n- **change:** Subscription over 10 years or no expiry shown as **\"Long-term valid\"**\r\n- **ui:**  \r\n  - Status bar immersive mode enabled  \r\n  - WebUI interface not immersive\r\n\r\n---\r\n\r\n**Full Changelog**: [v1.10.1...v1.10.2](https://github.com/taamarin/box_for_magisk/compare/v1.10.1...v1.10.2)",
+  "assets": [
+    {
+      "id": 290009812,
+      "name": "BFR-20250905-1227-release.apk",
+      "browser_download_url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/BFR-20250905-1227-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 290009249,
+      "name": "box_for_root-v1.10.2.zip",
+      "browser_download_url": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip",
+      "state": "uploaded"
+    }
+  ]
+}

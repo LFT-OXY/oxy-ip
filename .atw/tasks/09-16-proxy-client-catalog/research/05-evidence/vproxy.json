@@ -1,0 +1,816 @@
+{
+  "id": "vproxy",
+  "referenceUrl": "https://huarun.win/apps/vproxy",
+  "referenceText": "Title: Vproxy（VX）：Android、iOS、Windows、macOS、Linux 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/vproxy\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Vproxy\n\n![Image 1: Vproxy 应用图标](https://huarun.win/app-icons/vproxy.webp)\n\nVX\n\n已更名为 VX 的跨平台代理客户端，使用 vx-core，提供节点、订阅、路由、链式代理、备份和服务器状态监控。\n\n设备：未识别 GitHub Release\n\n适用平台[Android](https://huarun.win/platform/android)[iOS](https://huarun.win/platform/ios)[Windows](https://huarun.win/platform/windows)[macOS](https://huarun.win/platform/macos)[Linux](https://huarun.win/platform/linux)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 vx-core[查看依据](https://github.com/5VNetwork/vx-core)\n\n主导开发[5VNetwork 团队](https://huarun.win/history/people/5vnetwork)5VNetwork\n\n**242** Star**23** Fork\n\n[查看代码仓库](https://github.com/5VNetwork/VX)\n统计更新于 2026年9月16日\n\n版本号 v3.10.5\n\n最后更新时间 2026年9月6日\n\n数据来源 GitHub Release\n\n## 官方变更日志\n\n更改了IDLE设置[查看官方版本来源 ↗](https://github.com/5VNetwork/VX/releases/tag/v3.10.5)\n应用简介\n\n## 关于 Vproxy\n\n已更名为 VX 的跨平台代理客户端，使用 vx-core，提供节点、订阅、路由、链式代理、备份和服务器状态监控。\n\n适用于 Android、iOS、Windows、macOS、Linux。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/vproxy)\n人物关联\n\n## 与 Vproxy 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/5vnetwork.webp)**5VNetwork 团队**主导开发 Vproxy / VX 核心团队 由该开发者主导开发或长期维护](https://huarun.win/history/people/5vnetwork)\n\n继续浏览\n\n## 相似平台的其他客户端\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/5VNetwork/VX",
+  "repository": {
+    "full_name": "5VNetwork/VX",
+    "html_url": "https://github.com/5VNetwork/VX",
+    "description": "VX代理客户端 完全开源全平台代理客户端，支持 Windows、macOS、Linux、Android、iOS 。代理 | VPN | 科学上网 | 翻墙 | 梯子",
+    "default_branch": "main",
+    "archived": false,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "homepage": "https://vx.5vnetwork.com"
+  },
+  "readme": "# VX代理客户端\n\n<div>\n\n[![English](https://img.shields.io/badge/Language-English-blue)](README_EN.md)\n[![中文](https://img.shields.io/badge/语言-中文-red)](README.md)\n\n</div>\n\n<img src=\"assets/dev/icon.png\" alt=\"VX 科学上网翻墙梯子代理 VPN 客户端\" width=\"50\"/>\n\n**VX**（曾用名 Vproxy）是一款免费、完全开源的全平台**代理客户端**，可用来当作 **梯子** 进行 **科学上网**、**翻墙**。支持 Windows、macOS、Linux、Android、iOS，导入机场订阅即可连接。\n\n官网下载：[vx.5vnetwork.com](https://vx.5vnetwork.com)\n\n## 为什么用 VX 科学上网、翻墙\n\n- **完全开源**：自动构建与发布，代码可审计，100% 安全可靠\n- **容易使用**：开箱即用，容易上手\n- **当梯子用**：支持常见机场订阅与代理节点，一键科学上网\n- **全平台**：同一套客户端覆盖电脑和手机\n\n## 功能特点\n\n- **主流协议**\n- **容易上手**\n- **容易配置的路由策略**\n- **实时日志**\n- **无 DNS 泄漏（TUN 模式下）**\n- **订阅管理**\n- **节点自动选择**\n- **服务器状态监控**\n- **VX 内核面板**\n- **链式代理 / 落地节点**\n- **代理共享**\n- **自动同步与备份（Pro）**\n- **DNS 策略**\n- **实时流量显示**\n- **免费试用**\n- **客服支持**\n\n> 带 Pro 为付费功能\n\n## 适用场景\n\n- 需要**科学上网**、**翻墙**的个人用户\n- 需要一款好用**梯子** / **代理客户端**的机场订阅用户\n\n\n## 安装\n\n前往官网下载：[vx.5vnetwork.com](https://vx.5vnetwork.com)\n\n## 面向机场主的深度链接说明\n\n### 格式 1\n\n```\nvx://add/sub://<base64_encoded_url>?remarks=<subscription_name>\n```\n\n**示范:**\n\n```\nvx://add/sub://aHR0cHM6Ly9leGFtcGxlLmNvbS9hYmNk?remarks=%E6%9C%BA%E5%9C%BA%0A\n```\n\n### 格式 2\n\n```\nvx://install-config?url=<subscription_url>&name=<subscription_name>\n```\n\n**示范:**\n\n```\nvx://install-config?url=https%3A%2F%2Fexample.com%2Fabcd&name=%E6%9C%BA%E5%9C%BA%0A\n```\n",
+  "treeSha": "a0e6a3dfbb349c1a250b1832385095a1c29d332a",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "LICENSE",
+    "README.md",
+    "README_EN.md",
+    "android/app/src/apk/AndroidManifest.xml",
+    "android/app/src/debug/AndroidManifest.xml",
+    "android/app/src/main/AndroidManifest.xml",
+    "android/app/src/main/res/drawable-v21/launch_background.xml",
+    "android/app/src/main/res/drawable/launch_background.xml",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-hdpi/launcher_icon.png",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-mdpi/launcher_icon.png",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xhdpi/launcher_icon.png",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxhdpi/launcher_icon.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "android/app/src/main/res/mipmap-xxxhdpi/launcher_icon.png",
+    "android/app/src/main/res/values-night/styles.xml",
+    "android/app/src/main/res/values/styles.xml",
+    "android/app/src/main/res/xml/provider_paths.xml",
+    "android/app/src/profile/AndroidManifest.xml",
+    "android/fastlane/report.xml",
+    "assets/dev/512 x 512.png",
+    "assets/dev/a.svg",
+    "assets/dev/ads/Group 1.png",
+    "assets/dev/ads/Rectangle 24 (1).png",
+    "assets/dev/ads/Rectangle 24 (2).png",
+    "assets/dev/ads/Rectangle 24.png",
+    "assets/dev/ads/Rectangle 25.png",
+    "assets/dev/ads/Rectangle 26.png",
+    "assets/dev/ads/Rectangle 28.png",
+    "assets/dev/ads/Rectangle 29.png",
+    "assets/dev/ads/Rectangle 34.png",
+    "assets/dev/ads/Rectangle 37.png",
+    "assets/dev/ads/Rectangle 38.png",
+    "assets/dev/ads/Rectangle 39.png",
+    "assets/dev/ads/Rectangle 46.png",
+    "assets/dev/ads/Rectangle 51.png",
+    "assets/dev/b.svg",
+    "assets/dev/c.svg",
+    "assets/dev/icon.png",
+    "assets/dev/win.png",
+    "assets/icons/V.png",
+    "assets/icons/V.svg",
+    "assets/icons/V_outline.png",
+    "assets/icons/V_outline.svg",
+    "assets/icons/ad.png",
+    "assets/icons/apple-icon.svg",
+    "assets/icons/flags/other/checkered.svg",
+    "assets/icons/flags/other/chequered.svg",
+    "assets/icons/flags/other/earth.svg",
+    "assets/icons/flags/other/jolly_roger.svg",
+    "assets/icons/flags/other/klingon.svg",
+    "assets/icons/flags/other/lgbt-progress.svg",
+    "assets/icons/flags/other/lgbt-transgender.svg",
+    "assets/icons/flags/other/lgbt.svg",
+    "assets/icons/flags/other/mars.svg",
+    "assets/icons/flags/other/nato.svg",
+    "assets/icons/flags/other/olympics.svg",
+    "assets/icons/flags/other/pirate.svg",
+    "assets/icons/flags/other/un.svg",
+    "assets/icons/flags/other/united_nations.svg",
+    "assets/icons/github-mark-white.svg",
+    "assets/icons/github-mark.svg",
+    "assets/icons/google.png",
+    "assets/icons/home_fill.png",
+    "assets/icons/home_outline.png",
+    "assets/icons/ios_icon.png",
+    "assets/icons/log_fill.png",
+    "assets/icons/log_outline.png",
+    "assets/icons/macos_icon.png",
+    "assets/icons/microsoft_logo.png",
+    "assets/icons/speed_fill.png",
+    "assets/icons/speed_outline.png",
+    "assets/icons/telegram_icon.png",
+    "assets/icons/x_logo_black.png",
+    "assets/icons/x_logo_white.png",
+    "assets/icons/youtube.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+    "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+    "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+    "ios/fastlane/README.md",
+    "ios/fastlane/report.xml",
+    "lib/oss_licenses.dart",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+    "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+    "macos/Runner/Assets/x.svg"
+  ],
+  "releaseList": [
+    {
+      "id": 383595567,
+      "tag_name": "v3.10.5",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.5",
+      "published_at": "2026-09-06T13:34:09Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 382228911,
+      "tag_name": "v3.10.4",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.4",
+      "published_at": "2026-09-03T18:04:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 367170945,
+      "tag_name": "v3.10.3",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.3",
+      "published_at": "2026-08-08T10:02:48Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 356834048,
+      "tag_name": "v3.10.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.2",
+      "published_at": "2026-07-20T15:53:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 351396051,
+      "tag_name": "v3.10.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.1",
+      "published_at": "2026-07-09T08:06:13Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 346618058,
+      "tag_name": "v3.10.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.0",
+      "published_at": "2026-06-30T04:48:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 339429186,
+      "tag_name": "v3.9.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.9.2",
+      "published_at": "2026-06-15T09:01:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 338161404,
+      "tag_name": "v3.9.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.9.0",
+      "published_at": "2026-06-11T18:35:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 333507536,
+      "tag_name": "v3.8.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.8.0",
+      "published_at": "2026-06-03T05:40:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 330110505,
+      "tag_name": "v3.7.5",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.7.5",
+      "published_at": "2026-05-27T10:42:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 321661093,
+      "tag_name": "v3.7.4",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.7.4",
+      "published_at": "2026-05-13T07:09:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 319898021,
+      "tag_name": "v3.7.3",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.7.3",
+      "published_at": "2026-05-09T09:07:54Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 317029572,
+      "tag_name": "v3.7.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.7.1",
+      "published_at": "2026-05-04T07:04:45Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 316878275,
+      "tag_name": "v3.7.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.7.0",
+      "published_at": "2026-05-03T15:25:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 312704625,
+      "tag_name": "v3.6.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.6.2",
+      "published_at": "2026-04-23T12:11:22Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 310742591,
+      "tag_name": "v3.6.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.6.1",
+      "published_at": "2026-04-18T18:08:49Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 308079174,
+      "tag_name": "v3.6.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.6.0",
+      "published_at": "2026-04-12T20:28:29Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 307719458,
+      "tag_name": "v3.5.9",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.9",
+      "published_at": "2026-04-10T20:23:39Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 306796041,
+      "tag_name": "v3.5.8",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.8",
+      "published_at": "2026-04-08T21:09:36Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 304857764,
+      "tag_name": "v3.5.6",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.6",
+      "published_at": "2026-04-02T21:07:17Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 298913340,
+      "tag_name": "v3.5.3",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.3",
+      "published_at": "2026-03-19T11:31:01Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 298342674,
+      "tag_name": "v3.5.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.2",
+      "published_at": "2026-03-18T09:13:28Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 297545233,
+      "tag_name": "v3.5.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.1",
+      "published_at": "2026-03-16T15:44:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 297220149,
+      "tag_name": "v3.5.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.5.0",
+      "published_at": "2026-03-15T19:39:55Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 295519210,
+      "tag_name": "v3.4.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.4.2",
+      "published_at": "2026-03-11T08:04:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 294286007,
+      "tag_name": "v3.4.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.4.1",
+      "published_at": "2026-03-07T19:12:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 293905734,
+      "tag_name": "v3.4.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.4.0",
+      "published_at": "2026-03-06T11:57:19Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 292238892,
+      "tag_name": "v3.3.12",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.12",
+      "published_at": "2026-03-02T20:29:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 280018696,
+      "tag_name": "v3.3.11",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.11",
+      "published_at": "2026-01-26T18:10:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 278362805,
+      "tag_name": "v3.3.10",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.10",
+      "published_at": "2026-01-20T17:55:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 276767948,
+      "tag_name": "v3.3.9",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.9",
+      "published_at": "2026-01-14T15:33:07Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 275052502,
+      "tag_name": "v3.3.8",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.8",
+      "published_at": "2026-01-08T06:45:00Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273722689,
+      "tag_name": "v3.3.6",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.6",
+      "published_at": "2026-01-01T18:22:58Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273581980,
+      "tag_name": "v3.3.5",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.5",
+      "published_at": "2025-12-31T11:32:10Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273257093,
+      "tag_name": "v3.3.4",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.4",
+      "published_at": "2025-12-29T18:46:47Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273146428,
+      "tag_name": "v3.3.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.2",
+      "published_at": "2025-12-29T07:43:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 273054357,
+      "tag_name": "v3.3.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.3.1",
+      "published_at": "2025-12-28T08:23:33Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272808947,
+      "tag_name": "v3.2.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.2.0",
+      "published_at": "2025-12-25T16:44:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 272052646,
+      "tag_name": "v3.1.0",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.1.0",
+      "published_at": "2025-12-21T20:51:14Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271968040,
+      "tag_name": "v3.0.4",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.0.4",
+      "published_at": "2025-12-20T20:14:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 271786571,
+      "tag_name": "v3.0.3",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.0.3",
+      "published_at": "2025-12-19T15:09:16Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 270790510,
+      "tag_name": "v3.0.2",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.0.2",
+      "published_at": "2025-12-16T15:38:21Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 269481737,
+      "tag_name": "v3.0.1",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.0.1",
+      "published_at": "2025-12-11T11:20:03Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 262746201,
+      "tag_name": "v2.5.6",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.5.6",
+      "published_at": "2025-11-16T10:07:34Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 261330272,
+      "tag_name": "v2.5.5",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.5.5",
+      "published_at": "2025-11-11T06:17:18Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 256031653,
+      "tag_name": "v2.4.7",
+      "name": "v2.4.7",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.7",
+      "published_at": "2025-10-21T14:24:57Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 254273992,
+      "tag_name": "v2.4.6",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.6",
+      "published_at": "2025-10-14T07:28:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 254258209,
+      "tag_name": "v2.4.5",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.5",
+      "published_at": "2025-10-14T05:46:05Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 254077235,
+      "tag_name": "v2.4.4",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.4",
+      "published_at": "2025-10-13T13:39:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 253531335,
+      "tag_name": "v2.4.1",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.1",
+      "published_at": "2025-10-10T04:35:51Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 252266776,
+      "tag_name": "v2.4.0",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.4.0",
+      "published_at": "2025-10-05T16:05:06Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 250067321,
+      "tag_name": "v2.3.2",
+      "name": "Vproxy 下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.3.2",
+      "published_at": "2025-09-25T18:13:56Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 248789491,
+      "tag_name": "v2.3.1",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.3.1",
+      "published_at": "2025-09-20T13:45:12Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 248288303,
+      "tag_name": "v2.3.0",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.3.0",
+      "published_at": "2025-09-18T12:32:02Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 245866037,
+      "tag_name": "v2.2.0",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.2.0",
+      "published_at": "2025-09-09T14:28:43Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 243399471,
+      "tag_name": "v2.1.4",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.1.4",
+      "published_at": "2025-08-29T07:51:15Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 243055535,
+      "tag_name": "v2.1.3",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.1.3",
+      "published_at": "2025-08-28T05:43:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242633062,
+      "tag_name": "v2.1.2",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.1.2",
+      "published_at": "2025-08-26T16:39:27Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 242105636,
+      "tag_name": "v2.1.1",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.1.1",
+      "published_at": "2025-08-24T14:29:11Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 241182113,
+      "tag_name": "v2.0.16",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.0.16",
+      "published_at": "2025-08-20T11:40:37Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 240799315,
+      "tag_name": "v2.0.15",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.0.15",
+      "published_at": "2025-08-19T07:35:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 239121343,
+      "tag_name": "v2.0.13",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.0.13",
+      "published_at": "2025-08-11T17:37:32Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 238854109,
+      "tag_name": "v2.0.12",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.0.12",
+      "published_at": "2025-08-10T15:07:59Z",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 233043407,
+      "tag_name": "v2.0.11",
+      "name": "Vproxy下载",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v2.0.11",
+      "published_at": "2025-07-17T05:27:40Z",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "releaseSamples": [
+    {
+      "id": 383595567,
+      "tag_name": "v3.10.5",
+      "name": "",
+      "html_url": "https://github.com/5VNetwork/VX/releases/tag/v3.10.5",
+      "published_at": "2026-09-06T13:34:09Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "更改了IDLE设置",
+      "assets": [
+        {
+          "id": 547254762,
+          "name": "appcast.xml",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/appcast.xml",
+          "state": "uploaded"
+        },
+        {
+          "id": 547357350,
+          "name": "vx-arm64-v8a.apk",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk",
+          "state": "uploaded"
+        },
+        {
+          "id": 547357347,
+          "name": "vx-arm64-v8a.apk.zip",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64-v8a.apk.zip",
+          "state": "uploaded"
+        },
+        {
+          "id": 547236456,
+          "name": "vx-arm64.deb",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 547239178,
+          "name": "vx-arm64.rpm",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-arm64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 547357346,
+          "name": "vx-universal.apk.zip",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-universal.apk.zip",
+          "state": "uploaded"
+        },
+        {
+          "id": 547236362,
+          "name": "vx-x64.deb",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.deb",
+          "state": "uploaded"
+        },
+        {
+          "id": 547239339,
+          "name": "vx-x64.rpm",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/vx-x64.rpm",
+          "state": "uploaded"
+        },
+        {
+          "id": 547254760,
+          "name": "VX.dmg",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/VX.dmg",
+          "state": "uploaded"
+        },
+        {
+          "id": 547242841,
+          "name": "VXInstaller.exe",
+          "browser_download_url": "https://github.com/5VNetwork/VX/releases/download/v3.10.5/VXInstaller.exe",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "lookup": {
+    "resultCount": 1,
+    "results": [
+      {
+        "trackId": 6744701950,
+        "bundleId": "com.5vnetwork.x",
+        "trackName": "VX Proxy Client",
+        "sellerName": "5V Network LLC",
+        "kind": "software",
+        "wrapperType": "software",
+        "trackViewUrl": "https://apps.apple.com/us/app/vx-proxy-client/id6744701950?uo=4",
+        "version": "3.10.4",
+        "currentVersionReleaseDate": "2026-09-04T07:27:07Z",
+        "price": 0.0,
+        "currency": "USD",
+        "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/f1/f5/45f1f54f-59b8-c7c7-8c3a-ba0125816b36/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+      }
+    ]
+  },
+  "applePage": "Title: VX Proxy Client App - App Store\n\nURL Source: https://apps.apple.com/us/app/vproxy/id6744701950\n\nMarkdown Content:\nSearch \n\n*   [Today](https://apps.apple.com/us/iphone/today)\n*   [Games](https://apps.apple.com/us/iphone/games)\n*   [Apps](https://apps.apple.com/us/iphone/apps)\n*   [Arcade](https://apps.apple.com/us/iphone/arcade)\n\nPlatform\n*   [iPhone](https://apps.apple.com/us/iphone/today)\n*   [iPad](https://apps.apple.com/us/ipad/today)\n*   [Mac](https://apps.apple.com/us/mac/discover)\n*   [Vision](https://apps.apple.com/us/vision/apps-and-games)\n*   [Watch](https://apps.apple.com/us/watch/apps-and-games)\n*   [TV](https://apps.apple.com/us/tv/discover)\n\n![Image 1](https://apps.apple.com/assets/artwork/1x1.gif)\n\n![Image 2](https://apps.apple.com/assets/artwork/1x1.gif)\n\n# VX Proxy Client\n\nEasy-to-use proxy client\n\nFree · In‑App Purchases\n\n Share \n\n*   \n[14 Ratings 4.4 5.](https://apps.apple.com/us/app/vproxy/id6744701950#productRatings)\n\n*   [Age Rating 4+Years](https://apps.apple.com/us/app/vproxy/id6744701950#information) \n*   [Category ![Image 3](https://apps.apple.com/assets/artwork/1x1.gif) Utilities](https://apps.apple.com/us/app/vproxy/id6744701950#information) \n*   [Developer 5V Network](https://apps.apple.com/us/developer/5v-network/id1808971186?platform=iphone) \n*   [Language EN English](https://apps.apple.com/us/app/vproxy/id6744701950#information) \n*   [Size 133.4 MB](https://apps.apple.com/us/app/vproxy/id6744701950#information) \n\n*   ![Image 4](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 5](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 6](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 7](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 8](https://apps.apple.com/assets/artwork/1x1.gif)    \n*   ![Image 9](https://apps.apple.com/assets/artwork/1x1.gif)    \n\niPhone, iPad, Mac\n\nVX can be used to connect to proxy servers to accelerate your network, protect your privacy and so on. Features · Fully Open source, released automatically by Github Actions · Multi-platform support · Support major proxy protocols · Customize routing rules · Customize DNS servers · Realtime logging · Automatically select optimal nodes · No DNS leaking · Support node subscriptions · Cross-platforms sync and backup · Server status monitoring and management · Deploy proxy servres with one click · Customer support\n\nmore\n\n## [Ratings & Reviews](https://apps.apple.com/us/app/6744701950?see-all=reviews&platform=iphone)\n\n*   4.4 out of 5  14 Ratings                                        \n\n*   \n### 支持开源 \n\nAug 17\n\nzdjnfn\n\n感谢开发者🙏，完全替代小火箭\n\n# 支持开源\n\nAug 17\n\nzdjnfn\n\n感谢开发者🙏，完全替代小火箭\n\n*   \n### so bad \n\n07/24/2025\n\nghasem abadan\n\ntoo many bugs and neded update and restore purches for premium accunts\n\n# so bad\n\n07/24/2025\n\nghasem abadan\n\ntoo many bugs and neded update and restore purches for premium accunts\n\n*   \n### 现在已经很好用了 \n\nJan 2\n\n大南瓜大大大\n\n现在已经很好用了\n\nDeveloper Response\n\n谢谢评价。很抱歉，1.1.6有很多bug，请下载最新版本Vproxy。\n\n# 现在已经很好用了\n\nJan 2\n\n大南瓜大大大\n\n现在已经很好用了\n\nDeveloper Response 05/21/2025\n\n谢谢评价。很抱歉，1.1.6有很多bug，请下载最新版本Vproxy。\n\n*   \n### 请开发者考虑开源 \n\n07/17/2025\n\n睿里的锋芒\n\n开源\n\n# 请开发者考虑开源\n\n07/17/2025\n\n睿里的锋芒\n\n开源\n\n## What’s New\n\n# Version History\n\n*   Fix bugs\n\n3.10.4 Sep 4   \n*   Fix bugs\n\n3.10.2 Jul 22   \n*   Fix bugs and improve\n\n3.10.1 Jul 13   \n*   Fix bugs\n\n3.8.0 Jun 5   \n*   Fix bugs\n\n3.7.4 May 14   \n*   Fix bugs and improve\n\n3.7.1 May 5   \n*   Fix bugs and improve\n\n3.6.2 Apr 25   \n*   Fix bugs\n\n3.5.6 Apr 3   \n*   Fix bugs and improve\n\n3.5.3 Mar 19   \n*   Fix bugs\n\n3.4.1 Mar 12   \n*   Fix bugs\n\n3.3.12 Mar 5   \n*   Improve memory\n\n3.3.11 Feb 6   \n*   Fix bugs and improve\n\n3.3.10 Jan 21   \n*   Fix bugs and improve\n\n3.3.9 Jan 15   \n*   Fix bug and improve\n\n3.3.8 Jan 9   \n*   Fix bugs and improve\n\n3.3.6 Jan 7   \n*   Fix bugs and improve\n\n3.0.3 12/19/2025   \n*   Fix bugs and improve\n\n3.0.2 12/17/2025   \n*   Fix bug and improve\n\n3.0.1 12/16/2025   \n*   Fix bug and improve\n\n2.5.7 11/25/2025   \n*   Fix bugs and improve\n\n2.5.6 11/17/2025   \n*   Fix bugs and improve\n\n2.5.5 11/12/2025   \n*   Fix bugs and improve UI\n\n2.5.1 11/06/2025   \n*   Fix bugs and improve\n\n2.5.0 10/29/2025   \n*   Fix a bug related to hysteria\n\n2.4.7 10/20/2025   \n\nFix bugs\n\nmore\n\nVersion 3.10.4 Sep 4\n\n## [App Privacy](https://apps.apple.com/us/app/vproxy/id6744701950#)\n\n# App Privacy\n\nThe developer, **5V Network**, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the [developer’s privacy policy](https://xproxy.5vnetwork.com/en/privacy).\n\nTo help you better understand the developer’s responses, see [Privacy Definitions and Examples](https://apps.apple.com/us/iphone/story/id1539235847).\n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n### Data Not Linked to You\n\nThe following data, which may be collected but is not linked to your identity, may be used for the following purposes:\n\n#### App Functionality\n\n*   Diagnostics\n    *   Crash Data\n\nThe developer, **5V Network**, indicated that the app’s privacy practices may include handling of data as described below. For more information, see the [developer’s privacy policy](https://xproxy.5vnetwork.com/en/privacy).\n\n*   \n### Data Not Linked to You\n\nThe following data may be collected but it is not linked to your identity:\n\n    *    Diagnostics \n\nPrivacy practices may vary, for example, based on the features you use or your age. [Learn More](https://apps.apple.com/us/iphone/story/id1538632801)\n\n## Accessibility\n\nThe developer has not yet indicated which accessibility features this app supports. [Learn More](https://apps.apple.com/story/id1814164299)\n\n## Information\n\nSeller\n*   5V Network LLC\n\nSize\n*   133.4 MB\n\nCategory\n*   Utilities\n\nCompatibility\n\nRequires iOS 15.0 or later. \n*   **iPhone**  \nRequires iOS 15.0 or later.\n*    \n*   **iPad**  \nRequires iPadOS 15.0 or later.\n*    \n*   **iPod touch**  \nRequires iOS 15.0 or later.\n*    \n*   **Mac**  \nRequires macOS 13 or later.\n*    \n*   **Apple Vision**  \nRequires visionOS 1.0 or later.\n\nLanguages\n*   English\n\nAge Rating\n\n4+ \n*   4+  \n*   [Learn More](https://apps.apple.com/us/iphone/story/id1825160725) \n*    \n*   **Contains**  \nAdvertising\n\nIn-App Purchases\n\nYes \n*   Pro$4.99 \n*   [Learn More](https://apps.apple.com/us/iphone/story/id1436214772) \n\nCopyright\n*   © 5V Network LLC\n\n*   [Developer Website](https://vx.5vnetwork.com/) \n*   [Privacy Policy](https://xproxy.5vnetwork.com/en/privacy) \n\n## [More by 5V Network](https://apps.apple.com/us/developer/5v-network/id1808971186)\n\n*   [View ![Image 10](https://apps.apple.com/assets/artwork/1x1.gif) UmiVPN Your freedom, Umi protects](https://apps.apple.com/us/app/umivpn/id6751115042)   \n*   [View ![Image 11](https://apps.apple.com/assets/artwork/1x1.gif) 努努加速器 Utilities](https://apps.apple.com/us/app/%E5%8A%AA%E5%8A%AA%E5%8A%A0%E9%80%9F%E5%99%A8/id6790730070)   \n\n## [You Might Also Like](https://apps.apple.com/us/app/6744701950?see-all=customers-also-bought-apps&platform=iphone)\n\n*   [View ![Image 12](https://apps.apple.com/assets/artwork/1x1.gif) Pawdoll Proxy Utility](https://apps.apple.com/us/app/pawdoll/id6451119013)   \n*   [View ![Image 13](https://apps.apple.com/assets/artwork/1x1.gif) Segment VPN Multi-Core VPN](https://apps.apple.com/us/app/segment-vpn/id6746385685)   \n*   [View ![Image 14](https://apps.apple.com/assets/artwork/1x1.gif) Everywhere Proxy Utilities](https://apps.apple.com/us/app/everywhere-proxy/id6766003090)   \n*   [View ![Image 15](https://apps.apple.com/assets/artwork/1x1.gif) Connect Now Utilities](https://apps.apple.com/us/app/connect-now/id6749354119)   \n*   [View ![Image 16](https://apps.apple.com/assets/artwork/1x1.gif) Tunna Privacy at Your Fingertips](https://apps.apple.com/us/app/tunna/id6471652937)   \n*   [View ![Image 17](https://apps.apple.com/assets/artwork/1x1.gif) Anywhere Proxy Powerful Native Proxy Client](https://apps.apple.com/us/app/anywhere-proxy/id6758235178)   \n*   [View ![Image 18](https://apps.apple.com/assets/artwork/1x1.gif) AnyBridge Advanced SSH Tunnel Utility](https://apps.apple.com/us/app/anybridge/id6749492090)   \n*   [View ![Image 19](https://apps.apple.com/assets/artwork/1x1.gif) crossgfw Networking proxy utility](https://apps.apple.com/us/app/crossgfw/id1618380558)   \n*   [View ![Image 20](https://apps.apple.com/assets/artwork/1x1.gif) Neko Dash - Just a Dashboard 连接并管理已有 Clash 控制器前端工具](https://apps.apple.com/us/app/neko-dash-just-a-dashboard/id6758199321)   \n*   [View ![Image 21](https://apps.apple.com/assets/artwork/1x1.gif) Hako VPN Fast Secure Unlimited Secure, Stable, and Simple.](https://apps.apple.com/us/app/hako-vpn-fast-secure-unlimited/id6739999129)   \n\nUnited States\n*   [Español (México)](https://apps.apple.com/us/app/vproxy/id6744701950?l=es-MX)\n*   [العربية](https://apps.apple.com/us/app/vproxy/id6744701950?l=ar)\n*   [Русский](https://apps.apple.com/us/app/vproxy/id6744701950?l=ru)\n*   [简体中文](https://apps.apple.com/us/app/vproxy/id6744701950?l=zh-Hans-CN)\n*   [Français (France)](https://apps.apple.com/us/app/vproxy/id6744701950?l=fr-FR)\n*   [한국어](https://apps.apple.com/us/app/vproxy/id6744701950?l=ko)\n*   [Português (Brazil)](https://apps.apple.com/us/app/vproxy/id6744701950?l=pt-BR)\n*   [Tiếng Việt](https://apps.apple.com/us/app/vproxy/id6744701950?l=vi)\n*   [繁體中文 (台灣)](https://apps.apple.com/us/app/vproxy/id6744701950?l=zh-Hant-TW)\n\nSelect a country or region\n\n## Africa, Middle East, and India\n\nSee All \n\n*   [Algeria](https://apps.apple.com/dz/iphone/today)\n*   [Angola](https://apps.apple.com/ao/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Azerbaijan](https://apps.apple.com/az/iphone/today)\n*   [Bahrain](https://apps.apple.com/bh/iphone/today)\n*   [Benin](https://apps.apple.com/bj/iphone/today)\n*   [Botswana](https://apps.apple.com/bw/iphone/today)\n*   [Burkina Faso](https://apps.apple.com/bf/iphone/today)\n*   [Cameroun](https://apps.apple.com/cm/iphone/today)\n*   [Cape Verde](https://apps.apple.com/cv/iphone/today)\n*   [Chad](https://apps.apple.com/td/iphone/today)\n*   [Côte d’Ivoire](https://apps.apple.com/ci/iphone/today)\n*   [Congo, The Democratic Republic Of The](https://apps.apple.com/cd/iphone/today)\n*   [Egypt](https://apps.apple.com/eg/iphone/today)\n*   [Eswatini](https://apps.apple.com/sz/iphone/today)\n*   [Gabon](https://apps.apple.com/ga/iphone/today)\n*   [Gambia](https://apps.apple.com/gm/iphone/today)\n*   [Ghana](https://apps.apple.com/gh/iphone/today)\n*   [Guinea-Bissau](https://apps.apple.com/gw/iphone/today)\n*   [India](https://apps.apple.com/in/iphone/today)\n*   [Iraq](https://apps.apple.com/iq/iphone/today)\n*   [Israel](https://apps.apple.com/il/iphone/today)\n*   [Jordan](https://apps.apple.com/jo/iphone/today)\n*   [Kenya](https://apps.apple.com/ke/iphone/today)\n*   [Kuwait](https://apps.apple.com/kw/iphone/today)\n*   [Lebanon](https://apps.apple.com/lb/iphone/today)\n*   [Liberia](https://apps.apple.com/lr/iphone/today)\n*   [Libya](https://apps.apple.com/ly/iphone/today)\n*   [Madagascar](https://apps.apple.com/mg/iphone/today)\n*   [Malawi](https://apps.apple.com/mw/iphone/today)\n*   [Mali](https://apps.apple.com/ml/iphone/today)\n*   [Mauritania](https://apps.apple.com/mr/iphone/today)\n*   [Mauritius](https://apps.apple.com/mu/iphone/today)\n*   [Morocco](https://apps.apple.com/ma/iphone/today)\n*   [Mozambique](https://apps.apple.com/mz/iphone/today)\n*   [Namibia](https://apps.apple.com/na/iphone/today)\n*   [Niger (English)](https://apps.apple.com/ne/iphone/today)\n*   [Nigeria](https://apps.apple.com/ng/iphone/today)\n*   [Oman](https://apps.apple.com/om/iphone/today)\n*   [Qatar](https://apps.apple.com/qa/iphone/today)\n*   [Congo, Republic of](https://apps.apple.com/cg/iphone/today)\n*   [Rwanda](https://apps.apple.com/rw/iphone/today)\n*   [São Tomé and Príncipe](https://apps.apple.com/st/iphone/today)\n*   [Saudi Arabia](https://apps.apple.com/sa/iphone/today)\n*   [Senegal](https://apps.apple.com/sn/iphone/today)\n*   [Seychelles](https://apps.apple.com/sc/iphone/today)\n*   [Sierra Leone](https://apps.apple.com/sl/iphone/today)\n*   [South Africa](https://apps.apple.com/za/iphone/today)\n*   [Sri Lanka](https://apps.apple.com/lk/iphone/today)\n*   [Tajikistan](https://apps.apple.com/tj/iphone/today)\n*   [Tanzania, United Republic Of](https://apps.apple.com/tz/iphone/today)\n*   [Tunisia](https://apps.apple.com/tn/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [United Arab Emirates](https://apps.apple.com/ae/iphone/today)\n*   [Uganda](https://apps.apple.com/ug/iphone/today)\n*   [Yemen](https://apps.apple.com/ye/iphone/today)\n*   [Zambia](https://apps.apple.com/zm/iphone/today)\n*   [Zimbabwe](https://apps.apple.com/zw/iphone/today)\n\n## Asia Pacific\n\nSee All \n\n*   [Afghanistan](https://apps.apple.com/af/iphone/today)\n*   [Australia](https://apps.apple.com/au/iphone/today)\n*   [Bhutan](https://apps.apple.com/bt/iphone/today)\n*   [Brunei Darussalam](https://apps.apple.com/bn/iphone/today)\n*   [Cambodia](https://apps.apple.com/kh/iphone/today)\n*   [中国大陆](https://apps.apple.com/cn/iphone/today)\n*   [Fiji](https://apps.apple.com/fj/iphone/today)\n*   [香港](https://apps.apple.com/hk/iphone/today)\n*   [Indonesia (English)](https://apps.apple.com/id/iphone/today)\n*   [日本](https://apps.apple.com/jp/iphone/today)\n*   [Kazakhstan](https://apps.apple.com/kz/iphone/today)\n*   [대한민국](https://apps.apple.com/kr/iphone/today)\n*   [Kyrgyzstan](https://apps.apple.com/kg/iphone/today)\n*   [Lao People's Democratic Republic](https://apps.apple.com/la/iphone/today)\n*   [澳門](https://apps.apple.com/mo/iphone/today)\n*   [Malaysia (English)](https://apps.apple.com/my/iphone/today)\n*   [Maldives](https://apps.apple.com/mv/iphone/today)\n*   [Micronesia, Federated States of](https://apps.apple.com/fm/iphone/today)\n*   [Mongolia](https://apps.apple.com/mn/iphone/today)\n*   [Myanmar](https://apps.apple.com/mm/iphone/today)\n*   [Nauru](https://apps.apple.com/nr/iphone/today)\n*   [Nepal](https://apps.apple.com/np/iphone/today)\n*   [New Zealand](https://apps.apple.com/nz/iphone/today)\n*   [Pakistan](https://apps.apple.com/pk/iphone/today)\n*   [Palau](https://apps.apple.com/pw/iphone/today)\n*   [Papua New Guinea](https://apps.apple.com/pg/iphone/today)\n*   [Philippines](https://apps.apple.com/ph/iphone/today)\n*   [Singapore](https://apps.apple.com/sg/iphone/today)\n*   [Solomon Islands](https://apps.apple.com/sb/iphone/today)\n*   [台灣](https://apps.apple.com/tw/iphone/today)\n*   [Thailand](https://apps.apple.com/th/iphone/today)\n*   [Tonga](https://apps.apple.com/to/iphone/today)\n*   [Turkmenistan](https://apps.apple.com/tm/iphone/today)\n*   [Uzbekistan](https://apps.apple.com/uz/iphone/today)\n*   [Vanuatu](https://apps.apple.com/vu/iphone/today)\n*   [Vietnam](https://apps.apple.com/vn/iphone/today)\n\n## Europe\n\nSee All \n\n*   [Albania](https://apps.apple.com/al/iphone/today)\n*   [Armenia](https://apps.apple.com/am/iphone/today)\n*   [Österreich](https://apps.apple.com/at/iphone/today)\n*   [Belarus](https://apps.apple.com/by/iphone/today)\n*   [Belgium](https://apps.apple.com/be/iphone/today)\n*   [Bosnia and Herzegovina](https://apps.apple.com/ba/iphone/today)\n*   [Bulgaria](https://apps.apple.com/bg/iphone/today)\n*   [Croatia](https://apps.apple.com/hr/iphone/today)\n*   [Cyprus](https://apps.apple.com/cy/iphone/today)\n*   [Czechia](https://apps.apple.com/cz/iphone/today)\n*   [Denmark](https://apps.apple.com/dk/iphone/today)\n*   [Estonia](https://apps.apple.com/ee/iphone/today)\n*   [Finland](https://apps.apple.com/fi/iphone/today)\n*   [France (Français)](https://apps.apple.com/fr/iphone/today)\n*   [Georgia](https://apps.apple.com/ge/iphone/today)\n*   [Deutschland](https://apps.apple.com/de/iphone/today)\n*   [Greece](https://apps.apple.com/gr/iphone/today)\n*   [Hungary](https://apps.apple.com/hu/iphone/today)\n*   [Iceland](https://apps.apple.com/is/iphone/today)\n*   [Ireland](https://apps.apple.com/ie/iphone/today)\n*   [Italia](https://apps.apple.com/it/iphone/today)\n*   [Kosovo](https://apps.apple.com/xk/iphone/today)\n*   [Latvia](https://apps.apple.com/lv/iphone/today)\n*   [Lithuania](https://apps.apple.com/lt/iphone/today)\n*   [Luxembourg (English)](https://apps.apple.com/lu/iphone/today)\n*   [Malta](https://apps.apple.com/mt/iphone/today)\n*   [Moldova, Republic Of](https://apps.apple.com/md/iphone/today)\n*   [Montenegro](https://apps.apple.com/me/iphone/today)\n*   [Nederland](https://apps.apple.com/nl/iphone/today)\n*   [North Macedonia](https://apps.apple.com/mk/iphone/today)\n*   [Norway](https://apps.apple.com/no/iphone/today)\n*   [Poland](https://apps.apple.com/pl/iphone/today)\n*   [Portugal (Português)](https://apps.apple.com/pt/iphone/today)\n*   [Romania](https://apps.apple.com/ro/iphone/today)\n*   [Россия](https://apps.apple.com/ru/iphone/today)\n*   [Serbia](https://apps.apple.com/rs/iphone/today)\n*   [Slovakia](https://apps.apple.com/sk/iphone/today)\n*   [Slovenia](https://apps.apple.com/si/iphone/today)\n*   [España](https://apps.apple.com/es/iphone/today)\n*   [Sverige](https://apps.apple.com/se/iphone/today)\n*   [Schweiz](https://apps.apple.com/ch/iphone/today)\n*   [Türkiye (English)](https://apps.apple.com/tr/iphone/today)\n*   [Ukraine](https://apps.apple.com/ua/iphone/today)\n*   [United Kingdom](https://apps.apple.com/gb/iphone/today)\n\n## Latin America and the Caribbean\n\nSee All \n\n*   [Anguilla](https://apps.apple.com/ai/iphone/today)\n*   [Antigua and Barbuda](https://apps.apple.com/ag/iphone/today)\n*   [Argentina (Español)](https://apps.apple.com/ar/iphone/today)\n*   [Bahamas](https://apps.apple.com/bs/iphone/today)\n*   [Barbados](https://apps.apple.com/bb/iphone/today)\n*   [Belize](https://apps.apple.com/bz/iphone/today)\n*   [Bermuda](https://apps.apple.com/bm/iphone/today)\n*   [Bolivia (Español)](https://apps.apple.com/bo/iphone/today)\n*   [Brasil](https://apps.apple.com/br/iphone/today)\n*   [Virgin Islands, British](https://apps.apple.com/vg/iphone/today)\n*   [Cayman Islands](https://apps.apple.com/ky/iphone/today)\n*   [Chile (Español)](https://apps.apple.com/cl/iphone/today)\n*   [Colombia (Español)](https://apps.apple.com/co/iphone/today)\n*   [Costa Rica (Español)](https://apps.apple.com/cr/iphone/today)\n*   [Dominica](https://apps.apple.com/dm/iphone/today)\n*   [República Dominicana](https://apps.apple.com/do/iphone/today)\n*   [Ecuador (Español)](https://apps.apple.com/ec/iphone/today)\n*   [El Salvador (Español)](https://apps.apple.com/sv/iphone/today)\n*   [Grenada](https://apps.apple.com/gd/iphone/today)\n*   [Guatemala (Español)](https://apps.apple.com/gt/iphone/today)\n*   [Guyana](https://apps.apple.com/gy/iphone/today)\n*   [Honduras (Español)](https://apps.apple.com/hn/iphone/today)\n*   [Jamaica](https://apps.apple.com/jm/iphone/today)\n*   [México](https://apps.apple.com/mx/iphone/today)\n*   [Montserrat](https://apps.apple.com/ms/iphone/today)\n*   [Nicaragua (Español)](https://apps.apple.com/ni/iphone/today)\n*   [Panamá](https://apps.apple.com/pa/iphone/today)\n*   [Paraguay (Español)](https://apps.apple.com/py/iphone/today)\n*   [Perú](https://apps.apple.com/pe/iphone/today)\n*   [St. Kitts and Nevis](https://apps.apple.com/kn/iphone/today)\n*   [Saint Lucia](https://apps.apple.com/lc/iphone/today)\n*   [St. Vincent and The Grenadines](https://apps.apple.com/vc/iphone/today)\n*   [Suriname](https://apps.apple.com/sr/iphone/today)\n*   [Trinidad and Tobago](https://apps.apple.com/tt/iphone/today)\n*   [Turks and Caicos](https://apps.apple.com/tc/iphone/today)\n*   [Uruguay (English)](https://apps.apple.com/uy/iphone/today)\n*   [Venezuela (Español)](https://apps.apple.com/ve/iphone/today)\n\n## The United States and Canada\n\nSee All \n\n*   [Canada (English)](https://apps.apple.com/ca/iphone/today)\n*   [Canada (Français)](https://apps.apple.com/ca/iphone/today?l=fr-CA)\n*   [United States](https://apps.apple.com/us/iphone/today)\n*   [Estados Unidos (Español México)](https://apps.apple.com/us/iphone/today?l=es-MX)\n*   [الولايات المتحدة](https://apps.apple.com/us/iphone/today?l=ar)\n*   [США](https://apps.apple.com/us/iphone/today?l=ru)\n*   [美国 (简体中文)](https://apps.apple.com/us/iphone/today?l=zh-Hans-CN)\n*   [États-Unis (Français France)](https://apps.apple.com/us/iphone/today?l=fr-FR)\n*   [미국](https://apps.apple.com/us/iphone/today?l=ko)\n*   [Estados Unidos (Português Brasil)](https://apps.apple.com/us/iphone/today?l=pt-BR)\n*   [Hoa Kỳ](https://apps.apple.com/us/iphone/today?l=vi)\n*   [美國 (繁體中文台灣)](https://apps.apple.com/us/iphone/today?l=zh-Hant-TW)\n\nCopyright © 2026[Apple Inc.](https://www.apple.com/)All rights reserved.\n\n*   [Internet Service Terms](https://www.apple.com/legal/internet-services/)\n*   [App Store & Privacy](https://www.apple.com/legal/privacy/data/en/app-store/)\n*   [Cookie Warning](https://www.apple.com/privacy/use-of-cookies/)\n*   [Support](https://support.apple.com/billing)\n",
+  "additionalOfficialText": {
+    "vx-site": "Title: VX Proxy Client - Enjoy the Internet\n\nURL Source: https://vx.5vnetwork.com/\n\nMarkdown Content:\n![Image 1: VX Proxy Client](https://vx.5vnetwork.com/_next/image?url=%2FX_icon.png&w=3840&q=75)\n\nEnjoy the Internet\n\n[![Image 2: Download on App Store](https://vx.5vnetwork.com/_next/image?url=%2Fapp_store_dark.svg&w=384&q=75)](https://apps.apple.com/us/app/vproxy/id6744701950?platform=iphone)\n\n[![Image 3: Download on Mac App Store](https://vx.5vnetwork.com/_next/image?url=%2Fmac_app_store_dark.svg&w=384&q=75)](https://apps.apple.com/us/app/vproxy/id6744701950?mt=12)\n\n[![Image 4: Download on Google Play](https://vx.5vnetwork.com/_next/image?url=%2Fgoogle_play.svg&w=384&q=75)](https://play.google.com/store/apps/details?id=com5vnetwork.vproxy&pcampaignid=web_share)\n\n[![Image 5: Download on Windows Store](https://vx.5vnetwork.com/_next/image?url=%2Fmicrosoft_store_dark.svg&w=384&q=75)](https://apps.microsoft.com/detail/9PHBCBZ9R1FX)\n\n## Features\n\n### Open Source\n\nFully open-source, no any hidden code, released automatically by Github Actions, safe and reliable\n\n### Privacy\n\nNo personal data collection, no DNS leak\n\n### Easy to Use\n\nIntuitive interface, no learning, quick start\n\n### Routing\n\nCustom domain, IP, app routing\n\n### All Platforms\n\nAvailable on Windows, macOS, iOS, Android and Linux\n\n### Automation\n\nAuto-select best node, auto-switch node, auto-update subscription link\n\n### VPS\n\nShow server status and quickly deploy nodes\n\n### Panel\n\nBuilt-in panel function, configure VX core directly in the client\n\n### Advanced Routing\n\nAdd routing modes, sets, node selectors, DNS servers.\n\n### Chain Proxy\n\nAdd chain nodes and landing nodes.\n\nhub\n\n### Multi Node\n\nSupport multiple nodes simultaneously, load balancing, configure node selection strategy.\n\nbroadcast_on_home\n\n### Proxy Sharing\n\nShare proxy with other devices\n\n### Local Backup\n\nBackup database to local file\n\n### Cloud Sync and Backup PRO\n\nSync and backup database between multiple devices\n\n### Pro Realm Server PRO\n\nUse exclusive Realm server for Pro users\n\n### Customer Support PRO\n\nIf you have any questions, customer support can help you with any questions\n\n### Feature Request PRO\n\nIf you want a feature that is also useful for other users, we will implement them if possible\n\n*   More features are being developed\n\n## Become Pro User\n\nUnlock advanced features\n\n### Pro\n\n¥30(about $4)\n\nBecome a lifetime Pro user\n\n*   **Please purchase in the app. Purchase buttons are located at the bottom of the \"Settings\" page.**\n*   **Free Trial:**Download the app and register an account to activate Pro features for 7 days at no cost.\n*   **Refund Policy:**All purchases are final. No refunds available after purchase.\n"
+  }
+}

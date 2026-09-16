@@ -1,0 +1,19 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "trackId": 6504287215,
+      "bundleId": "su.ffg.happ",
+      "trackName": "Happ - Proxy Utility",
+      "sellerName": "Flyfrog LLC",
+      "kind": "software",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4",
+      "version": "5.8.0",
+      "currentVersionReleaseDate": "2026-09-14T03:10:38Z",
+      "price": 0.0,
+      "currency": "USD",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/fd/dd/c6fddd03-9e7f-8fa5-dce5-ac7c9e3999c6/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg"
+    }
+  ]
+}

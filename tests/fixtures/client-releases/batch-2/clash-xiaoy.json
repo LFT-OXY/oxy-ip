@@ -1,0 +1,66 @@
+{
+  "id": 313634684,
+  "tag_name": "v2.7.20",
+  "name": "Clash-Xiaoy v2.7.20",
+  "html_url": "https://github.com/aimy1/clash-xiaoy/releases/tag/v2.7.20",
+  "published_at": "2026-04-25T19:45:27Z",
+  "draft": false,
+  "prerelease": false,
+  "body": "# ✨ Update: UI Simplification & Experimental Cleanup\r\n\r\n## 🧹 Removed Experimental UI\r\n\r\n* Completely removed the `experimental` UI system\r\n* Deleted `src/pages/(experimental)` and all related pages:\r\n\r\n  * Dashboard\r\n  * Proxy\r\n  * Profiles\r\n  * Rules\r\n  * Settings\r\n* Removed all related routing to prevent invalid navigation\r\n\r\n## 🔘 Removed Experimental Entry\r\n\r\n* Removed \"Switch to Experimental UI\" button from settings\r\n* Deleted `ExperimentalSwitch` component (TSX & JSX)\r\n* Cleaned up:\r\n\r\n  * `useNavigate` usage\r\n  * `setEnabledExperimentalRouter` references\r\n\r\n> The UI now only exposes stable and supported features.\r\n\r\n---\r\n\r\n## 🎨 UI Redesign (Windows-style)\r\n\r\nRefactored the overall interface to align with a cleaner, native desktop experience:\r\n\r\n### Removed Effects\r\n\r\n* Removed `cyber-glass`, glow, and neon effects\r\n* Removed motion/animation classes:\r\n\r\n  * `animate-float`\r\n  * `ios-motion`\r\n* Removed decorative visual noise (scanlines, glow layers)\r\n\r\n### Updated Layout & Components\r\n\r\n* Simplified sidebar layout and spacing\r\n* Updated navigation buttons:\r\n\r\n  * Removed glow effects\r\n  * Added subtle hover transitions\r\n* Refined main content container:\r\n\r\n  * Cleaner background & borders\r\n  * Improved visual hierarchy\r\n* Updated top bar to a card-style layout\r\n\r\n---\r\n\r\n## 🧩 Design Adjustments\r\n\r\n* Unified border radius:\r\n\r\n  * Main layout container now uses `border-radius: 9px`\r\n* Increased logo size:\r\n\r\n  * Updated to `h-28 w-28` for better visibility\r\n* Improved spacing and padding consistency\r\n\r\n---\r\n\r\n## ✅ Result\r\n\r\n* Cleaner and more maintainable codebase\r\n* Fully stable routing (no dead links)\r\n* More consistent and minimal UI\r\n* Improved usability and readability\r\n* Better alignment with native Windows design language\r\n\r\n---\r\n\r\n## ⚠️ Notes\r\n\r\n* Experimental UI is **no longer available**\r\n* Future updates will focus on stability and core features\r\n\r\n---\r\n\r\n## 🚀 Status\r\n\r\nFrontend is now fully functional and ready for daily use.\r\n",
+  "assets": [
+    {
+      "id": 405483380,
+      "name": "clash-xiaoy-2.7.20-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 405483443,
+      "name": "clash-xiaoy-2.7.20-1.x86_64.rpm.sha256",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy-2.7.20-1.x86_64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 405486954,
+      "name": "clash-xiaoy_2.7.20_aarch64.dmg",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_aarch64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 405483399,
+      "name": "clash-xiaoy_2.7.20_amd64.AppImage",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 405483361,
+      "name": "clash-xiaoy_2.7.20_amd64.deb",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 405483451,
+      "name": "clash-xiaoy_2.7.20_amd64.deb.sha256",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_amd64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 405486348,
+      "name": "clash-xiaoy_2.7.20_x64-setup.exe",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 405487079,
+      "name": "clash-xiaoy_2.7.20_x64.dmg",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 405486439,
+      "name": "clash-xiaoy_2.7.20_x86_64_portable.zip",
+      "browser_download_url": "https://github.com/aimy1/clash-xiaoy/releases/download/v2.7.20/clash-xiaoy_2.7.20_x86_64_portable.zip",
+      "state": "uploaded"
+    }
+  ]
+}

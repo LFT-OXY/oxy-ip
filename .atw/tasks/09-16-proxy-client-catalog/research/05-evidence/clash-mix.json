@@ -1,0 +1,37 @@
+{
+  "id": "clash-mix",
+  "referenceUrl": "https://huarun.win/apps/clash-mix",
+  "referenceText": "Title: Clash MIX：Android 科学上网梯子与机场代理客户端\n\nURL Source: https://huarun.win/apps/clash-mix\n\nMarkdown Content:\n1.   [首页](https://huarun.win/)\n2.   [Android](https://huarun.win/platform/android)\n3.   Clash MIX\n\n![Image 1: Clash MIX 应用图标](https://huarun.win/app-icons/clash-mix.webp)\n\n面向 Root Android 的 Mihomo 模块，通过 TUN 与透明代理方式接管系统流量。\n\n适用平台[Android](https://huarun.win/platform/android)\n代码状态 开源\n\n完整功能费用 免费\n\n代理内核 Mihomo[了解 Mihomo 内核 →](https://huarun.win/cores/mihomo)[查看依据](https://github.com/AXEVO/Clash-MIX)\n\n主导开发[AXEVO](https://huarun.win/history/people/axevo)AXEVO\n\n**262** Star**27** Fork\n\n[查看代码仓库](https://github.com/AXEVO/Clash-MIX)\n统计更新于 2026年9月16日\n\n版本号 V4.0\n\n最后更新时间 2026年4月15日\n\n数据来源 module.prop 声明版本；日期为源码修订日期\n\n## 官方变更日志\n\n官方未提供当前版本的具体变更日志。\n\n[查看官方版本来源 ↗](https://github.com/AXEVO/Clash-MIX/blob/e93a8086757dfebf278ffeba4b9823fa3883108e/module.prop)\n应用简介\n\n## 关于 Clash MIX\n\n面向 Root Android 的 Mihomo 模块，通过 TUN 与透明代理方式接管系统流量。\n\n适用于 Android。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。\n\n## 发现应用信息不准确？\n\n提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。\n\n[提交信息纠错](https://huarun.win/corrections/clash-mix)\n人物关联\n\n## 与 Clash MIX 相关的人物\n\n*   [![Image 2](https://huarun.win/people-avatars/axevo.webp)**AXEVO**主导开发 Clash MIX 开发者 由该开发者主导开发或长期维护](https://huarun.win/history/people/axevo)\n*   [![Image 3](https://huarun.win/people-avatars/wwqgtxx.webp)**wwqgtxx**内核血缘 Mihomo 核心贡献者与 GreatAgent (wwqgtxx-goagent) 开发者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/wwqgtxx)\n*   [![Image 4](https://huarun.win/people-avatars/dreamacro.webp)**Dreamacro**内核血缘 Clash 创始作者 使用由该开发者创立或主导维护的代理内核](https://huarun.win/history/people/dreamacro)\n\n继续浏览\n\n## 相似平台的其他客户端\n\n资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。\n",
+  "observedOfficialEntry": "https://github.com/AXEVO/Clash-MIX",
+  "repository": {
+    "full_name": "AXEVO/Clash-MIX",
+    "html_url": "https://github.com/AXEVO/Clash-MIX",
+    "description": null,
+    "default_branch": "Clash-MIX-4.0",
+    "archived": false,
+    "license": null,
+    "homepage": null
+  },
+  "readme": "{\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-a-repository-readme\",\"status\":\"404\"}",
+  "treeSha": "e93a8086757dfebf278ffeba4b9823fa3883108e",
+  "treeTruncated": false,
+  "resourcePaths": [
+    "Proxy/WebUI/apple-touch-icon.png",
+    "Proxy/WebUI/assets/metacubex-BlQkOUXT.jpg",
+    "Proxy/WebUI/favicon-dark.svg",
+    "Proxy/WebUI/favicon.svg",
+    "Proxy/WebUI/icon.svg",
+    "Proxy/WebUI/pwa-192x192.png",
+    "Proxy/WebUI/pwa-512x512.png",
+    "Proxy/WebUI/pwa-maskable-192x192.png",
+    "Proxy/WebUI/pwa-maskable-512x512.png",
+    "module.prop"
+  ],
+  "releaseList": [],
+  "releaseSamples": [],
+  "additionalOfficialText": {
+    "clashmix-module": "id=Clash\nname=Clash MIX\nversion=V4.0\nversionCode=20260401\nauthor=GFW Fucker\ndescription=Clash透明代理[Tun]   面板: http://127.0.0.1:9090/ui\nupdateJson=https://raw.githubusercontent.com/AXEVO/Clash-MIX/refs/heads/Archive/Update/4.0Update.json",
+    "clash-mix-update": "{\n    \"versionCode\": 20250101,\n    \"version\": \"v4\",\n    \"zipUrl\": \"https://github.com/AXEVO/Clash-MIX/releases/latest\",\n    \"changelog\": \"https://raw.githubusercontent.com/AXEVO/Clash-MIX/refs/heads/Archive/Update/4.0ChangeLog.md\"\n}",
+    "clashmix-customize": "SKIPUNZIP=1\n\nsdcard_work=\"/sdcard/Android/Clash\"\n\nshould_keep_old_config() {\n  old_cfg=\"$1\"\n  new_cfg=\"$2\"\n\n  [ -f \"$old_cfg\" ] || return 1\n  [ -f \"$new_cfg\" ] || return 0\n\n  old_ver=\"$(grep -i -m 1 '^[[:space:]]*# *version' \"$old_cfg\" 2>/dev/null | tr -cd '0-9')\"\n  new_ver=\"$(grep -i -m 1 '^[[:space:]]*# *version' \"$new_cfg\" 2>/dev/null | tr -cd '0-9')\"\n\n  [ -z \"$old_ver\" ] && return 1\n  [ -z \"$new_ver\" ] && return 0\n  [ \"$new_ver\" -gt \"$old_ver\" ] 2>/dev/null && return 1\n\n  return 0\n}\n\n\nunzip -o \"$ZIPFILE\" -x 'META-INF/*' -d \"$MODPATH\" >&2\n\nbackup_dir=\"$(ls -dt /sdcard/Android/Clash卸载备份-* 2>/dev/null | head -n 1)\"\n\nif [ -f \"$sdcard_work/Clash配置.yaml\" ]; then\n  install_mode=\"update\"\nelif [ -n \"$backup_dir\" ] && [ -f \"$backup_dir/Clash配置.yaml\" ]; then\n  install_mode=\"restore\"\nelse\n  install_mode=\"fresh\"\nfi\n\n\ncase \"$install_mode\" in\n  update)\n\n    cp -af \"$sdcard_work/工具/自定义代理.yaml\" \"$MODPATH/Clash/工具/自定义代理.yaml\" 2>/dev/null\n    cp -af \"$sdcard_work/工具/自定义直连.yaml\" \"$MODPATH/Clash/工具/自定义直连.yaml\" 2>/dev/null\n\n    if should_keep_old_config \"$sdcard_work/Clash配置.yaml\" \"$MODPATH/Clash/Clash配置.yaml\"; then\n      ui_print \"🟩配置文件无更新 保留原有 Clash配置.yaml\"\n      ui_print \"🟩模块内置Clash配置文件模板备份位于\"\n      ui_print \"🟩[内部存储/Android/Clash/资料/配置模板]\"\n      cp -af \"$sdcard_work/Clash配置.yaml\" \"$MODPATH/Clash/Clash配置.yaml\"\n    else\n      cp -af \"$sdcard_work/Clash配置.yaml\" \"$MODPATH/Clash/更新前配置.yaml\"\n      ui_print \"🟨Clash配置.yaml已更新 需要重新填写订阅链接\"\n      ui_print \"🟨安装模块更新前的Clash配置文件已备份到\"\n      ui_print \"🟨[内部存储/Android/Clash/更新前配置.yaml]\"\n      ui_print \"🟨请从旧配置中复制订阅链接后 再填写到新配置\"\n    fi\n    ;;\n\n  restore)\n    ui_print \"🟨检测到$(basename \"$backup_dir\")\"\n\n    cp -af \"$backup_dir/自定义代理.yaml\" \"$MODPATH/Clash/工具/自定义代理.yaml\" 2>/dev/null\n    cp -af \"$backup_dir/自定义直连.yaml\" \"$MODPATH/Clash/工具/自定义直连.yaml\" 2>/dev/null\n\n    if should_keep_old_config \"$backup_dir/Clash配置.yaml\" \"$MODPATH/Clash/Clash配置.yaml\"; then\n      ui_print \"🟩配置文件无更新 使用卸载备份的配置.yaml\"\n      ui_print \"🟩模块内置Clash配置文件模板备份位于\"\n      ui_print \"🟩[内部存储/Android/Clash/资料/配置模板]\"\n      cp -af \"$backup_dir/Clash配置.yaml\" \"$MODPATH/Clash/Clash配置.yaml\"\n    else\n      cp -af \"$backup_dir/Clash配置.yaml\" \"$MODPATH/Clash/卸载备份配置.yaml\"\n      ui_print \"🟨Clash配置.yaml已更新 卸载备份已复制到\"\n      ui_print \"🟨[内部存储/Android/Clash/卸载备份配置]\"\n      ui_print \"🟨请从旧配置中复制订阅链接后 再填写到新配置\"\n    fi\n    ;;\n\n  fresh)\n    ui_print \"🟨全新安装 请安装完成后填写订阅链接并重启\"\n    ui_print \"🟨[内部存储/Android/Clash/Clash配置.yaml]\"\n    ;;\nesac\n\n\nrm -rf \"$sdcard_work\"\nmkdir -p /sdcard/Android\ncp -af \"$MODPATH/Clash\" /sdcard/Android/\nrm -rf \"$MODPATH/Clash\"\n\n\nln -sf \"$sdcard_work/Clash配置.yaml\" \"$MODPATH/Proxy/config.yaml\"\nln -sf \"$sdcard_work/工具/自定义代理.yaml\" \"$MODPATH/Proxy/rule_providers/userProxy.yaml\"\nln -sf \"$sdcard_work/工具/自定义直连.yaml\" \"$MODPATH/Proxy/rule_providers/userDirect.yaml\"\nif [ \"$KSU\" = true ] || [ \"$KERNELPATCH\" = true ]; then\n  ln -sf /data/adb/modules/Clash/Proxy/WebUI \"$MODPATH/webroot\"\nfi\n\nchmod 777 -Rf \"$MODPATH\"\n"
+  }
+}
