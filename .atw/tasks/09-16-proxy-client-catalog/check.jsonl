@@ -9,4 +9,3 @@
 {"file": ".atw/spec/frontend/client-catalog.md", "reason": "首票数据与交互契约，供后续同步和扩充遵循"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/01-official-sources.md", "reason": "首票逐项官方资料依据、发布快照与已知平台限制"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/03-store-and-official-entry.md", "reason": "商店身份、平台隔离、Stash官方feed正式渠道与版本构建号绑定依据"}
-{"file": ".atw/tasks/09-16-proxy-client-catalog/issues/04-catalog-batch-1.md", "reason": "ATW current ticket"}
