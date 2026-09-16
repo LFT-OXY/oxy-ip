@@ -1,0 +1,67 @@
+Title: Clash .NET（ClashDotNetFramework）：Windows 科学上网梯子与机场代理客户端
+
+URL Source: https://huarun.win/apps/clash-net
+
+Markdown Content:
+1.   [首页](https://huarun.win/)
+2.   [Windows](https://huarun.win/platform/windows)
+3.   Clash .NET
+
+![Image 1: Clash .NET 应用图标](https://huarun.win/app-icons/clash-net.webp)
+
+ClashDotNetFramework
+
+曾面向 Windows 的 Clash 图形客户端，使用 WPF 界面；历史版本经历 .NET Framework 4.6.1 与 .NET 5 阶段。原项目已下架，保留此条目供历史查阅。
+
+**已下架**
+
+原项目入口不可用，仅供历史查阅，不提供下载。
+
+适用平台[Windows](https://huarun.win/platform/windows)
+代码状态 源码不完整
+
+完整功能费用 已下架 不再提供获取渠道
+
+代理内核 Clash[查看依据](https://github.com/sqzxcv/ClashDotNetFramework-src/blob/b0f2f5fbfc0acc1abdde077f84158ea0a4ab670e/README.md)
+
+主导开发[CoelWu](https://huarun.win/history/people/coelwu)
+
+**0** Star**73** Fork
+
+[查看代码仓库](https://github.com/sqzxcv/ClashDotNetFramework-src)
+统计更新于 2026年9月16日
+
+版本号 暂无可靠记录
+
+最后更新时间 暂无可靠记录
+
+数据来源 暂无可访问的官方来源
+
+## 官方变更日志
+
+暂无可核实的版本与变更日志。
+
+应用简介
+
+## 关于 Clash .NET
+
+曾面向 Windows 的 Clash 图形客户端，使用 WPF 界面；历史版本经历 .NET Framework 4.6.1 与 .NET 5 阶段。原项目已下架，保留此条目供历史查阅。
+
+历史支持平台：Windows。该条目用于查阅历史资料。
+
+## 发现应用信息不准确？
+
+提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。
+
+[提交信息纠错](https://huarun.win/corrections/clash-net)
+人物关联
+
+## 与 Clash .NET 相关的人物
+
+*   [![Image 2](https://huarun.win/people-avatars/coelwu.webp)**CoelWu**主导开发 Clash .NET 开发者 由该开发者主导开发或长期维护](https://huarun.win/history/people/coelwu)
+
+继续浏览
+
+## 相似平台的其他客户端
+
+资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。

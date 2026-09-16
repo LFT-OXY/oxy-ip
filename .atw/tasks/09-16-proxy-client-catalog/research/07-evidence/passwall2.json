@@ -1,0 +1,763 @@
+{
+  "baseline": {
+    "order": 104,
+    "id": "passwall2",
+    "name": "PassWall2",
+    "reference_url": "https://huarun.win/apps/passwall2",
+    "observed_official_entry": "https://github.com/Openwrt-Passwall/openwrt-passwall2",
+    "ticket": "07"
+  },
+  "repo": "Openwrt-Passwall/openwrt-passwall2",
+  "metadata": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2",
+    "status": 0,
+    "data": {
+      "full_name": "Openwrt-Passwall/openwrt-passwall2",
+      "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2",
+      "description": "A simple powerful OpenWrt LuCI proxy application.",
+      "homepage": "",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/blob/main/README.md",
+      "sha": "8f09d796f0e826bc923d05e4d6c5fa47e71addbf",
+      "text": "# PassWall2\n\n[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\n[![OpenWrt](https://img.shields.io/badge/OpenWrt-21.02%2B-blue)](https://openwrt.org/)\n[![LuCI](https://img.shields.io/badge/LuCI-17.01%2B-green)](https://github.com/openwrt/luci)\n\nPassWall2 is a powerful LuCI web interface application for OpenWrt that provides advanced proxy functionality. It's a comprehensive solution for network traffic management, proxy services, and access control on OpenWrt-based routers.\n\n## 🛠️ Installation\n\n### ⚠️ Pre-installation\n\n```bash\n# find it in releases,base of your router Arch\n```\n**Visit [GitHub Releases](https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/latest) to download the correct package for your system.**\n\nChoose the package format based on your **router's OpenWrt package manager**:\n\n### For OpenWrt with OPKG \n\n1. **Download the IPK package** from the releases page  \n   Look for `luci-app-passwall2_{VERSION}_all.ipk` in the Assets section.  \n   > **Note:** If you need localization (Chinese/Persian), download the corresponding language package as well (e.g., `luci-i18n-passwall2-zh-cn...` or `...-fa...`).\n\n2. **Upload to your router** (via SCP, LuCI upload, or wget):\n   ```bash\n   # Replace {VERSION} with the actual version (e.g., 26.2.5-1)\n   wget https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/{VERSION}/luci-app-passwall2_{VERSION}_all.ipk\n   ```\n\n3. **Install:**\n   ```bash\n   opkg update\n   opkg install luci-app-passwall2_*.ipk\n   ```\n   \n   > If installation fails due to missing dependencies (e.g., `xray-core`), you need to add the PassWall packages feed to `/etc/opkg/customfeeds.conf`.\n\n### For OpenWrt with APK \n\n1. **Download the APK package** from the releases page  \n   Look for `luci-app-passwall2_{VERSION}_all.apk` in the Assets section.\n   > **Note:** If you need localization (Chinese/Persian), download the corresponding language package as well (e.g., `luci-i18n-passwall2-zh-cn...` or `...-fa...`).\n\n2. **Upload to your router** (via SCP, LuCI upload, or wget):\n   ```bash\n   # Replace {VERSION} with the actual version (e.g., 26.2.5-1)\n   wget https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/{VERSION}/luci-app-passwall2_{VERSION}_all.apk\n   ```\n\n3. **Install:**\n   ```bash\n   apk add --allow-untrusted luci-app-passwall2_*.apk\n   ```\n   \n   > ⚠️ **Security Note:** `--allow-untrusted` bypasses package signature verification. \n\n> **How to check your package manager:** Run `opkg --version` or `apk --version` to see which one your router uses.\n\n### Restart LuCI\n```bash\n/etc/init.d/rpcd restart\n```\n\n### 🧩 Add PassWall2 APK repository (recommended)\n**Instead of installing .apk packages manually**, you can add the PassWall2 APK repository and signing key to enable installation and updates via apk.\n\n1. Add repository signing key\n\n```bash\nwget -O passwall.pub https://sourceforge.net/projects/openwrt-passwall-build/files/apk.pub\nmv passwall.pub /etc/apk/keys/\n```\n\n2. Add PassWall2 repositories\n\n```bash\n. /etc/openwrt_release\n\nrelease=\"${DISTRIB_RELEASE%.*}\"\narch=\"$DISTRIB_ARCH\"\n\nwget -O /etc/apk/keys/passwall.pub \\\n  https://sourceforge.net/projects/openwrt-passwall-build/files/apk.pub\n\ncat >> /etc/apk/repositories.d/customfeeds.list <<EOF\nhttps://sourceforge.net/projects/openwrt-passwall-build/files/releases/packages-${release}/${arch}/passwall_packages/packages.adb\nhttps://sourceforge.net/projects/openwrt-passwall-build/files/releases/packages-${release}/${arch}/passwall_luci/packages.adb\nhttps://sourceforge.net/projects/openwrt-passwall-build/files/releases/packages-${release}/${arch}/passwall2/packages.adb\nEOF\n```\n\n3. Update package index\n\n```bash\napk update\n```\n\n4. Install optional dependency packages (depending on your configuration) and PassWall2 from repository\n\n```bash\napk add tcping geoview # add other dependencies\n\napk add luci-app-passwall2\n```\n\n\n## 📋 System Requirements\n\n### OpenWrt Version\n- OpenWrt 21.02 or later\n- LuCI 17.01 or later\n\n### Hardware Requirements\n- **Minimum 256MB RAM**\n- Sufficient storage for packages (varies by protocol selection)\n\n### Core Dependencies\nThe following packages should be resolved automatically by the package manager (if available in your feeds):\n\n- `coreutils`, `coreutils-base64`, `coreutils-nohup`\n- `curl`, `ip-full`, `libuci-lua`, `lua`, `luci-compat`, `luci-lib-jsonc`\n- `resolveip`, `tcping`, `unzip`\n- `geoview`, `v2ray-geoip`, `v2ray-geosite` (geo-routing data)\n\n> **Note:** Actual dependencies may vary based on selected features and your OpenWrt build. Ensure you have the necessary feeds configured.\n\n### Optional Protocol Packages\nSelected during installation based on your needs:\n- Xray\n- Sing-Box\n- Shadowsocks-Rust\n- ShadowsocksR\n- HAProxy\n\n## 🚀 Features\n\n### Multi-Protocol Support\n- **Xray** (HTTP, Socks, Shadowsocks, VMess, VLESS, Trojan, Hysteria2, WireGuard)\n- **Sing-Box** (HTTP, Socks, SSH, Shadowsocks, VMess, VLESS, Trojan, TUIC, Hysteria, Hysteria2, WireGuard, AnyTLS)\n- **Shadowsocks-Rust**\n- **ShadowsocksR** legacy support\n- **HAProxy** The Reliable, High Performance TCP/HTTP Load Balancer\n\n### Traffic Management\n- **Load Balancing**: Distribute traffic across multiple nodes\n- **Smart Routing**: Domain-based and geo-based routing rules\n- **DNS Control**: Advanced DNS filtering and DoH/DoT support\n- **Transparent Proxy**: Seamless network-wide proxy\n\n### Node Management\n- **Subscription Support**: Import nodes from subscription URLs\n- **Node Testing**: Built-in latency and connectivity testing\n- **Failover Support**: Automatic failover to backup nodes\n- **QR Code**: Generate and scan QR codes for node sharing\n\n### Access Control\n- **Per-Device Rules**: Configure proxy settings per device\n- **Domain/IP Filtering**: Whitelist/blacklist support\n- **Time-based Rules**: Schedule proxy usage\n\n## ⚙️ Configuration\n\n### Basic Setup\n\n1. **Access LuCI Interface:**\n   - Navigate to `Services` → `PassWall2`\n\n2. **Add Your First Node:**\n   - Go to `Node List` → `Add Node`\n   - Select protocol and fill in server details\n\n3. **Configure Basic Settings:**\n   - Select your default node\n   - Configure DNS settings\n   - Enable transparent proxy\n\n4. **Apply Configuration:**\n   - Click `Save & Apply`\n\n## 🌐 Language Support\n\nPassWall2 supports multiple languages:\n- 🇨🇳 Chinese (Simplified/Traditional)\n- 🇮🇷 Persian (فارسی)\n\nLanguage files are organized in `luci-app-passwall2/po/` subdirectories.\n\n## 🔧 Troubleshooting\n\n### Common Issues\n\n**Service Won't Start**\n```bash\nlogread | grep passwall2\n```\nCheck system logs, verify node configuration, and ensure required packages are installed.\n\n**DNS Issues**\n- Disable built-in DNS in browsers (Chrome: Settings → Privacy → Security → Disable \"Use secure DNS\")\n- Clear DNS cache after reboot: `ipconfig /flushdns` (Windows) or toggle airplane mode (mobile)\n\n**Connection Problems**\n- Test node connectivity\n- Check firewall rules\n- Verify transparent proxy settings\n\n### Debug Mode\n\nEnable debug logging in `Other Settings` and check:\n- Main log: `/tmp/log/passwall2.log`\n- Server log: `/tmp/log/passwall2_server.log`\n\n## 📄 License\n\nThis project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.\n\n**Note**: This software is intended for legal use only. Users are responsible for complying with all applicable laws and regulations in their jurisdiction.\n\n---\n\n## Stargazers over time\n[![Stargazers over time](https://starchart.cc/Openwrt-Passwall/openwrt-passwall2.svg?variant=adaptive)](https://starchart.cc/Openwrt-Passwall/openwrt-passwall2)\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 390025281,
+        "tag_name": "26.9.16-1",
+        "name": "26.9.16-1",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.9.16-1",
+        "published_at": "2026-09-16T14:58:19Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "## :mega:Update content\n![](https://img.shields.io/github/downloads/Openwrt-Passwall/openwrt-passwall2/26.9.16-1/total?style=flat-square)\n### Passwall2 Info\n**:minidisc: Passwall2 Version: 26.9.16-1**\n",
+        "assets": [
+          {
+            "id": 568260283,
+            "name": "luci-app-passwall2-26.9.16-r1.apk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2-26.9.16-r1.apk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260276,
+            "name": "luci-app-passwall2_26.9.16-r1_all.ipk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2_26.9.16-r1_all.ipk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260287,
+            "name": "luci-i18n-passwall2-fa-26.9.16.apk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-fa-26.9.16.apk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260275,
+            "name": "luci-i18n-passwall2-fa_26.9.16_all.ipk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-fa_26.9.16_all.ipk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260280,
+            "name": "luci-i18n-passwall2-ru-26.9.16.apk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-ru-26.9.16.apk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260277,
+            "name": "luci-i18n-passwall2-ru_26.9.16_all.ipk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-ru_26.9.16_all.ipk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260282,
+            "name": "luci-i18n-passwall2-zh-cn-26.9.16.apk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-zh-cn-26.9.16.apk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260279,
+            "name": "luci-i18n-passwall2-zh-cn_26.9.16_all.ipk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-zh-cn_26.9.16_all.ipk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260281,
+            "name": "luci-i18n-passwall2-zh-tw-26.9.16.apk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-zh-tw-26.9.16.apk",
+            "state": "uploaded"
+          },
+          {
+            "id": 568260273,
+            "name": "luci-i18n-passwall2-zh-tw_26.9.16_all.ipk",
+            "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-i18n-passwall2-zh-tw_26.9.16_all.ipk",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 390025281,
+        "tag_name": "26.9.16-1",
+        "name": "26.9.16-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-16T14:58:19Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.9.16-1"
+      },
+      {
+        "id": 387759894,
+        "tag_name": "26.9.12-2",
+        "name": "26.9.12-2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-13T01:36:10Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.9.12-2"
+      },
+      {
+        "id": 385252302,
+        "tag_name": "26.9.9-2",
+        "name": "26.9.9-2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-09-09T05:44:31Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.9.9-2"
+      },
+      {
+        "id": 377262231,
+        "tag_name": "26.8.27-1",
+        "name": "26.8.27-1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-08-26T16:22:33Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.8.27-1"
+      },
+      {
+        "id": 367916260,
+        "tag_name": "26.8.10-1",
+        "name": "26.8.10-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-10T13:04:23Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.8.10-1"
+      },
+      {
+        "id": 366836861,
+        "tag_name": "26.8.7-1",
+        "name": "26.8.7-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-07T15:20:58Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.8.7-1"
+      },
+      {
+        "id": 354883863,
+        "tag_name": "26.7.16-1",
+        "name": "26.7.16-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-07-16T05:44:53Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.7.16-1"
+      },
+      {
+        "id": 352806703,
+        "tag_name": "26.7.12-1",
+        "name": "26.7.12-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-07-12T17:37:37Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.7.12-1"
+      },
+      {
+        "id": 340100239,
+        "tag_name": "26.6.16-1",
+        "name": "26.6.16-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-16T11:22:56Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.6.16-1"
+      },
+      {
+        "id": 333623388,
+        "tag_name": "26.6.3-1",
+        "name": "26.6.3-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-03T09:58:20Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.6.3-1"
+      },
+      {
+        "id": 324481828,
+        "tag_name": "26.5.19-1",
+        "name": "26.5.19-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-05-18T18:38:05Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.5.19-1"
+      },
+      {
+        "id": 316303489,
+        "tag_name": "26.5.1-1",
+        "name": "26.5.1-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-05-01T06:23:23Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.5.1-1"
+      },
+      {
+        "id": 310899229,
+        "tag_name": "26.4.20-1",
+        "name": "26.4.20-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-19T16:49:05Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.4.20-1"
+      },
+      {
+        "id": 307231976,
+        "tag_name": "26.4.10-1",
+        "name": "26.4.10-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-09T19:17:52Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.4.10-1"
+      },
+      {
+        "id": 305320570,
+        "tag_name": "26.4.5-1",
+        "name": "26.4.5-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-04T19:04:39Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.4.5-1"
+      },
+      {
+        "id": 293627996,
+        "tag_name": "26.3.5-1",
+        "name": "26.3.5-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-05T18:41:35Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.3.5-1"
+      },
+      {
+        "id": 291821920,
+        "tag_name": "26.3.1-1",
+        "name": "26.3.1-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-01T17:22:01Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.3.1-1"
+      },
+      {
+        "id": 286193340,
+        "tag_name": "26.2.14-1",
+        "name": "26.2.14-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-13T18:17:55Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.2.14-1"
+      },
+      {
+        "id": 283451043,
+        "tag_name": "26.2.5-1",
+        "name": "26.2.5-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-05T17:30:07Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.2.5-1"
+      },
+      {
+        "id": 281640620,
+        "tag_name": "26.1.31-1",
+        "name": "26.1.31-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-30T19:38:34Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.1.31-1"
+      },
+      {
+        "id": 280644729,
+        "tag_name": "26.1.27-1",
+        "name": "26.1.27-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-28T10:16:56Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.1.27-1"
+      },
+      {
+        "id": 277894176,
+        "tag_name": "26.1.19-1",
+        "name": "26.1.19-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-19T11:39:31Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.1.19-1"
+      },
+      {
+        "id": 273709850,
+        "tag_name": "26.1.1-1",
+        "name": "26.1.1-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-01T15:11:47Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.1.1-1"
+      },
+      {
+        "id": 272791990,
+        "tag_name": "25.12.25-1",
+        "name": "25.12.25-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-25T12:03:11Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.12.25-1"
+      },
+      {
+        "id": 271345320,
+        "tag_name": "25.12.18-1",
+        "name": "25.12.18-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-18T08:24:11Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.12.18-1"
+      },
+      {
+        "id": 266481273,
+        "tag_name": "25.12.2-1",
+        "name": "25.12.2-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-01T18:08:52Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.12.2-1"
+      },
+      {
+        "id": 263348637,
+        "tag_name": "25.11.18-1",
+        "name": "25.11.18-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-18T15:57:58Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.11.18-1"
+      },
+      {
+        "id": 262185752,
+        "tag_name": "25.11.14-1",
+        "name": "25.11.14-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-13T17:08:38Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.11.14-1"
+      },
+      {
+        "id": 259013116,
+        "tag_name": "25.11.2-1",
+        "name": "25.11.2-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-01T16:52:27Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.11.2-1"
+      },
+      {
+        "id": 249406977,
+        "tag_name": "25.9.24-1",
+        "name": "25.9.24-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-09-23T16:07:41Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.9.24-1"
+      },
+      {
+        "id": 248667032,
+        "tag_name": "25.9.20-1",
+        "name": "25.9.20-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-09-19T16:44:35Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.9.20-1"
+      },
+      {
+        "id": 244827172,
+        "tag_name": "25.9.4-1",
+        "name": "25.9.4-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-09-04T15:22:29Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.9.4-1"
+      },
+      {
+        "id": 242224962,
+        "tag_name": "25.8.25-1",
+        "name": "25.8.25-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-25T10:41:14Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.8.25-1"
+      },
+      {
+        "id": 241737345,
+        "tag_name": "25.8.22-1",
+        "name": "25.8.22-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-22T07:32:21Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.8.22-1"
+      },
+      {
+        "id": 238701632,
+        "tag_name": "25.8.9-1",
+        "name": "25.8.9-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-08T20:27:16Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.8.9-1"
+      },
+      {
+        "id": 232604914,
+        "tag_name": "25.7.15-1",
+        "name": "25.7.15-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-07-15T16:26:35Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.7.15-1"
+      },
+      {
+        "id": 226795224,
+        "tag_name": "25.6.21-1",
+        "name": "25.6.21-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-06-20T23:00:45Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.6.21-1"
+      },
+      {
+        "id": 218582090,
+        "tag_name": "25.5.15-1",
+        "name": "25.5.15-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-05-14T14:20:27Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.5.15-1"
+      },
+      {
+        "id": 216964516,
+        "tag_name": "25.5.7-1",
+        "name": "25.5.7-1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2025-05-07T08:48:09Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.5.7-1"
+      },
+      {
+        "id": 213832564,
+        "tag_name": "25.4.22-1",
+        "name": "25.4.22-1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2025-04-22T05:14:26Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.4.22-1"
+      },
+      {
+        "id": 211878813,
+        "tag_name": "25.4.11-1",
+        "name": "25.4.11-1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2025-04-11T15:46:41Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.4.11-1"
+      },
+      {
+        "id": 203230023,
+        "tag_name": "25.3.2-1",
+        "name": "25.3.2-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-02T17:05:15Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.3.2-1"
+      },
+      {
+        "id": 196897985,
+        "tag_name": "25.1.27-1",
+        "name": "25.1.27-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-27T10:06:13Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.1.27-1"
+      },
+      {
+        "id": 193548802,
+        "tag_name": "25.1.8-1",
+        "name": "25.1.8-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-07T17:48:46Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.1.8-1"
+      },
+      {
+        "id": 192809044,
+        "tag_name": "25.1.1-1",
+        "name": "25.1.1-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-31T18:46:08Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/25.1.1-1"
+      },
+      {
+        "id": 192317281,
+        "tag_name": "24.12.26-1",
+        "name": "24.12.26-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-25T20:43:09Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/24.12.26-1"
+      },
+      {
+        "id": 189206448,
+        "tag_name": "24.12.05-1",
+        "name": "24.12.05-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-05T15:13:55Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/24.12.05-1"
+      },
+      {
+        "id": 186360561,
+        "tag_name": "24.11.19-2",
+        "name": "24.11.19-2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-20T08:46:43Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/24.11.19-2"
+      },
+      {
+        "id": 185795463,
+        "tag_name": "24.11.17-2",
+        "name": "24.11.17-2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-17T08:33:48Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/24.11.17-2"
+      },
+      {
+        "id": 185220162,
+        "tag_name": "24.11.13-1",
+        "name": "24.11.13-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-13T16:00:00Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/24.11.13-1"
+      },
+      {
+        "id": 172194317,
+        "tag_name": "1.31-1",
+        "name": "1.31-1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-27T16:42:24Z",
+        "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/1.31-1"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "9ee2b2b7d31b4a9193e6615b83e1ca93a395676e",
+      "truncated": false,
+      "paths": [
+        ".gitattributes",
+        ".github",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature.yml",
+        ".github/workflows",
+        ".github/workflows/Auto compile with openwrt sdk.yml",
+        ".github/workflows/Close stale issues and Prs.yml",
+        "LICENSE",
+        "README.md",
+        "luci-app-passwall2",
+        "luci-app-passwall2/Makefile",
+        "luci-app-passwall2/htdocs",
+        "luci-app-passwall2/htdocs/luci-static",
+        "luci-app-passwall2/htdocs/luci-static/resources",
+        "luci-app-passwall2/htdocs/luci-static/resources/view",
+        "luci-app-passwall2/htdocs/luci-static/resources/view/passwall2",
+        "luci-app-passwall2/htdocs/luci-static/resources/view/passwall2/Sortable.min.js",
+        "luci-app-passwall2/htdocs/luci-static/resources/view/passwall2/cbi.js",
+        "luci-app-passwall2/htdocs/luci-static/resources/view/passwall2/func.js",
+        "luci-app-passwall2/htdocs/luci-static/resources/view/passwall2/qrcode.min.js",
+        "luci-app-passwall2/luasrc",
+        "luci-app-passwall2/luasrc/controller",
+        "luci-app-passwall2/luasrc/controller/passwall2.lua",
+        "luci-app-passwall2/luasrc/model",
+        "luci-app-passwall2/luasrc/model/cbi",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/acl.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/acl_config.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/app_update.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/geoview.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/global.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/haproxy.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/include",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/include/shunt_options.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/node_config.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/node_list.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/node_subscribe.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/node_subscribe_config.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/other.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/rule.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/shunt_rules.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/socks_config.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/type",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/type/1_sing-box.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/type/2_xray.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/type/3_ss-rust.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/client/type/4_ssr.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/index.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/server_config.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/type",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/type/1_sing-box.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/type/2_xray.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/type/3_ss-rust.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/type/4_ssr.lua",
+        "luci-app-passwall2/luasrc/model/cbi/passwall2/server/user_config.lua",
+        "luci-app-passwall2/luasrc/passwall2",
+        "luci-app-passwall2/luasrc/passwall2/api.lua",
+        "luci-app-passwall2/luasrc/passwall2/com.lua",
+        "luci-app-passwall2/luasrc/passwall2/server_app.lua",
+        "luci-app-passwall2/luasrc/passwall2/util_shadowsocks.lua",
+        "luci-app-passwall2/luasrc/passwall2/util_sing-box.lua",
+        "luci-app-passwall2/luasrc/passwall2/util_xray.lua",
+        "luci-app-passwall2/luasrc/view",
+        "luci-app-passwall2/luasrc/view/passwall2",
+        "luci-app-passwall2/luasrc/view/passwall2/app_update",
+        "luci-app-passwall2/luasrc/view/passwall2/app_update/app_version.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/footer.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/header.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/hidevalue.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_dynamiclist.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_dynamiclist_com.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_listvalue.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_listvalue_com.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_multivalue.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_multivalue_com.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_value.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/nodes_value_com.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/sortable.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/cbi/tvalue.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/global",
+        "luci-app-passwall2/luasrc/view/passwall2/global/backup.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/global/faq.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/global/footer.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/global/status.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/haproxy",
+        "luci-app-passwall2/luasrc/view/passwall2/haproxy/js.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/haproxy/status.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/include",
+        "luci-app-passwall2/luasrc/view/passwall2/include/node_change.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/include/shunt_options.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/log",
+        "luci-app-passwall2/luasrc/view/passwall2/log/log.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/node_config",
+        "luci-app-passwall2/luasrc/view/passwall2/node_config/footer.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/node_config/header.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/node_config/link_share_man.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/node_list",
+        "luci-app-passwall2/luasrc/view/passwall2/node_list/node_list.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/node_subscribe",
+        "luci-app-passwall2/luasrc/view/passwall2/node_subscribe/js.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/rule",
+        "luci-app-passwall2/luasrc/view/passwall2/rule/geoview.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/rule/rule_version.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/rule/shunt_rule_list.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/server",
+        "luci-app-passwall2/luasrc/view/passwall2/server/config_footer.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/server/config_header.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/server/gen_wireguard_key.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/server/log.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/server/server_list_status.htm",
+        "luci-app-passwall2/luasrc/view/passwall2/socks_auto_switch",
+        "luci-app-passwall2/luasrc/view/passwall2/socks_auto_switch/btn.htm",
+        "luci-app-passwall2/po",
+        "luci-app-passwall2/po/fa",
+        "luci-app-passwall2/po/fa/passwall2.po",
+        "luci-app-passwall2/po/ru",
+        "luci-app-passwall2/po/ru/passwall2.po",
+        "luci-app-passwall2/po/zh-cn",
+        "luci-app-passwall2/po/zh-cn/passwall2.po",
+        "luci-app-passwall2/po/zh-tw",
+        "luci-app-passwall2/po/zh-tw/passwall2.po",
+        "luci-app-passwall2/po/zh_Hans",
+        "luci-app-passwall2/po/zh_Hant",
+        "luci-app-passwall2/root",
+        "luci-app-passwall2/root/etc",
+        "luci-app-passwall2/root/etc/config",
+        "luci-app-passwall2/root/etc/config/passwall2_server",
+        "luci-app-passwall2/root/etc/hotplug.d",
+        "luci-app-passwall2/root/etc/hotplug.d/iface",
+        "luci-app-passwall2/root/etc/hotplug.d/iface/98-passwall2",
+        "luci-app-passwall2/root/etc/hotplug.d/ntp",
+        "luci-app-passwall2/root/etc/hotplug.d/ntp/30-passwall2-resync",
+        "luci-app-passwall2/root/etc/init.d",
+        "luci-app-passwall2/root/etc/init.d/passwall2",
+        "luci-app-passwall2/root/etc/init.d/passwall2_server",
+        "luci-app-passwall2/root/etc/uci-defaults",
+        "luci-app-passwall2/root/etc/uci-defaults/luci-app-passwall2",
+        "luci-app-passwall2/root/etc/uci-defaults/luci-app-passwall2_server",
+        "luci-app-passwall2/root/usr",
+        "luci-app-passwall2/root/usr/share",
+        "luci-app-passwall2/root/usr/share/passwall2",
+        "luci-app-passwall2/root/usr/share/passwall2/0_default_config",
+        "luci-app-passwall2/root/usr/share/passwall2/app.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/app_acl.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/direct_ip",
+        "luci-app-passwall2/root/usr/share/passwall2/domains_excluded",
+        "luci-app-passwall2/root/usr/share/passwall2/haproxy.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/haproxy_check.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/helper_dnsmasq.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/i18n.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/iptables.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/lease2hosts.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/monitor.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/nftables.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/rule_update.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/socks_auto_switch.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/subscribe.lua",
+        "luci-app-passwall2/root/usr/share/passwall2/tasks.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/test.sh",
+        "luci-app-passwall2/root/usr/share/passwall2/utils.sh",
+        "luci-app-passwall2/root/usr/share/rpcd",
+        "luci-app-passwall2/root/usr/share/rpcd/acl.d",
+        "luci-app-passwall2/root/usr/share/rpcd/acl.d/luci-app-passwall2.json",
+        "luci-app-passwall2/root/usr/share/ucitrack",
+        "luci-app-passwall2/root/usr/share/ucitrack/luci-app-passwall2-server.json",
+        "luci-app-passwall2/root/usr/share/ucitrack/luci-app-passwall2.json"
+      ]
+    },
+    "error": ""
+  }
+}

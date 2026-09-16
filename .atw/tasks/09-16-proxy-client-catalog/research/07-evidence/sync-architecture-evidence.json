@@ -1,0 +1,228 @@
+{
+  "now": "2026-09-16T16:08:37.903Z",
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/releases/340663196/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb",
+      "method": "HEAD",
+      "status": 200
+    }
+  ],
+  "checks": {
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb": "valid"
+  },
+  "errors": [],
+  "automatic": [
+    {
+      "appId": "sing-box-windows",
+      "platform": "windows",
+      "version": "v2.3.1",
+      "downloads": 6
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "macos",
+      "version": "v2.3.1",
+      "downloads": 2
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "linux",
+      "version": "v2.3.1",
+      "downloads": 3
+    },
+    {
+      "appId": "xrayui",
+      "platform": "windows",
+      "version": "1.18",
+      "downloads": 4
+    },
+    {
+      "appId": "swell-proxy",
+      "platform": "windows",
+      "version": "v3.3.6",
+      "downloads": 2
+    },
+    {
+      "appId": "nekoray",
+      "platform": "windows",
+      "version": "4.0.1",
+      "downloads": 1
+    },
+    {
+      "appId": "nekoray",
+      "platform": "linux",
+      "version": "4.0.1",
+      "downloads": 3
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "windows",
+      "version": "v0.2.2",
+      "downloads": 1
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "macos",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "linux",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "windows",
+      "version": "v2.4.20",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "linux",
+      "version": "v2.4.20",
+      "downloads": 26
+    },
+    {
+      "appId": "dae",
+      "platform": "linux",
+      "version": "v2.0.0",
+      "downloads": 73
+    },
+    {
+      "appId": "daed",
+      "platform": "linux",
+      "version": "v1.27.0",
+      "downloads": 28
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "linux",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "openwrt",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "asus",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "clashbox",
+      "platform": "harmonyos",
+      "version": "1.7.4",
+      "downloads": 1
+    },
+    {
+      "appId": "nekobox-for-harmony",
+      "platform": "harmonyos",
+      "version": "v1.9.3",
+      "downloads": 1
+    },
+    {
+      "appId": "ownbox",
+      "platform": "android",
+      "version": "v2.7.9",
+      "downloads": 4
+    },
+    {
+      "appId": "openclash",
+      "platform": "openwrt",
+      "version": "v0.47.156",
+      "downloads": 2
+    },
+    {
+      "appId": "passwall",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 3
+    },
+    {
+      "appId": "passwall2",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 2
+    },
+    {
+      "appId": "momo",
+      "platform": "openwrt",
+      "version": "v1.2.1",
+      "downloads": 43
+    }
+  ]
+}

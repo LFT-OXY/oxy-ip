@@ -1,0 +1,55 @@
+{
+  "baseline": {
+    "order": 92,
+    "id": "lvory",
+    "name": "lvory",
+    "reference_url": "https://huarun.win/apps/lvory",
+    "observed_official_entry": "https://github.com/sxueck/lvory",
+    "ticket": "07"
+  },
+  "repo": "sxueck/lvory",
+  "metadata": {
+    "url": "https://api.github.com/repos/sxueck/lvory",
+    "status": 1,
+    "data": {
+      "full_name": null,
+      "html_url": null,
+      "description": null,
+      "homepage": null,
+      "default_branch": null,
+      "archived": null,
+      "license": null
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/sxueck/lvory/readme",
+    "status": 1,
+    "data": {
+      "html_url": null,
+      "sha": null,
+      "text": null
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/sxueck/lvory/releases?per_page=100",
+    "status": 1,
+    "data": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest",
+      "status": "404"
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/sxueck/lvory/git/trees/main?recursive=1",
+    "status": 1,
+    "data": {
+      "sha": null,
+      "truncated": null,
+      "paths": []
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  }
+}

@@ -16,6 +16,7 @@ export const codeLabels = {
   partial: "源码不完整",
   available: "源码可见",
   closed: "未公开",
+  unknown: "待核实",
 } as const;
 export const priceLabels = {
   free: "免费",
@@ -40,7 +41,7 @@ export const appSchema = z.object({
   icon: z.string().startsWith("/client-icons/"),
   platforms: z.array(platformSchema).min(1),
   cores: z.array(z.string()),
-  code: z.enum(["open", "partial", "available", "closed"]),
+  code: z.enum(["open", "partial", "available", "closed", "unknown"]),
   price: z.enum(["free", "paid", "unknown"]),
   priceDetails: z.string(),
   developers: z.array(z.string()),
@@ -65,10 +66,26 @@ export const releaseSchema = z
     lastCheckedAt: z.iso.datetime().optional(),
     maintenance: z.enum(["manual", "automatic"]),
     source: sourceSchema,
-    fallback: z.object({ kind: z.enum(["store", "page"]), url: httpsUrl }),
+    fallback: z
+      .object({ kind: z.enum(["store", "page"]), url: httpsUrl })
+      .optional(),
+    unavailable: z.literal(true).optional(),
     note: z.string().optional(),
-    downloads: z.array(downloadSchema).min(1),
+    downloads: z.array(downloadSchema),
   })
+  .refine(
+    (row) =>
+      row.unavailable
+        ? row.maintenance === "manual" &&
+          row.downloads.length === 0 &&
+          !row.fallback &&
+          !row.version &&
+          !row.publishedAt &&
+          !row.lastCheckedAt &&
+          !!row.note
+        : row.downloads.length > 0 && !!row.fallback,
+    "不可获取的历史记录只能保留人工说明；其他快照必须有获取选项及官方回退入口",
+  )
   .refine(
     (row) => !!row.version || row.downloads.every((d) => d.kind !== "direct"),
     "直链必须属于明确版本",

@@ -1,0 +1,320 @@
+
+> ip@26.99.2316 test /Users/oxy/Documents/code/My/oxy-ip
+> wrangler deploy --dry-run --env='' --outdir .worker-test && node --import ./tests/register-paths.mjs --test tests/*.test.mjs
+
+
+ ⛅️ wrangler 4.130.0 (update available 4.132.0)
+───────────────────────────────────────────────
+✨ Read 171 files from the assets directory /Users/oxy/Documents/code/My/oxy-ip/dist
+Total Upload: 41.88 KiB / gzip: 11.60 KiB
+Your Worker has access to the following bindings:
+Binding                                    Resource
+env.API_LIMITER (180 requests/60s)         Rate Limit
+env.ACTION_LIMITER (5 requests/60s)        Rate Limit
+env.ASSETS                                 Assets
+
+--dry-run: exiting now.
+✔ Claude and Perplexity read and validate same-domain trace responses (13.897333ms)
+✔ Gemini probes its cross-origin robots resource instead of the missing icon (2.079ms)
+✔ failed probes are skipped without retries and cancellation is preserved (0.485417ms)
+✔ DeepSeek reads current changes, ignoring resolved incidents and future maintenance (0.674292ms)
+✔ Gemini uses the latest timestamp, not array order, to determine resolution (10.123875ms)
+✔ Gemini reads public page identifiers and retries the status API without exposing credentials (24.402792ms)
+✔ browser and Worker share the same verified AI status sources (0.609458ms)
+✔ AI platform status links resolve to synchronized service entries (35.740625ms)
+✔ first check detects a newer deployed build without an HTTP validator baseline (21.389042ms)
+✔ missing or invalid manifests cannot trigger false update notifications (0.758375ms)
+✔ platform comparisons account for normal Android, ChromeOS and iPad compatibility values (0.691875ms)
+✔ context comparison distinguishes missing fields from contradictory values (0.128334ms)
+✔ config never exposes secrets and disables missing or mismatched host configuration (0.514625ms)
+✔ verification rejects invalid inputs before contacting providers (0.344209ms)
+✔ verification requires provider success, exact hostname and Turnstile action (21.265209ms)
+✔ provider outage fails closed without exposing the upstream error (0.180958ms)
+✔ Worker exposes config read-only and enforces origin and POST on verification (1.4815ms)
+✔ missing configuration keeps providers visible with actionable reasons (0.402ms)
+✔ reCAPTCHA v3 requires the expected action and a valid score meeting the threshold (1.308084ms)
+✔ 第二批21条GitHub配置匹配真实平台资产，错误版本URL拒绝且无遗漏 (24.7095ms)
+✔ Surfboard独立手机渠道贯穿API选择与解析，TV更新不能覆盖手机 (17.422792ms)
+✔ 数字架构须经来源映射，通用包与Root脚本包不从扩展名猜CPU (15.750292ms)
+✔ 预发布标记为false的FlyClash Alpha仍拒绝，Miku旧正式代际不随新主分支漂移 (0.291125ms)
+✔ 第二批4个商店源身份独立，人工Mac与其他平台不被iOS覆盖 (1.560041ms)
+✔ 新来源临时失败保留快照，其他平台继续成功 (0.93625ms)
+✔ 第三批18条GitHub来源覆盖独立平台资产计数及正式版绑定 (23.43ms)
+✔ Mac独立build渠道与Netch旧正式代际不被其他渠道覆盖 (23.105416ms)
+✔ 固定文件名、数字架构与多包变体保持真实身份 (1.486333ms)
+✔ 第三批6条Apple来源只更新iOS，错误身份失败而Mac人工信息不变 (1.847125ms)
+✔ 真实较新测试发行被排除；平台临时失败保留旧成功数据而其他平台继续 (1.25775ms)
+✔ 第4批17条GitHub来源完整匹配平台包计数且拒绝跨版和测试包 (24.654792ms)
+✔ Windows便携架构不误标，Harmony HAP与OpenWrt APK不混入Android (1.863833ms)
+✔ daed客户端与LSP组件渠道隔离，Nekoray不恢复旧Xray代际 (0.381875ms)
+✔ 真实starter资产使单源保守失败；临时HEAD失败不冒作自动成功 (5.164375ms)
+✔ 资产等量错换也会失败，不能用源码包替代安装包 (0.849666ms)
+✔ NekoBox失败后成功不残留本轮失败文案，永久平台条件仍保留 (2.459375ms)
+✔ 本批16个 GitHub 来源的真实资产按平台隔离，固定名称也绑定发布标签 (19.764084ms)
+✔ 固定包名架构只取官方逐平台映射，未配置时拒绝，不能用格式猜测 (2.900042ms)
+✔ 真实 Nightly 不能因 prerelease=false 混入，ClashFest alpha 资产不作正式包 (0.623875ms)
+✔ 本批10个 App Store 真实身份不串配，iOS 不更新 Mac (6.009ms)
+✔ 新增固定名来源失败保留成功快照与时间，其他平台继续更新 (0.564584ms)
+✔ Linux 正式发行包的架构、格式与独立完整清单一致 (0.600708ms)
+✔ 本批真实资产完整分类，未展示项必须有明确排除理由 (3.712958ms)
+✔ 第04票固定25项与首票合计33项，身份、平台、图标、逐平台快照完整 (7.682625ms)
+✔ 源码可见的新状态使用真实英文翻译且可筛选 (2.021292ms)
+✔ 不将测试包、未知发布或兼容 Mac 的 iOS 版本冒充正式 Mac 发布 (0.14775ms)
+✔ Surge Mac 使用原生官网入口，不指向 iOS 商店 (0.120917ms)
+✔ 第05票固定25项加入后总计58项，身份顺序及逐平台获取入口完整 (13.93675ms)
+✔ 测试渠道、仅源码和兼容Mac不伪造正式发布信息 (0.433417ms)
+✔ Root模块、旧正式内核、费用和品牌别名保持真实限定 (0.814959ms)
+✔ Box for Root 的独立六内核清单均可筛选，包含 Mihomo (0.505292ms)
+✔ 第06票独立25项完整收录，累计83项身份、顺序和逐平台快照无重复遗漏 (11.490709ms)
+✔ 第06票未知Mac版本、实验桌面和失效项目不伪造正式包与核验时间 (0.28075ms)
+✔ 独立身份、非商业许可证、渠道、TrollStore与核心依赖限制明确 (0.171208ms)
+✔ OneBox桌面身份不引用OneBoxM商店，也不残留未核实Mac的说明 (0.0765ms)
+✖ 第07票固定25项与累计108项身份、顺序没有重复遗漏 (1.254042ms)
+✔ 第07票已核实资料具有独立平台内核期望且组合筛选可达 (9.467666ms)
+✖ 第07票不得在未获授权时漏图或用文字占位冒充品牌 (0.356791ms)
+✔ 代码公开不等于开源，测试渠道、源码安装及不同平台代际保持限定 (0.326333ms)
+✔ ImmortalWrt正式软件源独立版本、包架构及依赖限定不冒用Linux快照 (0.223875ms)
+✔ 首票独立名单、全部平台与人工资料完整且无重复 (1.196333ms)
+✔ 搜索名称别名简介，中英文与四维筛选组合，多内核及无结果 (0.29375ms)
+✔ 最近更新仅取所选平台官方发布时间，未知日期末尾且同值顺序稳定 (0.148291ms)
+✔ 平台与安装包选择不串配，旧包标识回退本平台第一项 (0.103125ms)
+✔ 清除筛选保留语言及无关 URL 状态 (0.086541ms)
+✔ 发布数据边界拒绝非 HTTPS、无版本直链和无架构安装包 (1.456833ms)
+✔ 动态资料使用真实英文翻译，不回退中文或丢失占位 (3.056791ms)
+✔ 商店真实样本仅更新对应 iOS，Mac 与其他人工快照原样保留 (51.389ms)
+✔ Stash 官方 feed 的较新 Beta 不覆盖正式版，下载只属于 Mac 的 build 487 (25.647584ms)
+✔ 商店无结果、错误身份、测试版本或异常入口保留已有值与成功时间 (7.729417ms)
+✔ 商店新版本缺发布日期时留空，不能沿用旧版本日期或应用首发时间 (15.624916ms)
+✔ 商店 HTTP、JSON 及超时失败均不推进快照，其他商店正常更新 (31.198292ms)
+✔ 官网订阅空列表、全测试渠道、坏 XML、错版本包与错误平台均保留旧快照 (4.660958ms)
+✔ 官网直链临时不可达保留旧版，确认失效才回退官网，人工 page 不冒充自动核验 (12.47125ms)
+✔ 真实官方样本匹配四平台架构格式，签名和校验文件不作为包 (2.603292ms)
+✔ 人工变异样本：排除草稿、预发布、测试标签/名称，按发布时间选择 (0.4985ms)
+✔ 人工变异样本：不同版本、未知架构、测试包、非官方 URL 不得混入 (0.334417ms)
+✔ 单来源失败/无正式版保留旧值和核验时间，其他来源继续且不修改输入 (1.567167ms)
+✔ 单平台缺包/临时访问失败保留全平台旧快照，不阻止其他平台 (2.673625ms)
+✔ 确认失效才回退官方页，保留可用包；失败路径也不刷新核验时间 (1.751542ms)
+✔ HTTP 403/429/5xx、超时不确认失效，404/410 必须连续确认且不传 token (22.736291ms)
+✔ 真实样本的传输模拟：发布分页、预发布跳过、独立资产接口与 API 失败 (4.711ms)
+✔ 未配置来源的人工快照原样保留，版本推进时绝不拼接旧包 (42.047708ms)
+✔ 离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文件不变 (717.171583ms)
+✔ test/testing/dev/development 渠道不更新快照，边界不误伤 latest (1.2685ms)
+✔ 部分直链失效只移除失效项并补唯一 fallback，保留其他包 (0.312ms)
+✔ Net.Coffee score and residential flag are preserved, null coordinates are skipped (0.450417ms)
+✔ frontend requests Net.Coffee without cookies and rejects mismatched results (10.986792ms)
+✔ each probe publishes an immutable snapshot before the batch finishes (9.690459ms)
+✔ cancelled runs stop publishing progress and scheduling probes (0.447167ms)
+✔ removed DNS and news routes have no page source or navigation entries (0.662459ms)
+✔ animated navigation maps IP details and live status to their parent tools (0.281291ms)
+✔ site logos use HTTPS icon URLs rather than bundled files (0.516917ms)
+✔ production assets exclude deleted content and backend source (0.198667ms)
+✔ tool routes select their grouped navigation (0.06675ms)
+✔ all module links map to exactly one parent and legacy paths redirect to canonical destinations (0.133208ms)
+✔ vendored detection modules match the pinned upstream revision (1.814166ms)
+✔ runtime cache version matches the shipped local bundle and excludes remote app calls (0.809916ms)
+✔ navigator adapter skips absent Worker comparisons but preserves mismatch detection (0.520417ms)
+✔ DNS samples use unique hosts, bypass cache, and return resolver data (19.079375ms)
+✔ domestic probes read browser-exposed IP headers and fall back only to the independent domestic source (16.391375ms)
+✔ domestic egress comes first and external IPv4 remains separate (1.812666ms)
+✔ matching domestic and external IPv4 produces one card (1.006125ms)
+✔ failed domestic probe never promotes a proxy or routed IPv6 to local egress (0.443333ms)
+✔ IPv6 and failed probes do not create overview cards (0.381375ms)
+✔ home retest cancels previous runs before resetting only home query families (0.708417ms)
+✔ saved language wins; browser language supplies a safe default (0.436833ms)
+✔ interpolation leaves user values intact (0.160416ms)
+✔ all literal translation calls have English entries and matching placeholders (74.68825ms)
+✔ English runtime translates messages and switches with blocked storage without losing route state (1.452709ms)
+✔ IP latency uses eight requested countries and never substitutes Hong Kong for China (0.436208ms)
+✔ network details validate all announcing ASNs and preserve no-ROA vs unavailable (16.464584ms)
+✔ RIPE failure returns unavailable without inventing route data (0.190333ms)
+✔ RDAP bootstrap chooses the longest matching IPv4 or IPv6 registration prefix (3.684834ms)
+✔ IP score colors use the same boundaries and never treat missing scores as zero (0.342083ms)
+✔ IP classification validates results, caches exact IPs and suppresses unavailable results (29.512ms)
+✔ zero configuration hides verification but keeps ordinary tools (0.44675ms)
+✔ matching configured provider exposes verification; incomplete or wrong host does not (0.136958ms)
+✔ preferred presets include two distinct mainland cities and prefer major networks (0.498042ms)
+✔ missing mainland nodes are not replaced with Hong Kong or invented nodes (0.073833ms)
+✔ Ping publishes intermediate results before completion (0.898167ms)
+✔ cancelled Ping does not publish stale results (0.270584ms)
+✔ custom cities run in sequential batches and preserve earlier results (0.194959ms)
+✔ completed identical measurements reuse quota regardless of node order (0.16ms)
+✔ home platform summary initializes its featured services when imported (42.545542ms)
+✔ cache-only progress subscriptions receive updates without starting a fetch (1.286834ms)
+✔ cache-only summary observers do not prevent an active observer from refreshing (0.636709ms)
+✔ home reset restarts probes with a disabled summary observer attached (0.686417ms)
+✔ unavailable data is never interpreted as a clean detection (0.460833ms)
+✔ only true headless flags count as signals, not ratings or false values (0.1385ms)
+✔ prototype anomalies and collection errors remain separate (0.098375ms)
+✔ fingerprint summaries show values rather than hashes (0.1745ms)
+✔ Instatus UP and future maintenance stay operational (0.670708ms)
+✔ Instatus active incidents and maintenance are normalized (0.09225ms)
+✔ existing Statuspage and unknown schemas are preserved (0.078ms)
+✔ 第三方目录保留九站固定网址、分组和中文用途 (0.758916ms)
+✔ 中文提示保留各站的具体解释边界 (0.968166ms)
+✔ 英文运行时覆盖全部目录文案并保留各站限定 (28.994375ms)
+✔ equivalent IPv6 forms preserve local and public classifications (0.619375ms)
+✔ malformed IPv6 candidates are rejected (0.087875ms)
+✔ public IP validation rejects private, fake-IP, expanded IPv6, mapped loopback and documentation ranges (4.390125ms)
+✔ target validation does not accept URLs, private hosts or ports (0.24425ms)
+✔ request JSON has a strict size limit and rejects invalid shapes (12.855ms)
+✔ backend source paths are never served (0.863958ms)
+✔ unknown APIs return JSON 404 instead of the SPA (0.352083ms)
+✔ API method and origin checks (0.828833ms)
+✔ rate limiting runs before upstream work (0.264625ms)
+✔ local requests never manufacture a visitor IP (0.242541ms)
+✔ visitor information uses this request only and is not cacheable (0.308709ms)
+✔ removed legacy risk endpoint returns 404 (0.1435ms)
+✔ removed DNS endpoints return 404 without querying upstream services (0.207916ms)
+✔ Ping validates candidates and requests actual ICMP probes (0.689ms)
+✔ WHOIS uses RDAP and never turns a target into a free-form fetch URL (0.298042ms)
+✔ upstream errors do not expose response bodies or credentials (0.185042ms)
+✔ removed IP card endpoint returns 404 (0.0775ms)
+✔ domain registration bypasses rdap.org using the IANA registry endpoint (0.289375ms)
+✔ unsupported domain suffix returns an explicit RDAP error (0.169875ms)
+✔ Ping catalog lists all online cities and aggregates probe counts (6.5325ms)
+✔ Ping accepts only catalog locations for dynamic selection (0.911292ms)
+✔ regional Ping requests spread probes across continents without conflicting limits (0.294375ms)
+✔ preferred Ping pins the online major provider ASN while custom mode keeps city selection (0.314666ms)
+✔ icon proxy uses a fixed provider, caches images and strips upstream cookies (0.247083ms)
+✔ icon proxy rejects arbitrary URLs and non-image responses (0.658875ms)
+✔ icon proxy rejects upstream redirects without forwarding Location (0.223333ms)
+✔ WeChat icon uses its official resource because the icon provider returns 404 (0.128666ms)
+ℹ tests 165
+ℹ suites 0
+ℹ pass 163
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1028.221917
+
+✖ failing tests:
+
+test at tests/client-catalog-batch-4.test.mjs:19:1
+✖ 第07票固定25项与累计108项身份、顺序没有重复遗漏 (1.254042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+
+    [
+      'shadowrocket',
+      'flclash',
+      'sing-box',
+      'clash-verge-rev',
+  ...
+      'sudoku-desktop',
+  -   'clash-net',
+      'clashn',
+  -   'lvory',
+      'v2raya',
+      'dae',
+      'daed',
+      'shellcrash',
+      'clashbox',
+
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-4.test.mjs:21:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [
+      'shadowrocket',        'flclash',                'sing-box',            'clash-verge-rev',
+      'v2rayng',             'clash-meta-for-android', 'stash',               'bettbox',
+      'surge',               'quantumult-x',           'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',             'hiddify',             'egern',
+      'clashfest',           'exclave',                'nekobox-for-android', 'husi',
+      'yumebox',             'shadowsocks-android',    'onexray',             'ssrvpn',
+      'singcast',            'streisand',              'foxray',              'clash-nyanpasu',
+      'clash-party',         'gui-for-clash',          'sparkle',             'v2rayn',
+      'anyportal',           'clashx-meta',            'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',               'clash-mi',            'flclashx',
+      'mikubox-for-android', 'kunbox',                 'nekobox-by-starifly', 'happ-proxy',
+      'clash-xiaoy',         'monadbox',               'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',       'sudodroid',           'box-for-root',
+      'surfing',             'box4magisk',             'box-for-android',     'akashaproxy',
+      'clash-mix',           'anywhere',               'everywhere',          'connect-now',
+      'incy',                'nextin',                 'sing-box-for-apple',  'tunna',
+      'loon-lite',           'gui-for-singbox',        'clashmac',            'throne',
+      'flowz',               'polaris',                'onebox',              'interstellar',
+      'satelite',            'clashbar',               'kumoapp',             'singboard-for-mac',
+      'irbox',               'netch',                  'pantheon',            'stelliberty',
+      'carton',              'pandora-box',            'clashtui',            'sing-box-windows',
+      'nekobox-for-pc',      'xrayui',                 'swell-proxy',         'nekoray',
+      'sudoku-desktop',      'clashn',                 'v2raya',              'dae',
+      'daed',                'shellcrash',             'clashbox',            'nekobox-for-harmony',
+      'karing-harmony-hap',  'hey',                    'ownbox',              'openclash',
+      ... 6 more items
+    ],
+    expected: [
+      'shadowrocket',        'flclash',                'sing-box',            'clash-verge-rev',
+      'v2rayng',             'clash-meta-for-android', 'stash',               'bettbox',
+      'surge',               'quantumult-x',           'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',             'hiddify',             'egern',
+      'clashfest',           'exclave',                'nekobox-for-android', 'husi',
+      'yumebox',             'shadowsocks-android',    'onexray',             'ssrvpn',
+      'singcast',            'streisand',              'foxray',              'clash-nyanpasu',
+      'clash-party',         'gui-for-clash',          'sparkle',             'v2rayn',
+      'anyportal',           'clashx-meta',            'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',               'clash-mi',            'flclashx',
+      'mikubox-for-android', 'kunbox',                 'nekobox-by-starifly', 'happ-proxy',
+      'clash-xiaoy',         'monadbox',               'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',       'sudodroid',           'box-for-root',
+      'surfing',             'box4magisk',             'box-for-android',     'akashaproxy',
+      'clash-mix',           'anywhere',               'everywhere',          'connect-now',
+      'incy',                'nextin',                 'sing-box-for-apple',  'tunna',
+      'loon-lite',           'gui-for-singbox',        'clashmac',            'throne',
+      'flowz',               'polaris',                'onebox',              'interstellar',
+      'satelite',            'clashbar',               'kumoapp',             'singboard-for-mac',
+      'irbox',               'netch',                  'pantheon',            'stelliberty',
+      'carton',              'pandora-box',            'clashtui',            'sing-box-windows',
+      'nekobox-for-pc',      'xrayui',                 'swell-proxy',         'nekoray',
+      'sudoku-desktop',      'clash-net',              'clashn',              'lvory',
+      'v2raya',              'dae',                    'daed',                'shellcrash',
+      'clashbox',            'nekobox-for-harmony',    'karing-harmony-hap',  'hey',
+      ... 8 more items
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/client-catalog-batch-4.test.mjs:107:1
+✖ 第07票不得在未获授权时漏图或用文字占位冒充品牌 (0.356791ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+  + [
+  +   'clash-net',
+  +   'lvory',
+  +   'shellcrash',
+  +   'passwall',
+  +   'passwall2',
+  +   'nikki',
+  +   'nikki-rs',
+  +   'momo',
+  +   'homeproxy'
+  + ]
+  - []
+
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-4.test.mjs:115:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [
+      'clash-net',  'lvory',
+      'shellcrash', 'passwall',
+      'passwall2',  'nikki',
+      'nikki-rs',   'momo',
+      'homeproxy'
+    ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+ ELIFECYCLE  Test failed. See above for more details.

@@ -1,0 +1,623 @@
+{
+  "baseline": {
+    "order": 91,
+    "id": "clashn",
+    "name": "ClashN",
+    "reference_url": "https://huarun.win/apps/clashn",
+    "observed_official_entry": "https://github.com/2dust/clashN",
+    "ticket": "07"
+  },
+  "repo": "2dust/clashN",
+  "metadata": {
+    "url": "https://api.github.com/repos/2dust/clashN",
+    "status": 0,
+    "data": {
+      "full_name": "2dust/clashN",
+      "html_url": "https://github.com/2dust/clashN",
+      "description": "A clash client for Windows, support Mihomo",
+      "homepage": "https://1.2345345.xyz",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/2dust/clashN/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/2dust/clashN/blob/main/README.md",
+      "sha": "c41dc74be24d4951b745e12e351756726d6dab40",
+      "text": "## [本项目功能将合并到v2rayN项目](https://github.com/2dust/clashN/issues/358)\n\n\n# ClashN\nA clash client for Windows, supports [Mihomo core](https://github.com/MetaCubeX/Mihomo)\n\n[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/2dust/clashn)](https://github.com/2dust/clashn/commits/master)\n[![GitHub Releases](https://img.shields.io/github/downloads/2dust/clashn/latest/total?logo=github)](https://github.com/2dust/clashn/releases)\n  \n### How to use\n1. Download `clashN.zip` from [releases](https://github.com/2dust/clashN/releases)\n2. Unzip to any folder you want\n3. Run ClashN.exe\n\n\n\n### Tips\n\n- You can also add `v2ray` subscription to `ClashN`, just enable `Subcription conversion` when you add a profile.\n\n\n\n### Requirements  \n- Microsoft [.NET 8.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime) \n- Mihomo core [https://github.com/MetaCubeX/Mihomo/releases](https://github.com/MetaCubeX/Mihomo/releases)\n\n\n\n### Telegram Channel\n[github_2dust](https://t.me/github_2dust)\n\n\n\n### Contribute\n\nTo build this project, you should clone both [ClashN](https://github.com/2dust/clashN) and [v2rayN](https://github.com/2dust/v2rayN) to the same folder\n```\nExample folder\n├─ ClashN\n|  ├─ clashN\n|  |  ├─ clashN.sln\n|  |  └─ ...\n|  ├─ README.md\n|  └─ ...\n├─ v2rayN\n|  ├─ v2rayN\n|  |  ├─ v2rayN.sln\n|  |  └─ ...\n|  ├─ README.md\n|  └─ ...\n└─ ...\n```\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/2dust/clashN/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 153118824,
+        "tag_name": "2.22",
+        "name": "",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.22",
+        "published_at": "2024-04-28T04:25:18Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "修复了一些bug",
+        "assets": [
+          {
+            "id": 164692312,
+            "name": "clashN.zip",
+            "browser_download_url": "https://github.com/2dust/clashN/releases/download/2.22/clashN.zip",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 153118824,
+        "tag_name": "2.22",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-04-28T04:25:18Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.22"
+      },
+      {
+        "id": 148409616,
+        "tag_name": "2.21",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-03-26T06:16:05Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.21"
+      },
+      {
+        "id": 139793406,
+        "tag_name": "2.20",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-02-04T02:34:59Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.20"
+      },
+      {
+        "id": 135495522,
+        "tag_name": "2.19",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-01-02T03:57:21Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.19"
+      },
+      {
+        "id": 135463224,
+        "tag_name": "2.18",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-01-01T10:25:26Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.18"
+      },
+      {
+        "id": 99500956,
+        "tag_name": "2.17",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-04-14T06:56:32Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.17"
+      },
+      {
+        "id": 99311319,
+        "tag_name": "2.16",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-04-13T03:14:50Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.16"
+      },
+      {
+        "id": 96747458,
+        "tag_name": "2.15",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-24T03:50:30Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.15"
+      },
+      {
+        "id": 92542401,
+        "tag_name": "2.14",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-02-15T12:23:12Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.14"
+      },
+      {
+        "id": 90917077,
+        "tag_name": "2.13",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-02-01T01:02:11Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.13"
+      },
+      {
+        "id": 90578743,
+        "tag_name": "2.12",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-01-29T12:17:36Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.12"
+      },
+      {
+        "id": 84986377,
+        "tag_name": "2.11",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-12-05T12:54:30Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.11"
+      },
+      {
+        "id": 83676447,
+        "tag_name": "2.10",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-11-20T12:03:24Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.10"
+      },
+      {
+        "id": 81944366,
+        "tag_name": "2.9",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-11-03T12:23:25Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.9"
+      },
+      {
+        "id": 80727120,
+        "tag_name": "2.8",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-10-23T11:07:36Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.8"
+      },
+      {
+        "id": 80399282,
+        "tag_name": "2.7",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-10-20T02:15:05Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.7"
+      },
+      {
+        "id": 80031827,
+        "tag_name": "2.6",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-17T00:42:35Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.6"
+      },
+      {
+        "id": 79772378,
+        "tag_name": "2.5",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-13T12:36:35Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.5"
+      },
+      {
+        "id": 79642124,
+        "tag_name": "2.4",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-12T12:50:17Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.4"
+      },
+      {
+        "id": 79367020,
+        "tag_name": "2.3",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-10-09T12:57:47Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.3"
+      },
+      {
+        "id": 79337773,
+        "tag_name": "2.2",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-08T12:18:03Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.2"
+      },
+      {
+        "id": 79132582,
+        "tag_name": "2.1",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-06T07:55:49Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.1"
+      },
+      {
+        "id": 78760584,
+        "tag_name": "2.0",
+        "name": "",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-10-01T13:08:32Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/2.0"
+      },
+      {
+        "id": 76827381,
+        "tag_name": "1.22",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-09-11T12:10:14Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.22"
+      },
+      {
+        "id": 75733894,
+        "tag_name": "1.21",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-30T07:32:27Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.21"
+      },
+      {
+        "id": 74196942,
+        "tag_name": "1.20",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-11T12:21:31Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.20"
+      },
+      {
+        "id": 74092086,
+        "tag_name": "1.19",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-10T12:01:50Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.19"
+      },
+      {
+        "id": 73939797,
+        "tag_name": "1.18",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-09T00:43:40Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.18"
+      },
+      {
+        "id": 73638154,
+        "tag_name": "1.17",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-04T12:24:03Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.17"
+      },
+      {
+        "id": 72954887,
+        "tag_name": "1.16",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-07-27T12:11:15Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.16"
+      },
+      {
+        "id": 71243996,
+        "tag_name": "1.15",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-07-05T06:07:56Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.15"
+      },
+      {
+        "id": 70695161,
+        "tag_name": "1.14",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-06-28T01:14:09Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.14"
+      },
+      {
+        "id": 69242158,
+        "tag_name": "1.13",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-06-12T11:30:58Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.13"
+      },
+      {
+        "id": 68663373,
+        "tag_name": "1.12",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-06-05T12:01:11Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.12"
+      },
+      {
+        "id": 68087411,
+        "tag_name": "1.11",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-05-29T07:31:39Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.11"
+      },
+      {
+        "id": 65898282,
+        "tag_name": "1.10",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-05-03T10:44:13Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.10"
+      },
+      {
+        "id": 65166857,
+        "tag_name": "1.9",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-24T11:20:21Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.9"
+      },
+      {
+        "id": 64835387,
+        "tag_name": "1.8",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-20T12:21:51Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.8"
+      },
+      {
+        "id": 64641064,
+        "tag_name": "1.7",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-18T12:22:23Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.7"
+      },
+      {
+        "id": 64603727,
+        "tag_name": "1.6",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-17T13:02:26Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.6"
+      },
+      {
+        "id": 64045546,
+        "tag_name": "1.5",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-10T06:39:17Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.5"
+      },
+      {
+        "id": 63959976,
+        "tag_name": "1.4",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-08T10:36:17Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.4"
+      },
+      {
+        "id": 63835181,
+        "tag_name": "1.3",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-07T08:55:08Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.3"
+      },
+      {
+        "id": 63515569,
+        "tag_name": "1.2",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-04T12:15:59Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.2"
+      },
+      {
+        "id": 63465763,
+        "tag_name": "1.1",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-03T13:00:53Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.1"
+      },
+      {
+        "id": 63441972,
+        "tag_name": "1.0",
+        "name": "",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-02T12:58:16Z",
+        "html_url": "https://github.com/2dust/clashN/releases/tag/1.0"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/2dust/clashN/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "0b498424d3bc1ef3a9fa1b9a6c05b4b216303984",
+      "truncated": false,
+      "paths": [
+        ".gitignore",
+        "LICENSE",
+        "README.md",
+        "clashN",
+        "clashN/clashN.sln",
+        "clashN/clashN",
+        "clashN/clashN/App.xaml",
+        "clashN/clashN/App.xaml.cs",
+        "clashN/clashN/AssemblyInfo.cs",
+        "clashN/clashN/Base",
+        "clashN/clashN/Base/HttpClientHelper.cs",
+        "clashN/clashN/Base/StringEx.cs",
+        "clashN/clashN/Converters",
+        "clashN/clashN/Converters/DelayColorConverter.cs",
+        "clashN/clashN/Converters/MaterialDesignFonts.cs",
+        "clashN/clashN/FodyWeavers.xml",
+        "clashN/clashN/FodyWeavers.xsd",
+        "clashN/clashN/Global.cs",
+        "clashN/clashN/Handler",
+        "clashN/clashN/Handler/ConfigProc.cs",
+        "clashN/clashN/Handler/CoreConfigHandler.cs",
+        "clashN/clashN/Handler/CoreHandler.cs",
+        "clashN/clashN/Handler/DownloadHandle.cs",
+        "clashN/clashN/Handler/LazyConfig.cs",
+        "clashN/clashN/Handler/MainFormHandler.cs",
+        "clashN/clashN/Handler/NoticeHandler.cs",
+        "clashN/clashN/Handler/ProxySetting.cs",
+        "clashN/clashN/Handler/QRCodeHelper.cs",
+        "clashN/clashN/Handler/SpeedtestHandler.cs",
+        "clashN/clashN/Handler/StatisticsHandler.cs",
+        "clashN/clashN/Handler/SysProxyHandle.cs",
+        "clashN/clashN/Handler/UpdateHandle.cs",
+        "clashN/clashN/Mode",
+        "clashN/clashN/Mode/ClashConnections.cs",
+        "clashN/clashN/Mode/ClashProviders.cs",
+        "clashN/clashN/Mode/ClashProxies.cs",
+        "clashN/clashN/Mode/ComboItem.cs",
+        "clashN/clashN/Mode/Config.cs",
+        "clashN/clashN/Mode/ConnectionModel.cs",
+        "clashN/clashN/Mode/CoreInfo.cs",
+        "clashN/clashN/Mode/CoreKind.cs",
+        "clashN/clashN/Mode/EProfileColName.cs",
+        "clashN/clashN/Mode/ERuleMode.cs",
+        "clashN/clashN/Mode/ESpeedActionType.cs",
+        "clashN/clashN/Mode/GlobalHotkeyAction.cs",
+        "clashN/clashN/Mode/KeyShortcut.cs",
+        "clashN/clashN/Mode/MovementTarget.cs",
+        "clashN/clashN/Mode/ProfileItemModel.cs",
+        "clashN/clashN/Mode/ProxyModel.cs",
+        "clashN/clashN/Mode/ServerStatistics.cs",
+        "clashN/clashN/Mode/ServerTestItem.cs",
+        "clashN/clashN/Mode/SysProxyType.cs",
+        "clashN/clashN/Properties",
+        "clashN/clashN/Properties/Resources.Designer.cs",
+        "clashN/clashN/Properties/Resources.resx",
+        "clashN/clashN/Resources",
+        "clashN/clashN/Resources/NotifyIcon1.ico",
+        "clashN/clashN/Resources/NotifyIcon2.ico",
+        "clashN/clashN/Resources/NotifyIcon3.ico",
+        "clashN/clashN/Resources/sysproxy.exe.gz",
+        "clashN/clashN/Resources/sysproxy64.exe.gz",
+        "clashN/clashN/Resx",
+        "clashN/clashN/Resx/ResUI.Designer.cs",
+        "clashN/clashN/Resx/ResUI.fa-IR.resx",
+        "clashN/clashN/Resx/ResUI.resx",
+        "clashN/clashN/Resx/ResUI.zh-Hans.resx",
+        "clashN/clashN/Sample",
+        "clashN/clashN/Sample/SampleMixin.yaml",
+        "clashN/clashN/Sample/SampleTun.yaml",
+        "clashN/clashN/Tool",
+        "clashN/clashN/Tool/FileManager.cs",
+        "clashN/clashN/Tool/Job.cs",
+        "clashN/clashN/Tool/Logging.cs",
+        "clashN/clashN/Tool/QueryableExtension.cs",
+        "clashN/clashN/Tool/UI.cs",
+        "clashN/clashN/Tool/Utils.cs",
+        "clashN/clashN/ViewModels",
+        "clashN/clashN/ViewModels/ConnectionsViewModel.cs",
+        "clashN/clashN/ViewModels/DashboardViewModel.cs",
+        "clashN/clashN/ViewModels/HelpViewModel.cs",
+        "clashN/clashN/ViewModels/LogsViewModel.cs",
+        "clashN/clashN/ViewModels/MainWindowViewModel.cs",
+        "clashN/clashN/ViewModels/ProfileEditViewModel.cs",
+        "clashN/clashN/ViewModels/ProfilesViewModel.cs",
+        "clashN/clashN/ViewModels/PromotionViewModel.cs",
+        "clashN/clashN/ViewModels/ProxiesViewModel.cs",
+        "clashN/clashN/ViewModels/SettingsViewModel.cs",
+        "clashN/clashN/Views",
+        "clashN/clashN/Views/ConnectionsView.xaml",
+        "clashN/clashN/Views/ConnectionsView.xaml.cs",
+        "clashN/clashN/Views/DashboardView.xaml",
+        "clashN/clashN/Views/DashboardView.xaml.cs",
+        "clashN/clashN/Views/GlobalHotkeySettingWindow.xaml",
+        "clashN/clashN/Views/GlobalHotkeySettingWindow.xaml.cs",
+        "clashN/clashN/Views/HelpView.xaml",
+        "clashN/clashN/Views/HelpView.xaml.cs",
+        "clashN/clashN/Views/LogsView.xaml",
+        "clashN/clashN/Views/LogsView.xaml.cs",
+        "clashN/clashN/Views/MainWindow.xaml",
+        "clashN/clashN/Views/MainWindow.xaml.cs",
+        "clashN/clashN/Views/MessageSampleDialog.xaml",
+        "clashN/clashN/Views/MessageSampleDialog.xaml.cs",
+        "clashN/clashN/Views/MsgView.xaml",
+        "clashN/clashN/Views/MsgView.xaml.cs",
+        "clashN/clashN/Views/PorfileEditWindow.xaml",
+        "clashN/clashN/Views/PorfileEditWindow.xaml.cs",
+        "clashN/clashN/Views/ProfileQrcodeView.xaml",
+        "clashN/clashN/Views/ProfileQrcodeView.xaml.cs",
+        "clashN/clashN/Views/ProfilesView.xaml",
+        "clashN/clashN/Views/ProfilesView.xaml.cs",
+        "clashN/clashN/Views/PromotionView.xaml",
+        "clashN/clashN/Views/PromotionView.xaml.cs",
+        "clashN/clashN/Views/ProxiesView.xaml",
+        "clashN/clashN/Views/ProxiesView.xaml.cs",
+        "clashN/clashN/Views/SettingsView.xaml",
+        "clashN/clashN/Views/SettingsView.xaml.cs",
+        "clashN/clashN/app.manifest",
+        "clashN/clashN/clashN.csproj",
+        "clashN/clashN/clashN.ico",
+        "clashN/clashUpgrade",
+        "clashN/clashUpgrade/MainForm.Designer.cs",
+        "clashN/clashUpgrade/MainForm.cs",
+        "clashN/clashUpgrade/MainForm.resx",
+        "clashN/clashUpgrade/Program.cs",
+        "clashN/clashUpgrade/Properties",
+        "clashN/clashUpgrade/Properties/Resources.Designer.cs",
+        "clashN/clashUpgrade/Properties/Resources.resx",
+        "clashN/clashUpgrade/Properties/Settings.Designer.cs",
+        "clashN/clashUpgrade/Properties/Settings.settings",
+        "clashN/clashUpgrade/clashUpgrade.csproj"
+      ]
+    },
+    "error": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 389689413,
+  "tag_name": "26.9.16-1",
+  "name": "26.9.16-1",
+  "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/tag/26.9.16-1",
+  "published_at": "2026-09-16T06:42:58Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567386171,
+      "name": "22.03-_luci-app-passwall_26.9.16_all.ipk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/22.03-_luci-app-passwall_26.9.16_all.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567386167,
+      "name": "22.03-_luci-i18n-passwall-zh-cn_26.9.16_all.ipk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/22.03-_luci-i18n-passwall-zh-cn_26.9.16_all.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567389253,
+      "name": "23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567389254,
+      "name": "23.05-24.10_luci-i18n-passwall-zh-cn_26.9.16_all.ipk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/23.05-24.10_luci-i18n-passwall-zh-cn_26.9.16_all.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567395174,
+      "name": "25.12+_luci-app-passwall-26.9.16-r1.apk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/25.12%2B_luci-app-passwall-26.9.16-r1.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567395173,
+      "name": "25.12+_luci-i18n-passwall-zh-cn-26.9.16.apk",
+      "browser_download_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/25.12%2B_luci-i18n-passwall-zh-cn-26.9.16.apk",
+      "state": "uploaded"
+    }
+  ]
+}

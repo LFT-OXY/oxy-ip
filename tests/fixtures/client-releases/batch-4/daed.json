@@ -1,0 +1,371 @@
+{
+  "id": 310125465,
+  "tag_name": "v1.27.0",
+  "name": "v1.27.0",
+  "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.27.0",
+  "published_at": "2026-04-17T01:12:17Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 398209060,
+      "name": "daed-full-src.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-full-src.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209062,
+      "name": "daed-full-src.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-full-src.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209056,
+      "name": "daed-linux-arm64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209061,
+      "name": "daed-linux-arm64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209063,
+      "name": "daed-linux-mips32.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209058,
+      "name": "daed-linux-mips32.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209057,
+      "name": "daed-linux-mips32le.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209059,
+      "name": "daed-linux-mips32le.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209075,
+      "name": "daed-linux-mips64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209074,
+      "name": "daed-linux-mips64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209077,
+      "name": "daed-linux-mips64le.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209076,
+      "name": "daed-linux-mips64le.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209088,
+      "name": "daed-linux-riscv64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209087,
+      "name": "daed-linux-riscv64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209090,
+      "name": "daed-linux-x86_32.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209097,
+      "name": "daed-linux-x86_32.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209114,
+      "name": "daed-linux-x86_64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209133,
+      "name": "daed-linux-x86_64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209096,
+      "name": "daed-linux-x86_64_v2_sse.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209103,
+      "name": "daed-linux-x86_64_v2_sse.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209107,
+      "name": "daed-linux-x86_64_v3_avx2.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209109,
+      "name": "daed-linux-x86_64_v3_avx2.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209143,
+      "name": "installer-daed-linux-arm64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209142,
+      "name": "installer-daed-linux-arm64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209152,
+      "name": "installer-daed-linux-arm64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209154,
+      "name": "installer-daed-linux-arm64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209155,
+      "name": "installer-daed-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209157,
+      "name": "installer-daed-linux-arm64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209159,
+      "name": "installer-daed-linux-riscv64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209163,
+      "name": "installer-daed-linux-riscv64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209164,
+      "name": "installer-daed-linux-riscv64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209168,
+      "name": "installer-daed-linux-riscv64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209173,
+      "name": "installer-daed-linux-riscv64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209175,
+      "name": "installer-daed-linux-riscv64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209178,
+      "name": "installer-daed-linux-x86_32.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209180,
+      "name": "installer-daed-linux-x86_32.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209181,
+      "name": "installer-daed-linux-x86_32.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209184,
+      "name": "installer-daed-linux-x86_32.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209192,
+      "name": "installer-daed-linux-x86_32.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209193,
+      "name": "installer-daed-linux-x86_32.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209249,
+      "name": "installer-daed-linux-x86_64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209258,
+      "name": "installer-daed-linux-x86_64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209261,
+      "name": "installer-daed-linux-x86_64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209263,
+      "name": "installer-daed-linux-x86_64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209264,
+      "name": "installer-daed-linux-x86_64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209267,
+      "name": "installer-daed-linux-x86_64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209199,
+      "name": "installer-daed-linux-x86_64_v2_sse.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209207,
+      "name": "installer-daed-linux-x86_64_v2_sse.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209213,
+      "name": "installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209219,
+      "name": "installer-daed-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209220,
+      "name": "installer-daed-linux-x86_64_v2_sse.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209224,
+      "name": "installer-daed-linux-x86_64_v2_sse.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209235,
+      "name": "installer-daed-linux-x86_64_v3_avx2.deb",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209237,
+      "name": "installer-daed-linux-x86_64_v3_avx2.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209240,
+      "name": "installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209243,
+      "name": "installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209244,
+      "name": "installer-daed-linux-x86_64_v3_avx2.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209247,
+      "name": "installer-daed-linux-x86_64_v3_avx2.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209271,
+      "name": "web.zip",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/web.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 398209273,
+      "name": "web.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/web.zip.dgst",
+      "state": "uploaded"
+    }
+  ]
+}

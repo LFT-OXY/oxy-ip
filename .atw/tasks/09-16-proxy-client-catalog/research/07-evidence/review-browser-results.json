@@ -1,0 +1,126 @@
+{
+  "matrix": [
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "light",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "daedOpenWrtFilter": true,
+      "threeIndependentVersions": true,
+      "packagePageKeyboard": true,
+      "translatedNotes": true,
+      "noOverflow": true
+    }
+  ],
+  "knownMissingIcon": "homeproxy",
+  "visualReview": ["review-daed-mobile.png", "review-homeproxy-desktop.png"]
+}

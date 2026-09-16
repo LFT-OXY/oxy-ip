@@ -1,0 +1,437 @@
+[
+  {
+    "name": "clash_providers.list",
+    "size": 434,
+    "prefix": "5368656c"
+  },
+  {
+    "name": "cn_ip.txt",
+    "size": 70309,
+    "prefix": "312e312e"
+  },
+  {
+    "name": "cn_ipv6.txt",
+    "size": 34465,
+    "prefix": "32303031"
+  },
+  {
+    "name": "fake_ip_filter.list",
+    "size": 2443,
+    "prefix": "234c414e"
+  },
+  {
+    "name": "fallback_filter.list",
+    "size": 26,
+    "prefix": "2b2e6269"
+  },
+  {
+    "name": "init.sh",
+    "size": 9747,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "libs/check_autostart.sh",
+    "size": 623,
+    "prefix": "63686563"
+  },
+  {
+    "name": "libs/check_cmd.sh",
+    "size": 144,
+    "prefix": "636b636d"
+  },
+  {
+    "name": "libs/check_cpucore.sh",
+    "size": 865,
+    "prefix": "0a636865"
+  },
+  {
+    "name": "libs/check_dir_avail.sh",
+    "size": 168,
+    "prefix": "23e6a380"
+  },
+  {
+    "name": "libs/check_target.sh",
+    "size": 161,
+    "prefix": "69662065"
+  },
+  {
+    "name": "libs/compare.sh",
+    "size": 232,
+    "prefix": "636f6d70"
+  },
+  {
+    "name": "libs/core_tools.sh",
+    "size": 3220,
+    "prefix": "0a0a5b20"
+  },
+  {
+    "name": "libs/gen_base64.sh",
+    "size": 694,
+    "prefix": "23e7949f"
+  },
+  {
+    "name": "libs/get_config.sh",
+    "size": 811,
+    "prefix": "0a2320e6"
+  },
+  {
+    "name": "libs/get_ecsip.sh",
+    "size": 526,
+    "prefix": "0a676574"
+  },
+  {
+    "name": "libs/logger.sh",
+    "size": 2437,
+    "prefix": "23e697a5"
+  },
+  {
+    "name": "libs/meta_listeners.sh",
+    "size": 516,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "libs/README.md",
+    "size": 207,
+    "prefix": "e794a8e4"
+  },
+  {
+    "name": "libs/sb_endpoints.sh",
+    "size": 1331,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "libs/sb_inbounds.sh",
+    "size": 688,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "libs/set_config.sh",
+    "size": 253,
+    "prefix": "23e58f82"
+  },
+  {
+    "name": "libs/set_cron.sh",
+    "size": 1275,
+    "prefix": "0a63726f"
+  },
+  {
+    "name": "libs/set_profile.sh",
+    "size": 343,
+    "prefix": "0a736574"
+  },
+  {
+    "name": "libs/set_proxy.sh",
+    "size": 267,
+    "prefix": "0a736574"
+  },
+  {
+    "name": "libs/start_wait.sh",
+    "size": 348,
+    "prefix": "693d310a"
+  },
+  {
+    "name": "libs/urlencode.sh",
+    "size": 373,
+    "prefix": "75726c65"
+  },
+  {
+    "name": "libs/web_get.sh",
+    "size": 2463,
+    "prefix": "2e202224"
+  },
+  {
+    "name": "libs/web_get_bin.sh",
+    "size": 864,
+    "prefix": "2e202224"
+  },
+  {
+    "name": "libs/web_get_lite.sh",
+    "size": 247,
+    "prefix": "2e202224"
+  },
+  {
+    "name": "libs/web_json.sh",
+    "size": 360,
+    "prefix": "2e202224"
+  },
+  {
+    "name": "libs/web_restore.sh",
+    "size": 892,
+    "prefix": "0a230a70"
+  },
+  {
+    "name": "libs/web_save.sh",
+    "size": 1462,
+    "prefix": "0a230a67"
+  },
+  {
+    "name": "menu.sh",
+    "size": 11070,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/1_start.sh",
+    "size": 2049,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/2_settings.sh",
+    "size": 37437,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/4_setboot.sh",
+    "size": 8514,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/5_task.sh",
+    "size": 14353,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/6_core_config.sh",
+    "size": 44825,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/7_gateway.sh",
+    "size": 19569,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/8_tools.sh",
+    "size": 33072,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/9_upgrade.sh",
+    "size": 39373,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/bot_tg.sh",
+    "size": 8587,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/bot_tg_bind.sh",
+    "size": 2075,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/bot_tg_service.sh",
+    "size": 492,
+    "prefix": "090a2e20"
+  },
+  {
+    "name": "menus/check_port.sh",
+    "size": 540,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/ddns.sh",
+    "size": 6409,
+    "prefix": "2321202f"
+  },
+  {
+    "name": "menus/dns.sh",
+    "size": 9178,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/README.md",
+    "size": 89,
+    "prefix": "e794a8e4"
+  },
+  {
+    "name": "menus/running_status.sh",
+    "size": 445,
+    "prefix": "0a72756e"
+  },
+  {
+    "name": "menus/set_crashdir.sh",
+    "size": 6151,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/task_cmd.sh",
+    "size": 4878,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "menus/uninstall.sh",
+    "size": 2988,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "servers.list",
+    "size": 3027,
+    "prefix": "23204944"
+  },
+  {
+    "name": "singbox_providers.list",
+    "size": 434,
+    "prefix": "5368656c"
+  },
+  {
+    "name": "start.sh",
+    "size": 4035,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/afstart.sh",
+    "size": 2472,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/bfstart.sh",
+    "size": 5316,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/check_cnip.sh",
+    "size": 1142,
+    "prefix": "0a636b5f"
+  },
+  {
+    "name": "starts/check_core.sh",
+    "size": 892,
+    "prefix": "0a2e2022"
+  },
+  {
+    "name": "starts/check_geo.sh",
+    "size": 856,
+    "prefix": "0a2e2022"
+  },
+  {
+    "name": "starts/check_network.sh",
+    "size": 290,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/clash_check.sh",
+    "size": 1370,
+    "prefix": "0a636c61"
+  },
+  {
+    "name": "starts/clash_config_check.sh",
+    "size": 2094,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/clash_modify.sh",
+    "size": 13255,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/core_config.sh",
+    "size": 4655,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/core_exchange.sh",
+    "size": 360,
+    "prefix": "0a636f72"
+  },
+  {
+    "name": "starts/fw_getlanip.sh",
+    "size": 2109,
+    "prefix": "0a676574"
+  },
+  {
+    "name": "starts/fw_iptables.sh",
+    "size": 15445,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/fw_nftables.sh",
+    "size": 11902,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/fw_start.sh",
+    "size": 2548,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/fw_stop.sh",
+    "size": 7392,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/general_init.sh",
+    "size": 1051,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/README.md",
+    "size": 156,
+    "prefix": "e794a8e4"
+  },
+  {
+    "name": "starts/shellcrash.openrc",
+    "size": 1687,
+    "prefix": "23212f73"
+  },
+  {
+    "name": "starts/shellcrash.procd",
+    "size": 1053,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/shellcrash.service",
+    "size": 447,
+    "prefix": "5b556e69"
+  },
+  {
+    "name": "starts/singbox_check.sh",
+    "size": 524,
+    "prefix": "0a73696e"
+  },
+  {
+    "name": "starts/singbox_config_check.sh",
+    "size": 1859,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/singbox_modify.sh",
+    "size": 14536,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/snapshot_init.sh",
+    "size": 3838,
+    "prefix": "23212f62"
+  },
+  {
+    "name": "starts/start_error.sh",
+    "size": 560,
+    "prefix": "0a696620"
+  },
+  {
+    "name": "starts/start_legacy.sh",
+    "size": 419,
+    "prefix": "0a2e2022"
+  },
+  {
+    "name": "starts/start_legacy_wd.sh",
+    "size": 851,
+    "prefix": "0a5b202d"
+  },
+  {
+    "name": "task.list",
+    "size": 849,
+    "prefix": "23e4bbbb"
+  },
+  {
+    "name": "task_en.list",
+    "size": 952,
+    "prefix": "23546173"
+  },
+  {
+    "name": "version",
+    "size": 13,
+    "prefix": "312e392e"
+  }
+]

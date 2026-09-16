@@ -1,0 +1,168 @@
+{
+  "baseline": {
+    "order": 99,
+    "id": "karing-harmony-hap",
+    "name": "Karing Harmony HAP",
+    "reference_url": "https://huarun.win/apps/karing-harmony-hap",
+    "observed_official_entry": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap",
+    "ticket": "07"
+  },
+  "repo": "ks-lm-kf/harmony-kslmkf-karing-hap",
+  "metadata": {
+    "url": "https://api.github.com/repos/ks-lm-kf/harmony-kslmkf-karing-hap",
+    "status": 0,
+    "data": {
+      "full_name": "ks-lm-kf/harmony-kslmkf-karing-hap",
+      "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap",
+      "description": "HarmonyOS HAP beta release for Karing/sing-box based build",
+      "homepage": null,
+      "default_branch": "main",
+      "archived": false,
+      "license": null
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/ks-lm-kf/harmony-kslmkf-karing-hap/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/blob/main/README.md",
+      "sha": "305b29c2869ec17682ade8c918a0a22bb117c286",
+      "text": "# Karing Harmony HAP\n\n这是基于 Karing / sing-box 核心能力编译的 HarmonyOS HAP beta 发布仓库。当前仓库只用于发布已编译 HAP、版本说明和问题反馈；源码暂未放在本公开仓库，功能也还没有完全对齐上游 Karing。\n\n注意：当前 HAP 内含由 `KaringX/sing-box` 编译得到的 `libkaringbox.so`，其上游许可证为 GPL v3 or later，并带有不得暗示与原应用存在关联的附加要求。在未同步提供对应源码、构建脚本和许可证文件前，本二进制发布不应视为已完成 GPL 合规；请勿将本仓库描述为官方 Karing 或 sing-box 发布。\n\n使用前请确认你理解并接受下面的说明：本软件仅供学习、研究和技术参考使用，使用时必须遵守所在地法律法规、网络服务条款和相关政策；下载、导入、测试或参考的任何资源请在 24 小时内删除；因下载、安装、导入配置、联网测试、传播、修改或使用本软件产生的任何后果由使用者自行承担，与发布者无关。\n\n## 下载\n\n最新版本：`1.0.9-beta`\n\n- [v1.0.9-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.9-beta)\n- [下载 karing-harmony-1.0.9-beta.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.9-beta/karing-harmony-1.0.9-beta.hap)\n- 文件大小：`36,705,035` bytes\n- SHA256：`3D1D3B1CE044CC784FD357C368D3FAC11D7F6E902764E9768268CEE100C95517`\n\n历史版本：\n\n- [v1.0.8-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.8-beta)\n- [下载 karing-harmony-1.0.8-beta.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.8-beta/karing-harmony-1.0.8-beta.hap)\n- SHA256：`CF9E254982F5204C6C29BD05A6D3332C791FDDC28F50A6291D5867005B57CDCA`\n- [v1.0.7-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.7-beta)\n- [下载 karing-harmony-1.0.7-beta.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.7-beta/karing-harmony-1.0.7-beta.hap)\n- SHA256：`A4237FA16A283612C482D530EDB90D29F8AC0AECEB615E8266258E48CF6F8252`\n- [v1.0.6-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.6-beta)\n- [下载 karing-harmony-1.0.6-beta.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.6-beta/karing-harmony-1.0.6-beta.hap)\n- SHA256：`932FEF3096BB0A7EE01516EAE09A33B2C21BEE2E938F4B3443AA13D22FB0D4CC`\n- [v1.0.5-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.5-beta)\n- [下载 karing-harmony-1.0.5-beta.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.5-beta/karing-harmony-1.0.5-beta.hap)\n- SHA256：`1BBF8DA187192A443FB1660534792905C4503BC3CEE7CB3D8320A4050FD1AABA`\n- [v1.0.4 Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.4)\n- [下载 karing-harmony-1.0.4.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.4/karing-harmony-1.0.4.hap)\n- SHA256：`487B749BD177E13A368E1010ABAF9F6A15BE1A532FB4E31CE262DBFF7EDBF0ED`\n- [v1.0.3 Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.3)\n- [下载 karing-harmony-1.0.3.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.3/karing-harmony-1.0.3.hap)\n- SHA256：`561C422D7636AB87F921FC6261F6881596AB7AE50F9876EF1635074182078959`\n- [v1.0.2 Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.2)\n- [下载 karing-harmony-1.0.2.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.2/karing-harmony-1.0.2.hap)\n- SHA256：`2FE93FC9604EAAA1F649E70114AA40C74F260134C0D48378EAA01D4A9374A835`\n- [v1.0.1 Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.1)\n- [下载 karing-harmony-1.0.1.hap](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.1/karing-harmony-1.0.1.hap)\n- SHA256：`1cf7be83e0211ef490a661c9ecc633a74804bdfeba3611e9f670631ec93446a4`\n- [v1.0.0-beta Release](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.0-beta)\n\n## 兼容性\n\n- 包名：`harmony.kslmkf.karing`\n- 设备：HarmonyOS 手机\n- ABI：`arm64-v8a`\n- `targetSdkVersion`：HarmonyOS `6.1.1(24)`\n- `compatibleSdkVersion`：HarmonyOS `6.1.0(23)`\n- 目标设备 API：API 23 及以上手机，已在 API 26 真机验证\n\n`1.0.9-beta` 是面向手机的 arm64 HAP，不包含仅用于模拟器的 `x86_64` ABI。\n\n## 特性\n\n- 基于 Karing / sing-box 核心能力编译。\n- 支持 HarmonyOS VPN Ability 启动 TUN。\n- 支持多个代理配置或订阅同时存在，并可新增、更新、删除和切换。\n- 支持导入 URL 订阅、本地配置、sing-box JSON、Clash YAML/JSON、Base64 节点列表和常见分享链接。\n- 支持常见协议或格式转换：`vmess`、`vless`、`ss`、`trojan`、`hysteria`、`hysteria2/hy2`、`tuic`、`anytls`、`ssh`、`wireguard`、`socks`、`http` 等。\n- 将不同订阅和节点格式统一转换为核心可识别的 sing-box 配置。\n- 支持本地 `mixed` 代理端口，默认端口 `10808`。\n- 支持 Clash-compatible 控制端口，默认端口 `3057`。\n- 支持规则、全局、直连等运行模式。\n- 支持代理组选择、批量测速、延迟排序和节点延迟颜色标识。\n- 支持关闭负载均衡，当前版本默认不启用负载均衡。\n- 首次启动显示使用条款，强制阅读 5 秒后才能确认；同一安装环境只需首次确认。\n- 每次启动可检查公开仓库 Release 是否有新版本；发现新版本时显示更新内容并可跳转 Release 页面。\n- 设置页 / 组件页显示应用、Native wrapper 和 Karing / sing-box 核心相关版本信息。\n- 首页显示本机公网与代理出口的 IPv4、IPv6、国家和地区，并提供常用境外站点实时延迟与半小时速度折线图。\n- 支持跟随系统、浅色、深色、主题色、自定义颜色和背景图片设置。\n- 支持液态玻璃与沉浸光效，状态栏和手势导航区域采用沉浸式布局。\n- 设置页支持诊断日志开关、20 MiB 自动覆盖、崩溃恢复记录、容量统计、导出和清除。\n\n## 更新日志\n\n完整记录见 [CHANGELOG.md](CHANGELOG.md)。\n\n### 1.0.9-beta\n\n- 修复核心已启动但 TUN 流量未进入代理、上传下载和连接数长期为零的问题，VPN 接口统一创建 IPv4/IPv6 全设备默认路由。\n- 移除与部分设备不兼容的动态 `vpnId`，保留 API 23 可用的 VPN 创建路径。\n- 启动前清理重复 FakeIP DNS 配置、修复 DNS 引用，并恢复 Clash API 到 `127.0.0.1:3057`。\n- 删除当前配置后立即同步代理页面；更新订阅后立即刷新更新时间、状态和节点列表，失败时恢复原配置。\n- 浅色与深色模式下状态栏使用独立纯色背景，不叠加模糊、渐变或液态玻璃滤镜。\n- API 23/24 x86_64 模拟器完成 VLESS、Trojan、SS 订阅下载、转换、配置传递与双栈 VPN 启动路径回归。\n- API 26 arm64 真机验证核心 API、真实流量统计、IPv4/IPv6 代理出口、站点延迟以及停止后 VPN 清理。\n\n### 1.0.8-beta\n\n- 修复 URL 订阅配置内自带 TUN 入站时核心启动失败的问题，导入阶段统一替换为 HarmonyOS VPN 所需的双栈 TUN。\n- 启动前再次清洗运行配置，移除重复 TUN 入站和订阅携带的无效接口地址，避免 `bind: cannot assign requested address`。\n- 订阅链接与单节点分享链接统一经过转换、校验和运行配置暂存，核心不再直接读取未经处理的订阅原文。\n- 核心启动或停止异常时仍会销毁 VPN，避免系统 VPN 标识和断网状态残留。\n- API 23/24 x86_64 模拟器已完成 URL 订阅、TUN 清洗和 VPN Ability 启动回归；API 26 arm64 真机完成最终 HAP 安装和启动验证。\n- 保持 API 23 最低兼容、API 24 目标版本和 arm64-v8a 手机 HAP。\n\n### 1.0.7-beta\n\n- 修复订阅配置启动时远程规则集下载阻塞核心、最终误报 VPN 授权超时的问题。\n- 核心启动失败会把实际错误同步回主页面，并主动清理残留 VPN，避免系统 VPN 标识残留后断网。\n- 远程规则集改为核心启动后异步更新，首次失败会在后台重试。\n- 修复全局/直连模式移除规则集后“检查更新”返回 404 的问题，真机验证默认 4 个规则集更新 `4/4` 成功。\n- 规则集更新支持分批并发、进度提示和逐项失败日志。\n- 修复诊断日志容量条颜色越出圆角边框的问题。\n- 保持 API 23 最低兼容、API 24 目标版本，并在 API 26 真机完成启动、更新规则集和停止清理测试。\n\n### 1.0.6-beta\n\n- 修复订阅链接导入后核心无法启动、而直接导入单节点分享链接可以启动的问题。\n- 统一记录页面、Ability、VPN 扩展、后台订阅和 Native 核心包装层日志。\n- 捕获 ArkTS 未处理异常，并在进程异常终止后的下次启动补写异常退出记录。\n- 日志上限为 20 MiB，写满后自动覆盖最旧内容，双层容量条显示当前占用和累计覆盖容量。\n- 支持通过系统文件选择器导出 `.log` 文件，并可一键清除日志和覆盖统计。\n- 保持 `compatibleSdkVersion` 为 API 23、`targetSdkVersion` 为 API 24，发布手机 arm64 HAP。\n\n### 1.0.5-beta\n\n- 修复深色/浅色模式下配置名称、卡片底色和系统栏显示异常，对应 issue #8。\n- 修复运行时 API 长期显示离线并阻止核心启动的问题，增加 native wrapper 延迟加载和启动容错，对应 issue #9。\n- 新增完整主题设置：跟随系统、浅色、深色、主题色、自定义颜色、背景图片及透明度/模糊/适配方式。\n- 新增液态玻璃与沉浸光效，主要卡片支持半透明材质、背景模糊、高光和柔和阴影。\n- 应用内容延伸到状态栏和手势导航区域，修复顶部与底部黑色区域，并按主题同步系统图标明暗。\n- 首页网络位置、IPv4/IPv6、站点延迟、实时速度和流量统计改为读取实际运行数据。\n- 保持 `compatibleSdkVersion` 为 API 23、`targetSdkVersion` 为 API 24，发布手机 arm64 HAP。\n\n### 1.0.4-beta\n\n- 修复 API 23 / Mate 60 Pro / Mate 70 Pro+ 首次打开可能闪退的问题：首页不再静态加载 native wrapper，主流程初始化改为分步容错。\n- 增加节点地址策略设置：自动、优先 IPv4、优先 IPv6、仅 IPv4、仅 IPv6，用于双栈/IPv6 节点连接选择。\n- 启动前会把所选节点地址策略写入 sing-box 出站 `domain_strategy`，运行中切换会自动重启核心生效。\n- 设置页组件信息改为显示 native wrapper 由 VPN Ability 延迟加载，避免 UI 层触发核心库加载。\n- 对应用商店上架问题进行说明：当前 beta 暂以 GitHub Release 侧载发布。\n\n### 1.0.3-beta\n\n- 修复 VPN 启动失败后核心异常但系统 VPN 标识残留的问题，核心异常时会自动关闭 VPN，避免全局断网只能重启应用恢复。\n- 修复全局模式仍带默认规则分流的问题；全局模式只保留 DNS 劫持规则，普通流量统一走当前选中节点。\n- 普通 VPN 规则模式补齐 IPv6 TUN 地址、IPv6 默认路由和 IPv6 DNS 劫持，减少 IPv6 流量绕过。\n- DNS 共存模式支持自定义上游 DNS 代理端口，并改为“用于接入纯 DNS 代理类软件”的通用说明。\n- 规则集默认国内直连规则支持编辑、删除和调整，自动更新间隔支持自定义。\n- 关闭负载均衡后，运行时配置会清理负载均衡出站引用，避免节点选择后核心仍走旧策略。\n\n### 1.0.2-beta\n\n- 新增启动检查更新能力：启动后检查 GitHub Release，发现高版本才弹窗，并显示 Release 更新内容。\n- 设置页新增软件更新卡片，支持手动检查、打开仓库和关闭启动自动检查。\n- 增强代理导入兼容性，继续补齐 `vless`、`ss`、`trojan`、Clash、v2rayN 等常见订阅/分享链接转换。\n- 修复代理页顶部刷新后节点列表不及时更新的问题。\n- 增加批量测速、延迟排序、海外测速 URL 和超时标识，降低测速时核心卡死风险。\n- 保持 `compatibleSdkVersion` 为 API 23，`targetSdkVersion` 为 API 24，面向 API 23/24 手机发布。\n\n## 问题反馈\n\n请使用本仓库的 [Issues](https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/issues) 提交问题。\n\n提交问题时建议包含：\n\n- 手机型号、HarmonyOS 版本和 API 版本。\n- HAP 版本，例如 `1.0.9-beta`。\n- 安装方式和是否为首次安装。\n- 订阅或配置类型，例如 Clash YAML、sing-box JSON、Base64 订阅、分享链接等。\n- 复现步骤、截图和必要日志。\n\n请不要在 Issue 中公开订阅链接、UUID、token、服务器地址、证书、账号密码或其他敏感信息。提交日志前请先自行脱敏。\n\n## 技术栈和参考链接\n\nHarmonyOS / ArkTS / 构建：\n\n- HarmonyOS：[https://developer.huawei.com/consumer/cn/harmonyos](https://developer.huawei.com/consumer/cn/harmonyos)\n- DevEco Studio：[https://developer.huawei.com/consumer/cn/deveco-studio/](https://developer.huawei.com/consumer/cn/deveco-studio/)\n- ArkTS：[https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview)\n- ArkUI：[https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview)\n- HarmonyOS N-API：[https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines)\n- CMake：[https://cmake.org/](https://cmake.org/)\n- Go：[https://go.dev/](https://go.dev/)\n\n核心和网络能力：\n\n- Karing：[https://github.com/KaringX/karing](https://github.com/KaringX/karing)\n- KaringX / sing-box：[https://github.com/KaringX/sing-box](https://github.com/KaringX/sing-box)\n- SagerNet / sing-box：[https://github.com/SagerNet/sing-box](https://github.com/SagerNet/sing-box)\n- sing-box 文档：[https://sing-box.sagernet.org/](https://sing-box.sagernet.org/)\n- gVisor：[https://github.com/google/gvisor](https://github.com/google/gvisor)\n- quic-go：[https://github.com/quic-go/quic-go](https://github.com/quic-go/quic-go)\n- WireGuard：[https://www.wireguard.com/](https://www.wireguard.com/)\n- uTLS：[https://github.com/refraction-networking/utls](https://github.com/refraction-networking/utls)\n- MetaCubeX meta-rules-dat：[https://github.com/MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)\n\n兼容格式参考：\n\n- Clash / Mihomo 配置：[https://wiki.metacubex.one/config/](https://wiki.metacubex.one/config/)\n- Mihomo：[https://github.com/MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo)\n- v2rayN：[https://github.com/2dust/v2rayN](https://github.com/2dust/v2rayN)\n- Xray-core：[https://github.com/XTLS/Xray-core](https://github.com/XTLS/Xray-core)\n- V2Fly：[https://www.v2fly.org/](https://www.v2fly.org/)\n- Hysteria：[https://github.com/apernet/hysteria](https://github.com/apernet/hysteria)\n- TUIC：[https://github.com/EAimTY/tuic](https://github.com/EAimTY/tuic)\n- Shadowsocks：[https://shadowsocks.org/](https://shadowsocks.org/)\n- Trojan：[https://github.com/trojan-gfw/trojan](https://github.com/trojan-gfw/trojan)\n\n## 许可证合规审计\n\n以下检查仅是基于公开仓库 LICENSE 和当前发布内容的工程合规审计，不构成法律意见。\n\n当前公开发布 HAP 但没有同步提供对应源码和完整第三方许可证清单，存在 GPL 合规风险。尤其是 `libkaringbox.so` 来自 `KaringX/sing-box`，该项目继承上游 `SagerNet/sing-box` 的 GPL v3 or later 授权；公开分发包含该核心的二进制时，通常需要同时提供 Corresponding Source、构建/安装所需脚本、许可证文本和修改说明。\n\n如果继续公开发布二进制，建议尽快补齐：\n\n- 对应本 HAP 的完整可构建源码，或至少提供覆盖 GPL 组件的 Corresponding Source 和构建脚本。\n- `KaringX/sing-box` / `SagerNet/sing-box` 的 LICENSE 文本和本项目修改说明。\n- Go 模块依赖、ArkTS/C++/Native 组件依赖的第三方许可证清单。\n- 明确声明本项目不是 Karing、sing-box、SagerNet 或 KaringX 官方发布，不使用其名称暗示关联或背书。\n\n已检查的引用项目：\n\n| 项目 | 用途 | 公开许可证识别 | 当前风险 |\n| --- | --- | --- | --- |\n| KaringX/sing-box | 实际编译为 `libkaringbox.so` 并随 HAP 分发 | GPL v3 or later + 命名/关联限制 | 高：分发二进制时需提供对应源码和许可证材料 |\n| SagerNet/sing-box | KaringX/sing-box 上游 | GPL v3 or later + 命名/关联限制 | 高：同上 |\n| KaringX/karing | UI/产品方向参考 | GPL v3 or later + 命名/关联限制 | 中：如复用代码或品牌表达，需满足 GPL 和命名要求 |\n| google/gVisor | sing-box 构建标签启用相关能力 | Apache-2.0 | 中：需保留许可证和 NOTICE 要求 |\n| quic-go/quic-go | QUIC 能力依赖 | MIT | 低：需保留版权和许可证文本 |\n| refraction-networking/uTLS | TLS 指纹能力依赖 | BSD-3-Clause | 低：需保留版权、许可证和免责声明 |\n| MetaCubeX/meta-rules-dat | 规则集来源链接 | GPL-3.0 | 中：如随包分发规则数据需提供对应授权材料；仅运行时下载也应保留来源说明 |\n| MetaCubeX/mihomo | Clash 兼容格式参考 | MIT | 低：当前未内置其二进制 |\n| 2dust/v2rayN | 分享链接格式参考 | GPL-3.0 | 低到中：当前未内置其代码；如复用代码需 GPL 合规 |\n| XTLS/Xray-core | 协议/链接格式参考 | MPL-2.0 | 低到中：当前未内置其代码；如复用文件需保留 MPL 要求 |\n| apernet/hysteria | 协议/链接格式参考 | MIT | 低：当前未内置其二进制 |\n| tuic-protocol/tuic | 协议/链接格式参考 | GPL-3.0 | 低到中：当前未内置其代码；如复用代码需 GPL 合规 |\n| trojan-gfw/trojan | 协议/链接格式参考 | GPL-3.0 | 低到中：当前未内置其代码；如复用代码需 GPL 合规 |\n\n## 免责声明\n\n- 本软件仅供学习、研究和技术参考使用，不提供任何网络节点、订阅服务、账号服务或绕过限制服务。\n- 使用本软件时必须遵守所在国家或地区的法律法规，以及网络服务提供方的服务条款。\n- 本软件不会把用户信息、订阅内容、节点配置、规则或流量统计上传到发布者服务器；用户自行添加订阅链接时，设备会向对应链接地址发起请求。\n- 用户自行导入的订阅、节点、配置、规则和其他参考资源，必须确保来源合法、授权合法；如无合法授权，请在 24 小时内删除。\n- 因下载、安装、导入配置、联网测试、传播、修改或使用本软件产生的任何后果，由使用者自行承担，与发布者无关。\n- Beta 版本可能存在兼容性问题、功能缺失或核心启动失败风险，请自行判断是否适合在目标设备上使用。\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/ks-lm-kf/harmony-kslmkf-karing-hap/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 363825151,
+        "tag_name": "v1.0.9-beta",
+        "name": "Karing Harmony 1.0.9-beta",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.9-beta",
+        "published_at": "2026-08-02T15:48:17Z",
+        "draft": false,
+        "prerelease": true,
+        "body": "# v1.0.9-beta\n\n本次发布为 `1.0.9-beta` 更新，面向 HarmonyOS API 23 及以上手机。订阅转换与双栈 VPN 启动路径已在 API 23/24 模拟器回归，最终 arm64 HAP 已在 API 26 真机完成代理联网验证。\n\r\n## 安装包\r\n\r\n- `karing-harmony-1.0.9-beta.hap`\n- 包名：`harmony.kslmkf.karing`\n- VersionName：`1.0.9-beta`\n- VersionCode：`1000009`\n- ABI：`arm64-v8a`\r\n- `compatibleSdkVersion`：HarmonyOS `6.1.0(23)`\r\n- `targetSdkVersion`：HarmonyOS `6.1.1(24)`\r\n- 文件大小：`36,705,035` bytes\n- SHA256：`3D1D3B1CE044CC784FD357C368D3FAC11D7F6E902764E9768268CEE100C95517`\n\r\n## 本次更新\r\n\r\n- 修复核心已启动但流量未进入代理、上传下载和连接数长期为零的问题，VPN 接口统一创建 IPv4/IPv6 全设备默认路由。\n- 移除部分设备不兼容的动态 `vpnId`，保留 API 23 可用的 VPN 创建路径。\n- 启动前清理重复 FakeIP DNS、修复 DNS 引用，并恢复 Clash API 到 `127.0.0.1:3057`。\n- 删除当前配置后立即同步代理页面；订阅更新后立即刷新更新时间、状态和节点列表，失败时恢复原配置。\n- 状态栏改用独立纯色背景，不叠加模糊、渐变或液态玻璃滤镜。\n- API 23/24 x86_64 模拟器已完成 VLESS、Trojan、SS 订阅下载、转换、跨进程配置和双栈 VPN 启动路径回归。\n- API 26 arm64 真机已验证核心 API 在线、真实上传下载与连接统计、IPv4/IPv6 代理出口、境外站点延迟以及停止后 VPN 清理。\n- 保持 API 23 最低兼容、API 24 目标版本和 arm64-v8a 手机 HAP。\n\r\n## 注意\r\n\r\n本软件仅供学习、研究和技术参考。使用时须遵守当地法律法规。用户导入的订阅、节点、配置、规则和其他参考资源必须确保合法授权；如无合法授权，请在 24 小时内删除。使用产生的任何后果由使用者自行承担，与发布者无关。\r\n",
+        "assets": [
+          {
+            "id": 499034840,
+            "name": "karing-harmony-1.0.9-beta.hap",
+            "browser_download_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.9-beta/karing-harmony-1.0.9-beta.hap",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 363825151,
+        "tag_name": "v1.0.9-beta",
+        "name": "Karing Harmony 1.0.9-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-08-02T15:48:17Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.9-beta"
+      },
+      {
+        "id": 363518706,
+        "tag_name": "v1.0.8-beta",
+        "name": "Karing Harmony 1.0.8-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-08-01T12:46:50Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.8-beta"
+      },
+      {
+        "id": 363140840,
+        "tag_name": "v1.0.7-beta",
+        "name": "Karing Harmony 1.0.7-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-07-31T14:50:53Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.7-beta"
+      },
+      {
+        "id": 362375778,
+        "tag_name": "v1.0.6-beta",
+        "name": "Karing Harmony 1.0.6-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-07-30T11:21:44Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.6-beta"
+      },
+      {
+        "id": 362185591,
+        "tag_name": "v1.0.5-beta",
+        "name": "Karing Harmony 1.0.5-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-07-30T04:13:22Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.5-beta"
+      },
+      {
+        "id": 353075147,
+        "tag_name": "v1.0.4",
+        "name": "Karing Harmony 1.0.4",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-07-13T10:19:13Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.4"
+      },
+      {
+        "id": 336364840,
+        "tag_name": "v1.0.3",
+        "name": "Karing Harmony 1.0.3",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-09T04:37:09Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.3"
+      },
+      {
+        "id": 335711808,
+        "tag_name": "v1.0.2",
+        "name": "Karing Harmony 1.0.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-08T01:10:51Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.2"
+      },
+      {
+        "id": 335652712,
+        "tag_name": "v1.0.1",
+        "name": "Karing Harmony 1.0.1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-07T18:37:51Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.1"
+      },
+      {
+        "id": 335630096,
+        "tag_name": "v1.0.0-beta",
+        "name": "v1.0.0-beta",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-07T16:08:56Z",
+        "html_url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/tag/v1.0.0-beta"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/ks-lm-kf/harmony-kslmkf-karing-hap/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "ed01b9f9c3cd5b1f2d32b7abdeecd2931245658a",
+      "truncated": false,
+      "paths": [
+        ".gitignore",
+        "CHANGELOG.md",
+        "README.md",
+        "RELEASE_NOTES.md",
+        "karing-harmony-1.0.9-beta.hap"
+      ]
+    },
+    "error": ""
+  }
+}

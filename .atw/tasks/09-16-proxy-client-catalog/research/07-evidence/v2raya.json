@@ -1,0 +1,2274 @@
+{
+  "baseline": {
+    "order": 93,
+    "id": "v2raya",
+    "name": "v2rayA",
+    "reference_url": "https://huarun.win/apps/v2raya",
+    "observed_official_entry": "https://github.com/v2rayA/v2rayA",
+    "ticket": "07"
+  },
+  "repo": "v2rayA/v2rayA",
+  "metadata": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA",
+    "status": 0,
+    "data": {
+      "full_name": "v2rayA/v2rayA",
+      "html_url": "https://github.com/v2rayA/v2rayA",
+      "description": "A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols. 🚀",
+      "homepage": "",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/v2rayA/v2rayA/blob/main/README.md",
+      "sha": "d6b1ffa85a8a61162428ac3eabbff91648cec8c1",
+      "text": "# v2rayA [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/v2rayA/v2raya)](https://hub.docker.com/r/mzz2017/v2raya) [![Travis (.org)](https://img.shields.io/travis/v2rayA/v2rayA?label=travis-ci%20build)](https://travis-ci.org/v2rayA/v2rayA)\n\n[**English**](https://github.com/v2rayA/v2rayA/blob/main/README.md)&nbsp;&nbsp;&nbsp;[**简体中文**](https://github.com/v2rayA/v2rayA/blob/main/README_zh.md)\n\nv2rayA is a V2Ray client supporting global transparent proxy on Linux and system proxy on Windows and macOS, it is compatible with SS, SSR, Trojan(trojan-go), Tuic and [Juicity](https://github.com/juicity) protocols. [[SSR protocol list]](https://github.com/v2rayA/shadowsocksR/blob/main/README.md#ss-encrypting-algorithm)\n\nWe are committed to providing the simplest operation and meet most needs.\n\nThanks to the advantages of Web GUI, you can not only use it on your local computer, but also easily deploy it on a router or NAS.\n\nProject：https://github.com/v2rayA/v2rayA\n\n\n## Usage\n\nv2rayA mainly provides the following methods of installation:\n\n1. Install from apt-source or AUR\n2. Docker\n3. Our self-built [scoop bucket](https://github.com/v2rayA/v2raya-scoop) (for Windows users)\n4. Our self-built [homebrew tap](https://github.com/v2rayA/homebrew-v2raya)\n5. Our self-built [OpenWrt repo](https://github.com/v2rayA/v2raya-openwrt) and OpenWrt's official repo(from OpenWrt version 22.03)\n6. Microsoft winget: https://winstall.app/apps/v2rayA.v2rayA\n7. Ubuntu Snap: https://snapcraft.io/v2raya\n8. Binary file and installation package from GitHub releases\n\nSee [**v2rayA - Docs**](https://v2raya.org/en/docs/prologue/introduction/)\n\n\n## Screenshot\n\n<img src=\"https://i.loli.net/2020/04/19/gt3NqOMiafYbp7L.png\" border=\"0\">\n\n## Statement\n\n1. The program does not store any user data in the cloud, and all user data is stored in local.\n2. **Do not use this project for illegal purposes.**\n\n## Credits\n\n[hq450/fancyss](https://github.com/hq450/fancyss)\n\n[ToutyRater/v2ray-guide](https://github.com/ToutyRater/v2ray-guide/blob/master/routing/sitedata.md)\n\n[nadoo/glider](https://github.com/nadoo/glider)\n\n[Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)\n\n[zfl9/ss-tproxy](https://github.com/zfl9/ss-tproxy/blob/master/ss-tproxy)\n\n## Stargazers over time\n\n[![Stargazers over time](https://starchart.cc/v2rayA/v2rayA.svg)](https://starchart.cc/v2rayA/v2rayA)\n\n## License\n\n[![License: AGPL v3-only](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 389838975,
+        "tag_name": "v2.4.20",
+        "name": "v2.4.20",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20",
+        "published_at": "2026-09-16T10:47:58Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "## What's Changed\n* Fix TUIC URL parsing to use decoded user password by @MarksonHon in https://github.com/v2rayA/v2rayA/pull/1956\n\n\n**Full Changelog**: https://github.com/v2rayA/v2rayA/compare/v2.4.19...v2.4.20",
+        "assets": [
+          {
+            "id": 567760116,
+            "name": "installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760111,
+            "name": "installer_archlinux_arm64_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760112,
+            "name": "installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760114,
+            "name": "installer_archlinux_armv7_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760115,
+            "name": "installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760138,
+            "name": "installer_archlinux_loongarch64_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760140,
+            "name": "installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760154,
+            "name": "installer_archlinux_riscv64_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760168,
+            "name": "installer_archlinux_x64_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760207,
+            "name": "installer_archlinux_x64_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760217,
+            "name": "installer_archlinux_x86_2.4.20.pkg.tar.zst",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760220,
+            "name": "installer_archlinux_x86_2.4.20.pkg.tar.zst.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760227,
+            "name": "installer_debian_arm64_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760229,
+            "name": "installer_debian_arm64_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760237,
+            "name": "installer_debian_armv7_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760243,
+            "name": "installer_debian_armv7_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760244,
+            "name": "installer_debian_loongarch64_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760259,
+            "name": "installer_debian_loongarch64_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760284,
+            "name": "installer_debian_mips32le_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760293,
+            "name": "installer_debian_mips32le_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760273,
+            "name": "installer_debian_mips32_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760283,
+            "name": "installer_debian_mips32_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760305,
+            "name": "installer_debian_mips64le_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760312,
+            "name": "installer_debian_mips64le_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760294,
+            "name": "installer_debian_mips64_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760301,
+            "name": "installer_debian_mips64_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760320,
+            "name": "installer_debian_riscv64_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760325,
+            "name": "installer_debian_riscv64_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760324,
+            "name": "installer_debian_x64_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760331,
+            "name": "installer_debian_x64_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760333,
+            "name": "installer_debian_x86_2.4.20.deb",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760338,
+            "name": "installer_debian_x86_2.4.20.deb.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760341,
+            "name": "installer_redhat_arm64_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760349,
+            "name": "installer_redhat_arm64_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760354,
+            "name": "installer_redhat_armv7_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760372,
+            "name": "installer_redhat_armv7_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760366,
+            "name": "installer_redhat_loongarch64_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760381,
+            "name": "installer_redhat_loongarch64_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760392,
+            "name": "installer_redhat_mips32le_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760401,
+            "name": "installer_redhat_mips32le_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760382,
+            "name": "installer_redhat_mips32_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760389,
+            "name": "installer_redhat_mips32_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760421,
+            "name": "installer_redhat_mips64le_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760427,
+            "name": "installer_redhat_mips64le_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760407,
+            "name": "installer_redhat_mips64_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760413,
+            "name": "installer_redhat_mips64_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760428,
+            "name": "installer_redhat_riscv64_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760434,
+            "name": "installer_redhat_riscv64_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760443,
+            "name": "installer_redhat_x64_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760448,
+            "name": "installer_redhat_x64_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760454,
+            "name": "installer_redhat_x86_2.4.20.rpm",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760460,
+            "name": "installer_redhat_x86_2.4.20.rpm.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760464,
+            "name": "installer_windows_inno_arm64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760465,
+            "name": "installer_windows_inno_arm64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760481,
+            "name": "installer_windows_inno_x64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760479,
+            "name": "installer_windows_inno_x64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760487,
+            "name": "v2raya_core_darwin_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760488,
+            "name": "v2raya_core_darwin_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760494,
+            "name": "v2raya_core_darwin_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760499,
+            "name": "v2raya_core_darwin_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760506,
+            "name": "v2raya_core_freebsd_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760508,
+            "name": "v2raya_core_freebsd_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760510,
+            "name": "v2raya_core_freebsd_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760518,
+            "name": "v2raya_core_freebsd_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760520,
+            "name": "v2raya_core_linux_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760527,
+            "name": "v2raya_core_linux_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760525,
+            "name": "v2raya_core_linux_armv7_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_armv7_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760543,
+            "name": "v2raya_core_linux_armv7_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_armv7_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760544,
+            "name": "v2raya_core_linux_loongarch64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_loongarch64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760562,
+            "name": "v2raya_core_linux_loongarch64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_loongarch64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760571,
+            "name": "v2raya_core_linux_mips32le_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32le_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760576,
+            "name": "v2raya_core_linux_mips32le_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32le_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760561,
+            "name": "v2raya_core_linux_mips32_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760568,
+            "name": "v2raya_core_linux_mips32_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760589,
+            "name": "v2raya_core_linux_mips64le_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64le_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760594,
+            "name": "v2raya_core_linux_mips64le_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64le_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760577,
+            "name": "v2raya_core_linux_mips64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760580,
+            "name": "v2raya_core_linux_mips64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760608,
+            "name": "v2raya_core_linux_riscv64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_riscv64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760613,
+            "name": "v2raya_core_linux_riscv64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_riscv64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760616,
+            "name": "v2raya_core_linux_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760627,
+            "name": "v2raya_core_linux_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760630,
+            "name": "v2raya_core_linux_x86_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x86_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760637,
+            "name": "v2raya_core_linux_x86_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x86_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760649,
+            "name": "v2raya_core_openbsd_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760651,
+            "name": "v2raya_core_openbsd_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760654,
+            "name": "v2raya_core_openbsd_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760663,
+            "name": "v2raya_core_openbsd_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760665,
+            "name": "v2raya_core_windows_arm64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_arm64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760667,
+            "name": "v2raya_core_windows_arm64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_arm64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760672,
+            "name": "v2raya_core_windows_x64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_x64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760679,
+            "name": "v2raya_core_windows_x64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_x64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760694,
+            "name": "v2raya_darwin_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760696,
+            "name": "v2raya_darwin_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760703,
+            "name": "v2raya_darwin_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760716,
+            "name": "v2raya_darwin_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760717,
+            "name": "v2raya_freebsd_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760720,
+            "name": "v2raya_freebsd_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760721,
+            "name": "v2raya_freebsd_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760725,
+            "name": "v2raya_freebsd_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760729,
+            "name": "v2raya_linux_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760735,
+            "name": "v2raya_linux_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760734,
+            "name": "v2raya_linux_armv7_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_armv7_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760747,
+            "name": "v2raya_linux_armv7_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_armv7_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760752,
+            "name": "v2raya_linux_loongarch64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_loongarch64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760754,
+            "name": "v2raya_linux_loongarch64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_loongarch64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760772,
+            "name": "v2raya_linux_mips32le_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32le_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760779,
+            "name": "v2raya_linux_mips32le_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32le_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760767,
+            "name": "v2raya_linux_mips32_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760770,
+            "name": "v2raya_linux_mips32_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760786,
+            "name": "v2raya_linux_mips64le_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64le_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760797,
+            "name": "v2raya_linux_mips64le_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64le_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760780,
+            "name": "v2raya_linux_mips64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760783,
+            "name": "v2raya_linux_mips64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760801,
+            "name": "v2raya_linux_riscv64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_riscv64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760804,
+            "name": "v2raya_linux_riscv64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_riscv64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760808,
+            "name": "v2raya_linux_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760824,
+            "name": "v2raya_linux_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760825,
+            "name": "v2raya_linux_x86_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x86_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760830,
+            "name": "v2raya_linux_x86_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x86_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760834,
+            "name": "v2raya_openbsd_arm64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_arm64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760845,
+            "name": "v2raya_openbsd_arm64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_arm64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760846,
+            "name": "v2raya_openbsd_x64_2.4.20",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_x64_2.4.20",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760850,
+            "name": "v2raya_openbsd_x64_2.4.20.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_x64_2.4.20.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760857,
+            "name": "v2raya_windows_arm64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_arm64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760859,
+            "name": "v2raya_windows_arm64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_arm64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760864,
+            "name": "v2raya_windows_x64_2.4.20.exe",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_x64_2.4.20.exe",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760871,
+            "name": "v2raya_windows_x64_2.4.20.exe.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_x64_2.4.20.exe.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760872,
+            "name": "web.tar.gz",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760883,
+            "name": "web.tar.gz.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.tar.gz.sha256.txt",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760890,
+            "name": "web.zip",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 567760891,
+            "name": "web.zip.sha256.txt",
+            "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.zip.sha256.txt",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 389838975,
+        "tag_name": "v2.4.20",
+        "name": "v2.4.20",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-16T10:47:58Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20"
+      },
+      {
+        "id": 387522360,
+        "tag_name": "v2.4.19",
+        "name": "v2.4.19",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-12T09:41:06Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.19"
+      },
+      {
+        "id": 385234773,
+        "tag_name": "v2.4.18",
+        "name": "v2.4.18",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-09T04:53:15Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.18"
+      },
+      {
+        "id": 382657713,
+        "tag_name": "v2.4.17",
+        "name": "v2.4.17",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-09-04T10:57:29Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.17"
+      },
+      {
+        "id": 377104215,
+        "tag_name": "v2.4.16",
+        "name": "v2.4.16",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-26T12:04:50Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.16"
+      },
+      {
+        "id": 375632348,
+        "tag_name": "v2.4.15",
+        "name": "v2.4.15",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-24T11:03:15Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.15"
+      },
+      {
+        "id": 374791167,
+        "tag_name": "v2.4.14",
+        "name": "v2.4.14",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-22T03:43:09Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.14"
+      },
+      {
+        "id": 374768603,
+        "tag_name": "v2.4.13",
+        "name": "v2.4.13",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-22T01:44:44Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.13"
+      },
+      {
+        "id": 374760197,
+        "tag_name": "v2.4.12",
+        "name": "v2.4.12",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-22T01:09:49Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.12"
+      },
+      {
+        "id": 368633341,
+        "tag_name": "v2.4.11",
+        "name": "v2.4.11",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-11T14:30:23Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.11"
+      },
+      {
+        "id": 367416238,
+        "tag_name": "v2.4.10",
+        "name": "v2.4.10",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-09T07:49:34Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.10"
+      },
+      {
+        "id": 358014417,
+        "tag_name": "v2.4.9",
+        "name": "v2.4.9",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-07-22T12:37:36Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.9"
+      },
+      {
+        "id": 356700260,
+        "tag_name": "v2.4.8",
+        "name": "v2.4.8",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-07-20T12:13:31Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.8"
+      },
+      {
+        "id": 348095470,
+        "tag_name": "v2.4.7",
+        "name": "v2.4.7",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-07-02T14:25:32Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.7"
+      },
+      {
+        "id": 346477699,
+        "tag_name": "v2.4.6",
+        "name": "v2.4.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-29T19:57:08Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.6"
+      },
+      {
+        "id": 346466056,
+        "tag_name": "v2.4.5",
+        "name": "v2.4.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-29T19:34:04Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.5"
+      },
+      {
+        "id": 345924474,
+        "tag_name": "v2.4.4",
+        "name": "v2.4.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-28T14:32:18Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.4"
+      },
+      {
+        "id": 345093670,
+        "tag_name": "v2.4.3",
+        "name": "v2.4.3",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-26T02:21:24Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.3"
+      },
+      {
+        "id": 345082057,
+        "tag_name": "v2.4.2",
+        "name": "v2.4.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-26T01:51:48Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.2"
+      },
+      {
+        "id": 344796593,
+        "tag_name": "v2.4.1",
+        "name": "v2.4.1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-06-25T14:55:44Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.1"
+      },
+      {
+        "id": 317226709,
+        "tag_name": "v2.4.0",
+        "name": "v2.4.0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-05-04T14:08:25Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.0"
+      },
+      {
+        "id": 310852079,
+        "tag_name": "v2.3.4",
+        "name": "v2.3.4",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-04-19T10:53:36Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.3.4"
+      },
+      {
+        "id": 293748333,
+        "tag_name": "v2.3.3",
+        "name": "v2.3.3",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-03-06T00:53:19Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.3.3"
+      },
+      {
+        "id": 287594071,
+        "tag_name": "v2.3.2",
+        "name": "v2.3.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-02-18T09:24:36Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.3.2"
+      },
+      {
+        "id": 286778636,
+        "tag_name": "v2.3.1",
+        "name": "v2.3.1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-02-16T10:05:37Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.3.1"
+      },
+      {
+        "id": 283580610,
+        "tag_name": "v2.3.0",
+        "name": "v2.3.0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2026-02-06T01:45:55Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.3.0"
+      },
+      {
+        "id": 279679432,
+        "tag_name": "v2.2.7.5",
+        "name": "v2.2.7.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-25T00:48:10Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.5"
+      },
+      {
+        "id": 260097757,
+        "tag_name": "v2.2.7.4",
+        "name": "v2.2.7.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-06T00:47:17Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.4"
+      },
+      {
+        "id": 252977724,
+        "tag_name": "v2.2.7.3",
+        "name": "v2.2.7.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-10-08T10:12:31Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.3"
+      },
+      {
+        "id": 252233875,
+        "tag_name": "v2.2.7.2",
+        "name": "v2.2.7.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-10-05T05:05:46Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.2"
+      },
+      {
+        "id": 242864397,
+        "tag_name": "v2.2.7.1",
+        "name": "v2.2.7.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-27T13:01:23Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.1"
+      },
+      {
+        "id": 242078874,
+        "tag_name": "v2.2.7",
+        "name": "v2.2.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-24T04:00:15Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7"
+      },
+      {
+        "id": 208666018,
+        "tag_name": "v2.2.6.7",
+        "name": "v2.2.6.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-27T12:36:35Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.7"
+      },
+      {
+        "id": 199238267,
+        "tag_name": "v2.2.6.6",
+        "name": "v2.2.6.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-09T09:47:54Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.6"
+      },
+      {
+        "id": 199237844,
+        "tag_name": "v2.2.6.5",
+        "name": "v2.2.6.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-09T09:34:46Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.5"
+      },
+      {
+        "id": 199224037,
+        "tag_name": "v2.2.6.4",
+        "name": "v2.2.6.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-09T03:11:10Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.4"
+      },
+      {
+        "id": 187157673,
+        "tag_name": "v2.2.6.3",
+        "name": "v2.2.6.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-24T11:49:39Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.3"
+      },
+      {
+        "id": 182083875,
+        "tag_name": "v2.2.6.2",
+        "name": "v2.2.6.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-26T14:49:28Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.2"
+      },
+      {
+        "id": 181945316,
+        "tag_name": "v2.2.6.1",
+        "name": "v2.2.6.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-25T13:48:44Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6.1"
+      },
+      {
+        "id": 179219398,
+        "tag_name": "v2.2.6",
+        "name": "v2.2.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-10T01:07:03Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.6"
+      },
+      {
+        "id": 165556892,
+        "tag_name": "v2.2.5.8",
+        "name": "v2.2.5.8",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-16T02:56:35Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.8"
+      },
+      {
+        "id": 165345995,
+        "tag_name": "v2.2.5.7",
+        "name": "v2.2.5.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-14T11:18:03Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.7"
+      },
+      {
+        "id": 161660132,
+        "tag_name": "v2.2.5.6",
+        "name": "v2.2.5.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-06-21T12:17:16Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.6"
+      },
+      {
+        "id": 161318357,
+        "tag_name": "v2.2.5.5",
+        "name": "v2.2.5.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-06-19T15:38:47Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.5"
+      },
+      {
+        "id": 161658319,
+        "tag_name": "v2.2.5.6-rc1",
+        "name": "v2.2.5.6-rc1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2024-06-21T12:05:30Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.6-rc1"
+      },
+      {
+        "id": 161312001,
+        "tag_name": "2.2.5.3",
+        "name": "Releases 2.2.5.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-06-19T15:04:41Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/2.2.5.3"
+      },
+      {
+        "id": 161052592,
+        "tag_name": "v2.2.5.2",
+        "name": "v2.2.5.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-06-18T10:54:17Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.2"
+      },
+      {
+        "id": 144501765,
+        "tag_name": "v2.2.5.1",
+        "name": "v2.2.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-03-02T15:03:35Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5.1"
+      },
+      {
+        "id": 144355188,
+        "tag_name": "v2.2.5",
+        "name": "v2.2.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-03-01T11:51:36Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.5"
+      },
+      {
+        "id": 142144486,
+        "tag_name": "v2.2.4.7",
+        "name": "Release v2.2.4.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-02-15T12:24:46Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.7"
+      },
+      {
+        "id": 134193011,
+        "tag_name": "v2.2.4.6",
+        "name": "v2.2.4.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-12-16T17:19:19Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.6"
+      },
+      {
+        "id": 134169021,
+        "tag_name": "v2.2.4.5",
+        "name": "v2.2.4.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-12-16T04:35:12Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.5"
+      },
+      {
+        "id": 134168232,
+        "tag_name": "v2.2.4.4",
+        "name": "v2.2.4.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-12-16T04:06:37Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.4"
+      },
+      {
+        "id": 129088816,
+        "tag_name": "v2.2.4.3",
+        "name": "Release v2.2.4.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-11-13T03:34:35Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.3"
+      },
+      {
+        "id": 129050513,
+        "tag_name": "v2.2.4.2",
+        "name": "Release v2.2.4.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-11-12T12:00:54Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.2"
+      },
+      {
+        "id": 128046768,
+        "tag_name": "v2.2.4.1",
+        "name": "Release 2.2.4.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-11-05T23:47:12Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4.1"
+      },
+      {
+        "id": 119946756,
+        "tag_name": "v2.2.4",
+        "name": "v2.2.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-09-05T13:23:34Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.4"
+      },
+      {
+        "id": 119726246,
+        "tag_name": "v2.2.3",
+        "name": "v2.2.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-09-03T06:11:01Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.3"
+      },
+      {
+        "id": 119469197,
+        "tag_name": "v2.2.2",
+        "name": "v2.2.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-31T15:39:59Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.2"
+      },
+      {
+        "id": 117995034,
+        "tag_name": "v2.2.1",
+        "name": "v2.2.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-21T12:35:40Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.1"
+      },
+      {
+        "id": 117868205,
+        "tag_name": "v2.2.0",
+        "name": "v2.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-19T13:47:29Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.0"
+      },
+      {
+        "id": 116724678,
+        "tag_name": "v2.1.3",
+        "name": "v2.1.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-12T17:23:55Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.1.3"
+      },
+      {
+        "id": 116523855,
+        "tag_name": "v2.1.2",
+        "name": "v2.1.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-08-12T10:04:04Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.1.2"
+      },
+      {
+        "id": 116394101,
+        "tag_name": "v2.1.1",
+        "name": "v2.1.1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-08-12T05:35:08Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.1.1"
+      },
+      {
+        "id": 114857058,
+        "tag_name": "v2.1.0",
+        "name": "v2.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-02T17:29:39Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.1.0"
+      },
+      {
+        "id": 98615137,
+        "tag_name": "v2.0.5",
+        "name": "v2.0.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-04-08T06:20:57Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.0.5"
+      },
+      {
+        "id": 96109125,
+        "tag_name": "v2.0.4",
+        "name": "v2.0.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-19T14:05:56Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.0.4"
+      },
+      {
+        "id": 96068092,
+        "tag_name": "v2.0.2",
+        "name": "v2.0.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-03-18T10:25:52Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.0.2"
+      },
+      {
+        "id": 85884172,
+        "tag_name": "v2.0.1",
+        "name": "v2.0.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-12-13T15:23:54Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.0.1"
+      },
+      {
+        "id": 85565242,
+        "tag_name": "v2.0.0",
+        "name": "v2.0.0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-12-09T15:18:01Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.0.0"
+      },
+      {
+        "id": 73601746,
+        "tag_name": "v1.5.9.1698.1",
+        "name": "v1.6.9.8",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-08-04T03:42:29Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.9.1698.1"
+      },
+      {
+        "id": 73557343,
+        "tag_name": "v1.5.9.1698",
+        "name": "v1.6.9.8-rc0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-08-03T16:00:29Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.9.1698"
+      },
+      {
+        "id": 69762113,
+        "tag_name": "v1.5.8.1",
+        "name": "v1.5.8.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-06-18T06:58:33Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.8.1"
+      },
+      {
+        "id": 64838699,
+        "tag_name": "v1.5.7",
+        "name": "v1.5.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-04-20T12:28:22Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.7"
+      },
+      {
+        "id": 58399547,
+        "tag_name": "v1.5.6.2",
+        "name": "v1.5.6.2 Happy Spring Festival ",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2022-02-01T06:39:50Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.6.2"
+      },
+      {
+        "id": 58300227,
+        "tag_name": "v1.5.6.1",
+        "name": "v1.5.6.1 Happy Spring Festival ",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-01-31T03:20:24Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.6.1"
+      },
+      {
+        "id": 58273106,
+        "tag_name": "v1.5.6",
+        "name": "v1.5.6 Happy Spring Festival",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2022-01-30T05:14:02Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.6"
+      },
+      {
+        "id": 54927067,
+        "tag_name": "v1.5.5",
+        "name": "v1.5.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-12-09T06:24:22Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.5"
+      },
+      {
+        "id": 50652531,
+        "tag_name": "v1.5.4",
+        "name": "v1.5.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-10-02T04:23:47Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.4"
+      },
+      {
+        "id": 49620173,
+        "tag_name": "v1.5.3",
+        "name": "v1.5.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-09-15T17:40:54Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.3"
+      },
+      {
+        "id": 48644219,
+        "tag_name": "v1.5.2",
+        "name": "v1.5.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-08-30T02:00:21Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.2"
+      },
+      {
+        "id": 48511598,
+        "tag_name": "v1.5.1",
+        "name": "v1.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-08-26T17:03:30Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.1"
+      },
+      {
+        "id": 48500281,
+        "tag_name": "v1.5.0",
+        "name": "v1.5.0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2021-08-26T13:34:18Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.5.0"
+      },
+      {
+        "id": 47852157,
+        "tag_name": "v1.4.4",
+        "name": "v1.4.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-08-14T14:29:21Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.4.4"
+      },
+      {
+        "id": 47344592,
+        "tag_name": "v1.4.3",
+        "name": "v1.4.3",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2021-08-05T18:30:13Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.4.3"
+      },
+      {
+        "id": 47146520,
+        "tag_name": "v1.4.2",
+        "name": "v1.4.2",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2021-08-02T10:52:28Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.4.2"
+      },
+      {
+        "id": 46523338,
+        "tag_name": "v1.4.1",
+        "name": "v1.4.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-07-21T08:19:59Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.4.1"
+      },
+      {
+        "id": 46411395,
+        "tag_name": "v1.4.0",
+        "name": "v1.4.0",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2021-07-19T13:41:27Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.4.0"
+      },
+      {
+        "id": 43340079,
+        "tag_name": "v1.3.3",
+        "name": "v1.3.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-05-21T09:26:50Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.3.3"
+      },
+      {
+        "id": 42322640,
+        "tag_name": "v1.3.2",
+        "name": "v1.3.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-05-02T08:00:10Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.3.2"
+      },
+      {
+        "id": 41588361,
+        "tag_name": "v1.3.1",
+        "name": "v1.3.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-04-17T15:37:19Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.3.1"
+      },
+      {
+        "id": 41585191,
+        "tag_name": "v1.3.0",
+        "name": "v1.3.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-04-17T12:02:07Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.3.0"
+      },
+      {
+        "id": 37841949,
+        "tag_name": "v1.2.2",
+        "name": "v1.2.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-02-10T05:47:13Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.2.2"
+      },
+      {
+        "id": 36097112,
+        "tag_name": "v1.2.1",
+        "name": "v1.2.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-01-07T14:45:52Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.2.1"
+      },
+      {
+        "id": 36094790,
+        "tag_name": "v1.2.0",
+        "name": "v1.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2021-01-07T13:56:15Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.2.0"
+      },
+      {
+        "id": 35404923,
+        "tag_name": "v1.1.3",
+        "name": "v1.1.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2020-12-17T09:29:06Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.1.3"
+      },
+      {
+        "id": 33269549,
+        "tag_name": "v1.1.2",
+        "name": "v1.1.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2020-10-30T12:55:08Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.1.2"
+      },
+      {
+        "id": 33012477,
+        "tag_name": "v1.1.1",
+        "name": "v1.1.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2020-10-24T13:55:46Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.1.1"
+      },
+      {
+        "id": 32799227,
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2020-10-20T09:26:52Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.1.0"
+      },
+      {
+        "id": 32669834,
+        "tag_name": "v1.0.3",
+        "name": "v1.0.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2020-10-16T12:29:34Z",
+        "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v1.0.3"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "69826978c3d7fb90b1fc2e415566a5a8266450da",
+      "truncated": false,
+      "paths": [
+        ".dockerignore",
+        ".github",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug_en.md",
+        ".github/ISSUE_TEMPLATE/bug_zh.md",
+        ".github/ISSUE_TEMPLATE/feature_en.md",
+        ".github/ISSUE_TEMPLATE/feature_zh.md",
+        ".github/ISSUE_TEMPLATE/help_en.md",
+        ".github/ISSUE_TEMPLATE/help_zh.md",
+        ".github/workflows",
+        ".github/workflows/_build_binaries.yml",
+        ".github/workflows/_build_linux_packages.yml",
+        ".github/workflows/_build_web.yml",
+        ".github/workflows/_build_windows_installer.yml",
+        ".github/workflows/beta_release_main.yml",
+        ".github/workflows/dispatch_copr.yml",
+        ".github/workflows/dispatch_docs.yml",
+        ".github/workflows/pull_request.yml",
+        ".github/workflows/release_main.yml",
+        ".github/workflows/test_build_main.yml",
+        ".gitignore",
+        ".gitmodules",
+        "LICENSE",
+        "README.md",
+        "README_zh.md",
+        "build.ps1",
+        "build.sh",
+        "core",
+        "core/LICENSE",
+        "core/dns",
+        "core/dns/cache.go",
+        "core/dns/cache_test.go",
+        "core/dns/config.go",
+        "core/dns/debug.go",
+        "core/dns/diagnostics.go",
+        "core/dns/dispatcher.go",
+        "core/dns/dns.go",
+        "core/dns/dns_unix.go",
+        "core/dns/dns_windows.go",
+        "core/dns/go_dns.go",
+        "core/dns/handler.go",
+        "core/dns/listener.go",
+        "core/dns/metrics.go",
+        "core/dns/metrics_test.go",
+        "core/dns/module.go",
+        "core/dns/qtype.go",
+        "core/dns/response.go",
+        "core/dns/response_test.go",
+        "core/dns/router.go",
+        "core/dns/rule.go",
+        "core/dns/socket_test.go",
+        "core/dns/socket_unix.go",
+        "core/dns/socket_unix_test.go",
+        "core/dns/socket_windows.go",
+        "core/dns/system_darwin.go",
+        "core/dns/system_other.go",
+        "core/dns/system_windows.go",
+        "core/dns/types.go",
+        "core/dns/upstream.go",
+        "core/dns/upstream_stub.go",
+        "core/dns/upstream_test.go",
+        "core/dns/validator.go",
+        "core/examples",
+        "core/examples/anytls-client.json",
+        "core/examples/dns-with-socks.json",
+        "core/examples/juicity-client.json",
+        "core/examples/tuic-client.json",
+        "core/go.mod",
+        "core/go.sum",
+        "core/hint",
+        "core/hint/app",
+        "core/hint/app/observatory",
+        "core/hint/app/observatory/command",
+        "core/hint/app/observatory/command/command.go",
+        "core/hint/app/observatory/command/config.pb.go",
+        "core/hint/app/observatory/multiobservatory",
+        "core/hint/app/observatory/multiobservatory/config.pb.go",
+        "core/hint/app/observatory/multiobservatory/multi.go",
+        "core/hint/conf",
+        "core/hint/conf/loader.go",
+        "core/hint/proxy",
+        "core/hint/proxy/anytls",
+        "core/hint/proxy/anytls/config.pb.go",
+        "core/hint/proxy/anytls/config.proto",
+        "core/hint/proxy/anytls/outbound.go",
+        "core/hint/proxy/juicity",
+        "core/hint/proxy/juicity/config.pb.go",
+        "core/hint/proxy/juicity/config.proto",
+        "core/hint/proxy/juicity/outbound.go",
+        "core/hint/proxy/tuic",
+        "core/hint/proxy/tuic/config.pb.go",
+        "core/hint/proxy/tuic/config.proto",
+        "core/hint/proxy/tuic/outbound.go",
+        "core/hint/tlsutil",
+        "core/hint/tlsutil/tlsutil.go",
+        "core/hint/tlsutil/tlsutil_test.go",
+        "core/main",
+        "core/main/distro",
+        "core/main/distro/all",
+        "core/main/distro/all/all.go",
+        "core/main/dns_module.go",
+        "core/main/geosite.go",
+        "core/main/main.go",
+        "core/main/run.go",
+        "core/main/version.go",
+        "core/main/xray_dispatcher.go",
+        "core/xray",
+        "gui",
+        "gui/.browserslistrc",
+        "gui/.eslintrc.js",
+        "gui/.gitignore",
+        "gui/README.md",
+        "gui/babel.config.js",
+        "gui/index.html",
+        "gui/package.json",
+        "gui/postcss.config.js",
+        "gui/public",
+        "gui/public/CNAME",
+        "gui/public/favicon.ico",
+        "gui/public/img",
+        "gui/public/img/icons",
+        "gui/public/img/icons/android-chrome-192x192.png",
+        "gui/public/img/icons/android-chrome-512x512.png",
+        "gui/public/img/icons/apple-touch-icon-120x120.png",
+        "gui/public/img/icons/apple-touch-icon-152x152.png",
+        "gui/public/img/icons/apple-touch-icon-180x180.png",
+        "gui/public/img/icons/apple-touch-icon-60x60.png",
+        "gui/public/img/icons/apple-touch-icon-76x76.png",
+        "gui/public/img/icons/apple-touch-icon.png",
+        "gui/public/img/icons/favicon-16x16.png",
+        "gui/public/img/icons/favicon-32x32.png",
+        "gui/public/img/icons/msapplication-icon-144x144.png",
+        "gui/public/img/icons/mstile-150x150.png",
+        "gui/public/img/icons/safari-pinned-tab.svg",
+        "gui/public/img/icons/windows-bitmap-150x57.bmp",
+        "gui/public/img/icons/windows-icon-255x255.ico",
+        "gui/public/index.html",
+        "gui/public/robots.txt",
+        "gui/src",
+        "gui/src/App.vue",
+        "gui/src/assets",
+        "gui/src/assets/font",
+        "gui/src/assets/font/Inter-Regular.woff2",
+        "gui/src/assets/iconfont",
+        "gui/src/assets/iconfont/css-template.njk",
+        "gui/src/assets/iconfont/fonts",
+        "gui/src/assets/iconfont/fonts/_font-preview.html",
+        "gui/src/assets/iconfont/fonts/_font_ex.scss",
+        "gui/src/assets/iconfont/fonts/font.css",
+        "gui/src/assets/iconfont/fonts/fonts.js",
+        "gui/src/assets/iconfont/fonts/iconfont.eot",
+        "gui/src/assets/iconfont/fonts/iconfont.svg",
+        "gui/src/assets/iconfont/fonts/iconfont.ttf",
+        "gui/src/assets/iconfont/fonts/iconfont.woff",
+        "gui/src/assets/iconfont/fonts/iconfont.woff2",
+        "gui/src/assets/iconfont/svgs",
+        "gui/src/assets/iconfont/svgs/Link_disconnect.svg",
+        "gui/src/assets/iconfont/svgs/alert.svg",
+        "gui/src/assets/iconfont/svgs/camera.svg",
+        "gui/src/assets/iconfont/svgs/caret-down.svg",
+        "gui/src/assets/iconfont/svgs/caret-up.svg",
+        "gui/src/assets/iconfont/svgs/chakandaorujilu.svg",
+        "gui/src/assets/iconfont/svgs/check-circle-fill.svg",
+        "gui/src/assets/iconfont/svgs/chuangjiangongdan1.svg",
+        "gui/src/assets/iconfont/svgs/clock2.svg",
+        "gui/src/assets/iconfont/svgs/close-circle-fill.svg",
+        "gui/src/assets/iconfont/svgs/cloud-sync.svg",
+        "gui/src/assets/iconfont/svgs/cloud.svg",
+        "gui/src/assets/iconfont/svgs/coding_alert_circle.svg",
+        "gui/src/assets/iconfont/svgs/daoru.svg",
+        "gui/src/assets/iconfont/svgs/daoruzupu-xianxing.svg",
+        "gui/src/assets/iconfont/svgs/delete.svg",
+        "gui/src/assets/iconfont/svgs/dian.svg",
+        "gui/src/assets/iconfont/svgs/earth.svg",
+        "gui/src/assets/iconfont/svgs/heart.svg",
+        "gui/src/assets/iconfont/svgs/help-circle-outline.svg",
+        "gui/src/assets/iconfont/svgs/info.svg",
+        "gui/src/assets/iconfont/svgs/label.svg",
+        "gui/src/assets/iconfont/svgs/lianjie.svg",
+        "gui/src/assets/iconfont/svgs/loading_ico.svg",
+        "gui/src/assets/iconfont/svgs/logout.svg",
+        "gui/src/assets/iconfont/svgs/setting.svg",
+        "gui/src/assets/iconfont/svgs/share.svg",
+        "gui/src/assets/iconfont/svgs/switch-menu.svg",
+        "gui/src/assets/iconfont/svgs/sync.svg",
+        "gui/src/assets/iconfont/svgs/wave.svg",
+        "gui/src/assets/iconfont/svgs/wendangxiugai.svg",
+        "gui/src/assets/iconfont/svgs/winfo-icon-chakanbaogao.svg",
+        "gui/src/assets/img",
+        "gui/src/assets/img/flags",
+        "gui/src/assets/img/flags/flag_en.svg",
+        "gui/src/assets/img/flags/flag_fa.svg",
+        "gui/src/assets/img/flags/flag_pt.svg",
+        "gui/src/assets/img/flags/flag_ru.svg",
+        "gui/src/assets/img/flags/flag_zh.svg",
+        "gui/src/assets/img/logo2.png",
+        "gui/src/assets/img/switch-menu.svg",
+        "gui/src/assets/js",
+        "gui/src/assets/js/browser.js",
+        "gui/src/assets/js/const.js",
+        "gui/src/assets/js/networkInspect.js",
+        "gui/src/assets/js/utils.js",
+        "gui/src/assets/scss",
+        "gui/src/assets/scss/buefy.scss",
+        "gui/src/assets/scss/dark-theme.scss",
+        "gui/src/assets/scss/reset.scss",
+        "gui/src/components",
+        "gui/src/components/highlightLog.vue",
+        "gui/src/components/input",
+        "gui/src/components/input/Input.spec.js",
+        "gui/src/components/input/Input.vue",
+        "gui/src/components/input/__snapshots__",
+        "gui/src/components/input/__snapshots__/Input.spec.js.snap",
+        "gui/src/components/input/index.js",
+        "gui/src/components/modalCustomInbound.vue",
+        "gui/src/components/modalCustomPorts.vue",
+        "gui/src/components/modalCustomRouting.vue",
+        "gui/src/components/modalCustomRoutingA.vue",
+        "gui/src/components/modalDnsSetting.vue",
+        "gui/src/components/modalDomainsExcluded.vue",
+        "gui/src/components/modalLog.vue",
+        "gui/src/components/modalLogin.vue",
+        "gui/src/components/modalOutboundSetting.vue",
+        "gui/src/components/modalPickProxyGroup.vue",
+        "gui/src/components/modalPortWhiteList.vue",
+        "gui/src/components/modalServer.vue",
+        "gui/src/components/modalSetting.vue",
+        "gui/src/components/modalSharing.vue",
+        "gui/src/components/modalSubcription.vue",
+        "gui/src/components/modalTinyTunExcludeProcesses.vue",
+        "gui/src/components/modalTinyTunRouteScript.vue",
+        "gui/src/components/modalTproxyWhiteIpGroups.vue",
+        "gui/src/components/modalUpdateGfwList.vue",
+        "gui/src/components/outboundGroupPanel.vue",
+        "gui/src/introduce.js",
+        "gui/src/locales",
+        "gui/src/locales/en.js",
+        "gui/src/locales/fa-ir.js",
+        "gui/src/locales/index.js",
+        "gui/src/locales/ko.js",
+        "gui/src/locales/pt-br.js",
+        "gui/src/locales/ru.js",
+        "gui/src/locales/zh.js",
+        "gui/src/main.js",
+        "gui/src/node.vue",
+        "gui/src/plugins",
+        "gui/src/plugins/axios.js",
+        "gui/src/plugins/backendPort.js",
+        "gui/src/plugins/buefy.js",
+        "gui/src/plugins/dayjs.js",
+        "gui/src/plugins/i18n.js",
+        "gui/src/plugins/mount.js",
+        "gui/src/plugins/virtual-scroll.js",
+        "gui/src/registerServiceWorker.js",
+        "gui/src/store",
+        "gui/src/store/index.js",
+        "gui/vite.config.js",
+        "gui/vue.config.js",
+        "gui/yarn.lock",
+        "install",
+        "install/aur",
+        "install/aur/v2raya-bin",
+        "install/aur/v2raya-bin/.INSTALL",
+        "install/aur/v2raya-bin/.SRCINFO",
+        "install/aur/v2raya-bin/PKGBUILD",
+        "install/aur/v2raya",
+        "install/aur/v2raya/.INSTALL",
+        "install/aur/v2raya/.SRCINFO",
+        "install/aur/v2raya/PKGBUILD",
+        "install/docker",
+        "install/docker/Dockerfile.Action",
+        "install/docker/Dockerfile.GUI.Action",
+        "install/docker/docker_helper.sh",
+        "install/docker/ip6tables.sh",
+        "install/docker/iptables.sh",
+        "install/friendly-filenames.json",
+        "install/universal",
+        "install/universal/after_install.sh",
+        "install/universal/after_upgrade.sh",
+        "install/universal/v2raya-lite.service",
+        "install/universal/v2raya.default",
+        "install/universal/v2raya.desktop",
+        "install/universal/v2raya.png",
+        "install/universal/v2raya.run",
+        "install/universal/v2raya.service",
+        "install/windows-inno",
+        "install/windows-inno/ChineseSimplified.isl",
+        "install/windows-inno/v2raya.ico",
+        "install/windows-inno/windows.iss",
+        "service",
+        "service/.gitignore",
+        "service/common",
+        "service/common/antiPollution",
+        "service/common/antiPollution/external_dns.go",
+        "service/common/cmds",
+        "service/common/cmds/command.go",
+        "service/common/crypto.go",
+        "service/common/files",
+        "service/common/files/file.go",
+        "service/common/httpClient",
+        "service/common/httpClient/httpClient.go",
+        "service/common/httpClient/httpGetUsingSpecificClient.go",
+        "service/common/netTools",
+        "service/common/netTools/interface.go",
+        "service/common/netTools/ipaddress.go",
+        "service/common/netTools/ipaddress_test.go",
+        "service/common/netTools/netstat",
+        "service/common/netTools/netstat/netstat.go",
+        "service/common/netTools/netstat/netstat_other.go",
+        "service/common/netTools/netstat/netstat_unix.go",
+        "service/common/netTools/netstat/netstat_unix_test.go",
+        "service/common/netTools/ports",
+        "service/common/netTools/ports/port.go",
+        "service/common/netTools/ports/ss.go",
+        "service/common/ntp",
+        "service/common/ntp/ntp.go",
+        "service/common/parseGeoIP",
+        "service/common/parseGeoIP/geoip.pb.go",
+        "service/common/parseGeoIP/geoip.proto",
+        "service/common/parseGeoIP/parser.go",
+        "service/common/parseGeoIP/parser_test.go",
+        "service/common/resolv",
+        "service/common/resolv/resolv.go",
+        "service/common/resolv/resolver.go",
+        "service/common/response.go",
+        "service/common/tools.go",
+        "service/common/tools_test.go",
+        "service/conf",
+        "service/conf/environmentConfig.go",
+        "service/conf/environmentConfig_other.go",
+        "service/conf/environmentConfig_windows.go",
+        "service/conf/report.go",
+        "service/conf/report",
+        "service/conf/report/config.go",
+        "service/conf/report/connection.go",
+        "service/conf/report/coreStatus.go",
+        "service/conf/report/curl.go",
+        "service/conf/report/dns.go",
+        "service/conf/report/kernel.go",
+        "service/conf/variable.go",
+        "service/db",
+        "service/db/configure",
+        "service/db/configure/configure.go",
+        "service/db/configure/const.go",
+        "service/db/configure/customInbound.go",
+        "service/db/configure/dnsrules.go",
+        "service/db/configure/migrate_dns.go",
+        "service/db/configure/outbound.go",
+        "service/db/configure/portWhiteList.go",
+        "service/db/configure/ports.go",
+        "service/db/configure/raw.go",
+        "service/db/configure/setting.go",
+        "service/db/configure/tproxyWhiteIpGroups.go",
+        "service/db/configure/which.go",
+        "service/db/listOp.go",
+        "service/db/migrate.go",
+        "service/db/plainOp.go",
+        "service/db/schema.go",
+        "service/db/setOp.go",
+        "service/db/sqlite.go",
+        "service/db/sqlite_driver_default.go",
+        "service/db/sqlite_driver_mipsle_cgo.go",
+        "service/db/sqlite_driver_mipsle_nocgo.go",
+        "service/go.mod",
+        "service/go.sum",
+        "service/infra",
+        "service/infra/dataStructure",
+        "service/infra/dataStructure/lru",
+        "service/infra/dataStructure/lru/lru.go",
+        "service/infra/dataStructure/trie",
+        "service/infra/dataStructure/trie/trie.go",
+        "service/infra/dataStructure/trie/trie_test.go",
+        "service/kernel",
+        "service/kernel/coreObj",
+        "service/kernel/coreObj/coreObj.go",
+        "service/kernel/coreObj/coreObj_test.go",
+        "service/kernel/ipforward",
+        "service/kernel/ipforward/ipforward_linux.go",
+        "service/kernel/ipforward/ipforward_other.go",
+        "service/kernel/ipforward/ipforward_unix.go",
+        "service/kernel/iptables",
+        "service/kernel/iptables/dropSpoofing.go",
+        "service/kernel/iptables/iptables.go",
+        "service/kernel/iptables/redirect.go",
+        "service/kernel/iptables/systemProxy_macos.go",
+        "service/kernel/iptables/systemProxy_other.go",
+        "service/kernel/iptables/systemProxy_windows.go",
+        "service/kernel/iptables/tproxy.go",
+        "service/kernel/iptables/utils.go",
+        "service/kernel/iptables/watcher.go",
+        "service/kernel/serverObj",
+        "service/kernel/serverObj/anytls.go",
+        "service/kernel/serverObj/http.go",
+        "service/kernel/serverObj/hysteria2.go",
+        "service/kernel/serverObj/juicity.go",
+        "service/kernel/serverObj/plugin.go",
+        "service/kernel/serverObj/serverObj.go",
+        "service/kernel/serverObj/shadowsocks.go",
+        "service/kernel/serverObj/shadowsocksr.go",
+        "service/kernel/serverObj/socks.go",
+        "service/kernel/serverObj/trojan.go",
+        "service/kernel/serverObj/tuic.go",
+        "service/kernel/serverObj/v2ray.go",
+        "service/kernel/serverObj/wireguard.go",
+        "service/kernel/touch",
+        "service/kernel/touch/touch.go",
+        "service/kernel/v2ray",
+        "service/kernel/v2ray/api.go",
+        "service/kernel/v2ray/asset",
+        "service/kernel/v2ray/asset/asset.go",
+        "service/kernel/v2ray/asset/dat",
+        "service/kernel/v2ray/asset/dat/geoip.go",
+        "service/kernel/v2ray/asset/dat/geosite.go",
+        "service/kernel/v2ray/asset/dat/gfwlist.go",
+        "service/kernel/v2ray/connectivity.go",
+        "service/kernel/v2ray/dnsHijack.go",
+        "service/kernel/v2ray/dnslisten.go",
+        "service/kernel/v2ray/feed.go",
+        "service/kernel/v2ray/process.go",
+        "service/kernel/v2ray/processManager.go",
+        "service/kernel/v2ray/process_test.go",
+        "service/kernel/v2ray/service",
+        "service/kernel/v2ray/service/service.go",
+        "service/kernel/v2ray/templateJson.go",
+        "service/kernel/v2ray/template_api.go",
+        "service/kernel/v2ray/template_core.go",
+        "service/kernel/v2ray/template_dns.go",
+        "service/kernel/v2ray/template_inbound.go",
+        "service/kernel/v2ray/template_outbound.go",
+        "service/kernel/v2ray/template_routing.go",
+        "service/kernel/v2ray/template_serverdata.go",
+        "service/kernel/v2ray/template_validate.go",
+        "service/kernel/v2ray/tinytun_enabled.go",
+        "service/kernel/v2ray/tinytun_stub.go",
+        "service/kernel/v2ray/transparent.go",
+        "service/kernel/v2ray/where",
+        "service/kernel/v2ray/where/where.go",
+        "service/kernel/vmessInfo",
+        "service/kernel/vmessInfo/vmessInfo.go",
+        "service/main.go",
+        "service/pkg",
+        "service/pkg/server",
+        "service/pkg/server/jwt",
+        "service/pkg/server/jwt/index.go",
+        "service/pkg/server/jwt/jwtTools.go",
+        "service/pkg/server/reqCache",
+        "service/pkg/server/reqCache/reqCache.go",
+        "service/pkg/util",
+        "service/pkg/util/copyfile",
+        "service/pkg/util/copyfile/main.go",
+        "service/pkg/util/gopeed",
+        "service/pkg/util/gopeed/down.go",
+        "service/pkg/util/gopeed/down_test.go",
+        "service/pkg/util/gopeed/request.go",
+        "service/pkg/util/gopeed/response.go",
+        "service/pkg/util/log",
+        "service/pkg/util/log/log.go",
+        "service/pkg/util/privilege",
+        "service/pkg/util/privilege/privilege_unix.go",
+        "service/pkg/util/privilege/privilege_windows.go",
+        "service/pkg/util/proxyWithHttp",
+        "service/pkg/util/proxyWithHttp/proxyWithHttp.go",
+        "service/pre.go",
+        "service/pre_database.go",
+        "service/pre_environment.go",
+        "service/pre_run.go",
+        "service/pre_update.go",
+        "service/server",
+        "service/server/controller",
+        "service/server/controller/account.go",
+        "service/server/controller/connection.go",
+        "service/server/controller/controller.go",
+        "service/server/controller/customInbound.go",
+        "service/server/controller/dnslist.go",
+        "service/server/controller/errorLogger.go",
+        "service/server/controller/gfwlist.go",
+        "service/server/controller/import.go",
+        "service/server/controller/inboundSniffing.go",
+        "service/server/controller/latency.go",
+        "service/server/controller/logger.go",
+        "service/server/controller/message.go",
+        "service/server/controller/networkInterfaces.go",
+        "service/server/controller/outbound.go",
+        "service/server/controller/ports.go",
+        "service/server/controller/resolving.go",
+        "service/server/controller/routingA.go",
+        "service/server/controller/setting.go",
+        "service/server/controller/sharingAddress.go",
+        "service/server/controller/subscription.go",
+        "service/server/controller/touch.go",
+        "service/server/controller/tproxyWhiteIpGroups.go",
+        "service/server/controller/version.go",
+        "service/server/router",
+        "service/server/router/index.go",
+        "service/server/service",
+        "service/server/service/account.go",
+        "service/server/service/connect.go",
+        "service/server/service/import.go",
+        "service/server/service/latency.go",
+        "service/server/service/message.go",
+        "service/server/service/ports.go",
+        "service/server/service/resolve.go",
+        "service/server/service/setting.go",
+        "service/server/service/share.go",
+        "service/server/service/subscription.go",
+        "service/server/service/touch.go",
+        "service/server/service/update.go",
+        "service/service_other.go",
+        "service/service_windows.go"
+      ]
+    },
+    "error": ""
+  }
+}

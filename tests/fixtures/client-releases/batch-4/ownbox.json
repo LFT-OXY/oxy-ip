@@ -1,0 +1,35 @@
+{
+  "id": 389149007,
+  "tag_name": "v2.7.9",
+  "name": "OwnBox v2.7.9",
+  "html_url": "https://github.com/Own716/OwnBoxForAndroid/releases/tag/v2.7.9",
+  "published_at": "2026-09-15T13:02:10Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 565714685,
+      "name": "OwnBox-2.7.9-arm64-v8a-release.apk",
+      "browser_download_url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-arm64-v8a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 565714683,
+      "name": "OwnBox-2.7.9-armeabi-v7a-release.apk",
+      "browser_download_url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-armeabi-v7a-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 565714682,
+      "name": "OwnBox-2.7.9-x86-release.apk",
+      "browser_download_url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86-release.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 565714684,
+      "name": "OwnBox-2.7.9-x86_64-release.apk",
+      "browser_download_url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86_64-release.apk",
+      "state": "uploaded"
+    }
+  ]
+}

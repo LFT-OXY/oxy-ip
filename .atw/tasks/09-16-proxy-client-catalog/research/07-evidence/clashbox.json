@@ -1,0 +1,160 @@
+{
+  "baseline": {
+    "order": 97,
+    "id": "clashbox",
+    "name": "ClashBox",
+    "reference_url": "https://huarun.win/apps/clashbox",
+    "observed_official_entry": "https://github.com/xiaobaigroup/ClashBox",
+    "ticket": "07"
+  },
+  "repo": "xiaobaigroup/ClashBox",
+  "metadata": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox",
+    "status": 0,
+    "data": {
+      "full_name": "xiaobaigroup/ClashBox",
+      "html_url": "https://github.com/xiaobaigroup/ClashBox",
+      "description": "HarmonyOS NEXT的代理软件",
+      "homepage": "",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/xiaobaigroup/ClashBox/blob/main/README.md",
+      "sha": "b98c15e8d2bc046eddb9bb26a8a28db6ad8a1b11",
+      "text": "[English](/README_en.md)\n\n# ClashBox\n[![Downloads](https://img.shields.io/github/downloads/xiaobaigroup/ClashBox/total?style=flat-square&logo=github)](https://github.com/xiaobaigroup/ClashBox/releases/)[![Last Version](https://img.shields.io/github/release/xiaobaigroup/ClashBox/all.svg?style=flat-square)](https://github.com/xiaobaigroup/ClashBox/releases/)[![License](https://img.shields.io/github/license/xiaobaigroup/ClashBox?style=flat-square)](LICENSE)\n\n[![Channel](https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram)](https://t.me/+aYziOyq-ZhUyNjRl)\n\n本项目的大部分代码均已开源，若要查看本项目的开源代码，请前往[Master分支](https://github.com/xiaobaigroup/ClashBox/tree/master)。\n#### 介绍\n\nClashBox是首个基于Navigation框架的HarmonyOS NEXT平台的代理软件，使用改版的[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)内核。\n使用前请仔细阅读免责声明和常见问题。\n\n#### 软件特色\n\n- 💻原生开发：前端部分使用鸿蒙原生开发语言ArkTS开发，原生开发更流畅，动效更丰富;\n- ✨炫酷界面：使用HarmonyOS NEXT原生设计风格，采用类[Surfboard](https://github.com/getsurfboard/surfboard)的UI排版设计，支持深色模式、模糊效果等，使用体验上更进一步；\n- 📱多端适配：UI方面对手机、平板、折叠屏、鸿蒙电脑甚至PuraX外屏*都进行了适配；\n- 🚀稳定内核：采用广受好评的[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)内核，功能基本对齐[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)，稳定可靠；\n- 🔄核心恢复：由于HarmonyOS NEXT的后台调度机制尚不成熟，软件可能存在后台进程被系统关闭的情况，因此ClashBox内置了核心恢复功能，系统杀进程后将自动恢复核心进程（开启“后台运行-模拟画中画”后将自动启用本功能）。\n\n*PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单之前暂不可用。\n\n#### 食用方法\n\n您可以使用[Auto-installer](https://github.com/likuai2010/auto-installer/)或[DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/)进行安装。\n\n> [!IMPORTANT]\n> 华为的签名服务器屏蔽了非中国大陆的IP地址，若要在非中国大陆的国家/地区为HarmonyOS NEXT侧载软件，请使用代理等方式使用中国大陆的IP地址。\n\n> [!NOTE]\n> 在HarmonyOS NEXT使用自签名的方式进行侧载的App默认只有14天的有效期，进行[开发者实名认证](https://developer.huawei.com/consumer/cn/verified/enrollment)后即可将有效期提升至180天。\n\n#### 赞助&联系我们\n\n我们已入驻爱发电，支持我们项目的朋友可以前往爱发电赞助我们：\nhttps://afdian.com/a/xiaobaigroup\n\n感谢您的支持~\n\n官方Telegram群组：  https://t.me/+FdIuCMoMY-EyNThl\n\n官方Telegram频道：  https://t.me/+aYziOyq-ZhUyNjRl\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 304711621,
+        "tag_name": "1.7.4",
+        "name": "ClashBox LTS (V1)",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.7.4",
+        "published_at": "2026-04-02T14:50:20Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "欸嘿，一年一度的(也许)ClashBox LTS 版上线咯",
+        "assets": [
+          {
+            "id": 387082289,
+            "name": "ClashBox_LTS_V1_unsigned.hap",
+            "browser_download_url": "https://github.com/xiaobaigroup/ClashBox/releases/download/1.7.4/ClashBox_LTS_V1_unsigned.hap",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 304711621,
+        "tag_name": "1.7.4",
+        "name": "ClashBox LTS (V1)",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-02T14:50:20Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.7.4"
+      },
+      {
+        "id": 230738574,
+        "tag_name": "1.5.1",
+        "name": "ClashNEXT LTS-1.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-07-08T09:05:45Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.5.1"
+      },
+      {
+        "id": 220359974,
+        "tag_name": "1.4.7",
+        "name": "ClashBox-1.4.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-05-22T12:36:34Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.4.7"
+      },
+      {
+        "id": 215021232,
+        "tag_name": "1.3.3",
+        "name": "ClashNEXTbeta-1.3.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-04-27T09:25:02Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.3.3"
+      },
+      {
+        "id": 212218249,
+        "tag_name": "1.3.0",
+        "name": "ClashNEXTbeta-1.3.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-04-22T00:50:00Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.3.0"
+      },
+      {
+        "id": 207999253,
+        "tag_name": "1.2.7",
+        "name": "ClashNEXTbeta-1.2.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-25T01:48:14Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.2.7"
+      },
+      {
+        "id": 204494213,
+        "tag_name": "1.2.4",
+        "name": "ClashNEXTBeta-1.2.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-08T00:03:28Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.2.4"
+      },
+      {
+        "id": 201890558,
+        "tag_name": "1.2.3",
+        "name": "ClashNEXTbeta-1.2.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-23T09:37:12Z",
+        "html_url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.2.3"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "f78de056bfdf6818a4e08290d5a2dc6a3b2b60af",
+      "truncated": false,
+      "paths": [
+        ".github",
+        ".github/FUNDING.yml",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/功能建议-feature-request.md",
+        ".github/ISSUE_TEMPLATE/问题报告-bug-report.md",
+        "LICENSE",
+        "README.md",
+        "README_en.md",
+        "隐私政策.txt"
+      ]
+    },
+    "error": ""
+  }
+}

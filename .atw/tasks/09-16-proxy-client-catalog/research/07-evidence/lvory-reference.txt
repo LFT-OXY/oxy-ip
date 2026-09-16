@@ -1,0 +1,57 @@
+Title: lvory：Windows 科学上网梯子与机场代理客户端
+
+URL Source: https://huarun.win/apps/lvory
+
+Markdown Content:
+[浏览 Windows 应用](https://huarun.win/platform/windows)
+[所有应用](https://huarun.win/)
+
+1.   [首页](https://huarun.win/)
+2.   [Windows](https://huarun.win/platform/windows)
+3.   lvory
+
+![Image 1: lvory 应用图标](https://huarun.win/app-icons/lvory.webp)
+
+曾面向 Windows 的 sing-box 图形客户端；原 GitHub 仓库当前不可访问，现有维护状态无法核验。
+
+[查看项目记录](https://github.com/sxueck/lvory)
+
+设备：未识别 官方项目页
+
+适用平台[Windows](https://huarun.win/platform/windows)
+代码状态 未公开
+
+完整功能费用 费用待核实
+
+代理内核 自研（暂定）本分类暂按「自研」展示，具体内核实现尚待逐项核实；源码未公开不等于已确认自研。
+
+版本号 暂无可靠记录
+
+最后更新时间 暂无可靠记录
+
+数据来源 暂无可访问的官方来源
+
+## 官方变更日志
+
+暂无可核实的版本与变更日志。
+
+应用简介
+
+## 关于 lvory
+
+曾面向 Windows 的 sing-box 图形客户端；原 GitHub 仓库当前不可访问，现有维护状态无法核验。
+
+适用于 Windows。安装方式、版本要求与最新维护状态请以项目官网或应用商店页面为准。
+
+## 发现应用信息不准确？
+
+提交建议内容和公开证据链接。无需填写联系方式，资料会在人工核验后更新。
+
+[提交信息纠错](https://huarun.win/corrections/lvory)
+继续浏览
+
+## 相似平台的其他客户端
+
+[![Image 2](https://huarun.win/app-icons/flclash-20260916-v1.webp) **FlClash**Android · Windows · macOS · Linux](https://huarun.win/apps/flclash)[![Image 3](https://huarun.win/app-icons/sing-box.webp) **sing-box**Android · iOS · Windows · macOS · Linux · OpenWrt](https://huarun.win/apps/sing-box)[![Image 4](https://huarun.win/app-icons/clash-verge-rev.webp) **Clash Verge Rev**Windows · macOS · Linux](https://huarun.win/apps/clash-verge-rev)[![Image 5](https://huarun.win/app-icons/stash.webp) **Stash**iOS · macOS · Android · Windows](https://huarun.win/apps/stash)[![Image 6](https://huarun.win/app-icons/bettbox-20260916-v1.webp) **Bettbox**Android · Windows · macOS · Linux](https://huarun.win/apps/bettbox)[![Image 7](https://huarun.win/app-icons/karing-20260916-v1.webp) **Karing**Android · iOS · Windows · macOS · Linux](https://huarun.win/apps/karing)
+
+资料根据项目说明、应用官网及商店页面整理，应用信息以官方页面为准。 本站使用无 Cookie 的匿名统计，详情见[隐私说明](https://huarun.win/privacy)。

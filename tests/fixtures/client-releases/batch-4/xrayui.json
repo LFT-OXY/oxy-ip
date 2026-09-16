@@ -1,0 +1,59 @@
+{
+  "id": 360046641,
+  "tag_name": "1.18",
+  "name": "1.18",
+  "html_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/tag/1.18",
+  "published_at": "2026-07-26T15:06:07Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 490447018,
+      "name": "XrayUI-win-arm64-wasdk.zip",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64-wasdk.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447013,
+      "name": "XrayUI-win-arm64-wasdk.zip.sha256",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64-wasdk.zip.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447020,
+      "name": "XrayUI-win-arm64.zip",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447014,
+      "name": "XrayUI-win-arm64.zip.sha256",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64.zip.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447019,
+      "name": "XrayUI-win-x64-wasdk.zip",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64-wasdk.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447017,
+      "name": "XrayUI-win-x64-wasdk.zip.sha256",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64-wasdk.zip.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447015,
+      "name": "XrayUI-win-x64.zip",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 490447016,
+      "name": "XrayUI-win-x64.zip.sha256",
+      "browser_download_url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64.zip.sha256",
+      "state": "uploaded"
+    }
+  ]
+}

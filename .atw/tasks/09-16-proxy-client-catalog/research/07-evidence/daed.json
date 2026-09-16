@@ -1,0 +1,1440 @@
+{
+  "baseline": {
+    "order": 95,
+    "id": "daed",
+    "name": "daed",
+    "reference_url": "https://huarun.win/apps/daed",
+    "observed_official_entry": "https://github.com/daeuniverse/daed",
+    "ticket": "07"
+  },
+  "repo": "daeuniverse/daed",
+  "metadata": {
+    "url": "https://api.github.com/repos/daeuniverse/daed",
+    "status": 0,
+    "data": {
+      "full_name": "daeuniverse/daed",
+      "html_url": "https://github.com/daeuniverse/daed",
+      "description": "daed, A modern web dashboard for dae.",
+      "homepage": "https://daeuniverse.github.io/daed",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/daeuniverse/daed/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/daeuniverse/daed/blob/main/README.md",
+      "sha": "5a60ecf937f5e4ed92d6011bca7026f6aa2e8cd6",
+      "text": "<div align=\"center\">\n  <img src=\"apps/web/public/logo-rounded.png\" alt=\"daed logo\" width=\"120\" />\n  <h1>daed</h1>\n  <p><strong>A modern web dashboard for dae</strong></p>\n\n  <p>\n    <a href=\"https://github.com/daeuniverse/daed/actions/workflows/release-please.yml\"><img src=\"https://img.shields.io/github/actions/workflow/status/daeuniverse/daed/release-please.yml?style=for-the-badge\" alt=\"Build Status\" /></a>\n    <a href=\"https://github.com/daeuniverse/daed/releases\"><img src=\"https://img.shields.io/github/v/release/daeuniverse/daed?style=for-the-badge\" alt=\"Release\" /></a>\n    <a href=\"https://github.com/daeuniverse/daed/blob/main/LICENSE\"><img src=\"https://img.shields.io/github/license/daeuniverse/daed?style=for-the-badge\" alt=\"License\" /></a>\n    <a href=\"https://github.com/daeuniverse/daed/pulls\"><img src=\"https://img.shields.io/github/issues-pr-closed/daeuniverse/daed?style=for-the-badge\" alt=\"Pull Requests\" /></a>\n  </p>\n\n  <p>\n    <a href=\"#features\">Features</a> •\n    <a href=\"#getting-started\">Getting Started</a> •\n    <a href=\"#development\">Development</a> •\n    <a href=\"#contributing\">Contributing</a> •\n    <a href=\"#license\">License</a>\n  </p>\n</div>\n\n---\n\n## 📸 Screenshots\n\n<details open>\n<summary><b>Desktop Screenshots</b></summary>\n\n|                                Setup                                |                                   Orchestrate                                   |\n| :-----------------------------------------------------------------: | :-----------------------------------------------------------------------------: |\n| <img src=\"docs/screenshots/pc/setup.png\" alt=\"setup\" width=\"400\" /> | <img src=\"docs/screenshots/pc/orchestrate.png\" alt=\"orchestrate\" width=\"400\" /> |\n\n</details>\n\n<details>\n<summary><b>Mobile Screenshots</b></summary>\n\n|                                  Setup                                  |                                     Orchestrate                                     |\n| :---------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |\n| <img src=\"docs/screenshots/mobile/setup.png\" alt=\"setup\" width=\"200\" /> | <img src=\"docs/screenshots/mobile/orchestrate.png\" alt=\"orchestrate\" width=\"200\" /> |\n\n</details>\n\n---\n\n## ✨ Features\n\n- 🎨 **Beautiful UI** — Modern, intuitive interface with light/dark mode support\n- ⌨️ **Keyboard First** — Built-in keyboard navigation and shortcuts for power users\n- 📱 **Responsive** — Fully mobile-friendly design\n- 🚀 **Fast** — Built with React and optimized for performance\n\n## 🌐 Online Demo\n\nTry daed directly in your browser without installation:\n\n**🔗 [daeuniverse.github.io/daed](https://daeuniverse.github.io/daed)**\n\n> ⚠️ **Important:** Since GitHub Pages uses HTTPS, your dae-wing backend must also be served over HTTPS. Browsers block mixed content (HTTPS page connecting to HTTP backend). Configure a reverse proxy with TLS or use a self-signed certificate for local development.\n\n## 🚀 Getting Started\n\nPlease refer to the [Quick Start Guide](./docs/getting-started.md) to start using daed right away!\n\n## 🐳 Docker Deployment\n\nPull the prebuilt image:\n\n```bash\ndocker pull ghcr.io/daeuniverse/daed\n```\n\nRun the container:\n\n```bash\ndocker run -d \\\n    --privileged \\\n    --network=host \\\n    --pid=host \\\n    --restart=always \\\n    -v /sys:/sys \\\n    -v /etc/daed:/etc/daed \\\n    --name=daed \\\n    ghcr.io/daeuniverse/daed:latest\n```\n\nOr use Docker Compose:\n\n```yaml\n# docker-compose.yml\nservices:\n  daed:\n    image: ghcr.io/daeuniverse/daed\n    container_name: daed\n    privileged: true\n    network_mode: host\n    pid: host\n    restart: always\n    volumes:\n      - /sys:/sys\n      - /etc/daed:/etc/daed\n```\n\n```bash\ndocker compose up -d\n```\n\nAccess the dashboard at `http://localhost:2023`.\n\n## 💻 Development\n\n### Prerequisites\n\n- [Node.js](https://nodejs.org/) >= 20\n- [pnpm](https://pnpm.io/) >= 9\n\n### Setup\n\n```bash\n# Clone the repository\ngit clone https://github.com/daeuniverse/daed.git\ncd daed\n\n# Install dependencies\npnpm install\n\n# Start development server\npnpm dev\n```\n\n### Available Scripts\n\n| Command        | Description              |\n| -------------- | ------------------------ |\n| `pnpm dev`     | Start development server |\n| `pnpm build`   | Build for production     |\n| `pnpm lint`    | Lint and fix code        |\n| `pnpm codegen` | Generate GraphQL types   |\n\n## 🤝 Contributing\n\nContributions are welcome! Whether it's bug reports, feature requests, or pull requests — all are appreciated.\n\nPlease read our [Contributing Guide](./CONTRIBUTING.md) before submitting a PR.\n\nSpecial thanks to all [contributors](https://github.com/daeuniverse/daed/graphs/contributors)! ❤️\n\n<a href=\"https://github.com/daeuniverse/daed/graphs/contributors\">\n  <img src=\"https://contrib.rocks/image?repo=daeuniverse/daed\" alt=\"Contributors\" />\n</a>\n\n## 📄 License\n\nThis project is dual licensed:\n\n- Frontend (daed): [MIT License](./LICENSE)\n- Backend (dae-wing): [AGPL-3.0 License](https://github.com/daeuniverse/dae-wing/blob/main/LICENSE)\n\n---\n\n<div align=\"center\">\n  Made with ❤️ by <a href=\"https://github.com/daeuniverse\">@daeuniverse</a>\n</div>\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/daeuniverse/daed/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 310125465,
+        "tag_name": "v1.27.0",
+        "name": "v1.27.0",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.27.0",
+        "published_at": "2026-04-17T01:12:17Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "## [1.27.0](https://github.com/daeuniverse/daed/compare/v1.26.0...v1.27.0) (2026-04-17)\n\n\n### Features\n\n* **web:** add group resource pickers and improve drag UX ([#736](https://github.com/daeuniverse/daed/issues/736)) ([cfb0ec5](https://github.com/daeuniverse/daed/commit/cfb0ec528cc8bc3bfeed1dd1a9353bf9fa62de03))",
+        "assets": [
+          {
+            "id": 398209060,
+            "name": "daed-full-src.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-full-src.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209062,
+            "name": "daed-full-src.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-full-src.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209056,
+            "name": "daed-linux-arm64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209061,
+            "name": "daed-linux-arm64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209063,
+            "name": "daed-linux-mips32.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209058,
+            "name": "daed-linux-mips32.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209057,
+            "name": "daed-linux-mips32le.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209059,
+            "name": "daed-linux-mips32le.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209075,
+            "name": "daed-linux-mips64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209074,
+            "name": "daed-linux-mips64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209077,
+            "name": "daed-linux-mips64le.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209076,
+            "name": "daed-linux-mips64le.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209088,
+            "name": "daed-linux-riscv64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209087,
+            "name": "daed-linux-riscv64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209090,
+            "name": "daed-linux-x86_32.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209097,
+            "name": "daed-linux-x86_32.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209114,
+            "name": "daed-linux-x86_64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209133,
+            "name": "daed-linux-x86_64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209096,
+            "name": "daed-linux-x86_64_v2_sse.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209103,
+            "name": "daed-linux-x86_64_v2_sse.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209107,
+            "name": "daed-linux-x86_64_v3_avx2.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209109,
+            "name": "daed-linux-x86_64_v3_avx2.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209143,
+            "name": "installer-daed-linux-arm64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209142,
+            "name": "installer-daed-linux-arm64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209152,
+            "name": "installer-daed-linux-arm64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209154,
+            "name": "installer-daed-linux-arm64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209155,
+            "name": "installer-daed-linux-arm64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209157,
+            "name": "installer-daed-linux-arm64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209159,
+            "name": "installer-daed-linux-riscv64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209163,
+            "name": "installer-daed-linux-riscv64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209164,
+            "name": "installer-daed-linux-riscv64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209168,
+            "name": "installer-daed-linux-riscv64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209173,
+            "name": "installer-daed-linux-riscv64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209175,
+            "name": "installer-daed-linux-riscv64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209178,
+            "name": "installer-daed-linux-x86_32.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209180,
+            "name": "installer-daed-linux-x86_32.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209181,
+            "name": "installer-daed-linux-x86_32.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209184,
+            "name": "installer-daed-linux-x86_32.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209192,
+            "name": "installer-daed-linux-x86_32.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209193,
+            "name": "installer-daed-linux-x86_32.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209249,
+            "name": "installer-daed-linux-x86_64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209258,
+            "name": "installer-daed-linux-x86_64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209261,
+            "name": "installer-daed-linux-x86_64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209263,
+            "name": "installer-daed-linux-x86_64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209264,
+            "name": "installer-daed-linux-x86_64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209267,
+            "name": "installer-daed-linux-x86_64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209199,
+            "name": "installer-daed-linux-x86_64_v2_sse.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209207,
+            "name": "installer-daed-linux-x86_64_v2_sse.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209213,
+            "name": "installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209219,
+            "name": "installer-daed-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209220,
+            "name": "installer-daed-linux-x86_64_v2_sse.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209224,
+            "name": "installer-daed-linux-x86_64_v2_sse.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209235,
+            "name": "installer-daed-linux-x86_64_v3_avx2.deb",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209237,
+            "name": "installer-daed-linux-x86_64_v3_avx2.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209240,
+            "name": "installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209243,
+            "name": "installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209244,
+            "name": "installer-daed-linux-x86_64_v3_avx2.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209247,
+            "name": "installer-daed-linux-x86_64_v3_avx2.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209271,
+            "name": "web.zip",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/web.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 398209273,
+            "name": "web.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/web.zip.dgst",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 310125465,
+        "tag_name": "v1.27.0",
+        "name": "v1.27.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-17T01:12:17Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.27.0"
+      },
+      {
+        "id": 310125470,
+        "tag_name": "dae-lsp-v0.1.1",
+        "name": "dae-lsp: v0.1.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-17T01:12:19Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-lsp-v0.1.1"
+      },
+      {
+        "id": 310125471,
+        "tag_name": "dae-lang-core-v0.2.0",
+        "name": "dae-lang-core: v0.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-17T01:12:19Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-lang-core-v0.2.0"
+      },
+      {
+        "id": 310125467,
+        "tag_name": "dae-editor-v1.20.1",
+        "name": "dae-editor: v1.20.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-17T01:12:18Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.20.1"
+      },
+      {
+        "id": 303539496,
+        "tag_name": "v1.26.0",
+        "name": "v1.26.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-31T06:30:12Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.26.0"
+      },
+      {
+        "id": 303481772,
+        "tag_name": "v1.25.0",
+        "name": "v1.25.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-31T02:00:22Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.25.0"
+      },
+      {
+        "id": 303481786,
+        "tag_name": "dae-node-parser-v1.21.0",
+        "name": "dae-node-parser: v1.21.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-31T02:00:24Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.21.0"
+      },
+      {
+        "id": 303481782,
+        "tag_name": "dae-editor-v1.20.0",
+        "name": "dae-editor: v1.20.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-31T02:00:23Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.20.0"
+      },
+      {
+        "id": 283972960,
+        "tag_name": "v1.24.0",
+        "name": "v1.24.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-07T04:36:02Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.24.0"
+      },
+      {
+        "id": 283970707,
+        "tag_name": "v1.23.1",
+        "name": "v1.23.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-07T04:11:15Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.23.1"
+      },
+      {
+        "id": 283972961,
+        "tag_name": "dae-node-parser-v1.20.0",
+        "name": "dae-node-parser: v1.20.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-07T04:36:02Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.20.0"
+      },
+      {
+        "id": 282556589,
+        "tag_name": "v1.23.0",
+        "name": "v1.23.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-03T13:13:38Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.23.0"
+      },
+      {
+        "id": 280035225,
+        "tag_name": "v1.22.0",
+        "name": "v1.22.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-01-26T19:01:36Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.22.0"
+      },
+      {
+        "id": 268060331,
+        "tag_name": "v1.21.1",
+        "name": "v1.21.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-07T03:41:19Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.21.1"
+      },
+      {
+        "id": 268059922,
+        "tag_name": "v1.21.0",
+        "name": "v1.21.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-07T03:34:15Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.21.0"
+      },
+      {
+        "id": 268059585,
+        "tag_name": "dae-node-parser-v1.19.0",
+        "name": "dae-node-parser: v1.19.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-07T03:30:25Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.19.0"
+      },
+      {
+        "id": 268059461,
+        "tag_name": "dae-lsp-v0.1.0",
+        "name": "dae-lsp: v0.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-07T03:29:06Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-lsp-v0.1.0"
+      },
+      {
+        "id": 268059733,
+        "tag_name": "dae-editor-v1.19.0",
+        "name": "dae-editor: v1.19.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-07T03:32:14Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.19.0"
+      },
+      {
+        "id": 267926409,
+        "tag_name": "v1.20.0",
+        "name": "v1.20.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-06T03:01:07Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.20.0"
+      },
+      {
+        "id": 267926213,
+        "tag_name": "dae-node-parser-v1.18.0",
+        "name": "dae-node-parser: v1.18.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-06T02:58:12Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.18.0"
+      },
+      {
+        "id": 267925851,
+        "tag_name": "dae-editor-v1.18.0",
+        "name": "dae-editor: v1.18.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-06T02:52:46Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.18.0"
+      },
+      {
+        "id": 267818050,
+        "tag_name": "v1.19.0",
+        "name": "v1.19.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-05T16:40:06Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.19.0"
+      },
+      {
+        "id": 267337446,
+        "tag_name": "v1.18.0",
+        "name": "v1.18.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-04T07:50:03Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.18.0"
+      },
+      {
+        "id": 267337651,
+        "tag_name": "dae-node-parser-v1.17.0",
+        "name": "dae-node-parser: v1.17.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-04T07:51:10Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.17.0"
+      },
+      {
+        "id": 267316854,
+        "tag_name": "dae-editor-v1.17.0",
+        "name": "dae-editor: v1.17.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-04T05:59:10Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.17.0"
+      },
+      {
+        "id": 267143114,
+        "tag_name": "v1.17.0",
+        "name": "v1.17.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T16:03:32Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.17.0"
+      },
+      {
+        "id": 267094586,
+        "tag_name": "v1.16.0",
+        "name": "v1.16.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T13:52:43Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.16.0"
+      },
+      {
+        "id": 267082713,
+        "tag_name": "v1.15.1",
+        "name": "v1.15.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T13:18:56Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.15.1"
+      },
+      {
+        "id": 267044751,
+        "tag_name": "v1.15.0",
+        "name": "v1.15.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T11:06:45Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.15.0"
+      },
+      {
+        "id": 267041076,
+        "tag_name": "v1.14.0",
+        "name": "v1.14.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:52:25Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.14.0"
+      },
+      {
+        "id": 267036249,
+        "tag_name": "v1.13.1",
+        "name": "v1.13.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:33:51Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.13.1"
+      },
+      {
+        "id": 266962182,
+        "tag_name": "v1.13.0",
+        "name": "v1.13.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T05:34:50Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.13.0"
+      },
+      {
+        "id": 266960713,
+        "tag_name": "v1.12.0",
+        "name": "v1.12.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T05:23:33Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.12.0"
+      },
+      {
+        "id": 266934907,
+        "tag_name": "v1.11.0",
+        "name": "v1.11.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T02:11:06Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.11.0"
+      },
+      {
+        "id": 267094214,
+        "tag_name": "dae-node-parser-v1.16.0",
+        "name": "dae-node-parser: v1.16.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T13:51:38Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.16.0"
+      },
+      {
+        "id": 267049895,
+        "tag_name": "dae-node-parser-v1.15.0",
+        "name": "dae-node-parser v1.15.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T11:25:19Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.15.0"
+      },
+      {
+        "id": 267041125,
+        "tag_name": "dae-node-parser-v1.14.0",
+        "name": "dae-node-parser: v1.14.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:52:37Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.14.0"
+      },
+      {
+        "id": 267037375,
+        "tag_name": "dae-node-parser-v1.13.1",
+        "name": "dae-node-parser: v1.13.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:38:05Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.13.1"
+      },
+      {
+        "id": 266960716,
+        "tag_name": "dae-node-parser-v1.12.0",
+        "name": "dae-node-parser: v1.12.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T05:23:35Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-node-parser-v1.12.0"
+      },
+      {
+        "id": 267142597,
+        "tag_name": "dae-editor-v1.16.0",
+        "name": "dae-editor: v1.16.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T16:02:03Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.16.0"
+      },
+      {
+        "id": 267049868,
+        "tag_name": "dae-editor-v1.15.0",
+        "name": "dae-editor v1.15.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T11:25:10Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.15.0"
+      },
+      {
+        "id": 267041117,
+        "tag_name": "dae-editor-v1.14.0",
+        "name": "dae-editor: v1.14.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:52:35Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.14.0"
+      },
+      {
+        "id": 267037346,
+        "tag_name": "dae-editor-v1.13.1",
+        "name": "dae-editor: v1.13.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T10:37:57Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.13.1"
+      },
+      {
+        "id": 266960715,
+        "tag_name": "dae-editor-v1.12.0",
+        "name": "dae-editor: v1.12.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-03T05:23:34Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/dae-editor-v1.12.0"
+      },
+      {
+        "id": 266810021,
+        "tag_name": "v1.10.0",
+        "name": "v1.10.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-02T16:54:52Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.10.0"
+      },
+      {
+        "id": 266798685,
+        "tag_name": "v1.9.0",
+        "name": "v1.9.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-02T16:22:51Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.9.0"
+      },
+      {
+        "id": 266288053,
+        "tag_name": "v1.8.0",
+        "name": "v1.8.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-01T06:44:43Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.8.0"
+      },
+      {
+        "id": 266279489,
+        "tag_name": "v1.7.0",
+        "name": "v1.7.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-01T06:02:05Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.7.0"
+      },
+      {
+        "id": 266274265,
+        "tag_name": "v1.6.0",
+        "name": "v1.6.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-01T05:11:46Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.6.0"
+      },
+      {
+        "id": 266186529,
+        "tag_name": "v1.5.1",
+        "name": "v1.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T06:45:27Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.5.1"
+      },
+      {
+        "id": 266186150,
+        "tag_name": "v1.5.0",
+        "name": "v1.5.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T06:37:15Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.5.0"
+      },
+      {
+        "id": 266185520,
+        "tag_name": "v1.4.0",
+        "name": "v1.4.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T06:21:58Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.4.0"
+      },
+      {
+        "id": 266185058,
+        "tag_name": "v1.3.0",
+        "name": "v1.3.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T06:10:46Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.3.0"
+      },
+      {
+        "id": 266183757,
+        "tag_name": "v1.2.0",
+        "name": "v1.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T05:37:17Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.2.0"
+      },
+      {
+        "id": 266183302,
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T05:24:58Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.1.0"
+      },
+      {
+        "id": 266181258,
+        "tag_name": "v1.0.0",
+        "name": "v1.0.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T04:29:45Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v1.0.0"
+      },
+      {
+        "id": 266177349,
+        "tag_name": "v0.19.0",
+        "name": "v0.19.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-30T03:35:21Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.19.0"
+      },
+      {
+        "id": 266151216,
+        "tag_name": "v0.18.0",
+        "name": "v0.18.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T17:50:12Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.18.0"
+      },
+      {
+        "id": 266150621,
+        "tag_name": "v0.17.0",
+        "name": "v0.17.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T17:38:39Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.17.0"
+      },
+      {
+        "id": 266149948,
+        "tag_name": "v0.16.0",
+        "name": "v0.16.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T17:25:06Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.16.0"
+      },
+      {
+        "id": 266146563,
+        "tag_name": "v0.15.1",
+        "name": "v0.15.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T16:18:17Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.15.1"
+      },
+      {
+        "id": 266145745,
+        "tag_name": "v0.15.0",
+        "name": "v0.15.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T16:03:11Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.15.0"
+      },
+      {
+        "id": 266141451,
+        "tag_name": "v0.14.0",
+        "name": "v0.14.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T14:43:39Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.14.0"
+      },
+      {
+        "id": 266136409,
+        "tag_name": "v0.13.0",
+        "name": "v0.13.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T13:07:21Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.13.0"
+      },
+      {
+        "id": 266131353,
+        "tag_name": "v0.12.0",
+        "name": "v0.12.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T11:27:43Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.12.0"
+      },
+      {
+        "id": 266121610,
+        "tag_name": "v0.11.0",
+        "name": "v0.11.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T08:26:20Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.11.0"
+      },
+      {
+        "id": 266121366,
+        "tag_name": "v0.10.0",
+        "name": "v0.10.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T08:21:22Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.10.0"
+      },
+      {
+        "id": 266117087,
+        "tag_name": "v0.9.3",
+        "name": "v0.9.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T06:36:59Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.9.3"
+      },
+      {
+        "id": 266116165,
+        "tag_name": "v0.9.2",
+        "name": "v0.9.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T06:15:25Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.9.2"
+      },
+      {
+        "id": 266115127,
+        "tag_name": "v0.9.1",
+        "name": "v0.9.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T05:54:37Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.9.1"
+      },
+      {
+        "id": 266114957,
+        "tag_name": "v0.9.0",
+        "name": "v0.9.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T05:49:12Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.9.0"
+      },
+      {
+        "id": 266114402,
+        "tag_name": "v0.8.1",
+        "name": "v0.8.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T05:34:11Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.8.1"
+      },
+      {
+        "id": 266113987,
+        "tag_name": "v0.8.0",
+        "name": "v0.8.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-29T05:22:46Z",
+        "html_url": "https://github.com/daeuniverse/daed/releases/tag/v0.8.0"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/daeuniverse/daed/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "671e65d2fdcd62fe6a3ec18ecda209c5addea898",
+      "truncated": false,
+      "paths": [
+        ".commitlintrc.yml",
+        ".dockerignore",
+        ".editorconfig",
+        ".github",
+        ".github/dependabot.yml",
+        ".github/workflows",
+        ".github/workflows/publish-packages.yml",
+        ".github/workflows/release-please.yml",
+        ".gitignore",
+        ".gitmodules",
+        ".gitmodules.d.mk",
+        ".husky",
+        ".husky/commit-msg",
+        ".husky/pre-commit",
+        ".lintstagedrc.yml",
+        ".prettierignore",
+        ".prettierrc",
+        ".release-please-manifest.json",
+        ".vscode",
+        ".vscode/extensions.json",
+        ".vscode/launch.json",
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "CODEOWNERS",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "Makefile",
+        "README.md",
+        "apps",
+        "apps/web",
+        "apps/web/CHANGELOG.md",
+        "apps/web/components.json",
+        "apps/web/index.html",
+        "apps/web/package.json",
+        "apps/web/public",
+        "apps/web/public/logo-rounded.png",
+        "apps/web/public/logo.webp",
+        "apps/web/src",
+        "apps/web/src/App.tsx",
+        "apps/web/src/Router.tsx",
+        "apps/web/src/apis",
+        "apps/web/src/apis/index.ts",
+        "apps/web/src/apis/mutation.ts",
+        "apps/web/src/apis/query.ts",
+        "apps/web/src/components",
+        "apps/web/src/components/CommandPalette.tsx",
+        "apps/web/src/components/ConfigDetailView.tsx",
+        "apps/web/src/components/ConfigFormModal.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal",
+        "apps/web/src/components/ConfigureNodeFormModal/AnyTLSForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/HTTPForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/Hysteria2Form.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/JuicityForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/SSForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/SSRForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/Socks5Form.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/TrojanForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/TuicForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/V2rayForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/index.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/GenericNodeForm.tsx",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/complex.ts",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/index.ts",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/registry.ts",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/simple.ts",
+        "apps/web/src/components/ConfigureNodeFormModal/protocols/types.ts",
+        "apps/web/src/components/ConfigureNodeFormModal/types.ts",
+        "apps/web/src/components/DNSFormModal",
+        "apps/web/src/components/DNSFormModal/DNSForm.tsx",
+        "apps/web/src/components/DNSFormModal/RoutingList.tsx",
+        "apps/web/src/components/DNSFormModal/UpstreamList.tsx",
+        "apps/web/src/components/DNSFormModal/index.tsx",
+        "apps/web/src/components/DNSFormModal/parser.ts",
+        "apps/web/src/components/DNSFormModal/types.ts",
+        "apps/web/src/components/DaeEditor.tsx",
+        "apps/web/src/components/DraggableResourceBadge.tsx",
+        "apps/web/src/components/DraggableResourceCard.tsx",
+        "apps/web/src/components/DroppableGroupCard.tsx",
+        "apps/web/src/components/EditNodeFormModal.tsx",
+        "apps/web/src/components/EditSubscriptionFormModal.tsx",
+        "apps/web/src/components/ExpandedTableRow.tsx",
+        "apps/web/src/components/FormActions.tsx",
+        "apps/web/src/components/GroupFormModal.tsx",
+        "apps/web/src/components/GroupResourcePickerModal.tsx",
+        "apps/web/src/components/Header.tsx",
+        "apps/web/src/components/ImportResourceFormModal.tsx",
+        "apps/web/src/components/KeyboardShortcutsModal.tsx",
+        "apps/web/src/components/PlainTextFormModal.tsx",
+        "apps/web/src/components/ProfileSwitcher.tsx",
+        "apps/web/src/components/QRCodeModal.tsx",
+        "apps/web/src/components/RenameFormModal.tsx",
+        "apps/web/src/components/RoutingFormModal.tsx",
+        "apps/web/src/components/Section.tsx",
+        "apps/web/src/components/SelectItemWithDescription.tsx",
+        "apps/web/src/components/SimpleCard.tsx",
+        "apps/web/src/components/SortableGroupContent.tsx",
+        "apps/web/src/components/SortableNodeCard.tsx",
+        "apps/web/src/components/SortableResourceBadge.tsx",
+        "apps/web/src/components/SortableSubscriptionCard.tsx",
+        "apps/web/src/components/Table.tsx",
+        "apps/web/src/components/ThemePicker.tsx",
+        "apps/web/src/components/UpdateSubscriptionAction.tsx",
+        "apps/web/src/components/index.ts",
+        "apps/web/src/components/ui",
+        "apps/web/src/components/ui/accordion.tsx",
+        "apps/web/src/components/ui/alert-dialog.tsx",
+        "apps/web/src/components/ui/alert.tsx",
+        "apps/web/src/components/ui/aspect-ratio.tsx",
+        "apps/web/src/components/ui/avatar.tsx",
+        "apps/web/src/components/ui/badge.tsx",
+        "apps/web/src/components/ui/breadcrumb.tsx",
+        "apps/web/src/components/ui/button-group.tsx",
+        "apps/web/src/components/ui/button.tsx",
+        "apps/web/src/components/ui/calendar.tsx",
+        "apps/web/src/components/ui/card.tsx",
+        "apps/web/src/components/ui/carousel.tsx",
+        "apps/web/src/components/ui/chart.tsx",
+        "apps/web/src/components/ui/checkbox.tsx",
+        "apps/web/src/components/ui/code.tsx",
+        "apps/web/src/components/ui/collapsible.tsx",
+        "apps/web/src/components/ui/command.tsx",
+        "apps/web/src/components/ui/context-menu.tsx",
+        "apps/web/src/components/ui/dialog.tsx",
+        "apps/web/src/components/ui/drawer.tsx",
+        "apps/web/src/components/ui/dropdown-menu.tsx",
+        "apps/web/src/components/ui/empty.tsx",
+        "apps/web/src/components/ui/field.tsx",
+        "apps/web/src/components/ui/form.tsx",
+        "apps/web/src/components/ui/hover-card.tsx",
+        "apps/web/src/components/ui/index.ts",
+        "apps/web/src/components/ui/input-group.tsx",
+        "apps/web/src/components/ui/input-list.tsx",
+        "apps/web/src/components/ui/input-otp.tsx",
+        "apps/web/src/components/ui/input.tsx",
+        "apps/web/src/components/ui/item.tsx",
+        "apps/web/src/components/ui/kbd.tsx",
+        "apps/web/src/components/ui/label.tsx",
+        "apps/web/src/components/ui/menubar.tsx",
+        "apps/web/src/components/ui/multi-select.tsx",
+        "apps/web/src/components/ui/navigation-menu.tsx",
+        "apps/web/src/components/ui/number-input.tsx",
+        "apps/web/src/components/ui/pagination.tsx",
+        "apps/web/src/components/ui/popover.tsx",
+        "apps/web/src/components/ui/progress.tsx",
+        "apps/web/src/components/ui/radio-group.tsx",
+        "apps/web/src/components/ui/resizable.tsx",
+        "apps/web/src/components/ui/scroll-area.tsx",
+        "apps/web/src/components/ui/scrollable-dialog.tsx",
+        "apps/web/src/components/ui/select.tsx",
+        "apps/web/src/components/ui/separator.tsx",
+        "apps/web/src/components/ui/sheet.tsx",
+        "apps/web/src/components/ui/sidebar.tsx",
+        "apps/web/src/components/ui/skeleton.tsx",
+        "apps/web/src/components/ui/slider.tsx",
+        "apps/web/src/components/ui/sonner.tsx",
+        "apps/web/src/components/ui/spinner.tsx",
+        "apps/web/src/components/ui/switch.tsx",
+        "apps/web/src/components/ui/table.tsx",
+        "apps/web/src/components/ui/tabs.tsx",
+        "apps/web/src/components/ui/textarea.tsx",
+        "apps/web/src/components/ui/toggle-group.tsx",
+        "apps/web/src/components/ui/toggle.tsx",
+        "apps/web/src/components/ui/tooltip.tsx",
+        "apps/web/src/constants",
+        "apps/web/src/constants/default.test.ts",
+        "apps/web/src/constants/default.ts",
+        "apps/web/src/constants/editor.ts",
+        "apps/web/src/constants/index.ts",
+        "apps/web/src/constants/misc.ts",
+        "apps/web/src/constants/schema.ts",
+        "apps/web/src/constants/themes.ts",
+        "apps/web/src/contexts",
+        "apps/web/src/contexts/index.tsx",
+        "apps/web/src/hooks",
+        "apps/web/src/hooks/index.ts",
+        "apps/web/src/hooks/use-mobile.ts",
+        "apps/web/src/hooks/useKeyboardShortcuts.ts",
+        "apps/web/src/hooks/useNodeForm.ts",
+        "apps/web/src/hooks/useSetValue.ts",
+        "apps/web/src/i18n",
+        "apps/web/src/i18n/index.ts",
+        "apps/web/src/i18n/locales",
+        "apps/web/src/i18n/locales/en.json",
+        "apps/web/src/i18n/locales/zh-Hans.json",
+        "apps/web/src/index.css",
+        "apps/web/src/initialize.ts",
+        "apps/web/src/lib",
+        "apps/web/src/lib/utils.ts",
+        "apps/web/src/main.tsx",
+        "apps/web/src/mocks",
+        "apps/web/src/mocks/client.ts",
+        "apps/web/src/mocks/data.ts",
+        "apps/web/src/mocks/index.ts",
+        "apps/web/src/monaco.ts",
+        "apps/web/src/pages",
+        "apps/web/src/pages/MainLayout.tsx",
+        "apps/web/src/pages/Orchestrate",
+        "apps/web/src/pages/Orchestrate/Config.tsx",
+        "apps/web/src/pages/Orchestrate/DNS.tsx",
+        "apps/web/src/pages/Orchestrate/Group.tsx",
+        "apps/web/src/pages/Orchestrate/Node.tsx",
+        "apps/web/src/pages/Orchestrate/Routing.tsx",
+        "apps/web/src/pages/Orchestrate/Subscription.tsx",
+        "apps/web/src/pages/Orchestrate/TrafficOverview.tsx",
+        "apps/web/src/pages/Orchestrate/index.tsx",
+        "apps/web/src/pages/Setup.tsx",
+        "apps/web/src/pages/index.ts",
+        "apps/web/src/schemas",
+        "apps/web/src/schemas/gql",
+        "apps/web/src/schemas/gql/fragment-masking.ts",
+        "apps/web/src/schemas/gql/gql.ts",
+        "apps/web/src/schemas/gql/graphql.ts",
+        "apps/web/src/schemas/gql/index.ts",
+        "apps/web/src/store",
+        "apps/web/src/store/index.ts",
+        "apps/web/src/suppress-monaco-errors.ts",
+        "apps/web/src/types",
+        "apps/web/src/types/index.d.ts",
+        "apps/web/src/utils",
+        "apps/web/src/utils/dnd.ts",
+        "apps/web/src/utils/helper.ts",
+        "apps/web/src/utils/index.test.ts",
+        "apps/web/src/utils/index.ts",
+        "apps/web/src/utils/latency.ts",
+        "apps/web/src/vite-env.d.ts",
+        "apps/web/tsconfig.json",
+        "apps/web/tsconfig.node.json",
+        "apps/web/vite.config.ts",
+        "codegen.ts",
+        "docker-compose.yml",
+        "docs",
+        "docs/build.md",
+        "docs/commit-msg-guide.md",
+        "docs/getting-started.md",
+        "docs/screenshots",
+        "docs/screenshots/mobile",
+        "docs/screenshots/mobile/.gitkeep",
+        "docs/screenshots/mobile/orchestrate.png",
+        "docs/screenshots/mobile/setup.png",
+        "docs/screenshots/pc",
+        "docs/screenshots/pc/.gitkeep",
+        "docs/screenshots/pc/orchestrate.png",
+        "docs/screenshots/pc/setup.png",
+        "eslint.config.js",
+        "hack",
+        "hack/checkout.sh",
+        "install",
+        "install/daed.desktop",
+        "install/daed.service",
+        "install/friendly-filenames.json",
+        "install/icons",
+        "install/icons/1024x1024.png",
+        "install/icons/128x128.png",
+        "install/icons/16x16.png",
+        "install/icons/24x24.png",
+        "install/icons/256x256.png",
+        "install/icons/32x32.png",
+        "install/icons/48x48.png",
+        "install/icons/512x512.png",
+        "install/icons/64x64.png",
+        "install/package_after_install.sh",
+        "install/package_after_remove.sh",
+        "package.json",
+        "packages",
+        "packages/dae-editor",
+        "packages/dae-editor/.npmrc",
+        "packages/dae-editor/CHANGELOG.md",
+        "packages/dae-editor/README.md",
+        "packages/dae-editor/package.json",
+        "packages/dae-editor/src",
+        "packages/dae-editor/src/constants.ts",
+        "packages/dae-editor/src/formatter.ts",
+        "packages/dae-editor/src/index.ts",
+        "packages/dae-editor/src/lsp-client.ts",
+        "packages/dae-editor/src/monaco.ts",
+        "packages/dae-editor/tsconfig.json",
+        "packages/dae-editor/tsdown.config.ts",
+        "packages/dae-lang-core",
+        "packages/dae-lang-core/CHANGELOG.md",
+        "packages/dae-lang-core/package.json",
+        "packages/dae-lang-core/src",
+        "packages/dae-lang-core/src/formatter.ts",
+        "packages/dae-lang-core/src/index.ts",
+        "packages/dae-lang-core/tests",
+        "packages/dae-lang-core/tests/formatter.test.ts",
+        "packages/dae-lang-core/tsconfig.json",
+        "packages/dae-lang-core/tsdown.config.ts",
+        "packages/dae-lsp",
+        "packages/dae-lsp/.gitignore",
+        "packages/dae-lsp/CHANGELOG.md",
+        "packages/dae-lsp/LICENSE",
+        "packages/dae-lsp/README.md",
+        "packages/dae-lsp/package.json",
+        "packages/dae-lsp/src",
+        "packages/dae-lsp/src/browser-server.ts",
+        "packages/dae-lsp/src/core",
+        "packages/dae-lsp/src/core/completions.ts",
+        "packages/dae-lsp/src/core/docs.ts",
+        "packages/dae-lsp/src/core/formatter.ts",
+        "packages/dae-lsp/src/core/mod.ts",
+        "packages/dae-lsp/src/core/parser.ts",
+        "packages/dae-lsp/src/mod.ts",
+        "packages/dae-lsp/src/server-core.ts",
+        "packages/dae-lsp/src/server-node.ts",
+        "packages/dae-lsp/tests",
+        "packages/dae-lsp/tests/parser.test.ts",
+        "packages/dae-lsp/tsconfig.json",
+        "packages/dae-lsp/tsdown.config.ts",
+        "packages/dae-node-parser",
+        "packages/dae-node-parser/.npmrc",
+        "packages/dae-node-parser/CHANGELOG.md",
+        "packages/dae-node-parser/README.md",
+        "packages/dae-node-parser/package.json",
+        "packages/dae-node-parser/src",
+        "packages/dae-node-parser/src/generator.ts",
+        "packages/dae-node-parser/src/index.ts",
+        "packages/dae-node-parser/src/parser.ts",
+        "packages/dae-node-parser/src/types.ts",
+        "packages/dae-node-parser/tests",
+        "packages/dae-node-parser/tests/parser.test.ts",
+        "packages/dae-node-parser/tsconfig.json",
+        "packages/dae-node-parser/tsdown.config.ts",
+        "packages/dae-vscode",
+        "packages/dae-vscode/.gitignore",
+        "packages/dae-vscode/.vscodeignore",
+        "packages/dae-vscode/LICENSE",
+        "packages/dae-vscode/README.md",
+        "packages/dae-vscode/images",
+        "packages/dae-vscode/images/icon.png",
+        "packages/dae-vscode/language-configuration.json",
+        "packages/dae-vscode/package.json",
+        "packages/dae-vscode/snippets",
+        "packages/dae-vscode/snippets/dae.json",
+        "packages/dae-vscode/src",
+        "packages/dae-vscode/src/extension.ts",
+        "packages/dae-vscode/syntaxes",
+        "packages/dae-vscode/syntaxes/dae.tmLanguage.json",
+        "packages/dae-vscode/tsconfig.json",
+        "packages/dae-vscode/tsdown.config.ts",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "publish.Dockerfile",
+        "release-please-config.json",
+        "scripts",
+        "scripts/screenshot.ts",
+        "tsconfig.json",
+        "turbo.json",
+        "wing"
+      ]
+    },
+    "error": ""
+  }
+}

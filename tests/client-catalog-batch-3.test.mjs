@@ -68,10 +68,10 @@ test("第06票独立25项完整收录，累计83项身份、顺序和逐平台�
     items.map((app) => app.id),
   );
   assert.deepEqual(
-    apps.map((app) => app.id),
+    apps.slice(0, 83).map((app) => app.id),
     baseline.apps.slice(0, 83).map((app) => app.id),
   );
-  assert.equal(new Set(apps.map((app) => app.id)).size, 83);
+  assert.equal(new Set(apps.slice(0, 83).map((app) => app.id)).size, 83);
   for (const item of items) {
     const app = apps.find((app) => app.id === item.id);
     assert.equal(app.name, item.name);

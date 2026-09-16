@@ -1,0 +1,528 @@
+{
+  "sing-box-windows:.github/workflows/release.yml?ref=v2.3.1": {
+    "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/contents/.github/workflows/release.yml?ref=v2.3.1",
+    "status": 0,
+    "data": {
+      "name": "release.yml",
+      "path": ".github/workflows/release.yml",
+      "sha": "41cf5453f81c4b3a2285f9ce16927e7a29431d5f",
+      "size": 8472,
+      "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/contents/.github/workflows/release.yml?ref=v2.3.1",
+      "html_url": "https://github.com/xinggaoya/sing-box-windows/blob/v2.3.1/.github/workflows/release.yml",
+      "git_url": "https://api.github.com/repos/xinggaoya/sing-box-windows/git/blobs/41cf5453f81c4b3a2285f9ce16927e7a29431d5f",
+      "download_url": "https://raw.githubusercontent.com/xinggaoya/sing-box-windows/v2.3.1/.github/workflows/release.yml",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xinggaoya/sing-box-windows/contents/.github/workflows/release.yml?ref=v2.3.1",
+        "git": "https://api.github.com/repos/xinggaoya/sing-box-windows/git/blobs/41cf5453f81c4b3a2285f9ce16927e7a29431d5f",
+        "html": "https://github.com/xinggaoya/sing-box-windows/blob/v2.3.1/.github/workflows/release.yml"
+      },
+      "text": "name: Release (Pre-release)\n\non:\n  push:\n    tags:\n      - 'v*'\n\nconcurrency:\n  group: release-${{ github.ref }}\n  cancel-in-progress: false\n\njobs:\n  build:\n    name: Build (${{ matrix.name }})\n    runs-on: ${{ matrix.os }}\n    permissions:\n      contents: read\n    strategy:\n      fail-fast: false\n      matrix:\n        include:\n          - os: windows-latest\n            target: x86_64-pc-windows-msvc\n            name: windows\n          # Pin Linux runner to avoid newer glibc baseline (e.g. 2.39 on ubuntu-latest)\n          # which causes \"GLIBC_2.39 not found\" on older distros.\n          - os: ubuntu-22.04\n            target: x86_64-unknown-linux-gnu\n            name: linux\n          # Pin macOS runner to avoid latest image regressions in DMG bundling (bundle_dmg.sh).\n          - os: macos-14\n            target: aarch64-apple-darwin\n            name: macos-arm64\n          - os: macos-15-intel\n            target: x86_64-apple-darwin\n            name: macos-intel\n          - os: windows-latest\n            target: aarch64-pc-windows-msvc\n            name: windows-arm64\n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n\n      - name: Setup pnpm\n        uses: pnpm/action-setup@v4\n        with:\n          version: 10\n\n      - name: Setup node\n        uses: actions/setup-node@v4\n        with:\n          node-version: 20\n          cache: pnpm\n\n      - name: Install Rust\n        uses: dtolnay/rust-toolchain@stable\n\n      - name: Install system dependencies (Linux)\n        if: startsWith(matrix.os, 'ubuntu-')\n        run: |\n          sudo apt-get update\n          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf \\\n            build-essential curl wget file rpm libxdo-dev libssl-dev librsvg2-dev librsvg2-common \\\n            pango1.0-tools libcairo2-dev libgdk-pixbuf2.0-dev libglib2.0-dev libsoup2.4-dev\n\n      - name: Rust cache\n        uses: swatinem/rust-cache@v2\n        with:\n          workspaces: './src-tauri -> target'\n      - name: install rust target\n        if: matrix.target == 'aarch64-pc-windows-msvc'\n        run: rustup target add aarch64-pc-windows-msvc\n\n      - name: Install dependencies\n        run: pnpm install --frozen-lockfile\n\n      - name: Build application\n        shell: bash\n        env:\n          # 透传 token 给 fetch-kernel，避免匿名 API 限流导致 latest 拉取失败。\n          SING_BOX_GITHUB_TOKEN: ${{ github.token }}\n        run: |\n          pnpm run build\n          # 显式走 package script（tauri-wrapper），确保只注入当前 target 的内核资源\n          pnpm run tauri build --target ${{ matrix.target }}\n\n      - name: Add macOS architecture suffixes\n        if: startsWith(matrix.os, 'macos-')\n        shell: bash\n        run: |\n          set -euo pipefail\n          bundle_dir=\"src-tauri/target/${{ matrix.target }}/release/bundle\"\n          while IFS= read -r -d '' file; do\n            dir=\"$(dirname \"$file\")\"\n            base=\"$(basename \"$file\")\"\n            if [[ \"$base\" == *\"${{ matrix.name }}\"* ]]; then\n              continue\n            fi\n            if [[ \"$base\" == *.app.tar.gz ]]; then\n              stem=\"${base%.app.tar.gz}\"\n              mv \"$file\" \"$dir/${stem}-${{ matrix.name }}.app.tar.gz\"\n            elif [[ \"$base\" == *.dmg ]]; then\n              stem=\"${base%.dmg}\"\n              mv \"$file\" \"$dir/${stem}-${{ matrix.name }}.dmg\"\n            fi\n          done < <(find \"$bundle_dir\" -type f \\( -name '*.dmg' -o -name '*.app.tar.gz' \\) -print0)\n\n      - name: Verify Linux glibc compatibility\n        if: matrix.target == 'x86_64-unknown-linux-gnu'\n        shell: bash\n        run: |\n          set -euo pipefail\n          BIN_PATH=\"src-tauri/target/${{ matrix.target }}/release/sing-box-windows\"\n          if [ ! -f \"$BIN_PATH\" ]; then\n            echo \"Binary not found: $BIN_PATH\"\n            exit 1\n          fi\n\n          MAX_GLIBC=\"$(objdump -T \"$BIN_PATH\" | grep -oE 'GLIBC_[0-9]+\\.[0-9]+' | sed 's/GLIBC_//' | sort -V | tail -n1)\"\n          echo \"Detected max GLIBC requirement: ${MAX_GLIBC}\"\n\n          # Keep compatibility for distros with glibc 2.38 (e.g. Deepin/UOS variants).\n          if dpkg --compare-versions \"${MAX_GLIBC}\" gt \"2.38\"; then\n            echo \"Incompatible glibc requirement: ${MAX_GLIBC} (must be <= 2.38)\"\n            exit 1\n          fi\n\n      - name: Create Windows portable zip\n        if: contains(matrix.name, 'windows') # Run for all Windows architectures\n        shell: pwsh\n        run: |\n          $exePath = \"src-tauri/target/${{ matrix.target }}/release/sing-box-windows.exe\"\n          if (-not (Test-Path $exePath)) {\n            Write-Error \"可执行文件未找到: $exePath\"\n            exit 1\n          }\n          $portableDir = \"src-tauri/target/${{ matrix.target }}/release/bundle/portable\"\n          New-Item -ItemType Directory -Path $portableDir -Force | Out-Null\n          $suffix = if (\"${{ matrix.target }}\" -eq \"aarch64-pc-windows-msvc\") { \"-arm64\" } else { \"\" }\n          $zipPath = Join-Path $portableDir \"sing-box-windows${suffix}-portable.zip\"\n          Compress-Archive -Path $exePath -DestinationPath $zipPath -Force\n\n      - name: Upload artifacts\n        uses: actions/upload-artifact@v4\n        with:\n          name: ${{ matrix.name }}-artifacts\n          path: |\n            src-tauri/target/${{ matrix.target }}/release/bundle/**/*\n          retention-days: 1\n\n  release:\n    name: Publish Pre-release\n    needs: build\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n\n      - name: Setup node\n        uses: actions/setup-node@v4\n        with:\n          node-version: 20\n\n      - name: Download Windows artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: windows-artifacts\n          path: windows-artifacts/x64/\n\n      - name: Download Windows ARM64 artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: windows-arm64-artifacts\n          path: windows-artifacts/arm64/\n\n      - name: Download Linux artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: linux-artifacts\n          path: linux-artifacts/\n\n      - name: Download macOS arm64 artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: macos-arm64-artifacts\n          path: macos-arm64-artifacts/\n\n      - name: Download macOS Intel artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: macos-intel-artifacts\n          path: macos-intel-artifacts/\n\n      - name: Extract tag name\n        id: tag\n        shell: bash\n        run: echo \"tag=${GITHUB_REF#refs/tags/}\" >> \"$GITHUB_OUTPUT\"\n\n      - name: Extract Release Notes from CHANGELOG\n        id: extract_notes\n        run: node .github/scripts/extract-release-notes.js \"${{ steps.tag.outputs.tag }}\"\n\n      - name: Summarize artifacts\n        shell: bash\n        run: |\n          echo \"🧾 准备发布预发布版本: ${{ steps.tag.outputs.tag }}\"\n          echo \"✅ 产物列表预览：\"\n          find windows-artifacts -type f 2>/dev/null | sed 's/^/ - /' || true\n          find linux-artifacts -type f 2>/dev/null | sed 's/^/ - /' || true\n          find macos-arm64-artifacts -type f 2>/dev/null | sed 's/^/ - /' || true\n          find macos-intel-artifacts -type f 2>/dev/null | sed 's/^/ - /' || true\n\n      - name: Create / Update Pre-release\n        uses: softprops/action-gh-release@v1\n        if: startsWith(github.ref, 'refs/tags/')\n        with:\n          prerelease: true\n          make_latest: false\n          generate_release_notes: false\n          name: \"[Pre-release] ${{ steps.tag.outputs.tag }}\"\n          tag_name: ${{ steps.tag.outputs.tag }}\n          body: ${{ steps.extract_notes.outputs.release_notes }}\n          files: |\n            windows-artifacts/**/*.msi\n            windows-artifacts/**/*.exe\n            windows-artifacts/**/*.zip\n            linux-artifacts/appimage/sing-box-windows_*.AppImage*\n            linux-artifacts/deb/sing-box-windows_*.deb*\n            linux-artifacts/rpm/*.rpm\n            macos-arm64-artifacts/dmg/sing-box-windows_*.dmg*\n            macos-arm64-artifacts/macos/sing-box-windows*.app.tar.gz*\n            macos-intel-artifacts/dmg/sing-box-windows_*.dmg*\n            macos-intel-artifacts/macos/sing-box-windows*.app.tar.gz*\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n"
+    },
+    "error": ""
+  },
+  "clashn:clashN/clashN/clashN.csproj?ref=2.22": {
+    "url": "https://api.github.com/repos/2dust/clashN/contents/clashN/clashN/clashN.csproj?ref=2.22",
+    "status": 0,
+    "data": {
+      "name": "clashN.csproj",
+      "path": "clashN/clashN/clashN.csproj",
+      "sha": "83744f0d0a9aaddfc0f0226b8b2eec976ce28ee0",
+      "size": 2808,
+      "url": "https://api.github.com/repos/2dust/clashN/contents/clashN/clashN/clashN.csproj?ref=2.22",
+      "html_url": "https://github.com/2dust/clashN/blob/2.22/clashN/clashN/clashN.csproj",
+      "git_url": "https://api.github.com/repos/2dust/clashN/git/blobs/83744f0d0a9aaddfc0f0226b8b2eec976ce28ee0",
+      "download_url": "https://raw.githubusercontent.com/2dust/clashN/2.22/clashN/clashN/clashN.csproj",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/2dust/clashN/contents/clashN/clashN/clashN.csproj?ref=2.22",
+        "git": "https://api.github.com/repos/2dust/clashN/git/blobs/83744f0d0a9aaddfc0f0226b8b2eec976ce28ee0",
+        "html": "https://github.com/2dust/clashN/blob/2.22/clashN/clashN/clashN.csproj"
+      },
+      "text": "﻿<Project Sdk=\"Microsoft.NET.Sdk\">\n\n  <PropertyGroup>\n    <OutputType>WinExe</OutputType>\n    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>\n    <Nullable>enable</Nullable>\n    <UseWPF>true</UseWPF>  \n    <ApplicationManifest>app.manifest</ApplicationManifest>\n    <ImplicitUsings>enable</ImplicitUsings>\n    <ApplicationIcon>ClashN.ico</ApplicationIcon>\n\t<Copyright>Copyright © 2019-2024 (GPLv3)</Copyright>\n\t<FileVersion>2.22</FileVersion>\n\t<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>\n  </PropertyGroup>\n \n\n\t<ItemGroup>\n\t\t<PackageReference Include=\"MaterialDesignThemes\" Version=\"4.9.0\" />\n\t\t<PackageReference Include=\"Hardcodet.NotifyIcon.Wpf\" Version=\"1.1.0\" />\t\t \n\t\t<PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />\n\t\t<PackageReference Include=\"NHotkey\" Version=\"3.0.0\" />\n\t\t<PackageReference Include=\"NHotkey.Wpf\" Version=\"3.0.0\" />\n\t\t<PackageReference Include=\"QRCoder.Xaml\" Version=\"1.5.1\" />\n\t\t<PackageReference Include=\"TaskScheduler\" Version=\"2.10.1\" />\n\t\t<PackageReference Include=\"YamlDotNet\" Version=\"15.1.2\" />\n\t\t<PackageReference Include=\"ZXing.Net.Bindings.Windows.Compatibility\" Version=\"0.16.12\" />\n\t\t<PackageReference Include=\"ReactiveUI.Fody\" Version=\"19.5.41\" />\n\t\t<PackageReference Include=\"ReactiveUI.Validation\" Version=\"3.1.7\" />\n\t\t<PackageReference Include=\"ReactiveUI.WPF\" Version=\"19.6.12\" />\n\t\t<PackageReference Include=\"Splat.NLog\" Version=\"14.8.12\" />\n\t\t<PackageReference Include=\"System.Reactive\" Version=\"6.0.0\" />\n\t</ItemGroup>\n\t\n\t<ItemGroup>\n        <None Remove=\"ClashN.ico\" />  \n        <AdditionalFiles Include=\"app.manifest\" />\n        <EmbeddedResource Include=\"ClashN.ico\">\n          <CopyToOutputDirectory>Never</CopyToOutputDirectory>\n        </EmbeddedResource>\n        <EmbeddedResource Include=\"Sample\\SampleMixin.yaml\" />\n        <EmbeddedResource Include=\"Sample\\SampleTun.yaml\" />\n        <ProjectReference Include=\"..\\..\\..\\v2rayN\\v2rayN\\PacLib\\PacLib.csproj\" />\n        <Resource Include=\"ClashN.ico\">\n          <CopyToOutputDirectory>Always</CopyToOutputDirectory>\n        </Resource> \n        <Compile Update=\"Resx\\ResUI.Designer.cs\">\n          <DesignTime>True</DesignTime>\n          <AutoGen>True</AutoGen>\n          <DependentUpon>ResUI.resx</DependentUpon>\n        </Compile> \n        <EmbeddedResource Update=\"Resx\\ResUI.resx\">\n          <Generator>PublicResXFileCodeGenerator</Generator>\n          <LastGenOutput>ResUI.Designer.cs</LastGenOutput>\n        </EmbeddedResource>\n        <EmbeddedResource Update=\"Resx\\ResUI.zh-Hans.resx\">\n          <Generator>PublicResXFileCodeGenerator</Generator>\n        </EmbeddedResource>\n        <EmbeddedResource Update=\"Resx\\ResUI.fa-IR.resx\">\n          <Generator>PublicResXFileCodeGenerator</Generator>\n        </EmbeddedResource>\n    </ItemGroup>\n</Project>\n"
+    },
+    "error": ""
+  },
+  "sudoku-desktop:go.mod?ref=v0.2.2": {
+    "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/go.mod?ref=v0.2.2",
+    "status": 0,
+    "data": {
+      "name": "go.mod",
+      "path": "go.mod",
+      "sha": "724f6fa0cdd073430af27406e384e94d7fedc343",
+      "size": 2560,
+      "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/go.mod?ref=v0.2.2",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/blob/v0.2.2/go.mod",
+      "git_url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/git/blobs/724f6fa0cdd073430af27406e384e94d7fedc343",
+      "download_url": "https://raw.githubusercontent.com/SUDOKU-ASCII/sudoku-desktop/v0.2.2/go.mod",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/go.mod?ref=v0.2.2",
+        "git": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/git/blobs/724f6fa0cdd073430af27406e384e94d7fedc343",
+        "html": "https://github.com/SUDOKU-ASCII/sudoku-desktop/blob/v0.2.2/go.mod"
+      },
+      "text": "module github.com/SUDOKU-ASCII/sudoku-desktop\n\ngo 1.26.4\n\nrequire (\n\tgithub.com/SUDOKU-ASCII/sudoku v0.5.0\n\tgithub.com/shirou/gopsutil/v4 v4.26.2\n\tgolang.org/x/net v0.51.0\n\tgolang.org/x/sys v0.41.0\n\tgopkg.in/yaml.v3 v3.0.1\n)\n\nrequire (\n\tdario.cat/mergo v1.0.2 // indirect\n\tgithub.com/Microsoft/go-winio v0.6.2 // indirect\n\tgithub.com/ProtonMail/go-crypto v1.3.0 // indirect\n\tgithub.com/adrg/xdg v0.5.3 // indirect\n\tgithub.com/cloudflare/circl v1.6.3 // indirect\n\tgithub.com/cyphar/filepath-securejoin v0.6.1 // indirect\n\tgithub.com/emirpasic/gods v1.18.1 // indirect\n\tgithub.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect\n\tgithub.com/go-git/go-billy/v5 v5.7.0 // indirect\n\tgithub.com/go-git/go-git/v5 v5.16.4 // indirect\n\tgithub.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect\n\tgithub.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect\n\tgithub.com/kevinburke/ssh_config v1.4.0 // indirect\n\tgithub.com/klauspost/cpuid/v2 v2.3.0 // indirect\n\tgithub.com/lmittmann/tint v1.1.2 // indirect\n\tgithub.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect\n\tgithub.com/pjbgf/sha1cd v0.5.0 // indirect\n\tgithub.com/sergi/go-diff v1.4.0 // indirect\n\tgithub.com/skeema/knownhosts v1.3.2 // indirect\n\tgithub.com/tklauser/go-sysconf v0.3.16 // indirect\n\tgithub.com/tklauser/numcpus v0.11.0 // indirect\n\tgithub.com/xanzy/ssh-agent v0.3.3 // indirect\n\tgopkg.in/warnings.v0 v0.1.2 // indirect\n)\n\nrequire (\n\tfilippo.io/edwards25519 v1.2.0 // indirect\n\tgithub.com/bep/debounce v1.2.1 // indirect\n\tgithub.com/coder/websocket v1.8.14 // indirect\n\tgithub.com/ebitengine/purego v0.10.0 // indirect\n\tgithub.com/go-ole/go-ole v1.3.0 // indirect\n\tgithub.com/godbus/dbus/v5 v5.2.2 // indirect\n\tgithub.com/google/uuid v1.6.0 // indirect\n\tgithub.com/jchv/go-winloader v0.0.0-20250406163304-c1995be93bd1 // indirect\n\tgithub.com/leaanthony/go-ansi-parser v1.6.1 // indirect\n\tgithub.com/leaanthony/u v1.1.1 // indirect\n\tgithub.com/mattn/go-colorable v0.1.14 // indirect\n\tgithub.com/mattn/go-isatty v0.0.20 // indirect\n\tgithub.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect\n\tgithub.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55 // indirect\n\tgithub.com/rivo/uniseg v0.4.7 // indirect\n\tgithub.com/samber/lo v1.52.0 // indirect\n\tgithub.com/wailsapp/go-webview2 v1.0.23 // indirect\n\tgithub.com/wailsapp/wails/v3 v3.0.0-alpha.74\n\tgithub.com/yusufpapurcu/wmi v1.2.4 // indirect\n\tgolang.org/x/crypto v0.48.0 // indirect\n\tgolang.org/x/term v0.40.0 // indirect\n\tgolang.org/x/text v0.34.0 // indirect\n)\n"
+    },
+    "error": ""
+  },
+  "sudoku-desktop:build/tray/logo.svg?ref=v0.2.2": {
+    "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/build/tray/logo.svg?ref=v0.2.2",
+    "status": 0,
+    "data": {
+      "name": "logo.svg",
+      "path": "build/tray/logo.svg",
+      "sha": "ada0fd25742aaa2d87f4ed9ecc8d062ecb2e775c",
+      "size": 1664,
+      "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/build/tray/logo.svg?ref=v0.2.2",
+      "html_url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/blob/v0.2.2/build/tray/logo.svg",
+      "git_url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/git/blobs/ada0fd25742aaa2d87f4ed9ecc8d062ecb2e775c",
+      "download_url": "https://raw.githubusercontent.com/SUDOKU-ASCII/sudoku-desktop/v0.2.2/build/tray/logo.svg",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/contents/build/tray/logo.svg?ref=v0.2.2",
+        "git": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/git/blobs/ada0fd25742aaa2d87f4ed9ecc8d062ecb2e775c",
+        "html": "https://github.com/SUDOKU-ASCII/sudoku-desktop/blob/v0.2.2/build/tray/logo.svg"
+      },
+      "text": "<svg width=\"512\" height=\"512\" viewBox=\"0 0 512 512\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <!-- 背景：浅蓝色 (MTF Blue) -->\n    <rect width=\"512\" height=\"512\" rx=\"115\" fill=\"#5BCEFA\"/>\n    \n    <!-- 整体组合：\n         1. translate(38,38) scale(0.85) -> 整体缩小至85%并保持居中\n         2. rotate(10, 256, 256) -> 保持10度倾斜 \n    -->\n    <g transform=\"translate(38, 38) scale(0.85) rotate(10, 256, 256)\">\n        \n        <!-- 围巾飘带 (位于身体后方) -->\n        <!-- 颜色改为粉色，位置稍微下移以匹配围巾高度 -->\n        <path d=\"M290 230C290 230 370 200 400 240\" stroke=\"#F5A9B8\" stroke-width=\"25\" stroke-linecap=\"round\"/>\n\n        <!-- 身体：羽毛球/折纸造型 -->\n        <path d=\"M256 190L370 440L256 410L142 440L256 190Z\" fill=\"#FFFFFF\"/>\n        \n        <!-- 身体折痕细节 -->\n        <path d=\"M256 190L256 410\" stroke=\"#5BCEFA\" stroke-width=\"2\" stroke-opacity=\"0.1\"/>\n        \n        <!-- 围巾：浅粉色 (MTF Pink) -->\n        <!-- 调整：Y轴下移至215 (原195)，宽度减少至100 (原140)，X轴相应居中 -->\n        <rect x=\"206\" y=\"215\" width=\"100\" height=\"40\" rx=\"20\" fill=\"#F5A9B8\"/>\n        \n        <!-- 头部：纯白圆形 -->\n        <circle cx=\"256\" cy=\"150\" r=\"85\" fill=\"#FFFFFF\"/>\n        \n        <!-- 大眼睛：黑色 -->\n        <circle cx=\"218\" cy=\"155\" r=\"16\" fill=\"#000000\"/>\n        <circle cx=\"294\" cy=\"155\" r=\"16\" fill=\"#000000\"/>\n        \n        <!-- 腮红 -->\n        <circle cx=\"205\" cy=\"175\" r=\"10\" fill=\"#F5A9B8\" fill-opacity=\"0.5\"/>\n        <circle cx=\"307\" cy=\"175\" r=\"10\" fill=\"#F5A9B8\" fill-opacity=\"0.5\"/>\n    </g>\n</svg>"
+    },
+    "error": ""
+  },
+  "nekobox-for-harmony:AppScope/app.json5?ref=v1.9.3": {
+    "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/AppScope/app.json5?ref=v1.9.3",
+    "status": 0,
+    "data": {
+      "name": "app.json5",
+      "path": "AppScope/app.json5",
+      "sha": "cafeccfd254580d35577845c46481393d82be7ba",
+      "size": 220,
+      "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/AppScope/app.json5?ref=v1.9.3",
+      "html_url": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/AppScope/app.json5",
+      "git_url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/cafeccfd254580d35577845c46481393d82be7ba",
+      "download_url": "https://raw.githubusercontent.com/xiaoli8571/NekoBox4Harmony/v1.9.3/AppScope/app.json5",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/AppScope/app.json5?ref=v1.9.3",
+        "git": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/cafeccfd254580d35577845c46481393d82be7ba",
+        "html": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/AppScope/app.json5"
+      },
+      "text": "{\n  \"app\": {\n    \"bundleName\": \"com.nekobox.app.jynxen\",\n    \"vendor\": \"nekobox4harmony\",\n    \"versionCode\": 1001929,\n    \"versionName\": \"1.9.3\",\n    \"icon\": \"$media:layered_image\",\n    \"label\": \"$string:app_name\"\n  }\n}\n"
+    },
+    "error": ""
+  },
+  "nekobox-for-harmony:entry/build-profile.json5?ref=v1.9.3": {
+    "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/build-profile.json5?ref=v1.9.3",
+    "status": 0,
+    "data": {
+      "name": "build-profile.json5",
+      "path": "entry/build-profile.json5",
+      "sha": "aa8bcdbb80be0bf3314d5e4f05cb1a0da7700c76",
+      "size": 508,
+      "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/build-profile.json5?ref=v1.9.3",
+      "html_url": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/entry/build-profile.json5",
+      "git_url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/aa8bcdbb80be0bf3314d5e4f05cb1a0da7700c76",
+      "download_url": "https://raw.githubusercontent.com/xiaoli8571/NekoBox4Harmony/v1.9.3/entry/build-profile.json5",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/build-profile.json5?ref=v1.9.3",
+        "git": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/aa8bcdbb80be0bf3314d5e4f05cb1a0da7700c76",
+        "html": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/entry/build-profile.json5"
+      },
+      "text": "{\n  \"apiType\": \"stageMode\",\n  \"buildOption\": {\n    \"externalNativeOptions\": {\n      \"path\": \"./src/main/cpp/CMakeLists.txt\",\n      \"arguments\": \"\",\n      \"cppFlags\": \"\",\n      \"abiFilters\": [\"arm64-v8a\"]\n    }\n  },\n  \"buildOptionSet\": [\n    {\n      \"name\": \"release\",\n      \"arkOptions\": {\n        \"obfuscation\": {\n          \"ruleOptions\": {\n            \"enable\": false,\n            \"files\": [\"./obfuscation-rules.txt\"]\n          }\n        }\n      }\n    }\n  ],\n  \"targets\": [\n    { \"name\": \"default\" }\n  ]\n}\n"
+    },
+    "error": ""
+  },
+  "nekobox-for-harmony:entry/src/main/module.json5?ref=v1.9.3": {
+    "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/src/main/module.json5?ref=v1.9.3",
+    "status": 0,
+    "data": {
+      "name": "module.json5",
+      "path": "entry/src/main/module.json5",
+      "sha": "fc9de4af94a6d1dbe81ed04403b32b7231acd607",
+      "size": 2076,
+      "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/src/main/module.json5?ref=v1.9.3",
+      "html_url": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/entry/src/main/module.json5",
+      "git_url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/fc9de4af94a6d1dbe81ed04403b32b7231acd607",
+      "download_url": "https://raw.githubusercontent.com/xiaoli8571/NekoBox4Harmony/v1.9.3/entry/src/main/module.json5",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/contents/entry/src/main/module.json5?ref=v1.9.3",
+        "git": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/git/blobs/fc9de4af94a6d1dbe81ed04403b32b7231acd607",
+        "html": "https://github.com/xiaoli8571/NekoBox4Harmony/blob/v1.9.3/entry/src/main/module.json5"
+      },
+      "text": "{\n  \"module\": {\n    \"name\": \"entry\",\n    \"type\": \"entry\",\n    \"description\": \"$string:module_desc\",\n    \"mainElement\": \"EntryAbility\",\n    \"deviceTypes\": [\"phone\", \"tablet\"],\n    \"deliveryWithInstall\": true,\n    \"installationFree\": false,\n    // HAP 内原生库(zip deflate)压缩:libsingbox.so 约 35MB,压缩后 HAP 从 ~38.5MB 降到 ~24MB。\n    // 安装时由系统解压到应用原生库目录,运行不受影响(需真机回归验证一次)。\n    \"compressNativeLibs\": true,\n    \"pages\": \"$profile:main_pages\",\n    \"abilities\": [\n      {\n        \"name\": \"EntryAbility\",\n        \"srcEntry\": \"./ets/entryability/EntryAbility.ets\",\n        \"description\": \"$string:module_desc\",\n        \"icon\": \"$media:layered_image\",\n        \"label\": \"$string:app_name\",\n        \"startWindowIcon\": \"$media:icon\",\n        \"startWindowBackground\": \"$color:start_window_background\",\n        \"exported\": true,\n        \"backgroundModes\": [\"dataTransfer\"],\n        \"skills\": [\n          {\n            \"entities\": [\"entity.system.home\"],\n            \"actions\": [\"action.system.home\"]\n          }\n        ]\n      }\n    ],\n    \"extensionAbilities\": [\n      {\n        \"name\": \"VpnExtAbility\",\n        \"srcEntry\": \"./ets/vpnext/VpnExtAbility.ets\",\n        \"description\": \"sing-box VPN service\",\n        // 本 SDK(HarmonyOS 6.1)合法值为 \"vpn\";旧文档中的 \"vpnExtension\" 已不适用\n        \"type\": \"vpn\",\n        \"exported\": false\n      }\n    ],\n    \"requestPermissions\": [\n      { \"name\": \"ohos.permission.INTERNET\" },\n      { \"name\": \"ohos.permission.GET_NETWORK_INFO\" },\n      { \"name\": \"ohos.permission.KEEP_BACKGROUND_RUNNING\" },\n      { \"name\": \"ohos.permission.GET_BUNDLE_INFO\" },\n      {\n        \"name\": \"ohos.permission.READ_PASTEBOARD\",\n        \"reason\": \"$string:permission_read_pasteboard_reason\",\n        \"usedScene\": {\n          \"abilities\": [\"EntryAbility\"],\n          \"when\": \"inuse\"\n        }\n      }\n      // 若系统提示缺少 VPN 权限,按 SDK 文档追加(可能属于受限 ACL,需在 AGC 申请):\n      // { \"name\": \"ohos.permission.MANAGE_VPN\" }\n    ]\n  }\n}\n"
+    },
+    "error": ""
+  },
+  "v2raya:service/core/core.go": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA/contents/service/core/core.go",
+    "status": 1,
+    "data": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+      "status": "404"
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  },
+  "v2raya:service/core/v2ray/processManager.go": {
+    "url": "https://api.github.com/repos/v2rayA/v2rayA/contents/service/core/v2ray/processManager.go",
+    "status": 1,
+    "data": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+      "status": "404"
+    },
+    "error": "gh: Not Found (HTTP 404)\n"
+  },
+  "dae:docs/en/README.md": {
+    "url": "https://api.github.com/repos/daeuniverse/dae/contents/docs/en/README.md",
+    "status": 0,
+    "data": {
+      "name": "README.md",
+      "path": "docs/en/README.md",
+      "sha": "496d49a6f76283dde0d2962a709afdbaf3b0dacf",
+      "size": 8215,
+      "url": "https://api.github.com/repos/daeuniverse/dae/contents/docs/en/README.md?ref=main",
+      "html_url": "https://github.com/daeuniverse/dae/blob/main/docs/en/README.md",
+      "git_url": "https://api.github.com/repos/daeuniverse/dae/git/blobs/496d49a6f76283dde0d2962a709afdbaf3b0dacf",
+      "download_url": "https://raw.githubusercontent.com/daeuniverse/dae/main/docs/en/README.md",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/daeuniverse/dae/contents/docs/en/README.md?ref=main",
+        "git": "https://api.github.com/repos/daeuniverse/dae/git/blobs/496d49a6f76283dde0d2962a709afdbaf3b0dacf",
+        "html": "https://github.com/daeuniverse/dae/blob/main/docs/en/README.md"
+      },
+      "text": "# Quick Start Guide\n\n[**简体中文**](../zh/README.md) | [**English**](README.md)\n\n## Linux Kernel Requirement\n\n## Kernel Version\n\nUse `uname -r` to check the kernel version on your machine.\n\n> **Note**\n> If you find your kernel version is `< 5.17`, follow the [**Upgrade Guide**](user-guide/kernel-upgrade.md) to upgrade the kernel to the minimum required version.\n\n`Bind to LAN: >= 5.17`\n\nYou need bind dae to LAN interface, if you want to provide network service for LAN as an intermediate device.\n\nThis feature requires the kernel version of machine on which dae install >= 5.17.\n\nNote that if you bind dae to LAN only, dae only provide network service for traffic from LAN, and not impact local programs.\n\n`Bind to WAN: >= 5.17`\n\nYou need bind dae to WAN interface, if you want dae to provide network service for local programs.\n\nThis feature requires kernel version of the machine >= 5.17.\n\nNote that if you bind dae to WAN only, dae only provide network service for local programs and not impact traffic coming in from other interfaces.\n\n`Use trace command`\n\nIf you want to use `dae trace` command to triage network connectivity issue, the kernel version is required to be >= 5.15. The `trace` build tag is not available for `arm`, `mips`, `mips64`, `mips64le`, `mipsle` and `s390x` builds (see [Build Guide](user-guide/build-by-yourself.md#trace-support-per-architecture)), so `dae trace` is missing there.\n\n## Kernel Configurations\n\nUsually, mainstream desktop distributions have these items turned on. But in order to reduce kernel size, some items are turned off by default on embedded device distributions like OpenWRT, Armbian, etc.\n\nUse following command to show kernel configuration items on your machine.\n\n```shell\nzcat /proc/config.gz || cat /boot/{config,config-$(uname -r)}\n```\n\ndae needs:\n\n```\nCONFIG_BPF=y\nCONFIG_BPF_SYSCALL=y\nCONFIG_BPF_JIT=y\nCONFIG_CGROUPS=y\nCONFIG_KPROBES=y\nCONFIG_NET_INGRESS=y\nCONFIG_NET_EGRESS=y\nCONFIG_NET_SCH_INGRESS=m\nCONFIG_NET_CLS_BPF=m\nCONFIG_NET_CLS_ACT=y\nCONFIG_BPF_STREAM_PARSER=y\nCONFIG_DEBUG_INFO=y\n# CONFIG_DEBUG_INFO_REDUCED is not set\nCONFIG_DEBUG_INFO_BTF=y\nCONFIG_KPROBE_EVENTS=y\nCONFIG_BPF_EVENTS=y\n```\n\nCheck them using command like:\n\nfor bash and other POSIX compliant shell:\n\n```shell\n(zcat /proc/config.gz || cat /boot/{config,config-$(uname -r)}) | grep -E 'CONFIG_(DEBUG_INFO|DEBUG_INFO_BTF|KPROBES|KPROBE_EVENTS|BPF|BPF_SYSCALL|BPF_JIT|BPF_STREAM_PARSER|NET_CLS_ACT|NET_SCH_INGRESS|NET_INGRESS|NET_EGRESS|NET_CLS_BPF|BPF_EVENTS|CGROUPS)=|# CONFIG_DEBUG_INFO_REDUCED is not set'\n```\n\nfor fish shell:\n\n```fish\nbegin; zcat /proc/config.gz || bat /boot/config \"/boot/config-\"(uname -r); end | grep -E 'CONFIG_(DEBUG_INFO|DEBUG_INFO_BTF|KPROBES|KPROBE_EVENTS|BPF|BPF_SYSCALL|BPF_JIT|BPF_STREAM_PARSER|NET_CLS_ACT|NET_SCH_INGRESS|NET_INGRESS|NET_EGRESS|NET_CLS_BPF|BPF_EVENTS|CGROUPS)=|# CONFIG_DEBUG_INFO_REDUCED is not set'\n```\n\n> **Note**: `Armbian` users can follow the [**Upgrade Guide**](user-guide/kernel-upgrade.md) to upgrade the kernel to meet the kernel configuration requirement.\n>\n> `Arch Linux ARM` users can use [`linux-aarch64-7ji`](https://github.com/7Ji-PKGBUILDs/linux-aarch64-7ji) which meets the kernel configuration requirement of dae.\n\n## Installation\n\n### Arch Linux / Manjaro\n\nYou can install dae directly from the official repository.\n\nAlternatively, get the latest AVX2-optimized binary package or the latest Git version from [AUR](https://aur.archlinux.org) or [archlinuxcn](https://github.com/archlinuxcn/repo).\n\n#### Official Repository\n\n```shell\nsudo pacman -S dae\n```\n\n#### AUR\n\n##### Latest Release (Optimized Binary for x86-64 v3 / AVX2)\n\n```shell\n[yay/paru] -S dae-avx2-bin\n```\n\n##### Latest Git Version\n\n```shell\n[yay/paru] -S dae-git\n```\n\n#### archlinuxcn\n\n##### Latest Release (Optimized Binary for x86-64 v3 / AVX2)\n\n```shell\nsudo pacman -S dae-avx2-bin\n```\n\n##### Latest Git Version\n\n```shell\nsudo pacman -S dae-git\n```\n\nAfter installation, use systemctl to control it.\n\n```shell\n# start dae\nsudo systemctl start dae\n\n# auto start dae at boot\nsudo systemctl enable dae\n```\n\n### Gentoo Linux\n\ndae has been released on [gentoo-zh](https://github.com/microcai/gentoo-zh)\n\nuse `app-eselect/eselect-repository` to enable this overlay:\n\n```shell\neselect repository enable gentoo-zh\nemaint sync -r gentoo-zh\nemerge -a net-proxy/dae\n```\n\n### Fedora\n\ndae has been released on [Fedora Copr](https://copr.fedorainfracloud.org/coprs/zhullyb/v2rayA/package/dae).\n\n```shell\nsudo dnf copr enable zhullyb/v2rayA\nsudo dnf install dae\n```\n\n### Alpine\n\nSee [run on alpine](tutorials/run-on-alpine.md).\n\n### macOS\n\nWe provide a hacky way to run dae on your macOS. See [run on macOS](tutorials/run-on-macos.md).\n\n### Docker\n\nPre-built image and related docs can be found at <https://hub.docker.com/r/daeuniverse/dae>.\n\nAlternatively, you can use `docker compose`:\n\n```shell\ngit clone --depth=1 https://github.com/daeuniverse/dae\ndocker compose up -d --build\n```\n\n## Manual installation\n\n> **Note**: This approach is **ONLY** recommended for `advanced` users. With this approach, users may have flexibility to test various versions of dae. Noted that newly introduced features are sometimes buggy, do it at your own risk.\n\ndae can run as a daemon (systemd) service. See [run-as-daemon](user-guide/run-as-daemon.md)\n\n### Installation Script\n\nSee [daeuniverse/dae-installer](https://github.com/daeuniverse/dae-installer) (or [mirror](https://hubmirror.v2raya.org/daeuniverse/dae-installer)).\n\n### Build from scratch\n\nSee [Build Guide](user-guide/build-by-yourself.md).\n\n## Minimal Configuration\n\nFor minimal bootable config:\n\n```shell\nglobal{}\nrouting{}\n```\n\nHowever, this config leaves dae no-load state. If you want dae to be in working state, following is a best practice for small config:\n\n```shell\nglobal {\n  # Bind to LAN and/or WAN as you want. Replace the interface name to your own.\n  #lan_interface: docker0\n  wan_interface: auto # Use \"auto\" to auto detect WAN interface.\n\n  log_level: info\n  allow_insecure: false\n  auto_config_kernel_parameter: true\n}\n\nsubscription {\n  # Fill in your subscription links here.\n}\n\n# See https://github.com/daeuniverse/dae/blob/main/docs/en/configuration/dns.md for full examples.\ndns {\n  upstream {\n    googledns: 'tcp+udp://dns.google:53'\n    alidns: 'udp://dns.alidns.com:53'\n  }\n  routing {\n    request {\n      qtype(https) -> reject\n      fallback: alidns\n    }\n    response {\n      upstream(googledns) -> accept\n      ip(geoip:private) && !qname(geosite:cn) -> googledns\n      fallback: accept\n    }\n  }\n}\n\ngroup {\n  proxy {\n    #filter: name(keyword: HK, keyword: SG)\n    policy: min_moving_avg\n  }\n}\n\n# See https://github.com/daeuniverse/dae/blob/main/docs/en/configuration/routing.md for full examples.\nrouting {\n  pname(NetworkManager) -> direct\n  dip(224.0.0.0/3, 'ff00::/8') -> direct\n\n  ### Write your rules below.\n\n  # Disable h3 because it usually consumes too much cpu/mem resources.\n  l4proto(udp) && dport(443) -> block\n  dip(geoip:private) -> direct\n  dip(geoip:cn) -> direct\n  domain(geosite:cn) -> direct\n\n  fallback: proxy\n}\n```\n\nIf you do not care about extreme speed but care more about privacy and DNS\nleakage, replace the `dns` part above with:\n\n```shell\ndns {\n  upstream {\n    googledns: 'tcp+udp://dns.google:53'\n    alidns: 'udp://dns.alidns.com:53'\n  }\n  routing {\n    request {\n      qname(geosite:cn) -> alidns\n      fallback: googledns\n    }\n  }\n}\n```\n\nSee more at [example.dae](https://github.com/daeuniverse/dae/blob/main/example.dae).\n\nIf you use PVE, refer to [#37](https://github.com/daeuniverse/dae/discussions/37).\n\n## PPPoE Interface\n\nIf you want to proxy PPPoE interface, please set wan/lan_interface to the interface generated by pppd (i.e., ppp0 / pppoe-wan) instead of the physical interface.\nIf you just using PPPoE interface for wan, simply set wan_interface to \"auto\".\n\n## Reload and suspend\n\nWhen the configuration changes, it is convenient to use command to hot reload the configuration, and the existing connection will not be interrupted in the process. When you want to suspend dae, you can use command to pause.\n\nSee [Reload and suspend](user-guide/reload-and-suspend.md).\n\n## Troubleshooting\n\nSee [Troubleshooting](troubleshooting.md).\n"
+    },
+    "error": ""
+  },
+  "daed:docs/getting-started.md": {
+    "url": "https://api.github.com/repos/daeuniverse/daed/contents/docs/getting-started.md",
+    "status": 0,
+    "data": {
+      "name": "getting-started.md",
+      "path": "docs/getting-started.md",
+      "sha": "130c17624dd11c3faf91959f298d21ad573dae7a",
+      "size": 4002,
+      "url": "https://api.github.com/repos/daeuniverse/daed/contents/docs/getting-started.md?ref=main",
+      "html_url": "https://github.com/daeuniverse/daed/blob/main/docs/getting-started.md",
+      "git_url": "https://api.github.com/repos/daeuniverse/daed/git/blobs/130c17624dd11c3faf91959f298d21ad573dae7a",
+      "download_url": "https://raw.githubusercontent.com/daeuniverse/daed/main/docs/getting-started.md",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/daeuniverse/daed/contents/docs/getting-started.md?ref=main",
+        "git": "https://api.github.com/repos/daeuniverse/daed/git/blobs/130c17624dd11c3faf91959f298d21ad573dae7a",
+        "html": "https://github.com/daeuniverse/daed/blob/main/docs/getting-started.md"
+      },
+      "text": "# Quick Start Guide\n\n> **Note:** `daed` bundles [dae-wing](https://github.com/daeuniverse/dae-wing) (backend API) and [dae](https://github.com/daeuniverse/dae) (eBPF core) into a single binary.\n\n---\n\n## ⚠️ Important Notice\n\n> **Warning:** Network connectivity issues may occur if the system sleeps/hibernates or switches networks while the proxy is active.\n>\n> Always **stop the proxy** before:\n>\n> - Putting your computer to sleep or hibernate\n> - Switching between Wi-Fi networks\n> - Disconnecting from the network\n>\n> If you experience network issues, a system reboot may be required to restore connectivity.\n\n---\n\n## 📦 Installation\n\n### Download Pre-built Binaries\n\nDownload the latest release for your platform:\n\n**👉 [GitHub Releases](https://github.com/daeuniverse/daed/releases)**\n\n> 💡 **Tip:** Want to try new features? Check out [PR Builds](https://github.com/daeuniverse/daed/actions/workflows/pr-build.yml) for the latest development builds. Note that these may be unstable.\n\n### Quick Install (Manual)\n\n```bash\n# Make executable and install\nsudo chmod +x ./daed\nsudo install -Dm755 daed /usr/bin/\n\n# Run daed\nsudo daed run\n\n# Show help\ndaed --help\n```\n\n---\n\n## 🐧 Linux Distribution Packages\n\n### Debian / Ubuntu\n\n```bash\n# Download the latest .deb package\nwget -P /tmp https://github.com/daeuniverse/daed/releases/latest/download/installer-daed-linux-$(arch).deb\n\n# Install\nsudo dpkg -i /tmp/installer-daed-linux-$(arch).deb\n\n# Start and enable service\nsudo systemctl enable --now daed\n```\n\n### Fedora / Red Hat\n\n#### Option 1: Fedora Copr (Recommended)\n\n```bash\nsudo dnf copr enable zhullyb/v2rayA\nsudo dnf install daed\n```\n\n#### Option 2: RPM Package\n\n```bash\n# Download the latest .rpm package\nwget -P /tmp https://github.com/daeuniverse/daed/releases/latest/download/installer-daed-linux-$(arch).rpm\n\n# Install\nsudo rpm -ivh /tmp/installer-daed-linux-$(arch).rpm\n\n# Start and enable service\nsudo systemctl enable --now daed\n```\n\n### openSUSE\n\n```bash\n# Download the latest .rpm package\nwget -P /tmp https://github.com/daeuniverse/daed/releases/latest/download/installer-daed-linux-$(arch).rpm\n\n# Install\nsudo zypper install /tmp/installer-daed-linux-$(arch).rpm\n\n# Start and enable service\nsudo systemctl enable --now daed\n```\n\n### Arch Linux\n\n#### AUR\n\n| Package         | Description                       | Command                 |\n| --------------- | --------------------------------- | ----------------------- |\n| `daed`          | Latest release (x86-64 / aarch64) | `paru -S daed`          |\n| `daed-avx2-bin` | Optimized for x86-64 v3 / AVX2    | `paru -S daed-avx2-bin` |\n| `daed-git`      | Latest git version                | `paru -S daed-git`      |\n\n#### archlinuxcn\n\n```bash\n# Standard version\nsudo pacman -S daed\n\n# AVX2 optimized version\nsudo pacman -S daed-avx2-bin\n\n# Git version\nsudo pacman -S daed-git\n```\n\n---\n\n## 🐳 Docker\n\nPre-built images are available at:\n\n- `ghcr.io/daeuniverse/daed`\n- `quay.io/daeuniverse/daed`\n- `daeuniverse/daed`\n\n### Docker Run\n\n```bash\ndocker run -d \\\n    --privileged \\\n    --network=host \\\n    --pid=host \\\n    --restart=unless-stopped \\\n    -v /sys:/sys \\\n    -v /etc/daed:/etc/daed \\\n    --name=daed \\\n    ghcr.io/daeuniverse/daed:latest\n```\n\n### Docker Compose\n\n```yaml\n# docker-compose.yml\nservices:\n  daed:\n    image: ghcr.io/daeuniverse/daed:latest\n    container_name: daed\n    privileged: true\n    network_mode: host\n    pid: host\n    restart: unless-stopped\n    volumes:\n      - /sys:/sys\n      - /etc/daed:/etc/daed\n```\n\n```bash\ndocker compose up -d\n```\n\n### Build from Source\n\n```bash\ngit clone https://github.com/daeuniverse/daed --recursive\ndocker build -t daed .\n```\n\n> **Note:** Docker support is currently available for i386, amd64, armv7, and arm64 architectures. See [discussion #291](https://github.com/daeuniverse/daed/discussions/291) for details.\n\n---\n\n## 🎉 Access the Dashboard\n\nOnce daed is running, open your browser and navigate to:\n\n**👉 http://localhost:2023**\n\nHappy Hacking! 🚀\n"
+    },
+    "error": ""
+  },
+  "homeproxy:.github/workflows/build-ipk.yml": {
+    "url": "https://api.github.com/repos/immortalwrt/homeproxy/contents/.github/workflows/build-ipk.yml",
+    "status": 0,
+    "data": {
+      "name": "build-ipk.yml",
+      "path": ".github/workflows/build-ipk.yml",
+      "sha": "e584c850cd2860b0def49e75717cb99c2a0b7e4a",
+      "size": 3362,
+      "url": "https://api.github.com/repos/immortalwrt/homeproxy/contents/.github/workflows/build-ipk.yml?ref=master",
+      "html_url": "https://github.com/immortalwrt/homeproxy/blob/master/.github/workflows/build-ipk.yml",
+      "git_url": "https://api.github.com/repos/immortalwrt/homeproxy/git/blobs/e584c850cd2860b0def49e75717cb99c2a0b7e4a",
+      "download_url": "https://raw.githubusercontent.com/immortalwrt/homeproxy/master/.github/workflows/build-ipk.yml",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/immortalwrt/homeproxy/contents/.github/workflows/build-ipk.yml?ref=master",
+        "git": "https://api.github.com/repos/immortalwrt/homeproxy/git/blobs/e584c850cd2860b0def49e75717cb99c2a0b7e4a",
+        "html": "https://github.com/immortalwrt/homeproxy/blob/master/.github/workflows/build-ipk.yml"
+      },
+      "text": "name: Build ipk for HomeProxy\n\non:\n  push:\n    branches:\n      - 'master'\n      - 'dev'\n    paths:\n      - 'htdocs/**'\n      - 'po/**'\n      - 'root/**'\n      - 'Makefile'\n      - '.github/**'\n      - '!.github/ISSUE_TEMPLATE/**'\n\n  pull_request:\n    branches:\n      - 'master'\n      - 'dev'\n    types:\n      - opened\n      - synchronize\n      - reopened\n    paths:\n      - 'htdocs/**'\n      - 'root/**'\n      - 'Makefile'\n      - '.github/**'\n      - '!.github/ISSUE_TEMPLATE/**'\n\n  release:\n    types:\n      - published\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout source tree\n        uses: actions/checkout@v6\n\n      - name: Checkout apk\n        uses: actions/checkout@v6\n        with:\n          repository: 'alpinelinux/apk-tools'\n          path: 'apk-tools'\n          fetch-depth: 0\n          ref: 'b5a31c0d865342ad80be10d68f1bb3d3ad9b0866'\n\n      - name: Checkout po2lmo\n        uses: actions/checkout@v6\n        with:\n          repository: 'openwrt/luci'\n          path: 'po2lmo'\n          sparse-checkout: 'modules/luci-base/src'\n\n      - name: Setup dependencies\n        env:\n          DEBIAN_FRONTEND: noninteractive\n        run: |\n          sudo -E rm -rf /var/lib/man-db/auto-update\n          sudo -E apt-get update -qq\n          sudo -E apt-get install -y build-essential curl fakeroot libssl-dev lua5.1 meson ninja-build\n\n          pushd apk-tools\n          meson setup build \\\n            -Db_lto=true \\\n            -Dcompressed-help=false \\\n            -Ddocs=disabled \\\n            -Dhelp=enabled \\\n            -Dlua_version=5.1 \\\n            -Ddefault_library=static \\\n            -Durl_backend=wget \\\n            -Dzstd=false \\\n            -Dpython=disabled \\\n            -Dtests=disabled \\\n            -Dcrypto_backend=openssl\n          ninja -C build\n          sudo -E meson install -C build --strip\n          popd\n\n          pushd po2lmo/modules/luci-base/src\n          make po2lmo\n          sudo -E install -m0755 -s po2lmo /usr/local/bin/po2lmo\n          popd\n\n          curl -fLO \"https://raw.githubusercontent.com/openwrt/openwrt/master/scripts/ipkg-build\"\n          sudo install -m0755 ipkg-build /usr/local/bin/ipkg-build\n\n      - name: Build ipk file\n        run: |\n          pushd .github\n          fakeroot bash build-ipk.sh apk \"${{ github.event_name }}\"\n          fakeroot bash build-ipk.sh ipk \"${{ github.event_name }}\"\n          echo \"APK_ASSET_NAME=$(ls *.apk)\" >> $GITHUB_ENV\n          echo \"IPK_ASSET_NAME=$(ls *.ipk)\" >> $GITHUB_ENV\n          popd\n\n      - name: Publishing APK files to GitHub Artifacts\n        uses: actions/upload-artifact@v7\n        if: github.event_name != 'release'\n        with:\n          name: ${{ env.APK_ASSET_NAME }}\n          path: .github/${{ env.APK_ASSET_NAME }}\n          archive: false\n\n      - name: Publishing IPK files to GitHub Artifacts\n        uses: actions/upload-artifact@v7\n        if: github.event_name != 'release'\n        with:\n          name: ${{ env.IPK_ASSET_NAME }}\n          path: .github/${{ env.IPK_ASSET_NAME }}\n          archive: false\n\n      - name: Publishing to GitHub Releases\n        uses: svenstaro/upload-release-action@v2\n        if: github.event_name == 'release'\n        with:\n          repo_token: ${{ github.token }}\n          file: .github/luci-app-homeproxy_*.*\n          file_glob: true\n          tag: ${{ github.ref }}\n"
+    },
+    "error": ""
+  },
+  "nikki:install.sh?ref=v1.26.1": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/install.sh?ref=v1.26.1",
+    "status": 0,
+    "data": {
+      "name": "install.sh",
+      "path": "install.sh",
+      "sha": "28616b1e98968668bff10962125b006ab82ae752",
+      "size": 2092,
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/install.sh?ref=v1.26.1",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/blob/v1.26.1/install.sh",
+      "git_url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/git/blobs/28616b1e98968668bff10962125b006ab82ae752",
+      "download_url": "https://raw.githubusercontent.com/nikkinikki-org/OpenWrt-nikki/v1.26.1/install.sh",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/install.sh?ref=v1.26.1",
+        "git": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/git/blobs/28616b1e98968668bff10962125b006ab82ae752",
+        "html": "https://github.com/nikkinikki-org/OpenWrt-nikki/blob/v1.26.1/install.sh"
+      },
+      "text": "#!/bin/sh\n\n# Nikki's installer\n\n# check env\nif [[ ! -x \"/bin/opkg\" && ! -x \"/usr/bin/apk\" || ! -x \"/sbin/fw4\" ]]; then\n\techo \"only supports OpenWrt build with firewall4!\"\n\texit 1\nfi\n\n# include openwrt_release\n. /etc/openwrt_release\n\n# get branch/arch\narch=\"$DISTRIB_ARCH\"\nbranch=\ncase \"$DISTRIB_RELEASE\" in\n\t*\"24.10\"*)\n\t\tbranch=\"openwrt-24.10\"\n\t\t;;\n\t*\"25.12\"*)\n\t\tbranch=\"openwrt-25.12\"\n\t\t;;\n\t\"SNAPSHOT\")\n\t\tbranch=\"SNAPSHOT\"\n\t\t;;\n\t*)\n\t\techo \"unsupported release: $DISTRIB_RELEASE\"\n\t\texit 1\n\t\t;;\nesac\n\n# feed url\nrepository_url=\"https://nikkinikki.pages.dev\"\nfeed_url=\"$repository_url/$branch/$arch/nikki\"\n\nif [ -x \"/bin/opkg\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\topkg update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(opkg list-installed luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# get latest version\n\techo \"get latest version\"\n\twget -O nikki.version $feed_url/index.json\n\t# install ipks\n\techo \"install ipks\"\n\teval \"$(jsonfilter -i nikki.version -e \"mihomo_meta_version=@['packages']['mihomo-meta']\" -e \"nikki_version=@['packages']['nikki']\" -e \"luci_app_nikki_version=@['packages']['luci-app-nikki']\")\"\n\topkg install \"$feed_url/mihomo-meta_${mihomo_meta_version}_${arch}.ipk\"\n\topkg install \"$feed_url/nikki_${nikki_version}_${arch}.ipk\"\n\topkg install \"$feed_url/luci-app-nikki_${luci_app_nikki_version}_all.ipk\"\n\tfor lang in $languages; do\n\t\tlang_version=$(jsonfilter -i nikki.version -e \"@['packages']['luci-i18n-nikki-${lang}']\")\n\t\topkg install \"$feed_url/luci-i18n-nikki-${lang}_${lang_version}_all.ipk\"\n\tdone\n\t\n\trm -f nikki.version\nelif [ -x \"/usr/bin/apk\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\tapk update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(apk list --installed --manifest luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# install apks from remote repository\n\techo \"install apks from remote repository\"\n\tapk add --allow-untrusted -X $feed_url/packages.adb mihomo-meta nikki luci-app-nikki\n\tfor lang in $languages; do\n\t\tapk add --allow-untrusted -X $feed_url/packages.adb \"luci-i18n-nikki-${lang}\"\n\tdone\nfi\n\necho \"success\" \n"
+    },
+    "error": ""
+  },
+  "nikki:.github/workflows/build-packages.yml?ref=v1.26.1": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/.github/workflows/build-packages.yml?ref=v1.26.1",
+    "status": 0,
+    "data": {
+      "name": "build-packages.yml",
+      "path": ".github/workflows/build-packages.yml",
+      "sha": "d4b92bfb0da27e4c60f9557d7cdbc6db54e993ee",
+      "size": 1840,
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/.github/workflows/build-packages.yml?ref=v1.26.1",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/blob/v1.26.1/.github/workflows/build-packages.yml",
+      "git_url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/git/blobs/d4b92bfb0da27e4c60f9557d7cdbc6db54e993ee",
+      "download_url": "https://raw.githubusercontent.com/nikkinikki-org/OpenWrt-nikki/v1.26.1/.github/workflows/build-packages.yml",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/contents/.github/workflows/build-packages.yml?ref=v1.26.1",
+        "git": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/git/blobs/d4b92bfb0da27e4c60f9557d7cdbc6db54e993ee",
+        "html": "https://github.com/nikkinikki-org/OpenWrt-nikki/blob/v1.26.1/.github/workflows/build-packages.yml"
+      },
+      "text": "name: build-packages\n\non:\n  workflow_dispatch:\n\njobs:\n  build:\n    name: ${{ matrix.arch }}-${{ matrix.branch }} build\n    runs-on: ubuntu-latest\n    strategy:\n      fail-fast: false\n      matrix:\n        arch:\n          - arm_cortex-a5_vfpv4\n          - arm_cortex-a7_neon-vfpv4\n          - arm_cortex-a8_vfpv3\n          - arm_cortex-a9\n          - arm_cortex-a9_vfpv3-d16\n          - arm_cortex-a9_neon\n          - arm_cortex-a15_neon-vfpv4\n          - aarch64_cortex-a53\n          - aarch64_cortex-a72\n          - aarch64_cortex-a76\n          - aarch64_generic\n          - mips_24kc\n          - mips_4kec\n          - mips_mips32\n          - mipsel_24kc\n          - mipsel_24kc_24kf\n          - mipsel_74kc\n          - mipsel_mips32\n          - mips64_octeonplus\n          - riscv64_riscv64\n          - riscv64_generic\n          - loongarch64_generic\n          - i386_pentium4\n          - x86_64\n        branch:\n          - openwrt-24.10\n          - openwrt-25.12\n          - SNAPSHOT\n        exclude:\n          - arch: mips_4kec\n            branch: openwrt-25.12\n          - arch: mips_4kec\n            branch: SNAPSHOT\n          - arch: riscv64_riscv64\n            branch: openwrt-25.12\n          - arch: riscv64_riscv64\n            branch: SNAPSHOT\n          - arch: riscv64_generic\n            branch: openwrt-24.10\n\n    steps:\n      - name: checkout\n        uses: actions/checkout@v6\n\n      - name: build\n        uses: openwrt/gh-action-sdk@main\n        env:\n          ARCH: ${{ matrix.arch }}-${{ matrix.branch }}\n          FEEDNAME: nikki\n          PACKAGES: mihomo-alpha mihomo-meta nikki luci-app-nikki\n          NO_REFRESH_CHECK: true\n\n      - name: upload\n        uses: actions/upload-artifact@v7\n        with:\n          name: nikki_${{ matrix.arch }}-${{ matrix.branch }}\n          path: bin/packages/${{ matrix.arch }}/nikki\n"
+    },
+    "error": ""
+  },
+  "nikki-rs:install.sh?ref=v1.0.5": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/install.sh?ref=v1.0.5",
+    "status": 0,
+    "data": {
+      "name": "install.sh",
+      "path": "install.sh",
+      "sha": "e4bd9dd8d86423bf28224bc7fd3aa491df85f637",
+      "size": 2129,
+      "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/install.sh?ref=v1.0.5",
+      "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/blob/v1.0.5/install.sh",
+      "git_url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/git/blobs/e4bd9dd8d86423bf28224bc7fd3aa491df85f637",
+      "download_url": "https://raw.githubusercontent.com/CHKayanami/OpenWrt-nikki-rs/v1.0.5/install.sh",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/install.sh?ref=v1.0.5",
+        "git": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/git/blobs/e4bd9dd8d86423bf28224bc7fd3aa491df85f637",
+        "html": "https://github.com/CHKayanami/OpenWrt-nikki-rs/blob/v1.0.5/install.sh"
+      },
+      "text": "#!/bin/sh\n\n# Nikki's installer\n\n# check env\nif [[ ! -x \"/bin/opkg\" && ! -x \"/usr/bin/apk\" || ! -x \"/sbin/fw4\" ]]; then\n\techo \"only supports OpenWrt build with firewall4!\"\n\texit 1\nfi\n\n# include openwrt_release\n. /etc/openwrt_release\n\n# get branch/arch\narch=\"$DISTRIB_ARCH\"\nbranch=\ncase \"$DISTRIB_RELEASE\" in\n\t*\"24.10\"*)\n\t\tbranch=\"openwrt-24.10\"\n\t\t;;\n\t*\"25.12\"*)\n\t\tbranch=\"openwrt-25.12\"\n\t\t;;\n\t\"SNAPSHOT\")\n\t\tbranch=\"SNAPSHOT\"\n\t\t;;\n\t*)\n\t\techo \"unsupported release: $DISTRIB_RELEASE\"\n\t\texit 1\n\t\t;;\nesac\n\n# feed url\nrepository_url=\"https://nikki-rs.pages.dev\"\nfeed_url=\"$repository_url/$branch/$arch/nikki_rs\"\n\nif [ -x \"/bin/opkg\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\topkg update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(opkg list-installed luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# get latest version\n\techo \"get latest version\"\n\twget -O nikki-rs.version $feed_url/index.json\n\t# install ipks\n\techo \"install ipks\"\n\teval \"$(jsonfilter -i nikki-rs.version -e \"clash_rs_version=@['packages']['clash-rs']\" -e \"nikki_rs_version=@['packages']['nikki-rs']\" -e \"luci_app_nikki_rs_version=@['packages']['luci-app-nikki-rs']\")\"\n\topkg install \"$feed_url/clash-rs_${clash_rs_version}_${arch}.ipk\"\n\topkg install \"$feed_url/nikki-rs_${nikki_rs_version}_${arch}.ipk\"\n\topkg install \"$feed_url/luci-app-nikki-rs_${luci_app_nikki_rs_version}_all.ipk\"\n\tfor lang in $languages; do\n\t\tlang_version=$(jsonfilter -i nikki-rs.version -e \"@['packages']['luci-i18n-nikki-rs-${lang}']\")\n\t\topkg install \"$feed_url/luci-i18n-nikki-rs-${lang}_${lang_version}_all.ipk\"\n\tdone\n\t\n\trm -f nikki-rs.version\nelif [ -x \"/usr/bin/apk\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\tapk update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(apk list --installed --manifest luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# install apks from remote repository\n\techo \"install apks from remote repository\"\n\tapk add --allow-untrusted -X $feed_url/packages.adb clash-rs nikki-rs luci-app-nikki-rs\n\tfor lang in $languages; do\n\t\tapk add --allow-untrusted -X $feed_url/packages.adb \"luci-i18n-nikki-rs-${lang}\"\n\tdone\nfi\n\necho \"success\" \n"
+    },
+    "error": ""
+  },
+  "nikki-rs:.github/workflows/build-packages.yml?ref=v1.0.5": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/.github/workflows/build-packages.yml?ref=v1.0.5",
+    "status": 0,
+    "data": {
+      "name": "build-packages.yml",
+      "path": ".github/workflows/build-packages.yml",
+      "sha": "a3450ce9ae2f4170127ad7faef40c064ea0183ab",
+      "size": 2174,
+      "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/.github/workflows/build-packages.yml?ref=v1.0.5",
+      "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/blob/v1.0.5/.github/workflows/build-packages.yml",
+      "git_url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/git/blobs/a3450ce9ae2f4170127ad7faef40c064ea0183ab",
+      "download_url": "https://raw.githubusercontent.com/CHKayanami/OpenWrt-nikki-rs/v1.0.5/.github/workflows/build-packages.yml",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/contents/.github/workflows/build-packages.yml?ref=v1.0.5",
+        "git": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/git/blobs/a3450ce9ae2f4170127ad7faef40c064ea0183ab",
+        "html": "https://github.com/CHKayanami/OpenWrt-nikki-rs/blob/v1.0.5/.github/workflows/build-packages.yml"
+      },
+      "text": "name: build-packages\n\non:\n  workflow_dispatch:\n\njobs:\n  prepare:\n    name: prepare clash-rs makefile\n    runs-on: ubuntu-latest\n    steps:\n      - name: checkout\n        uses: actions/checkout@v6\n\n      - name: update clash-rs makefile\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n        run: |\n          chmod +x update-clash-rs.sh\n          ./update-clash-rs.sh\n\n      - name: upload clash-rs makefile\n        uses: actions/upload-artifact@v7\n        with:\n          name: clash-rs-makefile\n          path: clash-rs/Makefile\n\n  build:\n    needs: prepare\n    name: ${{ matrix.arch }}-${{ matrix.branch }} build\n    runs-on: ubuntu-latest\n    strategy:\n      fail-fast: false\n      matrix:\n        arch:\n          - arm_cortex-a5_vfpv4\n          - arm_cortex-a7_neon-vfpv4\n          - arm_cortex-a8_vfpv3\n          - arm_cortex-a9\n          - arm_cortex-a9_vfpv3-d16\n          - arm_cortex-a9_neon\n          - arm_cortex-a15_neon-vfpv4\n          - aarch64_cortex-a53\n          - aarch64_cortex-a72\n          - aarch64_cortex-a76\n          - aarch64_generic\n          - riscv64_riscv64\n          - riscv64_generic\n          - i386_pentium4\n          - x86_64\n        branch:\n          - openwrt-24.10\n          - openwrt-25.12\n          - SNAPSHOT\n        exclude:\n          - arch: riscv64_riscv64\n            branch: openwrt-25.12\n          - arch: riscv64_riscv64\n            branch: SNAPSHOT\n          - arch: riscv64_generic\n            branch: openwrt-24.10\n\n    steps:\n      - name: checkout\n        uses: actions/checkout@v6\n\n      - name: download clash-rs makefile\n        uses: actions/download-artifact@v8\n        with:\n          name: clash-rs-makefile\n          path: clash-rs\n\n      - name: build\n        uses: openwrt/gh-action-sdk@main\n        env:\n          ARCH: ${{ matrix.arch }}-${{ matrix.branch }}\n          FEEDNAME: nikki_rs\n          PACKAGES: clash-rs nikki-rs luci-app-nikki-rs\n          NO_REFRESH_CHECK: true\n          V: s\n\n      - name: upload\n        uses: actions/upload-artifact@v7\n        with:\n          name: nikki-rs_${{ matrix.arch }}-${{ matrix.branch }}\n          path: bin/packages/${{ matrix.arch }}/nikki_rs\n"
+    },
+    "error": ""
+  },
+  "momo:install.sh?ref=v1.2.1": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/install.sh?ref=v1.2.1",
+    "status": 0,
+    "data": {
+      "name": "install.sh",
+      "path": "install.sh",
+      "sha": "baf003ebbbd5b6bb7bd8bc1e2344ddedc2c7fa71",
+      "size": 1932,
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/install.sh?ref=v1.2.1",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/blob/v1.2.1/install.sh",
+      "git_url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/git/blobs/baf003ebbbd5b6bb7bd8bc1e2344ddedc2c7fa71",
+      "download_url": "https://raw.githubusercontent.com/nikkinikki-org/OpenWrt-momo/v1.2.1/install.sh",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/install.sh?ref=v1.2.1",
+        "git": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/git/blobs/baf003ebbbd5b6bb7bd8bc1e2344ddedc2c7fa71",
+        "html": "https://github.com/nikkinikki-org/OpenWrt-momo/blob/v1.2.1/install.sh"
+      },
+      "text": "#!/bin/sh\n\n# Momo's installer\n\n# check env\nif [[ ! -x \"/bin/opkg\" && ! -x \"/usr/bin/apk\" || ! -x \"/sbin/fw4\" ]]; then\n\techo \"only supports OpenWrt build with firewall4!\"\n\texit 1\nfi\n\n# include openwrt_release\n. /etc/openwrt_release\n\n# get branch/arch\narch=\"$DISTRIB_ARCH\"\nbranch=\ncase \"$DISTRIB_RELEASE\" in\n\t*\"24.10\"*)\n\t\tbranch=\"openwrt-24.10\"\n\t\t;;\n\t*\"25.12\"*)\n\t\tbranch=\"openwrt-25.12\"\n\t\t;;\n\t\"SNAPSHOT\")\n\t\tbranch=\"SNAPSHOT\"\n\t\t;;\n\t*)\n\t\techo \"unsupported release: $DISTRIB_RELEASE\"\n\t\texit 1\n\t\t;;\nesac\n\n# feed url\nrepository_url=\"https://momomomo.pages.dev\"\nfeed_url=\"$repository_url/$branch/$arch/momo\"\n\nif [ -x \"/bin/opkg\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\topkg update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(opkg list-installed luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# get latest version\n\techo \"get latest version\"\n\twget -O momo.version $feed_url/index.json\n\t# install ipks\n\techo \"install ipks\"\n\teval \"$(jsonfilter -i momo.version -e \"momo_version=@['packages']['momo']\" -e \"luci_app_momo_version=@['packages']['luci-app-momo']\")\"\n\topkg install \"$feed_url/momo_${momo_version}_${arch}.ipk\"\n\topkg install \"$feed_url/luci-app-momo_${luci_app_momo_version}_all.ipk\"\n\tfor lang in $languages; do\n\t\tlang_version=$(jsonfilter -i momo.version -e \"@['packages']['luci-i18n-momo-${lang}']\")\n\t\topkg install \"$feed_url/luci-i18n-momo-${lang}_${lang_version}_all.ipk\"\n\tdone\n\t\n\trm -f momo.version\nelif [ -x \"/usr/bin/apk\" ]; then\n\t# update feeds\n\techo \"update feeds\"\n\tapk update\n\t# get languages\n\techo \"get languages\"\n\tlanguages=$(apk list --installed --manifest luci-i18n-base-* | cut -d ' ' -f 1 | cut -d '-' -f 4-)\n\t# install apks from remote repository\n\techo \"install apks from remote repository\"\n\tapk add --allow-untrusted -X $feed_url/packages.adb momo luci-app-momo\n\tfor lang in $languages; do\n\t\tapk add --allow-untrusted -X $feed_url/packages.adb \"luci-i18n-momo-${lang}\"\n\tdone\nfi\n\necho \"success\" \n"
+    },
+    "error": ""
+  },
+  "momo:.github/workflows/build-packages.yml?ref=v1.2.1": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/.github/workflows/build-packages.yml?ref=v1.2.1",
+    "status": 0,
+    "data": {
+      "name": "build-packages.yml",
+      "path": ".github/workflows/build-packages.yml",
+      "sha": "ad7caed33e374a589c54474a28f22e76f1b2b74a",
+      "size": 1664,
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/.github/workflows/build-packages.yml?ref=v1.2.1",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/blob/v1.2.1/.github/workflows/build-packages.yml",
+      "git_url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/git/blobs/ad7caed33e374a589c54474a28f22e76f1b2b74a",
+      "download_url": "https://raw.githubusercontent.com/nikkinikki-org/OpenWrt-momo/v1.2.1/.github/workflows/build-packages.yml",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/contents/.github/workflows/build-packages.yml?ref=v1.2.1",
+        "git": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/git/blobs/ad7caed33e374a589c54474a28f22e76f1b2b74a",
+        "html": "https://github.com/nikkinikki-org/OpenWrt-momo/blob/v1.2.1/.github/workflows/build-packages.yml"
+      },
+      "text": "name: build-packages\n\non:\n  workflow_dispatch:\n\njobs:\n  build:\n    name: ${{ matrix.arch }}-${{ matrix.branch }} build\n    runs-on: ubuntu-latest\n    strategy:\n      fail-fast: false\n      matrix:\n        arch:\n          - arm_cortex-a5_vfpv4\n          - arm_cortex-a7_neon-vfpv4\n          - arm_cortex-a8_vfpv3\n          - arm_cortex-a9\n          - arm_cortex-a9_vfpv3-d16\n          - arm_cortex-a9_neon\n          - arm_cortex-a15_neon-vfpv4\n          - aarch64_cortex-a53\n          - aarch64_cortex-a72\n          - aarch64_cortex-a76\n          - aarch64_generic\n          - mips_24kc\n          - mips_mips32\n          - mipsel_24kc\n          - mipsel_24kc_24kf\n          - mipsel_74kc\n          - mipsel_mips32\n          - mips64_octeonplus\n          - riscv64_riscv64\n          - riscv64_generic\n          - loongarch64_generic\n          - i386_pentium4\n          - x86_64\n        branch:\n          - openwrt-24.10\n          - openwrt-25.12\n          - SNAPSHOT\n        exclude:\n          - arch: riscv64_riscv64\n            branch: openwrt-25.12\n          - arch: riscv64_riscv64\n            branch: SNAPSHOT\n          - arch: riscv64_generic\n            branch: openwrt-24.10\n\n    steps:\n      - name: checkout\n        uses: actions/checkout@v6\n\n      - name: build\n        uses: openwrt/gh-action-sdk@main\n        env:\n          ARCH: ${{ matrix.arch }}-${{ matrix.branch }}\n          FEEDNAME: momo\n          PACKAGES: luci-app-momo\n          NO_REFRESH_CHECK: true\n\n      - name: upload\n        uses: actions/upload-artifact@v7\n        with:\n          name: momo_${{ matrix.arch }}-${{ matrix.branch }}\n          path: bin/packages/${{ matrix.arch }}/momo\n"
+    },
+    "error": ""
+  },
+  "openclash:luci-app-openclash/Makefile?ref=v0.47.156": {
+    "url": "https://api.github.com/repos/vernesong/OpenClash/contents/luci-app-openclash/Makefile?ref=v0.47.156",
+    "status": 0,
+    "data": {
+      "name": "Makefile",
+      "path": "luci-app-openclash/Makefile",
+      "sha": "5935e15364db3096722a13903f68a871d96092bc",
+      "size": 5071,
+      "url": "https://api.github.com/repos/vernesong/OpenClash/contents/luci-app-openclash/Makefile?ref=v0.47.156",
+      "html_url": "https://github.com/vernesong/OpenClash/blob/v0.47.156/luci-app-openclash/Makefile",
+      "git_url": "https://api.github.com/repos/vernesong/OpenClash/git/blobs/5935e15364db3096722a13903f68a871d96092bc",
+      "download_url": "https://raw.githubusercontent.com/vernesong/OpenClash/v0.47.156/luci-app-openclash/Makefile",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/vernesong/OpenClash/contents/luci-app-openclash/Makefile?ref=v0.47.156",
+        "git": "https://api.github.com/repos/vernesong/OpenClash/git/blobs/5935e15364db3096722a13903f68a871d96092bc",
+        "html": "https://github.com/vernesong/OpenClash/blob/v0.47.156/luci-app-openclash/Makefile"
+      },
+      "text": "include $(TOPDIR)/rules.mk\n\nPKG_NAME:=luci-app-openclash\nPKG_VERSION:=0.47.156\nPKG_MAINTAINER:=vernesong <https://github.com/vernesong/OpenClash>\n\nPKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)\n\ninclude $(INCLUDE_DIR)/package.mk\n\ndefine Package/$(PKG_NAME)/config\n\tconfig PACKAGE_kmod-inet-diag\n\tdefault y if PACKAGE_$(PKG_NAME)\n\n\tconfig PACKAGE_luci-compat\n\tdefault y if PACKAGE_$(PKG_NAME)\n\n\tconfig PACKAGE_kmod-nft-tproxy\n\tdefault y if PACKAGE_firewall4\n\n\tconfig PACKAGE_kmod-ipt-nat\n\tdefault y if ! PACKAGE_firewall4\n\n\tconfig PACKAGE_iptables-mod-tproxy\n\tdefault y if ! PACKAGE_firewall4\n\n\tconfig PACKAGE_iptables-mod-extra\n\tdefault y if ! PACKAGE_firewall4\n\n\tconfig PACKAGE_dnsmasq_full_ipset\n\tdefault y if ! PACKAGE_firewall4\n\n\tconfig PACKAGE_dnsmasq_full_nftset\n\tdefault y if PACKAGE_firewall4\n\n\tconfig PACKAGE_ipset\n\tdefault y if ! PACKAGE_firewall4\nendef\n\ndefine Package/$(PKG_NAME)\n\tCATEGORY:=LuCI\n\tSUBMENU:=3. Applications\n\tTITLE:=LuCI support for clash\n\tPKGARCH:=all\n\tDEPENDS:=+dnsmasq-full +bash +curl +ca-bundle +ip-full \\\n\t+ruby +ruby-yaml +kmod-tun +unzip\n\tMAINTAINER:=vernesong\nendef\n\ndefine Package/$(PKG_NAME)/description\n    A LuCI support for clash\nendef\n\ndefine Build/Prepare\n\t$(CP) $(CURDIR)/root $(PKG_BUILD_DIR)\n\t$(CP) $(CURDIR)/luasrc $(PKG_BUILD_DIR)\n\t$(foreach po,$(wildcard ${CURDIR}/po/zh-cn/*.po), \\\n\t\tpo2lmo $(po) $(PKG_BUILD_DIR)/$(patsubst %.po,%.lmo,$(notdir $(po)));)\n\tchmod 0755 $(PKG_BUILD_DIR)/root/etc/init.d/openclash\n\tchmod -R 0755 $(PKG_BUILD_DIR)/root/usr/share/openclash/\n\texit 0\nendef\n\ndefine Build/Configure\nendef\n\ndefine Build/Compile\nendef\n\ndefine Package/$(PKG_NAME)/conffiles\nendef\n\ndefine Package/$(PKG_NAME)/preinst\n#!/bin/sh\n\tif [ -f \"/etc/config/openclash\" ] && [ ! -f \"/tmp/openclash.bak\" ]; then\n\t\tcp -f \"/etc/config/openclash\" \"/tmp/openclash.bak\" >/dev/null 2>&1\n\t\tcp -rf \"/etc/openclash\" \"/tmp/openclash\" >/dev/null 2>&1\n\t\tcp -rf \"/usr/share/openclash/ui\" \"/tmp/openclash_ui\" >/dev/null 2>&1\n\t\tcp -rf \"/www/luci-static/resources/openclash/pac\" \"/tmp/pac\" >/dev/null 2>&1\n\tfi\n\texit 0\nendef\n\ndefine Package/$(PKG_NAME)/postinst\n#!/bin/sh\n\texit 0\nendef\n\ndefine Package/$(PKG_NAME)/prerm\n#!/bin/sh\n\t[ -n \"$(pidof clash)\" ] && /etc/init.d/openclash stop 2>/dev/null\n\tif [ -f \"/etc/config/openclash\" ] && [ ! -f \"/tmp/openclash.bak\" ]; then\n\t\tcp -f \"/etc/config/openclash\" \"/tmp/openclash.bak\" >/dev/null 2>&1\n\t\tcp -rf \"/etc/openclash\" \"/tmp/openclash\" >/dev/null 2>&1\n\t\tcp -rf \"/usr/share/openclash/ui\" \"/tmp/openclash_ui\" >/dev/null 2>&1\n\t\tcp -rf \"/www/luci-static/resources/openclash/pac\" \"/tmp/pac\" >/dev/null 2>&1\n\tfi\n\texit 0\nendef\n\ndefine Package/$(PKG_NAME)/postrm\n#!/bin/sh\n\tDEFAULT_DNSMASQ_CFGID=\"$$(uci -q show \"dhcp.@dnsmasq[0]\" | awk 'NR==1 {split($0, conf, /[.=]/); print conf[2]}' 2>/dev/null)\"\n\tif [ -f \"/tmp/etc/dnsmasq.conf.$DEFAULT_DNSMASQ_CFGID\" ]; then\n\t   DNSMASQ_CONF_DIR=\"$$(awk -F '=' '/^conf-dir=/ {print $2}' \"/tmp/etc/dnsmasq.conf.$DEFAULT_DNSMASQ_CFGID\" 2>/dev/null)\"\n\telse\n\t   DNSMASQ_CONF_DIR=\"/tmp/dnsmasq.d\"\n\tfi\n\tDNSMASQ_CONF_DIR=$${DNSMASQ_CONF_DIR%*/}\n\trm -rf /etc/openclash >/dev/null 2>&1\n\trm -rf /etc/config/openclash >/dev/null 2>&1\n\trm -rf /tmp/openclash.log >/dev/null 2>&1\n\trm -rf /tmp/openclash_start.log >/dev/null 2>&1\n\trm -rf /tmp/openclash.change >/dev/null 2>&1\n\trm -rf /usr/share/openclash >/dev/null 2>&1\n\trm -rf /tmp/openclash_version_history.json >/dev/null 2>&1\n    rm -rf /tmp/openclash_cdn_info.json >/dev/null 2>&1\n\trm -rf ${DNSMASQ_CONF_DIR}/dnsmasq_openclash_custom_domain.conf >/dev/null 2>&1\n\trm -rf ${DNSMASQ_CONF_DIR}/dnsmasq_openclash_chnroute_pass.conf >/dev/null 2>&1\n\trm -rf ${DNSMASQ_CONF_DIR}/dnsmasq_openclash_chnroute6_pass.conf >/dev/null 2>&1\n\trm -rf /tmp/etc/openclash >/dev/null 2>&1\n\trm -rf /tmp/openclash_announcement >/dev/null 2>&1\n\trm -rf /www/luci-static/resources/openclash >/dev/null 2>&1\n\trm -rf /tmp/oix* >/dev/null 2>&1\n\trm -rf /tmp/openclash_oix_version.json >/dev/null 2>&1\n\trm -rf /tmp/openclash_version_history_* >/dev/null 2>&1\n\trm -rf /tmp/openclash_cdn_info_* >/dev/null 2>&1\n\tsed -i '/OpenClash Append/,/OpenClash Append End/d' \"/usr/lib/lua/luci/model/network.lua\" >/dev/null 2>&1\n\tsed -i '/.*kB maximum content size*/c\\HTTP_MAX_CONTENT      = 1024*100\t\t-- 100 kB maximum content size' /usr/lib/lua/luci/http.lua >/dev/null 2>&1\n\tsed -i '/.*kB maximum content size*/c\\export let HTTP_MAX_CONTENT = 1024*100;\t\t// 100 kB maximum content size' /usr/share/ucode/luci/http.uc >/dev/null 2>&1\n\tuci -q delete firewall.openclash\n\tuci -q commit firewall\n\t[ -f \"/etc/config/ucitrack\" ] && {\n\tuci -q delete ucitrack.@openclash[-1]\n\tuci -q commit ucitrack\n\t}\n\trm -rf /tmp/luci-indexcache /tmp/luci-indexcache.* /var/luci-indexcache /var/luci-indexcache.* >/dev/null 2>&1\n\trm -rf /tmp/luci-modulecache /var/luci-modulecache >/dev/null 2>&1\n\texit 0\nendef\n\ndefine Package/$(PKG_NAME)/install\n\t$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n\n\t$(INSTALL_DATA) $(PKG_BUILD_DIR)/*.*.lmo $(1)/usr/lib/lua/luci/i18n/\n\t$(CP) $(PKG_BUILD_DIR)/root/* $(1)/\n\t$(CP) $(PKG_BUILD_DIR)/luasrc/* $(1)/usr/lib/lua/luci/\nendef\n\n$(eval $(call BuildPackage,$(PKG_NAME)))\n"
+    },
+    "error": ""
+  },
+  "clashbox:AppScope/app.json5?ref=master": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/AppScope/app.json5?ref=master",
+    "status": 0,
+    "data": {
+      "name": "app.json5",
+      "path": "AppScope/app.json5",
+      "sha": "02c377e0af54abd60e991fb37c046b55f460dda5",
+      "size": 213,
+      "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/AppScope/app.json5?ref=master",
+      "html_url": "https://github.com/xiaobaigroup/ClashBox/blob/master/AppScope/app.json5",
+      "git_url": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/02c377e0af54abd60e991fb37c046b55f460dda5",
+      "download_url": "https://raw.githubusercontent.com/xiaobaigroup/ClashBox/master/AppScope/app.json5",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/AppScope/app.json5?ref=master",
+        "git": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/02c377e0af54abd60e991fb37c046b55f460dda5",
+        "html": "https://github.com/xiaobaigroup/ClashBox/blob/master/AppScope/app.json5"
+      },
+      "text": "{\n  \"app\": {\n    \"bundleName\": \"org.xbgroup.clashboxLTS\",\n    \"vendor\": \"example\",\n    \"versionCode\": 1007047,\n    \"versionName\": \"1.7.4\",\n    \"icon\": \"$media:layered_image\",\n    \"label\": \"$string:app_name\"\n  }\n}\n"
+    },
+    "error": ""
+  },
+  "clashbox:entry/build-profile.json5?ref=master": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/entry/build-profile.json5?ref=master",
+    "status": 0,
+    "data": {
+      "name": "build-profile.json5",
+      "path": "entry/build-profile.json5",
+      "sha": "4d611879c7913fb0610c686e2399258ab3a6dad1",
+      "size": 422,
+      "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/entry/build-profile.json5?ref=master",
+      "html_url": "https://github.com/xiaobaigroup/ClashBox/blob/master/entry/build-profile.json5",
+      "git_url": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/4d611879c7913fb0610c686e2399258ab3a6dad1",
+      "download_url": "https://raw.githubusercontent.com/xiaobaigroup/ClashBox/master/entry/build-profile.json5",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/entry/build-profile.json5?ref=master",
+        "git": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/4d611879c7913fb0610c686e2399258ab3a6dad1",
+        "html": "https://github.com/xiaobaigroup/ClashBox/blob/master/entry/build-profile.json5"
+      },
+      "text": "{\n  \"apiType\": \"stageMode\",\n  \"buildOption\": {\n  },\n  \"buildOptionSet\": [\n    {\n      \"name\": \"release\",\n      \"arkOptions\": {\n        \"obfuscation\": {\n          \"ruleOptions\": {\n            \"enable\": false,\n            \"files\": [\n              \"./obfuscation-rules.txt\"\n            ]\n          }\n        }\n      }\n    },\n  ],\n  \"targets\": [\n    {\n      \"name\": \"default\"\n    },\n    {\n      \"name\": \"ohosTest\",\n    }\n  ]\n}"
+    },
+    "error": ""
+  },
+  "clashbox:README.md?ref=1.7.4": {
+    "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/README.md?ref=1.7.4",
+    "status": 0,
+    "data": {
+      "name": "README.md",
+      "path": "README.md",
+      "sha": "b98c15e8d2bc046eddb9bb26a8a28db6ad8a1b11",
+      "size": 2974,
+      "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/README.md?ref=1.7.4",
+      "html_url": "https://github.com/xiaobaigroup/ClashBox/blob/1.7.4/README.md",
+      "git_url": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/b98c15e8d2bc046eddb9bb26a8a28db6ad8a1b11",
+      "download_url": "https://raw.githubusercontent.com/xiaobaigroup/ClashBox/1.7.4/README.md",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/xiaobaigroup/ClashBox/contents/README.md?ref=1.7.4",
+        "git": "https://api.github.com/repos/xiaobaigroup/ClashBox/git/blobs/b98c15e8d2bc046eddb9bb26a8a28db6ad8a1b11",
+        "html": "https://github.com/xiaobaigroup/ClashBox/blob/1.7.4/README.md"
+      },
+      "text": "[English](/README_en.md)\n\n# ClashBox\n[![Downloads](https://img.shields.io/github/downloads/xiaobaigroup/ClashBox/total?style=flat-square&logo=github)](https://github.com/xiaobaigroup/ClashBox/releases/)[![Last Version](https://img.shields.io/github/release/xiaobaigroup/ClashBox/all.svg?style=flat-square)](https://github.com/xiaobaigroup/ClashBox/releases/)[![License](https://img.shields.io/github/license/xiaobaigroup/ClashBox?style=flat-square)](LICENSE)\n\n[![Channel](https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram)](https://t.me/+aYziOyq-ZhUyNjRl)\n\n本项目的大部分代码均已开源，若要查看本项目的开源代码，请前往[Master分支](https://github.com/xiaobaigroup/ClashBox/tree/master)。\n#### 介绍\n\nClashBox是首个基于Navigation框架的HarmonyOS NEXT平台的代理软件，使用改版的[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)内核。\n使用前请仔细阅读免责声明和常见问题。\n\n#### 软件特色\n\n- 💻原生开发：前端部分使用鸿蒙原生开发语言ArkTS开发，原生开发更流畅，动效更丰富;\n- ✨炫酷界面：使用HarmonyOS NEXT原生设计风格，采用类[Surfboard](https://github.com/getsurfboard/surfboard)的UI排版设计，支持深色模式、模糊效果等，使用体验上更进一步；\n- 📱多端适配：UI方面对手机、平板、折叠屏、鸿蒙电脑甚至PuraX外屏*都进行了适配；\n- 🚀稳定内核：采用广受好评的[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)内核，功能基本对齐[Mihomo(ClashMeta)](https://github.com/MetaCubeX/mihomo)，稳定可靠；\n- 🔄核心恢复：由于HarmonyOS NEXT的后台调度机制尚不成熟，软件可能存在后台进程被系统关闭的情况，因此ClashBox内置了核心恢复功能，系统杀进程后将自动恢复核心进程（开启“后台运行-模拟画中画”后将自动启用本功能）。\n\n*PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单之前暂不可用。\n\n#### 食用方法\n\n您可以使用[Auto-installer](https://github.com/likuai2010/auto-installer/)或[DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/)进行安装。\n\n> [!IMPORTANT]\n> 华为的签名服务器屏蔽了非中国大陆的IP地址，若要在非中国大陆的国家/地区为HarmonyOS NEXT侧载软件，请使用代理等方式使用中国大陆的IP地址。\n\n> [!NOTE]\n> 在HarmonyOS NEXT使用自签名的方式进行侧载的App默认只有14天的有效期，进行[开发者实名认证](https://developer.huawei.com/consumer/cn/verified/enrollment)后即可将有效期提升至180天。\n\n#### 赞助&联系我们\n\n我们已入驻爱发电，支持我们项目的朋友可以前往爱发电赞助我们：\nhttps://afdian.com/a/xiaobaigroup\n\n感谢您的支持~\n\n官方Telegram群组：  https://t.me/+FdIuCMoMY-EyNThl\n\n官方Telegram频道：  https://t.me/+aYziOyq-ZhUyNjRl\n"
+    },
+    "error": ""
+  },
+  "passwall:luci-app-passwall/Makefile?ref=26.9.16-1": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/contents/luci-app-passwall/Makefile?ref=26.9.16-1",
+    "status": 0,
+    "data": {
+      "name": "Makefile",
+      "path": "luci-app-passwall/Makefile",
+      "sha": "6511abc124a16c43812dbdee9508cef3ea692ce1",
+      "size": 5527,
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/contents/luci-app-passwall/Makefile?ref=26.9.16-1",
+      "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall/blob/26.9.16-1/luci-app-passwall/Makefile",
+      "git_url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/git/blobs/6511abc124a16c43812dbdee9508cef3ea692ce1",
+      "download_url": "https://raw.githubusercontent.com/Openwrt-Passwall/openwrt-passwall/26.9.16-1/luci-app-passwall/Makefile",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/contents/luci-app-passwall/Makefile?ref=26.9.16-1",
+        "git": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/git/blobs/6511abc124a16c43812dbdee9508cef3ea692ce1",
+        "html": "https://github.com/Openwrt-Passwall/openwrt-passwall/blob/26.9.16-1/luci-app-passwall/Makefile"
+      },
+      "text": "# Copyright (C) 2018-2020 L-WRT Team\n# Copyright (C) 2021-2025 xiaorouji\n# Copyright (C) 2026 Openwrt-Passwall Organization\n#\n# This is free software, licensed under the GNU General Public License v3.\n\ninclude $(TOPDIR)/rules.mk\n\nPKG_NAME:=luci-app-passwall\nPKG_VERSION:=26.9.16\nPKG_RELEASE:=1\nPKG_PO_VERSION:=$(PKG_VERSION)\n\nPKG_CONFIG_DEPENDS:= \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_Iptables_Transparent_Proxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_Nftables_Transparent_Proxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Geoview \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Hysteria \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_NaiveProxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Client \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Server \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Client \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Server \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadow_TLS \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Simple_Obfs \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_SingBox \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Geodata \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Plugin \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Xray \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Xray_Plugin\n\nLUCI_TITLE:=LuCI support for PassWall\nLUCI_PKGARCH:=all\nLUCI_DEPENDS:=+coreutils +coreutils-base64 +coreutils-nohup +coreutils-timeout +curl \\\n\t+chinadns-ng +dns2socks +dnsmasq-full +ip-full \\\n\t+libuci-lua +lua +luci-compat +luci-lib-jsonc \\\n\t+microsocks +resolveip +tcping +lyaml\n\ndefine Package/$(PKG_NAME)/config\nmenu \"Configuration\"\n\tdepends on PACKAGE_$(PKG_NAME)\n\nconfig PACKAGE_$(PKG_NAME)_Iptables_Transparent_Proxy\n\tbool \"Iptables Transparent Proxy\"\n\tselect PACKAGE_ipset\n\tselect PACKAGE_ipt2socks\n\tselect PACKAGE_iptables\n\tselect PACKAGE_iptables-zz-legacy\n\tselect PACKAGE_iptables-mod-conntrack-extra\n\tselect PACKAGE_iptables-mod-iprange\n\tselect PACKAGE_iptables-mod-socket\n\tselect PACKAGE_iptables-mod-tproxy\n\tselect PACKAGE_kmod-ipt-nat\n\tdefault y if ! PACKAGE_firewall4\n\nconfig PACKAGE_$(PKG_NAME)_Nftables_Transparent_Proxy\n\tbool \"Nftables Transparent Proxy\"\n\tselect PACKAGE_ipt2socks\n\tselect PACKAGE_nftables\n\tselect PACKAGE_kmod-nft-socket\n\tselect PACKAGE_kmod-nft-tproxy\n\tselect PACKAGE_kmod-nft-nat\n\tselect PACKAGE_kmod-nf-reject\n\tselect PACKAGE_kmod-nf-reject6\n\tdefault y if PACKAGE_firewall4\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Geoview\n\tbool \"Include Geoview\"\n\tselect PACKAGE_geoview\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy\n\tbool \"Include Haproxy\"\n\tselect PACKAGE_haproxy\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Hysteria\n\tbool \"Include Hysteria\"\n\tselect PACKAGE_hysteria\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_NaiveProxy\n\tbool \"Include NaiveProxy\"\n\tdepends on !(arc||armeb||loongarch64||mips||mips64||powerpc||TARGET_gemini)\n\tselect PACKAGE_naiveproxy\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Client\n\tbool \"Include Shadowsocks Rust Client\"\n\tdepends on !i386\n\tselect PACKAGE_shadowsocks-rust-sslocal\n\tdefault y if aarch64||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Server\n\tbool \"Include Shadowsocks Rust Server\"\n\tdepends on !i386\n\tselect PACKAGE_shadowsocks-rust-ssserver\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Client\n\tbool \"Include ShadowsocksR Libev Client\"\n\tselect PACKAGE_shadowsocksr-libev-ssr-local\n\tselect PACKAGE_shadowsocksr-libev-ssr-redir\n\tdefault y\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Server\n\tbool \"Include ShadowsocksR Libev Server\"\n\tselect PACKAGE_shadowsocksr-libev-ssr-server\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Shadow_TLS\n\tbool \"Include Shadow-TLS\"\n\tselect PACKAGE_shadow-tls\n\tdepends on aarch64||arm||x86_64\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Simple_Obfs\n\tbool \"Include Simple-Obfs (Shadowsocks Plugin)\"\n\tselect PACKAGE_simple-obfs-client\n\tdefault y\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_SingBox\n\tbool \"Include Sing-Box\"\n\tselect PACKAGE_sing-box\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Geodata\n\tbool \"Include V2ray_Geodata\"\n\tselect PACKAGE_v2ray-geoip\n\tselect PACKAGE_v2ray-geosite\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Plugin\n\tbool \"Include V2ray-Plugin (Shadowsocks Plugin)\"\n\tselect PACKAGE_v2ray-plugin\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Xray\n\tbool \"Include Xray\"\n\tselect PACKAGE_xray-core\n\tselect PACKAGE_unzip\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Xray_Plugin\n\tbool \"Include Xray-Plugin (Shadowsocks Plugin)\"\n\tselect PACKAGE_xray-plugin\n\tdefault n\n\nendmenu\nendef\n\ndefine Package/$(PKG_NAME)/conffiles\n/etc/config/passwall\n/etc/config/passwall_server\n/usr/share/passwall/rules/direct_host\n/usr/share/passwall/rules/direct_ip\n/usr/share/passwall/rules/proxy_host\n/usr/share/passwall/rules/proxy_ip\n/usr/share/passwall/rules/block_host\n/usr/share/passwall/rules/block_ip\n/usr/share/passwall/rules/lanlist_ipv4\n/usr/share/passwall/rules/lanlist_ipv6\n/usr/share/passwall/rules/domains_excluded\nendef\n\ndefine Package/$(PKG_NAME)/postinst\n#!/bin/sh\nrm -f $${IPKG_INSTROOT}/usr/share/passwall/rules/*.nft\nrm -rf $${IPKG_INSTROOT}/tmp/etc/passwall_tmp\nexit 0\nendef\n\ndefine Package/$(PKG_NAME)/postrm\n#!/bin/sh\nrm -f $${IPKG_INSTROOT}/usr/share/passwall/rules/*.nft\nrm -rf $${IPKG_INSTROOT}/tmp/etc/passwall_tmp\nexit 0\nendef\n\ninclude $(TOPDIR)/feeds/luci/luci.mk\n\n# call BuildPackage - OpenWrt buildroot signature\n"
+    },
+    "error": ""
+  },
+  "passwall2:luci-app-passwall2/Makefile?ref=26.9.16-1": {
+    "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/contents/luci-app-passwall2/Makefile?ref=26.9.16-1",
+    "status": 0,
+    "data": {
+      "name": "Makefile",
+      "path": "luci-app-passwall2/Makefile",
+      "sha": "3deb5b6630151ff779dfe29f2f4292112d744433",
+      "size": 3959,
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/contents/luci-app-passwall2/Makefile?ref=26.9.16-1",
+      "html_url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/blob/26.9.16-1/luci-app-passwall2/Makefile",
+      "git_url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/git/blobs/3deb5b6630151ff779dfe29f2f4292112d744433",
+      "download_url": "https://raw.githubusercontent.com/Openwrt-Passwall/openwrt-passwall2/26.9.16-1/luci-app-passwall2/Makefile",
+      "type": "file",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/contents/luci-app-passwall2/Makefile?ref=26.9.16-1",
+        "git": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/git/blobs/3deb5b6630151ff779dfe29f2f4292112d744433",
+        "html": "https://github.com/Openwrt-Passwall/openwrt-passwall2/blob/26.9.16-1/luci-app-passwall2/Makefile"
+      },
+      "text": "# Copyright (C) 2022-2025 xiaorouji\n# Copyright (C) 2026 Openwrt-Passwall Organization\n#\n# This is free software, licensed under the GNU General Public License v3.\n\ninclude $(TOPDIR)/rules.mk\n\nPKG_NAME:=luci-app-passwall2\nPKG_VERSION:=26.9.16\nPKG_RELEASE:=1\nPKG_PO_VERSION:=$(PKG_VERSION)\n\nPKG_CONFIG_DEPENDS:= \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_Iptables_Transparent_Proxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_Nftables_Transparent_Proxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Client \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Server \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Client \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Server \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Simple_Obfs \\\n\tCONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Plugin\n\nLUCI_TITLE:=LuCI support for PassWall 2\nLUCI_PKGARCH:=all\nLUCI_DEPENDS:=+coreutils +coreutils-base64 +coreutils-nohup +coreutils-timeout +curl \\\n\t+ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +lyaml +resolveip +tcping \\\n\t+geoview +v2ray-geoip +v2ray-geosite \\\n\t+unzip\n\ndefine Package/$(PKG_NAME)/config\nmenu \"Configuration\"\n\tdepends on PACKAGE_$(PKG_NAME)\n\nchoice\n\tprompt \"Basic Core\"\n\tdefault PACKAGE_$(PKG_NAME)_Basic_Core_All if aarch64||arm||i386||x86_64\n\tdefault PACKAGE_$(PKG_NAME)_Basic_Core_Xray\n\n\tconfig PACKAGE_$(PKG_NAME)_Basic_Core_Xray\n\t\ttristate \"Xray\"\n\t\tselect PACKAGE_xray-core\n\n\tconfig PACKAGE_$(PKG_NAME)_Basic_Core_SingBox\n\t\ttristate \"SingBox\"\n\t\tselect PACKAGE_sing-box\n\n\tconfig PACKAGE_$(PKG_NAME)_Basic_Core_All\n\t\tbool \"All\"\n\t\tselect PACKAGE_xray-core\n\t\tselect PACKAGE_sing-box\nendchoice\n\nconfig PACKAGE_$(PKG_NAME)_Iptables_Transparent_Proxy\n\tbool \"Iptables Transparent Proxy\"\n\tselect PACKAGE_chinadns-ng\n\tselect PACKAGE_dnsmasq-full\n\tselect PACKAGE_dnsmasq_full_ipset\n\tselect PACKAGE_ipset\n\tselect PACKAGE_iptables\n\tselect PACKAGE_iptables-nft\n\tselect PACKAGE_iptables-zz-legacy\n\tselect PACKAGE_iptables-mod-conntrack-extra\n\tselect PACKAGE_iptables-mod-iprange\n\tselect PACKAGE_iptables-mod-socket\n\tselect PACKAGE_iptables-mod-tproxy\n\tselect PACKAGE_ip6tables-mod-nat\n\tselect PACKAGE_kmod-ipt-nat\n\tdefault y if ! PACKAGE_firewall4\n\nconfig PACKAGE_$(PKG_NAME)_Nftables_Transparent_Proxy\n\tbool \"Nftables Transparent Proxy\"\n\tselect PACKAGE_chinadns-ng\n\tselect PACKAGE_dnsmasq-full\n\tselect PACKAGE_dnsmasq_full_nftset\n\tselect PACKAGE_nftables\n\tselect PACKAGE_kmod-nft-socket\n\tselect PACKAGE_kmod-nft-tproxy\n\tselect PACKAGE_kmod-nft-nat\n\tdefault y if PACKAGE_firewall4\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy\n\tbool \"Include Haproxy\"\n\tselect PACKAGE_haproxy\n\tdefault y if aarch64||arm||i386||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Client\n\tbool \"Include Shadowsocks Rust Client\"\n\tdepends on !i386\n\tselect PACKAGE_shadowsocks-rust-sslocal\n\tdefault y if aarch64||x86_64\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust_Server\n\tbool \"Include Shadowsocks Rust Server\"\n\tdepends on !i386\n\tselect PACKAGE_shadowsocks-rust-ssserver\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Client\n\tbool \"Include ShadowsocksR Libev Client\"\n\tselect PACKAGE_shadowsocksr-libev-ssr-local\n\tselect PACKAGE_shadowsocksr-libev-ssr-redir\n\tdefault y\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Server\n\tbool \"Include ShadowsocksR Libev Server\"\n\tselect PACKAGE_shadowsocksr-libev-ssr-server\n\tdefault n\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_Simple_Obfs\n\tbool \"Include Simple-Obfs (Shadowsocks Plugin)\"\n\tselect PACKAGE_simple-obfs-client\n\tdefault y\n\nconfig PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Plugin\n\tbool \"Include V2ray-Plugin (Shadowsocks Plugin)\"\n\tselect PACKAGE_v2ray-plugin\n\tdefault y if aarch64||arm||i386||x86_64\n\nendmenu\nendef\n\ndefine Package/$(PKG_NAME)/conffiles\n/etc/config/passwall2\n/etc/config/passwall2_server\n/usr/share/passwall2/direct_ip\n/usr/share/passwall2/domains_excluded\nendef\n\ninclude $(TOPDIR)/feeds/luci/luci.mk\n\n# call BuildPackage - OpenWrt buildroot signature\n"
+    },
+    "error": ""
+  }
+}

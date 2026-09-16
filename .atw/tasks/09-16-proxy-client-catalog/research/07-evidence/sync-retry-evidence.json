@@ -1,0 +1,330 @@
+{
+  "now": "2026-09-16T16:07:59.298Z",
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/daeuniverse/daed/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/daed/releases/310125465/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    }
+  ],
+  "checks": {
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm": "valid",
+    "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst": "valid"
+  },
+  "errors": [],
+  "automatic": [
+    {
+      "appId": "sing-box-windows",
+      "platform": "windows",
+      "version": "v2.3.1",
+      "downloads": 6
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "macos",
+      "version": "v2.3.1",
+      "downloads": 2
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "linux",
+      "version": "v2.3.1",
+      "downloads": 3
+    },
+    {
+      "appId": "xrayui",
+      "platform": "windows",
+      "version": "1.18",
+      "downloads": 4
+    },
+    {
+      "appId": "swell-proxy",
+      "platform": "windows",
+      "version": "v3.3.6",
+      "downloads": 2
+    },
+    {
+      "appId": "nekoray",
+      "platform": "windows",
+      "version": "4.0.1",
+      "downloads": 1
+    },
+    {
+      "appId": "nekoray",
+      "platform": "linux",
+      "version": "4.0.1",
+      "downloads": 3
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "windows",
+      "version": "v0.2.2",
+      "downloads": 1
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "macos",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "linux",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "windows",
+      "version": "v2.4.20",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "linux",
+      "version": "v2.4.20",
+      "downloads": 26
+    },
+    {
+      "appId": "dae",
+      "platform": "linux",
+      "version": "v2.0.0",
+      "downloads": 73
+    },
+    {
+      "appId": "daed",
+      "platform": "linux",
+      "version": "v1.27.0",
+      "downloads": 28
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "linux",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "openwrt",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "asus",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "clashbox",
+      "platform": "harmonyos",
+      "version": "1.7.4",
+      "downloads": 1
+    },
+    {
+      "appId": "nekobox-for-harmony",
+      "platform": "harmonyos",
+      "version": "v1.9.3",
+      "downloads": 1
+    },
+    {
+      "appId": "ownbox",
+      "platform": "android",
+      "version": "v2.7.9",
+      "downloads": 4
+    },
+    {
+      "appId": "openclash",
+      "platform": "openwrt",
+      "version": "v0.47.156",
+      "downloads": 2
+    },
+    {
+      "appId": "passwall",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 3
+    },
+    {
+      "appId": "passwall2",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 2
+    },
+    {
+      "appId": "momo",
+      "platform": "openwrt",
+      "version": "v1.2.1",
+      "downloads": 43
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "id": 389838975,
+  "tag_name": "v2.4.20",
+  "name": "v2.4.20",
+  "html_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20",
+  "published_at": "2026-09-16T10:47:58Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567760116,
+      "name": "installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760111,
+      "name": "installer_archlinux_arm64_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760112,
+      "name": "installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760114,
+      "name": "installer_archlinux_armv7_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760115,
+      "name": "installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760138,
+      "name": "installer_archlinux_loongarch64_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760140,
+      "name": "installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760154,
+      "name": "installer_archlinux_riscv64_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760168,
+      "name": "installer_archlinux_x64_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760207,
+      "name": "installer_archlinux_x64_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760217,
+      "name": "installer_archlinux_x86_2.4.20.pkg.tar.zst",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760220,
+      "name": "installer_archlinux_x86_2.4.20.pkg.tar.zst.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760227,
+      "name": "installer_debian_arm64_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760229,
+      "name": "installer_debian_arm64_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760237,
+      "name": "installer_debian_armv7_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760243,
+      "name": "installer_debian_armv7_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760244,
+      "name": "installer_debian_loongarch64_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760259,
+      "name": "installer_debian_loongarch64_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760284,
+      "name": "installer_debian_mips32le_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760293,
+      "name": "installer_debian_mips32le_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760273,
+      "name": "installer_debian_mips32_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760283,
+      "name": "installer_debian_mips32_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760305,
+      "name": "installer_debian_mips64le_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760312,
+      "name": "installer_debian_mips64le_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760294,
+      "name": "installer_debian_mips64_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760301,
+      "name": "installer_debian_mips64_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760320,
+      "name": "installer_debian_riscv64_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760325,
+      "name": "installer_debian_riscv64_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760324,
+      "name": "installer_debian_x64_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760331,
+      "name": "installer_debian_x64_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760333,
+      "name": "installer_debian_x86_2.4.20.deb",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760338,
+      "name": "installer_debian_x86_2.4.20.deb.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760341,
+      "name": "installer_redhat_arm64_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760349,
+      "name": "installer_redhat_arm64_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760354,
+      "name": "installer_redhat_armv7_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760372,
+      "name": "installer_redhat_armv7_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760366,
+      "name": "installer_redhat_loongarch64_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760381,
+      "name": "installer_redhat_loongarch64_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760392,
+      "name": "installer_redhat_mips32le_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760401,
+      "name": "installer_redhat_mips32le_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760382,
+      "name": "installer_redhat_mips32_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760389,
+      "name": "installer_redhat_mips32_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760421,
+      "name": "installer_redhat_mips64le_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760427,
+      "name": "installer_redhat_mips64le_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760407,
+      "name": "installer_redhat_mips64_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760413,
+      "name": "installer_redhat_mips64_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760428,
+      "name": "installer_redhat_riscv64_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760434,
+      "name": "installer_redhat_riscv64_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760443,
+      "name": "installer_redhat_x64_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760448,
+      "name": "installer_redhat_x64_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760454,
+      "name": "installer_redhat_x86_2.4.20.rpm",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760460,
+      "name": "installer_redhat_x86_2.4.20.rpm.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760464,
+      "name": "installer_windows_inno_arm64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760465,
+      "name": "installer_windows_inno_arm64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760481,
+      "name": "installer_windows_inno_x64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760479,
+      "name": "installer_windows_inno_x64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760487,
+      "name": "v2raya_core_darwin_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760488,
+      "name": "v2raya_core_darwin_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760494,
+      "name": "v2raya_core_darwin_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760499,
+      "name": "v2raya_core_darwin_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_darwin_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760506,
+      "name": "v2raya_core_freebsd_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760508,
+      "name": "v2raya_core_freebsd_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760510,
+      "name": "v2raya_core_freebsd_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760518,
+      "name": "v2raya_core_freebsd_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_freebsd_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760520,
+      "name": "v2raya_core_linux_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760527,
+      "name": "v2raya_core_linux_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760525,
+      "name": "v2raya_core_linux_armv7_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_armv7_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760543,
+      "name": "v2raya_core_linux_armv7_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_armv7_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760544,
+      "name": "v2raya_core_linux_loongarch64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_loongarch64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760562,
+      "name": "v2raya_core_linux_loongarch64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_loongarch64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760571,
+      "name": "v2raya_core_linux_mips32le_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32le_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760576,
+      "name": "v2raya_core_linux_mips32le_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32le_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760561,
+      "name": "v2raya_core_linux_mips32_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760568,
+      "name": "v2raya_core_linux_mips32_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips32_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760589,
+      "name": "v2raya_core_linux_mips64le_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64le_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760594,
+      "name": "v2raya_core_linux_mips64le_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64le_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760577,
+      "name": "v2raya_core_linux_mips64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760580,
+      "name": "v2raya_core_linux_mips64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_mips64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760608,
+      "name": "v2raya_core_linux_riscv64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_riscv64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760613,
+      "name": "v2raya_core_linux_riscv64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_riscv64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760616,
+      "name": "v2raya_core_linux_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760627,
+      "name": "v2raya_core_linux_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760630,
+      "name": "v2raya_core_linux_x86_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x86_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760637,
+      "name": "v2raya_core_linux_x86_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_linux_x86_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760649,
+      "name": "v2raya_core_openbsd_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760651,
+      "name": "v2raya_core_openbsd_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760654,
+      "name": "v2raya_core_openbsd_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760663,
+      "name": "v2raya_core_openbsd_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_openbsd_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760665,
+      "name": "v2raya_core_windows_arm64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_arm64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760667,
+      "name": "v2raya_core_windows_arm64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_arm64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760672,
+      "name": "v2raya_core_windows_x64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_x64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760679,
+      "name": "v2raya_core_windows_x64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_core_windows_x64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760694,
+      "name": "v2raya_darwin_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760696,
+      "name": "v2raya_darwin_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760703,
+      "name": "v2raya_darwin_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760716,
+      "name": "v2raya_darwin_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_darwin_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760717,
+      "name": "v2raya_freebsd_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760720,
+      "name": "v2raya_freebsd_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760721,
+      "name": "v2raya_freebsd_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760725,
+      "name": "v2raya_freebsd_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_freebsd_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760729,
+      "name": "v2raya_linux_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760735,
+      "name": "v2raya_linux_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760734,
+      "name": "v2raya_linux_armv7_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_armv7_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760747,
+      "name": "v2raya_linux_armv7_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_armv7_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760752,
+      "name": "v2raya_linux_loongarch64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_loongarch64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760754,
+      "name": "v2raya_linux_loongarch64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_loongarch64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760772,
+      "name": "v2raya_linux_mips32le_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32le_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760779,
+      "name": "v2raya_linux_mips32le_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32le_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760767,
+      "name": "v2raya_linux_mips32_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760770,
+      "name": "v2raya_linux_mips32_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips32_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760786,
+      "name": "v2raya_linux_mips64le_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64le_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760797,
+      "name": "v2raya_linux_mips64le_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64le_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760780,
+      "name": "v2raya_linux_mips64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760783,
+      "name": "v2raya_linux_mips64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_mips64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760801,
+      "name": "v2raya_linux_riscv64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_riscv64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760804,
+      "name": "v2raya_linux_riscv64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_riscv64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760808,
+      "name": "v2raya_linux_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760824,
+      "name": "v2raya_linux_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760825,
+      "name": "v2raya_linux_x86_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x86_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760830,
+      "name": "v2raya_linux_x86_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_linux_x86_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760834,
+      "name": "v2raya_openbsd_arm64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_arm64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760845,
+      "name": "v2raya_openbsd_arm64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_arm64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760846,
+      "name": "v2raya_openbsd_x64_2.4.20",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_x64_2.4.20",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760850,
+      "name": "v2raya_openbsd_x64_2.4.20.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_openbsd_x64_2.4.20.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760857,
+      "name": "v2raya_windows_arm64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_arm64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760859,
+      "name": "v2raya_windows_arm64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_arm64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760864,
+      "name": "v2raya_windows_x64_2.4.20.exe",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_x64_2.4.20.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760871,
+      "name": "v2raya_windows_x64_2.4.20.exe.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/v2raya_windows_x64_2.4.20.exe.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760872,
+      "name": "web.tar.gz",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760883,
+      "name": "web.tar.gz.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.tar.gz.sha256.txt",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760890,
+      "name": "web.zip",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567760891,
+      "name": "web.zip.sha256.txt",
+      "browser_download_url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/web.zip.sha256.txt",
+      "state": "uploaded"
+    }
+  ]
+}

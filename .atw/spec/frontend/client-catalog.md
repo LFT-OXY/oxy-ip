@@ -241,3 +241,37 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 - `client-catalog-batch-3.test.mjs` 独立验证25项平台／内核和例外；`client-batch-3-sources.test.mjs` 验证18条GitHub与6条Apple来源、包计数及排除理由、版本隔离、渠道、架构、正式性与失败保留。离线 CLI 枚举该批真实夹具；真实 HTTP 失败保留人工页，不以离线测试的成功冒充生产核验。
 
 - 补充研究中的移动商店信息仅作伴侣身份排除证据，不自动复制到桌面应用的 `sources` 或 `note`；OneBox Mac的成功GitHub快照不得残留“商店兼容／版本未核实”说明，独立回归须同时检查来源列表与状态说明。
+
+## 13. 第四批：历史不可获取状态与正式软件源
+
+### 13.1 范围
+
+已获PRD专项授权的历史条目可以没有官方下载入口；不能编造失效网址冒作官方入口。其余应用仍遵循原下载契约。第四批全部来源复用既有解析器，不新建调度。
+
+### 13.2 签名
+
+`appSchema.code`、`codeLabels`增加`unknown`（待核实）；`releaseSchema`增加可选`unavailable: true`，`fallback`在字段层面可选，由记录级约束决定是否必填。`selectedDownload()`仍在空列表返回undefined，详情既有条件渲染不显示下载按钮。
+
+### 13.3 契约
+
+- `unavailable=true`仅用于获准历史记录：manual、空downloads、无fallback/version/publishedAt/lastCheckedAt，必须有note。历史收录来源明确非官方，不作下载中转；未知代码状态不是closed，内核/开发者空数组。
+- 普通记录仍必须有非空downloads及官方fallback；直链必须绑定版本和架构。恢复官方可获取状态前须人工重核并移除unavailable，不由同步器自动解除历史例外。
+- ImmortalWrt软件源包按软件源自身版本、架构和发行分支记录。dae/daed的Linux新版本不覆盖OpenWrt软件源版本；HomeProxy的LuCI包noarch不等于运行依赖支持全部CPU。
+- `note`只保存长期条件；本轮临时网络/资产失败写研究或错误结果，不把失败文案继承到下次成功快照。NekoBox上传中starter资产仍保守拒绝。
+- daed用应用标签渠道排除较新的dae-lsp组件；Nikki系列不将含Alpha核心的合集包装成纯正式包。
+
+### 13.4 校验与错误
+
+历史状态携带下载、fallback、版本或时间、或标automatic时拒绝；普通状态缺下载/fallback也拒绝。空获取选项不影响搜索、排序及详情直达。图标占位仅按PRD明确名单执行。
+
+### 13.5 场景
+
+正常：Clash .NET、lvory显示历史来源、未知值与不可获取说明，无下载按钮。基础：Hey按授权仅提供官方源码，并说明自行构建与签名。错误：用参考页填官方下载按钮、把unknown写成closed、或把OpenWrt版本套成Linux版本。
+
+### 13.6 检查
+
+`client-catalog-batch-4.test.mjs`核对独立累计108项、全部平台/内核、九个指定占位、历史状态变异拒绝及ImmortalWrt独立快照；`client-batch-4-sources.test.mjs`核对17源、排除资产互斥/完整集合/等量错换负例、starter失败后恢复和渠道隔离。浏览器验证历史页面无下载、图片正常加载、未知条件筛选及中英文/实际主题/键盘返回。
+
+### 13.7 易错对照
+
+错误：测试只断言“被选入或有排除理由”，排除资产被误选也会通过。正确：独立期望同时检查完整集合与排除集合不相交；可进一步按平台冻结文件名和架构，发现跨平台等量互换。

@@ -1,0 +1,17 @@
+{
+  "id": 389594821,
+  "tag_name": "v1.9.3",
+  "name": "NekoBox 1.9.3",
+  "html_url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases/tag/v1.9.3",
+  "published_at": "2026-09-16T02:18:12Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 566972892,
+      "name": "NekoBox-1.9.3-unsigned.hap",
+      "browser_download_url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases/download/v1.9.3/NekoBox-1.9.3-unsigned.hap",
+      "state": "uploaded"
+    }
+  ]
+}

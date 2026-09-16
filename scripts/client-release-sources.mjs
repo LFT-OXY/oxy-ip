@@ -514,6 +514,162 @@ export const githubSources = [
       linux: /^clashtui-linux-(amd64|arm64)-v{version}\.(gz)$/,
     },
   },
+  {
+    appId: "sing-box-windows",
+    repo: "xinggaoya/sing-box-windows",
+    architectures: { windows: "x64" },
+    platforms: {
+      windows:
+        /^sing-box-windows(?=(?:_\d+\.\d+\.\d+_|-)(arm64|x64)|-portable\.zip$)(?:_{version}_(?:arm64|x64)(?:-setup|_en-US)|(?:-arm64)?-portable)\.(exe|msi|zip)$/,
+      macos:
+        /^sing-box-windows_{version}_(aarch64|x64)-macos-(?:arm64|intel)\.(dmg)$/,
+      linux:
+        /^sing-box-windows[-_]{version}(?=(?:_|-1\.)(amd64|x86_64)\.)(?:_amd64|-1\.x86_64)\.(deb|AppImage|rpm)$/,
+    },
+  },
+  {
+    appId: "nekobox-for-pc",
+    repo: "qr243vbi/nekobox",
+    architectureAliases: {
+      32: "x86",
+      64: "x64",
+      arm64: "arm64",
+      amd64: "amd64",
+      386: "386",
+      arm: "arm",
+      aarch64: "aarch64",
+      x86_64: "x86_64",
+      i686: "i686",
+      armhf: "armhf",
+    },
+    platforms: {
+      windows:
+        /^nekobox-{version}-windows-?(32|64|arm64)(?:-installer)?\.(exe|zip)$/,
+      linux:
+        /^nekobox-{version}-(?:linux-)?(arm64|amd64|386|arm|aarch64|x86_64|i686|armhf)(?:-linux)?\.(tar\.gz|AppImage)$/,
+    },
+  },
+  {
+    appId: "xrayui",
+    repo: "PhoenixNil/XrayUI-dev",
+    platforms: { windows: /^XrayUI-win-(arm64|x64)(?:-wasdk)?\.(zip)$/ },
+  },
+  {
+    appId: "swell-proxy",
+    repo: "yaog6700-bit/Swell-Proxy",
+    platforms: { windows: /^Swell-win-(arm64|x64)\.(zip)$/ },
+  },
+  {
+    appId: "nekoray",
+    repo: "MatsuriDayo/nekoray",
+    releaseTag: /^4\.0\.1$/,
+    architectureAliases: { 64: "x64", x64: "x64" },
+    platforms: {
+      windows: /^nekoray-{version}-\d{4}-\d{2}-\d{2}-windows(64)\.(zip)$/,
+      linux:
+        /^nekoray-{version}-\d{4}-\d{2}-\d{2}-(?:debian-|linux-?)(x64|64)\.(deb|AppImage|zip)$/,
+    },
+  },
+  {
+    appId: "sudoku-desktop",
+    repo: "SUDOKU-ASCII/sudoku-desktop",
+    platforms: {
+      windows: /^sudoku4x4_v{version}_windows-(amd64)\.(exe)$/,
+      macos: /^sudoku4x4_v{version}_darwin-(amd64|arm64)\.(dmg)$/,
+      linux: /^sudoku4x4_v{version}_linux-(amd64|arm64)\.(tar\.gz)$/,
+    },
+  },
+  {
+    appId: "v2raya",
+    repo: "v2rayA/v2rayA",
+    platforms: {
+      windows: /^installer_windows_inno_(arm64|x64)_{version}\.(exe)$/,
+      linux:
+        /^installer_(?:archlinux|debian|redhat)_(arm64|armv7|loongarch64|riscv64|x64|x86|mips32le|mips32|mips64le|mips64)_{version}\.(pkg\.tar\.zst|deb|rpm)$/,
+    },
+  },
+  {
+    appId: "dae",
+    repo: "daeuniverse/dae",
+    platforms: {
+      linux:
+        /^dae-linux-(arm64|armv5|armv6|armv7|loongarch64|mips32|mips32le|mips64|mips64le|powerpc64|powerpc64le|riscv64|s390x|x86_32|x86_64|x86_64_v2_sse|x86_64_v3_avx2)\.(deb|pkg\.tar\.zst|rpm|tar\.xz|zip)$/,
+    },
+  },
+  {
+    appId: "daed",
+    repo: "daeuniverse/daed",
+    releaseTag: /^v\d+\.\d+\.\d+$/,
+    platforms: {
+      linux:
+        /^(?:installer-)?daed-linux-(arm64|mips32|mips32le|mips64|mips64le|riscv64|x86_32|x86_64|x86_64_v2_sse|x86_64_v3_avx2)\.(zip|deb|pkg\.tar\.zst|rpm)$/,
+    },
+  },
+  {
+    appId: "nekobox-for-harmony",
+    repo: "xiaoli8571/NekoBox4Harmony",
+    architectures: { harmonyos: "arm64-v8a" },
+    platforms: { harmonyos: /^NekoBox-{version}-unsigned()\.(hap)$/ },
+  },
+  {
+    appId: "ownbox",
+    repo: "Own716/OwnBoxForAndroid",
+    platforms: {
+      android:
+        /^OwnBox-{version}-(arm64-v8a|armeabi-v7a|x86|x86_64)-release\.(apk)$/,
+    },
+  },
+  {
+    appId: "openclash",
+    repo: "vernesong/OpenClash",
+    architectures: { openwrt: "noarch" },
+    platforms: {
+      openwrt: /^luci-app-openclash[-_]{version}(?:_all)?()\.(apk|ipk)$/,
+    },
+  },
+  {
+    appId: "passwall",
+    repo: "Openwrt-Passwall/openwrt-passwall",
+    architectures: { openwrt: "noarch" },
+    platforms: {
+      openwrt:
+        /^(?:22\.03-|23\.05-24\.10|25\.12\+)_luci-app-passwall[-_]\d+\.\d+\.\d+(?:-r\d+)?(?:_all)?()\.(apk|ipk)$/,
+    },
+  },
+  {
+    appId: "passwall2",
+    repo: "Openwrt-Passwall/openwrt-passwall2",
+    architectures: { openwrt: "noarch" },
+    platforms: {
+      openwrt:
+        /^luci-app-passwall2[-_]\d+\.\d+\.\d+-r\d+(?:_all)?()\.(apk|ipk)$/,
+    },
+  },
+  {
+    appId: "momo",
+    repo: "nikkinikki-org/OpenWrt-momo",
+    platforms: {
+      openwrt:
+        /^momo_(aarch64_cortex-a53|aarch64_cortex-a72|aarch64_cortex-a76|aarch64_generic|arm_cortex-a15_neon-vfpv4|arm_cortex-a5_vfpv4|arm_cortex-a7_neon-vfpv4|arm_cortex-a8_vfpv3|arm_cortex-a9|arm_cortex-a9_neon|arm_cortex-a9_vfpv3-d16|i386_pentium4|loongarch64_generic|mips64_octeonplus|mipsel_24kc|mipsel_24kc_24kf|mipsel_74kc|mipsel_mips32|mips_24kc|mips_mips32|riscv64_generic|riscv64_riscv64|x86_64)-openwrt-(?:24\.10|25\.12)\.(tar\.gz)$/,
+    },
+  },
+  {
+    appId: "clashbox",
+    repo: "xiaobaigroup/ClashBox",
+    releaseTag: /^1\.7\.4$/,
+    architectures: { harmonyos: "arm64-v8a" },
+    platforms: { harmonyos: /^ClashBox_LTS_V1_unsigned()\.(hap)$/ },
+  },
+  {
+    appId: "shellcrash",
+    repo: "juewuy/ShellCrash",
+    architectures: { linux: "noarch", openwrt: "noarch", asus: "noarch" },
+    platforms: {
+      linux: /^ShellCrash()\.(tar\.gz)$/,
+      openwrt: /^ShellCrash()\.(tar\.gz)$/,
+      asus: /^ShellCrash()\.(tar\.gz)$/,
+    },
+  },
 ];
 
 // 每个来源只核验明确的平台；iOS lookup 不代表 Mac 版本。

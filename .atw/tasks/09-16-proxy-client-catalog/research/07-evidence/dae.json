@@ -1,0 +1,1928 @@
+{
+  "baseline": {
+    "order": 94,
+    "id": "dae",
+    "name": "dae",
+    "reference_url": "https://huarun.win/apps/dae",
+    "observed_official_entry": "https://github.com/daeuniverse/dae",
+    "ticket": "07"
+  },
+  "repo": "daeuniverse/dae",
+  "metadata": {
+    "url": "https://api.github.com/repos/daeuniverse/dae",
+    "status": 0,
+    "data": {
+      "full_name": "daeuniverse/dae",
+      "html_url": "https://github.com/daeuniverse/dae",
+      "description": "eBPF-based Linux high-performance transparent proxy solution.",
+      "homepage": "",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/daeuniverse/dae/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/daeuniverse/dae/blob/main/README.md",
+      "sha": "5e9af0681c5256f5762bd0b620df06481bed34fe",
+      "text": "# dae\n\n<img src=\"https://github.com/daeuniverse/dae/blob/main/logo.png\" border=\"0\" width=\"25%\">\n\n<p align=\"left\">\n    <img src=\"https://github.com/daeuniverse/dae/actions/workflows/build.yml/badge.svg\" alt=\"Build\"/>\n    <img src=\"https://custom-icon-badges.herokuapp.com/github/license/daeuniverse/dae?logo=law&color=orange\" alt=\"License\"/>\n    <img src=\"https://custom-icon-badges.herokuapp.com/github/v/release/daeuniverse/dae?logo=rocket\" alt=\"version\">\n    <img src=\"https://custom-icon-badges.herokuapp.com/github/issues-pr-closed/daeuniverse/dae?color=purple&logo=git-pull-request&logoColor=white\"/>\n    <img src=\"https://custom-icon-badges.herokuapp.com/github/last-commit/daeuniverse/dae?logo=history&logoColor=white\" alt=\"lastcommit\"/>\n</p>\n\n**_dae_**, means goose, is a high-performance transparent proxy solution.\n\nTo enhance traffic split performance as much as possible, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.\n\nAs a successor of [v2rayA](https://github.com/v2rayA/v2rayA), dae abandoned v2ray-core to meet the needs of users more freely.\n\n## Features\n\n- [x] Implement `Real Direct` traffic split (need ipforward on) to achieve [high performance](https://docs.google.com/spreadsheets/d/1UaWU6nNho7edBNjNqC8dfGXLlW0-cm84MM7sH6Gp7UE/edit?usp=sharing).\n- [x] Support to split traffic by process name in local host.\n- [x] Support to split traffic by MAC address in LAN.\n- [x] Support to split traffic with invert match rules.\n- [x] Support to automatically switch nodes according to policy. That is to say, support to automatically test independent TCP/UDP/IPv4/IPv6 latencies, and then use the best nodes for corresponding traffic according to user-defined policy.\n- [x] Support advanced DNS resolution process.\n- [x] Support full-cone NAT for shadowsocks, trojan(-go) and socks5 (no test).\n- [x] Support various trending proxy protocols, seen in [proxy-protocols.md](./docs/en/proxy-protocols.md).\n\n## Getting Started\n\nPlease refer to [Quick Start Guide](./docs/en/README.md) to start using `dae` right away!\n\n## Notes\n\n1. If you setup dae and also a shadowsocks server (or any UDP servers) on the same machine in public network, such as a VPS, don't forget to add `l4proto(udp) && sport(your server ports) -> must_direct` rule for your UDP server port. Because states of UDP are hard to maintain, all outgoing UDP packets will potentially be proxied (depends on your routing), including traffic to your client. This behaviour is not what we want to see. `must_direct` makes all traffic from this port including DNS traffic direct.\n1. If users in mainland China find that the first screen time is very long when they visit some domestic websites for the first time, please check whether you use foreign DNS to handle some domestic domain in DNS routing. Sometimes this is hard to spot. For example, `ocsp.digicert.cn` is included in `geosite:geolocation-!cn` unexpectedly, which will cause some tls handshakes to take a long time. Be careful to use such domain sets in DNS routing.\n\n## How it works\n\nSee [How it works](./docs/en/how-it-works.md).\n\n## TODO\n\n- [ ] Automatically check dns upstream and source loop (whether upstream is also a client of us) and remind the user to add sip rule.\n- [ ] MACv2 extension extraction.\n- [ ] Log to userspace.\n- [ ] Protocol-oriented node features detecting (or filter), such as full-cone (especially VMess and VLESS).\n- [ ] Add quick-start guide\n- [ ] ...\n\n## Contributors\n\nSpecial thanks goes to all [contributors](https://github.com/daeuniverse/dae/graphs/contributors). If you would like to contribute, please see the [instructions](./docs/en/development/contribute.md). Also, it is recommended following the [commit-msg-guide](./docs/en/development/commit-msg-guide.md).\n\n## License\n\n[AGPL-3.0 (C) daeuniverse](https://github.com/daeuniverse/dae/blob/main/LICENSE)\n\n## Stargazers over time\n\n[![Stargazers over time](https://starchart.cc/daeuniverse/dae.svg)](https://starchart.cc/daeuniverse/dae)\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/daeuniverse/dae/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 351226780,
+        "tag_name": "v2.0.0",
+        "name": "v2.0.0",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v2.0.0",
+        "published_at": "2026-07-08T23:38:13Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "> Release date: 2026/07/08\r\n\r\n#### Features\r\n\r\n- feat: improve log timestamp format with ForceFormatting in [#1010](https://github.com/daeuniverse/dae/pull/1010) by (@itoywh)\r\n\r\n#### Bug Fixes\r\n\r\n- fix(ebpf): fix \"bad CO-RE relocation\" on GCC 15 by disabling unnecessary UAPI CO-RE in [#986](https://github.com/daeuniverse/dae/pull/986) by (@KongQBin)\r\n- fix(docker): update Go version to 1.26 in Dockerfile in [#989](https://github.com/daeuniverse/dae/pull/989) by (@KagurazakaNyaa)\r\n- fix(bpf): restore cmdline parsing for accurate process name in [#991](https://github.com/daeuniverse/dae/pull/991) by (@TnZzZHlp)\r\n- fix(bpf): fallback to bpf_get_current_comm when bpf_get_current_task is unavailable in [#995](https://github.com/daeuniverse/dae/pull/995) by (@QiuSimons)\r\n- fix: carry ipv4 udp fallback, outbound, trace and conn-state follow-ups in [#980](https://github.com/daeuniverse/dae/pull/980) by (@olicesx)\r\n\r\n#### Others\r\n\r\n- ci/docs/optimize/feature: Enhance control plane features and improve CI workflows by olicesx in [#970](https://github.com/daeuniverse/dae/pull/970) by (@MarksonHon)\r\n- ci(release): draft release v1.1.0 in [#976](https://github.com/daeuniverse/dae/pull/976) by (@sumire88)\r\n- ci(release): draft release v2.0.0rc1 in [#978](https://github.com/daeuniverse/dae/pull/978) by (@dae-prow)\r\n- docs: add official repository installation guide for Arch Linux in [#981](https://github.com/daeuniverse/dae/pull/981) by (@Integral-Tech)\r\n- ci: build for GORISCV64 variants in [#994](https://github.com/daeuniverse/dae/pull/994) by (@Xeonacid)\r\n- docs: fix stale contribution instructions in [#1002](https://github.com/daeuniverse/dae/pull/1002) by (@immanuwell)\r\n\r\n**Example Config**: https://github.com/daeuniverse/dae/blob/v2.0.0/example.dae\r\n\r\n**Full Changelog**: https://github.com/daeuniverse/dae/compare/v1.1.0...v2.0.0",
+        "assets": [
+          {
+            "id": 470792761,
+            "name": "dae-full-src.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792762,
+            "name": "dae-full-src.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792738,
+            "name": "dae-full-src.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792733,
+            "name": "dae-full-src.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792763,
+            "name": "dae-linux-arm64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792729,
+            "name": "dae-linux-arm64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792760,
+            "name": "dae-linux-arm64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792757,
+            "name": "dae-linux-arm64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792765,
+            "name": "dae-linux-arm64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792764,
+            "name": "dae-linux-arm64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792735,
+            "name": "dae-linux-arm64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792753,
+            "name": "dae-linux-arm64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792768,
+            "name": "dae-linux-arm64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792766,
+            "name": "dae-linux-arm64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792770,
+            "name": "dae-linux-armv5.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792745,
+            "name": "dae-linux-armv5.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792749,
+            "name": "dae-linux-armv5.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792713,
+            "name": "dae-linux-armv5.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792752,
+            "name": "dae-linux-armv6.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792746,
+            "name": "dae-linux-armv6.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792754,
+            "name": "dae-linux-armv6.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792751,
+            "name": "dae-linux-armv6.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792732,
+            "name": "dae-linux-armv7.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792720,
+            "name": "dae-linux-armv7.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792756,
+            "name": "dae-linux-armv7.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792750,
+            "name": "dae-linux-armv7.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792727,
+            "name": "dae-linux-armv7.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792712,
+            "name": "dae-linux-armv7.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792730,
+            "name": "dae-linux-armv7.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792711,
+            "name": "dae-linux-armv7.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792759,
+            "name": "dae-linux-armv7.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792747,
+            "name": "dae-linux-armv7.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792723,
+            "name": "dae-linux-loongarch64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792722,
+            "name": "dae-linux-loongarch64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792758,
+            "name": "dae-linux-loongarch64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792742,
+            "name": "dae-linux-loongarch64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792728,
+            "name": "dae-linux-loongarch64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792705,
+            "name": "dae-linux-loongarch64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792748,
+            "name": "dae-linux-loongarch64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792702,
+            "name": "dae-linux-loongarch64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792691,
+            "name": "dae-linux-loongarch64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792689,
+            "name": "dae-linux-loongarch64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792744,
+            "name": "dae-linux-mips32.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792687,
+            "name": "dae-linux-mips32.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792721,
+            "name": "dae-linux-mips32.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792743,
+            "name": "dae-linux-mips32.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792707,
+            "name": "dae-linux-mips32.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792698,
+            "name": "dae-linux-mips32.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792726,
+            "name": "dae-linux-mips32.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792716,
+            "name": "dae-linux-mips32.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792767,
+            "name": "dae-linux-mips32le.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792652,
+            "name": "dae-linux-mips32le.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792672,
+            "name": "dae-linux-mips32le.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792643,
+            "name": "dae-linux-mips32le.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792693,
+            "name": "dae-linux-mips32le.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792669,
+            "name": "dae-linux-mips32le.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792667,
+            "name": "dae-linux-mips32le.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792651,
+            "name": "dae-linux-mips32le.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792674,
+            "name": "dae-linux-mips64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792630,
+            "name": "dae-linux-mips64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792739,
+            "name": "dae-linux-mips64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792636,
+            "name": "dae-linux-mips64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792703,
+            "name": "dae-linux-mips64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792645,
+            "name": "dae-linux-mips64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792695,
+            "name": "dae-linux-mips64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792634,
+            "name": "dae-linux-mips64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792686,
+            "name": "dae-linux-mips64le.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792635,
+            "name": "dae-linux-mips64le.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792671,
+            "name": "dae-linux-mips64le.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792642,
+            "name": "dae-linux-mips64le.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792701,
+            "name": "dae-linux-mips64le.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792663,
+            "name": "dae-linux-mips64le.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792654,
+            "name": "dae-linux-mips64le.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792640,
+            "name": "dae-linux-mips64le.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792659,
+            "name": "dae-linux-powerpc64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792680,
+            "name": "dae-linux-powerpc64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792741,
+            "name": "dae-linux-powerpc64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792696,
+            "name": "dae-linux-powerpc64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792646,
+            "name": "dae-linux-powerpc64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792675,
+            "name": "dae-linux-powerpc64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792678,
+            "name": "dae-linux-powerpc64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792662,
+            "name": "dae-linux-powerpc64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792656,
+            "name": "dae-linux-powerpc64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792699,
+            "name": "dae-linux-powerpc64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792710,
+            "name": "dae-linux-powerpc64le.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792736,
+            "name": "dae-linux-powerpc64le.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792692,
+            "name": "dae-linux-powerpc64le.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792644,
+            "name": "dae-linux-powerpc64le.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792668,
+            "name": "dae-linux-powerpc64le.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792650,
+            "name": "dae-linux-powerpc64le.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792658,
+            "name": "dae-linux-powerpc64le.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792653,
+            "name": "dae-linux-powerpc64le.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792681,
+            "name": "dae-linux-powerpc64le.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792629,
+            "name": "dae-linux-powerpc64le.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792677,
+            "name": "dae-linux-riscv64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792631,
+            "name": "dae-linux-riscv64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792704,
+            "name": "dae-linux-riscv64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792637,
+            "name": "dae-linux-riscv64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792709,
+            "name": "dae-linux-riscv64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792649,
+            "name": "dae-linux-riscv64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792670,
+            "name": "dae-linux-riscv64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792697,
+            "name": "dae-linux-riscv64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792683,
+            "name": "dae-linux-riscv64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792661,
+            "name": "dae-linux-riscv64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792685,
+            "name": "dae-linux-s390x.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792665,
+            "name": "dae-linux-s390x.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792673,
+            "name": "dae-linux-s390x.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792628,
+            "name": "dae-linux-s390x.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792688,
+            "name": "dae-linux-s390x.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792657,
+            "name": "dae-linux-s390x.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792715,
+            "name": "dae-linux-s390x.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792639,
+            "name": "dae-linux-s390x.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792684,
+            "name": "dae-linux-x86_32.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792619,
+            "name": "dae-linux-x86_32.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792626,
+            "name": "dae-linux-x86_32.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792606,
+            "name": "dae-linux-x86_32.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792624,
+            "name": "dae-linux-x86_32.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792614,
+            "name": "dae-linux-x86_32.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792679,
+            "name": "dae-linux-x86_32.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792613,
+            "name": "dae-linux-x86_32.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792664,
+            "name": "dae-linux-x86_64.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792608,
+            "name": "dae-linux-x86_64.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792700,
+            "name": "dae-linux-x86_64.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792633,
+            "name": "dae-linux-x86_64.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792620,
+            "name": "dae-linux-x86_64.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792641,
+            "name": "dae-linux-x86_64.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792655,
+            "name": "dae-linux-x86_64.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792618,
+            "name": "dae-linux-x86_64.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792690,
+            "name": "dae-linux-x86_64.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792638,
+            "name": "dae-linux-x86_64.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792737,
+            "name": "dae-linux-x86_64_v2_sse.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792648,
+            "name": "dae-linux-x86_64_v2_sse.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792622,
+            "name": "dae-linux-x86_64_v2_sse.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792607,
+            "name": "dae-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792694,
+            "name": "dae-linux-x86_64_v2_sse.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792632,
+            "name": "dae-linux-x86_64_v2_sse.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792676,
+            "name": "dae-linux-x86_64_v2_sse.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792647,
+            "name": "dae-linux-x86_64_v2_sse.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792666,
+            "name": "dae-linux-x86_64_v2_sse.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792612,
+            "name": "dae-linux-x86_64_v2_sse.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792682,
+            "name": "dae-linux-x86_64_v3_avx2.deb",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792623,
+            "name": "dae-linux-x86_64_v3_avx2.deb.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792616,
+            "name": "dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792617,
+            "name": "dae-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792706,
+            "name": "dae-linux-x86_64_v3_avx2.rpm",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792611,
+            "name": "dae-linux-x86_64_v3_avx2.rpm.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792615,
+            "name": "dae-linux-x86_64_v3_avx2.tar.xz",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792610,
+            "name": "dae-linux-x86_64_v3_avx2.tar.xz.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz.dgst",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792621,
+            "name": "dae-linux-x86_64_v3_avx2.zip",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip",
+            "state": "uploaded"
+          },
+          {
+            "id": 470792609,
+            "name": "dae-linux-x86_64_v3_avx2.zip.dgst",
+            "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip.dgst",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 351226780,
+        "tag_name": "v2.0.0",
+        "name": "v2.0.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-07-08T23:38:13Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v2.0.0"
+      },
+      {
+        "id": 312500248,
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-23T00:40:13Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v1.1.0"
+      },
+      {
+        "id": 259375458,
+        "tag_name": "v1.1.0rc1",
+        "name": "v1.1.0rc1",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2025-11-03T20:57:54Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v1.1.0rc1"
+      },
+      {
+        "id": 222099785,
+        "tag_name": "v1.0.0",
+        "name": "v1.0.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-05-30T14:58:40Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v1.0.0"
+      },
+      {
+        "id": 191450398,
+        "tag_name": "v0.9.0",
+        "name": "v0.9.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-18T14:11:44Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.9.0"
+      },
+      {
+        "id": 179564413,
+        "tag_name": "v0.8.0",
+        "name": "v0.8.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-11T15:49:32Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.8.0"
+      },
+      {
+        "id": 177346648,
+        "tag_name": "v0.7.4",
+        "name": "v0.7.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-27T17:55:31Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.7.4"
+      },
+      {
+        "id": 177332373,
+        "tag_name": "v0.7.3",
+        "name": "v0.7.3 (Deprecated)",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-27T16:54:32Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.7.3"
+      },
+      {
+        "id": 177314951,
+        "tag_name": "v0.7.2",
+        "name": "v0.7.2 (Deprecated)",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-27T15:21:47Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.7.2"
+      },
+      {
+        "id": 171184184,
+        "tag_name": "v0.7.1",
+        "name": "v0.7.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-21T03:19:27Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.7.1"
+      },
+      {
+        "id": 166426632,
+        "tag_name": "v0.7.0",
+        "name": "v0.7.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-22T01:04:36Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.7.0"
+      },
+      {
+        "id": 159897329,
+        "tag_name": "v0.6.0",
+        "name": "v0.6.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-06-11T13:50:23Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.6.0"
+      },
+      {
+        "id": 138182357,
+        "tag_name": "v0.5.1",
+        "name": "v0.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-01-23T16:19:31Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.5.1"
+      },
+      {
+        "id": 135803338,
+        "tag_name": "v0.5.0",
+        "name": "v0.5.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-01-04T10:46:37Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.5.0"
+      },
+      {
+        "id": 135098003,
+        "tag_name": "v0.4.0",
+        "name": "v0.4.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-12-26T11:56:34Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.4.0"
+      },
+      {
+        "id": 119704501,
+        "tag_name": "v0.3.0",
+        "name": "v0.3.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-09-02T16:13:51Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.3.0"
+      },
+      {
+        "id": 117055530,
+        "tag_name": "v0.2.4",
+        "name": "v0.2.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-13T14:26:22Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.2.4"
+      },
+      {
+        "id": 114832529,
+        "tag_name": "v0.2.3",
+        "name": "v0.2.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-08-02T14:35:11Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.2.3"
+      },
+      {
+        "id": 113332671,
+        "tag_name": "v0.2.2",
+        "name": "v0.2.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-07-24T14:29:22Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.2.2"
+      },
+      {
+        "id": 112509670,
+        "tag_name": "v0.2.1",
+        "name": "v0.2.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-07-17T14:35:21Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.2.1"
+      },
+      {
+        "id": 110781778,
+        "tag_name": "v0.2.0",
+        "name": "v0.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-07-02T14:53:26Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.2.0"
+      },
+      {
+        "id": 107384205,
+        "tag_name": "v0.1.10.p1",
+        "name": "v0.1.10.p1 (patch 1)",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-06-05T16:08:06Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.10.p1"
+      },
+      {
+        "id": 106854186,
+        "tag_name": "v0.1.10",
+        "name": "v0.1.10",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-06-04T02:17:40Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.10"
+      },
+      {
+        "id": 102904301,
+        "tag_name": "v0.1.9patch1",
+        "name": "v0.1.9-patch.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-05-14T14:37:30Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.9patch1"
+      },
+      {
+        "id": 102350998,
+        "tag_name": "v0.1.9",
+        "name": "v0.1.9",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-05-09T14:05:25Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.9"
+      },
+      {
+        "id": 101395126,
+        "tag_name": "v0.1.8",
+        "name": "v0.1.8",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-04-30T04:51:10Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.8"
+      },
+      {
+        "id": 99173071,
+        "tag_name": "v0.1.7",
+        "name": "v0.1.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-04-12T16:26:53Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.7"
+      },
+      {
+        "id": 98651703,
+        "tag_name": "v0.1.6",
+        "name": "v0.1.6",
+        "prerelease": true,
+        "draft": false,
+        "published_at": "2023-04-09T12:43:26Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.6"
+      },
+      {
+        "id": 97297460,
+        "tag_name": "v0.1.5",
+        "name": "v0.1.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-29T10:15:21Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.5"
+      },
+      {
+        "id": 96897103,
+        "tag_name": "v0.1.4",
+        "name": "v0.1.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-25T09:30:59Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.4"
+      },
+      {
+        "id": 96753137,
+        "tag_name": "v0.1.3",
+        "name": "v0.1.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-24T05:44:34Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.3"
+      },
+      {
+        "id": 96488666,
+        "tag_name": "v0.1.2",
+        "name": "v0.1.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-22T13:11:49Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.2"
+      },
+      {
+        "id": 95908961,
+        "tag_name": "v0.1.1",
+        "name": "v0.1.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-16T20:44:13Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.1"
+      },
+      {
+        "id": 95504051,
+        "tag_name": "v0.1.0",
+        "name": "Goose out of shell",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2023-03-14T07:24:59Z",
+        "html_url": "https://github.com/daeuniverse/dae/releases/tag/v0.1.0"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/daeuniverse/dae/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "1ec85feddc721088ecdda73015bd78f652926b39",
+      "truncated": false,
+      "paths": [
+        ".autocorrectrc",
+        ".clang-format",
+        ".dockerignore",
+        ".editorconfig",
+        ".github",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug-report.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/enhancement.yml",
+        ".github/ISSUE_TEMPLATE/feature-request.yml",
+        ".github/ISSUE_TEMPLATE/proposal.yml",
+        ".github/ISSUE_TEMPLATE/support-request.yml",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/workflows",
+        ".github/workflows/bpf-test.yml",
+        ".github/workflows/build.yml",
+        ".github/workflows/check-docs.yml",
+        ".github/workflows/daily-build.yml",
+        ".github/workflows/docker.yml",
+        ".github/workflows/ebpf-audit.yml",
+        ".github/workflows/generate-changelogs.yml",
+        ".github/workflows/go-test.yml",
+        ".github/workflows/kernel-test.yml",
+        ".github/workflows/lint.yml",
+        ".github/workflows/pr-build.yml",
+        ".github/workflows/prerelease.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/seed-build.yml",
+        ".github/workflows/sync-docs.yml",
+        ".github/workflows/trigger-downstream-flake-sync.yml",
+        ".gitignore",
+        ".gitmodules",
+        ".gitmodules.d.mk",
+        ".golangci.yml",
+        ".markdownlint-cli2.jsonc",
+        ".pre-commit-config.yaml",
+        "CHANGELOGS.md",
+        "CODEOWNERS",
+        "Dockerfile",
+        "LICENSE",
+        "Makefile",
+        "README.md",
+        "cmd",
+        "cmd/cmd.go",
+        "cmd/completion.go",
+        "cmd/dae-ebpf-audit",
+        "cmd/dae-ebpf-audit/main.go",
+        "cmd/export.go",
+        "cmd/generators",
+        "cmd/generators/gen_ebpf_sync",
+        "cmd/generators/gen_ebpf_sync/main.go",
+        "cmd/honk.go",
+        "cmd/internal",
+        "cmd/internal/su.go",
+        "cmd/listener_netns_test.go",
+        "cmd/reload.go",
+        "cmd/reload_dns_fingerprint_test.go",
+        "cmd/reload_log_level_test.go",
+        "cmd/reload_manager.go",
+        "cmd/reload_progress_test.go",
+        "cmd/routing_validate_test.go",
+        "cmd/run.go",
+        "cmd/run_config.go",
+        "cmd/run_controlplane.go",
+        "cmd/run_controlplane_log_contract_test.go",
+        "cmd/run_memory_limit_test.go",
+        "cmd/run_network_wait.go",
+        "cmd/run_network_wait_test.go",
+        "cmd/run_reload.go",
+        "cmd/run_reload_dns.go",
+        "cmd/run_reload_dns_test.go",
+        "cmd/run_reload_rollback_test.go",
+        "cmd/run_reload_worker.go",
+        "cmd/run_reload_worker_test.go",
+        "cmd/run_serve.go",
+        "cmd/run_serve_exit_test.go",
+        "cmd/run_serve_test.go",
+        "cmd/run_shutdown_test.go",
+        "cmd/run_test_helpers_test.go",
+        "cmd/runner.go",
+        "cmd/runtime_supervisor.go",
+        "cmd/runtime_supervisor_fuzz_test.go",
+        "cmd/suspend.go",
+        "cmd/sysdump.go",
+        "cmd/trace.go",
+        "cmd/validate.go",
+        "cmd/validate_rules_test.go",
+        "common",
+        "common/assets",
+        "common/assets/assets.go",
+        "common/assets/assets_test.go",
+        "common/bitlist",
+        "common/bitlist/bitlist.go",
+        "common/bitlist/bitlist_test.go",
+        "common/consts",
+        "common/consts/app.go",
+        "common/consts/control.go",
+        "common/consts/dialer.go",
+        "common/consts/dialer_test.go",
+        "common/consts/dns.go",
+        "common/consts/ebpf.go",
+        "common/consts/ebpf_generated.go",
+        "common/consts/ebpf_sync_spec.json",
+        "common/consts/ebpf_test.go",
+        "common/consts/net.go",
+        "common/consts/reload.go",
+        "common/consts/routing.go",
+        "common/errors",
+        "common/errors/errors.go",
+        "common/errors/errors_udp_test.go",
+        "common/json",
+        "common/json/fuzzy_decoder.go",
+        "common/netutils",
+        "common/netutils/dns.go",
+        "common/netutils/dns_test.go",
+        "common/netutils/dnsconfig_unix.go",
+        "common/netutils/ip46.go",
+        "common/netutils/ip46_test.go",
+        "common/netutils/netproxy_udp.go",
+        "common/netutils/system_dns_resolver_test.go",
+        "common/netutils/url.go",
+        "common/subscription",
+        "common/subscription/subscription.go",
+        "common/subscription/subscription_cache_test.go",
+        "common/subscription/subscription_test.go",
+        "common/utils.go",
+        "common/utils_test.go",
+        "component",
+        "component/daedns",
+        "component/daedns/client.go",
+        "component/daedns/doq_fin_test.go",
+        "component/daedns/http_client_reuse_test.go",
+        "component/daedns/router.go",
+        "component/daedns/udp_question_echo_test.go",
+        "component/dns",
+        "component/dns/dns.go",
+        "component/dns/fallback_contract_test.go",
+        "component/dns/function_parser.go",
+        "component/dns/function_parser_test.go",
+        "component/dns/request_routing.go",
+        "component/dns/request_routing_bounds_test.go",
+        "component/dns/request_rule_split.go",
+        "component/dns/request_rule_split_test.go",
+        "component/dns/response_routing.go",
+        "component/dns/routing_program.go",
+        "component/dns/routing_program_test.go",
+        "component/dns/routing_validate.go",
+        "component/dns/routing_validate_test.go",
+        "component/dns/upstream.go",
+        "component/dnstransport",
+        "component/dnstransport/generation.go",
+        "component/dnstransport/http.go",
+        "component/dnstransport/http_timeout_test.go",
+        "component/dnstransport/owned_conn.go",
+        "component/dnstransport/owned_conn_http3_test.go",
+        "component/dnstransport/owned_conn_test.go",
+        "component/dnstransport/wire.go",
+        "component/interface_manager.go",
+        "component/interface_manager_test.go",
+        "component/outbound",
+        "component/outbound/dialer",
+        "component/outbound/dialer/alive_dialer_set.go",
+        "component/outbound/dialer/alive_dialer_set_best_change_log_test.go",
+        "component/outbound/dialer/alive_dialer_set_print_test.go",
+        "component/outbound/dialer/alive_dialer_set_test.go",
+        "component/outbound/dialer/alive_ordering_test.go",
+        "component/outbound/dialer/annotation.go",
+        "component/outbound/dialer/block.go",
+        "component/outbound/dialer/check_behavior_test.go",
+        "component/outbound/dialer/connectivity_check.go",
+        "component/outbound/dialer/connectivity_check_borrowed_udp_test.go",
+        "component/outbound/dialer/default_network_dialer.go",
+        "component/outbound/dialer/dialer.go",
+        "component/outbound/dialer/direct.go",
+        "component/outbound/dialer/health_domain.go",
+        "component/outbound/dialer/latencies_n.go",
+        "component/outbound/dialer/latency_probe.go",
+        "component/outbound/dialer/proxy_failure_promotion_log_test.go",
+        "component/outbound/dialer/recovery_state.go",
+        "component/outbound/dialer/recovery_test_helpers_test.go",
+        "component/outbound/dialer/register.go",
+        "component/outbound/dialer/register_lifecycle_test.go",
+        "component/outbound/dialer/register_test.go",
+        "component/outbound/dialer/runtime_dependencies_test.go",
+        "component/outbound/dialer/sockopt.go",
+        "component/outbound/dialer/sticky_cache.go",
+        "component/outbound/dialer/transport_cache_scope.go",
+        "component/outbound/dialer/utils.go",
+        "component/outbound/dialer_group.go",
+        "component/outbound/dialer_group_test.go",
+        "component/outbound/dialer_selection_policy.go",
+        "component/outbound/dialer_selection_policy_test.go",
+        "component/outbound/filter.go",
+        "component/outbound/filter_log_test.go",
+        "component/outbound/outbound.go",
+        "component/routing",
+        "component/routing/domain_matcher.go",
+        "component/routing/domain_matcher",
+        "component/routing/domain_matcher/ahocorasick_slimtrie.go",
+        "component/routing/domain_matcher/ahocorasick_slimtrie_test.go",
+        "component/routing/domain_matcher/reference_matcher_test.go",
+        "component/routing/domain_matcher/skipped_domain_log_test.go",
+        "component/routing/domain_matcher/thp_bench_test.go",
+        "component/routing/function_parser.go",
+        "component/routing/function_parser_test.go",
+        "component/routing/ir.go",
+        "component/routing/matcher_builder.go",
+        "component/routing/normalize.go",
+        "component/routing/normalize_test.go",
+        "component/routing/optimizer.go",
+        "component/routing/optimizer_contract_test.go",
+        "component/routing/optimizer_identity_test.go",
+        "component/routing/policy_hash.go",
+        "component/routing/policy_identity.go",
+        "component/routing/sniff_punt.go",
+        "component/routing/sniff_punt_test.go",
+        "component/sniffing",
+        "component/sniffing/benchmark_test.go",
+        "component/sniffing/conn_sniffer.go",
+        "component/sniffing/conn_sniffer_test.go",
+        "component/sniffing/http.go",
+        "component/sniffing/http_fuzz_test.go",
+        "component/sniffing/internal",
+        "component/sniffing/internal/quicutils",
+        "component/sniffing/internal/quicutils/binary.go",
+        "component/sniffing/internal/quicutils/cipher.go",
+        "component/sniffing/internal/quicutils/cipher_fuzz_test.go",
+        "component/sniffing/internal/quicutils/cipher_test.go",
+        "component/sniffing/internal/quicutils/hkdf.go",
+        "component/sniffing/internal/quicutils/relocation.go",
+        "component/sniffing/internal/quicutils/version.go",
+        "component/sniffing/quic.go",
+        "component/sniffing/quic_fuzz_test.go",
+        "component/sniffing/quic_test.go",
+        "component/sniffing/race_off_test.go",
+        "component/sniffing/race_on_test.go",
+        "component/sniffing/sniffer.go",
+        "component/sniffing/sniffing.go",
+        "component/sniffing/tls.go",
+        "component/sniffing/tls_fuzz_test.go",
+        "component/sniffing/tls_test.go",
+        "config",
+        "config/bootstrap_resolver.go",
+        "config/bootstrap_resolver_test.go",
+        "config/config.go",
+        "config/config_merger.go",
+        "config/decode.go",
+        "config/decode_test.go",
+        "config/desc.go",
+        "config/function_union_test.go",
+        "config/marshal.go",
+        "config/marshal_test.go",
+        "config/outline.go",
+        "config/outline_test.go",
+        "config/parser.go",
+        "config/patch.go",
+        "config/so_mark_test.go",
+        "control",
+        "control/.gitignore",
+        "control/active_control_plane.go",
+        "control/active_control_plane_test.go",
+        "control/addr.go",
+        "control/alert_pacing.go",
+        "control/alert_pacing_test.go",
+        "control/anyfrom_pool.go",
+        "control/bpf_batch_delete_test.go",
+        "control/bpf_bug_verification_test.go",
+        "control/bpf_dataplane_mirror_test.go",
+        "control/bpf_host_abi.go",
+        "control/bpf_host_abi_test.go",
+        "control/bpf_maintenance_runtime_test.go",
+        "control/bpf_pin_dir_test.go",
+        "control/bpf_purge.go",
+        "control/bpf_routing_epoch_abi_test.go",
+        "control/bpf_routing_epoch_attribution.go",
+        "control/bpf_stub.go",
+        "control/bpf_stub_map_parity_test.go",
+        "control/bpf_test_helpers_test.go",
+        "control/bpf_utils.go",
+        "control/bpf_utils_pin_removal_log_test.go",
+        "control/bpf_variables_parity_test.go",
+        "control/cgroup_detach_test.go",
+        "control/cgroup_path_cache_test.go",
+        "control/conn_state_janitor.go",
+        "control/conn_state_janitor_lock_scope_test.go",
+        "control/conn_state_janitor_test.go",
+        "control/conn_state_pinning.go",
+        "control/connection_memory_layout_test.go",
+        "control/connectivity.go",
+        "control/connectivity_snapshot_test.go",
+        "control/control.go",
+        "control/control_plane.go",
+        "control/control_plane_clone_test.go",
+        "control/control_plane_context_test.go",
+        "control/control_plane_core.go",
+        "control/control_plane_core_bind.go",
+        "control/control_plane_core_bind_event.go",
+        "control/control_plane_core_bind_event_test.go",
+        "control/control_plane_core_routing.go",
+        "control/control_plane_datapath.go",
+        "control/control_plane_datapath_test.go",
+        "control/control_plane_dialtarget.go",
+        "control/control_plane_dns.go",
+        "control/control_plane_drain.go",
+        "control/control_plane_health_read_pacing_test.go",
+        "control/control_plane_parse.go",
+        "control/control_plane_real_domain_test_helpers_test.go",
+        "control/datapath_generation.go",
+        "control/datapath_generation_test.go",
+        "control/datapath_janitor.go",
+        "control/datapath_log_level_test.go",
+        "control/datapath_overflow_report.go",
+        "control/datapath_overflow_report_test.go",
+        "control/datapath_passthrough_report.go",
+        "control/datapath_passthrough_report_test.go",
+        "control/dial.go",
+        "control/dispatch_gate_test.go",
+        "control/dns.go",
+        "control/dns_cache.go",
+        "control/dns_cache_capacity_test.go",
+        "control/dns_cache_deadline_test.go",
+        "control/dns_cache_edns_test.go",
+        "control/dns_cache_fuzz_test.go",
+        "control/dns_cache_index_bench_test.go",
+        "control/dns_cache_index_test.go",
+        "control/dns_cache_semantics_test.go",
+        "control/dns_cache_store_log_test.go",
+        "control/dns_control.go",
+        "control/dns_control_optimistic.go",
+        "control/dns_control_optimistic_test.go",
+        "control/dns_controller_bpf.go",
+        "control/dns_controller_cache.go",
+        "control/dns_controller_forwarder.go",
+        "control/dns_controller_handle.go",
+        "control/dns_controller_option_test.go",
+        "control/dns_controller_response.go",
+        "control/dns_controller_runtime.go",
+        "control/dns_corpus_fixtures_test.go",
+        "control/dns_corpus_support_test.go",
+        "control/dns_corpus_test.go",
+        "control/dns_doh_forward_test.go",
+        "control/dns_exchange_hardening_test.go",
+        "control/dns_id_bitmap_test.go",
+        "control/dns_ipversion_prefer_filter_test.go",
+        "control/dns_listener.go",
+        "control/dns_listener_client_addr_test.go",
+        "control/dns_listener_gate_test.go",
+        "control/dns_listener_lifecycle_test.go",
+        "control/dns_listener_response_test.go",
+        "control/dns_message_test_helpers_test.go",
+        "control/dns_named_upstream_scope_test.go",
+        "control/dns_preference_wait.go",
+        "control/dns_preference_wait_test.go",
+        "control/dns_projection_corpus_test.go",
+        "control/dns_resolve.go",
+        "control/dns_response_edns_size_test.go",
+        "control/dns_routing_functions_corpus_test.go",
+        "control/dns_runtime.go",
+        "control/dns_runtime_test_helpers_test.go",
+        "control/dns_singleflight_test.go",
+        "control/dns_tcp_ingress_corpus_test.go",
+        "control/dns_truncate_test.go",
+        "control/dns_truncated_fallback_scheme_test.go",
+        "control/dns_truncated_upgrade_test.go",
+        "control/dns_truncation_log_test.go",
+        "control/dns_truncation_summary_test.go",
+        "control/dns_udp_response_source_test.go",
+        "control/dns_udp_source_check_test.go",
+        "control/dns_utils.go",
+        "control/dns_wire_materialization_test.go",
+        "control/dns_wire_ttl.go",
+        "control/dns_wire_ttl_test.go",
+        "control/domain_routing_tracker.go",
+        "control/doq_lock_regression_test.go",
+        "control/dscp_routing_test.go",
+        "control/egress_runtime.go",
+        "control/event_rate_contract.go",
+        "control/event_ringbuf.go",
+        "control/event_ringbuf_test.go",
+        "control/fresh_datapath_state.go",
+        "control/fresh_datapath_state_test.go",
+        "control/frozen_ad_regression_test.go",
+        "control/generation_state.go",
+        "control/group_override_option_test.go",
+        "control/hardening_improvements_test.go",
+        "control/hash_utils.go",
+        "control/incoming_ownership_test.go",
+        "control/kern",
+        "control/kern/ebpf_sync_defs.h",
+        "control/kern/headers",
+        "control/kern/include",
+        "control/kern/include/tcp_offload.h",
+        "control/kern/tests",
+        "control/kern/tests/ab_regression_test.go",
+        "control/kern/tests/bpf_test.c",
+        "control/kern/tests/bpf_test.go",
+        "control/kern/tests/bpf_test.h",
+        "control/kern/tests/bpf_test_helpers_test.go",
+        "control/kern/tests/tcp_offload_header_test.c",
+        "control/kern/tproxy.c",
+        "control/lifecycle_regression_test.go",
+        "control/listener_runtime.go",
+        "control/log_level_contract_test.go",
+        "control/mac_routing_test.go",
+        "control/main_test.go",
+        "control/netkit_linux.go",
+        "control/netkit_linux_test.go",
+        "control/netkit_netlink.go",
+        "control/netns_inner_error_level_test.go",
+        "control/netns_utils.go",
+        "control/netns_utils_test.go",
+        "control/node_latency.go",
+        "control/offload_gate_test.go",
+        "control/offload_spec_test.go",
+        "control/packet_sniffer_pool.go",
+        "control/packet_sniffer_pool_reset_regression_test.go",
+        "control/packet_sniffer_pool_test.go",
+        "control/packet_sniffer_pool_test_helpers_test.go",
+        "control/pin_snapshot_test.go",
+        "control/pool_janitor_test.go",
+        "control/quic_corpus_test.go",
+        "control/quic_owned_conn_test.go",
+        "control/raw_udp_linux.go",
+        "control/raw_udp_other.go",
+        "control/real_domain_runtime.go",
+        "control/real_domain_runtime_test.go",
+        "control/relay_buffer_alignment_test.go",
+        "control/reload_retirement_cleanup_test.go",
+        "control/route_dial_family_fallback_test.go",
+        "control/routing_epoch.go",
+        "control/routing_epoch_execution.go",
+        "control/routing_epoch_runtime.go",
+        "control/routing_matcher_builder.go",
+        "control/routing_matcher_needs_test.go",
+        "control/routing_matcher_registry_test.go",
+        "control/routing_matcher_userspace.go",
+        "control/routing_operand_validation_test.go",
+        "control/runtime_dns_accounting.go",
+        "control/runtime_stats.go",
+        "control/scripted_packet_conn_test_helpers_test.go",
+        "control/session_manager.go",
+        "control/session_manager_retained_gate_test.go",
+        "control/session_manager_scrub_gate_test.go",
+        "control/sniff_punt_routing_test.go",
+        "control/sysctl.go",
+        "control/sysctl_watch_log_test.go",
+        "control/tc_hook_handoff.go",
+        "control/tc_hook_set.go",
+        "control/tc_hook_set_kernel_test.go",
+        "control/tc_hook_set_test.go",
+        "control/tcp.go",
+        "control/tcp_bufio_relay_onactive_test.go",
+        "control/tcp_copy_engine.go",
+        "control/tcp_copy_gather_linux.go",
+        "control/tcp_copy_gather_other.go",
+        "control/tcp_copy_linux.go",
+        "control/tcp_copy_other.go",
+        "control/tcp_dial_param_test.go",
+        "control/tcp_dns_frame_fuzz_test.go",
+        "control/tcp_dns_frame_test.go",
+        "control/tcp_flow_binding.go",
+        "control/tcp_flow_binding_test.go",
+        "control/tcp_offload_common.go",
+        "control/tcp_offload_e2e_verify_test.go",
+        "control/tcp_offload_fuse_contract_test.go",
+        "control/tcp_offload_hook.go",
+        "control/tcp_offload_hook_test.go",
+        "control/tcp_offload_links.go",
+        "control/tcp_offload_links_test.go",
+        "control/tcp_offload_linux.go",
+        "control/tcp_offload_linux_test.go",
+        "control/tcp_offload_other.go",
+        "control/tcp_offload_source_contract_test.go",
+        "control/tcp_relay_capabilities.go",
+        "control/tcp_relay_core.go",
+        "control/tcp_relay_core_test.go",
+        "control/tcp_relay_offload.go",
+        "control/tcp_sniff_policy.go",
+        "control/tcp_tls_corpus_test.go",
+        "control/test_fixtures_test_helpers_test.go",
+        "control/test_utils_test.go",
+        "control/udp.go",
+        "control/udp_conn_state_tracker.go",
+        "control/udp_conn_state_tuple_move_test.go",
+        "control/udp_direct_dispatch_panic_test.go",
+        "control/udp_domain_resolution_test.go",
+        "control/udp_endpoint_lifecycle.go",
+        "control/udp_endpoint_lifecycle_test.go",
+        "control/udp_endpoint_nat_timeout_test.go",
+        "control/udp_endpoint_pool.go",
+        "control/udp_endpoint_pool_regression_test.go",
+        "control/udp_endpoint_receiver_lifecycle_test.go",
+        "control/udp_endpoint_receiver_test.go",
+        "control/udp_endpoint_reply.go",
+        "control/udp_endpoint_reply_recycle_contract_test.go",
+        "control/udp_endpoint_watcher.go",
+        "control/udp_endpoint_write_deadline_test.go",
+        "control/udp_epoch_pin_measure_test.go",
+        "control/udp_flow.go",
+        "control/udp_flow_binding.go",
+        "control/udp_flow_binding_test.go",
+        "control/udp_ingress_batch.go",
+        "control/udp_ingress_batch_test.go",
+        "control/udp_ingress_task.go",
+        "control/udp_ingress_task_test.go",
+        "control/udp_lifecycle.go",
+        "control/udp_pool_get_count_test.go",
+        "control/udp_profile.go",
+        "control/udp_proxy_dial_bench_test.go",
+        "control/udp_quic_initial_regression_test.go",
+        "control/udp_reuse_simulation_test.go",
+        "control/udp_routing_cache_test.go",
+        "control/udp_runtime.go",
+        "control/udp_short_buffer_test.go",
+        "control/udp_sniffer_loss_test.go",
+        "control/udp_task_pool.go",
+        "control/udp_task_pool_order_diag_test.go",
+        "control/udp_task_pool_order_test.go",
+        "control/udp_write_batch.go",
+        "control/udp_write_batch_report_test.go",
+        "control/udp_write_batch_test.go",
+        "control/udp_write_string_roundtrip_bench_test.go",
+        "control/utils.go",
+        "control/utils_oob_test.go",
+        "control/weak_memory_publication_test.go",
+        "docker-compose.yml",
+        "docs",
+        "docs/.gitignore",
+        "docs/en",
+        "docs/en/README.md",
+        "docs/en/configuration",
+        "docs/en/configuration/dns.md",
+        "docs/en/configuration/external-dns.md",
+        "docs/en/configuration/gaming-oriented-routing.md",
+        "docs/en/configuration/routing.md",
+        "docs/en/configuration/separate-config.md",
+        "docs/en/development",
+        "docs/en/development/commit-msg-guide.md",
+        "docs/en/development/contribute.md",
+        "docs/en/how-it-works.md",
+        "docs/en/proxy-protocols.md",
+        "docs/en/troubleshooting.md",
+        "docs/en/tutorials",
+        "docs/en/tutorials/dae-with-opnsense.md",
+        "docs/en/tutorials/run-on-alpine.md",
+        "docs/en/tutorials/run-on-centos7.md",
+        "docs/en/tutorials/run-on-macos.md",
+        "docs/en/user-guide",
+        "docs/en/user-guide/build-by-yourself.md",
+        "docs/en/user-guide/kernel-parameters.md",
+        "docs/en/user-guide/kernel-upgrade.md",
+        "docs/en/user-guide/reload-and-suspend.md",
+        "docs/en/user-guide/run-as-daemon.md",
+        "docs/netstack-path.webp",
+        "docs/zh",
+        "docs/zh/README.md",
+        "docs/zh/configuration",
+        "docs/zh/configuration/dns.md",
+        "docs/zh/configuration/routing.md",
+        "docs/zh/development",
+        "docs/zh/development/refactor-validation-plan.md",
+        "docs/zh/how-it-works.md",
+        "docs/zh/proxy-protocols.md",
+        "docs/zh/tutorials",
+        "docs/zh/tutorials/dae-with-opnsense.md",
+        "docs/zh/tutorials/run-on-alpine.md",
+        "example.dae",
+        "go.mod",
+        "go.sum",
+        "hack",
+        "hack/ci",
+        "hack/ci/config-doc-generator.py",
+        "hack/maintenance",
+        "hack/maintenance/append_license_signature.sh",
+        "hack/maintenance/extend_license_signature_period.sh",
+        "hack/mock",
+        "hack/mock/insert.sh",
+        "hack/sync",
+        "hack/sync/.gitkeep",
+        "hack/templates",
+        "hack/templates/example-config.md",
+        "install",
+        "install/dae.service",
+        "install/empty.dae",
+        "install/friendly-filenames.json",
+        "install/package_after_install.sh",
+        "install/package_after_remove.sh",
+        "install/shell-completion",
+        "install/shell-completion/dae.bash",
+        "install/shell-completion/dae.fish",
+        "install/shell-completion/dae.zsh",
+        "logo.png",
+        "main.go",
+        "package-lock.json",
+        "package.json",
+        "pkg",
+        "pkg/anybuffer",
+        "pkg/anybuffer/anybuffer.go",
+        "pkg/config_parser",
+        "pkg/config_parser/config_parser.go",
+        "pkg/config_parser/config_parser_test.go",
+        "pkg/config_parser/error.go",
+        "pkg/config_parser/section.go",
+        "pkg/config_parser/section_test.go",
+        "pkg/config_parser/walker.go",
+        "pkg/ebpf_internal",
+        "pkg/ebpf_internal/align.go",
+        "pkg/ebpf_internal/elf.go",
+        "pkg/ebpf_internal/endian_be.go",
+        "pkg/ebpf_internal/endian_le.go",
+        "pkg/ebpf_internal/internal",
+        "pkg/ebpf_internal/internal/unix",
+        "pkg/ebpf_internal/internal/unix/doc.go",
+        "pkg/ebpf_internal/internal/unix/types_linux.go",
+        "pkg/ebpf_internal/internal/unix/types_other.go",
+        "pkg/ebpf_internal/vdso.go",
+        "pkg/ebpf_internal/version.go",
+        "pkg/geodata",
+        "pkg/geodata/common.pb.go",
+        "pkg/geodata/decode.go",
+        "pkg/geodata/decode_test.go",
+        "pkg/geodata/geodata.go",
+        "pkg/geodata/protoext",
+        "pkg/geodata/protoext/extensions.pb.go",
+        "pkg/logger",
+        "pkg/logger/logger.go",
+        "pkg/trie",
+        "pkg/trie/trie.go",
+        "pkg/trie/trie_test.go",
+        "scripts",
+        "scripts/check-artifact-build-env.sh",
+        "scripts/check-asset-names.sh",
+        "scripts/check-build-env.sh",
+        "scripts/check-trace-arch-matrix.sh",
+        "scripts/checkpatch.pl",
+        "scripts/control-memory-profile.sh",
+        "scripts/ebpf-audit.sh",
+        "scripts/fetch-geo-data.sh",
+        "scripts/semantic-refactor-quic-helper",
+        "scripts/semantic-refactor-quic-helper/main.go",
+        "scripts/semantic-refactor-smoke.sh",
+        "trace",
+        "trace/bpf_stub.go",
+        "trace/kallsyms.go",
+        "trace/kern",
+        "trace/kern/headers",
+        "trace/kern/trace.c",
+        "trace/trace.go",
+        "trace/utils.go"
+      ]
+    },
+    "error": ""
+  }
+}

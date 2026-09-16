@@ -1,0 +1,113 @@
+{
+  "id": 377351204,
+  "tag_name": "5.11.28.3",
+  "name": "5.11.28.3",
+  "html_url": "https://github.com/qr243vbi/nekobox/releases/tag/5.11.28.3",
+  "published_at": "2026-08-26T18:54:32Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 532044132,
+      "name": "nekobox-5.11.28.3-aarch64-linux.AppImage",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-aarch64-linux.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 532043442,
+      "name": "nekobox-5.11.28.3-armhf-linux.AppImage",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-armhf-linux.AppImage",
+      "state": "starter"
+    },
+    {
+      "id": 532049338,
+      "name": "nekobox-5.11.28.3-i686-linux.AppImage",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-i686-linux.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 532049343,
+      "name": "nekobox-5.11.28.3-linux-386.tar.gz",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-linux-386.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 532044230,
+      "name": "nekobox-5.11.28.3-linux-amd64.tar.gz",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-linux-amd64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 532043440,
+      "name": "nekobox-5.11.28.3-linux-arm.tar.gz",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-linux-arm.tar.gz",
+      "state": "starter"
+    },
+    {
+      "id": 532044129,
+      "name": "nekobox-5.11.28.3-linux-arm64.tar.gz",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-linux-arm64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 531231665,
+      "name": "nekobox-5.11.28.3-windows-arm64-installer.exe",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows-arm64-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 531231666,
+      "name": "nekobox-5.11.28.3-windows-arm64.zip",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 531225009,
+      "name": "nekobox-5.11.28.3-windows32-installer.exe",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows32-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 531225010,
+      "name": "nekobox-5.11.28.3-windows32.zip",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 531227005,
+      "name": "nekobox-5.11.28.3-windows64-installer.exe",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows64-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 531227004,
+      "name": "nekobox-5.11.28.3-windows64.zip",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-windows64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 532044227,
+      "name": "nekobox-5.11.28.3-x86_64-linux.AppImage",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-5.11.28.3-x86_64-linux.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 532049336,
+      "name": "nekobox-unified-source-5.11.28.3.tar.xz",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-unified-source-5.11.28.3.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 532049333,
+      "name": "nekobox-unified-source-5.11.28.3.tar.xz.sha256sum",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox-unified-source-5.11.28.3.tar.xz.sha256sum",
+      "state": "uploaded"
+    },
+    {
+      "id": 531234379,
+      "name": "nekobox.5.11.28.3.nupkg",
+      "browser_download_url": "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.3/nekobox.5.11.28.3.nupkg",
+      "state": "uploaded"
+    }
+  ]
+}

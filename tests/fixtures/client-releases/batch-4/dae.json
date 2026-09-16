@@ -1,0 +1,911 @@
+{
+  "id": 351226780,
+  "tag_name": "v2.0.0",
+  "name": "v2.0.0",
+  "html_url": "https://github.com/daeuniverse/dae/releases/tag/v2.0.0",
+  "published_at": "2026-07-08T23:38:13Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 470792761,
+      "name": "dae-full-src.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792762,
+      "name": "dae-full-src.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792738,
+      "name": "dae-full-src.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792733,
+      "name": "dae-full-src.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-full-src.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792763,
+      "name": "dae-linux-arm64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792729,
+      "name": "dae-linux-arm64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792760,
+      "name": "dae-linux-arm64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792757,
+      "name": "dae-linux-arm64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792765,
+      "name": "dae-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792764,
+      "name": "dae-linux-arm64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792735,
+      "name": "dae-linux-arm64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792753,
+      "name": "dae-linux-arm64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792768,
+      "name": "dae-linux-arm64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792766,
+      "name": "dae-linux-arm64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792770,
+      "name": "dae-linux-armv5.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792745,
+      "name": "dae-linux-armv5.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792749,
+      "name": "dae-linux-armv5.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792713,
+      "name": "dae-linux-armv5.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792752,
+      "name": "dae-linux-armv6.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792746,
+      "name": "dae-linux-armv6.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792754,
+      "name": "dae-linux-armv6.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792751,
+      "name": "dae-linux-armv6.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792732,
+      "name": "dae-linux-armv7.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792720,
+      "name": "dae-linux-armv7.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792756,
+      "name": "dae-linux-armv7.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792750,
+      "name": "dae-linux-armv7.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792727,
+      "name": "dae-linux-armv7.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792712,
+      "name": "dae-linux-armv7.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792730,
+      "name": "dae-linux-armv7.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792711,
+      "name": "dae-linux-armv7.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792759,
+      "name": "dae-linux-armv7.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792747,
+      "name": "dae-linux-armv7.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792723,
+      "name": "dae-linux-loongarch64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792722,
+      "name": "dae-linux-loongarch64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792758,
+      "name": "dae-linux-loongarch64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792742,
+      "name": "dae-linux-loongarch64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792728,
+      "name": "dae-linux-loongarch64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792705,
+      "name": "dae-linux-loongarch64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792748,
+      "name": "dae-linux-loongarch64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792702,
+      "name": "dae-linux-loongarch64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792691,
+      "name": "dae-linux-loongarch64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792689,
+      "name": "dae-linux-loongarch64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792744,
+      "name": "dae-linux-mips32.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792687,
+      "name": "dae-linux-mips32.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792721,
+      "name": "dae-linux-mips32.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792743,
+      "name": "dae-linux-mips32.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792707,
+      "name": "dae-linux-mips32.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792698,
+      "name": "dae-linux-mips32.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792726,
+      "name": "dae-linux-mips32.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792716,
+      "name": "dae-linux-mips32.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792767,
+      "name": "dae-linux-mips32le.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792652,
+      "name": "dae-linux-mips32le.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792672,
+      "name": "dae-linux-mips32le.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792643,
+      "name": "dae-linux-mips32le.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792693,
+      "name": "dae-linux-mips32le.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792669,
+      "name": "dae-linux-mips32le.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792667,
+      "name": "dae-linux-mips32le.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792651,
+      "name": "dae-linux-mips32le.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792674,
+      "name": "dae-linux-mips64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792630,
+      "name": "dae-linux-mips64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792739,
+      "name": "dae-linux-mips64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792636,
+      "name": "dae-linux-mips64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792703,
+      "name": "dae-linux-mips64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792645,
+      "name": "dae-linux-mips64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792695,
+      "name": "dae-linux-mips64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792634,
+      "name": "dae-linux-mips64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792686,
+      "name": "dae-linux-mips64le.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792635,
+      "name": "dae-linux-mips64le.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792671,
+      "name": "dae-linux-mips64le.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792642,
+      "name": "dae-linux-mips64le.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792701,
+      "name": "dae-linux-mips64le.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792663,
+      "name": "dae-linux-mips64le.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792654,
+      "name": "dae-linux-mips64le.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792640,
+      "name": "dae-linux-mips64le.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792659,
+      "name": "dae-linux-powerpc64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792680,
+      "name": "dae-linux-powerpc64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792741,
+      "name": "dae-linux-powerpc64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792696,
+      "name": "dae-linux-powerpc64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792646,
+      "name": "dae-linux-powerpc64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792675,
+      "name": "dae-linux-powerpc64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792678,
+      "name": "dae-linux-powerpc64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792662,
+      "name": "dae-linux-powerpc64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792656,
+      "name": "dae-linux-powerpc64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792699,
+      "name": "dae-linux-powerpc64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792710,
+      "name": "dae-linux-powerpc64le.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792736,
+      "name": "dae-linux-powerpc64le.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792692,
+      "name": "dae-linux-powerpc64le.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792644,
+      "name": "dae-linux-powerpc64le.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792668,
+      "name": "dae-linux-powerpc64le.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792650,
+      "name": "dae-linux-powerpc64le.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792658,
+      "name": "dae-linux-powerpc64le.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792653,
+      "name": "dae-linux-powerpc64le.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792681,
+      "name": "dae-linux-powerpc64le.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792629,
+      "name": "dae-linux-powerpc64le.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792677,
+      "name": "dae-linux-riscv64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792631,
+      "name": "dae-linux-riscv64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792704,
+      "name": "dae-linux-riscv64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792637,
+      "name": "dae-linux-riscv64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792709,
+      "name": "dae-linux-riscv64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792649,
+      "name": "dae-linux-riscv64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792670,
+      "name": "dae-linux-riscv64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792697,
+      "name": "dae-linux-riscv64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792683,
+      "name": "dae-linux-riscv64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792661,
+      "name": "dae-linux-riscv64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792685,
+      "name": "dae-linux-s390x.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792665,
+      "name": "dae-linux-s390x.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792673,
+      "name": "dae-linux-s390x.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792628,
+      "name": "dae-linux-s390x.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792688,
+      "name": "dae-linux-s390x.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792657,
+      "name": "dae-linux-s390x.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792715,
+      "name": "dae-linux-s390x.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792639,
+      "name": "dae-linux-s390x.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792684,
+      "name": "dae-linux-x86_32.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792619,
+      "name": "dae-linux-x86_32.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792626,
+      "name": "dae-linux-x86_32.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792606,
+      "name": "dae-linux-x86_32.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792624,
+      "name": "dae-linux-x86_32.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792614,
+      "name": "dae-linux-x86_32.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792679,
+      "name": "dae-linux-x86_32.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792613,
+      "name": "dae-linux-x86_32.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792664,
+      "name": "dae-linux-x86_64.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792608,
+      "name": "dae-linux-x86_64.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792700,
+      "name": "dae-linux-x86_64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792633,
+      "name": "dae-linux-x86_64.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792620,
+      "name": "dae-linux-x86_64.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792641,
+      "name": "dae-linux-x86_64.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792655,
+      "name": "dae-linux-x86_64.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792618,
+      "name": "dae-linux-x86_64.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792690,
+      "name": "dae-linux-x86_64.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792638,
+      "name": "dae-linux-x86_64.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792737,
+      "name": "dae-linux-x86_64_v2_sse.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792648,
+      "name": "dae-linux-x86_64_v2_sse.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792622,
+      "name": "dae-linux-x86_64_v2_sse.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792607,
+      "name": "dae-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792694,
+      "name": "dae-linux-x86_64_v2_sse.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792632,
+      "name": "dae-linux-x86_64_v2_sse.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792676,
+      "name": "dae-linux-x86_64_v2_sse.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792647,
+      "name": "dae-linux-x86_64_v2_sse.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792666,
+      "name": "dae-linux-x86_64_v2_sse.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792612,
+      "name": "dae-linux-x86_64_v2_sse.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792682,
+      "name": "dae-linux-x86_64_v3_avx2.deb",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792623,
+      "name": "dae-linux-x86_64_v3_avx2.deb.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792616,
+      "name": "dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792617,
+      "name": "dae-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792706,
+      "name": "dae-linux-x86_64_v3_avx2.rpm",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792611,
+      "name": "dae-linux-x86_64_v3_avx2.rpm.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792615,
+      "name": "dae-linux-x86_64_v3_avx2.tar.xz",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792610,
+      "name": "dae-linux-x86_64_v3_avx2.tar.xz.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz.dgst",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792621,
+      "name": "dae-linux-x86_64_v3_avx2.zip",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 470792609,
+      "name": "dae-linux-x86_64_v3_avx2.zip.dgst",
+      "browser_download_url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip.dgst",
+      "state": "uploaded"
+    }
+  ]
+}

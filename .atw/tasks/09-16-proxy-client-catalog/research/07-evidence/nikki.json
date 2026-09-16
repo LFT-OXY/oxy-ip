@@ -1,0 +1,1298 @@
+{
+  "baseline": {
+    "order": 105,
+    "id": "nikki",
+    "name": "Nikki",
+    "reference_url": "https://huarun.win/apps/nikki",
+    "observed_official_entry": "https://github.com/nikkinikki-org/OpenWrt-nikki",
+    "ticket": "07"
+  },
+  "repo": "nikkinikki-org/OpenWrt-nikki",
+  "metadata": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki",
+    "status": 0,
+    "data": {
+      "full_name": "nikkinikki-org/OpenWrt-nikki",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki",
+      "description": "Transparent Proxy with Mihomo on OpenWrt.",
+      "homepage": "https://nikkinikki.pages.dev",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/blob/main/README.md",
+      "sha": "ab06c1ec1dc224f2f5cdef3022c1515987f5aab1",
+      "text": "![GitHub License](https://img.shields.io/github/license/nikkinikki-org/OpenWrt-nikki?style=for-the-badge&logo=github) ![GitHub Tag](https://img.shields.io/github/v/release/nikkinikki-org/OpenWrt-nikki?style=for-the-badge&logo=github) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nikkinikki-org/OpenWrt-nikki/total?style=for-the-badge&logo=github) ![GitHub Repo stars](https://img.shields.io/github/stars/nikkinikki-org/OpenWrt-nikki?style=for-the-badge&logo=github) [![Telegram](https://img.shields.io/badge/Telegram-gray?style=for-the-badge&logo=telegram)](https://t.me/nikkinikki_org)\n\nEnglish | [中文](README.zh.md)\n\n# Nikki\n\nTransparent Proxy with Mihomo on OpenWrt.\n\n## Prerequisites\n\n- OpenWrt >= 24.10\n- Linux Kernel >= 5.13\n- firewall4\n\n## Feature\n\n- Transparent Proxy (Redirect/TPROXY/TUN, IPv4 and/or IPv6)\n- Access Control\n- Profile Mixin\n- Profile Editor\n- Scheduled Restart\n\n## Install & Update\n\n### A. Install From Feed (Recommended)\n\n1. Add Feed\n\n```shell\n# only needs to be run once\nwget -O - https://github.com/nikkinikki-org/OpenWrt-nikki/raw/refs/heads/main/feed.sh | ash\n```\n\n2. Install\n\n```shell\n# you can install from shell or `Software` menu in LuCI\n# for opkg\nopkg install nikki\nopkg install luci-app-nikki\nopkg install luci-i18n-nikki-zh-cn\n# for apk\napk add nikki\napk add luci-app-nikki\napk add luci-i18n-nikki-zh-cn\n```\n\n### B. Install From Release\n\n```shell\nwget -O - https://github.com/nikkinikki-org/OpenWrt-nikki/raw/refs/heads/main/install.sh | ash\n```\n\n## Uninstall & Reset\n\n```shell\nwget -O - https://github.com/nikkinikki-org/OpenWrt-nikki/raw/refs/heads/main/uninstall.sh | ash\n```\n\n## How To Use\n\nSee [Wiki](https://github.com/nikkinikki-org/OpenWrt-nikki/wiki)\n\n## How does it work\n\n1. Mixin and Update profile.\n2. Run mihomo.\n3. Set scheduled restart.\n4. Set ip rule/route\n5. Generate nftables and apply it.\n\nNote that the steps above may change base on config.\n\n## Compilation\n\n```shell\n# add feed\necho \"src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main\" >> \"feeds.conf.default\"\n# update & install feeds\n./scripts/feeds update -a\n./scripts/feeds install -a\n# make package\nmake package/luci-app-nikki/compile\n```\n\nThe package files will be found under `bin/packages/your_architecture/nikki`.\n\n## Dependencies\n\n- ca-bundle\n- curl\n- yq\n- firewall4\n- ip-full\n- kmod-inet-diag\n- kmod-nft-socket\n- kmod-nft-tproxy\n- kmod-tun\n- kmod-dummy\n\n## Contributors\n\n[![Contributors](https://contrib.rocks/image?repo=nikkinikki-org/OpenWrt-nikki)](https://github.com/nikkinikki-org/OpenWrt-nikki/graphs/contributors)\n\n## Special Thanks\n\n- [@ApoisL](https://github.com/apoiston)\n- [@xishang0128](https://github.com/xishang0128)\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 337334679,
+        "tag_name": "v1.26.1",
+        "name": "v1.26.1",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.26.1",
+        "published_at": "2026-06-10T15:43:13Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "## What's Changed\r\n* Add GO_PKG_BUILD_PKG variable to Makefile by @refined-fish in https://github.com/nikkinikki-org/OpenWrt-nikki/pull/811\r\n\r\n## New Contributors\r\n* @refined-fish made their first contribution in https://github.com/nikkinikki-org/OpenWrt-nikki/pull/811\r\n\r\n**Full Changelog**: https://github.com/nikkinikki-org/OpenWrt-nikki/compare/v1.26.0...v1.26.1",
+        "assets": [
+          {
+            "id": 443860872,
+            "name": "nikki_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443889917,
+            "name": "nikki_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443874030,
+            "name": "nikki_aarch64_cortex-a53-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a53-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443848339,
+            "name": "nikki_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443865836,
+            "name": "nikki_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443869845,
+            "name": "nikki_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443868665,
+            "name": "nikki_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443845006,
+            "name": "nikki_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443876274,
+            "name": "nikki_aarch64_generic-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_generic-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443881994,
+            "name": "nikki_aarch64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443889585,
+            "name": "nikki_aarch64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_aarch64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443894936,
+            "name": "nikki_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443871559,
+            "name": "nikki_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443839179,
+            "name": "nikki_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443857521,
+            "name": "nikki_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443878586,
+            "name": "nikki_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443840540,
+            "name": "nikki_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443847367,
+            "name": "nikki_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443874023,
+            "name": "nikki_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443891148,
+            "name": "nikki_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443882119,
+            "name": "nikki_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443878288,
+            "name": "nikki_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443864412,
+            "name": "nikki_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443873965,
+            "name": "nikki_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443854596,
+            "name": "nikki_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443888678,
+            "name": "nikki_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443848915,
+            "name": "nikki_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443871496,
+            "name": "nikki_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443850666,
+            "name": "nikki_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443837395,
+            "name": "nikki_i386_pentium4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_i386_pentium4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443903902,
+            "name": "nikki_i386_pentium4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_i386_pentium4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443845183,
+            "name": "nikki_i386_pentium4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_i386_pentium4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443881922,
+            "name": "nikki_loongarch64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_loongarch64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443844608,
+            "name": "nikki_mips64_octeonplus-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips64_octeonplus-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443868402,
+            "name": "nikki_mips64_octeonplus-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips64_octeonplus-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443903696,
+            "name": "nikki_mips64_octeonplus-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips64_octeonplus-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443837550,
+            "name": "nikki_mipsel_24kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443892428,
+            "name": "nikki_mipsel_24kc-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443863490,
+            "name": "nikki_mipsel_24kc-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443878710,
+            "name": "nikki_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443873948,
+            "name": "nikki_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443860716,
+            "name": "nikki_mipsel_24kc_24kf-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_24kc_24kf-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443886771,
+            "name": "nikki_mipsel_74kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_74kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443856134,
+            "name": "nikki_mipsel_74kc-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_74kc-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443867450,
+            "name": "nikki_mipsel_mips32-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_mips32-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443868639,
+            "name": "nikki_mipsel_mips32-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mipsel_mips32-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443870818,
+            "name": "nikki_mips_24kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips_24kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443888377,
+            "name": "nikki_mips_24kc-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips_24kc-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443840734,
+            "name": "nikki_mips_4kec-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips_4kec-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443890199,
+            "name": "nikki_mips_mips32-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips_mips32-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443871344,
+            "name": "nikki_mips_mips32-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_mips_mips32-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443892396,
+            "name": "nikki_riscv64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_riscv64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443856706,
+            "name": "nikki_riscv64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_riscv64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443890224,
+            "name": "nikki_x86_64-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_x86_64-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443910258,
+            "name": "nikki_x86_64-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_x86_64-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 443894938,
+            "name": "nikki_x86_64-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.26.1/nikki_x86_64-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 337334679,
+        "tag_name": "v1.26.1",
+        "name": "v1.26.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-10T15:43:13Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.26.1"
+      },
+      {
+        "id": 307420936,
+        "tag_name": "v1.26.0",
+        "name": "v1.26.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-10T07:22:52Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.26.0"
+      },
+      {
+        "id": 302943144,
+        "tag_name": "v1.25.3",
+        "name": "v1.25.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-30T01:13:13Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.25.3"
+      },
+      {
+        "id": 291891989,
+        "tag_name": "v1.25.2",
+        "name": "v1.25.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-02T03:32:54Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.25.2"
+      },
+      {
+        "id": 282798830,
+        "tag_name": "v1.25.1",
+        "name": "v1.25.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-02-04T02:40:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.25.1"
+      },
+      {
+        "id": 273509139,
+        "tag_name": "v1.25.0",
+        "name": "v1.25.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-31T02:03:17Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.25.0"
+      },
+      {
+        "id": 260910374,
+        "tag_name": "v1.24.4",
+        "name": "v1.24.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-11-09T09:56:57Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.24.4"
+      },
+      {
+        "id": 255345434,
+        "tag_name": "v1.24.3",
+        "name": "v1.24.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-10-17T14:58:17Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.24.3"
+      },
+      {
+        "id": 247954085,
+        "tag_name": "v1.24.2",
+        "name": "v1.24.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-09-17T12:42:20Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.24.2"
+      },
+      {
+        "id": 242839903,
+        "tag_name": "v1.24.1",
+        "name": "v1.24.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-27T11:34:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.24.1"
+      },
+      {
+        "id": 241694163,
+        "tag_name": "v1.24.0",
+        "name": "v1.24.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-22T02:10:47Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.24.0"
+      },
+      {
+        "id": 235460889,
+        "tag_name": "v1.23.3",
+        "name": "v1.23.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-07-27T16:32:28Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.23.3"
+      },
+      {
+        "id": 228414124,
+        "tag_name": "v1.23.2",
+        "name": "v1.23.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-06-27T16:04:41Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.23.2"
+      },
+      {
+        "id": 225713695,
+        "tag_name": "v1.23.1",
+        "name": "v1.23.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-06-17T01:08:15Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.23.1"
+      },
+      {
+        "id": 224874532,
+        "tag_name": "v1.23.0",
+        "name": "v1.23.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-06-12T11:54:18Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.23.0"
+      },
+      {
+        "id": 221245467,
+        "tag_name": "v1.22.4",
+        "name": "v1.22.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-05-27T12:52:11Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.22.4"
+      },
+      {
+        "id": 218194164,
+        "tag_name": "v1.22.3",
+        "name": "v1.22.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-05-13T08:42:52Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.22.3"
+      },
+      {
+        "id": 213546671,
+        "tag_name": "v1.22.2",
+        "name": "v1.22.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-04-20T10:54:52Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.22.2"
+      },
+      {
+        "id": 213070667,
+        "tag_name": "v1.22.1",
+        "name": "v1.22.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-04-17T11:12:09Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.22.1"
+      },
+      {
+        "id": 212662760,
+        "tag_name": "v1.22.0",
+        "name": "v1.22.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-04-16T01:10:50Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.22.0"
+      },
+      {
+        "id": 207676196,
+        "tag_name": "v1.21.2",
+        "name": "v1.21.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-23T09:34:33Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.21.2"
+      },
+      {
+        "id": 206284457,
+        "tag_name": "v1.21.1",
+        "name": "v1.21.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-17T15:45:56Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.21.1"
+      },
+      {
+        "id": 206055178,
+        "tag_name": "v1.21.0",
+        "name": "v1.21.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-16T02:00:21Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.21.0"
+      },
+      {
+        "id": 204752793,
+        "tag_name": "v1.20.3",
+        "name": "v1.20.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-10T14:16:06Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.20.3"
+      },
+      {
+        "id": 204564447,
+        "tag_name": "v1.20.2",
+        "name": "v1.20.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-09T02:15:22Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.20.2"
+      },
+      {
+        "id": 203484048,
+        "tag_name": "v1.20.1",
+        "name": "v1.20.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-04T03:52:30Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.20.1"
+      },
+      {
+        "id": 203370412,
+        "tag_name": "v1.20.0",
+        "name": "v1.20.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-03-03T14:57:08Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.20.0"
+      },
+      {
+        "id": 202306237,
+        "tag_name": "v1.19.5",
+        "name": "v1.19.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-25T13:54:30Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.19.5"
+      },
+      {
+        "id": 202007483,
+        "tag_name": "v1.19.3",
+        "name": "v1.19.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-24T11:17:43Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.19.3"
+      },
+      {
+        "id": 201959342,
+        "tag_name": "v1.19.2",
+        "name": "v1.19.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-24T06:32:31Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.19.2"
+      },
+      {
+        "id": 201904837,
+        "tag_name": "v1.19.1",
+        "name": "v1.19.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-23T13:53:03Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.19.1"
+      },
+      {
+        "id": 201895038,
+        "tag_name": "v1.19.0",
+        "name": "v1.19.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-23T10:46:16Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.19.0"
+      },
+      {
+        "id": 201402928,
+        "tag_name": "v1.18.0",
+        "name": "v1.18.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-20T11:34:14Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.18.0"
+      },
+      {
+        "id": 199247624,
+        "tag_name": "v1.17.5",
+        "name": "v1.17.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-02-09T13:51:54Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.5"
+      },
+      {
+        "id": 195627646,
+        "tag_name": "v1.17.4",
+        "name": "v1.17.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-20T11:46:18Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.4"
+      },
+      {
+        "id": 193716233,
+        "tag_name": "v1.17.3",
+        "name": "v1.17.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-08T14:45:04Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.3"
+      },
+      {
+        "id": 193193658,
+        "tag_name": "v1.17.2",
+        "name": "v1.17.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-05T05:57:23Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.2"
+      },
+      {
+        "id": 193041425,
+        "tag_name": "v1.17.1",
+        "name": "v1.17.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-03T09:52:12Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.1"
+      },
+      {
+        "id": 192941298,
+        "tag_name": "v1.17.0",
+        "name": "v1.17.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-02T14:51:03Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.17.0"
+      },
+      {
+        "id": 192837918,
+        "tag_name": "v1.16.0",
+        "name": "v1.16.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-01-01T08:07:11Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.16.0"
+      },
+      {
+        "id": 192593502,
+        "tag_name": "v1.15.0",
+        "name": "v1.15.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-29T02:33:59Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.15.0"
+      },
+      {
+        "id": 191096867,
+        "tag_name": "v1.14.0",
+        "name": "v1.14.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-17T07:17:35Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.14.0"
+      },
+      {
+        "id": 189524946,
+        "tag_name": "v1.13.3",
+        "name": "v1.13.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-07T05:37:34Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.13.3"
+      },
+      {
+        "id": 188332658,
+        "tag_name": "v1.13.2",
+        "name": "v1.13.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-12-01T05:22:44Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.13.2"
+      },
+      {
+        "id": 187208335,
+        "tag_name": "v1.13.1",
+        "name": "v1.13.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-25T04:50:03Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.13.1"
+      },
+      {
+        "id": 186869525,
+        "tag_name": "v1.13.0",
+        "name": "v1.13.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-22T12:01:25Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.13.0"
+      },
+      {
+        "id": 186410089,
+        "tag_name": "v1.12.0",
+        "name": "v1.12.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-20T13:00:51Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.12.0"
+      },
+      {
+        "id": 185745562,
+        "tag_name": "v1.11.1",
+        "name": "v1.11.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-16T05:22:45Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.11.1"
+      },
+      {
+        "id": 184705914,
+        "tag_name": "v1.11.0",
+        "name": "v1.11.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-11T15:31:42Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.11.0"
+      },
+      {
+        "id": 184496310,
+        "tag_name": "v1.10.0",
+        "name": "v1.10.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-09T10:09:10Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.10.0"
+      },
+      {
+        "id": 183392782,
+        "tag_name": "v1.9.3",
+        "name": "v1.9.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-11-04T15:02:18Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.9.3"
+      },
+      {
+        "id": 182407957,
+        "tag_name": "v1.9.2",
+        "name": "v1.9.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-29T07:56:44Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.9.2"
+      },
+      {
+        "id": 182069525,
+        "tag_name": "v1.9.1",
+        "name": "v1.9.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-26T07:33:49Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.9.1"
+      },
+      {
+        "id": 181001339,
+        "tag_name": "v1.9.0",
+        "name": "v1.9.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-21T12:53:01Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.9.0"
+      },
+      {
+        "id": 179915423,
+        "tag_name": "v1.8.7",
+        "name": "v1.8.7",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-15T01:32:05Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.7"
+      },
+      {
+        "id": 179305841,
+        "tag_name": "v1.8.6",
+        "name": "v1.8.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-10T11:45:07Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.6"
+      },
+      {
+        "id": 178615114,
+        "tag_name": "v1.8.5",
+        "name": "v1.8.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-10-07T06:49:01Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.5"
+      },
+      {
+        "id": 177619088,
+        "tag_name": "v1.8.4",
+        "name": "v1.8.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-30T14:46:26Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.4"
+      },
+      {
+        "id": 175178901,
+        "tag_name": "v1.8.3",
+        "name": "v1.8.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-16T08:05:29Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.3"
+      },
+      {
+        "id": 175058770,
+        "tag_name": "v1.8.2",
+        "name": "v1.8.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-14T03:20:13Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.2"
+      },
+      {
+        "id": 174496116,
+        "tag_name": "v1.8.1",
+        "name": "v1.8.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-11T08:20:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.1"
+      },
+      {
+        "id": 173682539,
+        "tag_name": "v1.8.0",
+        "name": "v1.8.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-05T15:52:54Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.8.0"
+      },
+      {
+        "id": 173010426,
+        "tag_name": "v1.7.8",
+        "name": "v1.7.8",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-09-02T09:23:47Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.8"
+      },
+      {
+        "id": 172498256,
+        "tag_name": "v1.7.6",
+        "name": "v1.7.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-29T07:16:37Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.6"
+      },
+      {
+        "id": 172094720,
+        "tag_name": "v1.7.5",
+        "name": "v1.7.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-27T08:42:20Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.5"
+      },
+      {
+        "id": 171887580,
+        "tag_name": "v1.7.4",
+        "name": "v1.7.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-26T07:07:42Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.4"
+      },
+      {
+        "id": 171836174,
+        "tag_name": "v1.7.3",
+        "name": "v1.7.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-25T15:04:09Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.3"
+      },
+      {
+        "id": 171782555,
+        "tag_name": "v1.7.2",
+        "name": "v1.7.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-24T11:16:47Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.2"
+      },
+      {
+        "id": 171437248,
+        "tag_name": "v1.7.1",
+        "name": "v1.7.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-22T09:45:20Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.1"
+      },
+      {
+        "id": 171086158,
+        "tag_name": "v1.7.0",
+        "name": "v1.7.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-20T14:24:53Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.7.0"
+      },
+      {
+        "id": 170782925,
+        "tag_name": "v1.6.5",
+        "name": "v1.6.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-19T01:46:54Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.6.5"
+      },
+      {
+        "id": 170705339,
+        "tag_name": "v1.6.4",
+        "name": "v1.6.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-17T07:07:39Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.6.4"
+      },
+      {
+        "id": 170700456,
+        "tag_name": "v1.6.3",
+        "name": "v1.6.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-17T04:11:25Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.6.3"
+      },
+      {
+        "id": 170459425,
+        "tag_name": "v1.6.1",
+        "name": "v1.6.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-16T02:02:43Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.6.1"
+      },
+      {
+        "id": 169361532,
+        "tag_name": "v1.5.3",
+        "name": "v1.5.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-08T15:42:27Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.5.3"
+      },
+      {
+        "id": 169298955,
+        "tag_name": "v1.5.1",
+        "name": "v1.5.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-08T11:11:38Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.5.1"
+      },
+      {
+        "id": 168701626,
+        "tag_name": "v1.5.0",
+        "name": "v1.5.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-05T12:15:43Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.5.0"
+      },
+      {
+        "id": 168604312,
+        "tag_name": "v1.4.6",
+        "name": "v1.4.6",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-04T13:22:58Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.4.6"
+      },
+      {
+        "id": 168575433,
+        "tag_name": "v1.4.5",
+        "name": "v1.4.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-04T01:29:30Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.4.5"
+      },
+      {
+        "id": 168393594,
+        "tag_name": "v1.4.4",
+        "name": "v1.4.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-02T07:29:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.4.4"
+      },
+      {
+        "id": 168234209,
+        "tag_name": "v1.4.3",
+        "name": "v1.4.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-08-01T12:28:35Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.4.3"
+      },
+      {
+        "id": 167866540,
+        "tag_name": "v1.3.1",
+        "name": "v1.3.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-30T14:36:27Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.3.1"
+      },
+      {
+        "id": 167839497,
+        "tag_name": "v1.3.0",
+        "name": "v1.3.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-30T12:33:15Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.3.0"
+      },
+      {
+        "id": 167270909,
+        "tag_name": "v1.2.4",
+        "name": "v1.2.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-26T04:07:58Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.2.4"
+      },
+      {
+        "id": 167067139,
+        "tag_name": "v1.2.3",
+        "name": "v1.2.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-25T06:44:03Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.2.3"
+      },
+      {
+        "id": 166468810,
+        "tag_name": "v1.2.2",
+        "name": "v1.2.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-22T08:40:45Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.2.2"
+      },
+      {
+        "id": 166254657,
+        "tag_name": "v1.2.1",
+        "name": "v1.2.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-19T14:55:11Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.2.1"
+      },
+      {
+        "id": 166188005,
+        "tag_name": "v1.2.0",
+        "name": "v1.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-19T07:26:56Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.2.0"
+      },
+      {
+        "id": 166052985,
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-18T13:36:57Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.1.0"
+      },
+      {
+        "id": 165632162,
+        "tag_name": "v1.0.1",
+        "name": "v1.0.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2024-07-16T12:14:58Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.0.1"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-nikki/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "21befe0aec3806b59a37a4ef689288c6a1f4a61a",
+      "truncated": false,
+      "paths": [
+        ".github",
+        ".github/FUNDING.yml",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        ".github/workflows",
+        ".github/workflows/build-packages.yml",
+        ".github/workflows/delete-workflow-runs.yml",
+        ".github/workflows/dependabot.yml",
+        ".github/workflows/release-packages.yml",
+        ".github/workflows/stale-issues.yml",
+        "LICENSE",
+        "README.md",
+        "README.zh.md",
+        "feed.sh",
+        "install.sh",
+        "luci-app-nikki",
+        "luci-app-nikki/Makefile",
+        "luci-app-nikki/htdocs",
+        "luci-app-nikki/htdocs/luci-static",
+        "luci-app-nikki/htdocs/luci-static/resources",
+        "luci-app-nikki/htdocs/luci-static/resources/tools",
+        "luci-app-nikki/htdocs/luci-static/resources/tools/nikki.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/app.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/editor.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/log.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/mixin.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/profile.js",
+        "luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js",
+        "luci-app-nikki/po",
+        "luci-app-nikki/po/ru",
+        "luci-app-nikki/po/ru/nikki.po",
+        "luci-app-nikki/po/templates",
+        "luci-app-nikki/po/templates/nikki.pot",
+        "luci-app-nikki/po/zh_Hans",
+        "luci-app-nikki/po/zh_Hans/nikki.po",
+        "luci-app-nikki/po/zh_Hant",
+        "luci-app-nikki/po/zh_Hant/nikki.po",
+        "luci-app-nikki/root",
+        "luci-app-nikki/root/usr",
+        "luci-app-nikki/root/usr/share",
+        "luci-app-nikki/root/usr/share/luci",
+        "luci-app-nikki/root/usr/share/luci/menu.d",
+        "luci-app-nikki/root/usr/share/luci/menu.d/luci-app-nikki.json",
+        "luci-app-nikki/root/usr/share/rpcd",
+        "luci-app-nikki/root/usr/share/rpcd/acl.d",
+        "luci-app-nikki/root/usr/share/rpcd/acl.d/luci-app-nikki.json",
+        "luci-app-nikki/root/usr/share/rpcd/ucode",
+        "luci-app-nikki/root/usr/share/rpcd/ucode/luci.nikki",
+        "mihomo-alpha",
+        "mihomo-alpha/Makefile",
+        "mihomo-meta",
+        "mihomo-meta/Makefile",
+        "nikki",
+        "nikki/Makefile",
+        "nikki/files",
+        "nikki/files/mixin.yaml",
+        "nikki/files/nftables",
+        "nikki/files/nftables/geoip6_cn.nft",
+        "nikki/files/nftables/geoip_cn.nft",
+        "nikki/files/nikki.conf",
+        "nikki/files/nikki.init",
+        "nikki/files/nikki.upgrade",
+        "nikki/files/scripts",
+        "nikki/files/scripts/debug.sh",
+        "nikki/files/scripts/firewall_include.sh",
+        "nikki/files/scripts/include.sh",
+        "nikki/files/uci-defaults",
+        "nikki/files/uci-defaults/firewall.sh",
+        "nikki/files/uci-defaults/init.sh",
+        "nikki/files/uci-defaults/migrate.sh",
+        "nikki/files/ucode",
+        "nikki/files/ucode/hijack.ut",
+        "nikki/files/ucode/include.uc",
+        "nikki/files/ucode/mixin.uc",
+        "uninstall.sh"
+      ]
+    },
+    "error": ""
+  }
+}

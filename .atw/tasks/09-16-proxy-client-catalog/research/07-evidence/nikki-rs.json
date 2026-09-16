@@ -1,0 +1,477 @@
+{
+  "baseline": {
+    "order": 106,
+    "id": "nikki-rs",
+    "name": "Nikki RS",
+    "reference_url": "https://huarun.win/apps/nikki-rs",
+    "observed_official_entry": "https://github.com/CHKayanami/OpenWrt-nikki-rs",
+    "ticket": "07"
+  },
+  "repo": "CHKayanami/OpenWrt-nikki-rs",
+  "metadata": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs",
+    "status": 0,
+    "data": {
+      "full_name": "CHKayanami/OpenWrt-nikki-rs",
+      "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs",
+      "description": "Transparent Proxy with clash-rs on OpenWrt.",
+      "homepage": "https://nikki-rs.pages.dev",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/blob/main/README.md",
+      "sha": "4df773d1770c120822b65bbe287bb32d347da340",
+      "text": "![GitHub License](https://img.shields.io/github/license/CHKayanami/OpenWrt-nikki-rs?style=for-the-badge&logo=github) ![GitHub Tag](https://img.shields.io/github/v/release/CHKayanami/OpenWrt-nikki-rs?style=for-the-badge&logo=github) ![GitHub Downloads](https://img.shields.io/github/downloads/CHKayanami/OpenWrt-nikki-rs/total?style=for-the-badge&logo=github) ![GitHub Stars](https://img.shields.io/github/stars/CHKayanami/OpenWrt-nikki-rs?style=for-the-badge&logo=github) [![Telegram](https://img.shields.io/badge/Telegram-gray?style=for-the-badge&logo=telegram)](https://t.me/OpNikkiRS)\n\nEnglish | [中文](README.zh.md)\n\n# Nikki RS\n\n**Nikki RS** is a fork of [OpenWrt-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki) for OpenWrt. It integrates [clash-rs](https://chkayanami.github.io/clash-rs-alpha-docs/), a high-performance proxy core written in Rust, providing a lightweight and high-performance transparent proxy solution for OpenWrt.\n\n---\n\n## Features & Highlights\n\n- **Out of the Box**: Built-in default firewall rules (FakeIP + bypass mainland China) and routing rules to meet most common scenarios. Also supports easy configuration for custom nodes—just configure your proxy node details to get started.\n- **Ultra Lightweight (`clash-rs`)**: Powered by a fork of [clash-rs](https://chkayanami.github.io/clash-rs-alpha-docs/) written in Rust, significantly reducing memory and CPU overhead. Compared to the original version, it fixes several bugs, adds new features, and improves stability.\n- **Configuration Compatibility**: Most configurations are compatible with mihomo. Unsupported options will not cause errors—they simply will not take effect. For details, refer to [clash-rs configuration](https://chkayanami.github.io/clash-rs-alpha-docs/configuration/overview).\n- **Transparent Proxy**: Native support for Redirect, TPROXY, and TUN modes, covering both IPv4 and IPv6 traffic routing.\n- **eBPF Proxy**: Transparent proxy powered by eBPF, supporting kernel-space Direct Fast-Path decision making.\n- **Rich Protocol Support**: Excellent support for protocols including SS, AnyTLS, Hysteria2 (hy2), and VLESS-Vision-Reality. Modules such as SSH, WireGuard, Tailscale, Shadowquic, and Tor are removed in the default kernel. You can quickly switch between `minimal` and `standard` cores using the one-click script:\n  ```bash\n  wget -O - https://github.com/CHKayanami/OpenWrt-nikki-rs/raw/refs/heads/main/switch_core.sh | ash\n  ```\n- **Streamlined Configuration**: Adapted to the core features of `clash-rs` by removing unsupported redundant configuration items, making the interface cleaner and easier to use.\n\n---\n\n## Prerequisites\n\n- **OpenWrt** >= 24.10\n- **Linux Kernel** >= 5.13\n- **firewall4** (nftables based)\n\n---\n\n## Quick Start\n\n### Option A: Install from Feed (Recommended)\n\n1. **Add Feed**:\n   ```bash\n   wget -O - https://github.com/CHKayanami/OpenWrt-nikki-rs/raw/refs/heads/main/feed.sh | ash\n   ```\n\n2. **Install Packages**:\n   - **opkg**:\n     ```bash\n     opkg update\n     opkg install nikki-rs luci-app-nikki-rs luci-i18n-nikki-rs-zh-cn\n     ```\n   - **apk**:\n     ```bash\n     apk update\n     apk add nikki-rs luci-app-nikki-rs luci-i18n-nikki-rs-zh-cn\n     ```\n\n### Option B: One-Click Installation from Release\n\n```bash\nwget -O - https://github.com/CHKayanami/OpenWrt-nikki-rs/raw/refs/heads/main/install.sh | ash\n```\n\n### Basic Setup\n\n1. Open OpenWrt LuCI Web Interface.\n2. Navigate to **Services** -> **Nikki RS**.\n3. Import subscription link or configuration profile, and enable the transparent proxy service.\n\n---\n\n## Uninstall & Reset\n\n```bash\nwget -O - https://github.com/CHKayanami/OpenWrt-nikki-rs/raw/refs/heads/main/uninstall.sh | ash\n```\n\n---\n\n## Compilation\n\nTo compile `nikki-rs` in your OpenWrt source code or SDK:\n\n```bash\n# Add feed source\necho \"src-git nikki-rs https://github.com/CHKayanami/OpenWrt-nikki-rs.git;main\" >> \"feeds.conf.default\"\n\n# Update and install feeds\n./scripts/feeds update -a\n./scripts/feeds install -a\n\n# Compile package\nmake package/luci-app-nikki-rs/compile\n```\n\nThe compiled ipk / apk packages are located in `bin/packages/<arch>/nikki-rs`.\n\n---\n\n## Dependencies\n\n- `ca-bundle`\n- `curl`\n- `yq`\n- `firewall4`\n- `ip-full`\n- `kmod-inet-diag`\n- `kmod-nft-socket`\n- `kmod-nft-tproxy`\n- `kmod-tun`\n- `kmod-dummy`\n\n---\n\n## Credits\n\nSincere thanks to the contributions from upstream projects and open source developers:\n\n- **[nikki](https://github.com/nikkinikki-org/OpenWrt-nikki)** ([@nikkinikki-org](https://github.com/nikkinikki-org)): For designing and maintaining the OpenWrt LuCI interface and transparent proxy infrastructure.\n- **[clash-rs](https://github.com/Watfaq/clash-rs)**: For developing the exceptional, lightweight, and high-performance Clash proxy core written in Rust.\n\n\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 377666743,
+        "tag_name": "v1.0.5",
+        "name": "v1.0.5",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.5",
+        "published_at": "2026-08-27T08:24:30Z",
+        "draft": false,
+        "prerelease": false,
+        "body": null,
+        "assets": [
+          {
+            "id": 533833896,
+            "name": "nikki-rs_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533848839,
+            "name": "nikki-rs_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533843619,
+            "name": "nikki-rs_aarch64_cortex-a53-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a53-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533847539,
+            "name": "nikki-rs_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533848674,
+            "name": "nikki-rs_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533820518,
+            "name": "nikki-rs_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533808977,
+            "name": "nikki-rs_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533853117,
+            "name": "nikki-rs_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533823005,
+            "name": "nikki-rs_aarch64_cortex-a76-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_cortex-a76-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533834190,
+            "name": "nikki-rs_aarch64_generic-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_generic-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533845824,
+            "name": "nikki-rs_aarch64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533864967,
+            "name": "nikki-rs_aarch64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_aarch64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533846698,
+            "name": "nikki-rs_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533852711,
+            "name": "nikki-rs_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533826371,
+            "name": "nikki-rs_arm_cortex-a15_neon-vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a15_neon-vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533817143,
+            "name": "nikki-rs_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533820205,
+            "name": "nikki-rs_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533842977,
+            "name": "nikki-rs_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533842112,
+            "name": "nikki-rs_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533823286,
+            "name": "nikki-rs_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533820387,
+            "name": "nikki-rs_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533842556,
+            "name": "nikki-rs_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533826440,
+            "name": "nikki-rs_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533820756,
+            "name": "nikki-rs_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533842733,
+            "name": "nikki-rs_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533820288,
+            "name": "nikki-rs_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533818725,
+            "name": "nikki-rs_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533835329,
+            "name": "nikki-rs_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533815901,
+            "name": "nikki-rs_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533852349,
+            "name": "nikki-rs_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533863794,
+            "name": "nikki-rs_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533825053,
+            "name": "nikki-rs_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533829915,
+            "name": "nikki-rs_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533823633,
+            "name": "nikki-rs_i386_pentium4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_i386_pentium4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533819448,
+            "name": "nikki-rs_i386_pentium4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_i386_pentium4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533866269,
+            "name": "nikki-rs_i386_pentium4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_i386_pentium4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533825328,
+            "name": "nikki-rs_riscv64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_riscv64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533813078,
+            "name": "nikki-rs_riscv64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_riscv64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533828461,
+            "name": "nikki-rs_riscv64_riscv64-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_riscv64_riscv64-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533862714,
+            "name": "nikki-rs_x86_64-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_x86_64-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533840015,
+            "name": "nikki-rs_x86_64-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_x86_64-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 533821034,
+            "name": "nikki-rs_x86_64-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/download/v1.0.5/nikki-rs_x86_64-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 377666743,
+        "tag_name": "v1.0.5",
+        "name": "v1.0.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-27T08:24:30Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.5"
+      },
+      {
+        "id": 376883361,
+        "tag_name": "v1.0.4",
+        "name": "v1.0.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-26T04:37:41Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.4"
+      },
+      {
+        "id": 371319850,
+        "tag_name": "v1.0.3",
+        "name": "v1.0.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-16T12:30:05Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.3"
+      },
+      {
+        "id": 371262179,
+        "tag_name": "v1.0.2",
+        "name": "v1.0.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-16T07:35:27Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.2"
+      },
+      {
+        "id": 370949847,
+        "tag_name": "v1.0.1",
+        "name": "v1.0.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-15T03:49:42Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.1"
+      },
+      {
+        "id": 370368696,
+        "tag_name": "v1.0.0",
+        "name": "v1.0.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-08-14T05:19:56Z",
+        "html_url": "https://github.com/CHKayanami/OpenWrt-nikki-rs/releases/tag/v1.0.0"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/CHKayanami/OpenWrt-nikki-rs/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "3364580cb3c82350b3159c22a11647d95f24da70",
+      "truncated": false,
+      "paths": [
+        ".github",
+        ".github/FUNDING.yml",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        ".github/workflows",
+        ".github/workflows/build-packages.yml",
+        ".github/workflows/delete-workflow-runs.yml",
+        ".github/workflows/dependabot.yml",
+        ".github/workflows/release-packages.yml",
+        ".github/workflows/stale-issues.yml",
+        ".gitignore",
+        "LICENSE",
+        "README.md",
+        "README.zh.md",
+        "clash-rs",
+        "clash-rs/Makefile",
+        "feed.sh",
+        "install.sh",
+        "luci-app-nikki-rs",
+        "luci-app-nikki-rs/Makefile",
+        "luci-app-nikki-rs/htdocs",
+        "luci-app-nikki-rs/htdocs/luci-static",
+        "luci-app-nikki-rs/htdocs/luci-static/resources",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/tools",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/tools/nikki-rs.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/app.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/ebpf.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/editor.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/log.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/mixin.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/profile.js",
+        "luci-app-nikki-rs/htdocs/luci-static/resources/view/nikki-rs/proxy.js",
+        "luci-app-nikki-rs/po",
+        "luci-app-nikki-rs/po/ru",
+        "luci-app-nikki-rs/po/ru/nikki-rs.po",
+        "luci-app-nikki-rs/po/templates",
+        "luci-app-nikki-rs/po/templates/nikki-rs.pot",
+        "luci-app-nikki-rs/po/zh_Hans",
+        "luci-app-nikki-rs/po/zh_Hans/nikki-rs.po",
+        "luci-app-nikki-rs/po/zh_Hant",
+        "luci-app-nikki-rs/po/zh_Hant/nikki-rs.po",
+        "luci-app-nikki-rs/root",
+        "luci-app-nikki-rs/root/usr",
+        "luci-app-nikki-rs/root/usr/share",
+        "luci-app-nikki-rs/root/usr/share/luci",
+        "luci-app-nikki-rs/root/usr/share/luci/menu.d",
+        "luci-app-nikki-rs/root/usr/share/luci/menu.d/luci-app-nikki-rs.json",
+        "luci-app-nikki-rs/root/usr/share/rpcd",
+        "luci-app-nikki-rs/root/usr/share/rpcd/acl.d",
+        "luci-app-nikki-rs/root/usr/share/rpcd/acl.d/luci-app-nikki-rs.json",
+        "luci-app-nikki-rs/root/usr/share/rpcd/ucode",
+        "luci-app-nikki-rs/root/usr/share/rpcd/ucode/luci.nikki-rs",
+        "nikki-rs",
+        "nikki-rs/Makefile",
+        "nikki-rs/files",
+        "nikki-rs/files/default.yaml",
+        "nikki-rs/files/dns",
+        "nikki-rs/files/dns/black_filter",
+        "nikki-rs/files/dns/fake_ip_filter",
+        "nikki-rs/files/dns/fallback_filter",
+        "nikki-rs/files/mixin.yaml",
+        "nikki-rs/files/nftables",
+        "nikki-rs/files/nftables/geoip6_cn.txt",
+        "nikki-rs/files/nftables/geoip_cn.txt",
+        "nikki-rs/files/nftables/proxy_whitelist.txt",
+        "nikki-rs/files/nftables/proxy_whitelist6.txt",
+        "nikki-rs/files/nikki-rs.conf",
+        "nikki-rs/files/nikki-rs.init",
+        "nikki-rs/files/nikki-rs.upgrade",
+        "nikki-rs/files/rule",
+        "nikki-rs/files/rule/ads.mrs",
+        "nikki-rs/files/rule/ai.mrs",
+        "nikki-rs/files/rule/apple-cn.mrs",
+        "nikki-rs/files/rule/geosite-cn.mrs",
+        "nikki-rs/files/rule/google-lite.mrs",
+        "nikki-rs/files/rule/media.mrs",
+        "nikki-rs/files/rule/microsoft-cn.mrs",
+        "nikki-rs/files/rule/telegramip.mrs",
+        "nikki-rs/files/rule/youtube.mrs",
+        "nikki-rs/files/scripts",
+        "nikki-rs/files/scripts/debug.sh",
+        "nikki-rs/files/scripts/firewall_include.sh",
+        "nikki-rs/files/scripts/include.sh",
+        "nikki-rs/files/uci-defaults",
+        "nikki-rs/files/uci-defaults/firewall.sh",
+        "nikki-rs/files/uci-defaults/init.sh",
+        "nikki-rs/files/uci-defaults/migrate.sh",
+        "nikki-rs/files/ucode",
+        "nikki-rs/files/ucode/hijack.ut",
+        "nikki-rs/files/ucode/include.uc",
+        "nikki-rs/files/ucode/mixin.uc",
+        "switch_core.sh",
+        "uninstall.sh",
+        "update-clash-rs.sh"
+      ]
+    },
+    "error": ""
+  }
+}

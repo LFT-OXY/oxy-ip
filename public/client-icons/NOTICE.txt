@@ -65,3 +65,12 @@ and other non-code assets associated with this project:
    of law principles. Any disputes arising under this policy shall be subject to
    the exclusive jurisdiction of the state or federal courts located in Wyoming,
    USA.
+
+NekoBox for Harmony 图标：版权归 NekoBoxForAndroid 原作者所有，GPL-3.0。
+来源与归属声明：https://github.com/xiaoli8571/NekoBox4Harmony#许可
+本次仅等比缩小并转为 WebP；不表示与上游作者或维护分支存在关联。
+
+Karing Harmony HAP 图标取自发布者 v1.0.9-beta HAP 的应用图标资源，仅用于识别该分支。
+该分支不是 Karing / KaringX 官方发行；不因沿用标识暗示关联、授权或背书。
+
+第07票经用户于2026-09-16授权，Clash .NET、lvory、ShellCrash、PassWall、PassWall2、Nikki、Nikki RS、Momo、HomeProxy使用本站文字占位图，不是官方图标，不代表品牌授权或背书。

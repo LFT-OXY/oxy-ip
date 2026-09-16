@@ -1,0 +1,1424 @@
+{
+  "now": "2026-09-16T16:06:45.045Z",
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xinggaoya/sing-box-windows/releases/340663196/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/qr243vbi/nekobox/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/qr243vbi/nekobox/releases?per_page=100&page=2",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/qr243vbi/nekobox/releases/377351204/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/PhoenixNil/XrayUI-dev/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/PhoenixNil/XrayUI-dev/releases/360046641/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/yaog6700-bit/Swell-Proxy/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/yaog6700-bit/Swell-Proxy/releases/388281183/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/MatsuriDayo/nekoray/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/MatsuriDayo/nekoray/releases/190371670/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/SUDOKU-ASCII/sudoku-desktop/releases/383620418/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/v2rayA/v2rayA/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/v2rayA/v2rayA/releases?per_page=100&page=2",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/v2rayA/v2rayA/releases/389838975/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/v2rayA/v2rayA/releases/389838975/assets?per_page=100&page=2",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/dae/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/dae/releases/351226780/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/dae/releases/351226780/assets?per_page=100&page=2",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/daed/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/daeuniverse/daed/releases/310125470/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xiaoli8571/NekoBox4Harmony/releases/389594821/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Own716/OwnBoxForAndroid/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Own716/OwnBoxForAndroid/releases/389149007/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/vernesong/OpenClash/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/vernesong/OpenClash/releases?per_page=100&page=2",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/vernesong/OpenClash/releases/367999610/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/releases/389689413/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall2/releases/390025281/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/releases/333782086/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/xiaobaigroup/ClashBox/releases/304711621/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/juewuy/ShellCrash/releases?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://api.github.com/repos/juewuy/ShellCrash/releases/286521950/assets?per_page=100&page=1",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64-wasdk.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64-wasdk.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-arm64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-x64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux-x64.AppImage",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-debian-x64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-amd64.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_windows-amd64.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-arm64.dmg",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-amd64.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-arm64.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases/download/v1.9.3/NekoBox-1.9.3-unsigned.hap",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-arm64-v8a-release.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-armeabi-v7a-release.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86-release.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash-0.47.156.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash_0.47.156_all.ipk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/22.03-_luci-app-passwall_26.9.16_all.ipk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86_64-release.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/25.12%2B_luci-app-passwall-26.9.16-r1.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2-26.9.16-r1.apk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2_26.9.16-r1_all.ipk",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_loongarch64_generic-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_riscv64-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_generic-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/juewuy/ShellCrash/releases/download/1.9.4/ShellCrash.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/xiaobaigroup/ClashBox/releases/download/1.7.4/ClashBox_LTS_V1_unsigned.hap",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-25.12.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-24.10.tar.gz",
+      "method": "HEAD",
+      "status": 200
+    }
+  ],
+  "checks": {
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm": "valid",
+    "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb": "valid",
+    "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64.zip": "valid",
+    "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64.zip": "valid",
+    "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64-wasdk.zip": "valid",
+    "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64-wasdk.zip": "valid",
+    "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-arm64.zip": "valid",
+    "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip": "valid",
+    "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-x64.zip": "valid",
+    "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux-x64.AppImage": "valid",
+    "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux64.zip": "valid",
+    "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-debian-x64.deb": "valid",
+    "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-amd64.dmg": "valid",
+    "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_windows-amd64.exe": "valid",
+    "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-arm64.dmg": "valid",
+    "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-amd64.tar.gz": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe": "valid",
+    "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-arm64.tar.gz": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm": "valid",
+    "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm": "valid",
+    "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip": "valid",
+    "https://github.com/xiaoli8571/NekoBox4Harmony/releases/download/v1.9.3/NekoBox-1.9.3-unsigned.hap": "valid",
+    "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-arm64-v8a-release.apk": "valid",
+    "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-armeabi-v7a-release.apk": "valid",
+    "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86-release.apk": "valid",
+    "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash-0.47.156.apk": "valid",
+    "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash_0.47.156_all.ipk": "valid",
+    "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/22.03-_luci-app-passwall_26.9.16_all.ipk": "valid",
+    "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk": "valid",
+    "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86_64-release.apk": "valid",
+    "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/25.12%2B_luci-app-passwall-26.9.16-r1.apk": "valid",
+    "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2-26.9.16-r1.apk": "valid",
+    "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2_26.9.16-r1_all.ipk": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_loongarch64_generic-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_riscv64-openwrt-24.10.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_generic-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/juewuy/ShellCrash/releases/download/1.9.4/ShellCrash.tar.gz": "valid",
+    "https://github.com/xiaobaigroup/ClashBox/releases/download/1.7.4/ClashBox_LTS_V1_unsigned.hap": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-25.12.tar.gz": "valid",
+    "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-24.10.tar.gz": "valid"
+  },
+  "errors": [
+    {
+      "appId": "nekobox-for-pc",
+      "platform": "windows",
+      "message": "[\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"uploaded\"\n    ],\n    \"path\": [\n      1,\n      \"state\"\n    ],\n    \"message\": \"Invalid input: expected \\\"uploaded\\\"\"\n  },\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"uploaded\"\n    ],\n    \"path\": [\n      5,\n      \"state\"\n    ],\n    \"message\": \"Invalid input: expected \\\"uploaded\\\"\"\n  }\n]"
+    },
+    {
+      "appId": "nekobox-for-pc",
+      "platform": "linux",
+      "message": "[\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"uploaded\"\n    ],\n    \"path\": [\n      1,\n      \"state\"\n    ],\n    \"message\": \"Invalid input: expected \\\"uploaded\\\"\"\n  },\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"uploaded\"\n    ],\n    \"path\": [\n      5,\n      \"state\"\n    ],\n    \"message\": \"Invalid input: expected \\\"uploaded\\\"\"\n  }\n]"
+    },
+    {
+      "appId": "daed",
+      "platform": "linux",
+      "message": "没有可确认的平台安装包"
+    }
+  ],
+  "automatic": [
+    {
+      "appId": "sing-box-windows",
+      "platform": "windows",
+      "version": "v2.3.1",
+      "downloads": 6
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "macos",
+      "version": "v2.3.1",
+      "downloads": 2
+    },
+    {
+      "appId": "sing-box-windows",
+      "platform": "linux",
+      "version": "v2.3.1",
+      "downloads": 3
+    },
+    {
+      "appId": "xrayui",
+      "platform": "windows",
+      "version": "1.18",
+      "downloads": 4
+    },
+    {
+      "appId": "swell-proxy",
+      "platform": "windows",
+      "version": "v3.3.6",
+      "downloads": 2
+    },
+    {
+      "appId": "nekoray",
+      "platform": "windows",
+      "version": "4.0.1",
+      "downloads": 1
+    },
+    {
+      "appId": "nekoray",
+      "platform": "linux",
+      "version": "4.0.1",
+      "downloads": 3
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "windows",
+      "version": "v0.2.2",
+      "downloads": 1
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "macos",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "sudoku-desktop",
+      "platform": "linux",
+      "version": "v0.2.2",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "windows",
+      "version": "v2.4.20",
+      "downloads": 2
+    },
+    {
+      "appId": "v2raya",
+      "platform": "linux",
+      "version": "v2.4.20",
+      "downloads": 26
+    },
+    {
+      "appId": "dae",
+      "platform": "linux",
+      "version": "v2.0.0",
+      "downloads": 73
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "linux",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "openwrt",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "shellcrash",
+      "platform": "asus",
+      "version": "1.9.4",
+      "downloads": 1
+    },
+    {
+      "appId": "clashbox",
+      "platform": "harmonyos",
+      "version": "1.7.4",
+      "downloads": 1
+    },
+    {
+      "appId": "nekobox-for-harmony",
+      "platform": "harmonyos",
+      "version": "v1.9.3",
+      "downloads": 1
+    },
+    {
+      "appId": "ownbox",
+      "platform": "android",
+      "version": "v2.7.9",
+      "downloads": 4
+    },
+    {
+      "appId": "openclash",
+      "platform": "openwrt",
+      "version": "v0.47.156",
+      "downloads": 2
+    },
+    {
+      "appId": "passwall",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 3
+    },
+    {
+      "appId": "passwall2",
+      "platform": "openwrt",
+      "version": "26.9.16-1",
+      "downloads": 2
+    },
+    {
+      "appId": "momo",
+      "platform": "openwrt",
+      "version": "v1.2.1",
+      "downloads": 43
+    }
+  ]
+}

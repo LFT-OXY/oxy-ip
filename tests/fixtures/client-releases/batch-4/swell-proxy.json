@@ -1,0 +1,35 @@
+{
+  "id": 388281183,
+  "tag_name": "v3.3.6",
+  "name": "v3.3.6",
+  "html_url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/tag/v3.3.6",
+  "published_at": "2026-09-14T09:33:58Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 563063827,
+      "name": "Swell-win-arm64.zip",
+      "browser_download_url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 563063826,
+      "name": "Swell-win-arm64.zip.sha256",
+      "browser_download_url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-arm64.zip.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 563063805,
+      "name": "Swell-win-x64.zip",
+      "browser_download_url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-x64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 563063804,
+      "name": "Swell-win-x64.zip.sha256",
+      "browser_download_url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-x64.zip.sha256",
+      "state": "uploaded"
+    }
+  ]
+}

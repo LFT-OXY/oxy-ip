@@ -1,0 +1,35 @@
+{
+  "id": 190371670,
+  "tag_name": "4.0.1",
+  "name": "4.0.1",
+  "html_url": "https://github.com/MatsuriDayo/nekoray/releases/tag/4.0.1",
+  "published_at": "2024-12-12T08:19:14Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 212835192,
+      "name": "nekoray-4.0.1-2024-12-12-debian-x64.deb",
+      "browser_download_url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-debian-x64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 212835189,
+      "name": "nekoray-4.0.1-2024-12-12-linux-x64.AppImage",
+      "browser_download_url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux-x64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 212835191,
+      "name": "nekoray-4.0.1-2024-12-12-linux64.zip",
+      "browser_download_url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 212835190,
+      "name": "nekoray-4.0.1-2024-12-12-windows64.zip",
+      "browser_download_url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

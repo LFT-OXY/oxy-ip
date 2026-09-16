@@ -1,0 +1,615 @@
+{
+  "baseline": {
+    "order": 107,
+    "id": "momo",
+    "name": "Momo",
+    "reference_url": "https://huarun.win/apps/momo",
+    "observed_official_entry": "https://github.com/nikkinikki-org/OpenWrt-momo",
+    "ticket": "07"
+  },
+  "repo": "nikkinikki-org/OpenWrt-momo",
+  "metadata": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo",
+    "status": 0,
+    "data": {
+      "full_name": "nikkinikki-org/OpenWrt-momo",
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo",
+      "description": "Transparent Proxy with sing-box on OpenWrt.",
+      "homepage": "https://momomomo.pages.dev/",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "error": ""
+  },
+  "readme": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/readme",
+    "status": 0,
+    "data": {
+      "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/blob/main/README.md",
+      "sha": "9e804433f81b92d66ed22ed2826c62fcda22c1bc",
+      "text": "![GitHub License](https://img.shields.io/github/license/nikkinikki-org/OpenWrt-momo?style=for-the-badge&logo=github) ![GitHub Tag](https://img.shields.io/github/v/release/nikkinikki-org/OpenWrt-momo?style=for-the-badge&logo=github) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nikkinikki-org/OpenWrt-momo/total?style=for-the-badge&logo=github) ![GitHub Repo stars](https://img.shields.io/github/stars/nikkinikki-org/OpenWrt-momo?style=for-the-badge&logo=github) [![Telegram](https://img.shields.io/badge/Telegram-gray?style=for-the-badge&logo=telegram)](https://t.me/nikkinikki_org)\n\nEnglish | [中文](README.zh.md)\n\n# Momo\n\nTransparent Proxy with sing-box on OpenWrt.\n\n## Prerequisites\n\n- OpenWrt >= 24.10\n- Linux Kernel >= 5.13\n- firewall4\n\n## Feature\n\n- Transparent Proxy (Redirect/TPROXY/TUN, IPv4 and/or IPv6)\n- Access Control\n- Profile Editor\n- Scheduled Restart\n\n## Install & Update\n\n### A. Install From Feed (Recommended)\n\n1. Add Feed\n\n```shell\n# only needs to be run once\nwget -O - https://github.com/nikkinikki-org/OpenWrt-momo/raw/refs/heads/main/feed.sh | ash\n```\n\n2. Install\n\n```shell\n# you can install from shell or `Software` menu in LuCI\n# for opkg\nopkg install momo\nopkg install luci-app-momo\nopkg install luci-i18n-momo-zh-cn\n# for apk\napk add momo\napk add luci-app-momo\napk add luci-i18n-momo-zh-cn\n```\n\n### B. Install From Release\n\n```shell\nwget -O - https://github.com/nikkinikki-org/OpenWrt-momo/raw/refs/heads/main/install.sh | ash\n```\n\n## Uninstall & Reset\n\n```shell\nwget -O - https://github.com/nikkinikki-org/OpenWrt-momo/raw/refs/heads/main/uninstall.sh | ash\n```\n\n## How To Use\n\nSee [Wiki](https://github.com/nikkinikki-org/OpenWrt-momo/wiki)\n\n## How does it work\n \n1. Run sing-box.\n2. Set scheduled restart.\n3. Get neccesarry param from profile.\n4. Set ip rule/route.\n5. Generate firewall and apply it.\n\nNote that the steps above may change base on config.\n\n## Compilation\n\n```shell\n# add feed\necho \"src-git momo https://github.com/nikkinikki-org/OpenWrt-momo.git;main\" >> \"feeds.conf.default\"\n# update & install feeds\n./scripts/feeds update -a\n./scripts/feeds install -a\n# make package\nmake package/luci-app-momo/compile\n```\n\nThe package files will be found under `bin/packages/your_architecture/momo`.\n\n## Dependencies\n\n- ca-bundle\n- curl\n- firewall4\n- ip-full\n- kmod-inet-diag\n- kmod-nft-socket\n- kmod-nft-tproxy\n- kmod-tun\n- sing-box >= 1.12\n\n## Contributors\n\n[![Contributors](https://contrib.rocks/image?repo=nikkinikki-org/OpenWrt-momo)](https://github.com/nikkinikki-org/OpenWrt-momo/graphs/contributors)\n"
+    },
+    "error": ""
+  },
+  "releases": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/releases?per_page=100",
+    "status": 0,
+    "data": [
+      {
+        "id": 333782086,
+        "tag_name": "v1.2.1",
+        "name": "v1.2.1",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.2.1",
+        "published_at": "2026-06-03T14:38:41Z",
+        "draft": false,
+        "prerelease": false,
+        "body": "**Full Changelog**: https://github.com/nikkinikki-org/OpenWrt-momo/compare/v1.2.0...v1.2.1",
+        "assets": [
+          {
+            "id": 437400819,
+            "name": "momo_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437403609,
+            "name": "momo_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437360891,
+            "name": "momo_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437398201,
+            "name": "momo_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437389984,
+            "name": "momo_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437372728,
+            "name": "momo_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437389804,
+            "name": "momo_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437386091,
+            "name": "momo_aarch64_cortex-a76-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437392001,
+            "name": "momo_aarch64_generic-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437379057,
+            "name": "momo_aarch64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437401416,
+            "name": "momo_aarch64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437360855,
+            "name": "momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437389970,
+            "name": "momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437363820,
+            "name": "momo_arm_cortex-a15_neon-vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437360528,
+            "name": "momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437377783,
+            "name": "momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437363108,
+            "name": "momo_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437359890,
+            "name": "momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437407365,
+            "name": "momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437363475,
+            "name": "momo_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437361108,
+            "name": "momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437394757,
+            "name": "momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437386249,
+            "name": "momo_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437384425,
+            "name": "momo_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437382262,
+            "name": "momo_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437361817,
+            "name": "momo_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437371715,
+            "name": "momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437366745,
+            "name": "momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437401633,
+            "name": "momo_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437364965,
+            "name": "momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437378523,
+            "name": "momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437409615,
+            "name": "momo_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437380736,
+            "name": "momo_i386_pentium4-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437397500,
+            "name": "momo_i386_pentium4-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437406908,
+            "name": "momo_i386_pentium4-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437386691,
+            "name": "momo_loongarch64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_loongarch64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437368045,
+            "name": "momo_loongarch64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_loongarch64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437393960,
+            "name": "momo_mips64_octeonplus-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437365409,
+            "name": "momo_mips64_octeonplus-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437396043,
+            "name": "momo_mips64_octeonplus-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437358690,
+            "name": "momo_mipsel_24kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437376360,
+            "name": "momo_mipsel_24kc-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437385182,
+            "name": "momo_mipsel_24kc-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437396886,
+            "name": "momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437401393,
+            "name": "momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437370268,
+            "name": "momo_mipsel_24kc_24kf-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437359720,
+            "name": "momo_mipsel_74kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437378862,
+            "name": "momo_mipsel_74kc-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437406491,
+            "name": "momo_mipsel_74kc-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437359511,
+            "name": "momo_mipsel_mips32-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437405381,
+            "name": "momo_mipsel_mips32-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437380992,
+            "name": "momo_mipsel_mips32-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437363103,
+            "name": "momo_mips_24kc-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437378881,
+            "name": "momo_mips_24kc-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437367559,
+            "name": "momo_mips_24kc-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437378613,
+            "name": "momo_mips_mips32-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437395581,
+            "name": "momo_mips_mips32-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437403806,
+            "name": "momo_mips_mips32-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437412412,
+            "name": "momo_riscv64_generic-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_generic-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437385019,
+            "name": "momo_riscv64_generic-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_generic-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437397431,
+            "name": "momo_riscv64_riscv64-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_riscv64-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437402560,
+            "name": "momo_x86_64-openwrt-24.10.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-24.10.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437409811,
+            "name": "momo_x86_64-openwrt-25.12.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-25.12.tar.gz",
+            "state": "uploaded"
+          },
+          {
+            "id": 437410294,
+            "name": "momo_x86_64-SNAPSHOT.tar.gz",
+            "browser_download_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-SNAPSHOT.tar.gz",
+            "state": "uploaded"
+          }
+        ]
+      }
+    ],
+    "error": "",
+    "index": [
+      {
+        "id": 333782086,
+        "tag_name": "v1.2.1",
+        "name": "v1.2.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-06-03T14:38:41Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.2.1"
+      },
+      {
+        "id": 307426004,
+        "tag_name": "v1.2.0",
+        "name": "v1.2.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-04-10T07:39:13Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.2.0"
+      },
+      {
+        "id": 302947047,
+        "tag_name": "v1.1.1",
+        "name": "v1.1.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2026-03-30T01:35:25Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.1.1"
+      },
+      {
+        "id": 273509410,
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-12-31T02:03:43Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.1.0"
+      },
+      {
+        "id": 240587697,
+        "tag_name": "v1.0.5",
+        "name": "v1.0.5",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-18T12:21:39Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.5"
+      },
+      {
+        "id": 240224201,
+        "tag_name": "v1.0.4",
+        "name": "v1.0.4",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-15T13:47:19Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.4"
+      },
+      {
+        "id": 239041807,
+        "tag_name": "v1.0.3",
+        "name": "v1.0.3",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-11T14:00:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.3"
+      },
+      {
+        "id": 238849032,
+        "tag_name": "v1.0.2",
+        "name": "v1.0.2",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-10T13:25:36Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.2"
+      },
+      {
+        "id": 238825861,
+        "tag_name": "v1.0.1",
+        "name": "v1.0.1",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-10T05:40:18Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.1"
+      },
+      {
+        "id": 238760286,
+        "tag_name": "v1.0.0",
+        "name": "v1.0.0",
+        "prerelease": false,
+        "draft": false,
+        "published_at": "2025-08-09T08:36:55Z",
+        "html_url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.0.0"
+      }
+    ]
+  },
+  "tree": {
+    "url": "https://api.github.com/repos/nikkinikki-org/OpenWrt-momo/git/trees/main?recursive=1",
+    "status": 0,
+    "data": {
+      "sha": "72f5c46b5b65ad95f8f786f024c98204e47cd3dd",
+      "truncated": false,
+      "paths": [
+        ".github",
+        ".github/ISSUE_TEMPLATE",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        ".github/workflows",
+        ".github/workflows/build-packages.yml",
+        ".github/workflows/delete-workflow-runs.yml",
+        ".github/workflows/release-packages.yml",
+        ".github/workflows/stale-issues.yml",
+        "LICENSE",
+        "README.md",
+        "README.zh.md",
+        "feed.sh",
+        "install.sh",
+        "luci-app-momo",
+        "luci-app-momo/Makefile",
+        "luci-app-momo/htdocs",
+        "luci-app-momo/htdocs/luci-static",
+        "luci-app-momo/htdocs/luci-static/resources",
+        "luci-app-momo/htdocs/luci-static/resources/tools",
+        "luci-app-momo/htdocs/luci-static/resources/tools/momo.js",
+        "luci-app-momo/htdocs/luci-static/resources/view",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/app.js",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/editor.js",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/log.js",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/mixin.js",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/profile.js",
+        "luci-app-momo/htdocs/luci-static/resources/view/momo/proxy.js",
+        "luci-app-momo/po",
+        "luci-app-momo/po/templates",
+        "luci-app-momo/po/templates/momo.pot",
+        "luci-app-momo/po/zh_Hans",
+        "luci-app-momo/po/zh_Hans/momo.po",
+        "luci-app-momo/root",
+        "luci-app-momo/root/usr",
+        "luci-app-momo/root/usr/share",
+        "luci-app-momo/root/usr/share/luci",
+        "luci-app-momo/root/usr/share/luci/menu.d",
+        "luci-app-momo/root/usr/share/luci/menu.d/luci-app-momo.json",
+        "luci-app-momo/root/usr/share/rpcd",
+        "luci-app-momo/root/usr/share/rpcd/acl.d",
+        "luci-app-momo/root/usr/share/rpcd/acl.d/luci-app-momo.json",
+        "luci-app-momo/root/usr/share/rpcd/ucode",
+        "luci-app-momo/root/usr/share/rpcd/ucode/luci.momo",
+        "momo",
+        "momo/Makefile",
+        "momo/files",
+        "momo/files/firewall",
+        "momo/files/firewall/geoip6_cn.nft",
+        "momo/files/firewall/geoip_cn.nft",
+        "momo/files/momo.conf",
+        "momo/files/momo.init",
+        "momo/files/momo.upgrade",
+        "momo/files/scripts",
+        "momo/files/scripts/debug.sh",
+        "momo/files/scripts/firewall_include.sh",
+        "momo/files/scripts/include.sh",
+        "momo/files/uci-defaults",
+        "momo/files/uci-defaults/firewall.sh",
+        "momo/files/uci-defaults/init.sh",
+        "momo/files/uci-defaults/migrate.sh",
+        "momo/files/ucode",
+        "momo/files/ucode/hijack.ut",
+        "momo/files/ucode/include.uc",
+        "momo/files/ucode/mixin.uc",
+        "uninstall.sh"
+      ]
+    },
+    "error": ""
+  }
+}

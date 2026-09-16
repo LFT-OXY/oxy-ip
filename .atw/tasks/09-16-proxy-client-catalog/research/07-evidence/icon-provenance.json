@@ -1,0 +1,125 @@
+{
+  "sing-box-windows": {
+    "url": "https://raw.githubusercontent.com/xinggaoya/sing-box-windows/42ee1fe568ba4654458011906938ec11a2275038/src/assets/icon.png",
+    "path": "/tmp/catalog07/icons/sing-box-windows.png",
+    "exit": 0,
+    "error": ""
+  },
+  "nekobox-for-pc": {
+    "url": "https://raw.githubusercontent.com/qr243vbi/nekobox/4707d4a2a01dc5e5c82daef39f4e84db7b81d0a2/res/public/icon.png",
+    "path": "/tmp/catalog07/icons/nekobox-for-pc.png",
+    "exit": 0,
+    "error": ""
+  },
+  "xrayui": {
+    "url": "https://raw.githubusercontent.com/PhoenixNil/XrayUI-dev/49c91ed04f29466e2acead2d876671ca53cfc045/Assets/icons/output.ico",
+    "path": "/tmp/catalog07/icons/xrayui.ico",
+    "exit": 0,
+    "error": ""
+  },
+  "swell-proxy": {
+    "url": "https://raw.githubusercontent.com/yaog6700-bit/Swell-Proxy/c49098d2884aee75c6d0907e7c019c0233f408ca/Assets/output.ico",
+    "path": "/tmp/catalog07/icons/swell-proxy.ico",
+    "exit": 0,
+    "error": ""
+  },
+  "nekoray": {
+    "url": "https://raw.githubusercontent.com/MatsuriDayo/nekoray/adef6cd4af7dffc77235c524086f3dc4100d8457/res/public/nekobox.png",
+    "path": "/tmp/catalog07/icons/nekoray.png",
+    "exit": 0,
+    "error": ""
+  },
+  "sudoku-desktop": {
+    "url": "https://raw.githubusercontent.com/SUDOKU-ASCII/sudoku-desktop/2bda14fc616b531bdf3259274ca694d281535eab/build/appicon.png",
+    "path": "/tmp/catalog07/icons/sudoku-desktop.png",
+    "exit": 0,
+    "error": ""
+  },
+  "clashn": {
+    "url": "https://raw.githubusercontent.com/2dust/clashN/0b498424d3bc1ef3a9fa1b9a6c05b4b216303984/clashN/clashN/clashN.ico",
+    "path": "/tmp/catalog07/icons/clashn.ico",
+    "exit": 0,
+    "error": ""
+  },
+  "v2raya": {
+    "url": "https://raw.githubusercontent.com/v2rayA/v2rayA/69826978c3d7fb90b1fc2e415566a5a8266450da/gui/public/img/icons/android-chrome-512x512.png",
+    "path": "/tmp/catalog07/icons/v2raya.png",
+    "exit": 28,
+    "error": "curl: (28) Connection timed out after 60003 milliseconds\n",
+    "retry": {
+      "url": "https://raw.githubusercontent.com/v2rayA/v2rayA/v2.4.20/install/universal/v2raya.png",
+      "exit": 0,
+      "visual": "深蓝底白色V应用标识"
+    }
+  },
+  "dae": {
+    "url": "https://raw.githubusercontent.com/daeuniverse/dae/1ec85feddc721088ecdda73015bd78f652926b39/logo.png",
+    "path": "/tmp/catalog07/icons/dae.png",
+    "exit": 0,
+    "error": ""
+  },
+  "daed": {
+    "url": "https://raw.githubusercontent.com/daeuniverse/daed/671e65d2fdcd62fe6a3ec18ecda209c5addea898/apps/web/public/logo-rounded.png",
+    "path": "/tmp/catalog07/icons/daed.png",
+    "exit": 0,
+    "error": ""
+  },
+  "nekobox-for-harmony": {
+    "url": "https://raw.githubusercontent.com/xiaoli8571/NekoBox4Harmony/533e36f6c4f9610c70767f870015528d70e9ccda/art/nekobox_icon.png",
+    "path": "/tmp/catalog07/icons/nekobox-for-harmony.png",
+    "exit": 0,
+    "error": ""
+  },
+  "hey": {
+    "url": "https://raw.githubusercontent.com/popsiclelmlm/Hey/a02a6a51fe02707a5e1ac5fecd90b3966452ef2d/design/app-icon/startIcon.png",
+    "path": "/tmp/catalog07/icons/hey.png",
+    "exit": 0,
+    "error": ""
+  },
+  "ownbox": {
+    "url": "https://raw.githubusercontent.com/Own716/OwnBoxForAndroid/e83b4cbc316c44377c33b8d7fb5a1586a0aa4cbe/docs/logo.png",
+    "path": "/tmp/catalog07/icons/ownbox.png",
+    "exit": 0,
+    "error": ""
+  },
+  "openclash": {
+    "url": "https://raw.githubusercontent.com/vernesong/OpenClash/c3a33c1d3407956fdf8f0e0b7c1a4c52e6ad9593/img/logo.png",
+    "path": "/tmp/catalog07/icons/openclash.png",
+    "exit": 0,
+    "error": ""
+  },
+  "clashbox": {
+    "url": "https://raw.githubusercontent.com/xiaobaigroup/ClashBox/e036a6a3097192ff74987ce7306eea2a03d6a3ac/AppScope/resources/base/media/box_cat_round.png",
+    "path": "/tmp/catalog07/icons/clashbox.png",
+    "exit": 0,
+    "note": "官方应用可选品牌图，AppScope资源；默认layered_image为同一盒子猫"
+  },
+  "karing-harmony-hap": {
+    "url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases/download/v1.0.9-beta/karing-harmony-1.0.9-beta.hap",
+    "path": "resources/base/media/karing_logo.png",
+    "artifactSha256": "3d1d3b1ce044cc784fd357c368d3fac11d7f6e902764e9768268cee100c95517",
+    "application": {
+      "iconId": 16777219,
+      "buildVersion": "1",
+      "debug": false,
+      "targetPatchAPIVersion": 0,
+      "minAPIVersion": 60100023,
+      "icon": "$media:karing_logo",
+      "buildMode": "release",
+      "label": "$string:app_name",
+      "bundleType": "app",
+      "versionName": "1.0.9-beta",
+      "versionCode": 1000009,
+      "appEnvironments": [],
+      "compileSdkType": "HarmonyOS",
+      "labelId": 16777216,
+      "compileSdkVersion": "6.1.1.125",
+      "targetAPIVersion": 60101024,
+      "vendor": "example",
+      "bundleName": "harmony.kslmkf.karing",
+      "apiReleaseType": "Release",
+      "targetMinorAPIVersion": 0
+    },
+    "method": "静态ZIP读取图标，不执行HAP，不把Beta提供为正式下载"
+  }
+}

@@ -7137,5 +7137,2278 @@
         "format": "gz"
       }
     ]
+  },
+  {
+    "appId": "sing-box-windows",
+    "platform": "windows",
+    "version": "v2.3.1",
+    "publishedAt": "2026-06-17T10:02:35Z",
+    "lastCheckedAt": "2026-09-16T16:08:37.903Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/tag/v2.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases"
+    },
+    "downloads": [
+      {
+        "id": "sing-box-windows-arm64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "sing-box-windows-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_arm64_en-US.msi",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi",
+        "arch": "arm64",
+        "format": "msi"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_x64_en-US.msi",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi",
+        "arch": "x64",
+        "format": "msi"
+      }
+    ]
+  },
+  {
+    "appId": "sing-box-windows",
+    "platform": "macos",
+    "version": "v2.3.1",
+    "publishedAt": "2026-06-17T10:02:35Z",
+    "lastCheckedAt": "2026-09-16T16:08:37.903Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/tag/v2.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases"
+    },
+    "downloads": [
+      {
+        "id": "sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_x64-macos-intel.dmg",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "sing-box-windows",
+    "platform": "linux",
+    "version": "v2.3.1",
+    "publishedAt": "2026-06-17T10:02:35Z",
+    "lastCheckedAt": "2026-09-16T16:08:37.903Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases/tag/v2.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xinggaoya/sing-box-windows/releases"
+    },
+    "downloads": [
+      {
+        "id": "sing-box-windows-2.3.1-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "sing-box-windows_2.3.1_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "nekobox-for-pc",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/qr243vbi/nekobox/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/qr243vbi/nekobox/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/qr243vbi/nekobox/releases"
+      }
+    ],
+    "note": "TUN 模式需要管理员授权；此条目为 qr243vbi 维护的 Windows / Linux 分支。"
+  },
+  {
+    "appId": "nekobox-for-pc",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/qr243vbi/nekobox/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/qr243vbi/nekobox/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/qr243vbi/nekobox/releases"
+      }
+    ],
+    "note": "TUN 模式需要管理员授权；此条目为 qr243vbi 维护的 Windows / Linux 分支。"
+  },
+  {
+    "appId": "xrayui",
+    "platform": "windows",
+    "version": "1.18",
+    "publishedAt": "2026-07-26T15:06:07Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/tag/1.18"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/PhoenixNil/XrayUI-dev/releases"
+    },
+    "downloads": [
+      {
+        "id": "XrayUI-win-arm64-wasdk.zip",
+        "kind": "direct",
+        "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64-wasdk.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "XrayUI-win-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "XrayUI-win-x64-wasdk.zip",
+        "kind": "direct",
+        "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64-wasdk.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "XrayUI-win-x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/PhoenixNil/XrayUI-dev/releases/download/1.18/XrayUI-win-x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "swell-proxy",
+    "platform": "windows",
+    "version": "v3.3.6",
+    "publishedAt": "2026-09-14T09:33:58Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/tag/v3.3.6"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases"
+    },
+    "note": "仓库公开源码，但未找到应用许可证；Windows 10 1809+，TUN 需要管理员权限。",
+    "downloads": [
+      {
+        "id": "Swell-win-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "Swell-win-x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/yaog6700-bit/Swell-Proxy/releases/download/v3.3.6/Swell-win-x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "nekoray",
+    "platform": "windows",
+    "version": "4.0.1",
+    "publishedAt": "2024-12-12T08:19:14Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/tag/4.0.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MatsuriDayo/nekoray/releases"
+    },
+    "note": "已停止维护；4.x 不支持 Mac 或 Xray，Linux 运行环境需自行核对。",
+    "downloads": [
+      {
+        "id": "nekoray-4.0.1-2024-12-12-windows64.zip",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "nekoray",
+    "platform": "linux",
+    "version": "4.0.1",
+    "publishedAt": "2024-12-12T08:19:14Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MatsuriDayo/nekoray/releases/tag/4.0.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MatsuriDayo/nekoray/releases"
+    },
+    "note": "已停止维护；4.x 不支持 Mac 或 Xray，Linux 运行环境需自行核对。",
+    "downloads": [
+      {
+        "id": "nekoray-4.0.1-2024-12-12-debian-x64.deb",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-debian-x64.deb",
+        "arch": "x64",
+        "format": "deb"
+      },
+      {
+        "id": "nekoray-4.0.1-2024-12-12-linux-x64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux-x64.AppImage",
+        "arch": "x64",
+        "format": "AppImage"
+      },
+      {
+        "id": "nekoray-4.0.1-2024-12-12-linux64.zip",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-linux64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "sudoku-desktop",
+    "platform": "windows",
+    "version": "v0.2.2",
+    "publishedAt": "2026-09-06T14:50:14Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/tag/v0.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "sudoku4x4_v0.2.2_windows-amd64.exe",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_windows-amd64.exe",
+        "arch": "amd64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "sudoku-desktop",
+    "platform": "macos",
+    "version": "v0.2.2",
+    "publishedAt": "2026-09-06T14:50:14Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/tag/v0.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "sudoku4x4_v0.2.2_darwin-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "sudoku4x4_v0.2.2_darwin-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_darwin-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "sudoku-desktop",
+    "platform": "linux",
+    "version": "v0.2.2",
+    "publishedAt": "2026-09-06T14:50:14Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/tag/v0.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases"
+    },
+    "downloads": [
+      {
+        "id": "sudoku4x4_v0.2.2_linux-amd64.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-amd64.tar.gz",
+        "arch": "amd64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "sudoku4x4_v0.2.2_linux-arm64.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/SUDOKU-ASCII/sudoku-desktop/releases/download/v0.2.2/sudoku4x4_v0.2.2_linux-arm64.tar.gz",
+        "arch": "arm64",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "clash-net",
+    "platform": "windows",
+    "maintenance": "manual",
+    "unavailable": true,
+    "source": {
+      "label": "历史收录记录（非官方来源）",
+      "url": "https://huarun.win/apps/clash-net"
+    },
+    "note": "当前无法获取：仅保留历史收录记录与文字占位图，不提供下载；未核实的版本、日期、内核与开发者留空。",
+    "downloads": []
+  },
+  {
+    "appId": "clashn",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/2dust/clashN/releases/tag/2.22"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/2dust/clashN/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/2dust/clashN/releases"
+      }
+    ],
+    "note": "需要 .NET 8 Desktop Runtime 和 Mihomo；固定 ZIP 的架构尚未独立确认，保留官方获取页。",
+    "version": "2.22",
+    "publishedAt": "2024-04-28T04:25:18Z"
+  },
+  {
+    "appId": "lvory",
+    "platform": "windows",
+    "maintenance": "manual",
+    "unavailable": true,
+    "source": {
+      "label": "历史收录记录（非官方来源）",
+      "url": "https://huarun.win/apps/lvory"
+    },
+    "note": "当前无法获取：仅保留历史收录记录与文字占位图，不提供下载；未核实的版本、日期、内核与开发者留空。",
+    "downloads": []
+  },
+  {
+    "appId": "v2raya",
+    "platform": "windows",
+    "version": "v2.4.20",
+    "publishedAt": "2026-09-16T10:47:58Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/v2rayA/v2rayA/releases"
+    },
+    "note": "v2.4.20 使用 Xray 衍生的 v2raya_core，不以旧版 V2Ray 核心说明替代当前版本。",
+    "downloads": [
+      {
+        "id": "installer_windows_inno_arm64_2.4.20.exe",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_arm64_2.4.20.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "installer_windows_inno_x64_2.4.20.exe",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_windows_inno_x64_2.4.20.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "v2raya",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/v2rayA/v2rayA"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/v2rayA/v2rayA"
+      }
+    ],
+    "note": "Mac 官方发布为无扩展名的命令行程序，需搭配 v2raya_core；尚无适配的安装包规则，版本由官方发布人工维护。",
+    "version": "v2.4.20",
+    "publishedAt": "2026-09-16T10:47:58Z"
+  },
+  {
+    "appId": "v2raya",
+    "platform": "linux",
+    "version": "v2.4.20",
+    "publishedAt": "2026-09-16T10:47:58Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.4.20"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/v2rayA/v2rayA/releases"
+    },
+    "note": "v2.4.20 使用 Xray 衍生的 v2raya_core，不以旧版 V2Ray 核心说明替代当前版本。",
+    "downloads": [
+      {
+        "id": "installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_arm64_2.4.20.pkg.tar.zst",
+        "arch": "arm64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_armv7_2.4.20.pkg.tar.zst",
+        "arch": "armv7",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_loongarch64_2.4.20.pkg.tar.zst",
+        "arch": "loongarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_riscv64_2.4.20.pkg.tar.zst",
+        "arch": "riscv64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_archlinux_x64_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x64_2.4.20.pkg.tar.zst",
+        "arch": "x64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_archlinux_x86_2.4.20.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_archlinux_x86_2.4.20.pkg.tar.zst",
+        "arch": "x86",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer_debian_arm64_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_arm64_2.4.20.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_armv7_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_armv7_2.4.20.deb",
+        "arch": "armv7",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_loongarch64_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_loongarch64_2.4.20.deb",
+        "arch": "loongarch64",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_mips32le_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32le_2.4.20.deb",
+        "arch": "mips32le",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_mips32_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips32_2.4.20.deb",
+        "arch": "mips32",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_mips64le_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64le_2.4.20.deb",
+        "arch": "mips64le",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_mips64_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_mips64_2.4.20.deb",
+        "arch": "mips64",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_riscv64_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_riscv64_2.4.20.deb",
+        "arch": "riscv64",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_x64_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x64_2.4.20.deb",
+        "arch": "x64",
+        "format": "deb"
+      },
+      {
+        "id": "installer_debian_x86_2.4.20.deb",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_debian_x86_2.4.20.deb",
+        "arch": "x86",
+        "format": "deb"
+      },
+      {
+        "id": "installer_redhat_arm64_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_arm64_2.4.20.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_armv7_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_armv7_2.4.20.rpm",
+        "arch": "armv7",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_loongarch64_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_loongarch64_2.4.20.rpm",
+        "arch": "loongarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_mips32le_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32le_2.4.20.rpm",
+        "arch": "mips32le",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_mips32_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips32_2.4.20.rpm",
+        "arch": "mips32",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_mips64le_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64le_2.4.20.rpm",
+        "arch": "mips64le",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_mips64_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_mips64_2.4.20.rpm",
+        "arch": "mips64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_riscv64_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_riscv64_2.4.20.rpm",
+        "arch": "riscv64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_x64_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x64_2.4.20.rpm",
+        "arch": "x64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer_redhat_x86_2.4.20.rpm",
+        "kind": "direct",
+        "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.4.20/installer_redhat_x86_2.4.20.rpm",
+        "arch": "x86",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "v2raya",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/v2rayA/v2raya-openwrt"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/v2rayA/v2raya-openwrt"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/v2rayA/v2raya-openwrt"
+      }
+    ],
+    "note": "官方 OpenWrt 软件源指南仍使用 Xray 或 V2Ray；与桌面新版 v2raya_core 的代际不同，不套用桌面版本。"
+  },
+  {
+    "appId": "dae",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/daeuniverse/dae/blob/main/docs/en/tutorials/run-on-macos.md"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/daeuniverse/dae/blob/main/docs/en/tutorials/run-on-macos.md"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/daeuniverse/dae/blob/main/docs/en/tutorials/run-on-macos.md"
+      }
+    ],
+    "note": "Mac 通过 Lima Linux 虚拟机运行 dae，并非原生 Mac 版本；版本与发布时间留空。"
+  },
+  {
+    "appId": "dae",
+    "platform": "linux",
+    "version": "v2.0.0",
+    "publishedAt": "2026-07-08T23:38:13Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/daeuniverse/dae/releases/tag/v2.0.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/daeuniverse/dae/releases"
+    },
+    "note": "需要满足官方 Linux 内核版本及 eBPF 配置要求；不是普通桌面 VPN 安装器。",
+    "downloads": [
+      {
+        "id": "dae-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-arm64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.pkg.tar.zst",
+        "arch": "arm64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-arm64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.tar.xz",
+        "arch": "arm64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-armv5.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.tar.xz",
+        "arch": "armv5",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-armv5.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv5.zip",
+        "arch": "armv5",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-armv6.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.tar.xz",
+        "arch": "armv6",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-armv6.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv6.zip",
+        "arch": "armv6",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-armv7.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.deb",
+        "arch": "armv7",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-armv7.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.pkg.tar.zst",
+        "arch": "armv7",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-armv7.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.rpm",
+        "arch": "armv7",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-armv7.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.tar.xz",
+        "arch": "armv7",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-armv7.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-armv7.zip",
+        "arch": "armv7",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-loongarch64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.deb",
+        "arch": "loongarch64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-loongarch64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.pkg.tar.zst",
+        "arch": "loongarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-loongarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.rpm",
+        "arch": "loongarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-loongarch64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.tar.xz",
+        "arch": "loongarch64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-loongarch64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-loongarch64.zip",
+        "arch": "loongarch64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-mips32.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.deb",
+        "arch": "mips32",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-mips32.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.rpm",
+        "arch": "mips32",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-mips32.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.tar.xz",
+        "arch": "mips32",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-mips32.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32.zip",
+        "arch": "mips32",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-mips32le.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.deb",
+        "arch": "mips32le",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-mips32le.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.rpm",
+        "arch": "mips32le",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-mips32le.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.tar.xz",
+        "arch": "mips32le",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-mips32le.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips32le.zip",
+        "arch": "mips32le",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-mips64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.deb",
+        "arch": "mips64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-mips64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.rpm",
+        "arch": "mips64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-mips64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.tar.xz",
+        "arch": "mips64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-mips64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64.zip",
+        "arch": "mips64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-mips64le.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.deb",
+        "arch": "mips64le",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-mips64le.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.rpm",
+        "arch": "mips64le",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-mips64le.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.tar.xz",
+        "arch": "mips64le",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-mips64le.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-mips64le.zip",
+        "arch": "mips64le",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-powerpc64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.deb",
+        "arch": "powerpc64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-powerpc64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.pkg.tar.zst",
+        "arch": "powerpc64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-powerpc64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.rpm",
+        "arch": "powerpc64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-powerpc64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.tar.xz",
+        "arch": "powerpc64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-powerpc64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64.zip",
+        "arch": "powerpc64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-powerpc64le.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.deb",
+        "arch": "powerpc64le",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-powerpc64le.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.pkg.tar.zst",
+        "arch": "powerpc64le",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-powerpc64le.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.rpm",
+        "arch": "powerpc64le",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-powerpc64le.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.tar.xz",
+        "arch": "powerpc64le",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-powerpc64le.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-powerpc64le.zip",
+        "arch": "powerpc64le",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-riscv64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.deb",
+        "arch": "riscv64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-riscv64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.pkg.tar.zst",
+        "arch": "riscv64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-riscv64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.rpm",
+        "arch": "riscv64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-riscv64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.tar.xz",
+        "arch": "riscv64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-riscv64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-riscv64.zip",
+        "arch": "riscv64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-s390x.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.deb",
+        "arch": "s390x",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-s390x.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.rpm",
+        "arch": "s390x",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-s390x.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.tar.xz",
+        "arch": "s390x",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-s390x.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-s390x.zip",
+        "arch": "s390x",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-x86_32.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.deb",
+        "arch": "x86_32",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-x86_32.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.rpm",
+        "arch": "x86_32",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-x86_32.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.tar.xz",
+        "arch": "x86_32",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-x86_32.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_32.zip",
+        "arch": "x86_32",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-x86_64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.deb",
+        "arch": "x86_64",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-x86_64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.pkg.tar.zst",
+        "arch": "x86_64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-x86_64.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.tar.xz",
+        "arch": "x86_64",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-x86_64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-x86_64_v2_sse.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.deb",
+        "arch": "x86_64_v2_sse",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-x86_64_v2_sse.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.pkg.tar.zst",
+        "arch": "x86_64_v2_sse",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-x86_64_v2_sse.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.rpm",
+        "arch": "x86_64_v2_sse",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-x86_64_v2_sse.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.tar.xz",
+        "arch": "x86_64_v2_sse",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-x86_64_v2_sse.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v2_sse.zip",
+        "arch": "x86_64_v2_sse",
+        "format": "zip"
+      },
+      {
+        "id": "dae-linux-x86_64_v3_avx2.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.deb",
+        "arch": "x86_64_v3_avx2",
+        "format": "deb"
+      },
+      {
+        "id": "dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.pkg.tar.zst",
+        "arch": "x86_64_v3_avx2",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "dae-linux-x86_64_v3_avx2.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.rpm",
+        "arch": "x86_64_v3_avx2",
+        "format": "rpm"
+      },
+      {
+        "id": "dae-linux-x86_64_v3_avx2.tar.xz",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.tar.xz",
+        "arch": "x86_64_v3_avx2",
+        "format": "tar.xz"
+      },
+      {
+        "id": "dae-linux-x86_64_v3_avx2.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/dae/releases/download/v2.0.0/dae-linux-x86_64_v3_avx2.zip",
+        "arch": "x86_64_v3_avx2",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "dae",
+    "platform": "openwrt",
+    "version": "1.0.0-r1",
+    "maintenance": "manual",
+    "source": {
+      "label": "ImmortalWrt 正式软件源",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/Packages.gz"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/"
+    },
+    "note": "适用于 ImmortalWrt 24.10.4 的 aarch64_generic 设备；需要匹配固件的 eBPF/BTF 与内核模块，勿跨系统或架构安装。",
+    "downloads": [
+      {
+        "id": "dae_1.0.0-r1_aarch64_generic.ipk",
+        "kind": "direct",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/dae_1.0.0-r1_aarch64_generic.ipk",
+        "arch": "aarch64_generic",
+        "format": "ipk"
+      },
+      {
+        "id": "official-feed",
+        "kind": "page",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/"
+      }
+    ]
+  },
+  {
+    "appId": "daed",
+    "platform": "linux",
+    "version": "v1.27.0",
+    "publishedAt": "2026-04-17T01:12:17Z",
+    "lastCheckedAt": "2026-09-16T16:07:59.298Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/daeuniverse/daed/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/daeuniverse/daed/releases"
+    },
+    "note": "需要支持 eBPF 的 Linux 环境；休眠或切换网络前应先停止代理。",
+    "downloads": [
+      {
+        "id": "daed-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-mips32.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32.zip",
+        "arch": "mips32",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-mips32le.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips32le.zip",
+        "arch": "mips32le",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-mips64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64.zip",
+        "arch": "mips64",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-mips64le.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-mips64le.zip",
+        "arch": "mips64le",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-riscv64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-riscv64.zip",
+        "arch": "riscv64",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-x86_32.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_32.zip",
+        "arch": "x86_32",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-x86_64.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-x86_64_v2_sse.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v2_sse.zip",
+        "arch": "x86_64_v2_sse",
+        "format": "zip"
+      },
+      {
+        "id": "daed-linux-x86_64_v3_avx2.zip",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/daed-linux-x86_64_v3_avx2.zip",
+        "arch": "x86_64_v3_avx2",
+        "format": "zip"
+      },
+      {
+        "id": "installer-daed-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-arm64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.pkg.tar.zst",
+        "arch": "arm64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer-daed-linux-riscv64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.deb",
+        "arch": "riscv64",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-riscv64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.pkg.tar.zst",
+        "arch": "riscv64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-riscv64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-riscv64.rpm",
+        "arch": "riscv64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer-daed-linux-x86_32.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.deb",
+        "arch": "x86_32",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-x86_32.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.pkg.tar.zst",
+        "arch": "x86_32",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-x86_32.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_32.rpm",
+        "arch": "x86_32",
+        "format": "rpm"
+      },
+      {
+        "id": "installer-daed-linux-x86_64.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.deb",
+        "arch": "x86_64",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-x86_64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.pkg.tar.zst",
+        "arch": "x86_64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v2_sse.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.deb",
+        "arch": "x86_64_v2_sse",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.pkg.tar.zst",
+        "arch": "x86_64_v2_sse",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v2_sse.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v2_sse.rpm",
+        "arch": "x86_64_v2_sse",
+        "format": "rpm"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v3_avx2.deb",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.deb",
+        "arch": "x86_64_v3_avx2",
+        "format": "deb"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.pkg.tar.zst",
+        "arch": "x86_64_v3_avx2",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "installer-daed-linux-x86_64_v3_avx2.rpm",
+        "kind": "direct",
+        "url": "https://github.com/daeuniverse/daed/releases/download/v1.27.0/installer-daed-linux-x86_64_v3_avx2.rpm",
+        "arch": "x86_64_v3_avx2",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "daed",
+    "platform": "openwrt",
+    "version": "1.24.0-r1",
+    "maintenance": "manual",
+    "source": {
+      "label": "ImmortalWrt 正式软件源",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/Packages.gz"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/"
+    },
+    "note": "适用于 ImmortalWrt 24.10.4 的 aarch64_generic 设备；需要匹配固件的 eBPF/BTF 与内核模块，勿跨系统或架构安装。",
+    "downloads": [
+      {
+        "id": "daed_1.24.0-r1_aarch64_generic.ipk",
+        "kind": "direct",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/daed_1.24.0-r1_aarch64_generic.ipk",
+        "arch": "aarch64_generic",
+        "format": "ipk"
+      },
+      {
+        "id": "official-feed",
+        "kind": "page",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/packages/"
+      }
+    ]
+  },
+  {
+    "appId": "shellcrash",
+    "platform": "linux",
+    "version": "1.9.4",
+    "publishedAt": "2026-02-15T11:33:00Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/juewuy/ShellCrash/releases/tag/1.9.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/juewuy/ShellCrash/releases"
+    },
+    "note": "需要 SSH 与 Root 权限；核心按设备另行获取。",
+    "downloads": [
+      {
+        "id": "ShellCrash.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/juewuy/ShellCrash/releases/download/1.9.4/ShellCrash.tar.gz",
+        "arch": "noarch",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "shellcrash",
+    "platform": "openwrt",
+    "version": "1.9.4",
+    "publishedAt": "2026-02-15T11:33:00Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/juewuy/ShellCrash/releases/tag/1.9.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/juewuy/ShellCrash/releases"
+    },
+    "note": "需要 SSH 与 Root 权限；核心按设备另行获取。",
+    "downloads": [
+      {
+        "id": "ShellCrash.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/juewuy/ShellCrash/releases/download/1.9.4/ShellCrash.tar.gz",
+        "arch": "noarch",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "shellcrash",
+    "platform": "asus",
+    "version": "1.9.4",
+    "publishedAt": "2026-02-15T11:33:00Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/juewuy/ShellCrash/releases/tag/1.9.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/juewuy/ShellCrash/releases"
+    },
+    "note": "需要 SSH 与 Root 权限；核心按设备另行获取。",
+    "downloads": [
+      {
+        "id": "ShellCrash.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/juewuy/ShellCrash/releases/download/1.9.4/ShellCrash.tar.gz",
+        "arch": "noarch",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "clashbox",
+    "platform": "harmonyos",
+    "version": "1.7.4",
+    "publishedAt": "2026-04-02T14:50:20Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xiaobaigroup/ClashBox/releases/tag/1.7.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xiaobaigroup/ClashBox/releases"
+    },
+    "note": "公开仓库只包含大部分源码；未签名 HAP 需自行签名，签名存在有效期限制。",
+    "downloads": [
+      {
+        "id": "ClashBox_LTS_V1_unsigned.hap",
+        "kind": "direct",
+        "url": "https://github.com/xiaobaigroup/ClashBox/releases/download/1.7.4/ClashBox_LTS_V1_unsigned.hap",
+        "arch": "arm64-v8a",
+        "format": "hap"
+      }
+    ]
+  },
+  {
+    "appId": "nekobox-for-harmony",
+    "platform": "harmonyos",
+    "version": "v1.9.3",
+    "publishedAt": "2026-09-16T02:18:12Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases/tag/v1.9.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases"
+    },
+    "note": "未签名 HAP 需通过 DevEco Studio 自行签名；仅支持真机，模拟器不支持 VPN 扩展。",
+    "downloads": [
+      {
+        "id": "NekoBox-1.9.3-unsigned.hap",
+        "kind": "direct",
+        "url": "https://github.com/xiaoli8571/NekoBox4Harmony/releases/download/v1.9.3/NekoBox-1.9.3-unsigned.hap",
+        "arch": "arm64-v8a",
+        "format": "hap"
+      }
+    ]
+  },
+  {
+    "appId": "karing-harmony-hap",
+    "platform": "harmonyos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap/releases"
+      }
+    ],
+    "note": "官方发布仓库仅提供 Beta；无已核实正式版。非 Karing 官方发行，源码未公开，发布者明确提示 GPL 合规尚未完成。"
+  },
+  {
+    "appId": "hey",
+    "platform": "harmonyos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/popsiclelmlm/Hey"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/popsiclelmlm/Hey"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/popsiclelmlm/Hey"
+      }
+    ],
+    "note": "官方明确仅发布源码，不提供预编译包；需自行构建与签名，sing-box 功能仍有限。"
+  },
+  {
+    "appId": "ownbox",
+    "platform": "android",
+    "version": "v2.7.9",
+    "publishedAt": "2026-09-15T13:02:10Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases/tag/v2.7.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Own716/OwnBoxForAndroid/releases"
+    },
+    "downloads": [
+      {
+        "id": "OwnBox-2.7.9-arm64-v8a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-arm64-v8a-release.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "OwnBox-2.7.9-armeabi-v7a-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-armeabi-v7a-release.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "OwnBox-2.7.9-x86-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86-release.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "OwnBox-2.7.9-x86_64-release.apk",
+        "kind": "direct",
+        "url": "https://github.com/Own716/OwnBoxForAndroid/releases/download/v2.7.9/OwnBox-2.7.9-x86_64-release.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "openclash",
+    "platform": "openwrt",
+    "version": "v0.47.156",
+    "publishedAt": "2026-08-10T14:59:36Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/vernesong/OpenClash/releases/tag/v0.47.156"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/vernesong/OpenClash/releases"
+    },
+    "note": "IPK / APK 是 OpenWrt 插件包，不是 Android 应用；Mihomo 与运行依赖按路由器环境安装。",
+    "downloads": [
+      {
+        "id": "luci-app-openclash-0.47.156.apk",
+        "kind": "direct",
+        "url": "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash-0.47.156.apk",
+        "arch": "noarch",
+        "format": "apk"
+      },
+      {
+        "id": "luci-app-openclash_0.47.156_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/vernesong/OpenClash/releases/download/v0.47.156/luci-app-openclash_0.47.156_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      }
+    ]
+  },
+  {
+    "appId": "passwall",
+    "platform": "openwrt",
+    "version": "26.9.16-1",
+    "publishedAt": "2026-09-16T06:42:58Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/tag/26.9.16-1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases"
+    },
+    "note": "LuCI 插件与代理核心分开安装；按 OpenWrt 版本和包管理器选择，APK 不是 Android 包。",
+    "downloads": [
+      {
+        "id": "22.03-_luci-app-passwall_26.9.16_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/22.03-_luci-app-passwall_26.9.16_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      },
+      {
+        "id": "23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/23.05-24.10_luci-app-passwall_26.9.16-r1_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      },
+      {
+        "id": "25.12+_luci-app-passwall-26.9.16-r1.apk",
+        "kind": "direct",
+        "url": "https://github.com/Openwrt-Passwall/openwrt-passwall/releases/download/26.9.16-1/25.12%2B_luci-app-passwall-26.9.16-r1.apk",
+        "arch": "noarch",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "passwall2",
+    "platform": "openwrt",
+    "version": "26.9.16-1",
+    "publishedAt": "2026-09-16T14:58:19Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/tag/26.9.16-1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases"
+    },
+    "note": "LuCI 插件与代理核心分开安装；按 OpenWrt 包管理器选择，APK 不是 Android 包。",
+    "downloads": [
+      {
+        "id": "luci-app-passwall2-26.9.16-r1.apk",
+        "kind": "direct",
+        "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2-26.9.16-r1.apk",
+        "arch": "noarch",
+        "format": "apk"
+      },
+      {
+        "id": "luci-app-passwall2_26.9.16-r1_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.9.16-1/luci-app-passwall2_26.9.16-r1_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      }
+    ]
+  },
+  {
+    "appId": "nikki",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.26.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/nikkinikki-org/OpenWrt-nikki"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-nikki"
+      }
+    ],
+    "note": "需要 OpenWrt 24.10+、Linux 5.13+ 与 firewall4；发布合集含不同内核渠道，请按官方指南选择稳定 Mihomo。",
+    "version": "v1.26.1",
+    "publishedAt": "2026-06-10T15:43:13Z"
+  },
+  {
+    "appId": "nikki-rs",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/CHKayanami/OpenWrt-nikki-rs"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/CHKayanami/OpenWrt-nikki-rs"
+    },
+    "downloads": [
+      {
+        "id": "official-page",
+        "kind": "page",
+        "url": "https://github.com/CHKayanami/OpenWrt-nikki-rs"
+      }
+    ],
+    "note": "需要 OpenWrt 24.10+ 与 firewall4；当前依赖 clash-rs Alpha 内核，保留官方说明页，不作为正式安装包提供。"
+  },
+  {
+    "appId": "momo",
+    "platform": "openwrt",
+    "version": "v1.2.1",
+    "publishedAt": "2026-06-03T14:38:41Z",
+    "lastCheckedAt": "2026-09-16T16:06:45.045Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/tag/v1.2.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases"
+    },
+    "note": "需要 OpenWrt 24.10+、Linux 5.13+、firewall4 与 sing-box 1.12+；按路由器架构和系统版本选择。",
+    "downloads": [
+      {
+        "id": "momo_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-24.10.tar.gz",
+        "arch": "aarch64_cortex-a53",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a53-openwrt-25.12.tar.gz",
+        "arch": "aarch64_cortex-a53",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-24.10.tar.gz",
+        "arch": "aarch64_cortex-a72",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a72-openwrt-25.12.tar.gz",
+        "arch": "aarch64_cortex-a72",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-24.10.tar.gz",
+        "arch": "aarch64_cortex-a76",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_cortex-a76-openwrt-25.12.tar.gz",
+        "arch": "aarch64_cortex-a76",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_generic-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-24.10.tar.gz",
+        "arch": "aarch64_generic",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_aarch64_generic-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_aarch64_generic-openwrt-25.12.tar.gz",
+        "arch": "aarch64_generic",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a15_neon-vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a15_neon-vfpv4-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a15_neon-vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a5_vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a5_vfpv4-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a5_vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a7_neon-vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a7_neon-vfpv4-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a7_neon-vfpv4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a8_vfpv3",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a8_vfpv3-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a8_vfpv3",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a9",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a9",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a9_neon",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_neon-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a9_neon",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-24.10.tar.gz",
+        "arch": "arm_cortex-a9_vfpv3-d16",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_arm_cortex-a9_vfpv3-d16-openwrt-25.12.tar.gz",
+        "arch": "arm_cortex-a9_vfpv3-d16",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_i386_pentium4-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-24.10.tar.gz",
+        "arch": "i386_pentium4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_i386_pentium4-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_i386_pentium4-openwrt-25.12.tar.gz",
+        "arch": "i386_pentium4",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_loongarch64_generic-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_loongarch64_generic-openwrt-25.12.tar.gz",
+        "arch": "loongarch64_generic",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips64_octeonplus-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-24.10.tar.gz",
+        "arch": "mips64_octeonplus",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips64_octeonplus-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips64_octeonplus-openwrt-25.12.tar.gz",
+        "arch": "mips64_octeonplus",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_24kc-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-24.10.tar.gz",
+        "arch": "mipsel_24kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_24kc-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc-openwrt-25.12.tar.gz",
+        "arch": "mipsel_24kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-24.10.tar.gz",
+        "arch": "mipsel_24kc_24kf",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_24kc_24kf-openwrt-25.12.tar.gz",
+        "arch": "mipsel_24kc_24kf",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_74kc-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-24.10.tar.gz",
+        "arch": "mipsel_74kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_74kc-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_74kc-openwrt-25.12.tar.gz",
+        "arch": "mipsel_74kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_mips32-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-24.10.tar.gz",
+        "arch": "mipsel_mips32",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mipsel_mips32-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mipsel_mips32-openwrt-25.12.tar.gz",
+        "arch": "mipsel_mips32",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips_24kc-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-24.10.tar.gz",
+        "arch": "mips_24kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips_24kc-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_24kc-openwrt-25.12.tar.gz",
+        "arch": "mips_24kc",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips_mips32-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-24.10.tar.gz",
+        "arch": "mips_mips32",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_mips_mips32-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_mips_mips32-openwrt-25.12.tar.gz",
+        "arch": "mips_mips32",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_riscv64_generic-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_generic-openwrt-25.12.tar.gz",
+        "arch": "riscv64_generic",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_riscv64_riscv64-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_riscv64_riscv64-openwrt-24.10.tar.gz",
+        "arch": "riscv64_riscv64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_x86_64-openwrt-24.10.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-24.10.tar.gz",
+        "arch": "x86_64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "momo_x86_64-openwrt-25.12.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/nikkinikki-org/OpenWrt-momo/releases/download/v1.2.1/momo_x86_64-openwrt-25.12.tar.gz",
+        "arch": "x86_64",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "homeproxy",
+    "platform": "openwrt",
+    "version": "26.187.07809~9bce398",
+    "maintenance": "manual",
+    "source": {
+      "label": "ImmortalWrt 正式软件源",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/luci/Packages.gz"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/luci/"
+    },
+    "note": "这是 ImmortalWrt 24.10.4 软件源的架构无关 LuCI 插件包；运行平台限 ARM64/AMD64，并需安装对应设备的 sing-box、firewall4 与 kmod-nft-tproxy，不能将 noarch 理解为任意设备均可运行。",
+    "downloads": [
+      {
+        "id": "luci-app-homeproxy_26.187.07809~9bce398_all.ipk",
+        "kind": "direct",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/luci/luci-app-homeproxy_26.187.07809~9bce398_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      },
+      {
+        "id": "official-feed",
+        "kind": "page",
+        "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/luci/"
+      }
+    ]
   }
 ]

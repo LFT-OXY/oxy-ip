@@ -56,7 +56,7 @@ const sourceFor = (id) => githubSources.find((s) => s.appId === id);
 
 test("第三批18条GitHub来源覆盖独立平台资产计数及正式版绑定", () => {
   assert.deepEqual(
-    githubSources.slice(39).map((s) => s.appId),
+    githubSources.slice(39, 57).map((s) => s.appId),
     Object.keys(counts),
   );
   const excluded = {

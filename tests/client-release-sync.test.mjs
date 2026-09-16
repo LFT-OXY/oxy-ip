@@ -273,13 +273,15 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   const loader = join(directory, "fetch.mjs");
   const output = join(directory, "releases.json");
   const batch = [];
-  for (const directory of ["batch-1", "batch-2", "batch-3"]) {
+  for (const directory of ["batch-1", "batch-2", "batch-3", "batch-4"]) {
     const batchDirectory = new URL(
       `./fixtures/client-releases/${directory}/`,
       import.meta.url,
     );
     for (const name of await readdir(batchDirectory)) {
-      if (!name.endsWith(".json")) continue;
+      // 未上传完成的资产在单源失败回归中单独验证，不混入成功场景。
+      if (!name.endsWith(".json") || name.endsWith("-incomplete.json"))
+        continue;
       batch.push(
         JSON.parse(await readFile(new URL(name, batchDirectory), "utf8")),
       );
@@ -312,11 +314,14 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
       const repo = new URL(url).pathname.split('/').slice(2,4).join('/');
       const matches = releases.filter(r => r.html_url.startsWith('https://github.com/' + repo + '/releases/'));
       if (!matches.length) throw new Error('Missing release fixture: ' + url);
-      if (!url.includes('/assets?')) return Response.json(matches);
+      const params = new URL(url).searchParams;
+      const page = Number(params.get('page') || 1), size = Number(params.get('per_page') || 100);
+      const paginate = items => items.slice((page - 1) * size, page * size);
+      if (!url.includes('/assets?')) return Response.json(paginate(matches));
       const releaseId = Number(new URL(url).pathname.split('/').at(-2));
       const release = matches.find(r => r.id === releaseId);
       if (!release) throw new Error('Missing asset fixture: ' + url);
-      return Response.json(release.assets);
+      return Response.json(paginate(release.assets));
     };`,
   );
   let storeFailure = false;

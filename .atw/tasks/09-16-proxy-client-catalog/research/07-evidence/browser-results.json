@@ -1,0 +1,431 @@
+{
+  "matrix": [
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "light",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "actualTheme": true,
+      "filter": true,
+      "keyboardEnterTabSpace": true,
+      "packageAndPlatform": true,
+      "returnFilters": true,
+      "overflow": false
+    }
+  ],
+  "perPlatform": {
+    "details": [
+      {
+        "id": "sing-box-windows",
+        "platform": "windows",
+        "version": "v2.3.1",
+        "downloads": 6,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "sing-box-windows",
+        "platform": "macos",
+        "version": "v2.3.1",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "sing-box-windows",
+        "platform": "linux",
+        "version": "v2.3.1",
+        "downloads": 3,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "nekobox-for-pc",
+        "platform": "windows",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "nekobox-for-pc",
+        "platform": "linux",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "xrayui",
+        "platform": "windows",
+        "version": "1.18",
+        "downloads": 4,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "swell-proxy",
+        "platform": "windows",
+        "version": "v3.3.6",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "nekoray",
+        "platform": "windows",
+        "version": "4.0.1",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "nekoray",
+        "platform": "linux",
+        "version": "4.0.1",
+        "downloads": 3,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "sudoku-desktop",
+        "platform": "windows",
+        "version": "v0.2.2",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "sudoku-desktop",
+        "platform": "macos",
+        "version": "v0.2.2",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "sudoku-desktop",
+        "platform": "linux",
+        "version": "v0.2.2",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "clashn",
+        "platform": "windows",
+        "version": "2.22",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "v2raya",
+        "platform": "windows",
+        "version": "v2.4.20",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "v2raya",
+        "platform": "macos",
+        "version": "v2.4.20",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "v2raya",
+        "platform": "linux",
+        "version": "v2.4.20",
+        "downloads": 26,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "v2raya",
+        "platform": "openwrt",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "dae",
+        "platform": "macos",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "dae",
+        "platform": "linux",
+        "version": "v2.0.0",
+        "downloads": 73,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "dae",
+        "platform": "openwrt",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "daed",
+        "platform": "linux",
+        "version": "v1.27.0",
+        "downloads": 28,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "shellcrash",
+        "platform": "linux",
+        "version": "1.9.4",
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "shellcrash",
+        "platform": "openwrt",
+        "version": "1.9.4",
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "shellcrash",
+        "platform": "asus",
+        "version": "1.9.4",
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "clashbox",
+        "platform": "harmonyos",
+        "version": "1.7.4",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "nekobox-for-harmony",
+        "platform": "harmonyos",
+        "version": "v1.9.3",
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "karing-harmony-hap",
+        "platform": "harmonyos",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "hey",
+        "platform": "harmonyos",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "ownbox",
+        "platform": "android",
+        "version": "v2.7.9",
+        "downloads": 4,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "openclash",
+        "platform": "openwrt",
+        "version": "v0.47.156",
+        "downloads": 2,
+        "iconLoaded": true,
+        "overflow": false
+      },
+      {
+        "id": "passwall",
+        "platform": "openwrt",
+        "version": "26.9.16-1",
+        "downloads": 3,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "passwall2",
+        "platform": "openwrt",
+        "version": "26.9.16-1",
+        "downloads": 2,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "nikki",
+        "platform": "openwrt",
+        "version": "v1.26.1",
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "nikki-rs",
+        "platform": "openwrt",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "momo",
+        "platform": "openwrt",
+        "version": "v1.2.1",
+        "downloads": 43,
+        "iconLoaded": false,
+        "overflow": false
+      },
+      {
+        "id": "homeproxy",
+        "platform": "openwrt",
+        "version": null,
+        "downloads": 1,
+        "iconLoaded": false,
+        "overflow": false
+      }
+    ],
+    "pageErrors": []
+  },
+  "limitations": ["Clash .NET与lvory未写入目录", "7款图标未获核实，不计通过"],
+  "visualReview": ["mobile-dark.png", "desktop-light.png"]
+}

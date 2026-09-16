@@ -1,0 +1,77 @@
+{
+  "id": 340663196,
+  "tag_name": "v2.3.1",
+  "name": "v2.3.1",
+  "html_url": "https://github.com/xinggaoya/sing-box-windows/releases/tag/v2.3.1",
+  "published_at": "2026-06-17T10:02:35Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 450105527,
+      "name": "sing-box-windows-2.3.1-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-2.3.1-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105525,
+      "name": "sing-box-windows-arm64-portable.zip",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-arm64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105530,
+      "name": "sing-box-windows-portable.zip",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105531,
+      "name": "sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_aarch64-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105529,
+      "name": "sing-box-windows_2.3.1_amd64.AppImage",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105528,
+      "name": "sing-box-windows_2.3.1_amd64.deb",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105523,
+      "name": "sing-box-windows_2.3.1_arm64-setup.exe",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105532,
+      "name": "sing-box-windows_2.3.1_arm64_en-US.msi",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_arm64_en-US.msi",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105533,
+      "name": "sing-box-windows_2.3.1_x64-macos-intel.dmg",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-macos-intel.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105524,
+      "name": "sing-box-windows_2.3.1_x64-setup.exe",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 450105526,
+      "name": "sing-box-windows_2.3.1_x64_en-US.msi",
+      "browser_download_url": "https://github.com/xinggaoya/sing-box-windows/releases/download/v2.3.1/sing-box-windows_2.3.1_x64_en-US.msi",
+      "state": "uploaded"
+    }
+  ]
+}
