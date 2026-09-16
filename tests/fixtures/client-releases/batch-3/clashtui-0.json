@@ -1,0 +1,47 @@
+{
+  "id": 332213629,
+  "tag_name": "v0.3.2-alpha.2",
+  "name": "v0.3.2-alpha.2",
+  "html_url": "https://github.com/JohanChane/clashtui/releases/tag/v0.3.2-alpha.2",
+  "published_at": "2026-05-31T21:21:29Z",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "id": 434695234,
+      "name": "clashtui-darwin-amd64-v0.3.2-alpha.2.gz",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-darwin-amd64-v0.3.2-alpha.2.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 434695237,
+      "name": "clashtui-darwin-arm64-v0.3.2-alpha.2.gz",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-darwin-arm64-v0.3.2-alpha.2.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 434695236,
+      "name": "clashtui-linux-amd64-v0.3.2-alpha.2.gz",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-linux-amd64-v0.3.2-alpha.2.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 434695238,
+      "name": "clashtui-linux-arm64-v0.3.2-alpha.2.gz",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-linux-arm64-v0.3.2-alpha.2.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 434695235,
+      "name": "clashtui-windows-amd64-v0.3.2-alpha.2.zip",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-windows-amd64-v0.3.2-alpha.2.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 434695239,
+      "name": "clashtui-windows-arm64-v0.3.2-alpha.2.zip",
+      "browser_download_url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.2-alpha.2/clashtui-windows-arm64-v0.3.2-alpha.2.zip",
+      "state": "uploaded"
+    }
+  ]
+}

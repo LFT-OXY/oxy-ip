@@ -1,0 +1,119 @@
+{
+  "id": 384067845,
+  "tag_name": "v2.0.31-beta2",
+  "name": "Stelliberty 2.0.31-beta2",
+  "html_url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.31-beta2",
+  "published_at": "2026-09-07T12:19:52Z",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "id": 548743347,
+      "name": "stelliberty-v2.0.31-beta2-linux-arm64.AppImage",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-arm64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743346,
+      "name": "stelliberty-v2.0.31-beta2-linux-arm64.deb",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743354,
+      "name": "stelliberty-v2.0.31-beta2-linux-arm64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-arm64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743350,
+      "name": "stelliberty-v2.0.31-beta2-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743353,
+      "name": "stelliberty-v2.0.31-beta2-linux-arm64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743349,
+      "name": "stelliberty-v2.0.31-beta2-linux-x64.AppImage",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-x64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743341,
+      "name": "stelliberty-v2.0.31-beta2-linux-x64.deb",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-x64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743364,
+      "name": "stelliberty-v2.0.31-beta2-linux-x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743352,
+      "name": "stelliberty-v2.0.31-beta2-linux-x64.rpm",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-x64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743342,
+      "name": "stelliberty-v2.0.31-beta2-linux-x64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-linux-x64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743351,
+      "name": "stelliberty-v2.0.31-beta2-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743356,
+      "name": "stelliberty-v2.0.31-beta2-macos-arm64.pkg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-macos-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743348,
+      "name": "stelliberty-v2.0.31-beta2-macos-x64.dmg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-macos-x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743357,
+      "name": "stelliberty-v2.0.31-beta2-macos-x64.pkg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-macos-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743344,
+      "name": "stelliberty-v2.0.31-beta2-win-arm64-setup.exe",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-win-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743358,
+      "name": "stelliberty-v2.0.31-beta2-win-arm64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-win-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743345,
+      "name": "stelliberty-v2.0.31-beta2-win-x64-setup.exe",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-win-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 548743343,
+      "name": "stelliberty-v2.0.31-beta2-win-x64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.31-beta2/stelliberty-v2.0.31-beta2-win-x64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

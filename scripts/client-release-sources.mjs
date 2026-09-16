@@ -348,6 +348,172 @@ export const githubSources = [
     architectures: { android: "arm64-v8a" },
     platforms: { android: /^akashaProxy-{version}()\.(zip)$/ },
   },
+  {
+    appId: "sing-box-for-apple",
+    repo: "Elziy/sing-box-for-apple",
+    architectures: { ios: "arm64" },
+    platforms: { ios: /^sing-box()\.(tipa)$/ },
+  },
+  {
+    appId: "gui-for-singbox",
+    repo: "GUI-for-Cores/GUI.for.SingBox",
+    platforms: {
+      windows: /^GUI\.for\.SingBox-windows-(386|amd64|arm64)\.(zip)$/,
+      macos: /^GUI\.for\.SingBox-darwin-(amd64|arm64)\.(zip)$/,
+      linux: /^GUI\.for\.SingBox-linux-(amd64|arm64)\.(zip)$/,
+    },
+  },
+  {
+    appId: "clashmac",
+    repo: "666OS/ClashMac",
+    architectures: { macos: "universal" },
+    platforms: { macos: /^ClashMac-{version}()\.(dmg|zip)$/ },
+  },
+  {
+    appId: "throne",
+    repo: "throneproj/Throne",
+    architectureAliases: {
+      32: "x86",
+      64: "x64",
+      arm64: "arm64",
+      universal: "universal",
+      amd64: "amd64",
+    },
+    platforms: {
+      windows:
+        /^Throne-{version}-windows(?:legacy)?-?(32|64|arm64|universal)(?:-installer)?\.(zip|exe)$/,
+      macos: /^Throne-{version}-macos(?:legacy)?-(amd64|arm64)\.(zip)$/,
+      linux:
+        /^Throne-{version}-(?:debian|linux)-(amd64|arm64)(?:-system-qt)?\.(deb|zip)$/,
+    },
+  },
+  {
+    appId: "flowz",
+    repo: "dododook/FlowZ",
+    platforms: {
+      windows: /^FlowZ-{version}-win-(x64)-(?:portable|setup)\.(exe)$/,
+      macos: /^FlowZ-{version}-mac-(arm64|x64)\.(dmg)$/,
+      linux: /^FlowZ-{version}-linux-(amd64|x86_64)\.(deb|AppImage)$/,
+    },
+  },
+  {
+    appId: "polaris",
+    repo: "polaris-arch/Polaris",
+    // v1.0.0 打包工作流的 Windows 便携版与安装器均来自 x86_64 构建。
+    architectures: { windows: "x64" },
+    platforms: {
+      windows:
+        /^(?=Polaris_.*_x64-win-setup\.exe$|polaris-portable-v.*\.zip$)(?:Polaris_|polaris-portable-v){version}(?:_(x64)-win-setup)?\.(exe|zip)$/,
+      macos: /^Polaris_{version}_(aarch64|x64)-mac-(?:arm64|x64)\.(dmg)$/,
+      linux: /^Polaris_{version}_(amd64)\.(AppImage|deb)$/,
+    },
+  },
+  {
+    appId: "onebox",
+    repo: "OneOhCloud/OneBox",
+    platforms: {
+      windows: /^OneBox_{version}_(x64)(?:-setup|_en-US)\.(exe|msi)$/,
+      macos: /^OneBox_{version}_(aarch64|x64)\.(dmg)$/,
+      // 官方只声明 Ubuntu 稳定；其他 Linux 为 beta 质量，排除 RPM。
+      linux: /^OneBox_{version}_(amd64)\.(deb)$/,
+    },
+  },
+  {
+    appId: "interstellar",
+    repo: "zn0wii/interstellar-proxy",
+    platforms: {
+      android:
+        /^interstellar-(arm64-v8a|armeabi-v7a|universal|x86|x86_64)-v{version}\.(apk)$/,
+    },
+  },
+  {
+    appId: "satelite",
+    repo: "zn0wii/satelite-proxy",
+    platforms: {
+      windows: /^Satelite_{version}_(x64)(?:-setup|_portable)\.(exe|zip)$/,
+      macos: /^Satelite_{version}_(aarch64|x64)\.(dmg)$/,
+      linux: /^Satelite_{version}_(amd64)\.(AppImage)$/,
+    },
+  },
+  {
+    appId: "clashbar",
+    repo: "Sitoi/ClashBar",
+    architectureAliases: { "apple-silicon": "arm64", intel: "x64" },
+    platforms: {
+      macos: /^ClashBar-{version}-(apple-silicon|intel)(?:-no-core)?\.(dmg)$/,
+    },
+  },
+  {
+    appId: "kumoapp",
+    repo: "ProjectKumo/KumoApp",
+    platforms: { macos: /^Kumo-macos-{version}-(amd64|arm64)\.(dmg)$/ },
+  },
+  {
+    appId: "singboard-for-mac",
+    repo: "okunvei/singboard_for_mac",
+    releaseTag: /^build-\d{8}-\d{6}-[a-f0-9]{7}$/,
+    platforms: {
+      macos:
+        /^Singboard-macos-(arm64|x86_64)-build-[a-f0-9]{7}-\d{8}-\d{6}\.(zip)$/,
+    },
+  },
+  {
+    appId: "irbox",
+    repo: "frank-vpl/IRBox",
+    platforms: {
+      windows: /^IRBox_{version}_(arm64|x64)(?:-setup|_en-US)\.(exe|msi)$/,
+      macos: /^IRBox_{version}_(aarch64|x64)\.(dmg)$/,
+      linux:
+        /^IRBox[-_]{version}(?=(?:_|-1\.)(amd64|x86_64)\.)(?:_amd64|-1\.x86_64)\.(deb|AppImage|rpm)$/,
+    },
+  },
+  {
+    appId: "netch",
+    repo: "netchx/netch",
+    // 当前主分支正准备 2.0；1.x 的核心与架构依据不得套用未来代际。
+    releaseTag: /^1\.9\.7$/,
+    architectures: { windows: "x64" },
+    platforms: { windows: /^Netch()\.(7z)$/ },
+  },
+  {
+    appId: "stelliberty",
+    repo: "Kindness-Kismet/stelliberty",
+    platforms: {
+      windows: /^stelliberty-v{version}-win-(arm64|x64)(?:-setup)?\.(exe|zip)$/,
+      macos: /^stelliberty-v{version}-macos-(arm64|x64)\.(dmg|pkg)$/,
+      linux:
+        /^stelliberty-v{version}-linux-(arm64|x64)\.(AppImage|deb|pkg\.tar\.zst|rpm|zip)$/,
+    },
+  },
+  {
+    appId: "carton",
+    repo: "821869798/carton",
+    platforms: {
+      windows:
+        /^carton-{version}-win-(arm64|x64)-(?:portable|Setup)\.(zip|exe)$/,
+      linux:
+        /^carton-{version}-linux-(arm64|x64)(?:-portable)?\.(tar\.gz|AppImage)$/,
+    },
+  },
+  {
+    appId: "pandora-box",
+    repo: "snakem982/Pandora-Box",
+    platforms: {
+      windows:
+        /^Pandora-Box-v{version}-windows-(amd64|arm64)(?:-app)?\.(zip|msi)$/,
+      macos: /^Pandora-Box-v{version}-macos-(amd64|arm64)\.(dmg)$/,
+      linux: /^Pandora-Box-v{version}-linux-(amd64|arm64)\.(deb|rpm)$/,
+    },
+  },
+  {
+    appId: "clashtui",
+    repo: "JohanChane/clashtui",
+    platforms: {
+      windows: /^clashtui-windows-(amd64|arm64)-v{version}\.(zip)$/,
+      macos: /^clashtui-darwin-(amd64|arm64)-v{version}\.(gz)$/,
+      linux: /^clashtui-linux-(amd64|arm64)-v{version}\.(gz)$/,
+    },
+  },
 ];
 
 // 每个来源只核验明确的平台；iOS lookup 不代表 Mac 版本。
@@ -485,6 +651,54 @@ export const officialSources = [
     platforms: { ios: true },
     trackId: 6758235178,
     bundleId: "com.argsment.Anywhere",
+    country: "us",
+  },
+  {
+    appId: "everywhere",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6766003090,
+    bundleId: "com.argsment.Everywhere",
+    country: "us",
+  },
+  {
+    appId: "connect-now",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6749354119,
+    bundleId: "pro.pasu.app.ConnectPro",
+    country: "us",
+  },
+  {
+    appId: "incy",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6756943388,
+    bundleId: "llc.itdev.incy",
+    country: "us",
+  },
+  {
+    appId: "nextin",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6754002454,
+    bundleId: "com.Tommy.Nextin",
+    country: "us",
+  },
+  {
+    appId: "tunna",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6471652937,
+    bundleId: "com.onetwodev.tunna",
+    country: "us",
+  },
+  {
+    appId: "loon-lite",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6444029612,
+    bundleId: "com.loon.LoonLite",
     country: "us",
   },
 ];

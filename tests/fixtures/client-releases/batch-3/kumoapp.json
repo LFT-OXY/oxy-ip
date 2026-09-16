@@ -1,0 +1,41 @@
+{
+  "id": 328224075,
+  "tag_name": "0.0.15",
+  "name": "Kumo 0.0.15",
+  "html_url": "https://github.com/ProjectKumo/KumoApp/releases/tag/0.0.15",
+  "published_at": "2026-05-23T04:28:59Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 427634029,
+      "name": "Kumo-macos-0.0.15-amd64.dmg",
+      "browser_download_url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/Kumo-macos-0.0.15-amd64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 427634030,
+      "name": "Kumo-macos-0.0.15-arm64.dmg",
+      "browser_download_url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/Kumo-macos-0.0.15-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 427634032,
+      "name": "latest-amd64.yml",
+      "browser_download_url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/latest-amd64.yml",
+      "state": "uploaded"
+    },
+    {
+      "id": 427634033,
+      "name": "latest-arm64.yml",
+      "browser_download_url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/latest-arm64.yml",
+      "state": "uploaded"
+    },
+    {
+      "id": 427634031,
+      "name": "latest.yml",
+      "browser_download_url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/latest.yml",
+      "state": "uploaded"
+    }
+  ]
+}

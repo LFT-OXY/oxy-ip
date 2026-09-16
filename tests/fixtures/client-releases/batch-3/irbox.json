@@ -1,0 +1,65 @@
+{
+  "id": 287053044,
+  "tag_name": "v1.0.2",
+  "name": "IRBox v1.0.2",
+  "html_url": "https://github.com/frank-vpl/IRBox/releases/tag/v1.0.2",
+  "published_at": "2026-02-17T02:37:49Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 357063674,
+      "name": "IRBox-1.0.2-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox-1.0.2-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063671,
+      "name": "IRBox_1.0.2_aarch64.dmg",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_aarch64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063676,
+      "name": "IRBox_1.0.2_amd64.AppImage",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063673,
+      "name": "IRBox_1.0.2_amd64.deb",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063669,
+      "name": "IRBox_1.0.2_arm64-setup.exe",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063670,
+      "name": "IRBox_1.0.2_arm64_en-US.msi",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_arm64_en-US.msi",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063668,
+      "name": "IRBox_1.0.2_x64-setup.exe",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063675,
+      "name": "IRBox_1.0.2_x64.dmg",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 357063672,
+      "name": "IRBox_1.0.2_x64_en-US.msi",
+      "browser_download_url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64_en-US.msi",
+      "state": "uploaded"
+    }
+  ]
+}

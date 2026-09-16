@@ -1,0 +1,13 @@
+{
+  "retrievedAt": "2026-09-16T14:20:20.367795+00:00",
+  "baseline": {
+    "order": 61,
+    "id": "incy",
+    "name": "incy",
+    "reference_url": "https://huarun.win/apps/incy",
+    "observed_official_entry": "https://incy.cc/",
+    "ticket": "06"
+  },
+  "method": "GitHub gh api；网页 Jina Reader；Apple lookup curl。参考清单不作为官方真实性证据。",
+  "page": "Title: INCY — приложение для быстрых и приватных соединений\n\nURL Source: https://incy.cc/\n\nMarkdown Content:\n## Ваше соединение.  \nВаши правила.\n\nОткрытое ядро. Ваши серверы. Все устройства.\n\n[Скачать INCY](https://incy.cc/#downloads)\n\n[Возможности](https://incy.cc/#features)\n\n![Image 1](https://incy.cc/images/connection-arches.webp)[iOS](https://incy.cc/#downloads)[Android](https://incy.cc/#downloads)[Windows](https://incy.cc/#downloads)[macOS](https://incy.cc/#downloads)[Linux](https://incy.cc/#downloads)[TV](https://incy.cc/#downloads)\n\n## Соединение под вашим контролем.\n\nВсё необходимое для приватного и быстрого соединения — без компромиссов.\n\n### Маршрутизация\n\nGeoIP/Geosite-правила, split tunneling, блокировка рекламы, прокси по приложениям.\n\nGeoIP Geosite Split tunneling\n\n### Kill Switch\n\nБлокирует интернет при обрыве VPN — никаких утечек трафика.\n\n### Подписки\n\nАвтообновление серверов, импорт по ссылке, QR-коду и deep link.\n\n### Зашифрованный API\n\nHash-based lookup, AES-256-GCM шифрование подписок, без plaintext доменов.\n\n### Раздача через хотспот\n\nSOCKS5/HTTP-шлюз для устройств, подключённых через раздачу Wi-Fi.\n\n### Кастомные темы\n\nПровайдеры настраивают цвета, градиенты, логотипы и кнопки приложения.\n\n## 8 протоколов из коробки\n\nС поддержкой REALITY и XTLS Vision для обхода блокировок.\n\nVLESS REALITY · XTLS\n\nVMess WebSocket · gRPC\n\nTrojan TLS\n\nShadowsocks AEAD\n\nHysteria2 QUIC\n\nWireGuard AmneziaWG\n\nSOCKS5 Proxy\n\nHTTP Proxy\n\n## Один клиент. Все ваши устройства.\n\nВыберите платформу и скачайте INCY из магазина приложений или с GitHub.\n\n[**iOS**App Store](https://apps.apple.com/us/app/incy/id6756943388)[**Android**Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy&hl=ru)[**Windows**GitHub](https://github.com/INCY-DEV/incy-platforms)[**macOS**App Store](https://apps.apple.com/us/app/incy/id6756943388)[**Linux**GitHub](https://github.com/INCY-DEV/incy-platforms)[**TV**Apple TV / Android TV](https://incy.cc/#tv-downloads)\n"
+}

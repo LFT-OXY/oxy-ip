@@ -1,0 +1,145 @@
+✖ 第06票独立25项完整收录，累计83项身份、顺序和逐平台快照无重复遗漏 (1.193792ms)
+✖ 第06票未知Mac版本、实验桌面和失效项目不伪造正式包与核验时间 (0.219875ms)
+✖ 独立身份、非商业许可证、渠道、TrollStore与核心依赖限制明确 (0.109542ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 132.957666
+
+✖ failing tests:
+
+test at tests/client-catalog-batch-3.test.mjs:37:1
+✖ 第06票独立25项完整收录，累计83项身份、顺序和逐平台快照无重复遗漏 (1.193792ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      'shadowrocket',
+      'flclash',
+      'sing-box',
+      'clash-verge-rev',
+  ...
+      'anywhere',
+  -   'everywhere',
+  -   'connect-now',
+  -   'incy',
+  -   'nextin',
+  -   'sing-box-for-apple',
+  -   'tunna',
+  -   'loon-lite',
+  -   'gui-for-singbox',
+  -   'clashmac',
+  -   'throne',
+  -   'flowz',
+  -   'polaris',
+  -   'onebox',
+  -   'interstellar',
+  -   'satelite',
+  -   'clashbar',
+  -   'kumoapp',
+  -   'singboard-for-mac',
+  -   'irbox',
+  -   'netch',
+  -   'pantheon',
+  -   'stelliberty',
+  -   'carton',
+  -   'pandora-box',
+  -   'clashtui'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-3.test.mjs:41:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [
+      'shadowrocket',        'flclash',             'sing-box',
+      'clash-verge-rev',     'v2rayng',             'clash-meta-for-android',
+      'stash',               'bettbox',             'surge',
+      'quantumult-x',        'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',          'hiddify',
+      'egern',               'clashfest',           'exclave',
+      'nekobox-for-android', 'husi',                'yumebox',
+      'shadowsocks-android', 'onexray',             'ssrvpn',
+      'singcast',            'streisand',           'foxray',
+      'clash-nyanpasu',      'clash-party',         'gui-for-clash',
+      'sparkle',             'v2rayn',              'anyportal',
+      'clashx-meta',         'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',            'clash-mi',
+      'flclashx',            'mikubox-for-android', 'kunbox',
+      'nekobox-by-starifly', 'happ-proxy',          'clash-xiaoy',
+      'monadbox',            'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',    'sudodroid',
+      'box-for-root',        'surfing',             'box4magisk',
+      'box-for-android',     'akashaproxy',         'clash-mix',
+      'anywhere'
+    ],
+    expected: [
+      'shadowrocket',        'flclash',             'sing-box',
+      'clash-verge-rev',     'v2rayng',             'clash-meta-for-android',
+      'stash',               'bettbox',             'surge',
+      'quantumult-x',        'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',          'hiddify',
+      'egern',               'clashfest',           'exclave',
+      'nekobox-for-android', 'husi',                'yumebox',
+      'shadowsocks-android', 'onexray',             'ssrvpn',
+      'singcast',            'streisand',           'foxray',
+      'clash-nyanpasu',      'clash-party',         'gui-for-clash',
+      'sparkle',             'v2rayn',              'anyportal',
+      'clashx-meta',         'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',            'clash-mi',
+      'flclashx',            'mikubox-for-android', 'kunbox',
+      'nekobox-by-starifly', 'happ-proxy',          'clash-xiaoy',
+      'monadbox',            'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',    'sudodroid',
+      'box-for-root',        'surfing',             'box4magisk',
+      'box-for-android',     'akashaproxy',         'clash-mix',
+      'anywhere',            'everywhere',          'connect-now',
+      'incy',                'nextin',              'sing-box-for-apple',
+      'tunna',               'loon-lite',           'gui-for-singbox',
+      'clashmac',            'throne',              'flowz',
+      'polaris',             'onebox',              'interstellar',
+      'satelite',            'clashbar',            'kumoapp',
+      'singboard-for-mac',   'irbox',               'netch',
+      'pantheon',            'stelliberty',         'carton',
+      'pandora-box',         'clashtui'
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/client-catalog-batch-3.test.mjs:74:1
+✖ 第06票未知Mac版本、实验桌面和失效项目不伪造正式包与核验时间 (0.219875ms)
+  AssertionError [ERR_ASSERTION]: everywhere
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-3.test.mjs:81:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/client-catalog-batch-3.test.mjs:92:1
+✖ 独立身份、非商业许可证、渠道、TrollStore与核心依赖限制明确 (0.109542ms)
+  TypeError: Cannot read properties of undefined (reading 'code')
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-3.test.mjs:93:56)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)

@@ -1,0 +1,39 @@
+✔ 第06票独立25项完整收录，累计83项身份、顺序和逐平台快照无重复遗漏 (8.331083ms)
+✔ 第06票未知Mac版本、实验桌面和失效项目不伪造正式包与核验时间 (0.681375ms)
+✔ 独立身份、非商业许可证、渠道、TrollStore与核心依赖限制明确 (0.161958ms)
+✖ OneBox桌面身份不引用OneBoxM商店，也不残留未核实Mac的说明 (0.59275ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.471416
+
+✖ failing tests:
+
+test at tests/client-catalog-batch-3.test.mjs:190:1
+✖ OneBox桌面身份不引用OneBoxM商店，也不残留未核实Mac的说明 (0.59275ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'https://github.com/OneOhCloud/OneBox',
+  +   'https://apps.apple.com/us/app/oneboxm/id6759716475'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-3.test.mjs:192:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'https://github.com/OneOhCloud/OneBox', 'https://apps.apple.com/us/app/oneboxm/id6759716475' ],
+    expected: [ 'https://github.com/OneOhCloud/OneBox' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

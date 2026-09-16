@@ -1,0 +1,83 @@
+{
+  "id": 389336421,
+  "tag_name": "v0.6.2",
+  "name": "carton 0.6.2",
+  "html_url": "https://github.com/821869798/carton/releases/tag/v0.6.2",
+  "published_at": "2026-09-15T17:19:25Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 566153854,
+      "name": "carton-0.6.2-linux-arm64-portable.tar.gz",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-arm64-portable.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153861,
+      "name": "carton-0.6.2-linux-arm64-release-full.nupkg",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-arm64-release-full.nupkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153779,
+      "name": "carton-0.6.2-linux-arm64.AppImage",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-arm64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153862,
+      "name": "carton-0.6.2-linux-x64-portable.tar.gz",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-x64-portable.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153876,
+      "name": "carton-0.6.2-linux-x64-release-full.nupkg",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-x64-release-full.nupkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153775,
+      "name": "carton-0.6.2-linux-x64.AppImage",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-x64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153777,
+      "name": "carton-0.6.2-win-arm64-portable.zip",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-arm64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153776,
+      "name": "carton-0.6.2-win-arm64-Setup.exe",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-arm64-Setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153836,
+      "name": "carton-0.6.2-win-x64-portable.zip",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-x64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153778,
+      "name": "carton-0.6.2-win-x64-Setup.exe",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-x64-Setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153905,
+      "name": "releases.linux-arm64-release.json",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/releases.linux-arm64-release.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 566153922,
+      "name": "releases.linux-x64-release.json",
+      "browser_download_url": "https://github.com/821869798/carton/releases/download/v0.6.2/releases.linux-x64-release.json",
+      "state": "uploaded"
+    }
+  ]
+}

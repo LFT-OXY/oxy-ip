@@ -64,7 +64,7 @@ const sourceFor = (name) =>
 
 test("第二批21条GitHub配置匹配真实平台资产，错误版本URL拒绝且无遗漏", () => {
   assert.deepEqual(
-    githubSources.slice(18).map((s) => s.repo),
+    githubSources.slice(18, 39).map((s) => s.repo),
     Object.keys(counts).map((name) => sourceFor(name)?.repo),
   );
   const excluded = {
@@ -198,7 +198,7 @@ test("预发布标记为false的FlyClash Alpha仍拒绝，Miku旧正式代际不
 test("第二批4个商店源身份独立，人工Mac与其他平台不被iOS覆盖", async () => {
   const ids = ["clash-mi", "happ-proxy", "vproxy", "anywhere"];
   assert.deepEqual(
-    officialSources.slice(13).map((s) => s.appId),
+    officialSources.slice(13, 17).map((s) => s.appId),
     ids,
   );
   for (const id of ids) {

@@ -1,0 +1,114 @@
+✖ 第06票固定25项完整收录，累计83项身份与顺序一致 (1.246833ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 126.056166
+
+✖ failing tests:
+
+test at tests/client-catalog-batch-3.test.mjs:13:1
+✖ 第06票固定25项完整收录，累计83项身份与顺序一致 (1.246833ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      'shadowrocket',
+      'flclash',
+      'sing-box',
+      'clash-verge-rev',
+  ...
+      'anywhere',
+  -   'everywhere',
+  -   'connect-now',
+  -   'incy',
+  -   'nextin',
+  -   'sing-box-for-apple',
+  -   'tunna',
+  -   'loon-lite',
+  -   'gui-for-singbox',
+  -   'clashmac',
+  -   'throne',
+  -   'flowz',
+  -   'polaris',
+  -   'onebox',
+  -   'interstellar',
+  -   'satelite',
+  -   'clashbar',
+  -   'kumoapp',
+  -   'singboard-for-mac',
+  -   'irbox',
+  -   'netch',
+  -   'pantheon',
+  -   'stelliberty',
+  -   'carton',
+  -   'pandora-box',
+  -   'clashtui'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/oxy/Documents/code/My/oxy-ip/tests/client-catalog-batch-3.test.mjs:16:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [
+      'shadowrocket',        'flclash',             'sing-box',
+      'clash-verge-rev',     'v2rayng',             'clash-meta-for-android',
+      'stash',               'bettbox',             'surge',
+      'quantumult-x',        'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',          'hiddify',
+      'egern',               'clashfest',           'exclave',
+      'nekobox-for-android', 'husi',                'yumebox',
+      'shadowsocks-android', 'onexray',             'ssrvpn',
+      'singcast',            'streisand',           'foxray',
+      'clash-nyanpasu',      'clash-party',         'gui-for-clash',
+      'sparkle',             'v2rayn',              'anyportal',
+      'clashx-meta',         'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',            'clash-mi',
+      'flclashx',            'mikubox-for-android', 'kunbox',
+      'nekobox-by-starifly', 'happ-proxy',          'clash-xiaoy',
+      'monadbox',            'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',    'sudodroid',
+      'box-for-root',        'surfing',             'box4magisk',
+      'box-for-android',     'akashaproxy',         'clash-mix',
+      'anywhere'
+    ],
+    expected: [
+      'shadowrocket',        'flclash',             'sing-box',
+      'clash-verge-rev',     'v2rayng',             'clash-meta-for-android',
+      'stash',               'bettbox',             'surge',
+      'quantumult-x',        'loon',                'clash-by-hako',
+      'karing',              'pharos-pro',          'hiddify',
+      'egern',               'clashfest',           'exclave',
+      'nekobox-for-android', 'husi',                'yumebox',
+      'shadowsocks-android', 'onexray',             'ssrvpn',
+      'singcast',            'streisand',           'foxray',
+      'clash-nyanpasu',      'clash-party',         'gui-for-clash',
+      'sparkle',             'v2rayn',              'anyportal',
+      'clashx-meta',         'v2rayu',              'surfboard',
+      'insightbox',          'xray-gui',            'clash-mi',
+      'flclashx',            'mikubox-for-android', 'kunbox',
+      'nekobox-by-starifly', 'happ-proxy',          'clash-xiaoy',
+      'monadbox',            'mconnect',            'vproxy',
+      'flyclash',            'flyclash-android',    'sudodroid',
+      'box-for-root',        'surfing',             'box4magisk',
+      'box-for-android',     'akashaproxy',         'clash-mix',
+      'anywhere',            'everywhere',          'connect-now',
+      'incy',                'nextin',              'sing-box-for-apple',
+      'tunna',               'loon-lite',           'gui-for-singbox',
+      'clashmac',            'throne',              'flowz',
+      'polaris',             'onebox',              'interstellar',
+      'satelite',            'clashbar',            'kumoapp',
+      'singboard-for-mac',   'irbox',               'netch',
+      'pantheon',            'stelliberty',         'carton',
+      'pandora-box',         'clashtui'
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,38 @@
+{
+  "retrievedAt": "2026-09-16T14:20:20.424723+00:00",
+  "baseline": {
+    "order": 79,
+    "id": "pantheon",
+    "name": "Pantheon",
+    "reference_url": "https://huarun.win/apps/pantheon",
+    "observed_official_entry": "https://github.com/Zephyruso/Pantheon",
+    "ticket": "06"
+  },
+  "method": "GitHub gh api；网页 Jina Reader；Apple lookup curl。参考清单不作为官方真实性证据。",
+  "apiEndpoints": {
+    "repository": "https://api.github.com/repos/Zephyruso/Pantheon",
+    "readme": "https://api.github.com/repos/Zephyruso/Pantheon/readme",
+    "releases": "https://api.github.com/repos/Zephyruso/Pantheon/releases?per_page=100",
+    "tree": "https://api.github.com/repos/Zephyruso/Pantheon/git/trees/HEAD?recursive=1"
+  },
+  "repository": {
+    "message": "Not Found",
+    "status": "404"
+  },
+  "readme": {
+    "message": "Not Found",
+    "status": "404"
+  },
+  "tree": {
+    "sha": null,
+    "truncated": null,
+    "paths": [],
+    "error": null,
+    "message": "Not Found"
+  },
+  "releases": {
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/releases/releases#list-releases",
+    "status": "404"
+  }
+}

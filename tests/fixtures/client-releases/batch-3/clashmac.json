@@ -1,0 +1,23 @@
+{
+  "id": 382676719,
+  "tag_name": "27.1.4",
+  "name": "ClashMac 27.1.4",
+  "html_url": "https://github.com/666OS/ClashMac/releases/tag/27.1.4",
+  "published_at": "2026-09-04T11:32:38Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 544244667,
+      "name": "ClashMac-27.1.4.dmg",
+      "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 544244666,
+      "name": "ClashMac-27.1.4.zip",
+      "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.zip",
+      "state": "uploaded"
+    }
+  ]
+}

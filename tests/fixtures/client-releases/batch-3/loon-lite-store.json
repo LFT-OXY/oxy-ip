@@ -1,0 +1,18 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "trackId": 6444029612,
+      "bundleId": "com.loon.LoonLite",
+      "version": "1.0.10",
+      "currentVersionReleaseDate": "2025-04-24T07:03:55Z",
+      "trackViewUrl": "https://apps.apple.com/us/app/loon-lite/id6444029612?uo=4",
+      "kind": "software",
+      "wrapperType": "software",
+      "trackName": "Loon Lite",
+      "sellerName": "Loon Lab Limited",
+      "price": 0.99,
+      "currency": "USD"
+    }
+  ]
+}

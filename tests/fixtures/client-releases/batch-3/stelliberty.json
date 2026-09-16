@@ -1,0 +1,119 @@
+{
+  "id": 383086432,
+  "tag_name": "v2.0.30",
+  "name": "Stelliberty 2.0.30",
+  "html_url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.30",
+  "published_at": "2026-09-05T00:50:12Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 545150591,
+      "name": "stelliberty-v2.0.30-linux-arm64.AppImage",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-arm64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150600,
+      "name": "stelliberty-v2.0.30-linux-arm64.deb",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150604,
+      "name": "stelliberty-v2.0.30-linux-arm64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-arm64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150602,
+      "name": "stelliberty-v2.0.30-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150586,
+      "name": "stelliberty-v2.0.30-linux-arm64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150603,
+      "name": "stelliberty-v2.0.30-linux-x64.AppImage",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-x64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150597,
+      "name": "stelliberty-v2.0.30-linux-x64.deb",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-x64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150601,
+      "name": "stelliberty-v2.0.30-linux-x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150595,
+      "name": "stelliberty-v2.0.30-linux-x64.rpm",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-x64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150589,
+      "name": "stelliberty-v2.0.30-linux-x64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-linux-x64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150593,
+      "name": "stelliberty-v2.0.30-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150599,
+      "name": "stelliberty-v2.0.30-macos-arm64.pkg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150598,
+      "name": "stelliberty-v2.0.30-macos-x64.dmg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150594,
+      "name": "stelliberty-v2.0.30-macos-x64.pkg",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150588,
+      "name": "stelliberty-v2.0.30-win-arm64-setup.exe",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150587,
+      "name": "stelliberty-v2.0.30-win-arm64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150592,
+      "name": "stelliberty-v2.0.30-win-x64-setup.exe",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 545150590,
+      "name": "stelliberty-v2.0.30-win-x64.zip",
+      "browser_download_url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-x64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

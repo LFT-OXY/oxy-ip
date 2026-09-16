@@ -1,0 +1,101 @@
+{
+  "id": 389585491,
+  "tag_name": "dev",
+  "name": "Dev",
+  "html_url": "https://github.com/OneOhCloud/OneBox/releases/tag/dev",
+  "published_at": "2026-09-16T01:50:13Z",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "id": 566943340,
+      "name": "latest.json",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/latest.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 566938145,
+      "name": "OneBox-1.4.40-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox-1.4.40-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 566938195,
+      "name": "OneBox-1.4.40-1.x86_64.rpm.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox-1.4.40-1.x86_64.rpm.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 566934007,
+      "name": "OneBox_1.4.40_aarch64.dmg",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_aarch64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 566938087,
+      "name": "OneBox_1.4.40_amd64.deb",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 566938133,
+      "name": "OneBox_1.4.40_amd64.deb.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_amd64.deb.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 566943289,
+      "name": "OneBox_1.4.40_x64-setup.exe",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 566943315,
+      "name": "OneBox_1.4.40_x64-setup.exe.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64-setup.exe.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 566936762,
+      "name": "OneBox_1.4.40_x64.dmg",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 566943228,
+      "name": "OneBox_1.4.40_x64_en-US.msi",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64_en-US.msi",
+      "state": "uploaded"
+    },
+    {
+      "id": 566943279,
+      "name": "OneBox_1.4.40_x64_en-US.msi.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64_en-US.msi.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 566934097,
+      "name": "OneBox_aarch64.app.tar.gz",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_aarch64.app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 566934150,
+      "name": "OneBox_aarch64.app.tar.gz.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_aarch64.app.tar.gz.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 566936792,
+      "name": "OneBox_x64.app.tar.gz",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_x64.app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 566936833,
+      "name": "OneBox_x64.app.tar.gz.sig",
+      "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_x64.app.tar.gz.sig",
+      "state": "uploaded"
+    }
+  ]
+}

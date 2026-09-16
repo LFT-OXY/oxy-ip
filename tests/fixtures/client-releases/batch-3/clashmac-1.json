@@ -1,0 +1,23 @@
+{
+  "id": 387852828,
+  "tag_name": "Prerelease-Alpha",
+  "name": "ClashMac Alpha",
+  "html_url": "https://github.com/666OS/ClashMac/releases/tag/Prerelease-Alpha",
+  "published_at": "2026-09-13T09:41:58Z",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "id": 560949573,
+      "name": "ClashMac-Alpha-b265.dmg",
+      "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/Prerelease-Alpha/ClashMac-Alpha-b265.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 560949574,
+      "name": "ClashMac-Alpha-b265.zip",
+      "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/Prerelease-Alpha/ClashMac-Alpha-b265.zip",
+      "state": "uploaded"
+    }
+  ]
+}

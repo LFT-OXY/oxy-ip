@@ -53,10 +53,10 @@ test("第05票固定25项加入后总计58项，身份顺序及逐平台获取�
     expected.map((app) => app.id),
   );
   assert.deepEqual(
-    apps.map((app) => app.id),
+    apps.slice(0, 58).map((app) => app.id),
     baseline.apps.slice(0, 58).map((app) => app.id),
   );
-  assert.equal(new Set(apps.map((app) => app.id)).size, 58);
+  assert.equal(new Set(apps.slice(0, 58).map((app) => app.id)).size, 58);
   for (const item of expected) {
     const app = apps.find((app) => app.id === item.id);
     assert.equal(app.name, item.name);

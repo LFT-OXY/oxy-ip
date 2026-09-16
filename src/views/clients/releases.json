@@ -5394,5 +5394,1748 @@
       }
     ],
     "note": "商店声明支持 Apple Silicon Mac，但没有独立 Mac 版本依据，版本与日期留空。"
+  },
+  {
+    "appId": "everywhere",
+    "platform": "ios",
+    "version": "1.6",
+    "publishedAt": "2026-09-10T21:50:02Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "everywhere",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/everywhere-proxy/id6766003090"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；未独立核实 Mac 版本和发布日期，不套用 iOS 发布信息。"
+  },
+  {
+    "appId": "connect-now",
+    "platform": "ios",
+    "version": "1.0.5",
+    "publishedAt": "2026-07-24T21:46:57Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/connect-now/id6749354119?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/connect-now/id6749354119?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/connect-now/id6749354119?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "connect-now",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/connect-now/id6749354119"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/connect-now/id6749354119"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/connect-now/id6749354119"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；未独立核实 Mac 版本和发布日期，不套用 iOS 发布信息。"
+  },
+  {
+    "appId": "incy",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://play.google.com/store/apps/details?id=llc.itdev.incy"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://play.google.com/store/apps/details?id=llc.itdev.incy"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://play.google.com/store/apps/details?id=llc.itdev.incy"
+      }
+    ],
+    "note": "Android 使用官方 Google Play 入口；尚未独立核实 APK 的架构及版本对应关系，发布信息人工维护。"
+  },
+  {
+    "appId": "incy",
+    "platform": "ios",
+    "version": "2.6.1",
+    "publishedAt": "2026-09-10T18:55:41Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/incy/id6756943388?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/incy/id6756943388?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/incy/id6756943388?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "incy",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://incy.cc/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://incy.cc/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://incy.cc/"
+      }
+    ],
+    "note": "官方明确桌面客户端为 pre-alpha；仅保留官方页面，不提供测试安装包或正式版本号。"
+  },
+  {
+    "appId": "incy",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/incy/id6756943388"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/incy/id6756943388"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/incy/id6756943388"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；未独立核实 Mac 版本和发布日期，不套用 iOS 发布信息。"
+  },
+  {
+    "appId": "incy",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://incy.cc/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://incy.cc/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://incy.cc/"
+      }
+    ],
+    "note": "官方明确桌面客户端为 pre-alpha；仅保留官方页面，不提供测试安装包或正式版本号。"
+  },
+  {
+    "appId": "nextin",
+    "platform": "ios",
+    "version": "1.3.2",
+    "publishedAt": "2026-09-10T21:45:23Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/nextin/id6754002454?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/nextin/id6754002454?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/nextin/id6754002454?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "nextin",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/nextin/id6754002454"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/nextin/id6754002454"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/nextin/id6754002454"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；未独立核实 Mac 版本和发布日期，不套用 iOS 发布信息。"
+  },
+  {
+    "appId": "sing-box-for-apple",
+    "platform": "ios",
+    "version": "2.1.3",
+    "publishedAt": "2025-02-07T06:21:05Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Elziy/sing-box-for-apple/releases/tag/2.1.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Elziy/sing-box-for-apple/releases"
+    },
+    "note": "TIPA 安装包面向兼容 TrollStore 的 iOS 设备，不是普通 App Store 安装；请先核对设备与系统限制。",
+    "downloads": [
+      {
+        "id": "sing-box.tipa",
+        "kind": "direct",
+        "url": "https://github.com/Elziy/sing-box-for-apple/releases/download/2.1.3/sing-box.tipa",
+        "arch": "arm64",
+        "format": "tipa"
+      }
+    ]
+  },
+  {
+    "appId": "sing-box-for-apple",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/Elziy/sing-box-for-apple/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Elziy/sing-box-for-apple/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/Elziy/sing-box-for-apple/releases"
+      }
+    ],
+    "note": "本分支仅核实到实验性 Mac 源码，没有可确认的 Mac 正式安装包；不使用上游 SagerNet 的版本替代。"
+  },
+  {
+    "appId": "tunna",
+    "platform": "ios",
+    "version": "1.7.0",
+    "publishedAt": "2026-06-03T17:25:21Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/tunna/id6471652937?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/tunna/id6471652937?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/tunna/id6471652937?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "tunna",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/tunna/id6471652937"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/tunna/id6471652937"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/tunna/id6471652937"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；未独立核实 Mac 版本和发布日期，不套用 iOS 发布信息。"
+  },
+  {
+    "appId": "loon-lite",
+    "platform": "ios",
+    "version": "1.0.10",
+    "publishedAt": "2025-04-24T07:03:55Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/loon-lite/id6444029612?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/loon-lite/id6444029612?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/loon-lite/id6444029612?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-singbox",
+    "platform": "windows",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:38:11Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.SingBox-windows-386.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-386.zip",
+        "arch": "386",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.SingBox-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.SingBox-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-singbox",
+    "platform": "macos",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:38:11Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.SingBox-darwin-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-darwin-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.SingBox-darwin-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-darwin-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-singbox",
+    "platform": "linux",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:38:11Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.SingBox-linux-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-linux-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.SingBox-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clashmac",
+    "platform": "macos",
+    "version": "27.1.4",
+    "publishedAt": "2026-09-04T11:32:38Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/666OS/ClashMac/releases/tag/27.1.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/666OS/ClashMac/releases"
+    },
+    "downloads": [
+      {
+        "id": "ClashMac-27.1.4.dmg",
+        "kind": "direct",
+        "url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      },
+      {
+        "id": "ClashMac-27.1.4.zip",
+        "kind": "direct",
+        "url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.zip",
+        "arch": "universal",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "throne",
+    "platform": "windows",
+    "version": "1.2.4",
+    "publishedAt": "2026-08-08T23:08:42Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/throneproj/Throne/releases/tag/1.2.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/throneproj/Throne/releases"
+    },
+    "downloads": [
+      {
+        "id": "Throne-1.2.4-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-windows-universal-installer.exe",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows-universal-installer.exe",
+        "arch": "universal",
+        "format": "exe"
+      },
+      {
+        "id": "Throne-1.2.4-windows32.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows32.zip",
+        "arch": "x86",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-windows64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows64.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-windowslegacy64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windowslegacy64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "throne",
+    "platform": "macos",
+    "version": "1.2.4",
+    "publishedAt": "2026-08-08T23:08:42Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/throneproj/Throne/releases/tag/1.2.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/throneproj/Throne/releases"
+    },
+    "downloads": [
+      {
+        "id": "Throne-1.2.4-macos-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macos-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-macos-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macos-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-macoslegacy-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macoslegacy-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "throne",
+    "platform": "linux",
+    "version": "1.2.4",
+    "publishedAt": "2026-08-08T23:08:42Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/throneproj/Throne/releases/tag/1.2.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/throneproj/Throne/releases"
+    },
+    "downloads": [
+      {
+        "id": "Throne-1.2.4-debian-amd64-system-qt.deb",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-amd64-system-qt.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "Throne-1.2.4-debian-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "Throne-1.2.4-debian-arm64-system-qt.deb",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-arm64-system-qt.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "Throne-1.2.4-debian-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "Throne-1.2.4-linux-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-linux-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "Throne-1.2.4-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "flowz",
+    "platform": "windows",
+    "version": "v4.3.3",
+    "publishedAt": "2026-08-26T14:26:04Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/dododook/FlowZ/releases/tag/v4.3.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/dododook/FlowZ/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlowZ-4.3.3-win-x64-portable.exe",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-win-x64-portable.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "FlowZ-4.3.3-win-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-win-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "flowz",
+    "platform": "macos",
+    "version": "v4.3.3",
+    "publishedAt": "2026-08-26T14:26:04Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/dododook/FlowZ/releases/tag/v4.3.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/dododook/FlowZ/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlowZ-4.3.3-mac-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-mac-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "FlowZ-4.3.3-mac-x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-mac-x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "flowz",
+    "platform": "linux",
+    "version": "v4.3.3",
+    "publishedAt": "2026-08-26T14:26:04Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/dododook/FlowZ/releases/tag/v4.3.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/dododook/FlowZ/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlowZ-4.3.3-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "FlowZ-4.3.3-linux-x86_64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-linux-x86_64.AppImage",
+        "arch": "x86_64",
+        "format": "AppImage"
+      }
+    ]
+  },
+  {
+    "appId": "polaris",
+    "platform": "windows",
+    "version": "v1.0.0",
+    "publishedAt": "2026-09-03T16:17:24Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/polaris-arch/Polaris/releases/tag/v1.0.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/polaris-arch/Polaris/releases"
+    },
+    "downloads": [
+      {
+        "id": "polaris-portable-v1.0.0.zip",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/polaris-portable-v1.0.0.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "Polaris_1.0.0_x64-win-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_x64-win-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "polaris",
+    "platform": "macos",
+    "version": "v1.0.0",
+    "publishedAt": "2026-09-03T16:17:24Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/polaris-arch/Polaris/releases/tag/v1.0.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/polaris-arch/Polaris/releases"
+    },
+    "downloads": [
+      {
+        "id": "Polaris_1.0.0_aarch64-mac-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_aarch64-mac-arm64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "Polaris_1.0.0_x64-mac-x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_x64-mac-x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "polaris",
+    "platform": "linux",
+    "version": "v1.0.0",
+    "publishedAt": "2026-09-03T16:17:24Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/polaris-arch/Polaris/releases/tag/v1.0.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/polaris-arch/Polaris/releases"
+    },
+    "downloads": [
+      {
+        "id": "Polaris_1.0.0_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "Polaris_1.0.0_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "onebox",
+    "platform": "windows",
+    "version": "v1.4.39",
+    "publishedAt": "2026-09-05T05:28:05Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.39"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneOhCloud/OneBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneBox_1.4.39_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "OneBox_1.4.39_x64_en-US.msi",
+        "kind": "direct",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64_en-US.msi",
+        "arch": "x64",
+        "format": "msi"
+      }
+    ]
+  },
+  {
+    "appId": "onebox",
+    "platform": "macos",
+    "version": "v1.4.39",
+    "publishedAt": "2026-09-05T05:28:05Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.39"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneOhCloud/OneBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneBox_1.4.39_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "OneBox_1.4.39_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "onebox",
+    "platform": "linux",
+    "version": "v1.4.39",
+    "publishedAt": "2026-09-05T05:28:05Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.39"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneOhCloud/OneBox/releases"
+    },
+    "note": "Ubuntu 为社区维护的稳定平台，仅提供 DEB；其他 Linux 被官方标为测试质量，不将 RPM 作为正式包。",
+    "downloads": [
+      {
+        "id": "OneBox_1.4.39_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "interstellar",
+    "platform": "android",
+    "version": "v0.5.4",
+    "publishedAt": "2026-09-14T14:21:49Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/zn0wii/interstellar-proxy/releases/tag/v0.5.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/zn0wii/interstellar-proxy/releases"
+    },
+    "downloads": [
+      {
+        "id": "interstellar-arm64-v8a-v0.5.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/interstellar-proxy/releases/download/v0.5.4/interstellar-arm64-v8a-v0.5.4.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "interstellar-armeabi-v7a-v0.5.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/interstellar-proxy/releases/download/v0.5.4/interstellar-armeabi-v7a-v0.5.4.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "interstellar-universal-v0.5.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/interstellar-proxy/releases/download/v0.5.4/interstellar-universal-v0.5.4.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "interstellar-x86-v0.5.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/interstellar-proxy/releases/download/v0.5.4/interstellar-x86-v0.5.4.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "interstellar-x86_64-v0.5.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/interstellar-proxy/releases/download/v0.5.4/interstellar-x86_64-v0.5.4.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "satelite",
+    "platform": "windows",
+    "version": "v1.0.36",
+    "publishedAt": "2026-09-16T12:24:15Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases/tag/v1.0.36"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases"
+    },
+    "downloads": [
+      {
+        "id": "Satelite_1.0.36_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "Satelite_1.0.36_x64_portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64_portable.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "satelite",
+    "platform": "macos",
+    "version": "v1.0.36",
+    "publishedAt": "2026-09-16T12:24:15Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases/tag/v1.0.36"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases"
+    },
+    "downloads": [
+      {
+        "id": "Satelite_1.0.36_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "Satelite_1.0.36_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "satelite",
+    "platform": "linux",
+    "version": "v1.0.36",
+    "publishedAt": "2026-09-16T12:24:15Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases/tag/v1.0.36"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/zn0wii/satelite-proxy/releases"
+    },
+    "downloads": [
+      {
+        "id": "Satelite_1.0.36_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      }
+    ]
+  },
+  {
+    "appId": "clashbar",
+    "platform": "macos",
+    "version": "v0.3.3",
+    "publishedAt": "2026-09-02T01:19:40Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Sitoi/ClashBar/releases/tag/v0.3.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Sitoi/ClashBar/releases"
+    },
+    "note": "no-core 包不含 Mihomo，需自行准备内核；含内核与不含内核两种包均保留。",
+    "downloads": [
+      {
+        "id": "ClashBar-0.3.3-apple-silicon-no-core.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon-no-core.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "ClashBar-0.3.3-apple-silicon.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "ClashBar-0.3.3-intel-no-core.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel-no-core.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      },
+      {
+        "id": "ClashBar-0.3.3-intel.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "kumoapp",
+    "platform": "macos",
+    "version": "0.0.15",
+    "publishedAt": "2026-05-23T04:28:59Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/ProjectKumo/KumoApp/releases/tag/0.0.15"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/ProjectKumo/KumoApp/releases"
+    },
+    "downloads": [
+      {
+        "id": "Kumo-macos-0.0.15-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/Kumo-macos-0.0.15-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "Kumo-macos-0.0.15-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/ProjectKumo/KumoApp/releases/download/0.0.15/Kumo-macos-0.0.15-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "singboard-for-mac",
+    "platform": "macos",
+    "version": "build-20260627-121223-f6c9f44",
+    "publishedAt": "2026-06-27T12:18:00Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/okunvei/singboard_for_mac/releases/tag/build-20260627-121223-f6c9f44"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/okunvei/singboard_for_mac/releases"
+    },
+    "note": "这是独立 Mac 构建渠道，需自行准备 sing-box 与配置；首次安装特权 Helper 需要管理员授权。",
+    "downloads": [
+      {
+        "id": "Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+        "kind": "direct",
+        "url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+        "kind": "direct",
+        "url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "irbox",
+    "platform": "windows",
+    "version": "v1.0.2",
+    "publishedAt": "2026-02-17T02:37:49Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/frank-vpl/IRBox/releases/tag/v1.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/frank-vpl/IRBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "IRBox_1.0.2_arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "IRBox_1.0.2_arm64_en-US.msi",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_arm64_en-US.msi",
+        "arch": "arm64",
+        "format": "msi"
+      },
+      {
+        "id": "IRBox_1.0.2_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "IRBox_1.0.2_x64_en-US.msi",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64_en-US.msi",
+        "arch": "x64",
+        "format": "msi"
+      }
+    ]
+  },
+  {
+    "appId": "irbox",
+    "platform": "macos",
+    "version": "v1.0.2",
+    "publishedAt": "2026-02-17T02:37:49Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/frank-vpl/IRBox/releases/tag/v1.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/frank-vpl/IRBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "IRBox_1.0.2_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "IRBox_1.0.2_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "irbox",
+    "platform": "linux",
+    "version": "v1.0.2",
+    "publishedAt": "2026-02-17T02:37:49Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/frank-vpl/IRBox/releases/tag/v1.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/frank-vpl/IRBox/releases"
+    },
+    "downloads": [
+      {
+        "id": "IRBox-1.0.2-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox-1.0.2-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "IRBox_1.0.2_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "IRBox_1.0.2_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/frank-vpl/IRBox/releases/download/v1.0.2/IRBox_1.0.2_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "netch",
+    "platform": "windows",
+    "version": "1.9.7",
+    "publishedAt": "2022-06-24T07:04:37Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/netchx/netch/releases/tag/1.9.7"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/netchx/netch/releases"
+    },
+    "note": "旧正式版 1.9.7 使用 SagerNet 的 V2Ray 分支与 .NET 6 x64；不沿用旧版 Xray 标记。",
+    "downloads": [
+      {
+        "id": "Netch.7z",
+        "kind": "direct",
+        "url": "https://github.com/netchx/netch/releases/download/1.9.7/Netch.7z",
+        "arch": "x64",
+        "format": "7z"
+      }
+    ]
+  },
+  {
+    "appId": "pantheon",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/Zephyruso/Pantheon"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Zephyruso/Pantheon"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/Zephyruso/Pantheon"
+      }
+    ],
+    "note": "当前无法获取：原官方仓库返回 404，仅保留历史项目链接与文字占位图；版本、日期和内核尚无法重新核实。"
+  },
+  {
+    "appId": "stelliberty",
+    "platform": "windows",
+    "version": "v2.0.30",
+    "publishedAt": "2026-09-05T00:50:12Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.30"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases"
+    },
+    "downloads": [
+      {
+        "id": "stelliberty-v2.0.30-win-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "stelliberty-v2.0.30-win-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "stelliberty-v2.0.30-win-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "stelliberty-v2.0.30-win-x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-win-x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "stelliberty",
+    "platform": "macos",
+    "version": "v2.0.30",
+    "publishedAt": "2026-09-05T00:50:12Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.30"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases"
+    },
+    "downloads": [
+      {
+        "id": "stelliberty-v2.0.30-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "stelliberty-v2.0.30-macos-arm64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-arm64.pkg",
+        "arch": "arm64",
+        "format": "pkg"
+      },
+      {
+        "id": "stelliberty-v2.0.30-macos-x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      },
+      {
+        "id": "stelliberty-v2.0.30-macos-x64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.30/stelliberty-v2.0.30-macos-x64.pkg",
+        "arch": "x64",
+        "format": "pkg"
+      }
+    ]
+  },
+  {
+    "appId": "stelliberty",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases"
+      }
+    ],
+    "note": "本次安装包核验遇到临时网络失败，保留官方发布页；不将失败检查标为成功核验。"
+  },
+  {
+    "appId": "carton",
+    "platform": "windows",
+    "version": "v0.6.2",
+    "publishedAt": "2026-09-15T17:19:25Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/821869798/carton/releases/tag/v0.6.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/821869798/carton/releases"
+    },
+    "downloads": [
+      {
+        "id": "carton-0.6.2-win-arm64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-arm64-portable.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "carton-0.6.2-win-arm64-Setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-arm64-Setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "carton-0.6.2-win-x64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-x64-portable.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "carton-0.6.2-win-x64-Setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-win-x64-Setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "carton",
+    "platform": "linux",
+    "version": "v0.6.2",
+    "publishedAt": "2026-09-15T17:19:25Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/821869798/carton/releases/tag/v0.6.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/821869798/carton/releases"
+    },
+    "downloads": [
+      {
+        "id": "carton-0.6.2-linux-arm64-portable.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-arm64-portable.tar.gz",
+        "arch": "arm64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "carton-0.6.2-linux-arm64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-arm64.AppImage",
+        "arch": "arm64",
+        "format": "AppImage"
+      },
+      {
+        "id": "carton-0.6.2-linux-x64-portable.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-x64-portable.tar.gz",
+        "arch": "x64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "carton-0.6.2-linux-x64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/821869798/carton/releases/download/v0.6.2/carton-0.6.2-linux-x64.AppImage",
+        "arch": "x64",
+        "format": "AppImage"
+      }
+    ]
+  },
+  {
+    "appId": "pandora-box",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/snakem982/Pandora-Box/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/snakem982/Pandora-Box/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/snakem982/Pandora-Box/releases"
+      }
+    ],
+    "note": "本次安装包核验遇到临时网络失败，保留官方发布页；不将失败检查标为成功核验。"
+  },
+  {
+    "appId": "pandora-box",
+    "platform": "macos",
+    "version": "v1.0.23",
+    "publishedAt": "2026-08-22T07:46:56Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/snakem982/Pandora-Box/releases/tag/v1.0.23"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/snakem982/Pandora-Box/releases"
+    },
+    "downloads": [
+      {
+        "id": "Pandora-Box-v1.0.23-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "Pandora-Box-v1.0.23-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "pandora-box",
+    "platform": "linux",
+    "version": "v1.0.23",
+    "publishedAt": "2026-08-22T07:46:56Z",
+    "lastCheckedAt": "2026-09-16T15:21:39.392Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/snakem982/Pandora-Box/releases/tag/v1.0.23"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/snakem982/Pandora-Box/releases"
+    },
+    "downloads": [
+      {
+        "id": "Pandora-Box-v1.0.23-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "Pandora-Box-v1.0.23-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "Pandora-Box-v1.0.23-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "Pandora-Box-v1.0.23-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "clashtui",
+    "platform": "windows",
+    "version": "v0.3.1",
+    "publishedAt": "2026-05-26T16:45:16Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/JohanChane/clashtui/releases/tag/v0.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/JohanChane/clashtui/releases"
+    },
+    "note": "终端界面，代理内核需按官方说明配置；图标为经确认的文字占位，不是官方品牌图。",
+    "downloads": [
+      {
+        "id": "clashtui-windows-amd64-v0.3.1.zip",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-windows-amd64-v0.3.1.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "clashtui-windows-arm64-v0.3.1.zip",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-windows-arm64-v0.3.1.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clashtui",
+    "platform": "macos",
+    "version": "v0.3.1",
+    "publishedAt": "2026-05-26T16:45:16Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/JohanChane/clashtui/releases/tag/v0.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/JohanChane/clashtui/releases"
+    },
+    "note": "终端界面，代理内核需按官方说明配置；图标为经确认的文字占位，不是官方品牌图。",
+    "downloads": [
+      {
+        "id": "clashtui-darwin-amd64-v0.3.1.gz",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-darwin-amd64-v0.3.1.gz",
+        "arch": "amd64",
+        "format": "gz"
+      },
+      {
+        "id": "clashtui-darwin-arm64-v0.3.1.gz",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-darwin-arm64-v0.3.1.gz",
+        "arch": "arm64",
+        "format": "gz"
+      }
+    ]
+  },
+  {
+    "appId": "clashtui",
+    "platform": "linux",
+    "version": "v0.3.1",
+    "publishedAt": "2026-05-26T16:45:16Z",
+    "lastCheckedAt": "2026-09-16T15:17:54.205Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/JohanChane/clashtui/releases/tag/v0.3.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/JohanChane/clashtui/releases"
+    },
+    "note": "终端界面，代理内核需按官方说明配置；图标为经确认的文字占位，不是官方品牌图。",
+    "downloads": [
+      {
+        "id": "clashtui-linux-amd64-v0.3.1.gz",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-linux-amd64-v0.3.1.gz",
+        "arch": "amd64",
+        "format": "gz"
+      },
+      {
+        "id": "clashtui-linux-arm64-v0.3.1.gz",
+        "kind": "direct",
+        "url": "https://github.com/JohanChane/clashtui/releases/download/v0.3.1/clashtui-linux-arm64-v0.3.1.gz",
+        "arch": "arm64",
+        "format": "gz"
+      }
+    ]
   }
 ]

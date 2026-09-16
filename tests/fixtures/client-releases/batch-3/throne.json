@@ -1,0 +1,95 @@
+{
+  "id": 367325972,
+  "tag_name": "1.2.4",
+  "name": "1.2.4",
+  "html_url": "https://github.com/throneproj/Throne/releases/tag/1.2.4",
+  "published_at": "2026-08-08T23:08:42Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 506858384,
+      "name": "Throne-1.2.4-debian-amd64-system-qt.deb",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-amd64-system-qt.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858386,
+      "name": "Throne-1.2.4-debian-amd64.deb",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858388,
+      "name": "Throne-1.2.4-debian-arm64-system-qt.deb",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-arm64-system-qt.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858389,
+      "name": "Throne-1.2.4-debian-arm64.deb",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-debian-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858408,
+      "name": "Throne-1.2.4-linux-amd64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-linux-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858415,
+      "name": "Throne-1.2.4-linux-arm64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858365,
+      "name": "Throne-1.2.4-macos-amd64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macos-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858362,
+      "name": "Throne-1.2.4-macos-arm64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macos-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858450,
+      "name": "Throne-1.2.4-macoslegacy-amd64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-macoslegacy-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858364,
+      "name": "Throne-1.2.4-windows-arm64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858429,
+      "name": "Throne-1.2.4-windows-universal-installer.exe",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows-universal-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858428,
+      "name": "Throne-1.2.4-windows32.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows32.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858443,
+      "name": "Throne-1.2.4-windows64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windows64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 506858363,
+      "name": "Throne-1.2.4-windowslegacy64.zip",
+      "browser_download_url": "https://github.com/throneproj/Throne/releases/download/1.2.4/Throne-1.2.4-windowslegacy64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

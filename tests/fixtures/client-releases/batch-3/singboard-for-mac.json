@@ -1,0 +1,23 @@
+{
+  "id": 345688133,
+  "tag_name": "build-20260627-121223-f6c9f44",
+  "name": "Singboard macOS Build (20260627-121223)",
+  "html_url": "https://github.com/okunvei/singboard_for_mac/releases/tag/build-20260627-121223-f6c9f44",
+  "published_at": "2026-06-27T12:18:00Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 459468091,
+      "name": "Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+      "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 459468090,
+      "name": "Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+      "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": 389884028,
+  "tag_name": "v1.0.36",
+  "name": "Satelite v1.0.36",
+  "html_url": "https://github.com/zn0wii/satelite-proxy/releases/tag/v1.0.36",
+  "published_at": "2026-09-16T12:24:15Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567885993,
+      "name": "Satelite_1.0.36_aarch64.dmg",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_aarch64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 567882406,
+      "name": "Satelite_1.0.36_amd64.AppImage",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 567889747,
+      "name": "Satelite_1.0.36_x64-setup.exe",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567884920,
+      "name": "Satelite_1.0.36_x64.dmg",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 567906401,
+      "name": "Satelite_1.0.36_x64_portable.zip",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_1.0.36_x64_portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567886081,
+      "name": "Satelite_aarch64.app.tar.gz",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_aarch64.app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567884976,
+      "name": "Satelite_x64.app.tar.gz",
+      "browser_download_url": "https://github.com/zn0wii/satelite-proxy/releases/download/v1.0.36/Satelite_x64.app.tar.gz",
+      "state": "uploaded"
+    }
+  ]
+}

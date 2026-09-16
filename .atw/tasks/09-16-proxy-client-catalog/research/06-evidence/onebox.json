@@ -1,0 +1,746 @@
+{
+  "retrievedAt": "2026-09-16T14:20:20.408275+00:00",
+  "baseline": {
+    "order": 71,
+    "id": "onebox",
+    "name": "OneBox",
+    "reference_url": "https://huarun.win/apps/onebox",
+    "observed_official_entry": "https://github.com/OneOhCloud/OneBox",
+    "ticket": "06"
+  },
+  "method": "GitHub gh api；网页 Jina Reader；Apple lookup curl。参考清单不作为官方真实性证据。",
+  "apiEndpoints": {
+    "repository": "https://api.github.com/repos/OneOhCloud/OneBox",
+    "readme": "https://api.github.com/repos/OneOhCloud/OneBox/readme",
+    "releases": "https://api.github.com/repos/OneOhCloud/OneBox/releases?per_page=100",
+    "tree": "https://api.github.com/repos/OneOhCloud/OneBox/git/trees/HEAD?recursive=1"
+  },
+  "repository": {
+    "full_name": "OneOhCloud/OneBox",
+    "description": "OneBox is a cross-platform GUI client based on the sing-box kernel. \\n Onebox 是一个基于sing-box 内核的跨平台图形客户端",
+    "default_branch": "main",
+    "homepage": "https://sing-box.net",
+    "archived": false,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  "readme": {
+    "sha": "db9c7d2eee3ffa14c432175598b4fc2f26e161d7",
+    "html_url": "https://github.com/OneOhCloud/OneBox/blob/main/README.md",
+    "download_url": "https://raw.githubusercontent.com/OneOhCloud/OneBox/main/README.md",
+    "text": "<div align=\"center\">\n  <img src=\"./.github/assets/brand/readme-hero.png\" alt=\"OneBox banner\" width=\"100%\">\n\n  <p>\n    <a href=\"./README_CN.md\">简体中文</a>\n    ·\n    <a href=\"#screenshots\">Screenshots</a>\n    ·\n    <a href=\"#features\">Features</a>\n    ·\n    <a href=\"#download\">Download</a>\n    ·\n    <a href=\"#development\">Development</a>\n  </p>\n\n  <p>\n    <a href=\"https://github.com/SagerNet/sing-box\"><img alt=\"sing-box latest version\" src=\"https://repology.org/badge/version-for-repo/homebrew/sing-box.svg?header=sing-box\"></a>\n    <a href=\"https://github.com/OneOhCloud/OneBox/releases\"><img alt=\"GitHub release\" src=\"https://img.shields.io/github/v/release/OneOhCloud/OneBox?display_name=tag&sort=semver\"></a>\n    <a href=\"./LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/badge/license-Apache--2.0-blue\"></a>\n  </p>\n\n  <p>\n    <a href=\"https://play.google.com/store/apps/details?id=cloud.oneoh.networktools\"><img alt=\"Get it on Google Play\" src=\"./.github/assets/store/google-play-en.png\" width=\"185\" height=\"56\" align=\"middle\"></a>\n    <a href=\"https://apps.apple.com/us/app/oneboxm/id6759716475\"><img alt=\"Download on the App Store\" src=\"./.github/assets/store/app-store-en.svg\" width=\"185\" height=\"56\" align=\"middle\"></a>\n  </p>\n</div>\n\n## About\n\nOneBox is a cross-platform desktop client built with Tauri, React, Rust, and the [sing-box](https://github.com/SagerNet/sing-box) network core.\n\nIt is designed for people who want a clean daily-driver client instead of a configuration workshop: add a subscription, pick a route mode, start the service, and let the app handle the platform details.\n\n> [!NOTE]\n> OneBox is not a playground for wish-list driven sing-box customization. Requests for full manual control, endless knobs, or niche behavior are out of scope, and related PRs are not guaranteed to be accepted. If you need that workflow, fork the project, build your own copy, and maintain it yourself.\n\n## Screenshots\n\n| Home | Configuration | Settings |\n| :---: | :---: | :---: |\n| <img src=\"./.github/assets/en/Home.png\" alt=\"OneBox home screen\" width=\"240\"> | <img src=\"./.github/assets/en/Config.png\" alt=\"OneBox configuration screen\" width=\"240\"> | <img src=\"./.github/assets/en/Settings.png\" alt=\"OneBox settings screen\" width=\"240\"> |\n\n## Features\n\n| Capability | What OneBox does |\n| --- | --- |\n| Subscription-first workflow | Imports remote configuration links, tracks traffic metadata, refreshes subscriptions, and supports deep-link based setup. |\n| Route modes | Provides mixed and TUN modes with rule/global templates maintained for supported sing-box versions. |\n| System integration | Includes tray controls, system proxy helpers, autostart, updater flow, and platform-specific service handling. |\n| Privacy-conscious storage | Stores sensitive values through system-backed mechanisms instead of treating secrets as plain UI state. |\n| Developer visibility | Ships log, generated config, and config-template views for debugging without exposing casual users to noise. |\n| Built on Rust and Tauri | Keeps the desktop shell lightweight while delegating network execution to the sing-box core. |\n\n> [!WARNING]\n> OneBox applies multiple security and privacy controls, but vulnerabilities in the underlying network core are handled by the upstream sing-box project. Track upstream advisories when assessing operational risk.\n\n## Platform Support\n\n| Tier | Platform | Status |\n| --- | --- | --- |\n| Tier 1: Official | macOS | Production-ready and maintained by the core team with priority fixes. |\n| Tier 2: Community | Windows, Ubuntu | Stable, with fixes and feature parity depending on community maintenance. |\n| Tier 3: Experimental | Linux | Beta quality. Expect incomplete behavior and use at your own risk. |\n\n## Download\n\nGet the latest build from the [GitHub Releases page](https://github.com/OneOhCloud/OneBox/releases), or install the mobile companion from the store badges above.\n\nThe macOS build is notarized by Apple, so it can be installed without manual security overrides.\n\n## Development\n\nInstall dependencies:\n\n```bash\ndeno install\ndeno task prepare\n```\n\nStart the desktop frontend during development:\n\n```bash\ndeno task tauri dev\n```\n\nBuild the web bundle:\n\n```bash\ndeno task build\n```\n\nRun the frontend test suite:\n\n```bash\ndeno task test\n```\n\nRun Rust tests with captured output shown:\n\n```bash\ncargo test -- --nocapture\n```\n\n## Project Notes\n\n- Config templates are synchronized before `dev` and `build` through `scripts/sync-templates.ts`.\n- The Windows TUN service is built through `scripts/build-tun-service.ts`.\n- Platform-specific Tauri settings live under `src-tauri/tauri.*.conf.json`.\n- Human-facing protocol notes are available under `docs/spec/zh/`.\n\n## License & Brand Usage\n\nThis software is licensed under the [Apache License 2.0](./LICENSE).\n\nThe **OneBox** name, logos, icons, and other brand assets are proprietary assets of OneOh Cloud LLC. The Apache License does not grant permission to use those branding elements in derivative works. Any use of these assets or the product name must follow the [NOTICE](./NOTICE) policy.\n"
+  },
+  "tree": {
+    "sha": null,
+    "truncated": null,
+    "paths": [],
+    "error": "Get \"https://api.github.com/repos/OneOhCloud/OneBox/git/trees/HEAD?recursive=1\": dial tcp 198.18.0.65:443: connect: operation timed out\n",
+    "message": null
+  },
+  "releaseListScope": "第一页，最多100；未以此宣称穷尽历史。未执行资产HEAD或自动同步。",
+  "releaseIndex": [
+    {
+      "id": 389585491,
+      "tag_name": "dev",
+      "name": "Dev",
+      "prerelease": true,
+      "published_at": "2026-09-16T01:50:13Z"
+    },
+    {
+      "id": 383144683,
+      "tag_name": "v1.4.39",
+      "name": "v1.4.39",
+      "prerelease": false,
+      "published_at": "2026-09-05T05:28:05Z"
+    },
+    {
+      "id": 381406152,
+      "tag_name": "beta",
+      "name": "Beta",
+      "prerelease": true,
+      "published_at": "2026-09-02T16:16:54Z"
+    },
+    {
+      "id": 362994981,
+      "tag_name": "v1.4.37",
+      "name": "v1.4.37",
+      "prerelease": false,
+      "published_at": "2026-07-31T10:35:03Z"
+    },
+    {
+      "id": 347695198,
+      "tag_name": "v1.4.35",
+      "name": "v1.4.35",
+      "prerelease": false,
+      "published_at": "2026-07-01T20:15:10Z"
+    },
+    {
+      "id": 345696855,
+      "tag_name": "v1.4.34",
+      "name": "v1.4.34",
+      "prerelease": false,
+      "published_at": "2026-06-27T13:17:24Z"
+    },
+    {
+      "id": 335747699,
+      "tag_name": "v1.4.31",
+      "name": "v1.4.31",
+      "prerelease": false,
+      "published_at": "2026-06-08T04:21:51Z"
+    },
+    {
+      "id": 327165000,
+      "tag_name": "v1.4.29",
+      "name": "v1.4.29",
+      "prerelease": false,
+      "published_at": "2026-05-21T17:57:37Z"
+    },
+    {
+      "id": 326161412,
+      "tag_name": "v1.4.28",
+      "name": "v1.4.28",
+      "prerelease": false,
+      "published_at": "2026-05-20T18:18:36Z"
+    },
+    {
+      "id": 312843138,
+      "tag_name": "v1.4.23",
+      "name": "v1.4.23",
+      "prerelease": false,
+      "published_at": "2026-04-23T16:58:52Z"
+    },
+    {
+      "id": 312713697,
+      "tag_name": "v1.4.21",
+      "name": "v1.4.21",
+      "prerelease": false,
+      "published_at": "2026-04-23T12:32:15Z"
+    },
+    {
+      "id": 310859933,
+      "tag_name": "v1.4.9",
+      "name": "v1.4.9",
+      "prerelease": false,
+      "published_at": "2026-04-19T12:01:06Z"
+    },
+    {
+      "id": 310646659,
+      "tag_name": "v1.4.8",
+      "name": "v1.4.8",
+      "prerelease": false,
+      "published_at": "2026-04-18T05:31:24Z"
+    },
+    {
+      "id": 310247306,
+      "tag_name": "v1.4.0",
+      "name": "v1.4.0",
+      "prerelease": false,
+      "published_at": "2026-04-17T09:03:26Z"
+    },
+    {
+      "id": 309276376,
+      "tag_name": "v1.3.30",
+      "name": "v1.3.30",
+      "prerelease": false,
+      "published_at": "2026-04-15T10:25:40Z"
+    },
+    {
+      "id": 306063214,
+      "tag_name": "v1.3.26",
+      "name": "v1.3.26",
+      "prerelease": false,
+      "published_at": "2026-04-07T12:05:25Z"
+    },
+    {
+      "id": 304738947,
+      "tag_name": "v1.3.24",
+      "name": "v1.3.24",
+      "prerelease": false,
+      "published_at": "2026-04-02T15:50:01Z"
+    },
+    {
+      "id": 300530361,
+      "tag_name": "v1.3.16",
+      "name": "v1.3.16",
+      "prerelease": false,
+      "published_at": "2026-03-24T06:54:48Z"
+    },
+    {
+      "id": 299248066,
+      "tag_name": "v1.3.14",
+      "name": "v1.3.14",
+      "prerelease": false,
+      "published_at": "2026-03-20T04:13:53Z"
+    },
+    {
+      "id": 297721584,
+      "tag_name": "v1.3.12",
+      "name": "v1.3.12",
+      "prerelease": false,
+      "published_at": "2026-03-17T00:05:25Z"
+    },
+    {
+      "id": 297264558,
+      "tag_name": "v1.3.10",
+      "name": "v1.3.10",
+      "prerelease": false,
+      "published_at": "2026-03-16T00:48:23Z"
+    },
+    {
+      "id": 296933380,
+      "tag_name": "v1.3.8",
+      "name": "v1.3.8",
+      "prerelease": false,
+      "published_at": "2026-03-14T02:02:00Z"
+    },
+    {
+      "id": 291868449,
+      "tag_name": "v1.3.6",
+      "name": "v1.3.6",
+      "prerelease": false,
+      "published_at": "2026-03-02T00:21:35Z"
+    },
+    {
+      "id": 289544549,
+      "tag_name": "v1.3.5",
+      "name": "v1.3.5",
+      "prerelease": false,
+      "published_at": "2026-02-23T18:50:07Z"
+    },
+    {
+      "id": 288977301,
+      "tag_name": "v1.3.4",
+      "name": "v1.3.4",
+      "prerelease": false,
+      "published_at": "2026-02-21T10:31:55Z"
+    },
+    {
+      "id": 288960164,
+      "tag_name": "v1.2.35",
+      "name": "v1.2.35",
+      "prerelease": false,
+      "published_at": "2026-02-21T06:49:19Z"
+    },
+    {
+      "id": 284693526,
+      "tag_name": "v1.2.34",
+      "name": "v1.2.34",
+      "prerelease": false,
+      "published_at": "2026-02-10T07:23:20Z"
+    },
+    {
+      "id": 284137175,
+      "tag_name": "v1.2.33",
+      "name": "v1.2.33",
+      "prerelease": false,
+      "published_at": "2026-02-08T10:52:47Z"
+    },
+    {
+      "id": 284029989,
+      "tag_name": "v1.2.32",
+      "name": "v1.2.32",
+      "prerelease": false,
+      "published_at": "2026-02-07T13:21:44Z"
+    },
+    {
+      "id": 282874203,
+      "tag_name": "v1.2.28",
+      "name": "v1.2.28",
+      "prerelease": false,
+      "published_at": "2026-02-04T08:58:27Z"
+    },
+    {
+      "id": 281908906,
+      "tag_name": "v1.2.25",
+      "name": "v1.2.25",
+      "prerelease": false,
+      "published_at": "2026-02-01T12:21:50Z"
+    },
+    {
+      "id": 281765702,
+      "tag_name": "v1.2.23",
+      "name": "v1.2.23",
+      "prerelease": false,
+      "published_at": "2026-01-31T09:23:42Z"
+    },
+    {
+      "id": 277569091,
+      "tag_name": "v1.2.19",
+      "name": "v1.2.19",
+      "prerelease": false,
+      "published_at": "2026-01-17T01:09:19Z"
+    },
+    {
+      "id": 276857301,
+      "tag_name": "v1.2.16",
+      "name": "v1.2.16",
+      "prerelease": false,
+      "published_at": "2026-01-14T20:31:38Z"
+    },
+    {
+      "id": 275704592,
+      "tag_name": "v1.2.15",
+      "name": "v1.2.15",
+      "prerelease": false,
+      "published_at": "2026-01-10T10:48:19Z"
+    },
+    {
+      "id": 272971680,
+      "tag_name": "v1.2.12",
+      "name": "v1.2.12",
+      "prerelease": false,
+      "published_at": "2025-12-27T05:21:22Z"
+    },
+    {
+      "id": 271348488,
+      "tag_name": "v1.2.9",
+      "name": "v1.2.9",
+      "prerelease": false,
+      "published_at": "2025-12-18T08:34:59Z"
+    },
+    {
+      "id": 265719825,
+      "tag_name": "v1.2.6",
+      "name": "v1.2.6",
+      "prerelease": false,
+      "published_at": "2025-11-27T11:23:00Z"
+    },
+    {
+      "id": 262855931,
+      "tag_name": "v1.2.5",
+      "name": "v1.2.5",
+      "prerelease": false,
+      "published_at": "2025-11-17T06:44:58Z"
+    },
+    {
+      "id": 261425366,
+      "tag_name": "v1.1.86",
+      "name": "v1.1.86",
+      "prerelease": false,
+      "published_at": "2025-11-11T12:57:01Z"
+    },
+    {
+      "id": 261341229,
+      "tag_name": "v1.1.85",
+      "name": "v1.1.85",
+      "prerelease": false,
+      "published_at": "2025-11-11T07:23:26Z"
+    },
+    {
+      "id": 260500609,
+      "tag_name": "v1.1.83",
+      "name": "v1.1.83",
+      "prerelease": false,
+      "published_at": "2025-11-07T05:15:37Z"
+    },
+    {
+      "id": 259784406,
+      "tag_name": "v1.1.82",
+      "name": "v1.1.82",
+      "prerelease": false,
+      "published_at": "2025-11-05T06:04:39Z"
+    },
+    {
+      "id": 259061460,
+      "tag_name": "v1.1.81",
+      "name": "v1.1.81",
+      "prerelease": false,
+      "published_at": "2025-11-02T09:37:23Z"
+    },
+    {
+      "id": 257819456,
+      "tag_name": "v1.1.79",
+      "name": "v1.1.79",
+      "prerelease": false,
+      "published_at": "2025-10-28T13:15:09Z"
+    },
+    {
+      "id": 255923057,
+      "tag_name": "v1.1.76",
+      "name": "v1.1.76",
+      "prerelease": false,
+      "published_at": "2025-10-21T07:48:45Z"
+    },
+    {
+      "id": 254993968,
+      "tag_name": "v1.1.73",
+      "name": "v1.1.73",
+      "prerelease": false,
+      "published_at": "2025-10-16T12:46:03Z"
+    },
+    {
+      "id": 249231474,
+      "tag_name": "v1.1.70",
+      "name": "v1.1.70",
+      "prerelease": false,
+      "published_at": "2025-09-23T05:26:13Z"
+    },
+    {
+      "id": 246418131,
+      "tag_name": "v1.1.62",
+      "name": "v1.1.62",
+      "prerelease": false,
+      "published_at": "2025-09-11T09:10:51Z"
+    },
+    {
+      "id": 244992966,
+      "tag_name": "v1.1.59",
+      "name": "v1.1.59",
+      "prerelease": false,
+      "published_at": "2025-09-05T07:28:42Z"
+    },
+    {
+      "id": 243867897,
+      "tag_name": "v1.1.54",
+      "name": "v1.1.54",
+      "prerelease": false,
+      "published_at": "2025-09-01T12:27:26Z"
+    },
+    {
+      "id": 243714635,
+      "tag_name": "v1.1.52",
+      "name": "v1.1.52",
+      "prerelease": false,
+      "published_at": "2025-08-31T11:31:08Z"
+    },
+    {
+      "id": 243012716,
+      "tag_name": "v1.1.47",
+      "name": "v1.1.47",
+      "prerelease": false,
+      "published_at": "2025-08-27T23:00:02Z"
+    },
+    {
+      "id": 242057820,
+      "tag_name": "v1.1.37",
+      "name": "v1.1.37",
+      "prerelease": false,
+      "published_at": "2025-08-23T21:32:12Z"
+    },
+    {
+      "id": 242029089,
+      "tag_name": "v1.1.36",
+      "name": "v1.1.36",
+      "prerelease": false,
+      "published_at": "2025-08-23T12:54:55Z"
+    },
+    {
+      "id": 241753034,
+      "tag_name": "v1.1.34",
+      "name": "v1.1.34",
+      "prerelease": false,
+      "published_at": "2025-08-22T08:28:09Z"
+    },
+    {
+      "id": 241410661,
+      "tag_name": "v1.1.32",
+      "name": "v1.1.32",
+      "prerelease": false,
+      "published_at": "2025-08-21T06:48:21Z"
+    },
+    {
+      "id": 240802020,
+      "tag_name": "v1.1.26",
+      "name": "v1.1.26",
+      "prerelease": false,
+      "published_at": "2025-08-19T07:31:23Z"
+    },
+    {
+      "id": 240439047,
+      "tag_name": "v1.1.25",
+      "name": "v1.1.25",
+      "prerelease": false,
+      "published_at": "2025-08-17T10:56:58Z"
+    },
+    {
+      "id": 239232070,
+      "tag_name": "v1.1.17",
+      "name": "v1.1.17",
+      "prerelease": false,
+      "published_at": "2025-08-12T03:31:56Z"
+    },
+    {
+      "id": 236154976,
+      "tag_name": "v1.0.22",
+      "name": "v1.0.22",
+      "prerelease": false,
+      "published_at": "2025-07-30T06:07:47Z"
+    },
+    {
+      "id": 230788335,
+      "tag_name": "v1.0.18",
+      "name": "v1.0.18",
+      "prerelease": false,
+      "published_at": "2025-07-08T11:09:20Z"
+    },
+    {
+      "id": 226636683,
+      "tag_name": "v1.0.14",
+      "name": "v1.0.14",
+      "prerelease": false,
+      "published_at": "2025-06-20T10:17:53Z"
+    },
+    {
+      "id": 226611514,
+      "tag_name": "v1.0.13",
+      "name": "v1.0.13",
+      "prerelease": false,
+      "published_at": "2025-06-20T08:33:13Z"
+    },
+    {
+      "id": 225378484,
+      "tag_name": "v1.0.12",
+      "name": "v1.0.12",
+      "prerelease": false,
+      "published_at": "2025-06-15T05:14:51Z"
+    },
+    {
+      "id": 221091414,
+      "tag_name": "v1.0.5",
+      "name": "v1.0.5",
+      "prerelease": false,
+      "published_at": "2025-05-26T21:52:18Z"
+    }
+  ],
+  "releases": [
+    {
+      "id": 389585491,
+      "tag_name": "dev",
+      "name": "Dev",
+      "html_url": "https://github.com/OneOhCloud/OneBox/releases/tag/dev",
+      "published_at": "2026-09-16T01:50:13Z",
+      "draft": false,
+      "prerelease": true,
+      "body": "# Changelog\n\nVersion 1.4.40 (2026-09-16 UTC)\n\n## Changes since v1.4.35\n\nAll significant changes in this version are documented here.\n\n### Changes\n\n- Added a connect on launch option, and OneBox now starts in the background when launched at login.\n- Combined TUN, system proxy and manual proxy into a single proxy mode setting, with the port alongside it.\n- Updated sing-box version to v1.14.0.\n- Updated JavaScript and Rust dependencies.\n\n## 自 v1.4.35 以来的变更\n\n本版本的所有重要变更将记录于此。\n\n### 变更\n\n- 更新 JavaScript 与 Rust 依赖。\n- 新增启动后自动连接选项，开机启动时改为在后台启动。\n- TUN、系统代理与手动代理合并为一处「代理模式」设置，端口也在同一处调整。\n- 更新 sing-box 版本至 v1.14.0。\n\n\n---\n\n> 请确保您了解潜在风险后再使用开发版和测试版。\n>\n> Use development and beta versions only if you are aware of the potential risks.",
+      "assets": [
+        {
+          "id": 566943340,
+          "name": "latest.json",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/latest.json",
+          "state": "uploaded",
+          "size": 6808
+        },
+        {
+          "id": 566938145,
+          "name": "OneBox-1.4.40-1.x86_64.rpm",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox-1.4.40-1.x86_64.rpm",
+          "state": "uploaded",
+          "size": 41781063
+        },
+        {
+          "id": 566938195,
+          "name": "OneBox-1.4.40-1.x86_64.rpm.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox-1.4.40-1.x86_64.rpm.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 566934007,
+          "name": "OneBox_1.4.40_aarch64.dmg",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_aarch64.dmg",
+          "state": "uploaded",
+          "size": 40274652
+        },
+        {
+          "id": 566938087,
+          "name": "OneBox_1.4.40_amd64.deb",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_amd64.deb",
+          "state": "uploaded",
+          "size": 41777694
+        },
+        {
+          "id": 566938133,
+          "name": "OneBox_1.4.40_amd64.deb.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_amd64.deb.sig",
+          "state": "uploaded",
+          "size": 412
+        },
+        {
+          "id": 566943289,
+          "name": "OneBox_1.4.40_x64-setup.exe",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64-setup.exe",
+          "state": "uploaded",
+          "size": 28266362
+        },
+        {
+          "id": 566943315,
+          "name": "OneBox_1.4.40_x64-setup.exe.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64-setup.exe.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 566936762,
+          "name": "OneBox_1.4.40_x64.dmg",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64.dmg",
+          "state": "uploaded",
+          "size": 44453311
+        },
+        {
+          "id": 566943228,
+          "name": "OneBox_1.4.40_x64_en-US.msi",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64_en-US.msi",
+          "state": "uploaded",
+          "size": 39919616
+        },
+        {
+          "id": 566943279,
+          "name": "OneBox_1.4.40_x64_en-US.msi.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_1.4.40_x64_en-US.msi.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 566934097,
+          "name": "OneBox_aarch64.app.tar.gz",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_aarch64.app.tar.gz",
+          "state": "uploaded",
+          "size": 41360692
+        },
+        {
+          "id": 566934150,
+          "name": "OneBox_aarch64.app.tar.gz.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_aarch64.app.tar.gz.sig",
+          "state": "uploaded",
+          "size": 404
+        },
+        {
+          "id": 566936792,
+          "name": "OneBox_x64.app.tar.gz",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_x64.app.tar.gz",
+          "state": "uploaded",
+          "size": 45343739
+        },
+        {
+          "id": 566936833,
+          "name": "OneBox_x64.app.tar.gz.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/dev/OneBox_x64.app.tar.gz.sig",
+          "state": "uploaded",
+          "size": 404
+        }
+      ]
+    },
+    {
+      "id": 383144683,
+      "tag_name": "v1.4.39",
+      "name": "v1.4.39",
+      "html_url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.39",
+      "published_at": "2026-09-05T05:28:05Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "# Changelog\n\nVersion 1.4.39 (2026-09-02 UTC)\n\n## Changes since v1.4.35\n\nAll significant changes in this version are documented here.\n\n### Changes\n\n- Added a connect on launch option, and OneBox now starts in the background when launched at login.\n- Combined TUN, system proxy and manual proxy into a single proxy mode setting, with the port alongside it.\n- Updated sing-box version to v1.14.0.\n- Updated JavaScript and Rust dependencies.\n\n## 自 v1.4.35 以来的变更\n\n本版本的所有重要变更将记录于此。\n\n### 变更\n\n- 更新 JavaScript 与 Rust 依赖。\n- 新增启动后自动连接选项，开机启动时改为在后台启动。\n- TUN、系统代理与手动代理合并为一处「代理模式」设置，端口也在同一处调整。\n- 更新 sing-box 版本至 v1.14.0。\n\n\n---\n\n> 请确保您了解潜在风险后再使用开发版和测试版。\n>\n> Use development and beta versions only if you are aware of the potential risks.",
+      "assets": [
+        {
+          "id": 545412161,
+          "name": "latest.json",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/latest.json",
+          "state": "uploaded",
+          "size": 6848
+        },
+        {
+          "id": 545412093,
+          "name": "OneBox-1.4.39-1.x86_64.rpm",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox-1.4.39-1.x86_64.rpm",
+          "state": "uploaded",
+          "size": 42081883
+        },
+        {
+          "id": 545412095,
+          "name": "OneBox-1.4.39-1.x86_64.rpm.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox-1.4.39-1.x86_64.rpm.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 545412096,
+          "name": "OneBox_1.4.39_aarch64.dmg",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_aarch64.dmg",
+          "state": "uploaded",
+          "size": 40558152
+        },
+        {
+          "id": 545412098,
+          "name": "OneBox_1.4.39_amd64.deb",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_amd64.deb",
+          "state": "uploaded",
+          "size": 42086160
+        },
+        {
+          "id": 545412097,
+          "name": "OneBox_1.4.39_amd64.deb.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_amd64.deb.sig",
+          "state": "uploaded",
+          "size": 412
+        },
+        {
+          "id": 545412105,
+          "name": "OneBox_1.4.39_x64-setup.exe",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64-setup.exe",
+          "state": "uploaded",
+          "size": 28156924
+        },
+        {
+          "id": 545412107,
+          "name": "OneBox_1.4.39_x64-setup.exe.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64-setup.exe.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 545412109,
+          "name": "OneBox_1.4.39_x64.dmg",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64.dmg",
+          "state": "uploaded",
+          "size": 44730785
+        },
+        {
+          "id": 545412119,
+          "name": "OneBox_1.4.39_x64_en-US.msi",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64_en-US.msi",
+          "state": "uploaded",
+          "size": 39985152
+        },
+        {
+          "id": 545412128,
+          "name": "OneBox_1.4.39_x64_en-US.msi.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_1.4.39_x64_en-US.msi.sig",
+          "state": "uploaded",
+          "size": 416
+        },
+        {
+          "id": 545412134,
+          "name": "OneBox_aarch64.app.tar.gz",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_aarch64.app.tar.gz",
+          "state": "uploaded",
+          "size": 41659121
+        },
+        {
+          "id": 545412145,
+          "name": "OneBox_aarch64.app.tar.gz.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_aarch64.app.tar.gz.sig",
+          "state": "uploaded",
+          "size": 404
+        },
+        {
+          "id": 545412151,
+          "name": "OneBox_x64.app.tar.gz",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_x64.app.tar.gz",
+          "state": "uploaded",
+          "size": 45639421
+        },
+        {
+          "id": 545412154,
+          "name": "OneBox_x64.app.tar.gz.sig",
+          "browser_download_url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.39/OneBox_x64.app.tar.gz.sig",
+          "state": "uploaded",
+          "size": 404
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 345686777,
+  "tag_name": "v2.3.6",
+  "name": "2.3.6",
+  "html_url": "https://github.com/okunvei/singboard_for_mac/releases/tag/v2.3.6",
+  "published_at": "2026-06-27T12:07:48Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 459463798,
+      "name": "singboard.exe",
+      "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/v2.3.6/singboard.exe",
+      "state": "uploaded"
+    }
+  ]
+}

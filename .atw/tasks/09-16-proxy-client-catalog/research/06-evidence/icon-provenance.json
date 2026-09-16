@@ -1,0 +1,210 @@
+[
+  {
+    "id": "nextin",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8f/b5/47/8fb547ed-01fa-adfd-c5ba-dcd9ef11d4cd/nextinIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/nextin-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/nextin.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "connect-now",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a5/e4/f4/a5e4f43d-ee57-082d-e970-560742e4d952/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/connect-now-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/connect-now.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "tunna",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/7a/5f/d87a5f3e-a3c9-5d94-db7e-61542826dfe0/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/tunna-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/tunna.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "everywhere",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/22/eb/d022eb97-e11f-08dc-98cf-3b8f4e6408e6/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/everywhere-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/everywhere.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "incy",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/a4/9c/f3a49ce3-c851-d31b-3aea-04e5e325e1e3/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/incy-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/incy.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "sing-box-for-apple",
+    "url": "https://raw.githubusercontent.com/Elziy/sing-box-for-apple/cc8256077f677b8fe96ddea3c708ebc0dae05641/SFI/Assets.xcassets/AppIcon.appiconset/180.png",
+    "local": "/tmp/catalog06/sing-box-for-apple-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/sing-box-for-apple.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "throne",
+    "url": "https://raw.githubusercontent.com/throneproj/Throne/1.2.4/res/public/Throne.png",
+    "local": "/tmp/catalog06/throne-brand.png",
+    "status": 0,
+    "basis": "正式1.2.4应用品牌图；原先rc/base_icon为控件素材，已排除。",
+    "productionPath": "public/client-icons/throne.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "gui-for-singbox",
+    "url": "https://raw.githubusercontent.com/GUI-for-Cores/GUI.for.SingBox/9b7a60c052f78e5565da2abe01894fe201132e02/build/appicon.png",
+    "local": "/tmp/catalog06/gui-for-singbox-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/gui-for-singbox.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "clashmac",
+    "url": "https://clashmac.app/assets/cat.svg",
+    "local": "/tmp/catalog06/clashmac-icon.svg",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/clashmac.svg",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "flowz",
+    "url": "https://raw.githubusercontent.com/dododook/FlowZ/e0902e8c9aa8a0baa60ae840d5582edd49781b01/build/icons/256x256.png",
+    "local": "/tmp/catalog06/flowz-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/flowz.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "polaris",
+    "url": "https://raw.githubusercontent.com/polaris-arch/Polaris/3dbe4ecf632358e3287f645b107e8f7378cb933f/src-tauri/icons/128x128.png",
+    "local": "/tmp/catalog06/polaris-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/polaris.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "onebox",
+    "url": "https://raw.githubusercontent.com/OneOhCloud/OneBox/8cf2996b2e4e927ec248d9d43250e1f3fd5c82b2/src-tauri/icons/128x128@2x.png",
+    "local": "/tmp/catalog06/onebox-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/onebox.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "satelite",
+    "url": "https://raw.githubusercontent.com/zn0wii/satelite-proxy/4e7b39d5c25d904eba8d178746e71d4925bf7654/src-tauri/icons/128x128@2x.png",
+    "local": "/tmp/catalog06/satelite-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/satelite.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "interstellar",
+    "url": "https://raw.githubusercontent.com/zn0wii/interstellar-proxy/cd9153d9a2950fb9dfddd7b85671155c83aa4723/assets/android/playstore-icon.png",
+    "local": "/tmp/catalog06/interstellar-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/interstellar.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "clashbar",
+    "url": "https://raw.githubusercontent.com/Sitoi/ClashBar/0c2080d2970c722529f1685f91f8d3257cb0f135/docs/public/clashbar-logo.png",
+    "local": "/tmp/catalog06/clashbar-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/clashbar.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "kumoapp",
+    "url": "https://raw.githubusercontent.com/ProjectKumo/KumoApp/990ff36dee2d3e40be1b4174a797bc255c34f685/Resources/KumoApp/Assets.xcassets/AppIcon.appiconset/icon_256x256.png",
+    "local": "/tmp/catalog06/kumoapp-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/kumoapp.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "singboard-for-mac",
+    "url": "https://raw.githubusercontent.com/okunvei/singboard_for_mac/f6c9f44d698c14436d4db7e8f4de48c6135ea995/src-tauri/icons/128x128@2x.png",
+    "local": "/tmp/catalog06/singboard-for-mac-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/singboard-for-mac.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "irbox",
+    "url": "https://raw.githubusercontent.com/frank-vpl/IRBox/f6a4faa783767fdb1ab54f6d72864d863311e141/src-tauri/icons/128x128@2x.png",
+    "local": "/tmp/catalog06/irbox-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/irbox.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "netch",
+    "url": "https://raw.githubusercontent.com/netchx/netch/9d99eb1c5a2acbf2a34f2600f94242601019a300/Netch/Resources/Netch.png",
+    "local": "/tmp/catalog06/netch-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/netch.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "stelliberty",
+    "url": "https://raw.githubusercontent.com/Kindness-Kismet/Stelliberty/f866bd168c44105d4a71ee5404b1799357ccec93/src/Stelliberty.Desktop/Assets/macos/app_icon_256.png",
+    "local": "/tmp/catalog06/stelliberty-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/stelliberty.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "pandora-box",
+    "url": "https://raw.githubusercontent.com/snakem982/Pandora-Box/87e16ea5629f01369d37ebcf86407387697facf9/build/appicon.png",
+    "local": "/tmp/catalog06/pandora-box-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/pandora-box.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "carton",
+    "url": "https://raw.githubusercontent.com/821869798/carton/af507a318ddabd333637b0cf79e8faf6a04f304e/src/carton.GUI/Assets/carton_icon.png",
+    "local": "/tmp/catalog06/carton-icon.png",
+    "status": 0,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对",
+    "productionPath": "public/client-icons/carton.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  },
+  {
+    "id": "loon-lite",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/76/8c/c0768c8e-eacc-ad9c-d1e2-ea6aa30fd6ba/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "local": "/tmp/catalog06/loon-lite-icon.png",
+    "status": 28,
+    "basis": "官方目录树应用资源/README品牌引用，或Apple lookup artwork；待视觉核对；首次超时后单次重试成功",
+    "retryStatus": 0,
+    "productionPath": "public/client-icons/loon-lite.webp",
+    "processing": "官方图原样SVG或等比缩小至256px并转换WebP；已视觉核对。"
+  }
+]

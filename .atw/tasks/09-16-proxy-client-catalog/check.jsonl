@@ -10,3 +10,5 @@
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/01-official-sources.md", "reason": "首票逐项官方资料依据、发布快照与已知平台限制"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/03-store-and-official-entry.md", "reason": "商店身份、平台隔离、Stash官方feed正式渠道与版本构建号绑定依据"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/05-official-sources.md", "reason": "第二批25项官方核验、例外与剩余阻塞"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/issues/06-catalog-batch-3.md", "reason": "ATW current ticket"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/research/06-official-sources.md", "reason": "第三批25项官方核验、两项已确认例外及实际同步与浏览器验证"}

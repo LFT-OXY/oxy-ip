@@ -1,0 +1,59 @@
+{
+  "id": 380919977,
+  "tag_name": "v0.3.3",
+  "name": "ClashBar 0.3.3",
+  "html_url": "https://github.com/Sitoi/ClashBar/releases/tag/v0.3.3",
+  "published_at": "2026-09-02T01:19:40Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 540426454,
+      "name": "ClashBar-0.3.3-apple-silicon-no-core.dmg",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon-no-core.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426457,
+      "name": "ClashBar-0.3.3-apple-silicon-no-core.dmg.sha256",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon-no-core.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426455,
+      "name": "ClashBar-0.3.3-apple-silicon.dmg",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426456,
+      "name": "ClashBar-0.3.3-apple-silicon.dmg.sha256",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-apple-silicon.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426453,
+      "name": "ClashBar-0.3.3-intel-no-core.dmg",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel-no-core.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426452,
+      "name": "ClashBar-0.3.3-intel-no-core.dmg.sha256",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel-no-core.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426451,
+      "name": "ClashBar-0.3.3-intel.dmg",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 540426450,
+      "name": "ClashBar-0.3.3-intel.dmg.sha256",
+      "browser_download_url": "https://github.com/Sitoi/ClashBar/releases/download/v0.3.3/ClashBar-0.3.3-intel.dmg.sha256",
+      "state": "uploaded"
+    }
+  ]
+}

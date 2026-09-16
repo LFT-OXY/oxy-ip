@@ -1,0 +1,328 @@
+{
+  "retrievedAt": "2026-09-16T14:20:20.420452+00:00",
+  "baseline": {
+    "order": 76,
+    "id": "singboard-for-mac",
+    "name": "Singboard for Mac",
+    "reference_url": "https://huarun.win/apps/singboard-for-mac",
+    "observed_official_entry": "https://github.com/okunvei/singboard_for_mac",
+    "ticket": "06"
+  },
+  "method": "GitHub gh api；网页 Jina Reader；Apple lookup curl。参考清单不作为官方真实性证据。",
+  "apiEndpoints": {
+    "repository": "https://api.github.com/repos/okunvei/singboard_for_mac",
+    "readme": "https://api.github.com/repos/okunvei/singboard_for_mac/readme",
+    "releases": "https://api.github.com/repos/okunvei/singboard_for_mac/releases?per_page=100",
+    "tree": "https://api.github.com/repos/okunvei/singboard_for_mac/git/trees/HEAD?recursive=1"
+  },
+  "repository": {
+    "full_name": "okunvei/singboard_for_mac",
+    "description": "Singboard is a desktop dashboard for sing-box built with Tauri 2 + Vue 3, focused on Clash API visualization and Windows service management",
+    "default_branch": "ForMac",
+    "homepage": "",
+    "archived": false,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    }
+  },
+  "readme": {
+    "sha": "f2d350fc499ea3d5eb9414f0e76ab9fbeaba90c6",
+    "html_url": "https://github.com/okunvei/singboard_for_mac/blob/ForMac/README.md",
+    "download_url": "https://raw.githubusercontent.com/okunvei/singboard_for_mac/ForMac/README.md",
+    "text": "# Singboard for macOS\n\nA macOS adaptation of **Singboard**, a lightweight launcher for `sing-box`.\n\n> Credits to the original author for the excellent open-source project.\n\n------\n\n## ✨ Features\n\n- Native macOS adaptation\n- Privileged **SMJobBless Helper** (root-level execution)\n- Supports **TUN inbound** and system proxy control\n- Multiple themes (dark + light + others)\n- Consistent behavior with the Windows version\n\n<p>\n  <img src=\"./imgs/ScreenShot_2026-04-11_184012_250.png\" width=\"49%\"/>\n  <img src=\"./imgs/ScreenShot_2026-04-11_184136_846.png\" width=\"49%\"/>\n  <img src=\"./imgs/ScreenShot_2026-04-11_184201_837.png\" width=\"49%\"/>\n  <img src=\"./imgs/ScreenShot_2026-04-11_184213_317.png\" width=\"49%\"/>\n</p>\n\n## ⚠️ Updating\n\nIf you're upgrading from an existing installation:\n\n1. Click **【停止核心】**\n2. Go to Settings → **【卸载服务】**\n3. Quit Singboard from the menu bar (fully exit)\n4. Replace `singboard.app` in **Applications**\n\n> This project is relatively stable and may not receive frequent updates.\n> You only need to keep your `sing-box` core up to date.\n\n------\n\n## 🚀 Getting Started\n\n### 1. Prepare `sing-box`\n\nDownload the latest release:\nhttps://github.com/SagerNet/sing-box/releases\n\nChoose the correct build:\n\n- **Apple Silicon**: `darwin-arm64`\n- **Intel**: `darwin-amd64` (legacy optional, untested)\n\nExtract and:\n\n- Rename binary to `sing-box`\n- Place it in your working directory (same as `config.json`)\n\n> `chmod +x` is usually not required.\n\n------\n\n### 2. Required Configuration\n\nYour config **must include** `clash_api` under `experimental`:\n\n```json\n\"clash_api\": {\n  \"external_controller\": \"127.0.0.1:9090\",\n  \"external_ui\": \"ui\"\n}\n```\n\n------\n\n### 3. First Launch (Gatekeeper)\n\n1. Download the ZIP file for your Mac model, unzip it, and move **Singboard.app** to the **Applications** folder.\n\n2. Open **Terminal** and run the command below. (Otherwise, macOS may report that the app is damaged and prevent it from launching.)\n\n   ```\n   xattr -cr /Applications/Singboard.app\n   ```\n\n3. macOS may block the app initially:\n\n- Go to **System Settings → Privacy & Security**\n- Click **Allow Anyway**\n\n---\n\n## ⚡Effective Configuration\n\nConfiguration Used at Runtime\n\n```\n~/Library/Application Support/singboard/running-config.json\n```\n\n------\n\n## 🔐 Permissions & Architecture\n\nSingboard uses a **privileged Helper (SMJobBless)**:\n\n- Runs `sing-box` as **root**\n- Installed to `/Library/PrivilegedHelperTools/`\n- Managed via `launchd` (LaunchDaemon)\n- Requires **admin password once** (first install only)\n\n### TUN & DNS Handling\n\nDue to macOS DNS priority limitations:\n\n- TUN alone cannot capture all DNS traffic\n- Singboard temporarily rewrites system DNS → TUN interface\n- DNS is restored when stopping the core\n\n> This approach may be affected by network changes and is not 100% stable.\n\n------\n\n## 🔄 macOS vs Windows\n\n| Feature        | Windows     | macOS                             |\n| -------------- | ----------- | --------------------------------- |\n| Service        | SCM         | SMJobBless + LaunchDaemon         |\n| Privilege      | SYSTEM      | root (Helper)                     |\n| IPC            | —           | Unix Socket                       |\n| Auto Start     | SCM         | launchd KeepAlive                 |\n| Config Storage | Registry    | `~/Library/.../params.json`       |\n| Logs           | Local files | + `/var/log/singboard-helper.log` |\n\n> Core logic remains identical across platforms.\n\n------\n\n## 🛠 Build\n\n```bash\npnpm install\npnpm tauri dev\n\n# Release\npnpm tauri build --target aarch64-apple-darwin\npnpm tauri build --target x86_64-apple-darwin\n```\n\n### Requirements\n\n- Rust → https://rustup.rs/\n\n- Node.js → https://nodejs.org/\n\n- Tauri CLI:\n\n  ```bash\n  cargo install tauri-cli\n  ```\n\n> The `singboard-helper` binary is built and bundled automatically.\n\n------\n\n## 📁 Project Structure\n\n```\nsrc-tauri/\n├── service/scm.rs        # SMJobBless IPC client (replaces Windows SCM)\n├── commands/service.rs   # Helper management commands\n├── commands/network.rs   # macOS proxy handling\n└── ...\n\nhelper/\n├── ipc_server.rs         # Unix socket server\n├── process_mgr.rs        # Root process management\n└── ...\n```\n\n------\n\n## ⚠️ Notes\n\n- This is a **launcher**, not a core replacement\n- You must manage your own `sing-box` binary\n- TUN + DNS workaround is a **best-effort solution**\n\n------\n\n## 🙏 Acknowledgements\n\n- Original Singboard author\n- `sing-box` project contributors\n"
+  },
+  "tree": {
+    "sha": "f6c9f44d698c14436d4db7e8f4de48c6135ea995",
+    "truncated": false,
+    "paths": [
+      ".github",
+      ".github/workflows",
+      ".github/workflows/build-macos.yml",
+      ".github/workflows/build.yml",
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "imgs",
+      "imgs/ScreenShot_2026-04-11_184012_250.png",
+      "imgs/ScreenShot_2026-04-11_184136_846.png",
+      "imgs/ScreenShot_2026-04-11_184201_837.png",
+      "imgs/ScreenShot_2026-04-11_184213_317.png",
+      "index.html",
+      "package.json",
+      "pnpm-lock.yaml",
+      "postcss.config.js",
+      "public",
+      "public/favicon.png",
+      "public/vite.svg",
+      "src-tauri",
+      "src-tauri/.cargo",
+      "src-tauri/.cargo/config.toml",
+      "src-tauri/Cargo.toml",
+      "src-tauri/binaries",
+      "src-tauri/binaries/README.md",
+      "src-tauri/build.rs",
+      "src-tauri/capabilities",
+      "src-tauri/capabilities/default.json",
+      "src-tauri/helper",
+      "src-tauri/helper/src",
+      "src-tauri/helper/src/main.rs",
+      "src-tauri/icons",
+      "src-tauri/icons/128x128.png",
+      "src-tauri/icons/128x128@2x.png",
+      "src-tauri/icons/32x32.png",
+      "src-tauri/icons/icon.icns",
+      "src-tauri/icons/icon.ico",
+      "src-tauri/icons/icon.png",
+      "src-tauri/src",
+      "src-tauri/src/commands",
+      "src-tauri/src/commands/binary.rs",
+      "src-tauri/src/commands/config.rs",
+      "src-tauri/src/commands/mod.rs",
+      "src-tauri/src/commands/network.rs",
+      "src-tauri/src/commands/service.rs",
+      "src-tauri/src/commands/srs.rs",
+      "src-tauri/src/lib.rs",
+      "src-tauri/src/main.rs",
+      "src-tauri/src/service",
+      "src-tauri/src/service/mod.rs",
+      "src-tauri/src/service/scm.rs",
+      "src-tauri/src/service/wrapper.rs",
+      "src-tauri/tauri.conf.json",
+      "src",
+      "src/App.vue",
+      "src/api",
+      "src/api/dns.ts",
+      "src/api/geoip.ts",
+      "src/api/index.ts",
+      "src/api/latency.ts",
+      "src/api/websocket.ts",
+      "src/assets",
+      "src/assets/styles",
+      "src/assets/styles/TwemojiMozilla-flags.woff2",
+      "src/assets/styles/main.css",
+      "src/bridge",
+      "src/bridge/config.ts",
+      "src/bridge/service.ts",
+      "src/components",
+      "src/components/common",
+      "src/components/common/ConfirmDialog.vue",
+      "src/components/common/SetupWizard.vue",
+      "src/components/common/ToastHost.vue",
+      "src/components/config",
+      "src/components/config/ConfigProfileCard.vue",
+      "src/components/layout",
+      "src/components/layout/Sidebar.vue",
+      "src/components/layout/Titlebar.vue",
+      "src/components/overview",
+      "src/components/overview/NetworkInfo.vue",
+      "src/components/overview/SparkLine.vue",
+      "src/components/overview/TopologyChart.vue",
+      "src/components/settings",
+      "src/components/settings/ConfigEditor.vue",
+      "src/components/settings/DnsQueryTool.vue",
+      "src/composables",
+      "src/composables/useConfigAutoUpdate.ts",
+      "src/env.d.ts",
+      "src/main.ts",
+      "src/router",
+      "src/router/index.ts",
+      "src/stores",
+      "src/stores/appVisible.ts",
+      "src/stores/config.ts",
+      "src/stores/connections.ts",
+      "src/stores/logs.ts",
+      "src/stores/overview.ts",
+      "src/stores/proxies.ts",
+      "src/stores/rules.ts",
+      "src/stores/service.ts",
+      "src/stores/toast.ts",
+      "src/types",
+      "src/types/index.ts",
+      "src/utils",
+      "src/utils/batchUpdate.ts",
+      "src/utils/format.ts",
+      "src/utils/jsonc.ts",
+      "src/utils/requestError.ts",
+      "src/views",
+      "src/views/ConfigPage.vue",
+      "src/views/ConnectionsPage.vue",
+      "src/views/LogsPage.vue",
+      "src/views/OverviewPage.vue",
+      "src/views/ProxiesPage.vue",
+      "src/views/RulesPage.vue",
+      "src/views/SettingsPage.vue",
+      "tailwind.config.ts",
+      "tsconfig.json",
+      "tsconfig.node.json",
+      "vite.config.ts"
+    ],
+    "error": null,
+    "message": null
+  },
+  "releaseListScope": "第一页，最多100；未以此宣称穷尽历史。未执行资产HEAD或自动同步。",
+  "releaseIndex": [
+    {
+      "id": 345686777,
+      "tag_name": "v2.3.6",
+      "name": "2.3.6",
+      "prerelease": false,
+      "published_at": "2026-06-27T12:07:48Z"
+    },
+    {
+      "id": 345688133,
+      "tag_name": "build-20260627-121223-f6c9f44",
+      "name": "Singboard macOS Build (20260627-121223)",
+      "prerelease": false,
+      "published_at": "2026-06-27T12:18:00Z"
+    },
+    {
+      "id": 345248342,
+      "tag_name": "build-20260626-100148-63714c2",
+      "name": "Singboard macOS Build (20260626-100148)",
+      "prerelease": false,
+      "published_at": "2026-06-26T10:08:01Z"
+    },
+    {
+      "id": 342323493,
+      "tag_name": "build-20260620-133759-8e982d5",
+      "name": "Singboard macOS Build (20260620-133759)",
+      "prerelease": false,
+      "published_at": "2026-06-20T13:43:36Z"
+    },
+    {
+      "id": 342226453,
+      "tag_name": "build-20260620-020841-8ff63a4",
+      "name": "Singboard macOS Build (20260620-020841)",
+      "prerelease": false,
+      "published_at": "2026-06-20T02:13:51Z"
+    },
+    {
+      "id": 342210965,
+      "tag_name": "build-20260620-005943-41b9a25",
+      "name": "Singboard macOS Build (20260620-005943)",
+      "prerelease": false,
+      "published_at": "2026-06-20T01:05:01Z"
+    },
+    {
+      "id": 342188072,
+      "tag_name": "build-20260620-001723-7895c15",
+      "name": "Singboard macOS Build (20260620-001723)",
+      "prerelease": false,
+      "published_at": "2026-06-20T00:25:36Z"
+    },
+    {
+      "id": 342102661,
+      "tag_name": "build-20260619-193421-9dae44a",
+      "name": "Singboard macOS Build (20260619-193421)",
+      "prerelease": false,
+      "published_at": "2026-06-19T19:39:36Z"
+    },
+    {
+      "id": 342089986,
+      "tag_name": "build-20260619-185852-6b4fd05",
+      "name": "Singboard macOS Build (20260619-185852)",
+      "prerelease": false,
+      "published_at": "2026-06-19T19:07:49Z"
+    },
+    {
+      "id": 342085138,
+      "tag_name": "build-20260619-184305-9acbe63",
+      "name": "Singboard macOS Build (20260619-184305)",
+      "prerelease": false,
+      "published_at": "2026-06-19T18:51:57Z"
+    },
+    {
+      "id": 342074505,
+      "tag_name": "build-20260619-181246-bef4229",
+      "name": "Singboard macOS Build (20260619-181246)",
+      "prerelease": false,
+      "published_at": "2026-06-19T18:18:48Z"
+    },
+    {
+      "id": 342064568,
+      "tag_name": "build-20260619-174210-558ea16",
+      "name": "Singboard macOS Build (20260619-174210)",
+      "prerelease": false,
+      "published_at": "2026-06-19T17:48:12Z"
+    },
+    {
+      "id": 342039692,
+      "tag_name": "build-20260619-163720-daaeff6",
+      "name": "Singboard macOS Build (20260619-163720)",
+      "prerelease": false,
+      "published_at": "2026-06-19T16:42:14Z"
+    },
+    {
+      "id": 324161278,
+      "tag_name": "build-20260518-090439-9b5089c",
+      "name": "Singboard macOS Build (20260518-090439)",
+      "prerelease": false,
+      "published_at": "2026-05-18T09:12:57Z"
+    },
+    {
+      "id": 314362932,
+      "tag_name": "build-20260428-040717-47e1a42",
+      "name": "Singboard macOS Build (20260428-040717)",
+      "prerelease": false,
+      "published_at": "2026-04-28T04:12:21Z"
+    },
+    {
+      "id": 312380655,
+      "tag_name": "build-20260422-182046-ff70f6f",
+      "name": "Singboard macOS Build (20260422-182046)",
+      "prerelease": false,
+      "published_at": "2026-04-22T18:27:14Z"
+    }
+  ],
+  "releases": [
+    {
+      "id": 345686777,
+      "tag_name": "v2.3.6",
+      "name": "2.3.6",
+      "html_url": "https://github.com/okunvei/singboard_for_mac/releases/tag/v2.3.6",
+      "published_at": "2026-06-27T12:07:48Z",
+      "draft": false,
+      "prerelease": false,
+      "body": null,
+      "assets": [
+        {
+          "id": 459463798,
+          "name": "singboard.exe",
+          "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/v2.3.6/singboard.exe",
+          "state": "uploaded",
+          "size": 7624704
+        }
+      ]
+    },
+    {
+      "id": 345688133,
+      "tag_name": "build-20260627-121223-f6c9f44",
+      "name": "Singboard macOS Build (20260627-121223)",
+      "html_url": "https://github.com/okunvei/singboard_for_mac/releases/tag/build-20260627-121223-f6c9f44",
+      "published_at": "2026-06-27T12:18:00Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "### 编译信息\n- **分支**: `ForMac`\n- **提交号**: `f6c9f44`\n- **编译时间**: `20260627-121223`\n- **编译目标**: arm64=true / x86_64=true\n\n### 下载说明\n| 文件 | 适用机型 |\n|------|----------|\n| `Singboard-macos-arm64-*.zip` | Apple Silicon（M1/M2/M3/M4） |\n| `Singboard-macos-x86_64-*.zip` | Intel Mac |\n\n### 使用说明\n1. 【重要】软件运行必须依赖 sing-box 配置中 experimental 的 clash_api ，否则会运行异常，所以如果你没有配置，会自动覆写以下 experimental.clash_api，如果你配置了，则不会覆写。\n```\n\"experimental\": {\n  \"clash_api\": {\n    \"external_controller\": \"127.0.0.1:9090\",\n    \"external_ui\": \"ui\"\n  }\n}\n```\n2. 根据机型下载对应 zip，解压后将 `Singboard.app` 拖入应用程序文件夹，然后打开终端，执行以下命令\n【**每次**替换 `Singboard.app` **都需要执行**，不执行会提示文件损坏，无法打开/运行】\n```\nxattr -cr /Applications/Singboard.app\n```\n3. 前往 [sing-box releases](https://github.com/SagerNet/sing-box/releases) 下载对应架构内核（arm64 或 amd64）\n4. 解压后改名为 `sing-box`，放入工作目录（与 `config.json` 同级）\n5. 首次启动核心时会弹出一次管理员密码框（用于安装特权 Helper），之后无需再次输入\n\n### 【重要更新说明】\n### 【重要更新说明】\n### 【重要更新说明】\n若已经安装使用过 singboard for mac ，替换新版 **singboard** 时 **必须：**\n1. 点击【停止核心】\n2. 设置中点击【卸载服务】\n3. 顶部菜单栏右键点击 singboard 图标，选择退出。即：完全退出 singboard \n4. 最后再对 **应用程序** 里面的 **singboard.app** 进行替换操作。\n",
+      "assets": [
+        {
+          "id": 459468091,
+          "name": "Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+          "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-arm64-build-f6c9f44-20260627-121223.zip",
+          "state": "uploaded",
+          "size": 3815898
+        },
+        {
+          "id": 459468090,
+          "name": "Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+          "browser_download_url": "https://github.com/okunvei/singboard_for_mac/releases/download/build-20260627-121223-f6c9f44/Singboard-macos-x86_64-build-f6c9f44-20260627-121223.zip",
+          "state": "uploaded",
+          "size": 4071172
+        }
+      ]
+    }
+  ]
+}

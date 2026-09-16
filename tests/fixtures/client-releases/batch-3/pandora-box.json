@@ -1,0 +1,71 @@
+{
+  "id": 374866502,
+  "tag_name": "v1.0.23",
+  "name": "v1.0.23",
+  "html_url": "https://github.com/snakem982/Pandora-Box/releases/tag/v1.0.23",
+  "published_at": "2026-08-22T07:46:56Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 524804414,
+      "name": "Pandora-Box-v1.0.23-linux-amd64.deb",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 524804418,
+      "name": "Pandora-Box-v1.0.23-linux-amd64.rpm",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-amd64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 524804492,
+      "name": "Pandora-Box-v1.0.23-linux-arm64.deb",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 524804493,
+      "name": "Pandora-Box-v1.0.23-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 524803936,
+      "name": "Pandora-Box-v1.0.23-macos-amd64.dmg",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-macos-amd64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 524803614,
+      "name": "Pandora-Box-v1.0.23-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 524806147,
+      "name": "Pandora-Box-v1.0.23-windows-amd64-app.zip",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-windows-amd64-app.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 524806149,
+      "name": "Pandora-Box-v1.0.23-windows-amd64.msi",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-windows-amd64.msi",
+      "state": "uploaded"
+    },
+    {
+      "id": 524806470,
+      "name": "Pandora-Box-v1.0.23-windows-arm64-app.zip",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-windows-arm64-app.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 524806469,
+      "name": "Pandora-Box-v1.0.23-windows-arm64.msi",
+      "browser_download_url": "https://github.com/snakem982/Pandora-Box/releases/download/v1.0.23/Pandora-Box-v1.0.23-windows-arm64.msi",
+      "state": "uploaded"
+    }
+  ]
+}

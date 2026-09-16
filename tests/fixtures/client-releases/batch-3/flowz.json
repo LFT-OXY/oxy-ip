@@ -1,0 +1,47 @@
+{
+  "id": 377207003,
+  "tag_name": "v4.3.3",
+  "name": "Release 4.3.3",
+  "html_url": "https://github.com/dododook/FlowZ/releases/tag/v4.3.3",
+  "published_at": "2026-08-26T14:26:04Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 530931398,
+      "name": "FlowZ-4.3.3-linux-amd64.deb",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-linux-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 530931401,
+      "name": "FlowZ-4.3.3-linux-x86_64.AppImage",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-linux-x86_64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 530931399,
+      "name": "FlowZ-4.3.3-mac-arm64.dmg",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-mac-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 530931394,
+      "name": "FlowZ-4.3.3-mac-x64.dmg",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-mac-x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 530931396,
+      "name": "FlowZ-4.3.3-win-x64-portable.exe",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-win-x64-portable.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 530931395,
+      "name": "FlowZ-4.3.3-win-x64-setup.exe",
+      "browser_download_url": "https://github.com/dododook/FlowZ/releases/download/v4.3.3/FlowZ-4.3.3-win-x64-setup.exe",
+      "state": "uploaded"
+    }
+  ]
+}

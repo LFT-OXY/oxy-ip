@@ -1,0 +1,53 @@
+{
+  "id": 384217429,
+  "tag_name": "v1.27.0",
+  "name": "v1.27.0",
+  "html_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/tag/v1.27.0",
+  "published_at": "2026-09-07T16:38:11Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 549083757,
+      "name": "GUI.for.SingBox-darwin-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-darwin-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083767,
+      "name": "GUI.for.SingBox-darwin-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-darwin-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083761,
+      "name": "GUI.for.SingBox-linux-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-linux-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083758,
+      "name": "GUI.for.SingBox-linux-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083760,
+      "name": "GUI.for.SingBox-windows-386.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-386.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083759,
+      "name": "GUI.for.SingBox-windows-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549083763,
+      "name": "GUI.for.SingBox-windows-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-arm64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

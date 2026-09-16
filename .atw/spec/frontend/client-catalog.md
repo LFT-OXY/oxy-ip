@@ -229,3 +229,15 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 错误：扩批后把旧测试的期望直接改成生产目录；或每张票仍断言全站永远只有本票截止数量。
 
 正确：旧批次验证各自冻结子集；最新批次以独立基线验证累计覆盖、顺序与唯一性。内核覆盖也须包含独立的官方期望，例如Box for Root在v1.10.2支持Mihomo；只遍历生产`app.cores`无法发现漏填内核。图标例外只按PRD中明确获批的应用执行，不能由一个缺图案例扩用至其他应用。
+
+## 12. 第三批：平台成熟度、独立渠道与品牌素材
+
+- 不新增解析接口。来源继续使用 `releaseTag`、两个捕获组及可选固定架构；`{version}` 只出现一次，避免现有单次替换留下未展开的占位。
+- 发布的 `prerelease=false` 不能覆盖官方平台限制：incy 桌面仍为 pre-alpha，只留官方页；OneBox 仅 Ubuntu 属于稳定 Linux 支持，提供 DEB，不将 RPM 测试平台冒作正式版。OneBoxM 和 Interstellar 等独立伴侣不并入桌面应用身份。
+- Singboard for Mac 使用 `build-日期-时间-提交号` 的独立发布渠道，工作流明确 `draft/prerelease=false`，故不凭 `build` 单词判测试版，也不使用同仓 Windows 的版本。Netch 锁定已核实的 1.9.7 代际，其 V2Ray 分支及 x64 依据不能自动外推到未来 2.x。
+- 无架构文件名须核对官方构建：Polaris Windows 便携包来自 x86_64 目标；Throne universal 安装器按 x86/x64/arm64 选择，32/64 数字经别名映射。ClashBar 含核／无核、Throne system-qt／legacy 变体不可合并。
+- 品牌图标必须视觉核对并追溯到应用资源或官方商店，不以目录中任意 `icon` 文件充数：Throne 的 `res/rc/base_icon` 是控件素材，使用 `res/public/Throne.png`。需署名的素材及品牌声明保留在 `public/client-icons/NOTICE.txt`。
+- 源码状态读许可证正文而不是 README 的自称：Stelliberty 非商业条款用 `available`。免费下载或开源不自动证明完整功能免费；积分内购与功能关系不明确时保持 `price=unknown`，价格说明列已核实事实。
+- `client-catalog-batch-3.test.mjs` 独立验证25项平台／内核和例外；`client-batch-3-sources.test.mjs` 验证18条GitHub与6条Apple来源、包计数及排除理由、版本隔离、渠道、架构、正式性与失败保留。离线 CLI 枚举该批真实夹具；真实 HTTP 失败保留人工页，不以离线测试的成功冒充生产核验。
+
+- 补充研究中的移动商店信息仅作伴侣身份排除证据，不自动复制到桌面应用的 `sources` 或 `note`；OneBox Mac的成功GitHub快照不得残留“商店兼容／版本未核实”说明，独立回归须同时检查来源列表与状态说明。

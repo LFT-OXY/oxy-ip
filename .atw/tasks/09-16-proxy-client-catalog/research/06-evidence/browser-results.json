@@ -1,0 +1,511 @@
+{
+  "matrix": [
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "zh",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "zh",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "zh",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "light",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "filters": true,
+      "keyboard": true,
+      "back": true,
+      "overflow": false
+    }
+  ],
+  "apps": [
+    {
+      "id": "everywhere",
+      "platform": "ios",
+      "packages": 1,
+      "version": "1.6",
+      "icon": true
+    },
+    {
+      "id": "everywhere",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "connect-now",
+      "platform": "ios",
+      "packages": 1,
+      "version": "1.0.5",
+      "icon": true
+    },
+    {
+      "id": "connect-now",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "incy",
+      "platform": "android",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "incy",
+      "platform": "ios",
+      "packages": 1,
+      "version": "2.6.1",
+      "icon": true
+    },
+    {
+      "id": "incy",
+      "platform": "windows",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "incy",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "incy",
+      "platform": "linux",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "nextin",
+      "platform": "ios",
+      "packages": 1,
+      "version": "1.3.2",
+      "icon": true
+    },
+    {
+      "id": "nextin",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "sing-box-for-apple",
+      "platform": "ios",
+      "packages": 1,
+      "version": "2.1.3",
+      "icon": true
+    },
+    {
+      "id": "sing-box-for-apple",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "tunna",
+      "platform": "ios",
+      "packages": 1,
+      "version": "1.7.0",
+      "icon": true
+    },
+    {
+      "id": "tunna",
+      "platform": "macos",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "loon-lite",
+      "platform": "ios",
+      "packages": 1,
+      "version": "1.0.10",
+      "icon": true
+    },
+    {
+      "id": "gui-for-singbox",
+      "platform": "windows",
+      "packages": 3,
+      "version": "v1.27.0",
+      "icon": true
+    },
+    {
+      "id": "gui-for-singbox",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.27.0",
+      "icon": true
+    },
+    {
+      "id": "gui-for-singbox",
+      "platform": "linux",
+      "packages": 2,
+      "version": "v1.27.0",
+      "icon": true
+    },
+    {
+      "id": "clashmac",
+      "platform": "macos",
+      "packages": 2,
+      "version": "27.1.4",
+      "icon": true
+    },
+    {
+      "id": "throne",
+      "platform": "windows",
+      "packages": 5,
+      "version": "1.2.4",
+      "icon": true
+    },
+    {
+      "id": "throne",
+      "platform": "macos",
+      "packages": 3,
+      "version": "1.2.4",
+      "icon": true
+    },
+    {
+      "id": "throne",
+      "platform": "linux",
+      "packages": 6,
+      "version": "1.2.4",
+      "icon": true
+    },
+    {
+      "id": "flowz",
+      "platform": "windows",
+      "packages": 2,
+      "version": "v4.3.3",
+      "icon": true
+    },
+    {
+      "id": "flowz",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v4.3.3",
+      "icon": true
+    },
+    {
+      "id": "flowz",
+      "platform": "linux",
+      "packages": 2,
+      "version": "v4.3.3",
+      "icon": true
+    },
+    {
+      "id": "polaris",
+      "platform": "windows",
+      "packages": 2,
+      "version": "v1.0.0",
+      "icon": true
+    },
+    {
+      "id": "polaris",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.0.0",
+      "icon": true
+    },
+    {
+      "id": "polaris",
+      "platform": "linux",
+      "packages": 2,
+      "version": "v1.0.0",
+      "icon": true
+    },
+    {
+      "id": "onebox",
+      "platform": "windows",
+      "packages": 2,
+      "version": "v1.4.39",
+      "icon": true
+    },
+    {
+      "id": "onebox",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.4.39",
+      "icon": true
+    },
+    {
+      "id": "onebox",
+      "platform": "linux",
+      "packages": 1,
+      "version": "v1.4.39",
+      "icon": true
+    },
+    {
+      "id": "interstellar",
+      "platform": "android",
+      "packages": 5,
+      "version": "v0.5.4",
+      "icon": true
+    },
+    {
+      "id": "satelite",
+      "platform": "windows",
+      "packages": 2,
+      "version": "v1.0.36",
+      "icon": true
+    },
+    {
+      "id": "satelite",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.0.36",
+      "icon": true
+    },
+    {
+      "id": "satelite",
+      "platform": "linux",
+      "packages": 1,
+      "version": "v1.0.36",
+      "icon": true
+    },
+    {
+      "id": "clashbar",
+      "platform": "macos",
+      "packages": 4,
+      "version": "v0.3.3",
+      "icon": true
+    },
+    {
+      "id": "kumoapp",
+      "platform": "macos",
+      "packages": 2,
+      "version": "0.0.15",
+      "icon": true
+    },
+    {
+      "id": "singboard-for-mac",
+      "platform": "macos",
+      "packages": 2,
+      "version": "build-20260627-121223-f6c9f44",
+      "icon": true
+    },
+    {
+      "id": "irbox",
+      "platform": "windows",
+      "packages": 4,
+      "version": "v1.0.2",
+      "icon": true
+    },
+    {
+      "id": "irbox",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.0.2",
+      "icon": true
+    },
+    {
+      "id": "irbox",
+      "platform": "linux",
+      "packages": 3,
+      "version": "v1.0.2",
+      "icon": true
+    },
+    {
+      "id": "netch",
+      "platform": "windows",
+      "packages": 1,
+      "version": "1.9.7",
+      "icon": true
+    },
+    {
+      "id": "pantheon",
+      "platform": "windows",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "stelliberty",
+      "platform": "windows",
+      "packages": 4,
+      "version": "v2.0.30",
+      "icon": true
+    },
+    {
+      "id": "stelliberty",
+      "platform": "macos",
+      "packages": 4,
+      "version": "v2.0.30",
+      "icon": true
+    },
+    {
+      "id": "stelliberty",
+      "platform": "linux",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "carton",
+      "platform": "windows",
+      "packages": 4,
+      "version": "v0.6.2",
+      "icon": true
+    },
+    {
+      "id": "carton",
+      "platform": "linux",
+      "packages": 4,
+      "version": "v0.6.2",
+      "icon": true
+    },
+    {
+      "id": "pandora-box",
+      "platform": "windows",
+      "packages": 1,
+      "version": null,
+      "icon": true
+    },
+    {
+      "id": "pandora-box",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v1.0.23",
+      "icon": true
+    },
+    {
+      "id": "pandora-box",
+      "platform": "linux",
+      "packages": 4,
+      "version": "v1.0.23",
+      "icon": true
+    },
+    {
+      "id": "clashtui",
+      "platform": "windows",
+      "packages": 2,
+      "version": "v0.3.1",
+      "icon": true
+    },
+    {
+      "id": "clashtui",
+      "platform": "macos",
+      "packages": 2,
+      "version": "v0.3.1",
+      "icon": true
+    },
+    {
+      "id": "clashtui",
+      "platform": "linux",
+      "packages": 2,
+      "version": "v0.3.1",
+      "icon": true
+    }
+  ],
+  "oneboxFix": [
+    {
+      "lang": "zh",
+      "wrongNoteAbsent": true
+    },
+    {
+      "lang": "en",
+      "wrongNoteAbsent": true
+    }
+  ],
+  "consoleErrors": 0,
+  "run": "OneBox修复后完整重跑12矩阵、55平台、OneBox Mac中英文说明与版本专项验证。"
+}

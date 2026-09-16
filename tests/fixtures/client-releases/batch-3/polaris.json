@@ -1,0 +1,53 @@
+{
+  "id": 382166346,
+  "tag_name": "v1.0.0",
+  "name": "v1.0.0",
+  "html_url": "https://github.com/polaris-arch/Polaris/releases/tag/v1.0.0",
+  "published_at": "2026-09-03T16:17:24Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 543016492,
+      "name": "polaris-portable-v1.0.0.zip",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/polaris-portable-v1.0.0.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016493,
+      "name": "Polaris_1.0.0_aarch64-mac-arm64.dmg",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_aarch64-mac-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016496,
+      "name": "Polaris_1.0.0_amd64.AppImage",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016512,
+      "name": "Polaris_1.0.0_amd64.deb",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016529,
+      "name": "Polaris_1.0.0_x64-mac-x64.dmg",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_x64-mac-x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016491,
+      "name": "Polaris_1.0.0_x64-win-setup.exe",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/Polaris_1.0.0_x64-win-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 543016494,
+      "name": "SHA256SUMS",
+      "browser_download_url": "https://github.com/polaris-arch/Polaris/releases/download/v1.0.0/SHA256SUMS",
+      "state": "uploaded"
+    }
+  ]
+}

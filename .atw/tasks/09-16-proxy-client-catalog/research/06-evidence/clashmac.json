@@ -1,0 +1,153 @@
+{
+  "retrievedAt": "2026-09-16T14:20:20.371374+00:00",
+  "baseline": {
+    "order": 67,
+    "id": "clashmac",
+    "name": "ClashMac",
+    "reference_url": "https://huarun.win/apps/clashmac",
+    "observed_official_entry": "https://github.com/666OS/ClashMac",
+    "ticket": "06"
+  },
+  "method": "GitHub gh api；网页 Jina Reader；Apple lookup curl。参考清单不作为官方真实性证据。",
+  "apiEndpoints": {
+    "repository": "https://api.github.com/repos/666OS/ClashMac",
+    "readme": "https://api.github.com/repos/666OS/ClashMac/readme",
+    "releases": "https://api.github.com/repos/666OS/ClashMac/releases?per_page=100",
+    "tree": "https://api.github.com/repos/666OS/ClashMac/git/trees/HEAD?recursive=1"
+  },
+  "repository": {
+    "error": "Get \"https://api.github.com/repos/666OS/ClashMac\": dial tcp 198.18.0.65:443: i/o timeout\n"
+  },
+  "readme": {
+    "sha": "8aec19c93d37e37551dfc72f4e1cca16821d64d6",
+    "html_url": "https://github.com/666OS/ClashMac/blob/main/README.md",
+    "download_url": "https://raw.githubusercontent.com/666OS/ClashMac/main/README.md",
+    "text": "<p align=\"center\">\n  <img src=\"assets/cat.svg\" alt=\"ClashMac Logo\" width=\"300\">\n</p>\n<h1 align=\"center\">ClashMac 27</h1>\n<h3 align=\"center\" style=\"margin-top: 0; margin-bottom: 10px;\">Native Proxy Experience Built for macOS</h3>\n<p align=\"center\">\n  🌐 <a href=\"https://clashmac.app\"><strong>Official Website</strong></a>\n  &nbsp;&nbsp;&nbsp;&nbsp;\n  📖 <a href=\"https://clashmac.app/guide/\"><strong>User Manual</strong></a>\n</p>\n\n<p align=\"center\" style=\"margin-top: 0; margin-bottom: 20px;\">\n  <a href=\"https://github.com/666OS/ClashMac/releases/latest\">\n    <img src=\"https://img.shields.io/github/v/release/666OS/ClashMac?style=flat-square&logo=github&color=green\" alt=\"Latest Release\">\n  </a>\n  <a href=\"https://github.com/666OS/ClashMac/releases\">\n    <img src=\"https://img.shields.io/github/downloads/666OS/ClashMac/total?style=flat-square&logo=dropbox&logoColor=white&color=gold\" alt=\"Downloads\">\n  </a>\n  <a href=\"https://clashmac.app\">\n    <img src=\"https://img.shields.io/badge/Official-Website-orange?style=flat-square&logo=safari\" alt=\"Official Website\">\n  </a>\n  <a href=\"https://t.me/Pinched666\">\n    <img src=\"https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram\">\n  </a>\n</p>\n\n<table>\n  <tr>\n    <td colspan=\"2\" align=\"center\"><img src=\"./assets/dashboard_b.jpg\" alt=\"Dashboard\"></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" align=\"center\"><img src=\"./assets/Route_b.jpg\" alt=\"Route\"></td>\n  </tr> \n  <tr>\n    <td colspan=\"2\" align=\"center\"><img src=\"./assets/Topology_b.jpg\" alt=\"Topology\"></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\" align=\"center\"><img src=\"./assets/menu_b.jpg\" alt=\"Menu\"></td>\n  </tr>\n</table>\n\n## ✨ Features\n\n### 🗺️ Visual Route Map\n- **Live Flight Routes**: Watch your active proxy traffic fly across the globe in real-time, updating every 10 seconds.\n- **Interactive Control**: Zoom, pan, and hover over paths for instant telemetry. Supports historical audit logs.\n- **Smart Obfuscation**: Mask your precise location by randomizing your departure point across 190+ global cities.\n\n### 🔍 Active Connections & Rules\n- **Live Traffic Grid**: Check which apps are consuming bandwidth, their speeds, protocols, and routing rules.\n- **One-Click Rule Maker**: Instantly add custom proxy or blocking rules for the active browser tab or process.\n- **Instant Cut-off**: Disconnect any hogging connection with a simple right-click.\n\n### 📊 Real-time Dashboard\n- **Speed Curves**: High-definition, smooth graph tracking upload and download bandwidth over a 60-second window.\n- **Leaderboards**: Automatically lists your most active target domains, matched rules, and destinations.\n- **Resource Monitoring**: Track system memory footprint of both the UI and the underlying network engine.\n\n### 🌐 Anti-Detect Fingerprint Browser\n- **GeoIP Alignment**: Automatically aligns browser timezone, language, locale, and User-Agent with the active proxy node to prevent tracking and cross-region leaks.\n- **Multi-Profile Isolation**: Configure independent browser profiles with isolated cookies, cache, and dedicated proxy endpoints.\n- **Menu Bar Quick Access**: Launch or terminate target browser environments instantly from the macOS menu bar without opening the dashboard.\n- **Shared Extension Center**: Install Chrome extensions once via Web Store URL or ID—globally available across all fingerprint profiles.\n- **Built-in Status Page**: Start page displays real-time network connectivity, proxy exit IP geolocation, and extension shortcuts on launch.\n- **CDP Automation & CLI**: Automate browser workflows, capture full-page screenshots, evaluate scripts, and extract cookies via the `cm fp` command-line tool.\n\n---\n\n## 🛠️ Built for macOS\n\n- **100% Native**: Built exclusively in SwiftUI for native performance. Resides quietly in the menu bar with minimal CPU and memory footprints.\n- **TUN Enhanced**: System-wide proxy integration with complete UDP/TCP capture.\n- **No Setup Needed**: Ready out of the box with automated DNS, TUN, and routing database parameters.\n- **Video Boost**: Disable QUIC protocols to prevent ISP throttling and eliminate buffering on YouTube and Netflix.\n- **No Repeated Passwords**: Authorize network helper tool installation once—never get prompted for admin passwords again.\n\n---\n\n## 💻 Get Started\n\n- **System Requirement**: macOS 15.0+ (Sequoia or later)\n\n### Installation\n1. Download the latest `ClashMac.dmg` disk image from the [Releases page](https://github.com/666OS/ClashMac/releases/latest).\n2. Double-click the `.dmg` and **drag** `ClashMac.app` into your **Applications** folder.\n   > [!CAUTION]\n   > Do not run ClashMac directly from the `.dmg` installer window, as macOS security sandbox will prevent the application from saving settings and installing system network services.\n3. On first launch, right-click `ClashMac.app` and select **Open**. ClashMac will register its system helper tool and automatically download the correct kernel engine matching your Mac's CPU architecture (Apple Silicon or Intel).\n\n---\n\n## 🛡️ Bypassing Gatekeeper\n\nIf macOS blocks launching with a warning (e.g., \"developer cannot be verified\"), use one of these solutions:\n\n- **System Settings**: Go to **System Settings** $\\rightarrow$ **Privacy & Security**, scroll down to find the block notice, and click **Open Anyway**.\n- **Terminal Command**: Run the following command in Terminal to clear the quarantine flag:\n  ```bash\n  sudo xattr -rd com.apple.quarantine /Applications/ClashMac.app\n  ```\n\n---\n\n## 🔒 Security & Privacy\n\n- **100% Local**: All settings, traffic details, and history stay locally on your Mac. No data collection, tracking, or logs.\n- **Secure Helper**: The background system helper is hardened and restricted to run core files solely from `/Applications/ClashMac.app/`.\n\n---\n\n## 📄 License & Credits\n\nClashMac is proprietary, closed-source software. Binary releases are provided in this repository.\n\nView third-party credits and licenses here:  \n👉 [THIRD_PARTY_LICENSES](https://github.com/666OS/ClashMac/blob/main/THIRD_PARTY_LICENSES.txt)\n\n<p align=\"center\">\n  Crafted with ❤️ for macOS\n</p>\n"
+  },
+  "tree": {
+    "sha": "6bd4eee77ac3face93d6ba38fdc505e15a4e376e",
+    "truncated": false,
+    "paths": [
+      ".github",
+      ".github/workflows",
+      ".github/workflows/ClearCommits.yml",
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "THIRD_PARTY_LICENSES.txt",
+      "assets",
+      "assets/Route_b.jpg",
+      "assets/cat.svg",
+      "assets/dashboard_b.jpg",
+      "assets/menu_b.jpg"
+    ],
+    "error": null,
+    "message": null
+  },
+  "releaseListScope": "第一页，最多100；未以此宣称穷尽历史。未执行资产HEAD或自动同步。",
+  "releaseIndex": [
+    {
+      "id": 382676719,
+      "tag_name": "27.1.4",
+      "name": "ClashMac 27.1.4",
+      "prerelease": false,
+      "published_at": "2026-09-04T11:32:38Z"
+    },
+    {
+      "id": 387852828,
+      "tag_name": "Prerelease-Alpha",
+      "name": "ClashMac Alpha",
+      "prerelease": true,
+      "published_at": "2026-09-13T09:41:58Z"
+    },
+    {
+      "id": 355047173,
+      "tag_name": "27.1.2",
+      "name": "ClashMac 27.1.2",
+      "prerelease": false,
+      "published_at": "2026-07-16T11:36:20Z"
+    },
+    {
+      "id": 342451274,
+      "tag_name": "27.1.1",
+      "name": "ClashMac 27.1.1",
+      "prerelease": false,
+      "published_at": "2026-06-21T03:58:37Z"
+    },
+    {
+      "id": 342223291,
+      "tag_name": "27.1",
+      "name": "ClashMac 27.1",
+      "prerelease": false,
+      "published_at": "2026-06-20T01:48:34Z"
+    },
+    {
+      "id": 342221002,
+      "tag_name": "27.0",
+      "name": "ClashMac 27.0",
+      "prerelease": false,
+      "published_at": "2026-06-20T01:34:38Z"
+    },
+    {
+      "id": 279317970,
+      "tag_name": "ClashMac-Legacy",
+      "name": "ClashMac Legacy",
+      "prerelease": true,
+      "published_at": "2026-01-23T10:53:38Z"
+    }
+  ],
+  "releases": [
+    {
+      "id": 382676719,
+      "tag_name": "27.1.4",
+      "name": "ClashMac 27.1.4",
+      "html_url": "https://github.com/666OS/ClashMac/releases/tag/27.1.4",
+      "published_at": "2026-09-04T11:32:38Z",
+      "draft": false,
+      "prerelease": false,
+      "body": "### 性能提升\n- 修复海量规则下搜索过滤、退格及页面切换时的卡死问题\n- 修复大量连接历史下持续开启面板导致的 CPU 偏高与内存异常占用\n- 降低概览页面及后台常驻时的磁盘读写频率\n\n### 系统适配与体验优化\n- 修复日志等级未本地化翻译的问题，并加宽筛选下拉框避免文字截断\n- 补全智能旁路位置权限指引、连接状态标签等文案的简体中文翻译，消除中英文混杂\n- 适配新版 macOS 权限机制，解决无法识别当前 Wi-Fi 名称导致智能旁路失效的问题\n- 修复新系统下流量图表数值文字与内容重叠的显示问题\n- 简化侧边栏列表，引擎入口聚合\n\n### 指纹浏览器\n- 自动根据节点 IP 归属地对齐时区、语言及 User-Agent，防止指纹泄漏\n- 支持多环境参数隔离与专属节点配置，面板与菜单栏均可一键极速启停\n- 扩展一次安装全环境通用，支持粘贴 Chrome 商店链接或 ID 快捷安装更新\n- 启动即显内置主页，直观展示网络连通性、出口 IP 与快捷扩展入口\n\n### ClashMac CLI\n- 新增超短指令别名 `cm`（通过设置面板重装或运行 `cm install` 激活）\n- 提供 `cm fp list / launch / stop` 快速管理指纹环境\n- 提供 `cm fp goto / shot / eval / cookie` 等 CDP 浏览器自动化调试指令\n\n#### 反馈\n\n* **功能手册**：查阅 [正式版发布日志](https://github.com/666OS/ClashMac/releases/latest) 或 [用户手册](https://clashmac.app/guide/) 了解核心功能\n* **问题反馈**：如遇运行异常，请提交至 [GitHub Issues](https://github.com/666OS/ClashMac/issues) 或关注 [Telegram 频道](https://t.me/Pinched666)",
+      "assets": [
+        {
+          "id": 544244667,
+          "name": "ClashMac-27.1.4.dmg",
+          "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.dmg",
+          "state": "uploaded",
+          "size": 7577753
+        },
+        {
+          "id": 544244666,
+          "name": "ClashMac-27.1.4.zip",
+          "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/27.1.4/ClashMac-27.1.4.zip",
+          "state": "uploaded",
+          "size": 6864865
+        }
+      ]
+    },
+    {
+      "id": 387852828,
+      "tag_name": "Prerelease-Alpha",
+      "name": "ClashMac Alpha",
+      "html_url": "https://github.com/666OS/ClashMac/releases/tag/Prerelease-Alpha",
+      "published_at": "2026-09-13T09:41:58Z",
+      "draft": false,
+      "prerelease": true,
+      "body": "## ClashMac Alpha 开发者预览版\n\n本页面提供高频迭代的 Alpha 测试构建，用于快速验证实验性特性与 Bug 修复。\n\n### 新增特性\n- **年度活跃热力图**：移除原「流量时间轴」卡片，全新上线点阵热力图，直观展示全年流量消耗与活跃轨迹。\n\n### 体验与性能优化\n- **流量数据智能管理**：年度统计与热力图永久保存，自动轮替清理 30 天前的详细明细，长期使用轻量不占磁盘。\n- **更清晰的数据清理**：支持“仅清空连接明细（保留统计）”与“重置全部数据”，管理更灵活安全。\n- **流畅度与资源占用优化**：大幅降低菜单栏刷新开销，改进后台通信稳定性，界面交互更轻快。\n\n### 安装与安全解锁\n\n1. **拖拽安装**：双击 DMG 并将 `ClashMac.app` 拖入 `/Applications`。\n2. **绕过系统阻止**（测试版未公证，首次打开如受阻，请在终端执行）：\n   ```bash\n   xattr -cr /Applications/ClashMac.app\n   ```\n3. **授权启动**：首次接管网络时，需根据系统提示输入一次密码以激活辅助特权服务。\n\n### 参与测试与反馈\n\n* **功能手册**：查阅 [正式版发布日志](https://github.com/666OS/ClashMac/releases/latest) 或 [用户手册](https://clashmac.app/guide/) 了解核心功能。\n* **问题反馈**：如遇运行异常，请提交至 [GitHub Issues](https://github.com/666OS/ClashMac/issues) 或关注 [Telegram 频道](https://t.me/Pinched666)。",
+      "assets": [
+        {
+          "id": 560949573,
+          "name": "ClashMac-Alpha-b265.dmg",
+          "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/Prerelease-Alpha/ClashMac-Alpha-b265.dmg",
+          "state": "uploaded",
+          "size": 8239075
+        },
+        {
+          "id": 560949574,
+          "name": "ClashMac-Alpha-b265.zip",
+          "browser_download_url": "https://github.com/666OS/ClashMac/releases/download/Prerelease-Alpha/ClashMac-Alpha-b265.zip",
+          "state": "uploaded",
+          "size": 7486089
+        }
+      ]
+    }
+  ]
+}
