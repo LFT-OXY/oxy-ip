@@ -1,0 +1,23 @@
+{
+  "id": 372976890,
+  "tag_name": "v0.6.2",
+  "name": "\u30d6\u30eb\u30fc\u30cf\u30ef\u30a4",
+  "html_url": "https://github.com/YumeYucca/YumeBox/releases/tag/v0.6.2",
+  "published_at": "2026-08-19T10:52:00Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 520725257,
+      "name": "YumeBox-builtin-0.6.2.apk",
+      "browser_download_url": "https://github.com/YumeYucca/YumeBox/releases/download/v0.6.2/YumeBox-builtin-0.6.2.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 520725258,
+      "name": "YumeBox-external-0.6.2.apk",
+      "browser_download_url": "https://github.com/YumeYucca/YumeBox/releases/download/v0.6.2/YumeBox-external-0.6.2.apk",
+      "state": "uploaded"
+    }
+  ]
+}

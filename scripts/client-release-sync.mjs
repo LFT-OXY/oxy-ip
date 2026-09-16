@@ -59,7 +59,8 @@ export function parseRelease(raw, source, previous, now) {
       id: asset.name,
       kind: "direct",
       url: asset.browser_download_url,
-      arch: match[1],
+      // 少数官方包名不含架构；仅使用来源中逐平台核实的固定值。
+      arch: match[1] || source.architectures?.[previous.platform],
       format: match[2],
     });
   }

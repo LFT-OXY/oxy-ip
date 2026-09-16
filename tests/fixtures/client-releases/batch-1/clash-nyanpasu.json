@@ -1,0 +1,119 @@
+{
+  "id": 173977471,
+  "tag_name": "v1.6.1",
+  "name": "Clash Nyanpasu v1.6.1",
+  "html_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1",
+  "published_at": "2024-09-07T16:48:05Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 191090428,
+      "name": "Clash.Nyanpasu_1.6.1_aarch64.dmg",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_aarch64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090446,
+      "name": "Clash.Nyanpasu.aarch64.app.tar.gz",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu.aarch64.app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090454,
+      "name": "Clash.Nyanpasu.aarch64.app.tar.gz.sig",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu.aarch64.app.tar.gz.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090718,
+      "name": "clash-nyanpasu_1.6.1_amd64.deb",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090722,
+      "name": "clash-nyanpasu-1.6.1-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu-1.6.1-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090728,
+      "name": "clash-nyanpasu_1.6.1_amd64.AppImage",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090732,
+      "name": "clash-nyanpasu_1.6.1_amd64.AppImage.tar.gz",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.AppImage.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090741,
+      "name": "clash-nyanpasu_1.6.1_amd64.AppImage.tar.gz.sig",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.AppImage.tar.gz.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090744,
+      "name": "clash-nyanpasu_1.6.1_amd64.deb.sha256",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 191090746,
+      "name": "clash-nyanpasu-1.6.1-1.x86_64.rpm.sha256",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu-1.6.1-1.x86_64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 191091013,
+      "name": "Clash.Nyanpasu_1.6.1_x64.dmg",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 191091016,
+      "name": "Clash.Nyanpasu_x64.app.tar.gz",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_x64.app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 191091026,
+      "name": "Clash.Nyanpasu_x64.app.tar.gz.sig",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_x64.app.tar.gz.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 191638557,
+      "name": "Clash.Nyanpasu_1.6.1_x64-setup.exe",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 191638558,
+      "name": "Clash.Nyanpasu_1.6.1_x64-setup.nsis.zip",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64-setup.nsis.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 191638560,
+      "name": "Clash.Nyanpasu_1.6.1_x64-setup.nsis.zip.sig",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64-setup.nsis.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 191638562,
+      "name": "latest.json",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/latest.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 191638574,
+      "name": "Clash.Nyanpasu_1.6.1_x64_portable.zip",
+      "browser_download_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64_portable.zip",
+      "state": "uploaded"
+    }
+  ]
+}

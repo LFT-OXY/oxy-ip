@@ -1,0 +1,245 @@
+{
+  "id": 378854248,
+  "tag_name": "7.24.9",
+  "name": "",
+  "html_url": "https://github.com/2dust/v2rayN/releases/tag/7.24.9",
+  "published_at": "2026-08-29T02:47:27Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 534636525,
+      "name": "v2rayN-linux-64.deb",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636617,
+      "name": "v2rayN-linux-64.deb.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.deb.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635109,
+      "name": "v2rayN-linux-64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635174,
+      "name": "v2rayN-linux-64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636428,
+      "name": "v2rayN-linux-arm64.deb",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636608,
+      "name": "v2rayN-linux-arm64.deb.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.deb.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635121,
+      "name": "v2rayN-linux-arm64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635176,
+      "name": "v2rayN-linux-arm64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534648834,
+      "name": "v2rayN-linux-loong64.deb",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-loong64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 534648877,
+      "name": "v2rayN-linux-loong64.deb.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-loong64.deb.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638111,
+      "name": "v2rayN-linux-rhel-64.rpm",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638160,
+      "name": "v2rayN-linux-rhel-64.rpm.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-64.rpm.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638076,
+      "name": "v2rayN-linux-rhel-arm64.rpm",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638157,
+      "name": "v2rayN-linux-rhel-arm64.rpm.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-arm64.rpm.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534658138,
+      "name": "v2rayN-linux-rhel-loong64.rpm",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-loong64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 534658195,
+      "name": "v2rayN-linux-rhel-loong64.rpm.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-loong64.rpm.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534646111,
+      "name": "v2rayN-linux-riscv64.deb",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-riscv64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 534646197,
+      "name": "v2rayN-linux-riscv64.deb.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-riscv64.deb.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635896,
+      "name": "v2rayN-macos-64.dmg",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635979,
+      "name": "v2rayN-macos-64.dmg.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.dmg.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534634936,
+      "name": "v2rayN-macos-64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635071,
+      "name": "v2rayN-macos-64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635782,
+      "name": "v2rayN-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 534635848,
+      "name": "v2rayN-macos-arm64.dmg.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.dmg.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534634913,
+      "name": "v2rayN-macos-arm64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534634938,
+      "name": "v2rayN-macos-arm64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534633563,
+      "name": "v2rayN-public-key.asc",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-public-key.asc",
+      "state": "uploaded"
+    },
+    {
+      "id": 534637547,
+      "name": "v2rayN-windows-64-desktop.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64-desktop.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534637633,
+      "name": "v2rayN-windows-64-desktop.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64-desktop.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636889,
+      "name": "v2rayN-windows-64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636977,
+      "name": "v2rayN-windows-64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638102,
+      "name": "v2rayN-windows-86-desktop.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86-desktop.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638167,
+      "name": "v2rayN-windows-86-desktop.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86-desktop.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638105,
+      "name": "v2rayN-windows-86.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534638161,
+      "name": "v2rayN-windows-86.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534637627,
+      "name": "v2rayN-windows-arm64-desktop.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64-desktop.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534637691,
+      "name": "v2rayN-windows-arm64-desktop.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64-desktop.zip.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636854,
+      "name": "v2rayN-windows-arm64.zip",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 534636935,
+      "name": "v2rayN-windows-arm64.zip.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64.zip.sig",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": 388549421,
+  "tag_name": "v1.1.0",
+  "name": "\ud83e\udda5 ClashFest v1.1.0",
+  "html_url": "https://github.com/Nemu-x/ClashFest/releases/tag/v1.1.0",
+  "published_at": "2026-09-14T16:32:30Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 563781533,
+      "name": "clashfest-alpha-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/Nemu-x/ClashFest/releases/download/v1.1.0/clashfest-alpha-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 563781536,
+      "name": "clashfest-alpha-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/Nemu-x/ClashFest/releases/download/v1.1.0/clashfest-alpha-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 563781535,
+      "name": "clashfest-alpha-universal.apk",
+      "browser_download_url": "https://github.com/Nemu-x/ClashFest/releases/download/v1.1.0/clashfest-alpha-universal.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 563781531,
+      "name": "clashfest-alpha-x86.apk",
+      "browser_download_url": "https://github.com/Nemu-x/ClashFest/releases/download/v1.1.0/clashfest-alpha-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 563781532,
+      "name": "clashfest-alpha-x86_64.apk",
+      "browser_download_url": "https://github.com/Nemu-x/ClashFest/releases/download/v1.1.0/clashfest-alpha-x86_64.apk",
+      "state": "uploaded"
+    }
+  ]
+}

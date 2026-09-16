@@ -23,9 +23,11 @@ const ids = [
   "bettbox",
 ];
 
+const initialApps = apps.slice(0, 8);
+
 test("首票独立名单、全部平台与人工资料完整且无重复", () => {
   assert.deepEqual(
-    apps.map((a) => a.id),
+    initialApps.map((a) => a.id),
     ids,
   );
   const expectedPlatforms = [
@@ -38,7 +40,7 @@ test("首票独立名单、全部平台与人工资料完整且无重复", () =>
     ["ios", "macos", "android", "windows"],
     ["android", "windows", "macos", "linux"],
   ];
-  apps.forEach((app, i) => {
+  initialApps.forEach((app, i) => {
     assert.deepEqual(app.platforms, expectedPlatforms[i]);
     assert.ok(app.description && app.priceDetails && app.sources.length);
     assert.ok(existsSync(`public${app.icon}`));
@@ -83,7 +85,7 @@ test("首票独立名单、全部平台与人工资料完整且无重复", () =>
 test("搜索名称别名简介，中英文与四维筛选组合，多内核及无结果", () => {
   const filter = (query) =>
     filterApps(
-      apps,
+      initialApps,
       releases,
       readFilters(new URLSearchParams(query)),
       (value) => value,

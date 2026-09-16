@@ -152,7 +152,10 @@ test("商店 HTTP、JSON 及超时失败均不推进快照，其他商店正常�
   for (const failure of [403, 404, 429, 503, "timeout", "json", "empty"]) {
     const result = await syncReleases(
       releases,
-      officialSources.filter((s) => s.kind === "app-store"),
+      officialSources.filter(
+        (s) =>
+          ["shadowrocket", "stash"].includes(s.appId) && s.kind === "app-store",
+      ),
       {
         ...officialClient({
           fetcher: async (url, init) => {

@@ -4,7 +4,7 @@
 
 `src/views/clients/` 拥有人工目录、按平台发布快照、列表筛选和精简详情。`/clients/` 与 `/clients/:appId` 在 `App.tsx` 注册，导航同时更新 `layout/routes.ts` 和 `layout/index.tsx` 的图标映射。
 
-本契约覆盖首票目录、第 02 票 GitHub 手动同步及第 03 票商店／官网更新源；6 小时调度尚未实现。
+本契约覆盖首票目录、第 02 票 GitHub 手动同步、第 03 票商店／官网更新源及第 04 票收录扩充的代码契约；6 小时调度尚未实现。
 
 ## 2. 签名
 
@@ -60,7 +60,7 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 
 ### 8.1 范围
 
-`scripts/client-release-sources.mjs` 维护已核验的仓库和平台包命名规则，目前仅 FlClash 四平台、v2rayNG Android。未配置的快照原样保留；扩充来源不得按文件后缀猜测平台。商店／官网来源见第 9 节；调度和生产部署不在此实现中。
+`scripts/client-release-sources.mjs` 维护已核验的仓库和平台包命名规则，首票 FlClash 四平台、v2rayNG Android 与后续批次共用同一适配器。未配置的快照原样保留；扩充来源不得按文件后缀猜测平台。商店／官网来源见第 9 节；调度和生产部署不在此实现中。
 
 ### 8.2 签名
 
@@ -107,7 +107,7 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 
 ### 9.1 范围
 
-`scripts/client-official-sync.mjs` 适配 Apple lookup 与 Stash Mac appcast；`officialSources` 只包含 Shadowrocket iOS、Stash iOS、Stash Mac。Shadowrocket Mac 及 Stash Android / Windows 仍人工维护。新增平台需要单独的官方版本依据，不能扩展一个 iOS 来源去覆盖 Mac。
+`scripts/client-official-sync.mjs` 适配 Apple lookup 与 Stash Mac appcast；`officialSources` 包含首票 Shadowrocket iOS、Stash iOS、Stash Mac 及后续批次的独立 iOS 来源。Shadowrocket Mac 及 Stash Android / Windows 仍人工维护。新增平台需要单独的官方版本依据，不能扩展一个 iOS 来源去覆盖 Mac。
 
 ### 9.2 签名
 
@@ -151,3 +151,43 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 错误：把官网 `Stash-latest.zip` 配上 feed 的正式版号；把 Apple 软件兼容 Mac 当作独立 Mac 版本依据；HTTP 200 就刷新人工页的核验时间。
 
 正确：使用同一正式 item 的构建号固定地址；独立配置平台来源；无可核验版本时保留人工状态与未知时间。
+
+## 10. 批次扩充：固定包名、源码可见与包变体
+
+### 10.1 范围
+
+第 04 票新增来源复用既有适配器；保留固定名单及独立平台依据，不按参考站后续排序或生产数据生成期望。
+
+### 10.2 签名
+
+`parseRelease(raw, source, previous, now)` 的 `source` 新增可选 `architectures: Record<string, string>`；`appSchema.code` 与 `codeLabels` 新增 `available`（源码可见）。筛选仍使用原 `code` URL 参数。
+
+### 10.3 数据契约
+
+- 官方固定文件名不含架构时，正则第一个捕获组为空，架构取 `source.architectures[previous.platform]`；第二组仍为格式。固定映射须有官方 README 或同版本构建配置依据；不能猜 universal。
+- 文件名没有版本时仍严格校验下载 URL 中的仓库、当前 release 标签及文件名。不接受可漂移的 latest URL。
+- 源码公开但保留全部权利不等于开源许可证；使用 `available`，不得归入 `open`。
+- 同平台同架构同格式的多个包，选择器标签追加真实 `download.id`（GitHub 文件名）；不同包仍保留各自 URL，不在展示层合并。
+
+### 10.4 校验与错误
+
+| 条件                                       | 行为                               |
+| ------------------------------------------ | ---------------------------------- |
+| 架构捕获为空且无平台映射                   | schema 拒绝，同步保留旧快照        |
+| 固定包名对应另一个 release 标签 URL        | 拒绝，不跨版本拼接                 |
+| iOS lookup 成功且 Apple 声明兼容 Mac       | 仅更新 iOS，Mac 未独立核验字段留空 |
+| 元数据非预发布但所有资产包含 alpha/nightly | 不将这些资产作为正式包             |
+
+### 10.5 正常、基础与错误场景
+
+正常：SSRVPN 三平台固定文件名分别对应 README 声明的架构。基础：仅有官方页面且版本未知，保留人工说明。错误：把 YumeBox builtin/external 或 AnyPortal api28/apilatest 合并为一个同名选项。
+
+### 10.6 必需检查
+
+`client-catalog-batch-1.test.mjs` 校验冻结名单、平台、筛选、源码可见和未知版本；`client-batch-sources.test.mjs` 使用裁剪真实样本验证 16 个 GitHub、10 个 App Store 来源的平台资产数量、版本 URL 隔离、固定架构缺失拒绝、测试资产排除和失败保留。英文动态字段仍由目录测试枚举全量资料。UI 检查需验证重复架构/格式选项标签唯一且键盘选择改变正确 URL。
+
+### 10.7 易错对照
+
+错误：`SSRVPN.apk` 后缀能证明 Android arm64；Apple 兼容 Mac 能证明独立 Mac 版本。
+
+正确：平台与架构取已核验官方资料；每个平台仅写本平台成功核验的发布信息。

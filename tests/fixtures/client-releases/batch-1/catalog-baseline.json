@@ -1,0 +1,206 @@
+{
+  "source_url": "https://huarun.win/",
+  "retrieved_at": "2026-09-16T08:11:19.651340+00:00",
+  "source_html_sha256": "12d7229c40ab85f3c391c2d528d7f0afe3e5e83810e6a3cdaaa48087442de70d",
+  "note": "从任务冻结基线直接裁剪首票与04票，避免任务归档改变测试路径；不从生产目录生成。",
+  "apps": [
+    {
+      "order": 1,
+      "id": "shadowrocket",
+      "name": "Shadowrocket",
+      "ticket": "01"
+    },
+    {
+      "order": 2,
+      "id": "flclash",
+      "name": "FlClash",
+      "ticket": "01"
+    },
+    {
+      "order": 3,
+      "id": "sing-box",
+      "name": "sing-box",
+      "ticket": "01"
+    },
+    {
+      "order": 4,
+      "id": "clash-verge-rev",
+      "name": "Clash Verge Rev",
+      "ticket": "01"
+    },
+    {
+      "order": 5,
+      "id": "v2rayng",
+      "name": "v2rayNG",
+      "ticket": "01"
+    },
+    {
+      "order": 6,
+      "id": "clash-meta-for-android",
+      "name": "Clash Meta for Android",
+      "ticket": "01"
+    },
+    {
+      "order": 7,
+      "id": "stash",
+      "name": "Stash",
+      "ticket": "01"
+    },
+    {
+      "order": 8,
+      "id": "bettbox",
+      "name": "Bettbox",
+      "ticket": "01"
+    },
+    {
+      "order": 9,
+      "id": "surge",
+      "name": "Surge",
+      "ticket": "04"
+    },
+    {
+      "order": 10,
+      "id": "quantumult-x",
+      "name": "Quantumult X",
+      "ticket": "04"
+    },
+    {
+      "order": 11,
+      "id": "loon",
+      "name": "Loon",
+      "ticket": "04"
+    },
+    {
+      "order": 12,
+      "id": "clash-by-hako",
+      "name": "Clash by Hako",
+      "ticket": "04"
+    },
+    {
+      "order": 13,
+      "id": "karing",
+      "name": "Karing",
+      "ticket": "04"
+    },
+    {
+      "order": 14,
+      "id": "pharos-pro",
+      "name": "Pharos Pro",
+      "ticket": "04"
+    },
+    {
+      "order": 15,
+      "id": "hiddify",
+      "name": "Hiddify",
+      "ticket": "04"
+    },
+    {
+      "order": 16,
+      "id": "egern",
+      "name": "Egern",
+      "ticket": "04"
+    },
+    {
+      "order": 17,
+      "id": "clashfest",
+      "name": "ClashFest",
+      "ticket": "04"
+    },
+    {
+      "order": 18,
+      "id": "exclave",
+      "name": "Exclave",
+      "ticket": "04"
+    },
+    {
+      "order": 19,
+      "id": "nekobox-for-android",
+      "name": "NekoBox for Android",
+      "ticket": "04"
+    },
+    {
+      "order": 20,
+      "id": "husi",
+      "name": "Husi",
+      "ticket": "04"
+    },
+    {
+      "order": 21,
+      "id": "yumebox",
+      "name": "YumeBox",
+      "ticket": "04"
+    },
+    {
+      "order": 22,
+      "id": "shadowsocks-android",
+      "name": "Shadowsocks Android",
+      "ticket": "04"
+    },
+    {
+      "order": 23,
+      "id": "onexray",
+      "name": "OneXray",
+      "ticket": "04"
+    },
+    {
+      "order": 24,
+      "id": "ssrvpn",
+      "name": "SSRVPN",
+      "ticket": "04"
+    },
+    {
+      "order": 25,
+      "id": "singcast",
+      "name": "SingCast",
+      "ticket": "04"
+    },
+    {
+      "order": 26,
+      "id": "streisand",
+      "name": "Streisand",
+      "ticket": "04"
+    },
+    {
+      "order": 27,
+      "id": "foxray",
+      "name": "FoXray",
+      "ticket": "04"
+    },
+    {
+      "order": 28,
+      "id": "clash-nyanpasu",
+      "name": "Clash Nyanpasu",
+      "ticket": "04"
+    },
+    {
+      "order": 29,
+      "id": "clash-party",
+      "name": "Clash Party",
+      "ticket": "04"
+    },
+    {
+      "order": 30,
+      "id": "gui-for-clash",
+      "name": "GUI.for.Clash",
+      "ticket": "04"
+    },
+    {
+      "order": 31,
+      "id": "sparkle",
+      "name": "Sparkle",
+      "ticket": "04"
+    },
+    {
+      "order": 32,
+      "id": "v2rayn",
+      "name": "v2rayN",
+      "ticket": "04"
+    },
+    {
+      "order": 33,
+      "id": "anyportal",
+      "name": "AnyPortal",
+      "ticket": "04"
+    }
+  ]
+}

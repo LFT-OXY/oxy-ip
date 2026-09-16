@@ -1411,5 +1411,2434 @@
     ],
     "version": "v1.19.1",
     "publishedAt": "2026-09-09T15:56:57Z"
+  },
+  {
+    "appId": "surge",
+    "platform": "ios",
+    "version": "5.22.1",
+    "publishedAt": "2026-09-13T23:50:44Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/surge-5/id1442620678?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/surge-5/id1442620678?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/surge-5/id1442620678?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "surge",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://nssurge.com/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://nssurge.com/"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://nssurge.com/"
+      }
+    ],
+    "note": "Mac 使用独立授权与官网下载入口；本票未接入 Surge Mac 专用更新源，正式版本留空。"
+  },
+  {
+    "appId": "quantumult-x",
+    "platform": "ios",
+    "version": "1.8.0",
+    "publishedAt": "2026-09-15T07:05:52Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "quantumult-x",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "loon",
+    "platform": "ios",
+    "version": "3.5.0",
+    "publishedAt": "2026-06-25T19:46:51Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "loon",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "clash-by-hako",
+    "platform": "ios",
+    "version": "1.0.7",
+    "publishedAt": "2026-09-14T23:03:01Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "clash-by-hako",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "karing",
+    "platform": "android",
+    "version": "v1.2.25.2802",
+    "publishedAt": "2026-09-10T02:20:39Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/karing/releases"
+    },
+    "downloads": [
+      {
+        "id": "karing_1.2.25.2802_android_arm.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_arm.apk",
+        "arch": "arm",
+        "format": "apk"
+      },
+      {
+        "id": "karing_1.2.25.2802_android_arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "karing_1.2.25.2802_android_armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "karing",
+    "platform": "ios",
+    "version": "1.2.25.2802",
+    "publishedAt": "2026-09-11T07:32:05Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/karing/id6472431552?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/karing/id6472431552?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/karing/id6472431552?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "karing",
+    "platform": "windows",
+    "version": "v1.2.25.2802",
+    "publishedAt": "2026-09-10T02:20:39Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/karing/releases"
+    },
+    "downloads": [
+      {
+        "id": "karing_1.2.25.2802_windows_x64.exe",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_windows_x64.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "karing_1.2.25.2802_windows_x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_windows_x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "karing",
+    "platform": "macos",
+    "version": "v1.2.25.2802",
+    "publishedAt": "2026-09-10T02:20:39Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/karing/releases"
+    },
+    "downloads": [
+      {
+        "id": "karing_1.2.25.2802_macos_universal.dmg",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_macos_universal.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      },
+      {
+        "id": "karing_1.2.25.2802_macos_universal.pkg",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_macos_universal.pkg",
+        "arch": "universal",
+        "format": "pkg"
+      }
+    ]
+  },
+  {
+    "appId": "karing",
+    "platform": "linux",
+    "version": "v1.2.25.2802",
+    "publishedAt": "2026-09-10T02:20:39Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/KaringX/karing/releases"
+    },
+    "downloads": [
+      {
+        "id": "karing_1.2.25.2802_linux_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "karing_1.2.25.2802_linux_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "karing_1.2.25.2802_linux_amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "pharos-pro",
+    "platform": "ios",
+    "version": "1.8.7",
+    "publishedAt": "2025-12-30T02:41:20Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "pharos-pro",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "hiddify",
+    "platform": "android",
+    "version": "v4.1.1",
+    "publishedAt": "2026-03-05T17:22:57Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/hiddify/hiddify-app/releases"
+    },
+    "downloads": [
+      {
+        "id": "Hiddify-Android-arm64.apk",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-arm64.apk",
+        "arch": "arm64",
+        "format": "apk"
+      },
+      {
+        "id": "Hiddify-Android-arm7.apk",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-arm7.apk",
+        "arch": "arm7",
+        "format": "apk"
+      },
+      {
+        "id": "Hiddify-Android-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "Hiddify-Android-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "hiddify",
+    "platform": "ios",
+    "version": "4.0",
+    "publishedAt": "2026-02-19T23:11:58Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "hiddify",
+    "platform": "windows",
+    "version": "v4.1.1",
+    "publishedAt": "2026-03-05T17:22:57Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/hiddify/hiddify-app/releases"
+    },
+    "downloads": [
+      {
+        "id": "Hiddify-Windows-Portable-x64.zip",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Portable-x64.zip",
+        "arch": "x64",
+        "format": "zip"
+      },
+      {
+        "id": "Hiddify-Windows-Setup-x64.exe",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Setup-x64.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "Hiddify-Windows-x64.msix",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-x64.msix",
+        "arch": "x64",
+        "format": "msix"
+      }
+    ]
+  },
+  {
+    "appId": "hiddify",
+    "platform": "macos",
+    "version": "v4.1.1",
+    "publishedAt": "2026-03-05T17:22:57Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/hiddify/hiddify-app/releases"
+    },
+    "downloads": [
+      {
+        "id": "Hiddify-MacOS-Installer.pkg",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS-Installer.pkg",
+        "arch": "universal",
+        "format": "pkg"
+      },
+      {
+        "id": "Hiddify-MacOS.dmg",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "hiddify",
+    "platform": "linux",
+    "version": "v4.1.1",
+    "publishedAt": "2026-03-05T17:22:57Z",
+    "lastCheckedAt": "2026-09-16T12:32:59.390Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/hiddify/hiddify-app/releases"
+    },
+    "downloads": [
+      {
+        "id": "Hiddify-Debian-x64.deb",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Debian-x64.deb",
+        "arch": "x64",
+        "format": "deb"
+      },
+      {
+        "id": "Hiddify-Linux-x64-AppImage.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Linux-x64-AppImage.AppImage",
+        "arch": "x64",
+        "format": "AppImage"
+      },
+      {
+        "id": "Hiddify-Linux-x64-AppImage.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Linux-x64-AppImage.tar.gz",
+        "arch": "x64",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "egern",
+    "platform": "ios",
+    "version": "2.20.0",
+    "publishedAt": "2026-07-23T17:04:21Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "egern",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "clashfest",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/Nemu-x/ClashFest/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Nemu-x/ClashFest/releases"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "page",
+        "url": "https://github.com/Nemu-x/ClashFest/releases"
+      }
+    ],
+    "note": "官方发布资产均带 alpha 标记；尚未核验正式安装包，仅保留发布页。"
+  },
+  {
+    "appId": "exclave",
+    "platform": "android",
+    "version": "0.17.56",
+    "publishedAt": "2026-09-06T18:54:29Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.56"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/ExclaveNetwork/Exclave/releases"
+    },
+    "downloads": [
+      {
+        "id": "Exclave-0.17.56-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-legacy-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-legacy-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-legacy-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-legacy-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "Exclave-0.17.56-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "nekobox-for-android",
+    "platform": "android",
+    "version": "1.4.2",
+    "publishedAt": "2026-02-09T03:55:00Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/tag/1.4.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+    },
+    "note": "官方警告：Google Play 同名版本自 2024 年 5 月起由第三方控制，请使用此处官方 GitHub 发布。",
+    "downloads": [
+      {
+        "id": "NekoBox-1.4.2-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBox-1.4.2-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBox-1.4.2-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "NekoBox-1.4.2-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "husi",
+    "platform": "android",
+    "version": "v2.1.4",
+    "publishedAt": "2026-09-16T11:43:17Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases/tag/v2.1.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases"
+    },
+    "downloads": [
+      {
+        "id": "husi-2.1.4-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "husi-2.1.4-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "husi-2.1.4-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "husi-2.1.4-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "husi",
+    "platform": "windows",
+    "version": "v2.1.4",
+    "publishedAt": "2026-09-16T11:43:17Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases/tag/v2.1.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases"
+    },
+    "downloads": [
+      {
+        "id": "fr.husi-2.1.4-windows-amd64-installer.exe",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-installer.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "fr.husi-2.1.4-windows-amd64-jbr-installer.exe",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-jbr-installer.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "fr.husi-2.1.4-windows-amd64-jbr.zip",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-jbr.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "fr.husi-2.1.4-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "husi",
+    "platform": "macos",
+    "version": "v2.1.4",
+    "publishedAt": "2026-09-16T11:43:17Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases/tag/v2.1.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases"
+    },
+    "downloads": [
+      {
+        "id": "fr.husi-2.1.4-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "husi",
+    "platform": "linux",
+    "version": "v2.1.4",
+    "publishedAt": "2026-09-16T11:43:17Z",
+    "lastCheckedAt": "2026-09-16T12:47:15.044Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases/tag/v2.1.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xchacha20-poly1305/husi/releases"
+    },
+    "downloads": [
+      {
+        "id": "fr.husi-2.1.4-1-aarch64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1-aarch64.pkg.tar.zst",
+        "arch": "aarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "fr.husi-2.1.4-1-x86_64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1-x86_64.pkg.tar.zst",
+        "arch": "x86_64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "fr.husi-2.1.4-1.aarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1.aarch64.rpm",
+        "arch": "aarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "fr.husi-2.1.4-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "fr.husi-2.1.4-linux-aarch64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-aarch64.AppImage",
+        "arch": "aarch64",
+        "format": "AppImage"
+      },
+      {
+        "id": "fr.husi-2.1.4-linux-amd64.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-amd64.tar.zst",
+        "arch": "amd64",
+        "format": "tar.zst"
+      },
+      {
+        "id": "fr.husi-2.1.4-linux-arm64.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-arm64.tar.zst",
+        "arch": "arm64",
+        "format": "tar.zst"
+      },
+      {
+        "id": "fr.husi-2.1.4-linux-x86_64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-x86_64.AppImage",
+        "arch": "x86_64",
+        "format": "AppImage"
+      },
+      {
+        "id": "fr.husi_2.1.4_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi_2.1.4_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "fr.husi_2.1.4_arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi_2.1.4_arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "yumebox",
+    "platform": "android",
+    "version": "v0.6.2",
+    "publishedAt": "2026-08-19T10:52:00Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/YumeYucca/YumeBox/releases/tag/v0.6.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/YumeYucca/YumeBox/releases"
+    },
+    "note": "仅支持 arm64-v8a；builtin 包含 Geo 数据，external 不包含，两者功能相同。",
+    "downloads": [
+      {
+        "id": "YumeBox-builtin-0.6.2.apk",
+        "kind": "direct",
+        "url": "https://github.com/YumeYucca/YumeBox/releases/download/v0.6.2/YumeBox-builtin-0.6.2.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "YumeBox-external-0.6.2.apk",
+        "kind": "direct",
+        "url": "https://github.com/YumeYucca/YumeBox/releases/download/v0.6.2/YumeBox-external-0.6.2.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "shadowsocks-android",
+    "platform": "android",
+    "version": "v5.3.4",
+    "publishedAt": "2024-10-07T02:13:51Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.3.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/shadowsocks/shadowsocks-android/releases"
+    },
+    "downloads": [
+      {
+        "id": "shadowsocks--universal-5.3.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.4/shadowsocks--universal-5.3.4.apk",
+        "arch": "universal",
+        "format": "apk"
+      },
+      {
+        "id": "shadowsocks-tv-universal-5.3.4.apk",
+        "kind": "direct",
+        "url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.4/shadowsocks-tv-universal-5.3.4.apk",
+        "arch": "universal",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "onexray",
+    "platform": "android",
+    "version": "v26.9.3",
+    "publishedAt": "2026-09-16T10:15:37Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneXray/OneXray/releases/tag/v26.9.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneXray/OneXray/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneXray-android-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-android-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "onexray",
+    "platform": "ios",
+    "version": "26.9.2",
+    "publishedAt": "2026-09-14T01:40:03Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/onexray/id6745748773?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/onexray/id6745748773?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/onexray/id6745748773?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "onexray",
+    "platform": "windows",
+    "version": "v26.9.3",
+    "publishedAt": "2026-09-16T10:15:37Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneXray/OneXray/releases/tag/v26.9.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneXray/OneXray/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneXray-windows-amd64.exe",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-amd64.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "OneXray-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "OneXray-windows-arm64.exe",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-arm64.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "OneXray-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "onexray",
+    "platform": "macos",
+    "version": "v26.9.3",
+    "publishedAt": "2026-09-16T10:15:37Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneXray/OneXray/releases/tag/v26.9.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneXray/OneXray/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneXray-macos-universal.zip",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-macos-universal.zip",
+        "arch": "universal",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "onexray",
+    "platform": "linux",
+    "version": "v26.9.3",
+    "publishedAt": "2026-09-16T10:15:37Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OneXray/OneXray/releases/tag/v26.9.3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OneXray/OneXray/releases"
+    },
+    "downloads": [
+      {
+        "id": "OneXray-linux-aarch64.deb",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-aarch64.deb",
+        "arch": "aarch64",
+        "format": "deb"
+      },
+      {
+        "id": "OneXray-linux-aarch64.zip",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-aarch64.zip",
+        "arch": "aarch64",
+        "format": "zip"
+      },
+      {
+        "id": "OneXray-linux-x86_64.deb",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-x86_64.deb",
+        "arch": "x86_64",
+        "format": "deb"
+      },
+      {
+        "id": "OneXray-linux-x86_64.zip",
+        "kind": "direct",
+        "url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-x86_64.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "ssrvpn",
+    "platform": "android",
+    "version": "v5.0.5",
+    "publishedAt": "2026-09-15T11:49:24Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Elegying/SSRVPN/releases/tag/v5.0.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Elegying/SSRVPN/releases"
+    },
+    "note": "Android 仅 arm64-v8a，Mac 仅 Apple Silicon，Windows 仅 x64；桌面包未完成官方代码签名或公证。",
+    "downloads": [
+      {
+        "id": "SSRVPN.apk",
+        "kind": "direct",
+        "url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "ssrvpn",
+    "platform": "windows",
+    "version": "v5.0.5",
+    "publishedAt": "2026-09-15T11:49:24Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Elegying/SSRVPN/releases/tag/v5.0.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Elegying/SSRVPN/releases"
+    },
+    "note": "Android 仅 arm64-v8a，Mac 仅 Apple Silicon，Windows 仅 x64；桌面包未完成官方代码签名或公证。",
+    "downloads": [
+      {
+        "id": "SSRVPN_Setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN_Setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "ssrvpn",
+    "platform": "macos",
+    "version": "v5.0.5",
+    "publishedAt": "2026-09-15T11:49:24Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Elegying/SSRVPN/releases/tag/v5.0.5"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Elegying/SSRVPN/releases"
+    },
+    "note": "Android 仅 arm64-v8a，Mac 仅 Apple Silicon，Windows 仅 x64；桌面包未完成官方代码签名或公证。",
+    "downloads": [
+      {
+        "id": "SSRVPN.dmg",
+        "kind": "direct",
+        "url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "singcast",
+    "platform": "android",
+    "version": "v1.2.2",
+    "publishedAt": "2026-08-28T00:35:39Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mapleafgo/singcast/releases/tag/v1.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mapleafgo/singcast/releases"
+    },
+    "note": "官方 README 明确表示不支持 iOS；发布页中的 IPA 不作为受支持的正式获取选项。",
+    "downloads": [
+      {
+        "id": "singcast-1.2.2-android-arm64.apk",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-android-arm64.apk",
+        "arch": "arm64",
+        "format": "apk"
+      },
+      {
+        "id": "singcast-1.2.2-android-x64.apk",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-android-x64.apk",
+        "arch": "x64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "singcast",
+    "platform": "windows",
+    "version": "v1.2.2",
+    "publishedAt": "2026-08-28T00:35:39Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mapleafgo/singcast/releases/tag/v1.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mapleafgo/singcast/releases"
+    },
+    "note": "官方 README 明确表示不支持 iOS；发布页中的 IPA 不作为受支持的正式获取选项。",
+    "downloads": [
+      {
+        "id": "singcast-1.2.2-windows-amd64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-amd64-portable.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "singcast-1.2.2-windows-amd64.exe",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-amd64.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "singcast-1.2.2-windows-arm64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-arm64-portable.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "singcast-1.2.2-windows-arm64.exe",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-arm64.exe",
+        "arch": "arm64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "singcast",
+    "platform": "macos",
+    "version": "v1.2.2",
+    "publishedAt": "2026-08-28T00:35:39Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mapleafgo/singcast/releases/tag/v1.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mapleafgo/singcast/releases"
+    },
+    "note": "官方 README 明确表示不支持 iOS；发布页中的 IPA 不作为受支持的正式获取选项。",
+    "downloads": [
+      {
+        "id": "singcast-1.2.2-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "singcast-1.2.2-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "singcast",
+    "platform": "linux",
+    "version": "v1.2.2",
+    "publishedAt": "2026-08-28T00:35:39Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mapleafgo/singcast/releases/tag/v1.2.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mapleafgo/singcast/releases"
+    },
+    "note": "官方 README 明确表示不支持 iOS；发布页中的 IPA 不作为受支持的正式获取选项。",
+    "downloads": [
+      {
+        "id": "singcast-1.2.2-linux-amd64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64-portable.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "singcast-1.2.2-linux-amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "singcast-1.2.2-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "singcast-1.2.2-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "singcast-1.2.2-linux-arm64-portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64-portable.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "singcast-1.2.2-linux-arm64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.AppImage",
+        "arch": "arm64",
+        "format": "AppImage"
+      },
+      {
+        "id": "singcast-1.2.2-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "singcast-1.2.2-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "streisand",
+    "platform": "ios",
+    "version": "1.6.76",
+    "publishedAt": "2026-09-10T06:09:15Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "streisand",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+      }
+    ],
+    "note": "官方商店提供 Mac 兼容入口；未独立核验 Mac 正式版本，不套用 iOS 版本。"
+  },
+  {
+    "appId": "foxray",
+    "platform": "ios",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+      }
+    ],
+    "note": "美国区商店查询无结果，原仓库不可访问；版本、日期与官方图标尚无法重新核验，使用文字占位图。"
+  },
+  {
+    "appId": "foxray",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方应用商店",
+      "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+    },
+    "downloads": [
+      {
+        "id": "official-entry",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/foxray/id6448898396"
+      }
+    ],
+    "note": "美国区商店查询无结果，原仓库不可访问；版本、日期与官方图标尚无法重新核验，使用文字占位图。"
+  },
+  {
+    "appId": "clash-nyanpasu",
+    "platform": "windows",
+    "version": "v1.6.1",
+    "publishedAt": "2024-09-07T16:48:05Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases"
+    },
+    "downloads": [
+      {
+        "id": "Clash.Nyanpasu_1.6.1_x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "Clash.Nyanpasu_1.6.1_x64_portable.zip",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64_portable.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "clash-nyanpasu",
+    "platform": "macos",
+    "version": "v1.6.1",
+    "publishedAt": "2024-09-07T16:48:05Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases"
+    },
+    "downloads": [
+      {
+        "id": "Clash.Nyanpasu_1.6.1_aarch64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_aarch64.dmg",
+        "arch": "aarch64",
+        "format": "dmg"
+      },
+      {
+        "id": "Clash.Nyanpasu_1.6.1_x64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "clash-nyanpasu",
+    "platform": "linux",
+    "version": "v1.6.1",
+    "publishedAt": "2024-09-07T16:48:05Z",
+    "lastCheckedAt": "2026-09-16T12:47:15.044Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-nyanpasu-1.6.1-1.x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu-1.6.1-1.x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      },
+      {
+        "id": "clash-nyanpasu_1.6.1_amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "clash-nyanpasu_1.6.1_amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/clash-nyanpasu_1.6.1_amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "clash-party",
+    "platform": "windows",
+    "version": "v2.0.2",
+    "publishedAt": "2026-08-14T15:07:21Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-party-win7-2.0.2-ia32-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-portable.7z",
+        "arch": "ia32",
+        "format": "7z"
+      },
+      {
+        "id": "clash-party-win7-2.0.2-ia32-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-setup.exe",
+        "arch": "ia32",
+        "format": "exe"
+      },
+      {
+        "id": "clash-party-win7-2.0.2-x64-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-portable.7z",
+        "arch": "x64",
+        "format": "7z"
+      },
+      {
+        "id": "clash-party-win7-2.0.2-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-arm64-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-portable.7z",
+        "arch": "arm64",
+        "format": "7z"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-ia32-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-portable.7z",
+        "arch": "ia32",
+        "format": "7z"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-ia32-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-setup.exe",
+        "arch": "ia32",
+        "format": "exe"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-x64-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-portable.7z",
+        "arch": "x64",
+        "format": "7z"
+      },
+      {
+        "id": "clash-party-windows-2.0.2-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "clash-party",
+    "platform": "macos",
+    "version": "v2.0.2",
+    "publishedAt": "2026-08-14T15:07:21Z",
+    "lastCheckedAt": "2026-09-16T12:31:59.294Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-party-catalina-2.0.2-arm64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-arm64.pkg",
+        "arch": "arm64",
+        "format": "pkg"
+      },
+      {
+        "id": "clash-party-catalina-2.0.2-x64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-x64.pkg",
+        "arch": "x64",
+        "format": "pkg"
+      },
+      {
+        "id": "clash-party-macos-2.0.2-arm64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-arm64.pkg",
+        "arch": "arm64",
+        "format": "pkg"
+      },
+      {
+        "id": "clash-party-macos-2.0.2-x64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-x64.pkg",
+        "arch": "x64",
+        "format": "pkg"
+      }
+    ]
+  },
+  {
+    "appId": "clash-party",
+    "platform": "linux",
+    "version": "v2.0.2",
+    "publishedAt": "2026-08-14T15:07:21Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.2"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/mihomo-party-org/clash-party/releases"
+    },
+    "downloads": [
+      {
+        "id": "clash-party-linux-2.0.2-aarch64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.pkg.tar.zst",
+        "arch": "aarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "clash-party-linux-2.0.2-aarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.rpm",
+        "arch": "aarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "clash-party-linux-2.0.2-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "clash-party-linux-2.0.2-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "clash-party-linux-2.0.2-x64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x64.pkg.tar.zst",
+        "arch": "x64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "clash-party-linux-2.0.2-x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-clash",
+    "platform": "windows",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:45:45Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.Clash-windows-386.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-386.zip",
+        "arch": "386",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.Clash-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.Clash-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-clash",
+    "platform": "macos",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:45:45Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.Clash-darwin-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-darwin-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.Clash-darwin-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-darwin-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "gui-for-clash",
+    "platform": "linux",
+    "version": "v1.27.0",
+    "publishedAt": "2026-09-07T16:45:45Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/tag/v1.27.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases"
+    },
+    "downloads": [
+      {
+        "id": "GUI.for.Clash-linux-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-linux-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "GUI.for.Clash-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "sparkle",
+    "platform": "windows",
+    "version": "1.26.8",
+    "publishedAt": "2026-09-03T04:58:27Z",
+    "lastCheckedAt": "2026-09-16T12:32:59.390Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xishang0128/sparkle/releases/tag/1.26.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xishang0128/sparkle/releases"
+    },
+    "downloads": [
+      {
+        "id": "sparkle-windows-1.26.8-arm64-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-arm64-portable.7z",
+        "arch": "arm64",
+        "format": "7z"
+      },
+      {
+        "id": "sparkle-windows-1.26.8-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "sparkle-windows-1.26.8-x64-portable.7z",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-x64-portable.7z",
+        "arch": "x64",
+        "format": "7z"
+      },
+      {
+        "id": "sparkle-windows-1.26.8-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ]
+  },
+  {
+    "appId": "sparkle",
+    "platform": "macos",
+    "version": "1.26.8",
+    "publishedAt": "2026-09-03T04:58:27Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xishang0128/sparkle/releases/tag/1.26.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xishang0128/sparkle/releases"
+    },
+    "downloads": [
+      {
+        "id": "sparkle-macos-1.26.8-arm64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-macos-1.26.8-arm64.pkg",
+        "arch": "arm64",
+        "format": "pkg"
+      },
+      {
+        "id": "sparkle-macos-1.26.8-x64.pkg",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-macos-1.26.8-x64.pkg",
+        "arch": "x64",
+        "format": "pkg"
+      }
+    ]
+  },
+  {
+    "appId": "sparkle",
+    "platform": "linux",
+    "version": "1.26.8",
+    "publishedAt": "2026-09-03T04:58:27Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/xishang0128/sparkle/releases/tag/1.26.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/xishang0128/sparkle/releases"
+    },
+    "downloads": [
+      {
+        "id": "sparkle-linux-1.26.8-aarch64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-aarch64.pkg.tar.zst",
+        "arch": "aarch64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-aarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-aarch64.rpm",
+        "arch": "aarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-loong64.deb",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loong64.deb",
+        "arch": "loong64",
+        "format": "deb"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-loong64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loong64.pkg.tar.zst",
+        "arch": "loong64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-loongarch64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loongarch64.rpm",
+        "arch": "loongarch64",
+        "format": "rpm"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-x64.pkg.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-x64.pkg.tar.zst",
+        "arch": "x64",
+        "format": "pkg.tar.zst"
+      },
+      {
+        "id": "sparkle-linux-1.26.8-x86_64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-x86_64.rpm",
+        "arch": "x86_64",
+        "format": "rpm"
+      }
+    ]
+  },
+  {
+    "appId": "v2rayn",
+    "platform": "windows",
+    "version": "7.24.9",
+    "publishedAt": "2026-08-29T02:47:27Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/2dust/v2rayN/releases/tag/7.24.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/2dust/v2rayN/releases"
+    },
+    "downloads": [
+      {
+        "id": "v2rayN-windows-64-desktop.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64-desktop.zip",
+        "arch": "64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-windows-64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-64.zip",
+        "arch": "64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-windows-86-desktop.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86-desktop.zip",
+        "arch": "86",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-windows-86.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-86.zip",
+        "arch": "86",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-windows-arm64-desktop.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64-desktop.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "v2rayn",
+    "platform": "macos",
+    "version": "7.24.9",
+    "publishedAt": "2026-08-29T02:47:27Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/2dust/v2rayN/releases/tag/7.24.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/2dust/v2rayN/releases"
+    },
+    "downloads": [
+      {
+        "id": "v2rayN-macos-64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.dmg",
+        "arch": "64",
+        "format": "dmg"
+      },
+      {
+        "id": "v2rayN-macos-64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-64.zip",
+        "arch": "64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "v2rayN-macos-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-macos-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "v2rayn",
+    "platform": "linux",
+    "version": "7.24.9",
+    "publishedAt": "2026-08-29T02:47:27Z",
+    "lastCheckedAt": "2026-09-16T12:26:57.367Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/2dust/v2rayN/releases/tag/7.24.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/2dust/v2rayN/releases"
+    },
+    "downloads": [
+      {
+        "id": "v2rayN-linux-64.deb",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.deb",
+        "arch": "64",
+        "format": "deb"
+      },
+      {
+        "id": "v2rayN-linux-64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-64.zip",
+        "arch": "64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "v2rayN-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      },
+      {
+        "id": "v2rayN-linux-loong64.deb",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-loong64.deb",
+        "arch": "loong64",
+        "format": "deb"
+      },
+      {
+        "id": "v2rayN-linux-rhel-64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-64.rpm",
+        "arch": "64",
+        "format": "rpm"
+      },
+      {
+        "id": "v2rayN-linux-rhel-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "v2rayN-linux-rhel-loong64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-rhel-loong64.rpm",
+        "arch": "loong64",
+        "format": "rpm"
+      },
+      {
+        "id": "v2rayN-linux-riscv64.deb",
+        "kind": "direct",
+        "url": "https://github.com/2dust/v2rayN/releases/download/7.24.9/v2rayN-linux-riscv64.deb",
+        "arch": "riscv64",
+        "format": "deb"
+      }
+    ]
+  },
+  {
+    "appId": "anyportal",
+    "platform": "android",
+    "version": "v0.6.31+105",
+    "publishedAt": "2025-10-17T13:09:40Z",
+    "lastCheckedAt": "2026-09-16T12:32:59.390Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases/tag/v0.6.31%2B105"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases"
+    },
+    "note": "iOS 开发因 Network Extension 授权受阻，不列为可用平台；Android api28 与 apilatest 的外部内核能力不同。",
+    "downloads": [
+      {
+        "id": "anyportal-android-api28-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "anyportal-android-api28-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "anyportal-android-api28-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      },
+      {
+        "id": "anyportal-android-apilatest-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "anyportal-android-apilatest-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "anyportal-android-apilatest-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "anyportal",
+    "platform": "windows",
+    "version": "v0.6.31+105",
+    "publishedAt": "2025-10-17T13:09:40Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases/tag/v0.6.31%2B105"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases"
+    },
+    "note": "iOS 开发因 Network Extension 授权受阻，不列为可用平台；Android api28 与 apilatest 的外部内核能力不同。",
+    "downloads": [
+      {
+        "id": "anyportal-windows-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-windows-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      },
+      {
+        "id": "anyportal-windows.zip",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-windows.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "anyportal",
+    "platform": "macos",
+    "version": "v0.6.31+105",
+    "publishedAt": "2025-10-17T13:09:40Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases/tag/v0.6.31%2B105"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases"
+    },
+    "note": "iOS 开发因 Network Extension 授权受阻，不列为可用平台；Android api28 与 apilatest 的外部内核能力不同。",
+    "downloads": [
+      {
+        "id": "anyportal-macos.dmg",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-macos.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "anyportal",
+    "platform": "linux",
+    "version": "v0.6.31+105",
+    "publishedAt": "2025-10-17T13:09:40Z",
+    "lastCheckedAt": "2026-09-16T12:29:21.008Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases/tag/v0.6.31%2B105"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/AnyPortal/AnyPortal/releases"
+    },
+    "note": "iOS 开发因 Network Extension 授权受阻，不列为可用平台；Android api28 与 apilatest 的外部内核能力不同。",
+    "downloads": [
+      {
+        "id": "anyportal-linux.zip",
+        "kind": "direct",
+        "url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-linux.zip",
+        "arch": "x64",
+        "format": "zip"
+      }
+    ]
   }
 ]

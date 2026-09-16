@@ -1,0 +1,497 @@
+{
+  "id": 370650680,
+  "tag_name": "v2.0.2",
+  "name": "v2.0.2",
+  "html_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.2",
+  "published_at": "2026-08-14T15:07:21Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 514555571,
+      "name": "clash-party-catalina-2.0.2-arm64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514555573,
+      "name": "clash-party-catalina-2.0.2-arm64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-arm64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557110,
+      "name": "clash-party-catalina-2.0.2-x64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557102,
+      "name": "clash-party-catalina-2.0.2-x64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-catalina-2.0.2-x64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556877,
+      "name": "clash-party-linux-2.0.2-aarch64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556876,
+      "name": "clash-party-linux-2.0.2-aarch64.pkg.tar.zst.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.pkg.tar.zst.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556873,
+      "name": "clash-party-linux-2.0.2-aarch64.rpm",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556872,
+      "name": "clash-party-linux-2.0.2-aarch64.rpm.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-aarch64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557808,
+      "name": "clash-party-linux-2.0.2-amd64.deb",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557807,
+      "name": "clash-party-linux-2.0.2-amd64.deb.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-amd64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556878,
+      "name": "clash-party-linux-2.0.2-arm64.deb",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556870,
+      "name": "clash-party-linux-2.0.2-arm64.deb.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-arm64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557806,
+      "name": "clash-party-linux-2.0.2-x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557814,
+      "name": "clash-party-linux-2.0.2-x64.pkg.tar.zst.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x64.pkg.tar.zst.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557809,
+      "name": "clash-party-linux-2.0.2-x86_64.rpm",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557811,
+      "name": "clash-party-linux-2.0.2-x86_64.rpm.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-linux-2.0.2-x86_64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557973,
+      "name": "clash-party-macos-2.0.2-arm64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557970,
+      "name": "clash-party-macos-2.0.2-arm64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-arm64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557768,
+      "name": "clash-party-macos-2.0.2-x64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557761,
+      "name": "clash-party-macos-2.0.2-x64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-macos-2.0.2-x64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557440,
+      "name": "clash-party-win7-2.0.2-ia32-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557442,
+      "name": "clash-party-win7-2.0.2-ia32-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557438,
+      "name": "clash-party-win7-2.0.2-ia32-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557439,
+      "name": "clash-party-win7-2.0.2-ia32-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-ia32-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558121,
+      "name": "clash-party-win7-2.0.2-x64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558119,
+      "name": "clash-party-win7-2.0.2-x64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558115,
+      "name": "clash-party-win7-2.0.2-x64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558118,
+      "name": "clash-party-win7-2.0.2-x64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-win7-2.0.2-x64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558699,
+      "name": "clash-party-windows-2.0.2-arm64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558693,
+      "name": "clash-party-windows-2.0.2-arm64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558696,
+      "name": "clash-party-windows-2.0.2-arm64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558697,
+      "name": "clash-party-windows-2.0.2-arm64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-arm64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558794,
+      "name": "clash-party-windows-2.0.2-ia32-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558792,
+      "name": "clash-party-windows-2.0.2-ia32-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558795,
+      "name": "clash-party-windows-2.0.2-ia32-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558793,
+      "name": "clash-party-windows-2.0.2-ia32-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-ia32-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558471,
+      "name": "clash-party-windows-2.0.2-x64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558472,
+      "name": "clash-party-windows-2.0.2-x64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558470,
+      "name": "clash-party-windows-2.0.2-x64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558466,
+      "name": "clash-party-windows-2.0.2-x64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/clash-party-windows-2.0.2-x64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514559749,
+      "name": "latest.yml",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/latest.yml",
+      "state": "uploaded"
+    },
+    {
+      "id": 514555578,
+      "name": "mihomo-party-catalina-2.0.2-arm64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-catalina-2.0.2-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514555574,
+      "name": "mihomo-party-catalina-2.0.2-arm64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-catalina-2.0.2-arm64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557105,
+      "name": "mihomo-party-catalina-2.0.2-x64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-catalina-2.0.2-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557101,
+      "name": "mihomo-party-catalina-2.0.2-x64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-catalina-2.0.2-x64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556871,
+      "name": "mihomo-party-linux-2.0.2-aarch64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-aarch64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556867,
+      "name": "mihomo-party-linux-2.0.2-aarch64.pkg.tar.zst.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-aarch64.pkg.tar.zst.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556868,
+      "name": "mihomo-party-linux-2.0.2-aarch64.rpm",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-aarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556869,
+      "name": "mihomo-party-linux-2.0.2-aarch64.rpm.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-aarch64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557810,
+      "name": "mihomo-party-linux-2.0.2-amd64.deb",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557803,
+      "name": "mihomo-party-linux-2.0.2-amd64.deb.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-amd64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556875,
+      "name": "mihomo-party-linux-2.0.2-arm64.deb",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 514556874,
+      "name": "mihomo-party-linux-2.0.2-arm64.deb.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-arm64.deb.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557813,
+      "name": "mihomo-party-linux-2.0.2-x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557804,
+      "name": "mihomo-party-linux-2.0.2-x64.pkg.tar.zst.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-x64.pkg.tar.zst.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557805,
+      "name": "mihomo-party-linux-2.0.2-x86_64.rpm",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557802,
+      "name": "mihomo-party-linux-2.0.2-x86_64.rpm.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-linux-2.0.2-x86_64.rpm.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557971,
+      "name": "mihomo-party-macos-2.0.2-arm64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-macos-2.0.2-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557972,
+      "name": "mihomo-party-macos-2.0.2-arm64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-macos-2.0.2-arm64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557765,
+      "name": "mihomo-party-macos-2.0.2-x64.pkg",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-macos-2.0.2-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557758,
+      "name": "mihomo-party-macos-2.0.2-x64.pkg.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-macos-2.0.2-x64.pkg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557441,
+      "name": "mihomo-party-win7-2.0.2-ia32-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-ia32-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557437,
+      "name": "mihomo-party-win7-2.0.2-ia32-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-ia32-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557443,
+      "name": "mihomo-party-win7-2.0.2-ia32-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-ia32-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514557436,
+      "name": "mihomo-party-win7-2.0.2-ia32-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-ia32-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558116,
+      "name": "mihomo-party-win7-2.0.2-x64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-x64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558117,
+      "name": "mihomo-party-win7-2.0.2-x64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-x64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558120,
+      "name": "mihomo-party-win7-2.0.2-x64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558113,
+      "name": "mihomo-party-win7-2.0.2-x64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-win7-2.0.2-x64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558692,
+      "name": "mihomo-party-windows-2.0.2-arm64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-arm64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558698,
+      "name": "mihomo-party-windows-2.0.2-arm64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-arm64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558694,
+      "name": "mihomo-party-windows-2.0.2-arm64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558695,
+      "name": "mihomo-party-windows-2.0.2-arm64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-arm64-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558796,
+      "name": "mihomo-party-windows-2.0.2-ia32-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-ia32-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558797,
+      "name": "mihomo-party-windows-2.0.2-ia32-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-ia32-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558801,
+      "name": "mihomo-party-windows-2.0.2-ia32-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-ia32-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558798,
+      "name": "mihomo-party-windows-2.0.2-ia32-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-ia32-setup.exe.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558468,
+      "name": "mihomo-party-windows-2.0.2-x64-portable.7z",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-x64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558469,
+      "name": "mihomo-party-windows-2.0.2-x64-portable.7z.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-x64-portable.7z.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558474,
+      "name": "mihomo-party-windows-2.0.2-x64-setup.exe",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-x64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 514558473,
+      "name": "mihomo-party-windows-2.0.2-x64-setup.exe.sha256",
+      "browser_download_url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.2/mihomo-party-windows-2.0.2-x64-setup.exe.sha256",
+      "state": "uploaded"
+    }
+  ]
+}

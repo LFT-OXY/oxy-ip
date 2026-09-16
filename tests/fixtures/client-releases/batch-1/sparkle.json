@@ -1,0 +1,107 @@
+{
+  "id": 379677951,
+  "tag_name": "1.26.8",
+  "name": "1.26.8",
+  "html_url": "https://github.com/xishang0128/sparkle/releases/tag/1.26.8",
+  "published_at": "2026-09-03T04:58:27Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 537839411,
+      "name": "latest.yml",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/latest.yml",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839410,
+      "name": "sparkle-linux-1.26.8-aarch64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-aarch64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839409,
+      "name": "sparkle-linux-1.26.8-aarch64.rpm",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-aarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839403,
+      "name": "sparkle-linux-1.26.8-amd64.deb",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839406,
+      "name": "sparkle-linux-1.26.8-arm64.deb",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839408,
+      "name": "sparkle-linux-1.26.8-loong64.deb",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loong64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839401,
+      "name": "sparkle-linux-1.26.8-loong64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loong64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839402,
+      "name": "sparkle-linux-1.26.8-loongarch64.rpm",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-loongarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839412,
+      "name": "sparkle-linux-1.26.8-x64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-x64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839400,
+      "name": "sparkle-linux-1.26.8-x86_64.rpm",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-linux-1.26.8-x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839397,
+      "name": "sparkle-macos-1.26.8-arm64.pkg",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-macos-1.26.8-arm64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839399,
+      "name": "sparkle-macos-1.26.8-x64.pkg",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-macos-1.26.8-x64.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839398,
+      "name": "sparkle-windows-1.26.8-arm64-portable.7z",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-arm64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839405,
+      "name": "sparkle-windows-1.26.8-arm64-setup.exe",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839407,
+      "name": "sparkle-windows-1.26.8-x64-portable.7z",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-x64-portable.7z",
+      "state": "uploaded"
+    },
+    {
+      "id": 537839404,
+      "name": "sparkle-windows-1.26.8-x64-setup.exe",
+      "browser_download_url": "https://github.com/xishang0128/sparkle/releases/download/1.26.8/sparkle-windows-1.26.8-x64-setup.exe",
+      "state": "uploaded"
+    }
+  ]
+}

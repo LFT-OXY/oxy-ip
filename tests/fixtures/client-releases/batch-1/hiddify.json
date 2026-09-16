@@ -1,0 +1,83 @@
+{
+  "id": 293596470,
+  "tag_name": "v4.1.1",
+  "name": "v4.1.1",
+  "html_url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1",
+  "published_at": "2026-03-05T17:22:57Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 367655752,
+      "name": "Hiddify-Android-arm64.apk",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-arm64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655753,
+      "name": "Hiddify-Android-arm7.apk",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-arm7.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655754,
+      "name": "Hiddify-Android-universal.apk",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-universal.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655748,
+      "name": "Hiddify-Android-x86_64.apk",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655751,
+      "name": "Hiddify-Debian-x64.deb",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Debian-x64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655750,
+      "name": "Hiddify-Linux-x64-AppImage.AppImage",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Linux-x64-AppImage.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655755,
+      "name": "Hiddify-Linux-x64-AppImage.tar.gz",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Linux-x64-AppImage.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655756,
+      "name": "Hiddify-MacOS-Installer.pkg",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS-Installer.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655745,
+      "name": "Hiddify-MacOS.dmg",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655746,
+      "name": "Hiddify-Windows-Portable-x64.zip",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Portable-x64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655747,
+      "name": "Hiddify-Windows-Setup-x64.exe",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Setup-x64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 367655749,
+      "name": "Hiddify-Windows-x64.msix",
+      "browser_download_url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-x64.msix",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtemp, readFile, writeFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, readdir, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { test } from "node:test";
@@ -272,7 +272,27 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   ]);
   const loader = join(directory, "fetch.mjs");
   const output = join(directory, "releases.json");
-  const fixtures = [flclash, v2rayng];
+  const batchDirectory = new URL(
+    "./fixtures/client-releases/batch-1/",
+    import.meta.url,
+  );
+  const batch = await Promise.all(
+    (await readdir(batchDirectory))
+      .filter(
+        (name) =>
+          name.endsWith(".json") &&
+          !["clashfest.json", "shadowsocks-nightly.json"].includes(name),
+      )
+      .map(async (name) =>
+        JSON.parse(await readFile(new URL(name, batchDirectory), "utf8")),
+      ),
+  );
+  const fixtures = [flclash, v2rayng, ...batch.filter((raw) => raw.tag_name)];
+  const stores = [
+    shadowrocket,
+    stash,
+    ...batch.filter((raw) => raw.resultCount === 1),
+  ];
   const appcast = await readFile(
     new URL("./fixtures/client-releases/stash-appcast.xml", import.meta.url),
     "utf8",
@@ -280,16 +300,20 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   await writeFile(
     loader,
     `const releases = ${JSON.stringify(fixtures)};
-    const stores = ${JSON.stringify([shadowrocket, stash])};
+    const stores = ${JSON.stringify(stores)};
     const appcast = ${JSON.stringify(appcast)};
     globalThis.fetch = async (url, init) => {
       if (init.method === 'HEAD') return new Response(null, {status: 200});
       if (url.startsWith('https://itunes.apple.com/')) {
         if (process.env.STORE_FAILURE && url.includes('932747118')) return new Response(null, {status: 429});
-        return Response.json(url.includes('932747118') ? stores[0] : stores[1]);
+        const store = stores.find(s => String(s.results[0].trackId) === new URL(url).searchParams.get('id'));
+        if (!store) throw new Error('Missing store fixture: ' + url);
+        return Response.json(store);
       }
       if (url === 'https://mac-release.stash.ws/appcast.xml') return new Response(appcast);
-      const release = url.includes('chen08209') ? releases[0] : releases[1];
+      const repo = new URL(url).pathname.split('/').slice(2,4).join('/');
+      const release = releases.find(r => r.html_url.startsWith('https://github.com/' + repo + '/releases/'));
+      if (!release) throw new Error('Missing release fixture: ' + url);
       return Response.json(url.includes('/assets?') ? release.assets : [release]);
     };`,
   );

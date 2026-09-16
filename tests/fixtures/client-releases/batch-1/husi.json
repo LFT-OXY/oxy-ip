@@ -1,0 +1,143 @@
+{
+  "id": 389873918,
+  "tag_name": "v2.1.4",
+  "name": "v2.1.4",
+  "html_url": "https://github.com/xchacha20-poly1305/husi/releases/tag/v2.1.4",
+  "published_at": "2026-09-16T11:43:17Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567854897,
+      "name": "fr.husi-2.1.4-1-aarch64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1-aarch64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854626,
+      "name": "fr.husi-2.1.4-1-x86_64.pkg.tar.zst",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1-x86_64.pkg.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854827,
+      "name": "fr.husi-2.1.4-1.aarch64.rpm",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1.aarch64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854627,
+      "name": "fr.husi-2.1.4-1.x86_64.rpm",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-1.x86_64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854801,
+      "name": "fr.husi-2.1.4-arm64.dmg",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854876,
+      "name": "fr.husi-2.1.4-linux-aarch64.AppImage",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-aarch64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854900,
+      "name": "fr.husi-2.1.4-linux-aarch64.AppImage.zsync",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-aarch64.AppImage.zsync",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854628,
+      "name": "fr.husi-2.1.4-linux-amd64.tar.zst",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-amd64.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854881,
+      "name": "fr.husi-2.1.4-linux-arm64.tar.zst",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-arm64.tar.zst",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854629,
+      "name": "fr.husi-2.1.4-linux-x86_64.AppImage",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-x86_64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854725,
+      "name": "fr.husi-2.1.4-linux-x86_64.AppImage.zsync",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-linux-x86_64.AppImage.zsync",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854750,
+      "name": "fr.husi-2.1.4-windows-amd64-installer.exe",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854751,
+      "name": "fr.husi-2.1.4-windows-amd64-jbr-installer.exe",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-jbr-installer.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854740,
+      "name": "fr.husi-2.1.4-windows-amd64-jbr.zip",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64-jbr.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854760,
+      "name": "fr.husi-2.1.4-windows-amd64.zip",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi-2.1.4-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854662,
+      "name": "fr.husi_2.1.4_amd64.deb",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi_2.1.4_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854847,
+      "name": "fr.husi_2.1.4_arm64.deb",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/fr.husi_2.1.4_arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854970,
+      "name": "husi-2.1.4-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854959,
+      "name": "husi-2.1.4-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854927,
+      "name": "husi-2.1.4-x86.apk",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854925,
+      "name": "husi-2.1.4-x86_64.apk",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/husi-2.1.4-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567854630,
+      "name": "mapping-v2.1.4.zip",
+      "browser_download_url": "https://github.com/xchacha20-poly1305/husi/releases/download/v2.1.4/mapping-v2.1.4.zip",
+      "state": "uploaded"
+    }
+  ]
+}

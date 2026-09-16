@@ -1,0 +1,59 @@
+{
+  "id": 383684306,
+  "tag_name": "0.17.56",
+  "name": "0.17.56",
+  "html_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.56",
+  "published_at": "2026-09-06T18:54:29Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 547555928,
+      "name": "Exclave-0.17.56-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555931,
+      "name": "Exclave-0.17.56-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555932,
+      "name": "Exclave-0.17.56-legacy-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555929,
+      "name": "Exclave-0.17.56-legacy-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555930,
+      "name": "Exclave-0.17.56-legacy-x86.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555957,
+      "name": "Exclave-0.17.56-legacy-x86_64.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-legacy-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555958,
+      "name": "Exclave-0.17.56-x86.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 547555960,
+      "name": "Exclave-0.17.56-x86_64.apk",
+      "browser_download_url": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.56/Exclave-0.17.56-x86_64.apk",
+      "state": "uploaded"
+    }
+  ]
+}

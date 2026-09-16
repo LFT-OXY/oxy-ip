@@ -378,7 +378,7 @@ function ClientDetail({ appId }: { appId: string }) {
                 {release.downloads.map((item) => (
                   <option key={item.id} value={item.id}>
                     {item.kind === "direct"
-                      ? `${t(platforms[platform])} · ${item.arch} · ${item.format}`
+                      ? `${t(platforms[platform])} · ${item.arch} · ${item.format}${release.downloads.some((other) => other.id !== item.id && other.kind === "direct" && other.arch === item.arch && other.format === item.format) ? ` · ${item.id}` : ""}`
                       : item.kind === "store"
                         ? t("官方应用商店")
                         : t("官方下载页")}

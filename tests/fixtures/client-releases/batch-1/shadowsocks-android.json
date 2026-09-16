@@ -1,0 +1,23 @@
+{
+  "id": 178594588,
+  "tag_name": "v5.3.4",
+  "name": "v5.3.4",
+  "html_url": "https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.3.4",
+  "published_at": "2024-10-07T02:13:51Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 197333824,
+      "name": "shadowsocks--universal-5.3.4.apk",
+      "browser_download_url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.4/shadowsocks--universal-5.3.4.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 197333863,
+      "name": "shadowsocks-tv-universal-5.3.4.apk",
+      "browser_download_url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.4/shadowsocks-tv-universal-5.3.4.apk",
+      "state": "uploaded"
+    }
+  ]
+}

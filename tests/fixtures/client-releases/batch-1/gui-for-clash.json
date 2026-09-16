@@ -1,0 +1,53 @@
+{
+  "id": 384220627,
+  "tag_name": "v1.27.0",
+  "name": "v1.27.0",
+  "html_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/tag/v1.27.0",
+  "published_at": "2026-09-07T16:45:45Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 549092484,
+      "name": "GUI.for.Clash-darwin-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-darwin-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092480,
+      "name": "GUI.for.Clash-darwin-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-darwin-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092482,
+      "name": "GUI.for.Clash-linux-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-linux-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092483,
+      "name": "GUI.for.Clash-linux-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-linux-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092486,
+      "name": "GUI.for.Clash-windows-386.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-386.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092479,
+      "name": "GUI.for.Clash-windows-amd64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 549092481,
+      "name": "GUI.for.Clash-windows-arm64.zip",
+      "browser_download_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.27.0/GUI.for.Clash-windows-arm64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

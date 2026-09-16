@@ -1,0 +1,71 @@
+{
+  "id": 255251052,
+  "tag_name": "v0.6.31+105",
+  "name": "v0.6.31+105",
+  "html_url": "https://github.com/AnyPortal/AnyPortal/releases/tag/v0.6.31%2B105",
+  "published_at": "2025-10-17T13:09:40Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 305391305,
+      "name": "anyportal-android-api28-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391310,
+      "name": "anyportal-android-api28-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391312,
+      "name": "anyportal-android-api28-x86_64.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-api28-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391311,
+      "name": "anyportal-android-apilatest-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391309,
+      "name": "anyportal-android-apilatest-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391314,
+      "name": "anyportal-android-apilatest-x86_64.apk",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-android-apilatest-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391308,
+      "name": "anyportal-linux.zip",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-linux.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391313,
+      "name": "anyportal-macos.dmg",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-macos.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391306,
+      "name": "anyportal-windows-setup.exe",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-windows-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 305391307,
+      "name": "anyportal-windows.zip",
+      "browser_download_url": "https://github.com/AnyPortal/AnyPortal/releases/download/v0.6.31%2B105/anyportal-windows.zip",
+      "state": "uploaded"
+    }
+  ]
+}

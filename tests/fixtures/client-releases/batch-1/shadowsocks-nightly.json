@@ -1,0 +1,23 @@
+{
+  "id": 284686059,
+  "tag_name": "v5.3.5-nightly",
+  "name": "v5.3.5-nightly",
+  "html_url": "https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.3.5-nightly",
+  "published_at": "2026-02-10T06:47:17Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 353473900,
+      "name": "shadowsocks-5.3.5-nightly.apk",
+      "browser_download_url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.5-nightly/shadowsocks-5.3.5-nightly.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 353473899,
+      "name": "shadowsocks-tv-5.3.5-nightly.apk",
+      "browser_download_url": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.5-nightly/shadowsocks-tv-5.3.5-nightly.apk",
+      "state": "uploaded"
+    }
+  ]
+}

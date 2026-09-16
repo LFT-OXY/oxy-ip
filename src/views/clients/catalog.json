@@ -117,5 +117,398 @@
     "developers": ["appshubcc"],
     "sources": ["https://github.com/appshubcc/Bettbox"],
     "icon": "/client-icons/bettbox.webp"
+  },
+  {
+    "id": "surge",
+    "name": "Surge",
+    "aliases": ["Surge 5"],
+    "description": "面向开发者的网络工具箱，支持规则代理、流量调试、DNS 与脚本。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "iOS 完整功能需应用内购买；Mac 单独授权并提供试用，费用以官方商店和授权页为准。",
+    "developers": ["Surge Networks Inc."],
+    "sources": [
+      "https://apps.apple.com/app/surge-5/id1442620678",
+      "https://apps.apple.com/us/app/surge-5/id1442620678?uo=4",
+      "https://nssurge.com/"
+    ],
+    "icon": "/client-icons/surge.webp"
+  },
+  {
+    "id": "quantumult-x",
+    "name": "Quantumult X",
+    "aliases": [],
+    "description": "支持 HTTP 调试、请求重写、自定义 DNS 与规则分流的网络工具。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "美国区 App Store US$9.99；地区价格以商店为准。",
+    "developers": ["Cross Utility Ltd"],
+    "sources": [
+      "https://apps.apple.com/app/quantumult-x/id1443988620",
+      "https://apps.apple.com/us/app/quantumult-x/id1443988620?uo=4"
+    ],
+    "icon": "/client-icons/quantumult-x.webp"
+  },
+  {
+    "id": "loon",
+    "name": "Loon",
+    "aliases": [],
+    "description": "支持多协议代理、流量记录、MITM、规则路由与 JavaScript 扩展的网络工具。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "美国区 App Store US$7.99；地区价格以商店为准。",
+    "developers": ["Loon Lab Limited"],
+    "sources": [
+      "https://apps.apple.com/app/loon/id1373567447",
+      "https://apps.apple.com/us/app/loon/id1373567447?uo=4"
+    ],
+    "icon": "/client-icons/loon.webp"
+  },
+  {
+    "id": "clash-by-hako",
+    "name": "Clash by Hako",
+    "aliases": ["Clash"],
+    "description": "面向 Apple 平台的原生 Clash 客户端，使用基于 Mihomo 的 Hako 内核与规则配置。",
+    "platforms": ["ios", "macos"],
+    "cores": ["Hako", "Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["TokenPLS", "OmniWide Media Limited"],
+    "sources": [
+      "https://clash.md/",
+      "https://apps.apple.com/us/app/clash-rule-based-proxy-utility/id6794257189?uo=4"
+    ],
+    "icon": "/client-icons/clash-by-hako.webp"
+  },
+  {
+    "id": "karing",
+    "name": "Karing",
+    "aliases": [],
+    "description": "基于定制 sing-box 的多平台工具，支持多种订阅、规则组与配置同步。",
+    "platforms": ["android", "ios", "windows", "macos", "linux"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["KaringX"],
+    "sources": [
+      "https://github.com/KaringX/karing",
+      "https://apps.apple.com/us/app/karing/id6472431552?uo=4"
+    ],
+    "icon": "/client-icons/karing.webp"
+  },
+  {
+    "id": "pharos-pro",
+    "name": "Pharos Pro",
+    "aliases": [],
+    "description": "多协议代理客户端，支持订阅、二维码导入、节点测速与规则配置。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "美国区 App Store US$2.99；地区价格以商店为准。",
+    "developers": ["Kuaizhu Technology Limited Co., Ltd"],
+    "sources": [
+      "https://apps.apple.com/app/pharos-pro/id1456610173",
+      "https://apps.apple.com/us/app/pharos-pro/id1456610173?uo=4"
+    ],
+    "icon": "/client-icons/pharos-pro.webp"
+  },
+  {
+    "id": "hiddify",
+    "name": "Hiddify",
+    "aliases": ["Hiddify Next"],
+    "description": "基于 sing-box 的多平台代理客户端，支持订阅导入、自动选路与 TUN 模式。",
+    "platforms": ["android", "ios", "windows", "macos", "linux"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["Hiddify"],
+    "sources": [
+      "https://github.com/hiddify/hiddify-app",
+      "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?uo=4"
+    ],
+    "icon": "/client-icons/hiddify.webp"
+  },
+  {
+    "id": "egern",
+    "name": "Egern",
+    "aliases": [],
+    "description": "用于代理、拦截和修改网络流量的工具，支持 DNS 策略与 HTTP 调试。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "paid",
+    "priceDetails": "免费下载；美国区完整功能 Unlock Pro 应用内购买 US$5.99，地区价格以商店为准。",
+    "developers": ["BYTE CROSSING LTD"],
+    "sources": [
+      "https://egernapp.com/",
+      "https://apps.apple.com/us/app/egern/id1616105820?uo=4"
+    ],
+    "icon": "/client-icons/egern.webp"
+  },
+  {
+    "id": "clashfest",
+    "name": "ClashFest",
+    "aliases": [],
+    "description": "面向 Android 手机与电视的 Mihomo 客户端，提供订阅管理、路由工具与连接记录。",
+    "platforms": ["android"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["Nemu-x"],
+    "sources": ["https://github.com/Nemu-x/ClashFest"],
+    "icon": "/client-icons/clashfest.webp"
+  },
+  {
+    "id": "exclave",
+    "name": "Exclave",
+    "aliases": [],
+    "description": "Android 多协议代理客户端，支持分组、订阅、规则路由与代理链。",
+    "platforms": ["android"],
+    "cores": ["Exclave core"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["dyhkwong", "ExclaveNetwork"],
+    "sources": [
+      "https://github.com/ExclaveNetwork/Exclave",
+      "https://github.com/ExclaveNetwork/Exclave/blob/dev/library/core/go.mod"
+    ],
+    "icon": "/client-icons/exclave.webp"
+  },
+  {
+    "id": "nekobox-for-android",
+    "name": "NekoBox for Android",
+    "aliases": ["NekoBox"],
+    "description": "使用 sing-box 的 Android 通用代理工具，支持节点订阅与可选协议插件。",
+    "platforms": ["android"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["MatsuriDayo"],
+    "sources": ["https://github.com/MatsuriDayo/NekoBoxForAndroid"],
+    "icon": "/client-icons/nekobox-for-android.webp"
+  },
+  {
+    "id": "husi",
+    "name": "Husi",
+    "aliases": ["虎兕"],
+    "description": "基于代理集合的多平台工具，支持多协议与桌面、Android 原生集成。",
+    "platforms": ["android", "windows", "macos", "linux"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["xchacha20-poly1305"],
+    "sources": [
+      "https://github.com/xchacha20-poly1305/husi",
+      "https://github.com/xchacha20-poly1305/husi/blob/dev/libcore/go.mod"
+    ],
+    "icon": "/client-icons/husi.webp"
+  },
+  {
+    "id": "yumebox",
+    "name": "YumeBox",
+    "aliases": [],
+    "description": "Android Mihomo 客户端，强调尽量保留原始配置并提供订阅与覆写管理。",
+    "platforms": ["android"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["YumeYucca"],
+    "sources": ["https://github.com/YumeYucca/YumeBox"],
+    "icon": "/client-icons/yumebox.webp"
+  },
+  {
+    "id": "shadowsocks-android",
+    "name": "Shadowsocks Android",
+    "aliases": ["Shadowsocks"],
+    "description": "Shadowsocks 官方 Android 客户端，提供手机与 Android TV 安装包。",
+    "platforms": ["android"],
+    "cores": ["shadowsocks-rust"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["Max Lv", "Mygod Studio"],
+    "sources": ["https://github.com/shadowsocks/shadowsocks-android"],
+    "icon": "/client-icons/shadowsocks-android.webp"
+  },
+  {
+    "id": "onexray",
+    "name": "OneXray",
+    "aliases": ["OneXraySE"],
+    "description": "开源 Xray-core 客户端，支持服务器订阅、智能路由与完整 JSON 配置。",
+    "platforms": ["android", "ios", "windows", "macos", "linux"],
+    "cores": ["Xray"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["Yuan Dev LLC", "OneXray"],
+    "sources": [
+      "https://github.com/OneXray/OneXray",
+      "https://apps.apple.com/us/app/onexray/id6745748773?uo=4"
+    ],
+    "icon": "/client-icons/onexray.webp"
+  },
+  {
+    "id": "ssrvpn",
+    "name": "SSRVPN",
+    "aliases": [],
+    "description": "基于 Mihomo 的跨平台代理客户端，支持订阅、测速、智能分流与实时流量。",
+    "platforms": ["android", "windows", "macos"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["Elegying"],
+    "sources": ["https://github.com/Elegying/SSRVPN"],
+    "icon": "/client-icons/ssrvpn.webp"
+  },
+  {
+    "id": "singcast",
+    "name": "SingCast",
+    "aliases": [],
+    "description": "基于 Flutter 与定制 sing-box 的多平台代理客户端，将多种订阅统一为 sing-box 配置。",
+    "platforms": ["android", "windows", "macos", "linux"],
+    "cores": ["sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["mapleafgo"],
+    "sources": [
+      "https://mapleafgo.github.io/singcast/",
+      "https://github.com/mapleafgo/singcast"
+    ],
+    "icon": "/client-icons/singcast.webp"
+  },
+  {
+    "id": "streisand",
+    "name": "Streisand",
+    "aliases": [],
+    "description": "支持规则代理、多种协议与自定义 DNS 的客户端，不提供代理服务器。",
+    "platforms": ["ios", "macos"],
+    "cores": [],
+    "code": "closed",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["ARCADIA ODYSSEY INC."],
+    "sources": [
+      "https://apps.apple.com/app/streisand/id6450534064",
+      "https://apps.apple.com/us/app/streisand/id6450534064?uo=4"
+    ],
+    "icon": "/client-icons/streisand.webp"
+  },
+  {
+    "id": "foxray",
+    "name": "FoXray",
+    "aliases": [],
+    "description": "面向 Apple 平台的 Xray 与 Hysteria 2 客户端；当前官方商店无法获取，保留历史应用身份。",
+    "platforms": ["ios", "macos"],
+    "cores": ["Xray", "Hysteria 2"],
+    "code": "closed",
+    "price": "unknown",
+    "priceDetails": "历史官方页面标为免费；当前商店无结果，现行完整功能费用待核实。",
+    "developers": ["YIGUO NETWORK INC."],
+    "sources": [
+      "https://yiguo.dev/docs/apple/",
+      "https://apps.apple.com/us/app/foxray/id6448898396"
+    ],
+    "icon": "/client-icons/foxray.svg"
+  },
+  {
+    "id": "clash-nyanpasu",
+    "name": "Clash Nyanpasu",
+    "aliases": [],
+    "description": "基于 Tauri 的桌面代理客户端，支持多内核、配置增强与代理提供者管理。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Clash Premium", "Mihomo", "Clash Rust", "Meow"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["libnyanpasu"],
+    "sources": ["https://github.com/libnyanpasu/clash-nyanpasu"],
+    "icon": "/client-icons/clash-nyanpasu.webp"
+  },
+  {
+    "id": "clash-party",
+    "name": "Clash Party",
+    "aliases": ["Mihomo Party"],
+    "description": "桌面 Mihomo 客户端，提供 TUN、Smart 内核、订阅覆写与 WebDAV 备份。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Mihomo", "Smart"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["mihomo-party-org"],
+    "sources": ["https://github.com/mihomo-party-org/clash-party"],
+    "icon": "/client-icons/clash-party.webp"
+  },
+  {
+    "id": "gui-for-clash",
+    "name": "GUI.for.Clash",
+    "aliases": [],
+    "description": "基于 Wails 的桌面 Clash 图形界面，提供配置与代理管理。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["GUI-for-Cores"],
+    "sources": ["https://github.com/GUI-for-Cores/GUI.for.Clash"],
+    "icon": "/client-icons/gui-for-clash.webp"
+  },
+  {
+    "id": "sparkle",
+    "name": "Sparkle",
+    "aliases": [],
+    "description": "基于 Electron 的桌面 Mihomo 客户端，支持 TUN、配置覆写、Sub-Store 与 WebDAV。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Mihomo"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["xishang0128"],
+    "sources": ["https://github.com/xishang0128/sparkle"],
+    "icon": "/client-icons/sparkle.webp"
+  },
+  {
+    "id": "v2rayn",
+    "name": "v2rayN",
+    "aliases": [],
+    "description": "面向 Windows、Linux 与 Mac 的代理图形客户端，支持 Xray 与 sing-box。",
+    "platforms": ["windows", "macos", "linux"],
+    "cores": ["Xray", "sing-box"],
+    "code": "open",
+    "price": "free",
+    "priceDetails": "免费",
+    "developers": ["2dust"],
+    "sources": ["https://github.com/2dust/v2rayN"],
+    "icon": "/client-icons/v2rayn.webp"
+  },
+  {
+    "id": "anyportal",
+    "name": "AnyPortal",
+    "aliases": [],
+    "description": "可配合多种代理内核使用的跨平台图形客户端，支持配置注入与内核资源管理。",
+    "platforms": ["android", "windows", "macos", "linux"],
+    "cores": ["V2Ray", "Xray", "sing-box", "Clash", "Mihomo"],
+    "code": "available",
+    "price": "free",
+    "priceDetails": "可免费下载；源码公开但保留所有权利，不能视为开放源码许可证授权。",
+    "developers": ["AnyPortal"],
+    "sources": ["https://github.com/AnyPortal/AnyPortal"],
+    "icon": "/client-icons/anyportal.webp"
   }
 ]

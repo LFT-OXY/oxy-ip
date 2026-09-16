@@ -1,0 +1,113 @@
+{
+  "id": 378197546,
+  "tag_name": "v1.2.2",
+  "name": "v1.2.2",
+  "html_url": "https://github.com/mapleafgo/singcast/releases/tag/v1.2.2",
+  "published_at": "2026-08-28T00:35:39Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 533056859,
+      "name": "singcast-1.2.2-android-arm64.apk",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-android-arm64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 533057296,
+      "name": "singcast-1.2.2-android-x64.apk",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-android-x64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 533057081,
+      "name": "singcast-1.2.2-ios.ipa",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-ios.ipa",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053716,
+      "name": "singcast-1.2.2-linux-amd64-portable.zip",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053719,
+      "name": "singcast-1.2.2-linux-amd64.AppImage",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053718,
+      "name": "singcast-1.2.2-linux-amd64.deb",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053717,
+      "name": "singcast-1.2.2-linux-amd64.rpm",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-amd64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053899,
+      "name": "singcast-1.2.2-linux-arm64-portable.zip",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053897,
+      "name": "singcast-1.2.2-linux-arm64.AppImage",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053900,
+      "name": "singcast-1.2.2-linux-arm64.deb",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 533053898,
+      "name": "singcast-1.2.2-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 533056946,
+      "name": "singcast-1.2.2-macos-amd64.dmg",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-macos-amd64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 533057144,
+      "name": "singcast-1.2.2-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 533056867,
+      "name": "singcast-1.2.2-windows-amd64-portable.zip",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-amd64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 533056868,
+      "name": "singcast-1.2.2-windows-amd64.exe",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-amd64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 533057116,
+      "name": "singcast-1.2.2-windows-arm64-portable.zip",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-arm64-portable.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 533057101,
+      "name": "singcast-1.2.2-windows-arm64.exe",
+      "browser_download_url": "https://github.com/mapleafgo/singcast/releases/download/v1.2.2/singcast-1.2.2-windows-arm64.exe",
+      "state": "uploaded"
+    }
+  ]
+}

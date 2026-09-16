@@ -14,6 +14,7 @@ export const platforms = {
 export const codeLabels = {
   open: "开源",
   partial: "源码不完整",
+  available: "源码可见",
   closed: "未公开",
 } as const;
 export const priceLabels = {
@@ -39,7 +40,7 @@ export const appSchema = z.object({
   icon: z.string().startsWith("/client-icons/"),
   platforms: z.array(platformSchema).min(1),
   cores: z.array(z.string()),
-  code: z.enum(["open", "partial", "closed"]),
+  code: z.enum(["open", "partial", "available", "closed"]),
   price: z.enum(["free", "paid", "unknown"]),
   priceDetails: z.string(),
   developers: z.array(z.string()),

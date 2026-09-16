@@ -1,0 +1,77 @@
+{
+  "id": 389818325,
+  "tag_name": "v26.9.3",
+  "name": "v26.9.3",
+  "html_url": "https://github.com/OneXray/OneXray/releases/tag/v26.9.3",
+  "published_at": "2026-09-16T10:15:37Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567708014,
+      "name": "OneXray-android-universal.apk",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-android-universal.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708017,
+      "name": "OneXray-ios.ipa",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-ios.ipa",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708013,
+      "name": "OneXray-linux-aarch64.deb",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-aarch64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708020,
+      "name": "OneXray-linux-aarch64.zip",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-aarch64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708016,
+      "name": "OneXray-linux-x86_64.deb",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-x86_64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708012,
+      "name": "OneXray-linux-x86_64.zip",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-linux-x86_64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708015,
+      "name": "OneXray-macos-universal.zip",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-macos-universal.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708023,
+      "name": "OneXray-windows-amd64.exe",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-amd64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708021,
+      "name": "OneXray-windows-amd64.zip",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708019,
+      "name": "OneXray-windows-arm64.exe",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-arm64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 567708022,
+      "name": "OneXray-windows-arm64.zip",
+      "browser_download_url": "https://github.com/OneXray/OneXray/releases/download/v26.9.3/OneXray-windows-arm64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

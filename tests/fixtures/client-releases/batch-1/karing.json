@@ -1,0 +1,71 @@
+{
+  "id": 385948837,
+  "tag_name": "v1.2.25.2802",
+  "name": "v1.2.25.2802",
+  "html_url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802",
+  "published_at": "2026-09-10T02:20:39Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 554006783,
+      "name": "karing_1.2.25.2802_android_arm.apk",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_arm.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 554007299,
+      "name": "karing_1.2.25.2802_android_arm64-v8a.apk",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 554008036,
+      "name": "karing_1.2.25.2802_android_armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_android_armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 554057915,
+      "name": "karing_1.2.25.2802_linux_amd64.AppImage",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 554022841,
+      "name": "karing_1.2.25.2802_linux_amd64.deb",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 554039640,
+      "name": "karing_1.2.25.2802_linux_amd64.rpm",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_linux_amd64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 554028540,
+      "name": "karing_1.2.25.2802_macos_universal.dmg",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_macos_universal.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 564698210,
+      "name": "karing_1.2.25.2802_macos_universal.pkg",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_macos_universal.pkg",
+      "state": "uploaded"
+    },
+    {
+      "id": 554008444,
+      "name": "karing_1.2.25.2802_windows_x64.exe",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_windows_x64.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 554008887,
+      "name": "karing_1.2.25.2802_windows_x64.zip",
+      "browser_download_url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_windows_x64.zip",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": 389099070,
+  "tag_name": "v5.0.5",
+  "name": "SSRVPN v5.0.5",
+  "html_url": "https://github.com/Elegying/SSRVPN/releases/tag/v5.0.5",
+  "published_at": "2026-09-15T11:49:24Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 565595829,
+      "name": "SSRVPN-release-provenance.json",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN-release-provenance.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595832,
+      "name": "SSRVPN.apk",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595825,
+      "name": "SSRVPN.apk.sha256",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.apk.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595828,
+      "name": "SSRVPN.dmg",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595827,
+      "name": "SSRVPN.dmg.sha256",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN.dmg.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595830,
+      "name": "SSRVPN_Setup.exe",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN_Setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 565595826,
+      "name": "SSRVPN_Setup.exe.sha256",
+      "browser_download_url": "https://github.com/Elegying/SSRVPN/releases/download/v5.0.5/SSRVPN_Setup.exe.sha256",
+      "state": "uploaded"
+    }
+  ]
+}
