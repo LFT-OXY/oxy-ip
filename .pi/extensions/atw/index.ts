@@ -1,7 +1,16 @@
 import { isUtf8 } from "node:buffer";
 import { spawn, spawnSync } from "node:child_process";
 import { createHash, randomBytes } from "node:crypto";
-import { existsSync, readFileSync, realpathSync, statSync } from "node:fs";
+import {
+  closeSync,
+  existsSync,
+  openSync,
+  readFileSync,
+  readSync,
+  realpathSync,
+  renameSync,
+  statSync,
+} from "node:fs";
 import {
   delimiter,
   dirname,
@@ -1077,17 +1086,19 @@ function parseAgentFM(c: string): AgentConfig {
   return cfg;
 }
 
+function keyForSessionId(sessionId: string): string {
+  const normalized = sessionId.replace(/[^A-Za-z0-9._-]+/g, "_");
+  if (!normalized) return `pi_${hash(sessionId)}`;
+  return `pi_${normalized}${normalized === sessionId ? "" : `_${hash(sessionId)}`}`;
+}
+
 function contextKey(input?: unknown, ctx?: PiExtensionContext): string | null {
   const sessionId =
     callStr(ctx?.sessionManager?.getSessionId, ctx?.sessionManager) ??
     str(process.env.PI_SESSION_ID) ??
     str(process.env.PI_SESSIONID) ??
     lookupStr(input, ["session_id", "sessionId", "sessionID"]);
-  if (sessionId) {
-    const normalized = sessionId.replace(/[^A-Za-z0-9._-]+/g, "_");
-    if (!normalized) return `pi_${hash(sessionId)}`;
-    return `pi_${normalized}${normalized === sessionId ? "" : `_${hash(sessionId)}`}`;
-  }
+  if (sessionId) return keyForSessionId(sessionId);
   const transcriptPath =
     callStr(ctx?.sessionManager?.getSessionFile, ctx?.sessionManager) ??
     lookupStr(input, ["transcript_path", "transcriptPath", "transcript"]);
@@ -1136,6 +1147,55 @@ function readTaskDir(root: string, key: string | null): string | null {
     return containInRoot(root, candidate);
   } catch {
     return null;
+  }
+}
+
+// ── Session lineage ───────────────────────────────────────────────────
+// 只读 pi 会话文件的首行头部拿会话 id；会话文件可能很大，不整读。
+function readSessionHeaderId(sessionFile: string): string | null {
+  let fd: number | null = null;
+  try {
+    fd = openSync(sessionFile, "r");
+    const buf = Buffer.alloc(65536);
+    const n = readSync(fd, buf, 0, buf.length, 0);
+    const line = buf.toString("utf-8", 0, n).split("\n")[0] ?? "";
+    const header = JSON.parse(line) as JsonObject;
+    return header.type === "session" ? str(header.id) : null;
+  } catch {
+    return null;
+  } finally {
+    if (fd !== null) closeSync(fd);
+  }
+}
+
+// 同一窗口用 /clear（reason=new）或 fork 换出新会话时，把前一个会话的活动任务指针
+// 搬到新会话名下。只认 pi 在 session_start 事件里给出的 previousSessionFile 这条
+// 明确血缘，不看运行时目录里有几个指针、也不看前缀（#512）。新开的窗口
+// （reason=startup）没有前身，什么都不继承。搬移而非复制，避免 /clear 链条堆积指针。
+function inheritSessionPointer(
+  root: string,
+  key: string | null,
+  event: unknown,
+): boolean {
+  if (!key || !isObj(event)) return false;
+  const reason = str(event.reason);
+  const previous = str(event.previousSessionFile);
+  if ((reason !== "new" && reason !== "fork") || !previous) return false;
+  const parentId = readSessionHeaderId(previous);
+  if (!parentId) return false;
+  const parentKey = keyForSessionId(parentId);
+  if (parentKey === key) return false;
+  const dir = join(root, ".atw", ".runtime", "sessions");
+  const ownPath = join(dir, `${key}.json`);
+  const parentPath = join(dir, `${parentKey}.json`);
+  try {
+    if (existsSync(ownPath) || !existsSync(parentPath)) return false;
+    const ctx = JSON.parse(readText(parentPath)) as JsonObject;
+    if (!str(ctx.current_task)) return false;
+    renameSync(parentPath, ownPath);
+    return true;
+  } catch {
+    return false;
   }
 }
 
@@ -1220,7 +1280,13 @@ function buildStartupContext(
     FIRST_REPLY_NOTICE,
     overview,
     workflow,
-    "<ready>\nUse the current workflow state to decide whether to create, continue, or skip an ATW task.\n</ready>",
+    [
+      "<ready>",
+      "Use the current workflow state to decide whether to create, continue, or skip an ATW task.",
+      "When CURRENT TASK is (none) but ACTIVE TASKS lists exactly one task assigned to you that is already at the implement or accept stage, this window is merely not bound to it yet: run `python3 ./.atw/scripts/task.py start <task-dir>` for that task, then continue from its stage. Do not ask whether to create a new task in that case.",
+      "If several tasks qualify, or the only candidate is still in a planning stage (discover / specify / slice), ask which task to bind instead of running start: start moves a planning-stage task straight into implement.",
+      "</ready>",
+    ].join("\n"),
   ]
     .filter(Boolean)
     .join("\n\n");
@@ -1946,7 +2012,8 @@ export default function atwExtension(pi: {
 
   // Events
   pi.on?.("session_start", (event, ctx) => {
-    getKey(event, ctx);
+    const k = getKey(event, ctx);
+    inheritSessionPointer(resolveRoot(ctx), k, event);
     ctx?.ui?.notify?.(
       "ATW project context is available. Use /atw-start to bootstrap or /atw-continue to resume.",
       "info",
