@@ -3,7 +3,7 @@ name: atw-diagnosing-bugs
 description: "用于排查顽固错误和性能退化的诊断循环。当用户说“诊断”/“调试这个”，或报告某功能失效、抛出异常、失败或运行缓慢时，请使用此循环。"
 ---
 
-# Oxyteam Diagnosing Bugs
+# ATW Diagnosing Bugs
 
 A discipline for hard bugs. Skip phases only when explicitly justified.
 

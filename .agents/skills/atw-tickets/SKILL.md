@@ -4,7 +4,7 @@ description: "将计划、规格说明或当前对话拆分为一组“追踪子
 disable-model-invocation: true
 ---
 
-# Oxyteam Tickets
+# ATW Tickets
 
 Break a plan, spec, or conversation into a set of **tickets** — tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
