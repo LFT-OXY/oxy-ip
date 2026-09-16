@@ -1,0 +1,107 @@
+{
+  "id": 388129466,
+  "tag_name": "v0.8.98",
+  "name": "v0.8.98",
+  "html_url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98",
+  "published_at": "2026-09-14T03:20:30Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 562469301,
+      "name": "FlClash-0.8.98-android-arm64-v8a.apk",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469302,
+      "name": "FlClash-0.8.98-android-armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469295,
+      "name": "FlClash-0.8.98-android-x86_64.apk",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-android-x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469298,
+      "name": "FlClash-0.8.98-linux-amd64.AppImage",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469297,
+      "name": "FlClash-0.8.98-linux-amd64.deb",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469300,
+      "name": "FlClash-0.8.98-linux-amd64.rpm",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-amd64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469294,
+      "name": "FlClash-0.8.98-linux-arm64.AppImage",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469288,
+      "name": "FlClash-0.8.98-linux-arm64.deb",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.deb",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469292,
+      "name": "FlClash-0.8.98-linux-arm64.rpm",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-linux-arm64.rpm",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469299,
+      "name": "FlClash-0.8.98-macos-amd64.dmg",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-macos-amd64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469293,
+      "name": "FlClash-0.8.98-macos-arm64.dmg",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-macos-arm64.dmg",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469291,
+      "name": "FlClash-0.8.98-windows-amd64-setup.exe",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-amd64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469287,
+      "name": "FlClash-0.8.98-windows-amd64.zip",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-amd64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469290,
+      "name": "FlClash-0.8.98-windows-arm64-setup.exe",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-arm64-setup.exe",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469289,
+      "name": "FlClash-0.8.98-windows-arm64.zip",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/FlClash-0.8.98-windows-arm64.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 562469286,
+      "name": "SHA256SUMS",
+      "browser_download_url": "https://github.com/chen08209/FlClash/releases/download/v0.8.98/SHA256SUMS",
+      "state": "uploaded"
+    }
+  ]
+}

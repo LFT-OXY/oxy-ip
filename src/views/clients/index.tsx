@@ -367,23 +367,25 @@ function ClientDetail({ appId }: { appId: string }) {
               </option>
             ))}
           </SelectField>
-          {download?.kind === "direct" && release && (
-            <SelectField
-              label={t("安装包类型")}
-              value={download.id}
-              onChange={setDownloadId}
-            >
-              {release.downloads.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.kind === "direct"
-                    ? `${t(platforms[platform])} · ${item.arch} · ${item.format}`
-                    : item.kind === "store"
-                      ? t("官方应用商店")
-                      : t("官方下载页")}
-                </option>
-              ))}
-            </SelectField>
-          )}
+          {download &&
+            release &&
+            (download.kind === "direct" || release.downloads.length > 1) && (
+              <SelectField
+                label={t("安装包类型")}
+                value={download.id}
+                onChange={setDownloadId}
+              >
+                {release.downloads.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.kind === "direct"
+                      ? `${t(platforms[platform])} · ${item.arch} · ${item.format}`
+                      : item.kind === "store"
+                        ? t("官方应用商店")
+                        : t("官方下载页")}
+                  </option>
+                ))}
+              </SelectField>
+            )}
           {download && (
             <Button asChild>
               <a href={download.url} target="_blank" rel="noopener noreferrer">

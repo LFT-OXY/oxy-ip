@@ -47,12 +47,15 @@ test("首票独立名单、全部平台与人工资料完整且无重复", () =>
       const release = releaseFor(releases, app.id, platform);
       assert.ok(release, `${app.id}/${platform}`);
       assert.ok(release.source.url.startsWith("https://"));
-      assert.equal(release.maintenance, "manual");
-      assert.equal(
-        release.lastCheckedAt,
-        undefined,
-        "人工快照不能伪装自动核验",
-      );
+      if (release.maintenance === "manual") {
+        assert.equal(
+          release.lastCheckedAt,
+          undefined,
+          "人工快照不能伪装自动核验",
+        );
+      } else {
+        assert.ok(release.lastCheckedAt, "自动快照必须保留成功核验时间");
+      }
       for (const download of release.downloads) {
         assert.equal(new URL(download.url).protocol, "https:");
         assert.ok(!download.url.includes("huarun.win"));

@@ -4,7 +4,7 @@
 
 `src/views/clients/` 拥有人工目录、按平台发布快照、列表筛选和精简详情。`/clients/` 与 `/clients/:appId` 在 `App.tsx` 注册，导航同时更新 `layout/routes.ts` 和 `layout/index.tsx` 的图标映射。
 
-本契约来自首票实现，不代表后续官方同步与 6 小时调度已经存在。
+本契约覆盖首票目录及第 02 票 GitHub 手动同步；6 小时调度尚未实现。
 
 ## 2. 签名
 
@@ -42,7 +42,7 @@
 
 - 正常：FlClash Android 切 Windows，包列表与按钮 URL 一起切换；两平台可有不同版本。
 - 基础：Stash Mac 只有官方页面时，按钮为“前往官方下载页”，不伪造直链或发布时间。
-- 错误：仅因访问超时删除已有正式包，或以核验时间代替发布时间，均不符合 PRD；后续同步票须单独测试。
+- 错误：仅因访问超时删除已有正式包，或以核验时间代替发布时间，均不符合 PRD；同步回归须单独覆盖。
 
 ## 6. 必需检查
 
@@ -55,3 +55,50 @@ UI 检查使用构建后的 `pnpm preview`，覆盖窄屏、768px、桌面、中
 错误：通过 `.apk` 后缀统一归入 Android，或将所有 Apple 平台套用 iOS lookup 版本。
 
 正确：按官方资产中的平台与架构归属收录；sing-box OpenWrt `.apk` 是路由器包，iOS SFI `.deb` 需要明确越狱条件；Mac 无独立依据的版本留空。
+
+## 8. GitHub 手动同步契约
+
+### 8.1 范围
+
+`scripts/client-release-sources.mjs` 维护已核验的仓库和平台包命名规则，目前仅 FlClash 四平台、v2rayNG Android。未配置的快照原样保留；扩充来源不得按文件后缀猜测平台。调度、商店同步和生产部署不在此实现中。
+
+### 8.2 签名
+
+- `pnpm clients:sync`：同步并原子替换 `src/views/clients/releases.json`。
+- `node scripts/sync-client-releases.mjs --dry-run`：JSON 输出到 stdout，不写文件。
+- `pnpm clients:sync --output <path>`：写指定输出；与 `--dry-run` 互斥，禁止指向人工 `catalog.json`。
+- `syncReleases(previous, sources, { loadRelease, checkLink, now? })`：异步返回 `{ rows, errors }`，不修改输入；`errors` 每项含 `appId/platform/message`。
+- `githubClient({ fetcher?, token?, timeoutMs? })`：提供 `loadRelease(source)` 与 `checkLink(url)`；后者返回 `valid/temporary/missing`，网络异常交由同步层保守处理。
+- `selectStableRelease(raw)` 与 `parseRelease(raw, source, previous, now)`：正式版筛选和单平台快照解析；代码位于 `scripts/client-release-sync.mjs`。
+
+### 8.3 数据与环境
+
+官方 API 元数据必须含 `id/tag_name/name/html_url/published_at/draft/prerelease`；资产含 `id/name/browser_download_url/state`。发布与资产均分页获取，每页 100，最多 10 页。正式版按发布时间选择，排除草稿、预发布及显式测试渠道；命名规则中的 `{version}` 绑定同一发布，两个捕获组依次为架构和格式，URL 必须与仓库、标签和资产一致。
+
+输出复用 `model.ts` 的 `releaseSchema`。只有成功平台更新 `maintenance=automatic` 和 `lastCheckedAt`；时间是本轮检查时间，不代替 `publishedAt`。`GITHUB_TOKEN` 可选，仅发往 API；HEAD 核验不带 token、不读取包体。默认请求超时 15 秒。
+
+### 8.4 校验与错误矩阵
+
+| 场景                                       | 处理                                                       |
+| ------------------------------------------ | ---------------------------------------------------------- |
+| 无正式版、缺平台包、API/解析错误、分页超限 | 该平台保留旧版本及成功时间，其他项继续                     |
+| HEAD 403/429/5xx/405、超时或其他不确定结果 | 不删除直链；本轮候选平台不推进                             |
+| 同一直链连续两次 404/410                   | 移除该直链，补官方 fallback，保留其余可用项                |
+| API 失败但旧直链独立确认失效               | 允许回退，但不刷新旧版本与成功时间                         |
+| 部分来源失败                               | 保存其他成功结果，CLI 退出 1；不能将非零退出理解为没有写入 |
+
+### 8.5 正常、基础与错误场景
+
+- 正常：新正式版的版本、日期、平台包整组替换，不拼接旧包。
+- 基础：未配置来源继续使用人工快照；多获取选项始终显示选择器，单页面或单商店保持简洁。
+- 错误：fallback 与直链混合时，选 fallback 后隐藏选择器会使用户无法切回仍可用的包。
+
+### 8.6 必需测试
+
+`tests/client-release-sync.test.mjs` 用裁剪的真实官方样本和显式变异覆盖包匹配、草稿/预发布/测试渠道、版本与 URL 隔离、分页、单源和单平台失败、部分及全部直链失效、核验时间保留、CLI 写入/dry-run 与人工文件不变。变异测试同时验证 `test/dev` 被排除、`latest` 不被误杀。UI 改动须用混合直链与 fallback 的浏览器场景，验证选官方页后可用键盘切回直链，覆盖窄屏/桌面、中英文和实际深浅主题。
+
+### 8.7 易错对照
+
+错误：以 `prerelease=false` 单独证明正式性；或以 `download.kind === "direct"` 作为多选项选择器唯一显示条件。
+
+正确：同时检查测试渠道标识；选择器在单直链或 `release.downloads.length > 1` 时可见。未知命名或临时失败保留旧值，不猜测新包。

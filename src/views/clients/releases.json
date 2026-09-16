@@ -44,14 +44,14 @@
   {
     "appId": "flclash",
     "platform": "android",
-    "maintenance": "manual",
+    "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
       "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
     },
     "fallback": {
       "kind": "page",
-      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+      "url": "https://github.com/chen08209/FlClash/releases"
     },
     "downloads": [
       {
@@ -77,7 +77,8 @@
       }
     ],
     "version": "v0.8.98",
-    "publishedAt": "2026-09-14T03:20:30Z"
+    "publishedAt": "2026-09-14T03:20:30Z",
+    "lastCheckedAt": "2026-09-16T09:08:18.543Z"
   },
   {
     "appId": "flclash",
@@ -127,14 +128,14 @@
   {
     "appId": "flclash",
     "platform": "macos",
-    "maintenance": "manual",
+    "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
       "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
     },
     "fallback": {
       "kind": "page",
-      "url": "https://github.com/chen08209/FlClash/releases/tag/v0.8.98"
+      "url": "https://github.com/chen08209/FlClash/releases"
     },
     "downloads": [
       {
@@ -153,7 +154,8 @@
       }
     ],
     "version": "v0.8.98",
-    "publishedAt": "2026-09-14T03:20:30Z"
+    "publishedAt": "2026-09-14T03:20:30Z",
+    "lastCheckedAt": "2026-09-16T09:08:18.543Z"
   },
   {
     "appId": "flclash",
@@ -1037,14 +1039,14 @@
   {
     "appId": "v2rayng",
     "platform": "android",
-    "maintenance": "manual",
+    "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
       "url": "https://github.com/2dust/v2rayNG/releases/tag/2.2.6"
     },
     "fallback": {
       "kind": "page",
-      "url": "https://github.com/2dust/v2rayNG/releases/tag/2.2.6"
+      "url": "https://github.com/2dust/v2rayNG/releases"
     },
     "downloads": [
       {
@@ -1077,7 +1079,8 @@
       }
     ],
     "version": "2.2.6",
-    "publishedAt": "2026-07-05T10:17:21Z"
+    "publishedAt": "2026-07-05T10:17:21Z",
+    "lastCheckedAt": "2026-09-16T09:08:18.543Z"
   },
   {
     "appId": "clash-meta-for-android",

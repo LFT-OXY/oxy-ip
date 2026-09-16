@@ -1,0 +1,113 @@
+{
+  "id": 349137895,
+  "tag_name": "2.2.6",
+  "name": "",
+  "html_url": "https://github.com/2dust/v2rayNG/releases/tag/2.2.6",
+  "published_at": "2026-07-05T10:17:21Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 467072428,
+      "name": "v2rayN-public-key.asc",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayN-public-key.asc",
+      "state": "uploaded"
+    },
+    {
+      "id": 467072417,
+      "name": "v2rayNG_2.2.6-fdroid_arm64-v8a.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069045,
+      "name": "v2rayNG_2.2.6-fdroid_arm64-v8a.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_arm64-v8a.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069025,
+      "name": "v2rayNG_2.2.6-fdroid_armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069021,
+      "name": "v2rayNG_2.2.6-fdroid_armeabi-v7a.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_armeabi-v7a.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069011,
+      "name": "v2rayNG_2.2.6-fdroid_x86.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069008,
+      "name": "v2rayNG_2.2.6-fdroid_x86.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_x86.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467069000,
+      "name": "v2rayNG_2.2.6-fdroid_x86_64.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068995,
+      "name": "v2rayNG_2.2.6-fdroid_x86_64.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_x86_64.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068984,
+      "name": "v2rayNG_2.2.6_arm64-v8a.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_arm64-v8a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068980,
+      "name": "v2rayNG_2.2.6_arm64-v8a.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_arm64-v8a.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068966,
+      "name": "v2rayNG_2.2.6_armeabi-v7a.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_armeabi-v7a.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068961,
+      "name": "v2rayNG_2.2.6_armeabi-v7a.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_armeabi-v7a.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068948,
+      "name": "v2rayNG_2.2.6_x86.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068939,
+      "name": "v2rayNG_2.2.6_x86.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86.apk.sig",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068937,
+      "name": "v2rayNG_2.2.6_x86_64.apk",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 467068936,
+      "name": "v2rayNG_2.2.6_x86_64.apk.sig",
+      "browser_download_url": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6_x86_64.apk.sig",
+      "state": "uploaded"
+    }
+  ]
+}
