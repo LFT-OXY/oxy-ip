@@ -1,0 +1,177 @@
+[
+  {
+    "id": 389370429,
+    "tag_name": "v1.2.1",
+    "name": "v1.2.1",
+    "html_url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.2.1",
+    "published_at": "2026-09-15T18:14:18Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 566240445,
+        "name": "AeroBox-1.2.1-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 566240443,
+        "name": "AeroBox-1.2.1-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 566240448,
+        "name": "AeroBox-1.2.1-x86.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-x86.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 566240446,
+        "name": "AeroBox-1.2.1-x86_64.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-x86_64.apk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 379536561,
+    "tag_name": "v1.2.0",
+    "name": "v1.2.0",
+    "html_url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.2.0",
+    "published_at": "2026-08-31T07:12:31Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 537608824,
+        "name": "AeroBox-1.2.0-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.0/AeroBox-1.2.0-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 537608825,
+        "name": "AeroBox-1.2.0-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.0/AeroBox-1.2.0-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 537608822,
+        "name": "AeroBox-1.2.0-x86.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.0/AeroBox-1.2.0-x86.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 537608823,
+        "name": "AeroBox-1.2.0-x86_64.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.0/AeroBox-1.2.0-x86_64.apk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 379274154,
+    "tag_name": "v1.1.15",
+    "name": "v1.1.15",
+    "html_url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.1.15",
+    "published_at": "2026-08-30T12:24:00Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 536587158,
+        "name": "AeroBox-1.1.15-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.15/AeroBox-1.1.15-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 536587160,
+        "name": "AeroBox-1.1.15-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.15/AeroBox-1.1.15-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 536587161,
+        "name": "AeroBox-1.1.15-x86.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.15/AeroBox-1.1.15-x86.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 536587159,
+        "name": "AeroBox-1.1.15-x86_64.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.15/AeroBox-1.1.15-x86_64.apk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 379052829,
+    "tag_name": "v1.1.14",
+    "name": "v1.1.14",
+    "html_url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.1.14",
+    "published_at": "2026-08-29T17:29:11Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 535514645,
+        "name": "AeroBox-1.1.14-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.14/AeroBox-1.1.14-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 535514646,
+        "name": "AeroBox-1.1.14-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.14/AeroBox-1.1.14-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 535514647,
+        "name": "AeroBox-1.1.14-x86.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.14/AeroBox-1.1.14-x86.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 535514643,
+        "name": "AeroBox-1.1.14-x86_64.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.14/AeroBox-1.1.14-x86_64.apk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 371778516,
+    "tag_name": "v1.1.13",
+    "name": "v1.1.13",
+    "html_url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.1.13",
+    "published_at": "2026-08-17T13:32:53Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 518154774,
+        "name": "AeroBox-1.1.13-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.13/AeroBox-1.1.13-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 518154776,
+        "name": "AeroBox-1.1.13-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.13/AeroBox-1.1.13-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 518154777,
+        "name": "AeroBox-1.1.13-x86.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.13/AeroBox-1.1.13-x86.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 518154775,
+        "name": "AeroBox-1.1.13-x86_64.apk",
+        "browser_download_url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.1.13/AeroBox-1.1.13-x86_64.apk",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "id": 197481427,
+    "tag_name": "luci-app-neko_1.2.4-beta",
+    "name": "",
+    "html_url": "https://github.com/nosignals/openwrt-neko/releases/tag/luci-app-neko_1.2.4-beta",
+    "published_at": "2025-01-30T01:03:48Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 224771060,
+        "name": "luci-app-neko_1.2.4-beta_all.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/luci-app-neko_1.2.4-beta/luci-app-neko_1.2.4-beta_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 196646368,
+    "tag_name": "core_1.19.1_1.10.7",
+    "name": "",
+    "html_url": "https://github.com/nosignals/openwrt-neko/releases/tag/core_1.19.1_1.10.7",
+    "published_at": "2025-01-24T14:07:19Z",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 223123081,
+        "name": "mihomo_1.19.1-2_aarch64_cortex-a53.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/mihomo_1.19.1-2_aarch64_cortex-a53.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123078,
+        "name": "mihomo_1.19.1-2_aarch64_cortex-a72.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/mihomo_1.19.1-2_aarch64_cortex-a72.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123076,
+        "name": "mihomo_1.19.1-2_aarch64_generic.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/mihomo_1.19.1-2_aarch64_generic.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123073,
+        "name": "mihomo_1.19.1-2_arm_cortex-a7_neon-vfpv4.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/mihomo_1.19.1-2_arm_cortex-a7_neon-vfpv4.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123070,
+        "name": "mihomo_1.19.1-2_x86_64.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/mihomo_1.19.1-2_x86_64.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123067,
+        "name": "sing-box_1.10.7-1_aarch64_cortex-a53.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/sing-box_1.10.7-1_aarch64_cortex-a53.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123014,
+        "name": "sing-box_1.10.7-1_aarch64_cortex-a72.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/sing-box_1.10.7-1_aarch64_cortex-a72.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123011,
+        "name": "sing-box_1.10.7-1_aarch64_generic.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/sing-box_1.10.7-1_aarch64_generic.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123010,
+        "name": "sing-box_1.10.7-1_arm_cortex-a7_neon-vfpv4.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/sing-box_1.10.7-1_arm_cortex-a7_neon-vfpv4.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223123007,
+        "name": "sing-box_1.10.7-1_x86_64.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/core_1.19.1_1.10.7/sing-box_1.10.7-1_x86_64.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 174005487,
+    "tag_name": "mihomo_1.18.8",
+    "name": "",
+    "html_url": "https://github.com/nosignals/openwrt-neko/releases/tag/mihomo_1.18.8",
+    "published_at": "2024-09-08T09:09:07Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 191215861,
+        "name": "mihomo_1.18.8-2_aarch64_cortex-a53.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/mihomo_1.18.8/mihomo_1.18.8-2_aarch64_cortex-a53.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 191215860,
+        "name": "mihomo_1.18.8-2_aarch64_cortex-a72.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/mihomo_1.18.8/mihomo_1.18.8-2_aarch64_cortex-a72.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 191215856,
+        "name": "mihomo_1.18.8-2_aarch64_generic.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/mihomo_1.18.8/mihomo_1.18.8-2_aarch64_generic.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 191215852,
+        "name": "mihomo_1.18.8-2_arm_cortex-a7_neon-vfpv4.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/mihomo_1.18.8/mihomo_1.18.8-2_arm_cortex-a7_neon-vfpv4.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 191215849,
+        "name": "mihomo_1.18.8-2_x86_64.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/mihomo_1.18.8/mihomo_1.18.8-2_x86_64.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 172927778,
+    "tag_name": "luci-app-neko_1.2.2-beta",
+    "name": "",
+    "html_url": "https://github.com/nosignals/openwrt-neko/releases/tag/luci-app-neko_1.2.2-beta",
+    "published_at": "2024-09-01T07:31:35Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 189704922,
+        "name": "luci-app-neko_1.2.2-beta_all.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/luci-app-neko_1.2.2-beta/luci-app-neko_1.2.2-beta_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 172915338,
+    "tag_name": "neko-dev",
+    "name": "",
+    "html_url": "https://github.com/nosignals/openwrt-neko/releases/tag/neko-dev",
+    "published_at": "2024-09-01T01:45:30Z",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 189641817,
+        "name": "luci-app-neko_1.2.2-beta_dev_all.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/neko-dev/luci-app-neko_1.2.2-beta_dev_all.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 223078384,
+        "name": "luci-app-neko_1.2.3-beta_dev_all.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/neko-dev/luci-app-neko_1.2.3-beta_dev_all.ipk",
+        "state": "uploaded"
+      },
+      {
+        "id": 230252245,
+        "name": "luci-app-neko_1.2.5-beta_dev_all.ipk",
+        "browser_download_url": "https://github.com/nosignals/openwrt-neko/releases/download/neko-dev/luci-app-neko_1.2.5-beta_dev_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

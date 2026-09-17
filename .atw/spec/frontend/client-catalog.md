@@ -282,3 +282,9 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 - Apple `kind=mac-software`不接入现有仅iOS的lookup配置。BaoLianDeng的Mac版本与日期独立人工维护；内核按该正式版本发行说明核验，不沿用已过时商店简介。iOS兼容Mac仍不复制iOS版本。
 - 同一项目不同发布渠道分别判断正式性：Meow Android发布说明中的Play内部测试不自动否定独立GitHub正式发布；Paws未签名HAP明确自行签名条件，不将unsigned等同预发布。仍须核对release状态和官方发布限制，不能只凭`prerelease=false`判断。
 - `client-catalog-batch-5.test.mjs`使用冻结名单核对累计133项、47个平台及内核；图标SVG例外仅限PRD授权的SSR Plus+，断言非官方文字标记，其余24款保持官方WebP要求。`client-batch-5-sources.test.mjs`独立核对5条GitHub、20条iOS来源、完整资产集合/架构、版本隔离和失败保留；Outline注入分页错误的测试只验证保留行为，不冒充分页器测试。
+
+## 15. 第六批：官方商店版本历史的内核证据
+
+- 核验`ClientApp.cores`时须同时读取当前简介、官方版本历史及可用源码/官网证据；协议兼容仍不能推定内核，但版本历史明确“update Xray Core”可作为实现依据。XRay Connect的1.5与1.1均明确更新Xray，不能因当前简介只列协议而写空数组。
+- `client-catalog-batch-6.test.mjs`独立冻结该项`cores: ["Xray"]`，并通过真实`filterApps`断言`q=XRay Connect&core=Xray`在iOS与Mac两平台均返回唯一应用，避免资料和筛选同时漏项。
+- 错误：只扫描lookup当前description，空内核期望随之复制进测试。正确：核对完整官方商店版本历史，并把独立证据写成具体组合筛选回归。

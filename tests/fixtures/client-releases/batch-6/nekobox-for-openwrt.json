@@ -1,0 +1,87 @@
+[
+  {
+    "id": 249844842,
+    "tag_name": "2.0.9",
+    "name": "",
+    "html_url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.9",
+    "published_at": "2025-09-25T00:36:03Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 346378927,
+        "name": "luci-app-nekobox_2.0.9-rc14_all.ipk",
+        "browser_download_url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.9/luci-app-nekobox_2.0.9-rc14_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 249529417,
+    "tag_name": "2.0.8",
+    "name": "",
+    "html_url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.8",
+    "published_at": "2025-09-24T01:54:01Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 296602842,
+        "name": "luci-app-nekobox_2.0.8-cn_all.ipk",
+        "browser_download_url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.8/luci-app-nekobox_2.0.8-cn_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 248842181,
+    "tag_name": "2.0.7",
+    "name": "",
+    "html_url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.7",
+    "published_at": "2025-09-21T07:08:02Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 296395533,
+        "name": "luci-app-nekobox_2.0.7-cn_all.ipk",
+        "browser_download_url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.7/luci-app-nekobox_2.0.7-cn_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 246334129,
+    "tag_name": "2.0.6",
+    "name": "",
+    "html_url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.6",
+    "published_at": "2025-09-11T00:23:19Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 295387450,
+        "name": "luci-app-nekobox_2.0.6-cn_all.ipk",
+        "browser_download_url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.6/luci-app-nekobox_2.0.6-cn_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 243046071,
+    "tag_name": "2.0.5",
+    "name": "",
+    "html_url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.5",
+    "published_at": "2025-08-28T04:05:39Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 289972156,
+        "name": "luci-app-nekobox_2.0.5-cn_all.ipk",
+        "browser_download_url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.5/luci-app-nekobox_2.0.5-cn_all.ipk",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

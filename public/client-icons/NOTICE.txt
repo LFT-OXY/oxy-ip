@@ -330,3 +330,118 @@ Outline 图标来自 OutlineFoundation/outline-apps/docs/resources/logo_client.p
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+第09票（2026-09-17）：以下官方素材经视觉核验，仅等比缩放及转为 WebP。
+xrayclient.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/28/b7/3928b7bf-9672-7970-6e98-dbf07db47fc3/AppIcon-0-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg
+oneboxm.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/e5/f0/07e5f079-b4a7-d164-7227-daaaf570d842/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg
+pixel-proxy.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/8d/ce/d98dce0d-017d-f6f1-3245-ee925932d117/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg
+susi-connect.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/1a/8e/bf1a8e20-2d23-433e-6eef-0cfe4a81c04a/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg
+vpn.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/86/a2/2a/86a22af8-9e03-e9ad-ea29-488468017539/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg
+bclient.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6d/fb/60/6dfb600d-43c1-23c0-e4e6-5a6bd9941a47/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg
+wisp.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/df/d2/e5dfd2fb-3e9a-0e44-be1a-91ce8209684a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg
+clash-plus.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/7a/96/417a96b1-3c97-c6ec-b9d7-6c03e817f515/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg
+vpnet.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/95/55/5595557d-9d76-f3a9-92c2-cb02ecc0d37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg
+xray-connect.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/99/2b/fa992bd1-e077-04b5-2ac0-310a26cd1a5d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg
+panvell.webp — https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/a4/f8/baa4f81e-786f-357b-be5a-531e4640a920/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg
+flclash-patched.webp — https://raw.githubusercontent.com/chenx-dust/FlClash-Patched/fff98bb70a41a5d9af44c1137eab8d31ee5f3479/assets/images/icon.png
+tomoon.webp — https://raw.githubusercontent.com/YukiCoco/ToMoon/697d7da6e6b95f5b50306a4a6e76a7a1d196b326/assets/logo.png
+deckyclash.webp — https://raw.githubusercontent.com/chenx-dust/DeckyClash/c0f1f4cd4f169666f4cdc63864c258c9e2de9e18/assets/logo.svg
+fancyss.webp — https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/fancyss/res/icon-shadowsocks.png
+merlin-xrayui.webp — https://raw.githubusercontent.com/DanielLavrushin/asuswrt-merlin-xrayui/77686e983a160b1af53b4315cfe6875e67aa017b/docs/xrayui/.vuepress/public/images/logo.png
+fullcombo-shark.webp — https://raw.githubusercontent.com/fcshark-org/openwrt-fchomo/80383b9c01ab8365bb5fe955947c67111a3dfdc2/assets/img/shark.png
+nekobox-for-openwrt.webp — https://raw.githubusercontent.com/Thaolga/openwrt-nekobox/440d0d897a8315247b958b1ac04b3fdb157bd10a/luci-app-nekobox/htdocs/nekobox/assets/img/nekobox.png
+neko-for-openwrt.webp — https://raw.githubusercontent.com/nosignals/openwrt-neko/a240c8e7e388169934389279ead50cd03f6f27e9/luci-app-neko/htdocs/nekoclash/assets/img/neko.png
+magic-catling2.webp — https://mcreadme.gitbook.io/mc/~gitbook/image?url=https%3A%2F%2F3298512089-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FozeGBissdoUKEi3hWxEC%252Fsites%252Fsite_xoQTC%252Ficon%252FY6DeRACSEsp2n2Lelrzn%252Ficon-merlinclash.png%3Falt%3Dmedia%26token%3D114b01d8-fc17-46cd-b040-91a5585f6117&width=32&dpr=3&quality=100&sign=d9ce9cf3ad620343b621da907f6954da&sv=3
+aerobox-for-android.webp — https://github.com/imengying/AeroBoxForAndroid/blob/main/app/src/main/res/drawable/ic_launcher_foreground.xml
+AeroBox：按官方 Android adaptive-icon 的白色背景、蓝色 pathData、位移、缩放和旋转原样栅格化；不使用本站自制占位。
+DeckyClash：官方 SVG 标志在白色背景按浅色方案栅格化，无图形重绘。
+Merlin XrayUI：Daniel Lavrushin；CC BY-NC-SA 4.0，https://creativecommons.org/licenses/by-nc-sa/4.0/；仅格式转换与等比缩放。
+
+tomoon 原许可证：
+BSD 3-Clause License
+
+Copyright (c) 2022, Steam Deck Homebrew
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+deckyclash 原许可证：
+BSD 3-Clause License
+
+Copyright (c) 2026, Chenx Dust
+Original Copyright (c) 2022-2025, Steam Deck Homebrew
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+nekobox-for-openwrt 原许可证：
+MIT License
+
+Copyright (c) 2024 Thaolga
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

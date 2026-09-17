@@ -706,6 +706,50 @@ export const githubSources = [
         /^Paws-{version}-(arm64-v8a|armeabi-v7a|x86_64)-unsigned\.(hap)$/,
     },
   },
+  {
+    appId: "flclash-patched",
+    repo: "chenx-dust/FlClash-Patched",
+    platforms: {
+      android:
+        /^FlClash-{version}-android-(arm64-v8a|armeabi-v7a|x86_64)\.(apk)$/,
+      ios: /^FlClash-{version}-ios-(arm64)-unsigned\.(ipa)$/,
+      windows:
+        /^FlClash-{version}-windows-(amd64|arm64)(?:-setup)?\.(exe|zip)$/,
+      macos: /^FlClash-{version}-macos-(amd64|arm64)\.(dmg)$/,
+      linux:
+        /^FlClash-{version}-linux-(amd64|arm64)\.(AppImage|deb|rpm|tar\.zst|zip)$/,
+    },
+  },
+  {
+    appId: "deckyclash",
+    repo: "chenx-dust/DeckyClash",
+    architectures: { "steam-deck": "x86_64" },
+    platforms: {
+      "steam-deck":
+        /^(?:DeckyClash(?:-full)?|Installer-DeckyClash)()\.(zip|sh)$/,
+    },
+  },
+  {
+    appId: "merlin-xrayui",
+    repo: "DanielLavrushin/asuswrt-merlin-xrayui",
+    architectures: { asus: "noarch" },
+    platforms: { asus: /^asuswrt-merlin-xrayui()\.(tar\.gz)$/ },
+  },
+  {
+    appId: "nekobox-for-openwrt",
+    repo: "Thaolga/openwrt-nekobox",
+    // 2.0.9 的附件是 RC；固定到独立核实的正式应用代际。
+    releaseTag: /^2\.0\.8$/,
+    architectures: { openwrt: "noarch" },
+    platforms: { openwrt: /^luci-app-nekobox_{version}-cn_all()\.(ipk)$/ },
+  },
+  {
+    appId: "aerobox-for-android",
+    repo: "imengying/AeroBoxForAndroid",
+    platforms: {
+      android: /^AeroBox-{version}-(arm64-v8a|armeabi-v7a|x86|x86_64)\.(apk)$/,
+    },
+  },
 ];
 
 // 每个来源只核验明确的平台；iOS lookup 不代表 Mac 版本。
@@ -1051,6 +1095,94 @@ export const officialSources = [
     platforms: { ios: true },
     trackId: 6778303404,
     bundleId: "com.tangzixiang.meow",
+    country: "us",
+  },
+  {
+    appId: "clash-plus",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6774378761,
+    bundleId: "com.fluxflux.fluxflux",
+    country: "us",
+  },
+  {
+    appId: "panvell",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6780153714,
+    bundleId: "com.pandavs.clash",
+    country: "us",
+  },
+  {
+    appId: "oneboxm",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6759716475,
+    bundleId: "cloud.oneoh.networktools",
+    country: "us",
+  },
+  {
+    appId: "xray-connect",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6746749546,
+    bundleId: "com.xrayConnect.xrayInstance",
+    country: "us",
+  },
+  {
+    appId: "vpn",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6746414734,
+    bundleId: "yvn.easydev.access",
+    country: "us",
+  },
+  {
+    appId: "vpnet",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6756558545,
+    bundleId: "com.gmm.proxyclient",
+    country: "us",
+  },
+  {
+    appId: "susi-connect",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6759531907,
+    bundleId: "com.susinetwork.connect",
+    country: "us",
+  },
+  {
+    appId: "bclient",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6760386281,
+    bundleId: "com.bhub.client",
+    country: "us",
+  },
+  {
+    appId: "wisp",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6767654269,
+    bundleId: "mtrx.top.app",
+    country: "us",
+  },
+  {
+    appId: "xrayclient",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6738344532,
+    bundleId: "com.llp.app.making.MangoXray",
+    country: "us",
+  },
+  {
+    appId: "pixel-proxy",
+    kind: "app-store",
+    platforms: { ios: true },
+    trackId: 6754511751,
+    bundleId: "com.khrabryi.pixel.proxy",
     country: "us",
   },
 ];

@@ -1,0 +1,87 @@
+[
+  {
+    "id": 206250184,
+    "tag_name": "v0.2.8",
+    "name": "Release v0.2.8",
+    "html_url": "https://github.com/YukiCoco/ToMoon/releases/tag/v0.2.8",
+    "published_at": "2025-03-17T13:57:09Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 238222684,
+        "name": "tomoon-v0.2.8.zip",
+        "browser_download_url": "https://github.com/YukiCoco/ToMoon/releases/download/v0.2.8/tomoon-v0.2.8.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 199931374,
+    "tag_name": "v0.2.7",
+    "name": "Release v0.2.7",
+    "html_url": "https://github.com/YukiCoco/ToMoon/releases/tag/v0.2.7",
+    "published_at": "2025-02-12T18:02:34Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 228564379,
+        "name": "tomoon-v0.2.7.zip",
+        "browser_download_url": "https://github.com/YukiCoco/ToMoon/releases/download/v0.2.7/tomoon-v0.2.7.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 199204033,
+    "tag_name": "v0.2.6",
+    "name": "Release v0.2.6",
+    "html_url": "https://github.com/YukiCoco/ToMoon/releases/tag/v0.2.6",
+    "published_at": "2025-02-08T16:56:45Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 227442318,
+        "name": "tomoon-v0.2.6.zip",
+        "browser_download_url": "https://github.com/YukiCoco/ToMoon/releases/download/v0.2.6/tomoon-v0.2.6.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 164870402,
+    "tag_name": "v0.2.5",
+    "name": "Release v0.2.5",
+    "html_url": "https://github.com/YukiCoco/ToMoon/releases/tag/v0.2.5",
+    "published_at": "2024-07-10T19:39:41Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 178831636,
+        "name": "tomoon-v0.2.5.zip",
+        "browser_download_url": "https://github.com/YukiCoco/ToMoon/releases/download/v0.2.5/tomoon-v0.2.5.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 154944036,
+    "tag_name": "v0.2.4",
+    "name": "Release v0.2.4",
+    "html_url": "https://github.com/YukiCoco/ToMoon/releases/tag/v0.2.4",
+    "published_at": "2024-05-09T13:33:32Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 166953139,
+        "name": "tomoon-v0.2.4.zip",
+        "browser_download_url": "https://github.com/YukiCoco/ToMoon/releases/download/v0.2.4/tomoon-v0.2.4.zip",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

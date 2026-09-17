@@ -19,10 +19,10 @@ const baseline = JSON.parse(
 test("第08票固定25项及累计133项身份、顺序与唯一性", () => {
   assert.equal(baseline.apps.filter((a) => a.ticket === "08").length, 25);
   assert.deepEqual(
-    apps.map((a) => a.id),
+    apps.slice(0, 133).map((a) => a.id),
     baseline.apps.slice(0, 133).map((a) => a.id),
   );
-  assert.equal(new Set(apps.map((a) => a.id)).size, 133);
+  assert.equal(new Set(apps.slice(0, 133).map((a) => a.id)).size, 133);
 });
 
 // 独立读取官方商店兼容性、README及构建；协议兼容不推定实现内核。

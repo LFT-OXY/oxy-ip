@@ -10493,5 +10493,1140 @@
         "format": "hap"
       }
     ]
+  },
+  {
+    "appId": "clash-plus",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://clashplus.io/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://clashplus.io/"
+    },
+    "downloads": [
+      {
+        "id": "ClashPlus-1.2.7-14-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://clashplus.io/ClashPlus-1.2.7-14-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      }
+    ],
+    "version": "1.2.7"
+  },
+  {
+    "appId": "clash-plus",
+    "platform": "ios",
+    "version": "1.4.1",
+    "publishedAt": "2026-09-14T17:52:29Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/clash-plus-smart-proxy-tool/id6774378761?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-plus-smart-proxy-tool/id6774378761?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-plus-smart-proxy-tool/id6774378761?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "clash-plus",
+    "platform": "harmonyos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://clashplus.io/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://clashplus.io/"
+    },
+    "downloads": [
+      {
+        "id": "ClashPlus-1.2.7-14-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://clashplus.io/ClashPlus-1.2.7-14-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      }
+    ],
+    "version": "1.2.7",
+    "note": "官网提供的是 Android APK，仅适用于支持 APK 的鸿蒙环境，不是原生 HarmonyOS NEXT HAP。"
+  },
+  {
+    "appId": "clash-plus",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://clashplus.io/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://clashplus.io/"
+    },
+    "downloads": [
+      {
+        "id": "ClashPlus-1.2.7-x64-setup.exe",
+        "kind": "direct",
+        "url": "https://clashplus.io/ClashPlus-1.2.7-x64-setup.exe",
+        "arch": "x64",
+        "format": "exe"
+      }
+    ],
+    "version": "1.2.7"
+  },
+  {
+    "appId": "clash-plus",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://clashplus.io/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://clashplus.io/"
+    },
+    "downloads": [
+      {
+        "id": "ClashPlus-1.2.7-arm64.dmg",
+        "kind": "direct",
+        "url": "https://clashplus.io/ClashPlus-1.2.7-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      },
+      {
+        "id": "ClashPlus-1.2.7-x64.dmg",
+        "kind": "direct",
+        "url": "https://clashplus.io/ClashPlus-1.2.7-x64.dmg",
+        "arch": "x64",
+        "format": "dmg"
+      }
+    ],
+    "version": "1.2.7"
+  },
+  {
+    "appId": "panvell",
+    "platform": "ios",
+    "version": "1.2.1",
+    "publishedAt": "2026-09-15T21:09:43Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/panvell/id6780153714?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/panvell/id6780153714?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/panvell/id6780153714?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "panvell",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/panvell/id6780153714"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/panvell/id6780153714"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/panvell/id6780153714"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "flclash-patched",
+    "platform": "android",
+    "version": "v0.8.123",
+    "publishedAt": "2026-09-14T16:56:41Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.123-android-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClash-0.8.123-android-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "FlClash-0.8.123-android-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "flclash-patched",
+    "platform": "ios",
+    "version": "v0.8.123",
+    "publishedAt": "2026-09-14T16:56:41Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases"
+    },
+    "note": "官方提供未签名 IPA；安装需要自行签名及相应的 Apple 开发者权限。",
+    "downloads": [
+      {
+        "id": "FlClash-0.8.123-ios-arm64-unsigned.ipa",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-ios-arm64-unsigned.ipa",
+        "arch": "arm64",
+        "format": "ipa"
+      }
+    ]
+  },
+  {
+    "appId": "flclash-patched",
+    "platform": "windows",
+    "version": "v0.8.123",
+    "publishedAt": "2026-09-14T16:56:41Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.123-windows-amd64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-amd64-setup.exe",
+        "arch": "amd64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClash-0.8.123-windows-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "FlClash-0.8.123-windows-arm64-setup.exe",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-arm64-setup.exe",
+        "arch": "arm64",
+        "format": "exe"
+      },
+      {
+        "id": "FlClash-0.8.123-windows-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "flclash-patched",
+    "platform": "macos",
+    "version": "v0.8.123",
+    "publishedAt": "2026-09-14T16:56:41Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.123-macos-amd64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-macos-amd64.dmg",
+        "arch": "amd64",
+        "format": "dmg"
+      },
+      {
+        "id": "FlClash-0.8.123-macos-arm64.dmg",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-macos-arm64.dmg",
+        "arch": "arm64",
+        "format": "dmg"
+      }
+    ]
+  },
+  {
+    "appId": "flclash-patched",
+    "platform": "linux",
+    "version": "v0.8.123",
+    "publishedAt": "2026-09-14T16:56:41Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/FlClash-Patched/releases"
+    },
+    "downloads": [
+      {
+        "id": "FlClash-0.8.123-linux-amd64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.AppImage",
+        "arch": "amd64",
+        "format": "AppImage"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-amd64.deb",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.deb",
+        "arch": "amd64",
+        "format": "deb"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-amd64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.rpm",
+        "arch": "amd64",
+        "format": "rpm"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-amd64.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.tar.zst",
+        "arch": "amd64",
+        "format": "tar.zst"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-amd64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.zip",
+        "arch": "amd64",
+        "format": "zip"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-arm64.AppImage",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.AppImage",
+        "arch": "arm64",
+        "format": "AppImage"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-arm64.deb",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.deb",
+        "arch": "arm64",
+        "format": "deb"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-arm64.rpm",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.rpm",
+        "arch": "arm64",
+        "format": "rpm"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-arm64.tar.zst",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.tar.zst",
+        "arch": "arm64",
+        "format": "tar.zst"
+      },
+      {
+        "id": "FlClash-0.8.123-linux-arm64.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.zip",
+        "arch": "arm64",
+        "format": "zip"
+      }
+    ]
+  },
+  {
+    "appId": "oneboxm",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "Google Play",
+      "url": "https://play.google.com/store/apps/details?id=cloud.oneoh.networktools"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://play.google.com/store/apps/details?id=cloud.oneoh.networktools"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://play.google.com/store/apps/details?id=cloud.oneoh.networktools"
+      }
+    ],
+    "note": "Android 通过官方 Google Play 获取，版本与发布日期人工维护，不沿用 iOS 信息。"
+  },
+  {
+    "appId": "oneboxm",
+    "platform": "ios",
+    "version": "1.0.16",
+    "publishedAt": "2026-08-01T05:23:20Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/oneboxm/id6759716475?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/oneboxm/id6759716475?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/oneboxm/id6759716475?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "xray-connect",
+    "platform": "ios",
+    "version": "1.6",
+    "publishedAt": "2026-07-04T09:02:08Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/xray-connect/id6746749546?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/xray-connect/id6746749546?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/xray-connect/id6746749546?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "xray-connect",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/xray-connect/id6746749546"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/xray-connect/id6746749546"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/xray-connect/id6746749546"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "vpn",
+    "platform": "ios",
+    "version": "4.2.1",
+    "publishedAt": "2026-08-14T17:32:02Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "vpn",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "vpnet",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.gmm.vpnet.client"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://play.google.com/store/apps/details?id=com.gmm.vpnet.client"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://play.google.com/store/apps/details?id=com.gmm.vpnet.client"
+      }
+    ],
+    "note": "Android 通过官方 Google Play 获取，版本与发布日期人工维护，不沿用 iOS 信息。"
+  },
+  {
+    "appId": "vpnet",
+    "platform": "ios",
+    "version": "1.425",
+    "publishedAt": "2026-07-24T13:47:11Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "vpnet",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "susi-connect",
+    "platform": "ios",
+    "version": "1.11.0",
+    "publishedAt": "2026-09-11T06:58:28Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/susi-connect/id6759531907?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/susi-connect/id6759531907?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/susi-connect/id6759531907?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "susi-connect",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/susi-connect/id6759531907"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/susi-connect/id6759531907"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/susi-connect/id6759531907"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "bclient",
+    "platform": "ios",
+    "version": "2.0.4",
+    "publishedAt": "2026-09-01T22:54:35Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/bclient/id6760386281?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/bclient/id6760386281?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/bclient/id6760386281?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "bclient",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/bclient/id6760386281"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/bclient/id6760386281"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/bclient/id6760386281"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "wisp",
+    "platform": "ios",
+    "version": "4.0.38",
+    "publishedAt": "2026-09-16T04:58:11Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "wisp",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "xrayclient",
+    "platform": "ios",
+    "version": "1.0",
+    "publishedAt": "2025-01-27T08:00:00Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/xrayclient/id6738344532?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/xrayclient/id6738344532?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/xrayclient/id6738344532?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "pixel-proxy",
+    "platform": "ios",
+    "version": "2.6.4",
+    "publishedAt": "2026-09-01T01:14:17Z",
+    "lastCheckedAt": "2026-09-17T03:16:25.304Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "pixel-proxy",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store",
+      "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/pixel-proxy/id6754511751"
+      }
+    ],
+    "note": "官方列出 Mac 兼容性；独立 Mac 版本尚未核实，请先查看商店的系统与芯片要求。"
+  },
+  {
+    "appId": "tomoon",
+    "platform": "steam-deck",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/YukiCoco/ToMoon/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/YukiCoco/ToMoon/releases"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://github.com/YukiCoco/ToMoon/releases"
+      }
+    ],
+    "note": "当前发布的构建包含 Alpha 渠道的 Subconverter，仅保留官方发布页，不将合集包标为正式安装包。"
+  },
+  {
+    "appId": "deckyclash",
+    "platform": "steam-deck",
+    "version": "v1.3.4",
+    "publishedAt": "2026-08-17T17:19:12Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/chenx-dust/DeckyClash/releases/tag/v1.3.4"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/chenx-dust/DeckyClash/releases"
+    },
+    "note": "需要 Decky Loader；完整包和离线安装脚本含 x86_64 的 Mihomo，普通插件包需另行下载依赖。",
+    "downloads": [
+      {
+        "id": "DeckyClash-full.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/DeckyClash-full.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      },
+      {
+        "id": "DeckyClash.zip",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/DeckyClash.zip",
+        "arch": "x86_64",
+        "format": "zip"
+      },
+      {
+        "id": "Installer-DeckyClash.sh",
+        "kind": "direct",
+        "url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/Installer-DeckyClash.sh",
+        "arch": "x86_64",
+        "format": "sh"
+      }
+    ]
+  },
+  {
+    "appId": "fancyss",
+    "platform": "asus",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://github.com/hq450/fancyss/tree/3.0/packages"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/hq450/fancyss/tree/3.0/packages"
+    },
+    "downloads": [
+      {
+        "id": "fancyss_arm_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_arm_full.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_arm_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_arm_lite.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_hnd_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_hnd_full.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_hnd_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_hnd_lite.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_hnd_v8_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_hnd_v8_full.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_hnd_v8_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_hnd_v8_lite.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_qca_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_qca_full.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_qca_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_qca_lite.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_mtk_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_mtk_full.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_mtk_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_mtk_lite.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_ipq32_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_ipq32_full.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_ipq32_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_ipq32_lite.tar.gz",
+        "arch": "armv7",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_ipq64_full.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_ipq64_full.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      },
+      {
+        "id": "fancyss_ipq64_lite.tar.gz",
+        "kind": "direct",
+        "url": "https://raw.githubusercontent.com/hq450/fancyss/b19e82cb6a05e08990a96905353921819d44d134/packages/fancyss_ipq64_lite.tar.gz",
+        "arch": "armv8",
+        "format": "tar.gz"
+      }
+    ],
+    "note": "按官方机型表选择平台与 full/lite 包；安装包固定到同一源码提交，不使用可漂移的最新分支地址。",
+    "version": "3.5.30"
+  },
+  {
+    "appId": "merlin-xrayui",
+    "platform": "asus",
+    "version": "v0.69.1",
+    "publishedAt": "2026-09-01T08:47:20Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.69.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases"
+    },
+    "note": "脚本与网页包不含平台二进制，需要兼容的梅林固件与 Entware；Xray 内核按设备安装。",
+    "downloads": [
+      {
+        "id": "asuswrt-merlin-xrayui.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.69.1/asuswrt-merlin-xrayui.tar.gz",
+        "arch": "noarch",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "fullcombo-shark",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方软件源",
+      "url": "https://fantastic-packages.github.io/releases/"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://fantastic-packages.github.io/releases/"
+    },
+    "downloads": [
+      {
+        "id": "luci-app-fchomo-26.259.56423~80383b9.apk",
+        "kind": "direct",
+        "url": "https://fantastic-packages.github.io/releases/25.12/packages/x86_64/luci/luci-app-fchomo-26.259.56423~80383b9.apk",
+        "arch": "noarch",
+        "format": "apk"
+      }
+    ],
+    "note": "适用于 OpenWrt 25.12 软件源，LuCI 包为 noarch；Mihomo 与 firewall4 等依赖仍须匹配设备。",
+    "version": "26.259.56423~80383b9"
+  },
+  {
+    "appId": "nekobox-for-openwrt",
+    "platform": "openwrt",
+    "version": "2.0.8",
+    "publishedAt": "2025-09-24T01:54:01Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/Thaolga/openwrt-nekobox/releases/tag/2.0.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/Thaolga/openwrt-nekobox/releases"
+    },
+    "note": "使用已核实的 2.0.8 正式包；2.0.9 附件带 RC 标识，不替代正式快照。核心与 PHP 等运行依赖需另行安装。",
+    "downloads": [
+      {
+        "id": "luci-app-nekobox_2.0.8-cn_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/Thaolga/openwrt-nekobox/releases/download/2.0.8/luci-app-nekobox_2.0.8-cn_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      }
+    ]
+  },
+  {
+    "appId": "neko-for-openwrt",
+    "platform": "openwrt",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/nosignals/openwrt-neko/releases"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/nosignals/openwrt-neko/releases"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://github.com/nosignals/openwrt-neko/releases"
+      }
+    ],
+    "note": "官方应用包带 Beta 标识；仅保留官方发布入口，正式版本与日期未知，不提供测试包直链。"
+  },
+  {
+    "appId": "magic-catling2",
+    "platform": "asus",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://t.me/merlinclashcat/827"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://t.me/merlinclashcat/827"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://t.me/merlinclashcat/827"
+      }
+    ],
+    "note": "通过官方 Telegram 发布帖选择 ARM32 或 ARM64 附件；不支持从 MC2 1.0.0 以前版本直接升级。",
+    "version": "v1.2.2"
+  },
+  {
+    "appId": "aerobox-for-android",
+    "platform": "android",
+    "version": "v1.2.1",
+    "publishedAt": "2026-09-15T18:14:18Z",
+    "lastCheckedAt": "2026-09-17T03:15:34.785Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/imengying/AeroBoxForAndroid/releases/tag/v1.2.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/imengying/AeroBoxForAndroid/releases"
+    },
+    "downloads": [
+      {
+        "id": "AeroBox-1.2.1-arm64-v8a.apk",
+        "kind": "direct",
+        "url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-arm64-v8a.apk",
+        "arch": "arm64-v8a",
+        "format": "apk"
+      },
+      {
+        "id": "AeroBox-1.2.1-armeabi-v7a.apk",
+        "kind": "direct",
+        "url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-armeabi-v7a.apk",
+        "arch": "armeabi-v7a",
+        "format": "apk"
+      },
+      {
+        "id": "AeroBox-1.2.1-x86.apk",
+        "kind": "direct",
+        "url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-x86.apk",
+        "arch": "x86",
+        "format": "apk"
+      },
+      {
+        "id": "AeroBox-1.2.1-x86_64.apk",
+        "kind": "direct",
+        "url": "https://github.com/imengying/AeroBoxForAndroid/releases/download/v1.2.1/AeroBox-1.2.1-x86_64.apk",
+        "arch": "x86_64",
+        "format": "apk"
+      }
+    ]
   }
 ]

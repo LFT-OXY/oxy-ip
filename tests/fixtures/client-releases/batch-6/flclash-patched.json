@@ -1,0 +1,657 @@
+[
+  {
+    "id": 388563892,
+    "tag_name": "v0.8.123",
+    "name": "v0.8.123",
+    "html_url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.123",
+    "published_at": "2026-09-14T16:56:41Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 563821401,
+        "name": "FlClash-0.8.123-android-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821389,
+        "name": "FlClash-0.8.123-android-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821394,
+        "name": "FlClash-0.8.123-android-x86_64.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-android-x86_64.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821387,
+        "name": "FlClash-0.8.123-ios-arm64-unsigned.ipa",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-ios-arm64-unsigned.ipa",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821390,
+        "name": "FlClash-0.8.123-linux-amd64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821392,
+        "name": "FlClash-0.8.123-linux-amd64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821404,
+        "name": "FlClash-0.8.123-linux-amd64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821402,
+        "name": "FlClash-0.8.123-linux-amd64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821388,
+        "name": "FlClash-0.8.123-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821393,
+        "name": "FlClash-0.8.123-linux-arm64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821397,
+        "name": "FlClash-0.8.123-linux-arm64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821396,
+        "name": "FlClash-0.8.123-linux-arm64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821398,
+        "name": "FlClash-0.8.123-linux-arm64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821400,
+        "name": "FlClash-0.8.123-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821399,
+        "name": "FlClash-0.8.123-macos-amd64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-macos-amd64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821386,
+        "name": "FlClash-0.8.123-macos-arm64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-macos-arm64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821391,
+        "name": "FlClash-0.8.123-windows-amd64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-amd64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821383,
+        "name": "FlClash-0.8.123-windows-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821384,
+        "name": "FlClash-0.8.123-windows-arm64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-arm64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 563821385,
+        "name": "FlClash-0.8.123-windows-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.123/FlClash-0.8.123-windows-arm64.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 387525882,
+    "tag_name": "v0.8.122",
+    "name": "v0.8.122",
+    "html_url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.122",
+    "published_at": "2026-09-12T09:55:28Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 559029823,
+        "name": "FlClash-0.8.122-android-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-android-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029832,
+        "name": "FlClash-0.8.122-android-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-android-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029816,
+        "name": "FlClash-0.8.122-android-x86_64.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-android-x86_64.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029826,
+        "name": "FlClash-0.8.122-ios-arm64-unsigned.ipa",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-ios-arm64-unsigned.ipa",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029825,
+        "name": "FlClash-0.8.122-linux-amd64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-amd64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029834,
+        "name": "FlClash-0.8.122-linux-amd64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-amd64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029830,
+        "name": "FlClash-0.8.122-linux-amd64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-amd64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029828,
+        "name": "FlClash-0.8.122-linux-amd64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-amd64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029820,
+        "name": "FlClash-0.8.122-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029819,
+        "name": "FlClash-0.8.122-linux-arm64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-arm64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029829,
+        "name": "FlClash-0.8.122-linux-arm64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-arm64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029824,
+        "name": "FlClash-0.8.122-linux-arm64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-arm64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029818,
+        "name": "FlClash-0.8.122-linux-arm64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-arm64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029822,
+        "name": "FlClash-0.8.122-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029811,
+        "name": "FlClash-0.8.122-macos-amd64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-macos-amd64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029812,
+        "name": "FlClash-0.8.122-macos-arm64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-macos-arm64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029814,
+        "name": "FlClash-0.8.122-windows-amd64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-windows-amd64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029813,
+        "name": "FlClash-0.8.122-windows-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-windows-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029831,
+        "name": "FlClash-0.8.122-windows-arm64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-windows-arm64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 559029827,
+        "name": "FlClash-0.8.122-windows-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.122/FlClash-0.8.122-windows-arm64.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 386210522,
+    "tag_name": "v0.8.121",
+    "name": "v0.8.121",
+    "html_url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.121",
+    "published_at": "2026-09-10T11:08:08Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 554844715,
+        "name": "FlClash-0.8.121-android-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-android-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844718,
+        "name": "FlClash-0.8.121-android-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-android-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844716,
+        "name": "FlClash-0.8.121-android-x86_64.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-android-x86_64.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844712,
+        "name": "FlClash-0.8.121-ios-arm64-unsigned.ipa",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-ios-arm64-unsigned.ipa",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844707,
+        "name": "FlClash-0.8.121-linux-amd64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-amd64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844711,
+        "name": "FlClash-0.8.121-linux-amd64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-amd64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844708,
+        "name": "FlClash-0.8.121-linux-amd64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-amd64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844701,
+        "name": "FlClash-0.8.121-linux-amd64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-amd64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844705,
+        "name": "FlClash-0.8.121-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844702,
+        "name": "FlClash-0.8.121-linux-arm64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-arm64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844713,
+        "name": "FlClash-0.8.121-linux-arm64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-arm64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844706,
+        "name": "FlClash-0.8.121-linux-arm64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-arm64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844709,
+        "name": "FlClash-0.8.121-linux-arm64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-arm64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844704,
+        "name": "FlClash-0.8.121-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844698,
+        "name": "FlClash-0.8.121-macos-amd64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-macos-amd64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844697,
+        "name": "FlClash-0.8.121-macos-arm64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-macos-arm64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844699,
+        "name": "FlClash-0.8.121-windows-amd64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-windows-amd64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844703,
+        "name": "FlClash-0.8.121-windows-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-windows-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844700,
+        "name": "FlClash-0.8.121-windows-arm64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-windows-arm64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 554844710,
+        "name": "FlClash-0.8.121-windows-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.121/FlClash-0.8.121-windows-arm64.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 383819037,
+    "tag_name": "v0.8.120",
+    "name": "v0.8.120",
+    "html_url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.120",
+    "published_at": "2026-09-07T03:54:42Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 548116771,
+        "name": "FlClash-0.8.120-android-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-android-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116767,
+        "name": "FlClash-0.8.120-android-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-android-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116769,
+        "name": "FlClash-0.8.120-android-x86_64.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-android-x86_64.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116763,
+        "name": "FlClash-0.8.120-ios-arm64-unsigned.ipa",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-ios-arm64-unsigned.ipa",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116761,
+        "name": "FlClash-0.8.120-linux-amd64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-amd64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116766,
+        "name": "FlClash-0.8.120-linux-amd64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-amd64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116762,
+        "name": "FlClash-0.8.120-linux-amd64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-amd64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116764,
+        "name": "FlClash-0.8.120-linux-amd64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-amd64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116765,
+        "name": "FlClash-0.8.120-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116760,
+        "name": "FlClash-0.8.120-linux-arm64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-arm64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116755,
+        "name": "FlClash-0.8.120-linux-arm64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-arm64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116758,
+        "name": "FlClash-0.8.120-linux-arm64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-arm64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116759,
+        "name": "FlClash-0.8.120-linux-arm64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-arm64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116751,
+        "name": "FlClash-0.8.120-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116757,
+        "name": "FlClash-0.8.120-macos-amd64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-macos-amd64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116754,
+        "name": "FlClash-0.8.120-macos-arm64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-macos-arm64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116753,
+        "name": "FlClash-0.8.120-windows-amd64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-windows-amd64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116756,
+        "name": "FlClash-0.8.120-windows-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-windows-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116750,
+        "name": "FlClash-0.8.120-windows-arm64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-windows-arm64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 548116749,
+        "name": "FlClash-0.8.120-windows-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.120/FlClash-0.8.120-windows-arm64.zip",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 383227782,
+    "tag_name": "v0.8.119",
+    "name": "v0.8.119",
+    "html_url": "https://github.com/chenx-dust/FlClash-Patched/releases/tag/v0.8.119",
+    "published_at": "2026-09-05T11:34:45Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 545753631,
+        "name": "FlClash-0.8.119-android-arm64-v8a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-android-arm64-v8a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753634,
+        "name": "FlClash-0.8.119-android-armeabi-v7a.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-android-armeabi-v7a.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753632,
+        "name": "FlClash-0.8.119-android-x86_64.apk",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-android-x86_64.apk",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753633,
+        "name": "FlClash-0.8.119-ios-arm64-unsigned.ipa",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-ios-arm64-unsigned.ipa",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753625,
+        "name": "FlClash-0.8.119-linux-amd64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-amd64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753627,
+        "name": "FlClash-0.8.119-linux-amd64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-amd64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753630,
+        "name": "FlClash-0.8.119-linux-amd64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-amd64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753629,
+        "name": "FlClash-0.8.119-linux-amd64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-amd64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753624,
+        "name": "FlClash-0.8.119-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753623,
+        "name": "FlClash-0.8.119-linux-arm64.AppImage",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-arm64.AppImage",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753621,
+        "name": "FlClash-0.8.119-linux-arm64.deb",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-arm64.deb",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753620,
+        "name": "FlClash-0.8.119-linux-arm64.rpm",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-arm64.rpm",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753626,
+        "name": "FlClash-0.8.119-linux-arm64.tar.zst",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-arm64.tar.zst",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753622,
+        "name": "FlClash-0.8.119-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753618,
+        "name": "FlClash-0.8.119-macos-amd64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-macos-amd64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753628,
+        "name": "FlClash-0.8.119-macos-arm64.dmg",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-macos-arm64.dmg",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753616,
+        "name": "FlClash-0.8.119-windows-amd64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-windows-amd64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753619,
+        "name": "FlClash-0.8.119-windows-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-windows-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753617,
+        "name": "FlClash-0.8.119-windows-arm64-setup.exe",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-windows-arm64-setup.exe",
+        "state": "uploaded"
+      },
+      {
+        "id": 545753615,
+        "name": "FlClash-0.8.119-windows-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/FlClash-Patched/releases/download/v0.8.119/FlClash-0.8.119-windows-arm64.zip",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

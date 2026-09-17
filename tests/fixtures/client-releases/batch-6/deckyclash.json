@@ -1,0 +1,201 @@
+[
+  {
+    "id": 228074680,
+    "tag_name": "nightly",
+    "name": "Release Nightly",
+    "html_url": "https://github.com/chenx-dust/DeckyClash/releases/tag/nightly",
+    "published_at": "2025-06-26T16:55:02Z",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 526150854,
+        "name": "DeckyClash-full-linux-amd64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/DeckyClash-full-linux-amd64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150851,
+        "name": "DeckyClash-full-linux-arm64.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/DeckyClash-full-linux-arm64.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150848,
+        "name": "DeckyClash-full.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/DeckyClash-full.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150850,
+        "name": "DeckyClash.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/DeckyClash.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150855,
+        "name": "Installer-DeckyClash-linux-amd64.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/Installer-DeckyClash-linux-amd64.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150853,
+        "name": "Installer-DeckyClash-linux-arm64.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/Installer-DeckyClash-linux-arm64.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150849,
+        "name": "Installer-DeckyClash.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/Installer-DeckyClash.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 526150845,
+        "name": "version.txt",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/nightly/version.txt",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 371837919,
+    "tag_name": "v1.3.4",
+    "name": "Release v1.3.4",
+    "html_url": "https://github.com/chenx-dust/DeckyClash/releases/tag/v1.3.4",
+    "published_at": "2026-08-17T17:19:12Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 518298709,
+        "name": "DeckyClash-full.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/DeckyClash-full.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 518298710,
+        "name": "DeckyClash.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/DeckyClash.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 518298708,
+        "name": "Installer-DeckyClash.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/Installer-DeckyClash.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 518298706,
+        "name": "version.txt",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.4/version.txt",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 344685775,
+    "tag_name": "v1.3.3",
+    "name": "Release v1.3.3",
+    "html_url": "https://github.com/chenx-dust/DeckyClash/releases/tag/v1.3.3",
+    "published_at": "2026-06-25T12:04:10Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 457602890,
+        "name": "DeckyClash-full.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.3/DeckyClash-full.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 457602893,
+        "name": "DeckyClash.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.3/DeckyClash.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 457602892,
+        "name": "Installer-DeckyClash.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.3/Installer-DeckyClash.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 457602891,
+        "name": "version.txt",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.3/version.txt",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 339179313,
+    "tag_name": "v1.3.2",
+    "name": "Release v1.3.2",
+    "html_url": "https://github.com/chenx-dust/DeckyClash/releases/tag/v1.3.2",
+    "published_at": "2026-06-14T13:52:06Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 447314247,
+        "name": "DeckyClash-full.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.2/DeckyClash-full.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 447314245,
+        "name": "DeckyClash.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.2/DeckyClash.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 447314246,
+        "name": "Installer-DeckyClash.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.2/Installer-DeckyClash.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 447314244,
+        "name": "version.txt",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.2/version.txt",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 332156805,
+    "tag_name": "v1.3.1",
+    "name": "Release v1.3.1",
+    "html_url": "https://github.com/chenx-dust/DeckyClash/releases/tag/v1.3.1",
+    "published_at": "2026-05-31T15:39:47Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 434530209,
+        "name": "DeckyClash-full.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.1/DeckyClash-full.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 434530208,
+        "name": "DeckyClash.zip",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.1/DeckyClash.zip",
+        "state": "uploaded"
+      },
+      {
+        "id": 434530210,
+        "name": "Installer-DeckyClash.sh",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.1/Installer-DeckyClash.sh",
+        "state": "uploaded"
+      },
+      {
+        "id": 447260666,
+        "name": "version.txt",
+        "browser_download_url": "https://github.com/chenx-dust/DeckyClash/releases/download/v1.3.1/version.txt",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

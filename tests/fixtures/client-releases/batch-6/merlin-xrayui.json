@@ -1,0 +1,117 @@
+[
+  {
+    "id": 380340814,
+    "tag_name": "v0.69.1",
+    "name": "Release 0.69.1",
+    "html_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.69.1",
+    "published_at": "2026-09-01T08:47:20Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 539262888,
+        "name": "asuswrt-merlin-xrayui.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.69.1/asuswrt-merlin-xrayui.tar.gz",
+        "state": "uploaded"
+      },
+      {
+        "id": 539262887,
+        "name": "xrayui-datbuilder.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.69.1/xrayui-datbuilder.tar.gz",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 350087477,
+    "tag_name": "v0.68.2",
+    "name": "Release 0.68.2",
+    "html_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.68.2",
+    "published_at": "2026-07-07T07:43:18Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 468936487,
+        "name": "asuswrt-merlin-xrayui.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.2/asuswrt-merlin-xrayui.tar.gz",
+        "state": "uploaded"
+      },
+      {
+        "id": 468936486,
+        "name": "xrayui-datbuilder.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.2/xrayui-datbuilder.tar.gz",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 349919436,
+    "tag_name": "v0.68.1",
+    "name": "Release 0.68.1",
+    "html_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.68.1",
+    "published_at": "2026-07-06T22:24:22Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 468531336,
+        "name": "asuswrt-merlin-xrayui.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.1/asuswrt-merlin-xrayui.tar.gz",
+        "state": "uploaded"
+      },
+      {
+        "id": 468531337,
+        "name": "xrayui-datbuilder.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.1/xrayui-datbuilder.tar.gz",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 349891601,
+    "tag_name": "v0.68.0",
+    "name": "Release 0.68.0",
+    "html_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.68.0",
+    "published_at": "2026-07-06T21:14:54Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 468482045,
+        "name": "asuswrt-merlin-xrayui.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.0/asuswrt-merlin-xrayui.tar.gz",
+        "state": "uploaded"
+      },
+      {
+        "id": 468482052,
+        "name": "xrayui-datbuilder.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.68.0/xrayui-datbuilder.tar.gz",
+        "state": "uploaded"
+      }
+    ]
+  },
+  {
+    "id": 328601047,
+    "tag_name": "v0.67.1rc1",
+    "name": "Release 0.67.1rc1",
+    "html_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/tag/v0.67.1rc1",
+    "published_at": "2026-05-24T23:41:17Z",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 428870914,
+        "name": "asuswrt-merlin-xrayui.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.67.1rc1/asuswrt-merlin-xrayui.tar.gz",
+        "state": "uploaded"
+      },
+      {
+        "id": 428870921,
+        "name": "xrayui-datbuilder.tar.gz",
+        "browser_download_url": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui/releases/download/v0.67.1rc1/xrayui-datbuilder.tar.gz",
+        "state": "uploaded"
+      }
+    ]
+  }
+]

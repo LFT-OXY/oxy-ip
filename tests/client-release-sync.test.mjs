@@ -279,6 +279,7 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
     "batch-3",
     "batch-4",
     "batch-5",
+    "batch-6",
   ]) {
     const batchDirectory = new URL(
       `./fixtures/client-releases/${directory}/`,
@@ -288,9 +289,10 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
       // 未上传完成的资产在单源失败回归中单独验证，不混入成功场景。
       if (!name.endsWith(".json") || name.endsWith("-incomplete.json"))
         continue;
-      batch.push(
-        JSON.parse(await readFile(new URL(name, batchDirectory), "utf8")),
+      const raw = JSON.parse(
+        await readFile(new URL(name, batchDirectory), "utf8"),
       );
+      batch.push(...(Array.isArray(raw) ? raw : [raw]));
     }
   }
   const fixtures = [flclash, v2rayng, ...batch.filter((raw) => raw.tag_name)];

@@ -58,7 +58,7 @@ function assertPackages(row, expected) {
 }
 test("第5批五条GitHub来源只匹配官方完整包，不混入组件或其他平台", () => {
   assert.deepEqual(
-    githubSources.slice(74).map((s) => s.appId),
+    githubSources.slice(74, 79).map((s) => s.appId),
     Object.keys(packages),
   );
   for (const [id, platforms] of Object.entries(packages)) {
