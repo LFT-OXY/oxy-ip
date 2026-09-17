@@ -4,7 +4,7 @@
 
 **Blocked by:** 10
 **Status:** ready-for-agent
-**Impl:** doing
+**Impl:** done
 
 ## 验收追加反馈与确认状态
 
@@ -47,4 +47,4 @@
 - 用户在最终方案确认后回复“可以”：确认每页24项及上述分页、组件统一方案。
 - 本次收到用户 `/atw-implement`：领取第11票，实施及验证记录见 `research/11-pagination-shadcn.md`。
 
-- 实施、浏览器补充验证及两轴完整复审已通过：`research/11-review.md`；逐项验收证据见 `research/11-acceptance.md`。198/198完整测试通过，等待提交后关闭本票及用户验收。
+- 实施、浏览器补充验证及两轴完整复审已通过：`research/11-review.md`；逐项验收证据见 `research/11-acceptance.md`。198/198完整测试通过；功能提交 `c561af6`，本票已关闭，等待用户验收。
