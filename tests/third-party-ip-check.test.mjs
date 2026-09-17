@@ -7,8 +7,8 @@ const readDirectory = () =>
     readFileSync("src/views/components/third-party-ip-check.json", "utf8"),
   );
 
-// 期望来自 PRD，不从目录数据生成，避免测试自证。
-test("第三方目录保留九站固定网址、分组和中文用途", () => {
+// 期望来自已确认需求，不从目录数据生成，避免测试自证。
+test("第三方目录保留十三站固定网址、分组和中文用途", () => {
   const groups = readDirectory();
   assert.deepEqual(
     groups.map(({ label, sites }) => [
@@ -20,6 +20,11 @@ test("第三方目录保留九站固定网址、分组和中文用途", () => {
         "综合查询",
         [
           ["CleanIP", "https://cleanip.io/", "前往 CleanIP 进行 IP 检测。"],
+          [
+            "IPPure",
+            "https://ippure.com/",
+            "查看 IP 位置、ASN、属性与风险信息。",
+          ],
           [
             "IPSuper",
             "https://ipsuper.com/",
@@ -68,6 +73,26 @@ test("第三方目录保留九站固定网址、分组和中文用途", () => {
         ],
       ],
       [
+        "连通性与延迟",
+        [
+          [
+            "ITDOG",
+            "https://www.itdog.cn/",
+            "从多地节点进行 Ping、TCPing 与网站测速。",
+          ],
+          [
+            "TCPTest",
+            "https://www.tcptest.cn/",
+            "进行多地 Ping、TCPing、网站测速与路由追踪。",
+          ],
+          [
+            "ping.pe",
+            "https://ping.pe",
+            "从多地节点查看 Ping、MTR 与 TCP 端口连通性。",
+          ],
+        ],
+      ],
+      [
         "流量趋势",
         [
           [
@@ -89,6 +114,60 @@ const hintContracts = {
       /cross-reference/i,
       /temporarily unavailable.*retry.*later/i,
       /does not mean.*IP is unsafe/i,
+    ],
+  },
+  IPPure: {
+    zh: [
+      /IP 属性与风险评分仅供交叉参考/,
+      /不保证住宅属性、安全或目标网站可用性/,
+      /结合其他数据源/,
+    ],
+    en: [
+      /classifications and risk scores.*cross-reference only/i,
+      /do not guarantee residential status, safety or target website availability/i,
+      /compare.*other data sources/i,
+    ],
+  },
+  ITDOG: {
+    zh: [
+      /远端节点到目标/,
+      /不代表本机访问体验或 IP 安全/,
+      /禁用 ICMP.*Ping 失败不等于服务不可用/,
+      /结合 TCPing 与网站测速/,
+    ],
+    en: [
+      /remote nodes to the target/i,
+      /not your local browsing experience or IP safety/i,
+      /ICMP is disabled.*failed Ping does not mean.*service is unavailable/i,
+      /compare TCPing and website speed tests/i,
+    ],
+  },
+  TCPTest: {
+    zh: [
+      /取决于所选节点、协议与端口/,
+      /不代表本机访问体验或 IP 安全/,
+      /TCP 端口可连接不等于应用服务正常/,
+      /结合 HTTP.*实际协议测试/,
+    ],
+    en: [
+      /depend on the selected node, protocol and port/i,
+      /not your local browsing experience or IP safety/i,
+      /reachable TCP port does not mean.*application is working/i,
+      /test its actual protocol.*HTTP/i,
+    ],
+  },
+  "ping.pe": {
+    zh: [
+      /来自远端节点/,
+      /不代表本机访问体验或 IP 安全/,
+      /MTR 中间跳丢包可能由 ICMP 限速或过滤导致/,
+      /结合后续跳与终点/,
+    ],
+    en: [
+      /come from remote nodes/i,
+      /not your local browsing experience or IP safety/i,
+      /loss at intermediate MTR hops may be caused by ICMP rate limiting or filtering/i,
+      /compare subsequent hops and the destination/i,
     ],
   },
   IPSuper: {

@@ -9,6 +9,12 @@
         "hint": "第三方结果供交叉参考；网站暂时不可访问时可稍后自行重试，不把外部故障解释为当前 IP 不安全。"
       },
       {
+        "name": "IPPure",
+        "url": "https://ippure.com/",
+        "purpose": "查看 IP 位置、ASN、属性与风险信息。",
+        "hint": "IP 属性与风险评分仅供交叉参考，不保证住宅属性、安全或目标网站可用性；请结合其他数据源判断。"
+      },
+      {
         "name": "IPSuper",
         "url": "https://ipsuper.com/",
         "purpose": "聚合查看 IP 风险、代理、ASN 与定位信息。",
@@ -59,6 +65,29 @@
         "url": "https://scamalytics.com/",
         "purpose": "查看欺诈风险评分与黑名单线索。",
         "hint": "关注欺诈分与垃圾邮件、abuse 等黑名单线索；高分需要警惕，低分不保证安全。总分是其可见 Web 流量的风险意见，不是专门的垃圾邮件评分。"
+      }
+    ]
+  },
+  {
+    "label": "连通性与延迟",
+    "sites": [
+      {
+        "name": "ITDOG",
+        "url": "https://www.itdog.cn/",
+        "purpose": "从多地节点进行 Ping、TCPing 与网站测速。",
+        "hint": "结果反映远端节点到目标的连通性与延迟，不代表本机访问体验或 IP 安全；禁用 ICMP 时 Ping 失败不等于服务不可用，可结合 TCPing 与网站测速判断。"
+      },
+      {
+        "name": "TCPTest",
+        "url": "https://www.tcptest.cn/",
+        "purpose": "进行多地 Ping、TCPing、网站测速与路由追踪。",
+        "hint": "结果取决于所选节点、协议与端口，不代表本机访问体验或 IP 安全；TCP 端口可连接不等于应用服务正常，需结合 HTTP 等实际协议测试。"
+      },
+      {
+        "name": "ping.pe",
+        "url": "https://ping.pe",
+        "purpose": "从多地节点查看 Ping、MTR 与 TCP 端口连通性。",
+        "hint": "结果来自远端节点，不代表本机访问体验或 IP 安全；MTR 中间跳丢包可能由 ICMP 限速或过滤导致，需结合后续跳与终点判断。"
       }
     ]
   },
