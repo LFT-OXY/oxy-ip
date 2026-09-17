@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "currentVersionReleaseDate": "2026-05-23T17:07:58Z",
+      "trackId": 6473621095,
+      "version": "1.41.0",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/bamboo-dragonfly/id6473621095?uo=4",
+      "bundleId": "com.flhcc.BambooDragonfly"
+    }
+  ]
+}

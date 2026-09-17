@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/outline-app/id1356177741?uo=4",
+      "trackId": 1356177741,
+      "bundleId": "org.outline.ios.client",
+      "currentVersionReleaseDate": "2026-07-24T02:09:00Z",
+      "version": "1.21.0",
+      "wrapperType": "software"
+    }
+  ]
+}

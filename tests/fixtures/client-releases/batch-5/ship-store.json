@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4",
+      "bundleId": "com.yellow.clash",
+      "trackId": 6736895153,
+      "currentVersionReleaseDate": "2024-10-16T21:06:54Z",
+      "version": "1.0.0",
+      "wrapperType": "software"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "bundleId": "hossin.asaadi.V2Box",
+      "trackId": 6446814690,
+      "currentVersionReleaseDate": "2026-09-15T02:32:48Z",
+      "version": "10.1.8",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+    }
+  ]
+}

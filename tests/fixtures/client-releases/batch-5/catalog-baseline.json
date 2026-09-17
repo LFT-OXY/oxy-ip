@@ -1,0 +1,1243 @@
+{
+  "source_url": "https://huarun.win/",
+  "retrieved_at": "2026-09-16T08:11:19.651340+00:00",
+  "source_html_sha256": "12d7229c40ab85f3c391c2d528d7f0afe3e5e83810e6a3cdaaa48087442de70d",
+  "source_reader_sha256": "30a9ef94ccb1d1ef814cc1c0ee2ddfea8566b79a418a80a86dda8271c2c0bb9f",
+  "ordering": "以本次 Jina Reader 返回的应用顺序冻结，名称由同次官网 HTML 卡片标题提取，双方 ID 集合已核对一致。",
+  "count": 154,
+  "note": "此清单用于固定收录范围与票据归属。名称和外部入口摘自参考站；应用资料、官方身份与下载有效性须在对应实施票逐项核验。",
+  "apps": [
+    {
+      "order": 1,
+      "id": "shadowrocket",
+      "name": "Shadowrocket",
+      "reference_url": "https://huarun.win/apps/shadowrocket",
+      "observed_official_entry": "https://apps.apple.com/app/shadowrocket/id932747118",
+      "ticket": "01"
+    },
+    {
+      "order": 2,
+      "id": "flclash",
+      "name": "FlClash",
+      "reference_url": "https://huarun.win/apps/flclash",
+      "observed_official_entry": "https://github.com/chen08209/FlClash",
+      "ticket": "01"
+    },
+    {
+      "order": 3,
+      "id": "sing-box",
+      "name": "sing-box",
+      "reference_url": "https://huarun.win/apps/sing-box",
+      "observed_official_entry": "https://github.com/SagerNet/sing-box",
+      "ticket": "01"
+    },
+    {
+      "order": 4,
+      "id": "clash-verge-rev",
+      "name": "Clash Verge Rev",
+      "reference_url": "https://huarun.win/apps/clash-verge-rev",
+      "observed_official_entry": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "ticket": "01"
+    },
+    {
+      "order": 5,
+      "id": "v2rayng",
+      "name": "v2rayNG",
+      "reference_url": "https://huarun.win/apps/v2rayng",
+      "observed_official_entry": "https://github.com/2dust/v2rayNG",
+      "ticket": "01"
+    },
+    {
+      "order": 6,
+      "id": "clash-meta-for-android",
+      "name": "Clash Meta for Android",
+      "reference_url": "https://huarun.win/apps/clash-meta-for-android",
+      "observed_official_entry": "https://github.com/MetaCubeX/ClashMetaForAndroid",
+      "ticket": "01"
+    },
+    {
+      "order": 7,
+      "id": "stash",
+      "name": "Stash",
+      "reference_url": "https://huarun.win/apps/stash",
+      "observed_official_entry": "https://stash.ws/",
+      "ticket": "01"
+    },
+    {
+      "order": 8,
+      "id": "bettbox",
+      "name": "Bettbox",
+      "reference_url": "https://huarun.win/apps/bettbox",
+      "observed_official_entry": "https://github.com/appshubcc/Bettbox",
+      "ticket": "01"
+    },
+    {
+      "order": 9,
+      "id": "surge",
+      "name": "Surge",
+      "reference_url": "https://huarun.win/apps/surge",
+      "observed_official_entry": "https://apps.apple.com/app/surge-5/id1442620678",
+      "ticket": "04"
+    },
+    {
+      "order": 10,
+      "id": "quantumult-x",
+      "name": "Quantumult X",
+      "reference_url": "https://huarun.win/apps/quantumult-x",
+      "observed_official_entry": "https://apps.apple.com/app/quantumult-x/id1443988620",
+      "ticket": "04"
+    },
+    {
+      "order": 11,
+      "id": "loon",
+      "name": "Loon",
+      "reference_url": "https://huarun.win/apps/loon",
+      "observed_official_entry": "https://apps.apple.com/app/loon/id1373567447",
+      "ticket": "04"
+    },
+    {
+      "order": 12,
+      "id": "clash-by-hako",
+      "name": "Clash by Hako",
+      "reference_url": "https://huarun.win/apps/clash-by-hako",
+      "observed_official_entry": "https://clash.md/",
+      "ticket": "04"
+    },
+    {
+      "order": 13,
+      "id": "karing",
+      "name": "Karing",
+      "reference_url": "https://huarun.win/apps/karing",
+      "observed_official_entry": "https://github.com/KaringX/karing",
+      "ticket": "04"
+    },
+    {
+      "order": 14,
+      "id": "pharos-pro",
+      "name": "Pharos Pro",
+      "reference_url": "https://huarun.win/apps/pharos-pro",
+      "observed_official_entry": "https://apps.apple.com/app/pharos-pro/id1456610173",
+      "ticket": "04"
+    },
+    {
+      "order": 15,
+      "id": "hiddify",
+      "name": "Hiddify",
+      "reference_url": "https://huarun.win/apps/hiddify",
+      "observed_official_entry": "https://github.com/hiddify/hiddify-app",
+      "ticket": "04"
+    },
+    {
+      "order": 16,
+      "id": "egern",
+      "name": "Egern",
+      "reference_url": "https://huarun.win/apps/egern",
+      "observed_official_entry": "https://egernapp.com/",
+      "ticket": "04"
+    },
+    {
+      "order": 17,
+      "id": "clashfest",
+      "name": "ClashFest",
+      "reference_url": "https://huarun.win/apps/clashfest",
+      "observed_official_entry": "https://github.com/Nemu-x/ClashFest",
+      "ticket": "04"
+    },
+    {
+      "order": 18,
+      "id": "exclave",
+      "name": "Exclave",
+      "reference_url": "https://huarun.win/apps/exclave",
+      "observed_official_entry": "https://github.com/ExclaveNetwork/Exclave",
+      "ticket": "04"
+    },
+    {
+      "order": 19,
+      "id": "nekobox-for-android",
+      "name": "NekoBox for Android",
+      "reference_url": "https://huarun.win/apps/nekobox-for-android",
+      "observed_official_entry": "https://github.com/MatsuriDayo/NekoBoxForAndroid",
+      "ticket": "04"
+    },
+    {
+      "order": 20,
+      "id": "husi",
+      "name": "Husi",
+      "reference_url": "https://huarun.win/apps/husi",
+      "observed_official_entry": "https://github.com/xchacha20-poly1305/husi",
+      "ticket": "04"
+    },
+    {
+      "order": 21,
+      "id": "yumebox",
+      "name": "YumeBox",
+      "reference_url": "https://huarun.win/apps/yumebox",
+      "observed_official_entry": "https://github.com/YumeYucca/YumeBox",
+      "ticket": "04"
+    },
+    {
+      "order": 22,
+      "id": "shadowsocks-android",
+      "name": "Shadowsocks Android",
+      "reference_url": "https://huarun.win/apps/shadowsocks-android",
+      "observed_official_entry": "https://github.com/shadowsocks/shadowsocks-android",
+      "ticket": "04"
+    },
+    {
+      "order": 23,
+      "id": "onexray",
+      "name": "OneXray",
+      "reference_url": "https://huarun.win/apps/onexray",
+      "observed_official_entry": "https://github.com/OneXray/OneXray",
+      "ticket": "04"
+    },
+    {
+      "order": 24,
+      "id": "ssrvpn",
+      "name": "SSRVPN",
+      "reference_url": "https://huarun.win/apps/ssrvpn",
+      "observed_official_entry": "https://github.com/Elegying/SSRVPN",
+      "ticket": "04"
+    },
+    {
+      "order": 25,
+      "id": "singcast",
+      "name": "SingCast",
+      "reference_url": "https://huarun.win/apps/singcast",
+      "observed_official_entry": "https://mapleafgo.github.io/singcast/",
+      "ticket": "04"
+    },
+    {
+      "order": 26,
+      "id": "streisand",
+      "name": "Streisand",
+      "reference_url": "https://huarun.win/apps/streisand",
+      "observed_official_entry": "https://apps.apple.com/app/streisand/id6450534064",
+      "ticket": "04"
+    },
+    {
+      "order": 27,
+      "id": "foxray",
+      "name": "FoXray",
+      "reference_url": "https://huarun.win/apps/foxray",
+      "observed_official_entry": "https://github.com/fofapro/foXray",
+      "ticket": "04"
+    },
+    {
+      "order": 28,
+      "id": "clash-nyanpasu",
+      "name": "Clash Nyanpasu",
+      "reference_url": "https://huarun.win/apps/clash-nyanpasu",
+      "observed_official_entry": "https://github.com/libnyanpasu/clash-nyanpasu",
+      "ticket": "04"
+    },
+    {
+      "order": 29,
+      "id": "clash-party",
+      "name": "Clash Party",
+      "reference_url": "https://huarun.win/apps/clash-party",
+      "observed_official_entry": "https://github.com/mihomo-party-org/clash-party",
+      "ticket": "04"
+    },
+    {
+      "order": 30,
+      "id": "gui-for-clash",
+      "name": "GUI.for.Clash",
+      "reference_url": "https://huarun.win/apps/gui-for-clash",
+      "observed_official_entry": "https://github.com/GUI-for-Cores/GUI.for.Clash",
+      "ticket": "04"
+    },
+    {
+      "order": 31,
+      "id": "sparkle",
+      "name": "Sparkle",
+      "reference_url": "https://huarun.win/apps/sparkle",
+      "observed_official_entry": "https://github.com/xishang0128/sparkle",
+      "ticket": "04"
+    },
+    {
+      "order": 32,
+      "id": "v2rayn",
+      "name": "v2rayN",
+      "reference_url": "https://huarun.win/apps/v2rayn",
+      "observed_official_entry": "https://github.com/2dust/v2rayN",
+      "ticket": "04"
+    },
+    {
+      "order": 33,
+      "id": "anyportal",
+      "name": "AnyPortal",
+      "reference_url": "https://huarun.win/apps/anyportal",
+      "observed_official_entry": "https://github.com/AnyPortal/AnyPortal",
+      "ticket": "04"
+    },
+    {
+      "order": 34,
+      "id": "clashx-meta",
+      "name": "ClashX Meta",
+      "reference_url": "https://huarun.win/apps/clashx-meta",
+      "observed_official_entry": "https://github.com/MetaCubeX/ClashX.Meta",
+      "ticket": "05"
+    },
+    {
+      "order": 35,
+      "id": "v2rayu",
+      "name": "V2rayU",
+      "reference_url": "https://huarun.win/apps/v2rayu",
+      "observed_official_entry": "https://github.com/yanue/V2rayU",
+      "ticket": "05"
+    },
+    {
+      "order": 36,
+      "id": "surfboard",
+      "name": "Surfboard",
+      "reference_url": "https://huarun.win/apps/surfboard",
+      "observed_official_entry": "https://getsurfboard.com/",
+      "ticket": "05"
+    },
+    {
+      "order": 37,
+      "id": "insightbox",
+      "name": "InsightBox",
+      "reference_url": "https://huarun.win/apps/insightbox",
+      "observed_official_entry": "https://t.me/s/v2rayInsight",
+      "ticket": "05"
+    },
+    {
+      "order": 38,
+      "id": "xray-gui",
+      "name": "Xray GUI",
+      "reference_url": "https://huarun.win/apps/xray-gui",
+      "observed_official_entry": "https://github.com/SaeedDev94/Xray",
+      "ticket": "05"
+    },
+    {
+      "order": 39,
+      "id": "clash-mi",
+      "name": "Clash Mi",
+      "reference_url": "https://huarun.win/apps/clash-mi",
+      "observed_official_entry": "https://github.com/KaringX/clashmi",
+      "ticket": "05"
+    },
+    {
+      "order": 40,
+      "id": "flclashx",
+      "name": "FlClashX",
+      "reference_url": "https://huarun.win/apps/flclashx",
+      "observed_official_entry": "https://github.com/pluralplay/FlClashX",
+      "ticket": "05"
+    },
+    {
+      "order": 41,
+      "id": "mikubox-for-android",
+      "name": "MikuBox for Android",
+      "reference_url": "https://huarun.win/apps/mikubox-for-android",
+      "observed_official_entry": "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid",
+      "ticket": "05"
+    },
+    {
+      "order": 42,
+      "id": "kunbox",
+      "name": "KunBox",
+      "reference_url": "https://huarun.win/apps/kunbox",
+      "observed_official_entry": "https://github.com/roseforljh/KunBox",
+      "ticket": "05"
+    },
+    {
+      "order": 43,
+      "id": "nekobox-by-starifly",
+      "name": "NekoBox by starifly",
+      "reference_url": "https://huarun.win/apps/nekobox-by-starifly",
+      "observed_official_entry": "https://github.com/starifly/NekoBoxForAndroid",
+      "ticket": "05"
+    },
+    {
+      "order": 44,
+      "id": "happ-proxy",
+      "name": "Happ Proxy",
+      "reference_url": "https://huarun.win/apps/happ-proxy",
+      "observed_official_entry": "https://github.com/Happ-proxy/happ-desktop",
+      "ticket": "05"
+    },
+    {
+      "order": 45,
+      "id": "clash-xiaoy",
+      "name": "clash-xiaoy",
+      "reference_url": "https://huarun.win/apps/clash-xiaoy",
+      "observed_official_entry": "https://github.com/aimy1/clash-xiaoy",
+      "ticket": "05"
+    },
+    {
+      "order": 46,
+      "id": "monadbox",
+      "name": "MonadBox",
+      "reference_url": "https://huarun.win/apps/monadbox",
+      "observed_official_entry": "https://github.com/MonadBoxLab/MonadBox",
+      "ticket": "05"
+    },
+    {
+      "order": 47,
+      "id": "mconnect",
+      "name": "MConnect",
+      "reference_url": "https://huarun.win/apps/mconnect",
+      "observed_official_entry": "https://t.me/mconnectofficial",
+      "ticket": "05"
+    },
+    {
+      "order": 48,
+      "id": "vproxy",
+      "name": "Vproxy",
+      "reference_url": "https://huarun.win/apps/vproxy",
+      "observed_official_entry": "https://github.com/5VNetwork/VX",
+      "ticket": "05"
+    },
+    {
+      "order": 49,
+      "id": "flyclash",
+      "name": "FlyClash 桌面版",
+      "reference_url": "https://huarun.win/apps/flyclash",
+      "observed_official_entry": "https://github.com/GtxFury/FlyClash",
+      "ticket": "05"
+    },
+    {
+      "order": 50,
+      "id": "flyclash-android",
+      "name": "FlyClash Android",
+      "reference_url": "https://huarun.win/apps/flyclash-android",
+      "observed_official_entry": "https://github.com/GtxFury/FlyClash-Android",
+      "ticket": "05"
+    },
+    {
+      "order": 51,
+      "id": "sudodroid",
+      "name": "Sudodroid",
+      "reference_url": "https://huarun.win/apps/sudodroid",
+      "observed_official_entry": "https://github.com/SUDOKU-ASCII/sudoku-android",
+      "ticket": "05"
+    },
+    {
+      "order": 52,
+      "id": "box-for-root",
+      "name": "Box for Root",
+      "reference_url": "https://huarun.win/apps/box-for-root",
+      "observed_official_entry": "https://github.com/taamarin/box_for_magisk",
+      "ticket": "05"
+    },
+    {
+      "order": 53,
+      "id": "surfing",
+      "name": "Surfing",
+      "reference_url": "https://huarun.win/apps/surfing",
+      "observed_official_entry": "https://github.com/GitMetaio/Surfing",
+      "ticket": "05"
+    },
+    {
+      "order": 54,
+      "id": "box4magisk",
+      "name": "Box4Magisk",
+      "reference_url": "https://huarun.win/apps/box4magisk",
+      "observed_official_entry": "https://github.com/CHIZI-0618/box4magisk",
+      "ticket": "05"
+    },
+    {
+      "order": 55,
+      "id": "box-for-android",
+      "name": "Box for Android",
+      "reference_url": "https://huarun.win/apps/box-for-android",
+      "observed_official_entry": "https://github.com/boxproxy/box",
+      "ticket": "05"
+    },
+    {
+      "order": 56,
+      "id": "akashaproxy",
+      "name": "akashaProxy",
+      "reference_url": "https://huarun.win/apps/akashaproxy",
+      "observed_official_entry": "https://github.com/akashaProxy/akashaProxy",
+      "ticket": "05"
+    },
+    {
+      "order": 57,
+      "id": "clash-mix",
+      "name": "Clash MIX",
+      "reference_url": "https://huarun.win/apps/clash-mix",
+      "observed_official_entry": "https://github.com/AXEVO/Clash-MIX",
+      "ticket": "05"
+    },
+    {
+      "order": 58,
+      "id": "anywhere",
+      "name": "Anywhere",
+      "reference_url": "https://huarun.win/apps/anywhere",
+      "observed_official_entry": "https://github.com/NodePassProject/Anywhere",
+      "ticket": "05"
+    },
+    {
+      "order": 59,
+      "id": "everywhere",
+      "name": "Everywhere",
+      "reference_url": "https://huarun.win/apps/everywhere",
+      "observed_official_entry": "https://github.com/NodePassProject/Everywhere",
+      "ticket": "06"
+    },
+    {
+      "order": 60,
+      "id": "connect-now",
+      "name": "Connect Now",
+      "reference_url": "https://huarun.win/apps/connect-now",
+      "observed_official_entry": "https://apps.apple.com/app/connect-now/id6749354119",
+      "ticket": "06"
+    },
+    {
+      "order": 61,
+      "id": "incy",
+      "name": "incy",
+      "reference_url": "https://huarun.win/apps/incy",
+      "observed_official_entry": "https://incy.cc/",
+      "ticket": "06"
+    },
+    {
+      "order": 62,
+      "id": "nextin",
+      "name": "Nextin",
+      "reference_url": "https://huarun.win/apps/nextin",
+      "observed_official_entry": "https://apps.apple.com/us/app/nextin/id6754002454",
+      "ticket": "06"
+    },
+    {
+      "order": 63,
+      "id": "sing-box-for-apple",
+      "name": "Sing-box for Apple",
+      "reference_url": "https://huarun.win/apps/sing-box-for-apple",
+      "observed_official_entry": "https://github.com/Elziy/sing-box-for-apple",
+      "ticket": "06"
+    },
+    {
+      "order": 64,
+      "id": "tunna",
+      "name": "Tunna",
+      "reference_url": "https://huarun.win/apps/tunna",
+      "observed_official_entry": "https://apps.apple.com/app/tunna/id6471652937",
+      "ticket": "06"
+    },
+    {
+      "order": 65,
+      "id": "loon-lite",
+      "name": "Loon Lite",
+      "reference_url": "https://huarun.win/apps/loon-lite",
+      "observed_official_entry": "https://apps.apple.com/app/loon-lite/id6444029612",
+      "ticket": "06"
+    },
+    {
+      "order": 66,
+      "id": "gui-for-singbox",
+      "name": "GUI.for.SingBox",
+      "reference_url": "https://huarun.win/apps/gui-for-singbox",
+      "observed_official_entry": "https://github.com/GUI-for-Cores/GUI.for.SingBox",
+      "ticket": "06"
+    },
+    {
+      "order": 67,
+      "id": "clashmac",
+      "name": "ClashMac",
+      "reference_url": "https://huarun.win/apps/clashmac",
+      "observed_official_entry": "https://github.com/666OS/ClashMac",
+      "ticket": "06"
+    },
+    {
+      "order": 68,
+      "id": "throne",
+      "name": "Throne",
+      "reference_url": "https://huarun.win/apps/throne",
+      "observed_official_entry": "https://github.com/throneproj/Throne",
+      "ticket": "06"
+    },
+    {
+      "order": 69,
+      "id": "flowz",
+      "name": "FlowZ",
+      "reference_url": "https://huarun.win/apps/flowz",
+      "observed_official_entry": "https://github.com/dododook/FlowZ",
+      "ticket": "06"
+    },
+    {
+      "order": 70,
+      "id": "polaris",
+      "name": "Polaris",
+      "reference_url": "https://huarun.win/apps/polaris",
+      "observed_official_entry": "https://github.com/polaris-arch/Polaris",
+      "ticket": "06"
+    },
+    {
+      "order": 71,
+      "id": "onebox",
+      "name": "OneBox",
+      "reference_url": "https://huarun.win/apps/onebox",
+      "observed_official_entry": "https://github.com/OneOhCloud/OneBox",
+      "ticket": "06"
+    },
+    {
+      "order": 72,
+      "id": "interstellar",
+      "name": "Interstellar",
+      "reference_url": "https://huarun.win/apps/interstellar",
+      "observed_official_entry": "https://github.com/zn0wii/interstellar-proxy",
+      "ticket": "06"
+    },
+    {
+      "order": 73,
+      "id": "satelite",
+      "name": "Satelite",
+      "reference_url": "https://huarun.win/apps/satelite",
+      "observed_official_entry": "https://github.com/zn0wii/satelite-proxy",
+      "ticket": "06"
+    },
+    {
+      "order": 74,
+      "id": "clashbar",
+      "name": "ClashBar",
+      "reference_url": "https://huarun.win/apps/clashbar",
+      "observed_official_entry": "https://github.com/Sitoi/ClashBar",
+      "ticket": "06"
+    },
+    {
+      "order": 75,
+      "id": "kumoapp",
+      "name": "KumoApp",
+      "reference_url": "https://huarun.win/apps/kumoapp",
+      "observed_official_entry": "https://github.com/ProjectKumo/KumoApp",
+      "ticket": "06"
+    },
+    {
+      "order": 76,
+      "id": "singboard-for-mac",
+      "name": "Singboard for Mac",
+      "reference_url": "https://huarun.win/apps/singboard-for-mac",
+      "observed_official_entry": "https://github.com/okunvei/singboard_for_mac",
+      "ticket": "06"
+    },
+    {
+      "order": 77,
+      "id": "irbox",
+      "name": "IRBox",
+      "reference_url": "https://huarun.win/apps/irbox",
+      "observed_official_entry": "https://github.com/frank-vpl/IRBox",
+      "ticket": "06"
+    },
+    {
+      "order": 78,
+      "id": "netch",
+      "name": "Netch",
+      "reference_url": "https://huarun.win/apps/netch",
+      "observed_official_entry": "https://github.com/netchx/netch",
+      "ticket": "06"
+    },
+    {
+      "order": 79,
+      "id": "pantheon",
+      "name": "Pantheon",
+      "reference_url": "https://huarun.win/apps/pantheon",
+      "observed_official_entry": "https://github.com/Zephyruso/Pantheon",
+      "ticket": "06"
+    },
+    {
+      "order": 80,
+      "id": "stelliberty",
+      "name": "Stelliberty",
+      "reference_url": "https://huarun.win/apps/stelliberty",
+      "observed_official_entry": "https://github.com/Kindness-Kismet/Stelliberty",
+      "ticket": "06"
+    },
+    {
+      "order": 81,
+      "id": "carton",
+      "name": "Carton",
+      "reference_url": "https://huarun.win/apps/carton",
+      "observed_official_entry": "https://github.com/821869798/carton",
+      "ticket": "06"
+    },
+    {
+      "order": 82,
+      "id": "pandora-box",
+      "name": "Pandora Box",
+      "reference_url": "https://huarun.win/apps/pandora-box",
+      "observed_official_entry": "https://github.com/snakem982/Pandora-Box",
+      "ticket": "06"
+    },
+    {
+      "order": 83,
+      "id": "clashtui",
+      "name": "ClashTui",
+      "reference_url": "https://huarun.win/apps/clashtui",
+      "observed_official_entry": "https://github.com/JohanChane/clashtui",
+      "ticket": "06"
+    },
+    {
+      "order": 84,
+      "id": "sing-box-windows",
+      "name": "Sing-Box Windows",
+      "reference_url": "https://huarun.win/apps/sing-box-windows",
+      "observed_official_entry": "https://github.com/xinggaoya/sing-box-windows",
+      "ticket": "07"
+    },
+    {
+      "order": 85,
+      "id": "nekobox-for-pc",
+      "name": "NekoBox for PC",
+      "reference_url": "https://huarun.win/apps/nekobox-for-pc",
+      "observed_official_entry": "https://github.com/qr243vbi/nekobox",
+      "ticket": "07"
+    },
+    {
+      "order": 86,
+      "id": "xrayui",
+      "name": "XrayUI",
+      "reference_url": "https://huarun.win/apps/xrayui",
+      "observed_official_entry": "https://github.com/PhoenixNil/XrayUI-dev",
+      "ticket": "07"
+    },
+    {
+      "order": 87,
+      "id": "swell-proxy",
+      "name": "Swell Proxy",
+      "reference_url": "https://huarun.win/apps/swell-proxy",
+      "observed_official_entry": "https://github.com/yaog6700-bit/Swell-Proxy",
+      "ticket": "07"
+    },
+    {
+      "order": 88,
+      "id": "nekoray",
+      "name": "Nekoray",
+      "reference_url": "https://huarun.win/apps/nekoray",
+      "observed_official_entry": "https://github.com/MatsuriDayo/nekoray/releases/latest",
+      "ticket": "07"
+    },
+    {
+      "order": 89,
+      "id": "sudoku-desktop",
+      "name": "Sudoku Desktop",
+      "reference_url": "https://huarun.win/apps/sudoku-desktop",
+      "observed_official_entry": "https://github.com/SUDOKU-ASCII/sudoku-desktop",
+      "ticket": "07"
+    },
+    {
+      "order": 90,
+      "id": "clash-net",
+      "name": "Clash .NET",
+      "reference_url": "https://huarun.win/apps/clash-net",
+      "observed_official_entry": "/apps/clash-net",
+      "ticket": "07"
+    },
+    {
+      "order": 91,
+      "id": "clashn",
+      "name": "ClashN",
+      "reference_url": "https://huarun.win/apps/clashn",
+      "observed_official_entry": "https://github.com/2dust/clashN",
+      "ticket": "07"
+    },
+    {
+      "order": 92,
+      "id": "lvory",
+      "name": "lvory",
+      "reference_url": "https://huarun.win/apps/lvory",
+      "observed_official_entry": "https://github.com/sxueck/lvory",
+      "ticket": "07"
+    },
+    {
+      "order": 93,
+      "id": "v2raya",
+      "name": "v2rayA",
+      "reference_url": "https://huarun.win/apps/v2raya",
+      "observed_official_entry": "https://github.com/v2rayA/v2rayA",
+      "ticket": "07"
+    },
+    {
+      "order": 94,
+      "id": "dae",
+      "name": "dae",
+      "reference_url": "https://huarun.win/apps/dae",
+      "observed_official_entry": "https://github.com/daeuniverse/dae",
+      "ticket": "07"
+    },
+    {
+      "order": 95,
+      "id": "daed",
+      "name": "daed",
+      "reference_url": "https://huarun.win/apps/daed",
+      "observed_official_entry": "https://github.com/daeuniverse/daed",
+      "ticket": "07"
+    },
+    {
+      "order": 96,
+      "id": "shellcrash",
+      "name": "ShellCrash",
+      "reference_url": "https://huarun.win/apps/shellcrash",
+      "observed_official_entry": "https://github.com/Juewuy/ShellCrash",
+      "ticket": "07"
+    },
+    {
+      "order": 97,
+      "id": "clashbox",
+      "name": "ClashBox",
+      "reference_url": "https://huarun.win/apps/clashbox",
+      "observed_official_entry": "https://github.com/xiaobaigroup/ClashBox",
+      "ticket": "07"
+    },
+    {
+      "order": 98,
+      "id": "nekobox-for-harmony",
+      "name": "NekoBox for Harmony",
+      "reference_url": "https://huarun.win/apps/nekobox-for-harmony",
+      "observed_official_entry": "https://github.com/xiaoli8571/NekoBox4Harmony",
+      "ticket": "07"
+    },
+    {
+      "order": 99,
+      "id": "karing-harmony-hap",
+      "name": "Karing Harmony HAP",
+      "reference_url": "https://huarun.win/apps/karing-harmony-hap",
+      "observed_official_entry": "https://github.com/ks-lm-kf/harmony-kslmkf-karing-hap",
+      "ticket": "07"
+    },
+    {
+      "order": 100,
+      "id": "hey",
+      "name": "Hey",
+      "reference_url": "https://huarun.win/apps/hey",
+      "observed_official_entry": "https://github.com/popsiclelmlm/Hey",
+      "ticket": "07"
+    },
+    {
+      "order": 101,
+      "id": "ownbox",
+      "name": "OwnBox",
+      "reference_url": "https://huarun.win/apps/ownbox",
+      "observed_official_entry": "https://github.com/Own716/OwnBoxForAndroid",
+      "ticket": "07"
+    },
+    {
+      "order": 102,
+      "id": "openclash",
+      "name": "OpenClash",
+      "reference_url": "https://huarun.win/apps/openclash",
+      "observed_official_entry": "https://github.com/vernesong/OpenClash",
+      "ticket": "07"
+    },
+    {
+      "order": 103,
+      "id": "passwall",
+      "name": "PassWall",
+      "reference_url": "https://huarun.win/apps/passwall",
+      "observed_official_entry": "https://github.com/Openwrt-Passwall/openwrt-passwall",
+      "ticket": "07"
+    },
+    {
+      "order": 104,
+      "id": "passwall2",
+      "name": "PassWall2",
+      "reference_url": "https://huarun.win/apps/passwall2",
+      "observed_official_entry": "https://github.com/Openwrt-Passwall/openwrt-passwall2",
+      "ticket": "07"
+    },
+    {
+      "order": 105,
+      "id": "nikki",
+      "name": "Nikki",
+      "reference_url": "https://huarun.win/apps/nikki",
+      "observed_official_entry": "https://github.com/nikkinikki-org/OpenWrt-nikki",
+      "ticket": "07"
+    },
+    {
+      "order": 106,
+      "id": "nikki-rs",
+      "name": "Nikki RS",
+      "reference_url": "https://huarun.win/apps/nikki-rs",
+      "observed_official_entry": "https://github.com/CHKayanami/OpenWrt-nikki-rs",
+      "ticket": "07"
+    },
+    {
+      "order": 107,
+      "id": "momo",
+      "name": "Momo",
+      "reference_url": "https://huarun.win/apps/momo",
+      "observed_official_entry": "https://github.com/nikkinikki-org/OpenWrt-momo",
+      "ticket": "07"
+    },
+    {
+      "order": 108,
+      "id": "homeproxy",
+      "name": "HomeProxy",
+      "reference_url": "https://huarun.win/apps/homeproxy",
+      "observed_official_entry": "https://github.com/immortalwrt/homeproxy",
+      "ticket": "07"
+    },
+    {
+      "order": 109,
+      "id": "open-box",
+      "name": "Open-Box",
+      "reference_url": "https://huarun.win/apps/open-box",
+      "observed_official_entry": "https://github.com/liandu2024/Open-Box",
+      "ticket": "08"
+    },
+    {
+      "order": 110,
+      "id": "shadowsocksr-plus",
+      "name": "ShadowSocksR Plus+",
+      "reference_url": "https://huarun.win/apps/shadowsocksr-plus",
+      "observed_official_entry": "https://github.com/fw876/helloworld",
+      "ticket": "08"
+    },
+    {
+      "order": 111,
+      "id": "orbit-x",
+      "name": "Orbit X",
+      "reference_url": "https://huarun.win/apps/orbit-x",
+      "observed_official_entry": "https://apps.apple.com/us/app/orbit-x/id6762544103",
+      "ticket": "08"
+    },
+    {
+      "order": 112,
+      "id": "v2box",
+      "name": "V2Box",
+      "reference_url": "https://huarun.win/apps/v2box",
+      "observed_official_entry": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690",
+      "ticket": "08"
+    },
+    {
+      "order": 113,
+      "id": "outline",
+      "name": "Outline",
+      "reference_url": "https://huarun.win/apps/outline",
+      "observed_official_entry": "https://getoutline.org/",
+      "ticket": "08"
+    },
+    {
+      "order": 114,
+      "id": "potatso",
+      "name": "Potatso",
+      "reference_url": "https://huarun.win/apps/potatso",
+      "observed_official_entry": "https://apps.apple.com/us/app/potatso/id1239860606",
+      "ticket": "08"
+    },
+    {
+      "order": 115,
+      "id": "onlynet",
+      "name": "OnlyNet",
+      "reference_url": "https://huarun.win/apps/onlynet",
+      "observed_official_entry": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522",
+      "ticket": "08"
+    },
+    {
+      "order": 116,
+      "id": "jamjams",
+      "name": "Jamjams",
+      "reference_url": "https://huarun.win/apps/jamjams",
+      "observed_official_entry": "https://apps.apple.com/us/app/jamjams/id6477182037",
+      "ticket": "08"
+    },
+    {
+      "order": 117,
+      "id": "rabbithole",
+      "name": "RabbitHole",
+      "reference_url": "https://huarun.win/apps/rabbithole",
+      "observed_official_entry": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629",
+      "ticket": "08"
+    },
+    {
+      "order": 118,
+      "id": "shadowclash",
+      "name": "ShadowClash",
+      "reference_url": "https://huarun.win/apps/shadowclash",
+      "observed_official_entry": "https://apps.apple.com/us/app/shadowclash/id6760091330",
+      "ticket": "08"
+    },
+    {
+      "order": 119,
+      "id": "bamboo-dragonfly",
+      "name": "Bamboo Dragonfly",
+      "reference_url": "https://huarun.win/apps/bamboo-dragonfly",
+      "observed_official_entry": "https://apps.apple.com/us/app/bamboo-dragonfly/id6473621095",
+      "ticket": "08"
+    },
+    {
+      "order": 120,
+      "id": "oneok-vpn",
+      "name": "Oneok VPN",
+      "reference_url": "https://huarun.win/apps/oneok-vpn",
+      "observed_official_entry": "https://apps.apple.com/us/app/oneok-vpn/id6761477404",
+      "ticket": "08"
+    },
+    {
+      "order": 121,
+      "id": "xtunnel",
+      "name": "XTunnel",
+      "reference_url": "https://huarun.win/apps/xtunnel",
+      "observed_official_entry": "https://apps.apple.com/us/app/xtunnel/id6741881458",
+      "ticket": "08"
+    },
+    {
+      "order": 122,
+      "id": "v2rage",
+      "name": "v2RAGE",
+      "reference_url": "https://huarun.win/apps/v2rage",
+      "observed_official_entry": "https://apps.apple.com/us/app/v2rage/id6761075402",
+      "ticket": "08"
+    },
+    {
+      "order": 123,
+      "id": "openvxs",
+      "name": "OpenVXS",
+      "reference_url": "https://huarun.win/apps/openvxs",
+      "observed_official_entry": "https://apps.apple.com/us/app/openvxs-vpn/id6757167153",
+      "ticket": "08"
+    },
+    {
+      "order": 124,
+      "id": "dash-vpn",
+      "name": "Dash VPN",
+      "reference_url": "https://huarun.win/apps/dash-vpn",
+      "observed_official_entry": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923",
+      "ticket": "08"
+    },
+    {
+      "order": 125,
+      "id": "ship",
+      "name": "Ship",
+      "reference_url": "https://huarun.win/apps/ship",
+      "observed_official_entry": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153",
+      "ticket": "08"
+    },
+    {
+      "order": 126,
+      "id": "voxiproxytun",
+      "name": "VoxiProxyTun",
+      "reference_url": "https://huarun.win/apps/voxiproxytun",
+      "observed_official_entry": "https://apps.apple.com/us/app/voxiproxytun/id6768408266",
+      "ticket": "08"
+    },
+    {
+      "order": 127,
+      "id": "vpsus",
+      "name": "VPSUS",
+      "reference_url": "https://huarun.win/apps/vpsus",
+      "observed_official_entry": "https://apps.apple.com/us/app/vpsus/id6761466149",
+      "ticket": "08"
+    },
+    {
+      "order": 128,
+      "id": "clash-lite",
+      "name": "Clash Lite",
+      "reference_url": "https://huarun.win/apps/clash-lite",
+      "observed_official_entry": "https://apps.apple.com/us/app/clash-lite/id6761357475",
+      "ticket": "08"
+    },
+    {
+      "order": 129,
+      "id": "linkclashx",
+      "name": "LinkClashX",
+      "reference_url": "https://huarun.win/apps/linkclashx",
+      "observed_official_entry": "https://apps.apple.com/us/app/linkclashx/id6757075299",
+      "ticket": "08"
+    },
+    {
+      "order": 130,
+      "id": "meow",
+      "name": "Meow",
+      "reference_url": "https://huarun.win/apps/meow",
+      "observed_official_entry": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404",
+      "ticket": "08"
+    },
+    {
+      "order": 131,
+      "id": "meow-android",
+      "name": "Meow Android",
+      "reference_url": "https://huarun.win/apps/meow-android",
+      "observed_official_entry": "https://github.com/meow-rs/meow-android",
+      "ticket": "08"
+    },
+    {
+      "order": 132,
+      "id": "baoliandeng",
+      "name": "BaoLianDeng",
+      "reference_url": "https://huarun.win/apps/baoliandeng",
+      "observed_official_entry": "https://apps.apple.com/us/app/baoliandeng/id6779101876",
+      "ticket": "08"
+    },
+    {
+      "order": 133,
+      "id": "paws",
+      "name": "Paws",
+      "reference_url": "https://huarun.win/apps/paws",
+      "observed_official_entry": "https://github.com/richerfu/Paws",
+      "ticket": "08"
+    },
+    {
+      "order": 134,
+      "id": "clash-plus",
+      "name": "Clash Plus",
+      "reference_url": "https://huarun.win/apps/clash-plus",
+      "observed_official_entry": "https://apps.apple.com/us/app/clash-plus-smart-proxy-tool/id6774378761",
+      "ticket": "09"
+    },
+    {
+      "order": 135,
+      "id": "panvell",
+      "name": "PanVell",
+      "reference_url": "https://huarun.win/apps/panvell",
+      "observed_official_entry": "https://apps.apple.com/us/app/panvell/id6780153714",
+      "ticket": "09"
+    },
+    {
+      "order": 136,
+      "id": "flclash-patched",
+      "name": "FlClash Patched",
+      "reference_url": "https://huarun.win/apps/flclash-patched",
+      "observed_official_entry": "https://github.com/chenx-dust/FlClash-Patched",
+      "ticket": "09"
+    },
+    {
+      "order": 137,
+      "id": "oneboxm",
+      "name": "OneBoxM",
+      "reference_url": "https://huarun.win/apps/oneboxm",
+      "observed_official_entry": "https://apps.apple.com/us/app/oneboxm/id6759716475",
+      "ticket": "09"
+    },
+    {
+      "order": 138,
+      "id": "xray-connect",
+      "name": "XRay Connect",
+      "reference_url": "https://huarun.win/apps/xray-connect",
+      "observed_official_entry": "https://apps.apple.com/us/app/xray-connect/id6746749546",
+      "ticket": "09"
+    },
+    {
+      "order": 139,
+      "id": "vpn",
+      "name": "Изи VPN",
+      "reference_url": "https://huarun.win/apps/vpn",
+      "observed_official_entry": "https://apps.apple.com/us/app/%D0%B8%D0%B7%D0%B8-vpn/id6746414734",
+      "ticket": "09"
+    },
+    {
+      "order": 140,
+      "id": "vpnet",
+      "name": "VPNET",
+      "reference_url": "https://huarun.win/apps/vpnet",
+      "observed_official_entry": "https://apps.apple.com/us/app/vpnet-fast-proxy-client/id6756558545",
+      "ticket": "09"
+    },
+    {
+      "order": 141,
+      "id": "susi-connect",
+      "name": "susi connect",
+      "reference_url": "https://huarun.win/apps/susi-connect",
+      "observed_official_entry": "https://apps.apple.com/us/app/susi-connect/id6759531907",
+      "ticket": "09"
+    },
+    {
+      "order": 142,
+      "id": "bclient",
+      "name": "BClient",
+      "reference_url": "https://huarun.win/apps/bclient",
+      "observed_official_entry": "https://apps.apple.com/us/app/bclient/id6760386281",
+      "ticket": "09"
+    },
+    {
+      "order": 143,
+      "id": "wisp",
+      "name": "Wisp",
+      "reference_url": "https://huarun.win/apps/wisp",
+      "observed_official_entry": "https://apps.apple.com/us/app/wisp-vpn-vless-xray-reality/id6767654269",
+      "ticket": "09"
+    },
+    {
+      "order": 144,
+      "id": "xrayclient",
+      "name": "XRayClient",
+      "reference_url": "https://huarun.win/apps/xrayclient",
+      "observed_official_entry": "https://apps.apple.com/us/app/xrayclient/id6738344532",
+      "ticket": "09"
+    },
+    {
+      "order": 145,
+      "id": "pixel-proxy",
+      "name": "Pixel-Proxy",
+      "reference_url": "https://huarun.win/apps/pixel-proxy",
+      "observed_official_entry": "https://apps.apple.com/us/app/pixel-proxy/id6754511751",
+      "ticket": "09"
+    },
+    {
+      "order": 146,
+      "id": "tomoon",
+      "name": "ToMoon",
+      "reference_url": "https://huarun.win/apps/tomoon",
+      "observed_official_entry": "https://github.com/YukiCoco/ToMoon",
+      "ticket": "09"
+    },
+    {
+      "order": 147,
+      "id": "deckyclash",
+      "name": "DeckyClash",
+      "reference_url": "https://huarun.win/apps/deckyclash",
+      "observed_official_entry": "https://github.com/chenx-dust/DeckyClash",
+      "ticket": "09"
+    },
+    {
+      "order": 148,
+      "id": "fancyss",
+      "name": "FancySS",
+      "reference_url": "https://huarun.win/apps/fancyss",
+      "observed_official_entry": "https://github.com/hq450/fancyss",
+      "ticket": "09"
+    },
+    {
+      "order": 149,
+      "id": "merlin-xrayui",
+      "name": "Merlin XrayUI",
+      "reference_url": "https://huarun.win/apps/merlin-xrayui",
+      "observed_official_entry": "https://github.com/DanielLavrushin/asuswrt-merlin-xrayui",
+      "ticket": "09"
+    },
+    {
+      "order": 150,
+      "id": "fullcombo-shark",
+      "name": "FullCombo Shark",
+      "reference_url": "https://huarun.win/apps/fullcombo-shark",
+      "observed_official_entry": "https://github.com/fcshark-org/openwrt-fchomo",
+      "ticket": "09"
+    },
+    {
+      "order": 151,
+      "id": "nekobox-for-openwrt",
+      "name": "NekoBox for OpenWrt",
+      "reference_url": "https://huarun.win/apps/nekobox-for-openwrt",
+      "observed_official_entry": "https://github.com/Thaolga/openwrt-nekobox",
+      "ticket": "09"
+    },
+    {
+      "order": 152,
+      "id": "neko-for-openwrt",
+      "name": "Neko for OpenWrt",
+      "reference_url": "https://huarun.win/apps/neko-for-openwrt",
+      "observed_official_entry": "https://github.com/nosignals/openwrt-neko",
+      "ticket": "09"
+    },
+    {
+      "order": 153,
+      "id": "magic-catling2",
+      "name": "Magic Catling2",
+      "reference_url": "https://huarun.win/apps/magic-catling2",
+      "observed_official_entry": "https://mcreadme.gitbook.io/",
+      "ticket": "09"
+    },
+    {
+      "order": 154,
+      "id": "aerobox-for-android",
+      "name": "AeroBox for Android",
+      "reference_url": "https://huarun.win/apps/aerobox-for-android",
+      "observed_official_entry": "https://github.com/imengying/AeroBoxForAndroid",
+      "ticket": "09"
+    }
+  ]
+}

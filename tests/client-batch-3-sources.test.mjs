@@ -239,7 +239,7 @@ test("第三批6条Apple来源只更新iOS，错误身份失败而Mac人工信�
     "loon-lite",
   ];
   assert.deepEqual(
-    officialSources.slice(17).map((s) => s.appId),
+    officialSources.slice(17, 23).map((s) => s.appId),
     ids,
   );
   for (const id of ids) {

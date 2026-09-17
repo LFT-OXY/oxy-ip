@@ -21,10 +21,10 @@ const baseline = JSON.parse(
 test("第07票固定25项与累计108项身份、顺序没有重复遗漏", () => {
   assert.equal(baseline.apps.filter((app) => app.ticket === "07").length, 25);
   assert.deepEqual(
-    apps.map((app) => app.id),
+    apps.slice(0, 108).map((app) => app.id),
     baseline.apps.slice(0, 108).map((app) => app.id),
   );
-  assert.equal(new Set(apps.map((app) => app.id)).size, 108);
+  assert.equal(new Set(apps.slice(0, 108).map((app) => app.id)).size, 108);
 });
 
 // 官方 README、同标签构建与软件源分别核对；两项失效身份不猜测属性。

@@ -50,7 +50,7 @@ const counts = {
 
 test("第4批17条GitHub来源完整匹配平台包计数且拒绝跨版和测试包", () => {
   assert.deepEqual(
-    githubSources.slice(57).map((s) => s.appId),
+    githubSources.slice(57, 74).map((s) => s.appId),
     Object.keys(counts),
   );
   for (const [id, platforms] of Object.entries(counts)) {

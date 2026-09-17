@@ -275,3 +275,10 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 ### 13.7 易错对照
 
 错误：测试只断言“被选入或有排除理由”，排除资产被误选也会通过。正确：独立期望同时检查完整集合与排除集合不相交；可进一步按平台冻结文件名和架构，发现跨平台等量互换。
+
+## 14. 第五批：人工直链与商店渠道边界
+
+- 不新增解析接口。自动抓取分页超限并不豁免已能独立核实的正式包：Outline Windows人工维护v1.10.1、官方发布时间、同标签ia32对应x86 EXE；`maintenance=manual`且不填`lastCheckedAt`。后续分页失败时，直链有效或临时访问失败均保留整组人工快照，不用泛页面替代可核实的包。
+- Apple `kind=mac-software`不接入现有仅iOS的lookup配置。BaoLianDeng的Mac版本与日期独立人工维护；内核按该正式版本发行说明核验，不沿用已过时商店简介。iOS兼容Mac仍不复制iOS版本。
+- 同一项目不同发布渠道分别判断正式性：Meow Android发布说明中的Play内部测试不自动否定独立GitHub正式发布；Paws未签名HAP明确自行签名条件，不将unsigned等同预发布。仍须核对release状态和官方发布限制，不能只凭`prerelease=false`判断。
+- `client-catalog-batch-5.test.mjs`使用冻结名单核对累计133项、47个平台及内核；图标SVG例外仅限PRD授权的SSR Plus+，断言非官方文字标记，其余24款保持官方WebP要求。`client-batch-5-sources.test.mjs`独立核对5条GitHub、20条iOS来源、完整资产集合/架构、版本隔离和失败保留；Outline注入分页错误的测试只验证保留行为，不冒充分页器测试。

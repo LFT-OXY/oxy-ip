@@ -9410,5 +9410,1088 @@
         "url": "https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_generic/luci/"
       }
     ]
+  },
+  {
+    "appId": "open-box",
+    "platform": "openwrt",
+    "version": "v0.1.201",
+    "publishedAt": "2026-09-16T12:14:02Z",
+    "lastCheckedAt": "2026-09-17T01:44:49.531Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/liandu2024/Open-Box/releases/tag/v0.1.201"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/liandu2024/Open-Box/releases"
+    },
+    "note": "仅用于 OpenWrt x86_64 或 aarch64 路由器；至少 512MB 存储和 512MB 内存，需要 Root 与相应网络依赖。",
+    "downloads": [
+      {
+        "id": "open-box-v0.1.201-linux-arm64.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64.tar.gz",
+        "arch": "arm64",
+        "format": "tar.gz"
+      },
+      {
+        "id": "open-box-v0.1.201-linux-x64.tar.gz",
+        "kind": "direct",
+        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64.tar.gz",
+        "arch": "x64",
+        "format": "tar.gz"
+      }
+    ]
+  },
+  {
+    "appId": "shadowsocksr-plus",
+    "platform": "openwrt",
+    "version": "v196.9",
+    "publishedAt": "2026-09-07T01:44:10Z",
+    "lastCheckedAt": "2026-09-17T01:44:49.531Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/fw876/helloworld/releases/tag/v196.9"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/fw876/helloworld/releases"
+    },
+    "note": "LuCI 主包为 noarch，内核和运行依赖按设备另装；此处 APK 是 OpenWrt 包，不是 Android 应用。",
+    "downloads": [
+      {
+        "id": "luci-app-ssr-plus-196-r9.apk",
+        "kind": "direct",
+        "url": "https://github.com/fw876/helloworld/releases/download/v196.9/luci-app-ssr-plus-196-r9.apk",
+        "arch": "noarch",
+        "format": "apk"
+      },
+      {
+        "id": "luci-app-ssr-plus_196-r9_all.ipk",
+        "kind": "direct",
+        "url": "https://github.com/fw876/helloworld/releases/download/v196.9/luci-app-ssr-plus_196-r9_all.ipk",
+        "arch": "noarch",
+        "format": "ipk"
+      }
+    ]
+  },
+  {
+    "appId": "orbit-x",
+    "platform": "ios",
+    "version": "1.7.1",
+    "publishedAt": "2026-08-22T01:50:18Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "orbit-x",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "v2box",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "Google Play",
+      "url": "https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box"
+      }
+    ]
+  },
+  {
+    "appId": "v2box",
+    "platform": "ios",
+    "version": "10.1.8",
+    "publishedAt": "2026-09-15T02:32:48Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "v2box",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?uo=4"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "outline",
+    "platform": "android",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://getoutline.org/get-started/#step-3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://getoutline.org/get-started/#step-3"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://getoutline.org/get-started/#step-3"
+      }
+    ]
+  },
+  {
+    "appId": "outline",
+    "platform": "ios",
+    "version": "1.21.0",
+    "publishedAt": "2026-07-24T02:09:00Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/outline-app/id1356177741?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/outline-app/id1356177741?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/outline-app/id1356177741?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "outline",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/OutlineFoundation/outline-apps/releases/tag/v1.10.1"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/OutlineFoundation/outline-apps/releases/tag/v1.10.1"
+    },
+    "downloads": [
+      {
+        "id": "Outline-Client.exe",
+        "kind": "direct",
+        "url": "https://github.com/OutlineFoundation/outline-apps/releases/download/v1.10.1/Outline-Client.exe",
+        "arch": "x86",
+        "format": "exe"
+      }
+    ],
+    "version": "v1.10.1",
+    "publishedAt": "2023-03-20T21:16:19Z"
+  },
+  {
+    "appId": "outline",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/outline-secure-internet-access/id1356178125?mt=12&uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/outline-secure-internet-access/id1356178125?mt=12&uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/outline-secure-internet-access/id1356178125?mt=12&uo=4"
+      }
+    ],
+    "version": "1.21.0",
+    "publishedAt": "2026-07-22T21:44:59Z"
+  },
+  {
+    "appId": "outline",
+    "platform": "linux",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://getoutline.org/get-started/#step-3"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://getoutline.org/get-started/#step-3"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://getoutline.org/get-started/#step-3"
+      }
+    ],
+    "note": "官方列出 Ubuntu 20.04 及以上；此处未独立核实包架构，使用官方客户端获取页。"
+  },
+  {
+    "appId": "potatso",
+    "platform": "ios",
+    "version": "2.16.0",
+    "publishedAt": "2026-01-06T01:40:58Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/potatso/id1239860606?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/potatso/id1239860606?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/potatso/id1239860606?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "onlynet",
+    "platform": "ios",
+    "version": "1.2.1.8",
+    "publishedAt": "2026-09-13T05:51:31Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "onlynet",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/onlynet-vpn-client/id6502987522?uo=4"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "jamjams",
+    "platform": "ios",
+    "version": "2.4.3",
+    "publishedAt": "2026-07-30T16:58:27Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/jamjams/id6477182037?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/jamjams/id6477182037?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/jamjams/id6477182037?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "jamjams",
+    "platform": "windows",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://jamjamsapp.com/windows.html"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://jamjamsapp.com/windows.html"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "page",
+        "url": "https://jamjamsapp.com/windows.html"
+      }
+    ],
+    "note": "Windows 10 及以上，目前仅支持 JustMySocks；安装包架构未独立核实，保留官方下载页。",
+    "version": "0.2.1"
+  },
+  {
+    "appId": "jamjams",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "官方下载页",
+      "url": "https://jamjamsapp.com/macos.html"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://jamjamsapp.com/macos.html"
+    },
+    "downloads": [
+      {
+        "id": "Jamjams-2.4.4.dmg",
+        "kind": "direct",
+        "url": "https://jamjamsapp.com/macos/Jamjams-2.4.4.dmg",
+        "arch": "universal",
+        "format": "dmg"
+      }
+    ],
+    "note": "macOS 13 及以上；官网明确通用包支持 Apple Silicon 与 Intel，版本独立于 iOS。",
+    "version": "2.4.4"
+  },
+  {
+    "appId": "rabbithole",
+    "platform": "ios",
+    "version": "1.5.0",
+    "publishedAt": "2026-08-29T14:12:13Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "rabbithole",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/rabbithole-vpn-client/id6683309629?uo=4"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "shadowclash",
+    "platform": "ios",
+    "version": "1.8",
+    "publishedAt": "2026-09-02T00:30:16Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "shadowclash",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "bamboo-dragonfly",
+    "platform": "ios",
+    "version": "1.41.0",
+    "publishedAt": "2026-05-23T17:07:58Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/bamboo-dragonfly/id6473621095?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/bamboo-dragonfly/id6473621095?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/bamboo-dragonfly/id6473621095?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "oneok-vpn",
+    "platform": "ios",
+    "version": "4.9",
+    "publishedAt": "2026-09-06T16:57:54Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "oneok-vpn",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/oneok-vpn/id6761477404?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "xtunnel",
+    "platform": "ios",
+    "version": "2.0",
+    "publishedAt": "2026-03-06T10:28:19Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "xtunnel",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/xtunnel/id6741881458?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "v2rage",
+    "platform": "ios",
+    "version": "2.0",
+    "publishedAt": "2026-09-07T08:49:07Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "v2rage",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/v2rage/id6761075402?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "openvxs",
+    "platform": "ios",
+    "version": "0.17.5",
+    "publishedAt": "2026-08-07T10:40:56Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/openvxs-vpn/id6757167153?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/openvxs-vpn/id6757167153?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/openvxs-vpn/id6757167153?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "dash-vpn",
+    "platform": "ios",
+    "version": "1.0.2",
+    "publishedAt": "2026-03-25T03:46:58Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "dash-vpn",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4"
+      }
+    ],
+    "note": "官方商店列出 Mac 兼容性；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "ship",
+    "platform": "ios",
+    "version": "1.0.0",
+    "publishedAt": "2024-10-16T21:06:54Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "ship",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/ship-fastly-network-tool/id6736895153?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "voxiproxytun",
+    "platform": "ios",
+    "version": "0.14.3",
+    "publishedAt": "2026-09-04T15:12:37Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "voxiproxytun",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "vpsus",
+    "platform": "ios",
+    "version": "3.1.0",
+    "publishedAt": "2026-09-08T12:56:49Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "vpsus",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "clash-lite",
+    "platform": "ios",
+    "version": "1.0.13",
+    "publishedAt": "2026-09-14T17:57:31Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "clash-lite",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "linkclashx",
+    "platform": "ios",
+    "version": "1.1.9",
+    "publishedAt": "2026-08-19T09:09:27Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "linkclashx",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/linkclashx/id6757075299?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "meow",
+    "platform": "ios",
+    "version": "1.5.0",
+    "publishedAt": "2026-08-11T06:15:18Z",
+    "lastCheckedAt": "2026-09-17T01:45:20.010Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "app-store",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+      }
+    ]
+  },
+  {
+    "appId": "meow",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4"
+      }
+    ],
+    "note": "仅兼容 Apple Silicon Mac；独立 Mac 版本与发布时间未核实，不套用 iOS 快照。"
+  },
+  {
+    "appId": "meow-android",
+    "platform": "android",
+    "version": "v1.0.8",
+    "publishedAt": "2026-08-17T10:55:08Z",
+    "lastCheckedAt": "2026-09-17T01:44:49.531Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/meow-rs/meow-android/releases/tag/v1.0.8"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/meow-rs/meow-android/releases"
+    },
+    "note": "GitHub 正式发布与 Google Play 测试轨道分开；本条仅跟踪 GitHub 安装包，不把 Play 内部测试视为商店正式版。",
+    "downloads": [
+      {
+        "id": "meow-v1.0.8-universal.apk",
+        "kind": "direct",
+        "url": "https://github.com/meow-rs/meow-android/releases/download/v1.0.8/meow-v1.0.8-universal.apk",
+        "arch": "universal",
+        "format": "apk"
+      }
+    ]
+  },
+  {
+    "appId": "baoliandeng",
+    "platform": "macos",
+    "maintenance": "manual",
+    "source": {
+      "label": "App Store（美国区）",
+      "url": "https://apps.apple.com/us/app/baoliandeng/id6779101876?mt=12&uo=4"
+    },
+    "fallback": {
+      "kind": "store",
+      "url": "https://apps.apple.com/us/app/baoliandeng/id6779101876?mt=12&uo=4"
+    },
+    "downloads": [
+      {
+        "id": "official",
+        "kind": "store",
+        "url": "https://apps.apple.com/us/app/baoliandeng/id6779101876?mt=12&uo=4"
+      }
+    ],
+    "version": "6.0",
+    "publishedAt": "2026-08-14T15:15:33Z",
+    "note": "Mac App Store 正式 6.0 已改用 meow-rs；不以旧简介中的 Mihomo 或源码主分支版本覆盖本商店记录。"
+  },
+  {
+    "appId": "paws",
+    "platform": "harmonyos",
+    "version": "v1.1.0",
+    "publishedAt": "2026-09-16T02:57:49Z",
+    "lastCheckedAt": "2026-09-17T01:44:49.531Z",
+    "maintenance": "automatic",
+    "source": {
+      "label": "GitHub Release",
+      "url": "https://github.com/richerfu/Paws/releases/tag/v1.1.0"
+    },
+    "fallback": {
+      "kind": "page",
+      "url": "https://github.com/richerfu/Paws/releases"
+    },
+    "note": "面向 HarmonyOS 6.1，兼容 6.0.2；官方提供未签名 HAP，真机安装前需自行签名。",
+    "downloads": [
+      {
+        "id": "Paws-1.1.0-arm64-v8a-unsigned.hap",
+        "kind": "direct",
+        "url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-arm64-v8a-unsigned.hap",
+        "arch": "arm64-v8a",
+        "format": "hap"
+      },
+      {
+        "id": "Paws-1.1.0-armeabi-v7a-unsigned.hap",
+        "kind": "direct",
+        "url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-armeabi-v7a-unsigned.hap",
+        "arch": "armeabi-v7a",
+        "format": "hap"
+      },
+      {
+        "id": "Paws-1.1.0-x86_64-unsigned.hap",
+        "kind": "direct",
+        "url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-x86_64-unsigned.hap",
+        "arch": "x86_64",
+        "format": "hap"
+      }
+    ]
   }
 ]

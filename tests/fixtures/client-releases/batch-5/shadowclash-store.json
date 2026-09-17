@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/shadowclash/id6760091330?uo=4",
+      "trackId": 6760091330,
+      "bundleId": "com.fuzzypn.hinet",
+      "currentVersionReleaseDate": "2026-09-02T00:30:16Z",
+      "version": "1.8",
+      "wrapperType": "software"
+    }
+  ]
+}

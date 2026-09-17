@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "currentVersionReleaseDate": "2026-08-07T10:40:56Z",
+      "trackId": 6757167153,
+      "version": "0.17.5",
+      "wrapperType": "software",
+      "bundleId": "com.openvxs.vpn",
+      "trackViewUrl": "https://apps.apple.com/us/app/openvxs-vpn/id6757167153?uo=4"
+    }
+  ]
+}

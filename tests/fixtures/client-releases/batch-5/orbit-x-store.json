@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/orbit-x/id6762544103?uo=4",
+      "bundleId": "com.TKPUGQFAD8.orbitx",
+      "trackId": 6762544103,
+      "currentVersionReleaseDate": "2026-08-22T01:50:18Z",
+      "version": "1.7.1",
+      "wrapperType": "software"
+    }
+  ]
+}

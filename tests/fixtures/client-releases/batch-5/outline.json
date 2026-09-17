@@ -1,0 +1,23 @@
+{
+  "id": 95608656,
+  "tag_name": "v1.10.1",
+  "name": "Outline Client 1.10.1 for Windows and Linux",
+  "html_url": "https://github.com/OutlineFoundation/outline-apps/releases/tag/v1.10.1",
+  "published_at": "2023-03-20T21:16:19Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 100198661,
+      "name": "Outline-Client.AppImage",
+      "browser_download_url": "https://github.com/OutlineFoundation/outline-apps/releases/download/v1.10.1/Outline-Client.AppImage",
+      "state": "uploaded"
+    },
+    {
+      "id": 100198671,
+      "name": "Outline-Client.exe",
+      "browser_download_url": "https://github.com/OutlineFoundation/outline-apps/releases/download/v1.10.1/Outline-Client.exe",
+      "state": "uploaded"
+    }
+  ]
+}

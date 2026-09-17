@@ -273,7 +273,13 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
   const loader = join(directory, "fetch.mjs");
   const output = join(directory, "releases.json");
   const batch = [];
-  for (const directory of ["batch-1", "batch-2", "batch-3", "batch-4"]) {
+  for (const directory of [
+    "batch-1",
+    "batch-2",
+    "batch-3",
+    "batch-4",
+    "batch-5",
+  ]) {
     const batchDirectory = new URL(
       `./fixtures/client-releases/${directory}/`,
       import.meta.url,

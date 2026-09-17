@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/voxiproxytun/id6768408266?uo=4",
+      "trackId": 6768408266,
+      "currentVersionReleaseDate": "2026-09-04T15:12:37Z",
+      "version": "0.14.3",
+      "wrapperType": "software",
+      "bundleId": "com.voxiproxy.VoxiProxyTun"
+    }
+  ]
+}

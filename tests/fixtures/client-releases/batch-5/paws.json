@@ -1,0 +1,35 @@
+{
+  "id": 389607585,
+  "tag_name": "v1.1.0",
+  "name": "v1.1.0",
+  "html_url": "https://github.com/richerfu/Paws/releases/tag/v1.1.0",
+  "published_at": "2026-09-16T02:57:49Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567030919,
+      "name": "Paws-1.1.0-arm64-v8a-unsigned.hap",
+      "browser_download_url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-arm64-v8a-unsigned.hap",
+      "state": "uploaded"
+    },
+    {
+      "id": 567031210,
+      "name": "Paws-1.1.0-armeabi-v7a-unsigned.hap",
+      "browser_download_url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-armeabi-v7a-unsigned.hap",
+      "state": "uploaded"
+    },
+    {
+      "id": 567031470,
+      "name": "Paws-1.1.0-x86_64-unsigned.hap",
+      "browser_download_url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/Paws-1.1.0-x86_64-unsigned.hap",
+      "state": "uploaded"
+    },
+    {
+      "id": 567031789,
+      "name": "SHA256SUMS",
+      "browser_download_url": "https://github.com/richerfu/Paws/releases/download/v1.1.0/SHA256SUMS",
+      "state": "uploaded"
+    }
+  ]
+}

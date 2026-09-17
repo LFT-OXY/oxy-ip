@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/meow-smart-vpn/id6778303404?uo=4",
+      "trackId": 6778303404,
+      "currentVersionReleaseDate": "2026-08-11T06:15:18Z",
+      "version": "1.5.0",
+      "wrapperType": "software",
+      "bundleId": "com.tangzixiang.meow"
+    }
+  ]
+}

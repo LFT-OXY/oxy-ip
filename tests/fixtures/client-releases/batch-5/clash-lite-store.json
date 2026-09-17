@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "bundleId": "com.Hood.ClashLite",
+      "trackId": 6761357475,
+      "currentVersionReleaseDate": "2026-09-14T17:57:31Z",
+      "version": "1.0.13",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/clash-lite/id6761357475?uo=4"
+    }
+  ]
+}

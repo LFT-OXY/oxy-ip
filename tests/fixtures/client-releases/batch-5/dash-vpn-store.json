@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackId": 6758860923,
+      "currentVersionReleaseDate": "2026-03-25T03:46:58Z",
+      "version": "1.0.2",
+      "wrapperType": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/dash-vpn-for-outline-vless/id6758860923?uo=4",
+      "bundleId": "com.dashvpn.mac"
+    }
+  ]
+}

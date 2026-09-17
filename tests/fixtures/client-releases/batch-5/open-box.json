@@ -1,0 +1,221 @@
+{
+  "id": 389891900,
+  "tag_name": "v0.1.201",
+  "name": "Open-Box v0.1.201",
+  "html_url": "https://github.com/liandu2024/Open-Box/releases/tag/v0.1.201",
+  "published_at": "2026-09-16T12:14:02Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 567904103,
+      "name": "install.sh",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/install.sh",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903123,
+      "name": "open-box-linux-arm64-components.json",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-arm64-components.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903127,
+      "name": "open-box-linux-arm64-components.json.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-arm64-components.json.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903126,
+      "name": "open-box-linux-arm64.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-arm64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903124,
+      "name": "open-box-linux-arm64.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-arm64.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903125,
+      "name": "open-box-linux-x64-components.json",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-x64-components.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903205,
+      "name": "open-box-linux-x64-components.json.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-x64-components.json.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903202,
+      "name": "open-box-linux-x64.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-x64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903206,
+      "name": "open-box-linux-x64.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-linux-x64.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903204,
+      "name": "open-box-v0.1.201-linux-arm64-app.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903250,
+      "name": "open-box-v0.1.201-linux-arm64-app.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-app.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903254,
+      "name": "open-box-v0.1.201-linux-arm64-components.json",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-components.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903285,
+      "name": "open-box-v0.1.201-linux-arm64-components.json.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-components.json.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903288,
+      "name": "open-box-v0.1.201-linux-arm64-geo.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-geo.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903305,
+      "name": "open-box-v0.1.201-linux-arm64-geo.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-geo.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903326,
+      "name": "open-box-v0.1.201-linux-arm64-kernel.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-kernel.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903339,
+      "name": "open-box-v0.1.201-linux-arm64-kernel.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-kernel.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903381,
+      "name": "open-box-v0.1.201-linux-arm64-runtime.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-runtime.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903389,
+      "name": "open-box-v0.1.201-linux-arm64-runtime.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64-runtime.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903436,
+      "name": "open-box-v0.1.201-linux-arm64.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903569,
+      "name": "open-box-v0.1.201-linux-arm64.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-arm64.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903602,
+      "name": "open-box-v0.1.201-linux-x64-app.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-app.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903762,
+      "name": "open-box-v0.1.201-linux-x64-app.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-app.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903816,
+      "name": "open-box-v0.1.201-linux-x64-components.json",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-components.json",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903823,
+      "name": "open-box-v0.1.201-linux-x64-components.json.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-components.json.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903863,
+      "name": "open-box-v0.1.201-linux-x64-geo.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-geo.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903872,
+      "name": "open-box-v0.1.201-linux-x64-geo.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-geo.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903923,
+      "name": "open-box-v0.1.201-linux-x64-kernel.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-kernel.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903954,
+      "name": "open-box-v0.1.201-linux-x64-kernel.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-kernel.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567903979,
+      "name": "open-box-v0.1.201-linux-x64-runtime.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-runtime.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567904004,
+      "name": "open-box-v0.1.201-linux-x64-runtime.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64-runtime.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567904049,
+      "name": "open-box-v0.1.201-linux-x64.tar.gz",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "id": 567904068,
+      "name": "open-box-v0.1.201-linux-x64.tar.gz.sha256",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/open-box-v0.1.201-linux-x64.tar.gz.sha256",
+      "state": "uploaded"
+    },
+    {
+      "id": 567904196,
+      "name": "uninstall.sh",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/uninstall.sh",
+      "state": "uploaded"
+    },
+    {
+      "id": 567904158,
+      "name": "update.sh",
+      "browser_download_url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.201/update.sh",
+      "state": "uploaded"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/jamjams/id6477182037?uo=4",
+      "bundleId": "net.fiberlogic.jamjams",
+      "trackId": 6477182037,
+      "currentVersionReleaseDate": "2026-07-30T16:58:27Z",
+      "version": "2.4.3",
+      "wrapperType": "software"
+    }
+  ]
+}

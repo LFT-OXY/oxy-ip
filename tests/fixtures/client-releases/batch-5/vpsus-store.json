@@ -1,0 +1,14 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "kind": "software",
+      "trackViewUrl": "https://apps.apple.com/us/app/vpsus/id6761466149?uo=4",
+      "bundleId": "com.vpsus.vpsus",
+      "currentVersionReleaseDate": "2026-09-08T12:56:49Z",
+      "version": "3.1.0",
+      "wrapperType": "software",
+      "trackId": 6761466149
+    }
+  ]
+}

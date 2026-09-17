@@ -1,0 +1,119 @@
+{
+  "id": 383784451,
+  "tag_name": "v196.9",
+  "name": "v196.9",
+  "html_url": "https://github.com/fw876/helloworld/releases/tag/v196.9",
+  "published_at": "2026-09-07T01:44:10Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "id": 548070583,
+      "name": "luci-app-ssr-plus-196-r9.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/luci-app-ssr-plus-196-r9.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070580,
+      "name": "luci-app-ssr-plus_196-r9_all.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/luci-app-ssr-plus_196-r9_all.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070576,
+      "name": "mihomo-1.19.30-r1.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/mihomo-1.19.30-r1.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070578,
+      "name": "mihomo_1.19.30-r1_aarch64_cortex-a53.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/mihomo_1.19.30-r1_aarch64_cortex-a53.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070582,
+      "name": "mihomo_1.19.30-r1_aarch64_generic.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/mihomo_1.19.30-r1_aarch64_generic.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070581,
+      "name": "mihomo_1.19.30-r1_x86_64.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/mihomo_1.19.30-r1_x86_64.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070586,
+      "name": "naiveproxy-150.0.7871.63.1-r1_aarch64_cortex-a53.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy-150.0.7871.63.1-r1_aarch64_cortex-a53.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070573,
+      "name": "naiveproxy-150.0.7871.63.1-r1_aarch64_generic.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy-150.0.7871.63.1-r1_aarch64_generic.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070585,
+      "name": "naiveproxy-150.0.7871.63.1-r1_x86_64.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy-150.0.7871.63.1-r1_x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070587,
+      "name": "naiveproxy_150.0.7871.63.1-r1_aarch64_cortex-a53.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy_150.0.7871.63.1-r1_aarch64_cortex-a53.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070579,
+      "name": "naiveproxy_150.0.7871.63.1-r1_aarch64_generic.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy_150.0.7871.63.1-r1_aarch64_generic.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070571,
+      "name": "naiveproxy_150.0.7871.63.1-r1_x86_64.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/naiveproxy_150.0.7871.63.1-r1_x86_64.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070584,
+      "name": "xray-core-26.7.28-r1_aarch64_cortex-a53.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core-26.7.28-r1_aarch64_cortex-a53.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070568,
+      "name": "xray-core-26.7.28-r1_aarch64_generic.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core-26.7.28-r1_aarch64_generic.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070574,
+      "name": "xray-core-26.7.28-r1_x86_64.apk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core-26.7.28-r1_x86_64.apk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070569,
+      "name": "xray-core_26.7.28-r1_aarch64_cortex-a53.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core_26.7.28-r1_aarch64_cortex-a53.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070572,
+      "name": "xray-core_26.7.28-r1_aarch64_generic.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core_26.7.28-r1_aarch64_generic.ipk",
+      "state": "uploaded"
+    },
+    {
+      "id": 548070570,
+      "name": "xray-core_26.7.28-r1_x86_64.ipk",
+      "browser_download_url": "https://github.com/fw876/helloworld/releases/download/v196.9/xray-core_26.7.28-r1_x86_64.ipk",
+      "state": "uploaded"
+    }
+  ]
+}
