@@ -3,7 +3,7 @@
   "name": "proxy-client-catalog",
   "title": "代理客户端应用目录",
   "description": "参照 huarun.win 新增分类卡片与精简详情，基础资料人工维护，版本和官方下载入口自动更新。",
-  "status": "accept",
+  "status": "implement",
   "dev_type": null,
   "scope": null,
   "package": null,
@@ -23,6 +23,6 @@
   "relatedFiles": [],
   "notes": "",
   "meta": {
-    "implementation_base_sha": "3cf5b90ba5ed55bbf4c6f1ef55b95de40406144b"
+    "implementation_base_sha": "7e56c2278b77eeb3fe2ba0991f1de19788511c65"
   }
 }

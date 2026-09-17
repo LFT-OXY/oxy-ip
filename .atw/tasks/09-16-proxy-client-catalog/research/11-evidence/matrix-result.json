@@ -1,0 +1,50 @@
+[
+  {
+    "name": "390-zh-light",
+    "passed": true
+  },
+  {
+    "name": "390-zh-dark",
+    "passed": true
+  },
+  {
+    "name": "390-en-light",
+    "passed": true
+  },
+  {
+    "name": "390-en-dark",
+    "passed": true
+  },
+  {
+    "name": "768-zh-light",
+    "passed": true
+  },
+  {
+    "name": "768-zh-dark",
+    "passed": true
+  },
+  {
+    "name": "768-en-light",
+    "passed": true
+  },
+  {
+    "name": "768-en-dark",
+    "passed": true
+  },
+  {
+    "name": "1440-zh-light",
+    "passed": true
+  },
+  {
+    "name": "1440-zh-dark",
+    "passed": true
+  },
+  {
+    "name": "1440-en-light",
+    "passed": true
+  },
+  {
+    "name": "1440-en-dark",
+    "passed": true
+  }
+]

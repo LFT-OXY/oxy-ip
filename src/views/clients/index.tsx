@@ -1,4 +1,10 @@
-import { useEffect, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useId,
+  useState,
+  type MouseEvent,
+  type ReactNode,
+} from "react";
 import {
   Link,
   useLocation,
@@ -6,8 +12,36 @@ import {
   useSearchParams,
 } from "react-router-dom";
 import { Facts, ToolCard } from "@/components/toolkit";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Badge } from "@/components/ui/badge";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationPrevious,
+  PaginationNext,
+} from "@/components/ui/pagination";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+} from "@/components/ui/select";
 import { locale, t } from "@/i18n";
 import {
   ArrowLeft,
@@ -22,6 +56,9 @@ import {
   codeLabels,
   filterApps,
   latestPublishedAt,
+  paginateApps,
+  pageParams,
+  updateFilter,
   platforms,
   priceLabels,
   readFilters,
@@ -35,20 +72,50 @@ function SelectField({
   label,
   value,
   onChange,
-  children,
+  options,
 }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
-  children: ReactNode;
+  options: [string, string][];
 }) {
+  const id = useId();
+  const selected = options.find(([key]) => key === value)?.[1];
   return (
-    <label className="client-select-label">
-      <span>{label}</span>
-      <select value={value} onChange={(event) => onChange(event.target.value)}>
-        {children}
-      </select>
-    </label>
+    <div className="client-select-field">
+      <Label htmlFor={id} className="shrink-0 text-xs text-muted-foreground">
+        {label}
+      </Label>
+      <Select
+        value={value || "__all"}
+        onValueChange={(next) => onChange(next === "__all" ? "" : next)}
+      >
+        <SelectTrigger
+          id={id}
+          className="w-full min-w-0 *:data-[slot=select-value]:min-w-0 *:data-[slot=select-value]:block *:data-[slot=select-value]:truncate"
+          title={selected}
+        >
+          <SelectValue>{selected ?? t("无匹配选项")}</SelectValue>
+        </SelectTrigger>
+        <SelectContent
+          position="popper"
+          align="start"
+          className="max-w-[calc(100vw-2rem)]"
+        >
+          <SelectGroup>
+            {options.map(([key, text]) => (
+              <SelectItem
+                key={key}
+                value={key || "__all"}
+                className="whitespace-normal wrap-anywhere"
+              >
+                {text}
+              </SelectItem>
+            ))}
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+    </div>
   );
 }
 function AppIcon({ app }: { app: ClientApp }) {
@@ -115,12 +182,39 @@ function ClientList() {
   const [params, setParams] = useSearchParams();
   const filters = readFilters(params);
   const matches = filterApps(apps, releases, filters, t);
+  const pagination = paginateApps(matches, params.get("page"));
+  const canonicalParams = pageParams(params, pagination.page);
+  const canonicalSearch = canonicalParams.toString();
+  useEffect(() => {
+    if (params.toString() !== canonicalSearch) {
+      setParams(canonicalSearch, { replace: true });
+    }
+  }, [params, canonicalSearch, setParams]);
   const cores = [...new Set(apps.flatMap((app) => app.cores))];
-  function update(key: string, value: string) {
-    const next = new URLSearchParams(params);
-    if (value) next.set(key, value);
-    else next.delete(key);
-    setParams(next, { replace: true });
+  function update(key: keyof typeof filters, value: string) {
+    setParams(updateFilter(params, key, value), { replace: true });
+  }
+  function pageLink(page: number, disabled = false) {
+    const next = pageParams(params, page);
+    return {
+      href: disabled ? undefined : `?${next.toString()}`,
+      "aria-disabled": disabled || undefined,
+      tabIndex: disabled ? -1 : undefined,
+      className: disabled ? "pointer-events-none opacity-50" : undefined,
+      onClick: (event: MouseEvent<HTMLAnchorElement>) => {
+        if (disabled) event.preventDefault();
+        else if (
+          event.button === 0 &&
+          !event.metaKey &&
+          !event.ctrlKey &&
+          !event.shiftKey &&
+          !event.altKey
+        ) {
+          event.preventDefault();
+          setParams(next);
+        }
+      },
+    };
   }
   return (
     <section className="client-catalog">
@@ -131,22 +225,24 @@ function ClientList() {
             ["", t("全部应用")],
             ...Object.entries(platforms).map(([id, label]) => [id, t(label)]),
           ].map(([id, label]) => (
-            <button
+            <Button
               key={id}
+              variant={filters.platform === id ? "default" : "ghost"}
+              className="h-auto min-h-9 justify-between gap-2 whitespace-normal text-left text-xs"
               type="button"
               aria-pressed={filters.platform === id}
               onClick={() => update("platform", id)}
             >
               <span>{label}</span>
-              <span className="client-count">
+              <Badge variant="secondary">
                 {
                   apps.filter(
                     (app) =>
                       !id || app.platforms.some((platform) => platform === id),
                   ).length
                 }
-              </span>
-            </button>
+              </Badge>
+            </Button>
           ))}
         </div>
         <p className="client-sidebar-note">
@@ -163,63 +259,71 @@ function ClientList() {
             <p>{t("按平台查找应用，前往官方渠道获取。")}</p>
           </div>
         </header>
-        <label className="client-search">
+        <div className="client-search">
           <Search size={18} aria-hidden="true" />
-          <span className="sr-only">{t("搜索应用")}</span>
+          <Label htmlFor="client-search" className="sr-only">
+            {t("搜索应用")}
+          </Label>
           <Input
+            id="client-search"
             type="search"
             value={filters.q}
             onChange={(event) => update("q", event.target.value)}
             placeholder={t("搜索名称、别名或简介")}
           />
-        </label>
+        </div>
         <div className="client-filters">
           <SelectField
             label={t("代理内核")}
             value={filters.core}
             onChange={(value) => update("core", value)}
-          >
-            <option value="">{t("全部内核")}</option>
-            {cores.map((core) => (
-              <option key={core}>{core}</option>
-            ))}
-            <option value="unknown">{t("待核实")}</option>
-          </SelectField>
+            options={[
+              ["", t("全部内核")],
+              ...cores.map((core): [string, string] => [core, core]),
+              ["unknown", t("待核实")],
+            ]}
+          />
           <SelectField
             label={t("代码状态")}
             value={filters.code}
             onChange={(value) => update("code", value)}
-          >
-            <option value="">{t("全部代码状态")}</option>
-            {Object.entries(codeLabels).map(([id, label]) => (
-              <option key={id} value={id}>
-                {t(label)}
-              </option>
-            ))}
-          </SelectField>
+            options={[
+              ["", t("全部代码状态")],
+              ...Object.entries(codeLabels).map(
+                ([id, label]): [string, string] => [id, t(label)],
+              ),
+            ]}
+          />
           <SelectField
             label={t("价格")}
             value={filters.price}
             onChange={(value) => update("price", value)}
-          >
-            <option value="">{t("全部价格")}</option>
-            {Object.entries(priceLabels).map(([id, label]) => (
-              <option key={id} value={id}>
-                {t(label)}
-              </option>
-            ))}
-          </SelectField>
+            options={[
+              ["", t("全部价格")],
+              ...Object.entries(priceLabels).map(
+                ([id, label]): [string, string] => [id, t(label)],
+              ),
+            ]}
+          />
         </div>
         <div className="client-results-heading">
-          <p role="status">{t("{0} 个应用", [matches.length])}</p>
+          <p role="status">
+            {t("{0} 个应用", [pagination.total])}
+            {pagination.total > 0 && (
+              <span className="ml-2 text-muted-foreground">
+                {t("显示 {0}–{1} 项", [pagination.start, pagination.end])}
+              </span>
+            )}
+          </p>
           <SelectField
             label={t("排序")}
             value={filters.sort === "updated" ? "updated" : ""}
             onChange={(value) => update("sort", value)}
-          >
-            <option value="">{t("默认顺序")}</option>
-            <option value="updated">{t("最近更新")}</option>
-          </SelectField>
+            options={[
+              ["", t("默认顺序")],
+              ["updated", t("最近更新")],
+            ]}
+          />
           <Button
             variant="ghost"
             onClick={() => setParams(clearFilters(params), { replace: true })}
@@ -229,59 +333,63 @@ function ClientList() {
         </div>
         {matches.length ? (
           <div className="client-grid">
-            {matches.map((app) => (
+            {pagination.items.map((app) => (
               <Link
                 key={app.id}
-                className="client-card"
+                className="client-card-link min-w-0 rounded-xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
                 to={{
                   pathname: `/clients/${app.id}`,
-                  search: params.toString(),
+                  search: canonicalSearch,
                 }}
               >
-                <div className="client-card-heading">
-                  <AppIcon app={app} />
-                  <div>
-                    <h2>{t(app.name)}</h2>
-                    {app.aliases.length > 0 && (
-                      <p className="client-alias">
-                        {app.aliases.map((alias) => t(alias)).join(" / ")}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <p className="client-description">{t(app.description)}</p>
-                <div className="client-badges">
-                  {app.cores.map((core) => (
-                    <span key={core}>{core}</span>
-                  ))}
-                  <span>{t(codeLabels[app.code])}</span>
-                  <span>{t(priceLabels[app.price])}</span>
-                </div>
-                <p className="client-platform-summary">
-                  {app.platforms
-                    .map((platform) => t(platforms[platform]))
-                    .join(" · ")}
-                </p>
-                <div className="client-card-footer">
-                  <span>
-                    <DateLabel
-                      value={latestPublishedAt(
-                        releases,
-                        app.id,
-                        filters.platform,
+                <Card className="client-card h-full gap-0 px-4">
+                  <div className="client-card-heading">
+                    <AppIcon app={app} />
+                    <div>
+                      <h2>{t(app.name)}</h2>
+                      {app.aliases.length > 0 && (
+                        <p className="client-alias">
+                          {app.aliases.map((alias) => t(alias)).join(" / ")}
+                        </p>
                       )}
-                    />
-                  </span>
-                  <span>
-                    {t("查看详情")}
-                    <ArrowUpRight size={14} aria-hidden="true" />
-                  </span>
-                </div>
+                    </div>
+                  </div>
+                  <p className="client-description">{t(app.description)}</p>
+                  <div className="client-badges">
+                    {app.cores.map((core) => (
+                      <Badge variant="secondary" key={core}>
+                        {core}
+                      </Badge>
+                    ))}
+                    <Badge variant="outline">{t(codeLabels[app.code])}</Badge>
+                    <Badge variant="outline">{t(priceLabels[app.price])}</Badge>
+                  </div>
+                  <p className="client-platform-summary">
+                    {app.platforms
+                      .map((platform) => t(platforms[platform]))
+                      .join(" · ")}
+                  </p>
+                  <div className="client-card-footer">
+                    <span>
+                      <DateLabel
+                        value={latestPublishedAt(
+                          releases,
+                          app.id,
+                          filters.platform,
+                        )}
+                      />
+                    </span>
+                    <span>
+                      {t("查看详情")}
+                      <ArrowUpRight size={14} aria-hidden="true" />
+                    </span>
+                  </div>
+                </Card>
               </Link>
             ))}
           </div>
         ) : (
-          <div className="client-empty">
+          <Card className="client-empty items-center">
             <p>{t("没有匹配的应用")}</p>
             <Button
               variant="outline"
@@ -289,7 +397,40 @@ function ClientList() {
             >
               {t("清除筛选")}
             </Button>
-          </div>
+          </Card>
+        )}
+        {pagination.pageCount > 1 && (
+          <Pagination className="mt-6" aria-label={t("应用列表分页")}>
+            <PaginationContent className="flex-wrap justify-center">
+              <PaginationItem>
+                <PaginationPrevious
+                  {...pageLink(pagination.page - 1, pagination.page === 1)}
+                />
+              </PaginationItem>
+              {Array.from(
+                { length: pagination.pageCount },
+                (_, index) => index + 1,
+              ).map((page) => (
+                <PaginationItem key={page}>
+                  <PaginationLink
+                    {...pageLink(page)}
+                    isActive={page === pagination.page}
+                    aria-label={t("第 {0} 页", [page])}
+                  >
+                    {page}
+                  </PaginationLink>
+                </PaginationItem>
+              ))}
+              <PaginationItem>
+                <PaginationNext
+                  {...pageLink(
+                    pagination.page + 1,
+                    pagination.page === pagination.pageCount,
+                  )}
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         )}
       </div>
     </section>
@@ -325,14 +466,25 @@ function ClientDetail({ appId }: { appId: string }) {
         : t("前往官方下载页");
   return (
     <article className="client-detail">
-      <nav className="client-breadcrumb" aria-label={t("面包屑")}>
-        <Link to={back}>
-          <ArrowLeft size={16} aria-hidden="true" />
-          {t("返回应用列表")}
-        </Link>
-        <span aria-hidden="true">/</span>
-        <span aria-current="page">{t(app.name)}</span>
-      </nav>
+      <Breadcrumb className="mb-6">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink
+              asChild
+              className="inline-flex items-center gap-1 rounded-sm focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              <Link to={back}>
+                <ArrowLeft size={16} aria-hidden="true" />
+                {t("返回应用列表")}
+              </Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{t(app.name)}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
       <ToolCard
         title={
           <div className="client-detail-heading">
@@ -360,13 +512,8 @@ function ClientDetail({ appId }: { appId: string }) {
               setParams(next, { replace: true });
               setDownloadId("");
             }}
-          >
-            {app.platforms.map((value) => (
-              <option key={value} value={value}>
-                {t(platforms[value])}
-              </option>
-            ))}
-          </SelectField>
+            options={app.platforms.map((value) => [value, t(platforms[value])])}
+          />
           {download &&
             release &&
             (download.kind === "direct" || release.downloads.length > 1) && (
@@ -374,17 +521,15 @@ function ClientDetail({ appId }: { appId: string }) {
                 label={t("安装包类型")}
                 value={download.id}
                 onChange={setDownloadId}
-              >
-                {release.downloads.map((item) => (
-                  <option key={item.id} value={item.id}>
-                    {item.kind === "direct"
-                      ? `${t(platforms[platform])} · ${item.arch} · ${item.format}${release.downloads.some((other) => other.id !== item.id && other.kind === "direct" && other.arch === item.arch && other.format === item.format) ? ` · ${item.id}` : ""}`
-                      : item.kind === "store"
-                        ? t("官方应用商店")
-                        : t("官方下载页")}
-                  </option>
-                ))}
-              </SelectField>
+                options={release.downloads.map((item) => [
+                  item.id,
+                  item.kind === "direct"
+                    ? `${t(platforms[platform])} · ${item.arch} · ${item.format}${release.downloads.some((other) => other.id !== item.id && other.kind === "direct" && other.arch === item.arch && other.format === item.format) ? ` · ${item.id}` : ""}`
+                    : item.kind === "store"
+                      ? t("官方应用商店")
+                      : t("官方下载页"),
+                ])}
+              />
             )}
           {download && (
             <Button asChild>
@@ -397,7 +542,9 @@ function ClientDetail({ appId }: { appId: string }) {
           )}
         </div>
         {release?.note && (
-          <p className="client-download-note">{t(release.note)}</p>
+          <Alert role="note" className="mb-5">
+            <AlertDescription>{t(release.note)}</AlertDescription>
+          </Alert>
         )}
         <Facts
           rows={[

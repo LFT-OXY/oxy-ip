@@ -1465,5 +1465,14 @@
   "通过官方 Telegram 发布帖选择 ARM32 或 ARM64 附件；不支持从 MC2 1.0.0 以前版本直接升级。": "Select the ARM32 or ARM64 attachment in the official Telegram release post. Direct upgrades from versions before MC2 1.0.0 are unsupported.",
   "基于 sing-box / libbox 的 Android 原生代理客户端，支持订阅、分应用代理和自定义 DNS。": "A native Android proxy client based on sing-box / libbox, with subscriptions, per-app proxying and custom DNS.",
   "官网提供的是 Android APK，仅适用于支持 APK 的鸿蒙环境，不是原生 HarmonyOS NEXT HAP。": "The official download is an Android APK for HarmonyOS environments that support APKs, not a native HarmonyOS NEXT HAP.",
-  "官方软件源": "Official package feed"
+  "官方软件源": "Official package feed",
+  "分页": "Pagination",
+  "上一页": "Previous",
+  "下一页": "Next",
+  "更多页": "More pages",
+  "更多": "More",
+  "应用列表分页": "Application list pagination",
+  "第 {0} 页": "Page {0}",
+  "显示 {0}–{1} 项": "Showing {0}–{1}",
+  "无匹配选项": "No matching option"
 }

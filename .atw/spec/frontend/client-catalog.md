@@ -334,3 +334,39 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 错误：将快照只上传 artifact；或假定 `GITHUB_TOKEN` 推送会触发 pages；或为了重跑成功对最新 main 强推旧结果。
 
 正确：提交唯一的发布数据路径、显式进入已有构建链，保留部署开关；并发冲突必须失败并在新一轮重新抓取。
+
+## 17. 目录分页与组件统一
+
+### 17.1 范围
+
+第 11 票仅统一客户端列表和详情；共享 Select、Pagination、Breadcrumb 来自项目配置的 shadcn/ui `radix-nova` 样式，不改变其他共享组件的默认行为。
+
+### 17.2 签名
+
+- `paginateApps(matches: ClientApp[], rawPage: string | null)` 返回 `{ items, total, page, pageCount, start, end }`，固定每页 24 项。
+- `pageParams(params: URLSearchParams, page: number)` 克隆参数并写页码，第一页省略 `page`。
+- `updateFilter(params, key: "q" | "platform" | "core" | "code" | "price" | "sort", value: string)` 克隆、更新筛选并移除 `page`。`clearFilters(params)` 同时清除页码。
+
+### 17.3 契约
+
+先 `filterApps` 再分页；总数取完整匹配集合，不取本页条数。翻页使用 push 历史，筛选输入沿用 replace；列表以 replace 规范化非法或越界页码，不额外制造历史。详情保留列表页码，`target` 仍独立于 `platform`，返回只移除 `target`。
+
+Radix Select 不接受空字符串选项：目录包装层用内部 `__all` 表示全部／默认，回写 URL 时还原为空，不把标记泄漏到搜索参数。非法筛选保留无结果语义，触发器显示“无匹配选项”，不伪装全部。长安装包名称在触发器截断、展开选项完整换行，弹层通过调用处 className 限制在视口内，不用全站 CSS 覆盖控件。
+
+### 17.4 校验与错误
+
+非十进制正安全整数页码回 1；超过匹配末页归末页。空结果返回 `page=1/pageCount=0/start=0/end=0`，不显示分页；单页同样不显示无意义的翻页控件。首尾按钮无 href、`aria-disabled` 且移出 Tab 顺序；页码链接保留真实 href 与修饰键行为。
+
+### 17.5 场景
+
+正常：154 项分 7 页、末页 10 项，页 2 进入详情再返回仍为页 2。基础：筛选只有一项，保留匹配计数与空态清除入口。错误：分页后再筛选，或只更新画面而 URL 仍为越界页码。
+
+### 17.6 检查
+
+`tests/client-pagination.test.mjs` 用 `tests/fixtures/client-releases/batch-6/catalog-baseline.json` 的独立身份顺序验证七页、总数、范围和无重复遗漏；覆盖组合筛选排序、非法页码、越界、零结果、重置及无关参数。不要依赖 `.atw/tasks/` 路径：完整测试中的发布快照升级副本仅复制测试夹具等构建输入，任务未来也会归档。
+
+实际浏览器验证刷新、前进后退、详情返回、所有六处 Select、混合直链与 fallback、历史无按钮、三种屏宽和中英文／真实主题。Radix 键盘 Home/End 移动焦点有异步调度，脚本须等待焦点落到目标选项再 Enter；截图须等展开动画结束，不能拿半透明中间帧当最终主题效果。
+
+### 17.7 易错对照
+
+错误：只对下拉触发器截图，或用隐藏的原生 select 断言替代真实操作。正确：操作可见 combobox/listbox，验证 Escape 后焦点回触发器、键盘选项改变正确官方 URL，并读取展开态截图。

@@ -103,7 +103,42 @@ export function readFilters(params: URLSearchParams) {
 export function clearFilters(params: URLSearchParams) {
   const next = new URLSearchParams(params);
   filterKeys.forEach((key) => next.delete(key));
+  next.delete("page");
   return next;
+}
+export function updateFilter(
+  params: URLSearchParams,
+  key: (typeof filterKeys)[number],
+  value: string,
+) {
+  const next = pageParams(params, 1);
+  if (value) next.set(key, value);
+  else next.delete(key);
+  return next;
+}
+export function pageParams(params: URLSearchParams, page: number) {
+  const next = new URLSearchParams(params);
+  if (page > 1) next.set("page", String(page));
+  else next.delete("page");
+  return next;
+}
+export function paginateApps(matches: ClientApp[], rawPage: string | null) {
+  const size = 24;
+  const total = matches.length;
+  const pageCount = Math.ceil(total / size);
+  const requested = rawPage && /^\d+$/.test(rawPage) ? Number(rawPage) : 1;
+  const valid =
+    Number.isSafeInteger(requested) && requested > 0 ? requested : 1;
+  const page = Math.min(valid, Math.max(1, pageCount));
+  const offset = (page - 1) * size;
+  return {
+    items: matches.slice(offset, offset + size),
+    total,
+    page,
+    pageCount,
+    start: total ? offset + 1 : 0,
+    end: Math.min(offset + size, total),
+  };
 }
 export function releaseFor(
   rows: ClientRelease[],

@@ -19,31 +19,6 @@
   flex-direction: column;
   gap: 5px;
 }
-.client-platforms button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 40px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 13px;
-  text-align: left;
-}
-.client-platforms button:hover {
-  background: var(--accent);
-}
-.client-platforms button[aria-pressed="true"] {
-  background: var(--primary);
-  color: var(--primary-foreground);
-}
-.client-count {
-  border-radius: 10px;
-  padding: 0 6px;
-  background: color-mix(in srgb, currentColor 10%, transparent);
-  font-size: 11px;
-}
 .client-sidebar-note {
   margin: 24px 10px 0;
 }
@@ -78,31 +53,12 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-.client-select-label {
+.client-select-field {
   display: flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
-  font-size: 12px;
-}
-.client-select-label > span {
-  color: var(--muted-foreground);
-  flex-shrink: 0;
-}
-.client-select-label select {
-  width: auto;
-  min-width: 0;
   max-width: 100%;
-  padding: 7px 8px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--card);
-  color: var(--foreground);
-}
-.client-catalog :is(button, select, a):focus-visible,
-.client-detail :is(select, a):focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 3px;
 }
 .client-results-heading {
   display: flex;
@@ -119,18 +75,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-}
-.client-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 16px;
-  background: var(--card);
-}
-.client-card:hover {
-  border-color: var(--primary);
 }
 .client-card-heading,
 .client-detail-heading {
@@ -174,13 +118,6 @@
   gap: 5px;
   margin-top: auto;
 }
-.client-badges span {
-  font-size: 10px;
-  color: var(--primary);
-  background: color-mix(in srgb, var(--primary) 8%, transparent);
-  border-radius: 4px;
-  padding: 1px 6px;
-}
 .client-platform-summary {
   margin: 7px 0 14px;
   font-size: 11px;
@@ -203,8 +140,6 @@
 .client-empty {
   padding: 48px 16px;
   text-align: center;
-  background: var(--card);
-  border-radius: 16px;
 }
 .client-empty p {
   margin-bottom: 16px;
@@ -213,20 +148,15 @@
   max-width: 820px;
   margin: 28px auto;
 }
-.client-breadcrumb {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  font-size: 13px;
-  margin-bottom: 24px;
-}
-.client-breadcrumb a,
 .client-source {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   color: var(--primary);
+}
+.client-source:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
 }
 .client-detail .client-detail-card {
   padding: 24px 12px;
@@ -254,21 +184,10 @@
   gap: 12px;
   margin-bottom: 20px;
 }
-.client-downloads .client-select-label {
+.client-downloads .client-select-field {
   flex-direction: column;
   align-items: stretch;
   max-width: 100%;
-}
-.client-downloads select {
-  height: 36px;
-}
-.client-download-note {
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background: var(--muted);
-  color: var(--muted-foreground);
-  font-size: 12px;
 }
 .client-detail .facts > div {
   justify-content: flex-start;
@@ -323,10 +242,6 @@
     flex-wrap: wrap;
     gap: 4px;
   }
-  .client-platforms button {
-    min-height: 36px;
-    padding: 6px 10px;
-  }
   .client-sidebar-title,
   .client-sidebar-note {
     display: none;
@@ -361,9 +276,6 @@
   }
   .client-filters {
     gap: 8px;
-  }
-  .client-select-label {
-    font-size: 11px;
   }
   .client-detail .facts > div {
     gap: 12px;
