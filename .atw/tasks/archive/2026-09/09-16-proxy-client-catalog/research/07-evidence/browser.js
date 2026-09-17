@@ -13,14 +13,12 @@ async (page) => {
           theme,
         );
         await page.reload();
-        const card = page
-          .locator(".client-card")
-          .filter({
-            has: page.getByRole("heading", {
-              name: "Sing-Box Windows",
-              exact: true,
-            }),
-          });
+        const card = page.locator(".client-card").filter({
+          has: page.getByRole("heading", {
+            name: "Sing-Box Windows",
+            exact: true,
+          }),
+        });
         await card.waitFor();
         if ((await page.locator(".client-card").count()) !== 1)
           throw Error("筛选结果");

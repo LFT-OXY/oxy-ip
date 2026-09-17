@@ -9,11 +9,9 @@ async (page) => {
         );
         await page.evaluate((t) => localStorage.setItem("theme", t), theme);
         await page.reload();
-        const card = page
-          .locator(".client-card")
-          .filter({
-            has: page.getByRole("heading", { name: "daed", exact: true }),
-          });
+        const card = page.locator(".client-card").filter({
+          has: page.getByRole("heading", { name: "daed", exact: true }),
+        });
         await card.waitFor();
         if (
           (await page
