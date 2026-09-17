@@ -1,6 +1,13 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtemp, readFile, readdir, writeFile, rm } from "node:fs/promises";
+import {
+  mkdtemp,
+  readFile,
+  readdir,
+  writeFile,
+  rm,
+  mkdir,
+} from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { test } from "node:test";
@@ -9,7 +16,10 @@ import flclash from "./fixtures/client-releases/flclash.json" with { type: "json
 import shadowrocket from "./fixtures/client-releases/shadowrocket-store.json" with { type: "json" };
 import stash from "./fixtures/client-releases/stash-store.json" with { type: "json" };
 import v2rayng from "./fixtures/client-releases/v2rayng.json" with { type: "json" };
-import { githubSources } from "../scripts/client-release-sources.mjs";
+import {
+  githubSources,
+  officialSources,
+} from "../scripts/client-release-sources.mjs";
 import {
   githubClient,
   parseRelease,
@@ -155,7 +165,7 @@ test("确认失效才回退官方页，保留可用包；失败路径也不刷�
 });
 
 test("HTTP 403/429/5xx、超时不确认失效，404/410 必须连续确认且不传 token", async () => {
-  for (const status of [403, 429, 500, 502, 503, 405]) {
+  for (const status of [401, 403, 429, 500, 502, 503, 405]) {
     const client = githubClient({
       token: "secret",
       fetcher: async (_, init) => {
@@ -301,6 +311,9 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
     stash,
     ...batch.filter((raw) => raw.resultCount === 1),
   ];
+  const faultUrl = flclash.assets.find(
+    (asset) => asset.name === "FlClash-0.8.98-android-arm64-v8a.apk",
+  ).browser_download_url;
   const appcast = await readFile(
     new URL("./fixtures/client-releases/stash-appcast.xml", import.meta.url),
     "utf8",
@@ -310,8 +323,16 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
     `const releases = ${JSON.stringify(fixtures)};
     const stores = ${JSON.stringify(stores)};
     const appcast = ${JSON.stringify(appcast)};
+    const nativeTimeout = AbortSignal.timeout;
+    if (process.env.BUDGET_EXPIRED) AbortSignal.timeout = ms =>
+      ms === 40 * 60 * 1000 ? AbortSignal.abort(new Error('总预算耗尽')) : nativeTimeout(ms);
     globalThis.fetch = async (url, init) => {
-      if (init.method === 'HEAD') return new Response(null, {status: 200});
+      init.signal.throwIfAborted();
+      if (!url.startsWith('https://api.github.com/') && init.headers?.Authorization)
+        throw new Error('token 泄漏到非 API 请求');
+      if (init.method === 'HEAD') return new Response(null, {
+        status: process.env.LINK_STATUS && url === ${JSON.stringify(faultUrl)} ? Number(process.env.LINK_STATUS) : 200
+      });
       if (url.startsWith('https://itunes.apple.com/')) {
         if (process.env.STORE_FAILURE && url.includes('932747118')) return new Response(null, {status: 429});
         const store = stores.find(s => String(s.results[0].trackId) === new URL(url).searchParams.get('id'));
@@ -333,6 +354,8 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
     };`,
   );
   let storeFailure = false;
+  let budgetExpired = false;
+  let linkStatus = "";
   const run = (...args) =>
     execFileSync(
       process.execPath,
@@ -345,12 +368,39 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
       {
         encoding: "utf8",
         stdio: ["ignore", "pipe", "pipe"],
-        env: { ...process.env, STORE_FAILURE: storeFailure ? "1" : "" },
+        env: {
+          ...process.env,
+          STORE_FAILURE: storeFailure ? "1" : "",
+          BUDGET_EXPIRED: budgetExpired ? "1" : "",
+          LINK_STATUS: linkStatus,
+          GITHUB_TOKEN: "offline-secret-must-not-leak",
+        },
       },
     );
   try {
     run("--output", output);
     const result = JSON.parse(await readFile(output, "utf8"));
+    const configured = new Set(
+      [...githubSources, ...officialSources].flatMap((s) =>
+        Object.keys(s.platforms).map((p) => `${s.appId}/${p}`),
+      ),
+    );
+    for (let i = 0; i < releases.length; i++) {
+      const row = releases[i];
+      if (!configured.has(`${row.appId}/${row.platform}`))
+        assert.deepEqual(result[i], row);
+      else
+        assert.equal(
+          result[i].maintenance,
+          "automatic",
+          `${row.appId}/${row.platform}`,
+        );
+    }
+    assert.ok(
+      !(await readFile(output, "utf8")).includes(
+        "offline-secret-must-not-leak",
+      ),
+    );
     assert.equal(
       result.find((r) => r.appId === "flclash" && r.platform === "windows")
         .maintenance,
@@ -396,6 +446,77 @@ test("离线 CLI 输出临时快照及 dry-run，生产发布与人工基础文�
       partial.find((r) => r.appId === "v2rayng").maintenance,
       "automatic",
     );
+    // 将真正部分失败 CLI 结果提交到本地裸仓库，验证不是孤立输出文件。
+    const bare = join(directory, "remote.git");
+    const checkout = join(directory, "checkout");
+    const git = (cwd, ...args) =>
+      execFileSync("git", args, {
+        cwd,
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+        env: {
+          ...process.env,
+          HUSKY: "0",
+          GIT_CONFIG_GLOBAL: "/dev/null",
+          GIT_CONFIG_NOSYSTEM: "1",
+        },
+      }).trim();
+    git(directory, "init", "--bare", "--initial-branch=main", bare);
+    git(directory, "clone", bare, checkout);
+    await mkdir(join(checkout, "src/views/clients"), { recursive: true });
+    await writeFile(join(checkout, snapshot), before[0]);
+    await writeFile(join(checkout, catalog), before[1]);
+    git(checkout, "add", ".");
+    git(
+      checkout,
+      "-c",
+      "user.name=离线测试",
+      "-c",
+      "user.email=test@example.invalid",
+      "commit",
+      "-m",
+      "同步前",
+    );
+    git(checkout, "push", "origin", "main");
+    await writeFile(join(checkout, snapshot), await readFile(output));
+    execFileSync("bash", [resolve("scripts/publish-client-releases.sh")], {
+      cwd: checkout,
+      env: { ...process.env, HUSKY: "0" },
+      stdio: "pipe",
+    });
+    assert.deepEqual(
+      JSON.parse(git(bare, "show", `main:${snapshot}`)),
+      partial,
+    );
+    assert.equal(git(bare, "show", `main:${catalog}`), before[1].trim());
+    storeFailure = false;
+    linkStatus = "404";
+    run("--output", output);
+    const missing = JSON.parse(await readFile(output, "utf8")).find(
+      (r) => r.appId === "flclash" && r.platform === "android",
+    );
+    assert.ok(!missing.downloads.some((d) => d.url === faultUrl));
+    assert.ok(missing.downloads.some((d) => d.id === "fallback"));
+    linkStatus = "401";
+    assert.throws(
+      () => run("--output", output),
+      (error) => error.status === 1,
+    );
+    const temporary = JSON.parse(await readFile(output, "utf8")).find(
+      (r) => r.appId === "flclash" && r.platform === "android",
+    );
+    assert.deepEqual(temporary, old[0]);
+    linkStatus = "";
+    budgetExpired = true;
+    assert.throws(
+      () => run("--output", output),
+      (error) => {
+        assert.equal(error.status, 1);
+        assert.match(error.stderr, /总预算耗尽/);
+        return true;
+      },
+    );
+    assert.deepEqual(JSON.parse(await readFile(output, "utf8")), releases);
     assert.deepEqual(
       await Promise.all([
         readFile(snapshot, "utf8"),
@@ -444,7 +565,12 @@ test("test/testing/dev/development 渠道不更新快照，边界不误伤 lates
 });
 
 test("部分直链失效只移除失效项并补唯一 fallback，保留其他包", async () => {
-  const previous = old[0];
+  const previous = parseRelease(
+    flclash,
+    source,
+    old[0],
+    "2020-01-01T00:00:00Z",
+  );
   for (const apiFails of [false, true]) {
     const result = await syncReleases([previous], [source], {
       now,
@@ -461,4 +587,68 @@ test("部分直链失效只移除失效项并补唯一 fallback，保留其他�
     assert.equal(row.downloads.length, previous.downloads.length);
     assert.equal(row.lastCheckedAt, apiFails ? previous.lastCheckedAt : now);
   }
+});
+
+test("同步以最多四个来源并发执行，输出顺序和失败隔离保持稳定", async () => {
+  const sources = Array.from({ length: 9 }, (_, i) => ({
+    appId: `parallel-${i}`,
+    platforms: { android: true },
+  }));
+  const previous = sources.map((s) => ({ ...old[0], appId: s.appId }));
+  let active = 0;
+  let peak = 0;
+  const result = await syncReleases(previous, sources, {
+    now,
+    loadRelease: async (s) => {
+      active++;
+      peak = Math.max(peak, active);
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      active--;
+      if (s.appId === "parallel-1") throw new Error("模拟限流");
+      return true;
+    },
+    parse: (_raw, _source, row) => ({ ...row, lastCheckedAt: now }),
+    checkLink,
+  });
+  assert.equal(peak, 4);
+  assert.deepEqual(
+    result.rows.map((r) => r.appId),
+    previous.map((r) => r.appId),
+  );
+  assert.deepEqual(result.rows[1], previous[1]);
+  assert.equal(result.rows[8].lastCheckedAt, now);
+  assert.deepEqual(
+    result.errors.map((e) => e.appId),
+    ["parallel-1"],
+  );
+});
+
+test("单平台大量包以四路检查，保留包顺序并只回退确认失效项", async () => {
+  const previous = {
+    ...old[0],
+    downloads: Array.from({ length: 9 }, (_, i) => ({
+      ...old[0].downloads[0],
+      id: `package-${i}`,
+      url: `https://example.org/package-${i}`,
+    })),
+  };
+  let active = 0;
+  let peak = 0;
+  const result = await syncReleases([previous], [source], {
+    loadRelease: async () => true,
+    parse: () => previous,
+    checkLink: async (url) => {
+      active++;
+      peak = Math.max(peak, active);
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      active--;
+      return url.endsWith("-2") ? "missing" : "valid";
+    },
+  });
+  assert.equal(peak, 4);
+  assert.deepEqual(
+    result.rows[0].downloads.slice(0, -1),
+    previous.downloads.filter((d) => d.id !== "package-2"),
+  );
+  assert.equal(result.rows[0].downloads.at(-1).id, "fallback");
 });

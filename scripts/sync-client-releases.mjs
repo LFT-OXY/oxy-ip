@@ -23,7 +23,14 @@ const catalog = fileURLToPath(
 );
 if (output === catalog) throw new Error("不可写入人工基础目录");
 const previous = JSON.parse(await readFile(snapshot, "utf8"));
-const github = githubClient();
+// 总预算到期后取消在途请求；剩余来源快速失败，仍保存已成功的结果。
+const budget = AbortSignal.timeout(40 * 60 * 1000);
+const fetcher = (url, options) =>
+  fetch(url, {
+    ...options,
+    signal: AbortSignal.any([budget, options.signal]),
+  });
+const github = githubClient({ fetcher });
 const checkedAt = new Date().toISOString();
 const githubResult = await syncReleases(previous, githubSources, {
   ...github,
@@ -33,7 +40,7 @@ const { rows, errors: officialErrors } = await syncReleases(
   githubResult.rows,
   officialSources,
   {
-    ...officialClient(),
+    ...officialClient({ fetcher }),
     checkLink: github.checkLink,
     parse: parseOfficialRelease,
     now: checkedAt,

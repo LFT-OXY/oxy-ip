@@ -87,32 +87,36 @@ export function parseRelease(raw, source, previous, now) {
   });
 }
 
+// 来源和包检查各四路；结果按输入顺序收集，不按网络完成顺序重排。
+async function mapConcurrent(items, visit) {
+  const result = new Array(items.length);
+  const pending = items.entries();
+  await Promise.all(
+    Array.from({ length: Math.min(4, items.length) }, async () => {
+      for (const [index, item] of pending) result[index] = await visit(item);
+    }),
+  );
+  return result;
+}
+
 async function inspectDownloads(row, checkLink) {
-  const downloads = [];
-  let temporary = false;
-  let missing = false;
-  for (const download of row.downloads) {
-    if (download.kind !== "direct") {
-      downloads.push(download);
-      continue;
-    }
-    let status;
+  const statuses = await mapConcurrent(row.downloads, async (download) => {
+    if (download.kind !== "direct") return "valid";
     try {
-      status = await checkLink(download.url);
+      return await checkLink(download.url);
     } catch {
-      status = "temporary";
+      return "temporary";
     }
-    if (status === "missing") missing = true;
-    else {
-      downloads.push(download);
-      if (status !== "valid") temporary = true;
-    }
-  }
+  });
+  const missing = statuses.includes("missing");
+  const downloads = row.downloads.filter((_, i) => statuses[i] !== "missing");
   if (missing && !downloads.some((d) => d.url === row.fallback.url))
     downloads.push({ id: "fallback", ...row.fallback });
   return {
     row: missing ? releaseSchema.parse({ ...row, downloads }) : row,
-    temporary,
+    temporary: statuses.some(
+      (status) => !["valid", "missing"].includes(status),
+    ),
   };
 }
 
@@ -128,8 +132,8 @@ export async function syncReleases(
 ) {
   z.array(releaseSchema).parse(previous);
   const rows = structuredClone(previous);
-  const errors = [];
-  for (const source of sources) {
+  const failures = await mapConcurrent(sources, async (source) => {
+    const errors = [];
     let raw;
     let failure;
     try {
@@ -161,9 +165,10 @@ export async function syncReleases(
         });
       }
     }
-  }
+    return errors;
+  });
   z.array(releaseSchema).parse(rows);
-  return { rows, errors };
+  return { rows, errors: failures.flat() };
 }
 
 export function githubClient({

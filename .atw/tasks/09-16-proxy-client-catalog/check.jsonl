@@ -14,3 +14,5 @@
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/07-official-sources.md", "reason": "第四批25项官方核验、三项授权例外、正式软件源与真实同步及浏览器证据"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/08-official-sources.md", "reason": "第五批25项官方证据、Outline人工直链、SSR Plus+已授权图标例外及最终审查验证"}
 {"file": ".atw/tasks/09-16-proxy-client-catalog/research/09-official-sources.md", "reason": "第六批21项官方来源、平台、图标、正式渠道与独立验证依据"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/issues/10-scheduled-catalog-update.md", "reason": "ATW current ticket"}
+{"file": ".atw/tasks/09-16-proxy-client-catalog/research/10-scheduled-update.md", "reason": "第10票调度发布边界、全量同步与本地并发冲突测试、页面回归及线上验证局限"}

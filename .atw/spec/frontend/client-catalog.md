@@ -4,7 +4,7 @@
 
 `src/views/clients/` 拥有人工目录、按平台发布快照、列表筛选和精简详情。`/clients/` 与 `/clients/:appId` 在 `App.tsx` 注册，导航同时更新 `layout/routes.ts` 和 `layout/index.tsx` 的图标映射。
 
-本契约覆盖首票目录、第 02 票 GitHub 手动同步、第 03 票商店／官网更新源及第 04 票收录扩充的代码契约；6 小时调度尚未实现。
+本契约覆盖目录、GitHub／官方商店更新源、全量收录及第 10 票的 6 小时调度。
 
 ## 2. 签名
 
@@ -288,3 +288,49 @@ Root模块仅在核实不含平台二进制时标 `noarch`，并在说明中明�
 - 核验`ClientApp.cores`时须同时读取当前简介、官方版本历史及可用源码/官网证据；协议兼容仍不能推定内核，但版本历史明确“update Xray Core”可作为实现依据。XRay Connect的1.5与1.1均明确更新Xray，不能因当前简介只列协议而写空数组。
 - `client-catalog-batch-6.test.mjs`独立冻结该项`cores: ["Xray"]`，并通过真实`filterApps`断言`q=XRay Connect&core=Xray`在iOS与Mac两平台均返回唯一应用，避免资料和筛选同时漏项。
 - 错误：只扫描lookup当前description，空内核期望随之复制进测试。正确：核对完整官方商店版本历史，并把独立证据写成具体组合筛选回归。
+
+## 16. 全量定时同步与安全进入发布链
+
+### 16.1 范围
+
+`.github/workflows/sync-client-releases.yml` 在 main 每 6 小时（UTC `17 */6 * * *`）或手动运行，复用 `pnpm clients:sync`。仅发布快照自动提交；不重新采集人工目录或解除 PRD 的历史例外。
+
+### 16.2 签名
+
+- 同步 CLI 参数和退出语义不变。`syncReleases` 内部按四个来源并发，每个平台至多四个包检查；当前 CLI 两类来源依次运行，最多同时 16 个请求。结果及错误保留输入顺序。
+- CLI 对 GitHub 和官方源共享 40 分钟 AbortSignal 总预算，与客户端原有 15 秒请求超时共同生效。预算耗尽后剩余请求快速失败，保留旧数据并原子写出成功结果，退出 1。
+- `bash scripts/publish-client-releases.sh`：仅 main，工作树只能改动 `src/views/clients/releases.json`，不可含未跟踪文件；必须在构建和测试通过后调用。
+
+### 16.3 契约
+
+工作流同组 `cancel-in-progress: false`；job 总时限 60 分钟。同步失败不跳过后续构建／测试和有效数据提交，但最终步骤恢复失败状态。提交前 fetch 比较 HEAD 与 origin/main，推送仅普通快进；不 rebase、不 force、不覆盖并发人工修订。
+
+自动推送使用内建 token，仅 job 赋予 `contents: write` 与 `actions: write`。同步请求仅在 GitHub API 携带 `GITHUB_TOKEN`；不向安装包／Apple／Stash 发 token。token 不进入快照或浏览器包。因内建 token 推送不触发 push workflow，成功发布步骤后显式 dispatch `pages.yml` 的 main，包括无变化重跑以恢复上轮 dispatch 失败；构建照常执行，部署仍由现有 `ENABLE_CF_DEPLOY == 'true'` 门禁决定。
+
+### 16.4 校验与错误矩阵
+
+| 场景                                     | 行为                                                           |
+| ---------------------------------------- | -------------------------------------------------------------- |
+| 单源失败、401／临时网络错误、预算耗尽    | 保留受影响旧快照／核验时间；其他成功结果仍可提交，最终运行失败 |
+| 同一直链两次404／410                     | 使用既有 fallback 逻辑；不把401视为失效                        |
+| 构建或测试失败                           | 不提交、不 dispatch                                            |
+| main 在抓取期间改变，或 fetch 后推送竞态 | 拒绝推送、运行失败；下一轮从最新 main 重新抓取                 |
+| 人工目录、其他文件改动或未跟踪文件       | 拒绝自动提交                                                   |
+| 无数据变化                               | 不新增提交；仍 dispatch 既有构建链                             |
+| 分支保护拒绝 bot 或 dispatch 权限不足    | 明确失败，不使用 PAT 绕过、不改仓库规则                        |
+
+### 16.5 场景
+
+正常：完整快照进入版本库，`data.ts` 原路径继续读取，经 pages 构建和既有部署开关生效。基础：未配置的人工平台逐对象保留。错误：同步退出1后直接停止工作流而丢掉其他成功结果，或 `continue-on-error` 后整轮显示成功。
+
+### 16.6 必需检查
+
+`client-scheduled-sync.test.mjs` 核对全量来源身份与人工例外，使用临时本地裸仓库真实测试提交、重复触发、人工资料拒绝及 fetch 前后两种并发竞态。`client-release-sync.test.mjs` 的全量离线 CLI 夹具验证218个自动平台更新、102个人工平台不变、部分失败保存、401保留、失效回退、总预算取消和凭据边界；并发测试必须观测活跃数并断言稳定顺序。这些测试不证明线上 Actions 权限、定时准点或真实部署成功。
+
+`client-snapshot-upgrade.test.mjs` 在不含凭据与旧产物的临时副本中，实际升级 FlClash 四个平台的版本、发布日期和直链，然后依次执行 `pnpm build` 与完整 `pnpm test`；仅排除该递归启动器自身，其余测试全部执行。离线故障 URL 必须绑定独立官方夹具，不得绑定会被调度更新的生产快照；测试成功候选与失败保留旧值时，也必须区分两者所属版本。
+
+### 16.7 易错对照
+
+错误：将快照只上传 artifact；或假定 `GITHUB_TOKEN` 推送会触发 pages；或为了重跑成功对最新 main 强推旧结果。
+
+正确：提交唯一的发布数据路径、显式进入已有构建链，保留部署开关；并发冲突必须失败并在新一轮重新抓取。

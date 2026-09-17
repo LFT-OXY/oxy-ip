@@ -1,0 +1,61 @@
+name: Sync client releases
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-client-releases-main
+  cancel-in-progress: false
+
+env:
+  HUSKY: 0
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.32.1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Sync official releases
+        id: sync
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: pnpm clients:sync
+      - name: Validate build and tests before publishing
+        run: |
+          pnpm build
+          pnpm test
+      - name: Publish snapshot without overwriting concurrent edits
+        run: bash scripts/publish-client-releases.sh
+      - name: Enter existing build and deployment gates
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        # GITHUB_TOKEN 推送不触发 push 工作流；重复 dispatch 也可恢复上轮调度失败。
+        run: gh workflow run pages.yml --repo "$REPO" --ref main
+      - name: Report partial failure
+        if: always() && steps.sync.outcome == 'failure'
+        run: |
+          echo '::error::部分来源同步失败；有效结果按后续校验和发布步骤处理，失败来源保留旧数据。请检查各步骤日志。'
+          exit 1
