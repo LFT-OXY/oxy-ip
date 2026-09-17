@@ -2779,17 +2779,15 @@ body {
 
 .home-address-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  margin-bottom: 4px;
 }
 .home-page .home-primary-card .home-address-row .ip-value {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 1;
   min-width: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 .home-address-row .ip-value > :first-child {
   flex-shrink: 0;
@@ -2803,27 +2801,6 @@ body {
   }
   .home-address-row .ip-reputation-badge strong {
     font-size: 44px;
-  }
-}
-
-.home-address-row {
-  position: relative;
-}
-.home-address-row:has(.ip-reputation-badge) {
-  padding-right: 96px;
-}
-.home-address-row .ip-reputation-badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.home-address-row:has(.ip-reputation-badge) + .primary-ip-meta {
-  padding-right: 96px;
-}
-@media (max-width: 48rem) {
-  .home-address-row:has(.ip-reputation-badge),
-  .home-address-row:has(.ip-reputation-badge) + .primary-ip-meta {
-    padding-right: 80px;
   }
 }
 

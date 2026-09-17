@@ -248,20 +248,52 @@ export function HomePage() {
                   </div>
                 </div>
                 <div className="home-address-row">
-                  <div className="ip-value">
-                    {pending ? (
-                      <Pending>{t("加载中...")}</Pending>
-                    ) : geo ? (
-                      <>
-                        <CountryFlag code={geo.country_code} />
-                        <IpText ip={geo.ip} link={false} />
-                      </>
-                    ) : (
-                      <span className="muted">
-                        {t("未获取到 IPv")}
-                        {version}
-                      </span>
-                    )}
+                  <div className="min-w-0 flex-1">
+                    <div className="ip-value">
+                      {pending ? (
+                        <Pending>{t("加载中...")}</Pending>
+                      ) : geo ? (
+                        <>
+                          <CountryFlag code={geo.country_code} />
+                          <IpText ip={geo.ip} link={false} />
+                        </>
+                      ) : (
+                        <span className="muted">
+                          {t("未获取到 IPv")}
+                          {version}
+                        </span>
+                      )}
+                    </div>
+                    <div className="primary-ip-meta text-sm text-muted-foreground">
+                      {loading ? (
+                        <Pending>{t("正在查询归属信息…")}</Pending>
+                      ) : geo?.country || geo?.city || geo?.isp ? (
+                        <>
+                          <p>
+                            {[geo.country, geo.region, geo.city]
+                              .filter(Boolean)
+                              .filter((item, i, all) => all.indexOf(item) === i)
+                              .join(" · ")}
+                          </p>
+                          <p className="mt-1 text-xs">
+                            {[geo.isp, geo.asn ? `AS${geo.asn}` : undefined]
+                              .filter(Boolean)
+                              .join(" · ")}
+                          </p>
+                        </>
+                      ) : data ? (
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
+                          <span>{t("归属信息暂不可用")}</span>
+                          <button
+                            type="button"
+                            className="relative z-20 shrink-0 text-primary"
+                            onClick={() => geoByIp.get(data.ip)?.refetch()}
+                          >
+                            {t("重试")}
+                          </button>
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                   {hasScore && (
                     <div
@@ -274,36 +306,6 @@ export function HomePage() {
                       </strong>
                     </div>
                   )}
-                </div>
-                <div className="primary-ip-meta text-sm text-muted-foreground">
-                  {loading ? (
-                    <Pending>{t("正在查询归属信息…")}</Pending>
-                  ) : geo?.country || geo?.city || geo?.isp ? (
-                    <>
-                      <p>
-                        {[geo.country, geo.region, geo.city]
-                          .filter(Boolean)
-                          .filter((item, i, all) => all.indexOf(item) === i)
-                          .join(" · ")}
-                      </p>
-                      <p className="mt-1 text-xs">
-                        {[geo.isp, geo.asn ? `AS${geo.asn}` : undefined]
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </p>
-                    </>
-                  ) : data ? (
-                    <div className="flex items-center justify-between gap-2 text-xs">
-                      <span>{t("归属信息暂不可用")}</span>
-                      <button
-                        type="button"
-                        className="relative z-20 shrink-0 text-primary"
-                        onClick={() => geoByIp.get(data.ip)?.refetch()}
-                      >
-                        {t("重试")}
-                      </button>
-                    </div>
-                  ) : null}
                 </div>
               </CardContent>
             </Card>
