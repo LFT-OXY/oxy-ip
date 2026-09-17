@@ -23,6 +23,43 @@ export const priceLabels = {
   paid: "付费",
   unknown: "待核实",
 } as const;
+export const coreGroupLabels = {
+  "": "全部",
+  "group:mihomo": "Mihomo",
+  "group:sing-box": "sing-box",
+  "group:self-developed": "自研",
+  "group:xray": "Xray",
+  "group:v2ray": "V2Ray",
+  "group:meow-rs": "meow-rs",
+  "group:clash-rs": "clash-rs",
+  "group:other": "其他",
+} as const;
+type CoreGroup = Exclude<keyof typeof coreGroupLabels, "">;
+// 仅收录有来源依据的归并；未知名称不推定为自研。
+const coreGroups: ReadonlyMap<string, CoreGroup> = new Map([
+  ["Mihomo", "group:mihomo"],
+  ["Hako", "group:mihomo"],
+  ["CoreX", "group:mihomo"],
+  ["sing-box", "group:sing-box"],
+  ["VX", "group:self-developed"],
+  ["Sudoku", "group:self-developed"],
+  ["Xray", "group:xray"],
+  ["V2Ray", "group:v2ray"],
+  ["Meow", "group:meow-rs"],
+  ["meow-rs", "group:meow-rs"],
+  ["Clash Rust", "group:clash-rs"],
+  ["clash-rs", "group:clash-rs"],
+]);
+function matchesCore(cores: string[], value: string) {
+  if (!value) return true;
+  if (value.startsWith("group:")) {
+    return cores.length
+      ? cores.some((core) => (coreGroups.get(core) ?? "group:other") === value)
+      : value === "group:other";
+  }
+  // 旧链接继续精确匹配，不能静默扩为整类。
+  return value === "unknown" ? cores.length === 0 : cores.includes(value);
+}
 const platformSchema = z.enum(
   Object.keys(platforms) as [
     keyof typeof platforms,
@@ -187,10 +224,7 @@ export function filterApps(
           .includes(query)) &&
       (!filters.platform ||
         app.platforms.some((platform) => platform === filters.platform)) &&
-      (!filters.core ||
-        (filters.core === "unknown"
-          ? app.cores.length === 0
-          : app.cores.includes(filters.core))) &&
+      matchesCore(app.cores, filters.core) &&
       (!filters.code || app.code === filters.code) &&
       (!filters.price || app.price === filters.price)
     );

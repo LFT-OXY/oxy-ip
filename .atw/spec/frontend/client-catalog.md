@@ -370,3 +370,13 @@ Radix Select 不接受空字符串选项：目录包装层用内部 `__all` 表�
 ### 17.7 易错对照
 
 错误：只对下拉触发器截图，或用隐藏的原生 select 断言替代真实操作。正确：操作可见 combobox/listbox，验证 Escape 后焦点回触发器、键盘选项改变正确官方 URL，并读取展开态截图。
+
+## 18. 内核筛选分类
+
+`coreGroupLabels` 固定九项顺序：全部、Mihomo、sing-box、自研、Xray、V2Ray、meow-rs、clash-rs、其他。仅筛选归并；卡片与详情继续展示原始 `cores`，不改人工资料及发布快照。
+
+URL 继续使用 `core`，分类值为 `group:mihomo/sing-box/self-developed/xray/v2ray/meow-rs/clash-rs/other`（每项均带 `group:` 前缀），空值表示全部。非分类旧值继续精确匹配，`unknown` 仅匹配空数组；有效旧值触发器显示“精确内核：…”，菜单仍仅九项。非法旧值或未知分类保持空结果和“无匹配选项”，不静默扩大或清空条件。更新仍复用 `updateFilter`，保留第17节分页和历史行为。
+
+具名核心及已核实别名／家族映射显式维护在 `model.ts`：Meow→meow-rs、Clash Rust→clash-rs；Hako/CoreX 依据明确 Mihomo 衍生关系归 Mihomo，不声称完全相同实现。VX/Sudoku 有项目自身核心证据归自研，不意味着没有第三方代码。其他名称及空数组保守归其他；闭源、协议兼容、未知不证明自研。多内核逐项匹配，可能同时命中主流类别和其他。新增映射先核对官方证据，不按字符串相似推定。
+
+`tests/client-core-groups.test.mjs` 独立枚举29项原始名称及分类、九项顺序、具体应用名单、旧URL精确集合、未来未知与空数组、组合筛选、空结果、页码重置与真实英文翻译。真实浏览器另验证九项菜单、合法／非法旧值提示、键盘选择、详情原名及历史返回。

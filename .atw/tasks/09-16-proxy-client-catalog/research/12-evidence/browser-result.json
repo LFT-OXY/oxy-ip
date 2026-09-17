@@ -1,0 +1,182 @@
+[
+  {
+    "name": "390-zh-light",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "390-zh-dark",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "390-en-light",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  },
+  {
+    "name": "390-en-dark",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  },
+  {
+    "name": "768-zh-light",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "768-zh-dark",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "768-en-light",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  },
+  {
+    "name": "768-en-dark",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  },
+  {
+    "name": "1440-zh-light",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "1440-zh-dark",
+    "labels": [
+      "全部",
+      "Mihomo",
+      "sing-box",
+      "自研",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "其他"
+    ],
+    "passed": true
+  },
+  {
+    "name": "1440-en-light",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  },
+  {
+    "name": "1440-en-dark",
+    "labels": [
+      "All",
+      "Mihomo",
+      "sing-box",
+      "Self-developed",
+      "Xray",
+      "V2Ray",
+      "meow-rs",
+      "clash-rs",
+      "Other"
+    ],
+    "passed": true
+  }
+]

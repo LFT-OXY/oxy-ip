@@ -1,0 +1,81 @@
+{
+  "records": [
+    {
+      "core": "group:meow-rs",
+      "expected": [
+        "clash-nyanpasu",
+        "meow",
+        "meow-android",
+        "baoliandeng",
+        "paws"
+      ],
+      "trigger": "meow-rs"
+    },
+    {
+      "core": "group:clash-rs",
+      "expected": ["clash-nyanpasu", "clash-xiaoy", "nikki-rs"],
+      "trigger": "clash-rs"
+    },
+    {
+      "core": "Meow",
+      "expected": ["clash-nyanpasu"],
+      "trigger": "精确内核：Meow"
+    },
+    {
+      "core": "meow-rs",
+      "expected": ["meow", "meow-android", "baoliandeng", "paws"],
+      "trigger": "精确内核：meow-rs"
+    },
+    {
+      "core": "Clash Rust",
+      "expected": ["clash-nyanpasu", "clash-xiaoy"],
+      "trigger": "精确内核：Clash Rust"
+    },
+    {
+      "core": "clash-rs",
+      "expected": ["nikki-rs"],
+      "trigger": "精确内核：clash-rs"
+    },
+    {
+      "core": "__not-a-core__",
+      "expected": [],
+      "trigger": "无匹配选项"
+    },
+    {
+      "core": "group:mihomo",
+      "query": "FlClash",
+      "expected": "flclash"
+    },
+    {
+      "core": "group:sing-box",
+      "query": "sing-box",
+      "expected": "sing-box"
+    },
+    {
+      "core": "group:self-developed",
+      "query": "vproxy",
+      "expected": "vproxy"
+    },
+    {
+      "core": "group:xray",
+      "query": "v2rayNG",
+      "expected": "v2rayng"
+    },
+    {
+      "core": "group:v2ray",
+      "query": "v2rayNG",
+      "expected": "v2rayng"
+    },
+    {
+      "core": "group:other",
+      "query": "Shadowrocket",
+      "expected": "shadowrocket"
+    }
+  ],
+  "combined": true,
+  "aliasDetail": true,
+  "history": true,
+  "emptyState": true,
+  "pageReset": true,
+  "unknown": true
+}

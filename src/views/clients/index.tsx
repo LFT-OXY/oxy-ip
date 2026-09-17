@@ -54,6 +54,7 @@ import { apps, releases } from "./data";
 import {
   clearFilters,
   codeLabels,
+  coreGroupLabels,
   filterApps,
   latestPublishedAt,
   paginateApps,
@@ -73,14 +74,16 @@ function SelectField({
   value,
   onChange,
   options,
+  selectedLabel,
 }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
   options: [string, string][];
+  selectedLabel?: string;
 }) {
   const id = useId();
-  const selected = options.find(([key]) => key === value)?.[1];
+  const selected = selectedLabel ?? options.find(([key]) => key === value)?.[1];
   return (
     <div className="client-select-field">
       <Label htmlFor={id} className="shrink-0 text-xs text-muted-foreground">
@@ -190,7 +193,6 @@ function ClientList() {
       setParams(canonicalSearch, { replace: true });
     }
   }, [params, canonicalSearch, setParams]);
-  const cores = [...new Set(apps.flatMap((app) => app.cores))];
   function update(key: keyof typeof filters, value: string) {
     setParams(updateFilter(params, key, value), { replace: true });
   }
@@ -277,11 +279,19 @@ function ClientList() {
             label={t("代理内核")}
             value={filters.core}
             onChange={(value) => update("core", value)}
-            options={[
-              ["", t("全部内核")],
-              ...cores.map((core): [string, string] => [core, core]),
-              ["unknown", t("待核实")],
-            ]}
+            selectedLabel={
+              filters.core &&
+              !filters.core.startsWith("group:") &&
+              (filters.core === "unknown" ||
+                apps.some((app) => app.cores.includes(filters.core)))
+                ? t("精确内核：{0}", [
+                    filters.core === "unknown" ? t("待核实") : filters.core,
+                  ])
+                : undefined
+            }
+            options={Object.entries(coreGroupLabels).map(
+              ([value, label]): [string, string] => [value, t(label)],
+            )}
           />
           <SelectField
             label={t("代码状态")}
