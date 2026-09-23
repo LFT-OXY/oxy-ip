@@ -4,7 +4,7 @@
     "platform": "ios",
     "version": "2.2.92",
     "publishedAt": "2026-09-07T04:14:10Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -47,7 +47,7 @@
     "platform": "android",
     "version": "v0.8.98",
     "publishedAt": "2026-09-14T03:20:30Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -86,7 +86,7 @@
     "platform": "windows",
     "version": "v0.8.98",
     "publishedAt": "2026-09-14T03:20:30Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -132,7 +132,7 @@
     "platform": "macos",
     "version": "v0.8.98",
     "publishedAt": "2026-09-14T03:20:30Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -164,7 +164,7 @@
     "platform": "linux",
     "version": "v0.8.98",
     "publishedAt": "2026-09-14T03:20:30Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1044,7 +1044,7 @@
     "platform": "android",
     "version": "2.2.6",
     "publishedAt": "2026-07-05T10:17:21Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1142,7 +1142,7 @@
     "platform": "ios",
     "version": "3.4.1",
     "publishedAt": "2026-07-16T17:06:42Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1165,7 +1165,7 @@
     "platform": "macos",
     "version": "4.2.1",
     "publishedAt": "2026-07-15T23:30:50.000Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "Stash 官方更新源",
@@ -1419,7 +1419,7 @@
     "platform": "ios",
     "version": "5.22.1",
     "publishedAt": "2026-09-13T23:50:44Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1463,7 +1463,7 @@
     "platform": "ios",
     "version": "1.8.0",
     "publishedAt": "2026-09-15T07:05:52Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1507,7 +1507,7 @@
     "platform": "ios",
     "version": "3.5.1",
     "publishedAt": "2026-09-22T14:00:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1551,7 +1551,7 @@
     "platform": "ios",
     "version": "1.0.9",
     "publishedAt": "2026-09-18T19:32:13Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1595,7 +1595,7 @@
     "platform": "android",
     "version": "v1.2.25.2802",
     "publishedAt": "2026-09-10T02:20:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1634,7 +1634,7 @@
     "platform": "ios",
     "version": "1.2.25.2802",
     "publishedAt": "2026-09-11T07:32:05Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1657,7 +1657,7 @@
     "platform": "windows",
     "version": "v1.2.25.2802",
     "publishedAt": "2026-09-10T02:20:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1689,7 +1689,7 @@
     "platform": "macos",
     "version": "v1.2.25.2802",
     "publishedAt": "2026-09-10T02:20:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1721,7 +1721,7 @@
     "platform": "linux",
     "version": "v1.2.25.2802",
     "publishedAt": "2026-09-10T02:20:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1760,7 +1760,7 @@
     "platform": "ios",
     "version": "1.8.7",
     "publishedAt": "2025-12-30T02:41:20Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1804,7 +1804,7 @@
     "platform": "android",
     "version": "v4.1.1",
     "publishedAt": "2026-03-05T17:22:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1850,7 +1850,7 @@
     "platform": "ios",
     "version": "4.0",
     "publishedAt": "2026-02-19T23:11:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -1873,7 +1873,7 @@
     "platform": "windows",
     "version": "v4.1.1",
     "publishedAt": "2026-03-05T17:22:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1912,7 +1912,7 @@
     "platform": "macos",
     "version": "v4.1.1",
     "publishedAt": "2026-03-05T17:22:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1944,7 +1944,7 @@
     "platform": "linux",
     "version": "v4.1.1",
     "publishedAt": "2026-03-05T17:22:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -1983,7 +1983,7 @@
     "platform": "ios",
     "version": "2.20.0",
     "publishedAt": "2026-07-23T17:04:21Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -2048,7 +2048,7 @@
     "platform": "android",
     "version": "0.17.56",
     "publishedAt": "2026-09-06T18:54:29Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2122,7 +2122,7 @@
     "platform": "android",
     "version": "1.4.2",
     "publishedAt": "2026-02-09T03:55:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2169,7 +2169,7 @@
     "platform": "android",
     "version": "v2.1.6",
     "publishedAt": "2026-09-21T15:40:36Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2215,7 +2215,7 @@
     "platform": "windows",
     "version": "v2.1.6",
     "publishedAt": "2026-09-21T15:40:36Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2261,7 +2261,7 @@
     "platform": "macos",
     "version": "v2.1.6",
     "publishedAt": "2026-09-21T15:40:36Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2286,7 +2286,7 @@
     "platform": "linux",
     "version": "v2.1.6",
     "publishedAt": "2026-09-21T15:40:36Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2374,7 +2374,7 @@
     "platform": "android",
     "version": "v0.6.4",
     "publishedAt": "2026-09-19T08:50:17Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2407,7 +2407,7 @@
     "platform": "android",
     "version": "v5.3.4",
     "publishedAt": "2024-10-07T02:13:51Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2439,7 +2439,7 @@
     "platform": "android",
     "version": "v26.9.4",
     "publishedAt": "2026-09-21T04:40:01Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2464,7 +2464,7 @@
     "platform": "ios",
     "version": "26.9.3",
     "publishedAt": "2026-09-17T06:00:31Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -2487,7 +2487,7 @@
     "platform": "windows",
     "version": "v26.9.4",
     "publishedAt": "2026-09-21T04:40:01Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2533,7 +2533,7 @@
     "platform": "macos",
     "version": "v26.9.4",
     "publishedAt": "2026-09-21T04:40:01Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2558,7 +2558,7 @@
     "platform": "linux",
     "version": "v26.9.4",
     "publishedAt": "2026-09-21T04:40:01Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2604,7 +2604,7 @@
     "platform": "android",
     "version": "v5.0.15",
     "publishedAt": "2026-09-23T11:41:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2630,7 +2630,7 @@
     "platform": "windows",
     "version": "v5.0.15",
     "publishedAt": "2026-09-23T11:41:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2656,7 +2656,7 @@
     "platform": "macos",
     "version": "v5.0.15",
     "publishedAt": "2026-09-23T11:41:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2682,7 +2682,7 @@
     "platform": "android",
     "version": "v1.2.2",
     "publishedAt": "2026-08-28T00:35:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2715,7 +2715,7 @@
     "platform": "windows",
     "version": "v1.2.2",
     "publishedAt": "2026-08-28T00:35:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2762,7 +2762,7 @@
     "platform": "macos",
     "version": "v1.2.2",
     "publishedAt": "2026-08-28T00:35:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2795,7 +2795,7 @@
     "platform": "linux",
     "version": "v1.2.2",
     "publishedAt": "2026-08-28T00:35:39Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2870,7 +2870,7 @@
     "platform": "ios",
     "version": "1.6.76",
     "publishedAt": "2026-09-10T06:09:15Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -2956,7 +2956,7 @@
     "platform": "windows",
     "version": "v1.6.1",
     "publishedAt": "2024-09-07T16:48:05Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -2988,7 +2988,7 @@
     "platform": "macos",
     "version": "v1.6.1",
     "publishedAt": "2024-09-07T16:48:05Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3020,7 +3020,7 @@
     "platform": "linux",
     "version": "v1.6.1",
     "publishedAt": "2024-09-07T16:48:05Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3059,7 +3059,7 @@
     "platform": "windows",
     "version": "v2.0.3",
     "publishedAt": "2026-09-20T13:56:08Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3147,7 +3147,7 @@
     "platform": "macos",
     "version": "v2.0.3",
     "publishedAt": "2026-09-20T13:56:08Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3193,7 +3193,7 @@
     "platform": "linux",
     "version": "v2.0.3",
     "publishedAt": "2026-09-20T13:56:08Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3253,7 +3253,7 @@
     "platform": "windows",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:45:45Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3292,7 +3292,7 @@
     "platform": "macos",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:45:45Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3324,7 +3324,7 @@
     "platform": "linux",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:45:45Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3356,7 +3356,7 @@
     "platform": "windows",
     "version": "1.26.8",
     "publishedAt": "2026-09-03T04:58:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3402,7 +3402,7 @@
     "platform": "macos",
     "version": "1.26.8",
     "publishedAt": "2026-09-03T04:58:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3434,7 +3434,7 @@
     "platform": "linux",
     "version": "1.26.8",
     "publishedAt": "2026-09-03T04:58:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3515,7 +3515,7 @@
     "platform": "windows",
     "version": "7.24.9",
     "publishedAt": "2026-08-29T02:47:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3575,7 +3575,7 @@
     "platform": "macos",
     "version": "7.24.9",
     "publishedAt": "2026-08-29T02:47:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3621,7 +3621,7 @@
     "platform": "linux",
     "version": "7.24.9",
     "publishedAt": "2026-08-29T02:47:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3702,7 +3702,7 @@
     "platform": "android",
     "version": "v0.6.31+105",
     "publishedAt": "2025-10-17T13:09:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3763,7 +3763,7 @@
     "platform": "windows",
     "version": "v0.6.31+105",
     "publishedAt": "2025-10-17T13:09:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3796,7 +3796,7 @@
     "platform": "macos",
     "version": "v0.6.31+105",
     "publishedAt": "2025-10-17T13:09:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3822,7 +3822,7 @@
     "platform": "linux",
     "version": "v0.6.31+105",
     "publishedAt": "2025-10-17T13:09:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3848,7 +3848,7 @@
     "platform": "macos",
     "version": "v1.4.45",
     "publishedAt": "2026-09-14T14:23:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3873,7 +3873,7 @@
     "platform": "macos",
     "version": "v5.2.0",
     "publishedAt": "2026-08-02T13:11:02Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3906,7 +3906,7 @@
     "platform": "android",
     "version": "mobile-2.35.1",
     "publishedAt": "2026-09-20T17:07:13Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -3982,7 +3982,7 @@
     "platform": "android",
     "version": "v12.6.0",
     "publishedAt": "2026-08-23T14:42:13Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4028,7 +4028,7 @@
     "platform": "android",
     "version": "v1.0.30.1605",
     "publishedAt": "2026-09-22T02:26:15Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4067,7 +4067,7 @@
     "platform": "ios",
     "version": "1.0.29.1503",
     "publishedAt": "2026-09-02T13:22:54Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -4090,7 +4090,7 @@
     "platform": "windows",
     "version": "v1.0.30.1605",
     "publishedAt": "2026-09-22T02:26:15Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4122,7 +4122,7 @@
     "platform": "macos",
     "version": "v1.0.30.1605",
     "publishedAt": "2026-09-22T02:26:15Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4147,7 +4147,7 @@
     "platform": "linux",
     "version": "v1.0.30.1605",
     "publishedAt": "2026-09-22T02:26:15Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4186,7 +4186,7 @@
     "platform": "android",
     "version": "v0.4.2",
     "publishedAt": "2026-07-18T10:51:50Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4232,7 +4232,7 @@
     "platform": "windows",
     "version": "v0.4.2",
     "publishedAt": "2026-07-18T10:51:50Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4278,7 +4278,7 @@
     "platform": "macos",
     "version": "v0.4.2",
     "publishedAt": "2026-07-18T10:51:50Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4310,7 +4310,7 @@
     "platform": "linux",
     "version": "v0.4.2",
     "publishedAt": "2026-07-18T10:51:50Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4356,7 +4356,7 @@
     "platform": "android",
     "version": "1.4.3-UwU-2",
     "publishedAt": "2026-02-22T16:51:21Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4403,7 +4403,7 @@
     "platform": "android",
     "version": "v2.24.1",
     "publishedAt": "2026-09-03T12:16:44Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4435,7 +4435,7 @@
     "platform": "android",
     "version": "1.4.2-rev-24",
     "publishedAt": "2026-08-22T09:36:54Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4482,7 +4482,7 @@
     "platform": "android",
     "version": "4.4.1",
     "publishedAt": "2026-09-11T07:39:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4507,7 +4507,7 @@
     "platform": "ios",
     "version": "5.9.0",
     "publishedAt": "2026-09-22T08:51:59Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -4530,7 +4530,7 @@
     "platform": "windows",
     "version": "4.3.0",
     "publishedAt": "2026-09-15T15:27:48Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4562,7 +4562,7 @@
     "platform": "macos",
     "version": "4.3.0",
     "publishedAt": "2026-09-15T15:27:48Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4587,7 +4587,7 @@
     "platform": "linux",
     "version": "4.3.0",
     "publishedAt": "2026-09-15T15:27:48Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4647,7 +4647,7 @@
     "platform": "windows",
     "version": "v2.7.20",
     "publishedAt": "2026-04-25T19:45:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4679,7 +4679,7 @@
     "platform": "macos",
     "version": "v2.7.20",
     "publishedAt": "2026-04-25T19:45:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4711,7 +4711,7 @@
     "platform": "linux",
     "version": "v2.7.20",
     "publishedAt": "2026-04-25T19:45:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4750,7 +4750,7 @@
     "platform": "android",
     "version": "meta-v1.19.31-ab405bad",
     "publishedAt": "2026-09-14T21:51:52Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4908,7 +4908,7 @@
     "platform": "android",
     "version": "v3.11.0",
     "publishedAt": "2026-09-21T19:20:26Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -4947,7 +4947,7 @@
     "platform": "ios",
     "version": "3.10.4",
     "publishedAt": "2026-09-04T07:27:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -4970,7 +4970,7 @@
     "platform": "windows",
     "version": "v3.11.0",
     "publishedAt": "2026-09-21T19:20:26Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5016,7 +5016,7 @@
     "platform": "linux",
     "version": "v3.11.0",
     "publishedAt": "2026-09-21T19:20:26Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5062,7 +5062,7 @@
     "platform": "windows",
     "version": "v0.2.9",
     "publishedAt": "2026-05-17T05:09:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5094,7 +5094,7 @@
     "platform": "macos",
     "version": "v0.2.9",
     "publishedAt": "2026-05-17T05:09:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5168,7 +5168,7 @@
     "platform": "android",
     "version": "v0.3.1",
     "publishedAt": "2026-09-06T03:57:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5207,7 +5207,7 @@
     "platform": "android",
     "version": "v1.10.2",
     "publishedAt": "2025-09-05T12:45:22Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5233,7 +5233,7 @@
     "platform": "android",
     "version": "v7.8.4",
     "publishedAt": "2026-09-07T01:21:28Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5259,7 +5259,7 @@
     "platform": "android",
     "version": "v5.1",
     "publishedAt": "2024-09-16T05:42:02Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5285,7 +5285,7 @@
     "platform": "android",
     "version": "1.2.8",
     "publishedAt": "2026-06-13T09:50:17Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5311,7 +5311,7 @@
     "platform": "android",
     "version": "20260825-e3ba5d6",
     "publishedAt": "2026-08-25T03:05:40Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5358,7 +5358,7 @@
     "platform": "ios",
     "version": "2.2",
     "publishedAt": "2026-09-14T13:58:32Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5402,7 +5402,7 @@
     "platform": "ios",
     "version": "1.6",
     "publishedAt": "2026-09-10T21:50:02Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5446,7 +5446,7 @@
     "platform": "ios",
     "version": "1.0.5",
     "publishedAt": "2026-07-24T21:46:57Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5511,7 +5511,7 @@
     "platform": "ios",
     "version": "2.6.2",
     "publishedAt": "2026-09-21T08:17:31Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5597,7 +5597,7 @@
     "platform": "ios",
     "version": "1.3.2",
     "publishedAt": "2026-09-10T21:45:23Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5641,7 +5641,7 @@
     "platform": "ios",
     "version": "2.1.3",
     "publishedAt": "2025-02-07T06:21:05Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5688,7 +5688,7 @@
     "platform": "ios",
     "version": "1.7.0",
     "publishedAt": "2026-06-03T17:25:21Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5732,7 +5732,7 @@
     "platform": "ios",
     "version": "1.0.10",
     "publishedAt": "2025-04-24T07:03:55Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -5755,7 +5755,7 @@
     "platform": "windows",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:38:11Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5794,7 +5794,7 @@
     "platform": "macos",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:38:11Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5826,7 +5826,7 @@
     "platform": "linux",
     "version": "v1.27.0",
     "publishedAt": "2026-09-07T16:38:11Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5858,7 +5858,7 @@
     "platform": "macos",
     "version": "27.1.6",
     "publishedAt": "2026-09-21T09:23:35Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5890,7 +5890,7 @@
     "platform": "windows",
     "version": "1.3.0",
     "publishedAt": "2026-09-17T22:30:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5943,7 +5943,7 @@
     "platform": "macos",
     "version": "1.3.0",
     "publishedAt": "2026-09-17T22:30:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -5982,7 +5982,7 @@
     "platform": "linux",
     "version": "1.3.0",
     "publishedAt": "2026-09-17T22:30:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6042,7 +6042,7 @@
     "platform": "windows",
     "version": "v4.3.3",
     "publishedAt": "2026-08-26T14:26:04Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6074,7 +6074,7 @@
     "platform": "macos",
     "version": "v4.3.3",
     "publishedAt": "2026-08-26T14:26:04Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6106,7 +6106,7 @@
     "platform": "linux",
     "version": "v4.3.3",
     "publishedAt": "2026-08-26T14:26:04Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6138,7 +6138,7 @@
     "platform": "windows",
     "version": "v1.0.0",
     "publishedAt": "2026-09-03T16:17:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6170,7 +6170,7 @@
     "platform": "macos",
     "version": "v1.0.0",
     "publishedAt": "2026-09-03T16:17:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6202,7 +6202,7 @@
     "platform": "linux",
     "version": "v1.0.0",
     "publishedAt": "2026-09-03T16:17:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6232,13 +6232,13 @@
   {
     "appId": "onebox",
     "platform": "windows",
-    "version": "v1.4.40",
-    "publishedAt": "2026-09-22T10:17:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v1.4.43",
+    "publishedAt": "2026-09-23T12:47:47Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.40"
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.43"
     },
     "fallback": {
       "kind": "page",
@@ -6246,16 +6246,16 @@
     },
     "downloads": [
       {
-        "id": "OneBox_1.4.40_x64-setup.exe",
+        "id": "OneBox_1.4.43_x64-setup.exe",
         "kind": "direct",
-        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.40/OneBox_1.4.40_x64-setup.exe",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.43/OneBox_1.4.43_x64-setup.exe",
         "arch": "x64",
         "format": "exe"
       },
       {
-        "id": "OneBox_1.4.40_x64_en-US.msi",
+        "id": "OneBox_1.4.43_x64_en-US.msi",
         "kind": "direct",
-        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.40/OneBox_1.4.40_x64_en-US.msi",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.43/OneBox_1.4.43_x64_en-US.msi",
         "arch": "x64",
         "format": "msi"
       }
@@ -6264,13 +6264,13 @@
   {
     "appId": "onebox",
     "platform": "macos",
-    "version": "v1.4.40",
-    "publishedAt": "2026-09-22T10:17:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v1.4.43",
+    "publishedAt": "2026-09-23T12:47:47Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.40"
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.43"
     },
     "fallback": {
       "kind": "page",
@@ -6278,16 +6278,16 @@
     },
     "downloads": [
       {
-        "id": "OneBox_1.4.40_aarch64.dmg",
+        "id": "OneBox_1.4.43_aarch64.dmg",
         "kind": "direct",
-        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.40/OneBox_1.4.40_aarch64.dmg",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.43/OneBox_1.4.43_aarch64.dmg",
         "arch": "aarch64",
         "format": "dmg"
       },
       {
-        "id": "OneBox_1.4.40_x64.dmg",
+        "id": "OneBox_1.4.43_x64.dmg",
         "kind": "direct",
-        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.40/OneBox_1.4.40_x64.dmg",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.43/OneBox_1.4.43_x64.dmg",
         "arch": "x64",
         "format": "dmg"
       }
@@ -6296,13 +6296,13 @@
   {
     "appId": "onebox",
     "platform": "linux",
-    "version": "v1.4.40",
-    "publishedAt": "2026-09-22T10:17:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v1.4.43",
+    "publishedAt": "2026-09-23T12:47:47Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.40"
+      "url": "https://github.com/OneOhCloud/OneBox/releases/tag/v1.4.43"
     },
     "fallback": {
       "kind": "page",
@@ -6311,9 +6311,9 @@
     "note": "Ubuntu 为社区维护的稳定平台，仅提供 DEB；其他 Linux 被官方标为测试质量，不将 RPM 作为正式包。",
     "downloads": [
       {
-        "id": "OneBox_1.4.40_amd64.deb",
+        "id": "OneBox_1.4.43_amd64.deb",
         "kind": "direct",
-        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.40/OneBox_1.4.40_amd64.deb",
+        "url": "https://github.com/OneOhCloud/OneBox/releases/download/v1.4.43/OneBox_1.4.43_amd64.deb",
         "arch": "amd64",
         "format": "deb"
       }
@@ -6377,7 +6377,7 @@
     "platform": "windows",
     "version": "v1.0.40",
     "publishedAt": "2026-09-22T11:08:10Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6409,7 +6409,7 @@
     "platform": "macos",
     "version": "v1.0.40",
     "publishedAt": "2026-09-22T11:08:10Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6441,7 +6441,7 @@
     "platform": "linux",
     "version": "v1.0.40",
     "publishedAt": "2026-09-22T11:08:10Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6466,7 +6466,7 @@
     "platform": "macos",
     "version": "v0.3.4",
     "publishedAt": "2026-09-23T05:18:24Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6545,7 +6545,7 @@
     "platform": "macos",
     "version": "build-20260627-121223-f6c9f44",
     "publishedAt": "2026-06-27T12:18:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6578,7 +6578,7 @@
     "platform": "windows",
     "version": "v1.0.2",
     "publishedAt": "2026-02-17T02:37:49Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6624,7 +6624,7 @@
     "platform": "macos",
     "version": "v1.0.2",
     "publishedAt": "2026-02-17T02:37:49Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6656,7 +6656,7 @@
     "platform": "linux",
     "version": "v1.0.2",
     "publishedAt": "2026-02-17T02:37:49Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6695,7 +6695,7 @@
     "platform": "windows",
     "version": "1.9.7",
     "publishedAt": "2022-06-24T07:04:37Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6740,13 +6740,13 @@
   {
     "appId": "stelliberty",
     "platform": "windows",
-    "version": "v2.0.33",
-    "publishedAt": "2026-09-19T11:16:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v2.0.34",
+    "publishedAt": "2026-09-23T12:24:15Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.33"
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.34"
     },
     "fallback": {
       "kind": "page",
@@ -6754,30 +6754,30 @@
     },
     "downloads": [
       {
-        "id": "stelliberty-v2.0.33-win-arm64-setup.exe",
+        "id": "stelliberty-v2.0.34-win-arm64-setup.exe",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-win-arm64-setup.exe",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-win-arm64-setup.exe",
         "arch": "arm64",
         "format": "exe"
       },
       {
-        "id": "stelliberty-v2.0.33-win-arm64.zip",
+        "id": "stelliberty-v2.0.34-win-arm64.zip",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-win-arm64.zip",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-win-arm64.zip",
         "arch": "arm64",
         "format": "zip"
       },
       {
-        "id": "stelliberty-v2.0.33-win-x64-setup.exe",
+        "id": "stelliberty-v2.0.34-win-x64-setup.exe",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-win-x64-setup.exe",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-win-x64-setup.exe",
         "arch": "x64",
         "format": "exe"
       },
       {
-        "id": "stelliberty-v2.0.33-win-x64.zip",
+        "id": "stelliberty-v2.0.34-win-x64.zip",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-win-x64.zip",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-win-x64.zip",
         "arch": "x64",
         "format": "zip"
       }
@@ -6786,13 +6786,13 @@
   {
     "appId": "stelliberty",
     "platform": "macos",
-    "version": "v2.0.33",
-    "publishedAt": "2026-09-19T11:16:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v2.0.34",
+    "publishedAt": "2026-09-23T12:24:15Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.33"
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.34"
     },
     "fallback": {
       "kind": "page",
@@ -6800,30 +6800,30 @@
     },
     "downloads": [
       {
-        "id": "stelliberty-v2.0.33-macos-arm64.dmg",
+        "id": "stelliberty-v2.0.34-macos-arm64.dmg",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-macos-arm64.dmg",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-macos-arm64.dmg",
         "arch": "arm64",
         "format": "dmg"
       },
       {
-        "id": "stelliberty-v2.0.33-macos-arm64.pkg",
+        "id": "stelliberty-v2.0.34-macos-arm64.pkg",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-macos-arm64.pkg",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-macos-arm64.pkg",
         "arch": "arm64",
         "format": "pkg"
       },
       {
-        "id": "stelliberty-v2.0.33-macos-x64.dmg",
+        "id": "stelliberty-v2.0.34-macos-x64.dmg",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-macos-x64.dmg",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-macos-x64.dmg",
         "arch": "x64",
         "format": "dmg"
       },
       {
-        "id": "stelliberty-v2.0.33-macos-x64.pkg",
+        "id": "stelliberty-v2.0.34-macos-x64.pkg",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-macos-x64.pkg",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-macos-x64.pkg",
         "arch": "x64",
         "format": "pkg"
       }
@@ -6832,13 +6832,13 @@
   {
     "appId": "stelliberty",
     "platform": "linux",
-    "version": "v2.0.33",
-    "publishedAt": "2026-09-19T11:16:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v2.0.34",
+    "publishedAt": "2026-09-23T12:24:15Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.33"
+      "url": "https://github.com/Kindness-Kismet/stelliberty/releases/tag/v2.0.34"
     },
     "fallback": {
       "kind": "page",
@@ -6847,72 +6847,72 @@
     "note": "本次安装包核验遇到临时网络失败，保留官方发布页；不将失败检查标为成功核验。",
     "downloads": [
       {
-        "id": "stelliberty-v2.0.33-linux-arm64.AppImage",
+        "id": "stelliberty-v2.0.34-linux-arm64.AppImage",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-arm64.AppImage",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-arm64.AppImage",
         "arch": "arm64",
         "format": "AppImage"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-arm64.deb",
+        "id": "stelliberty-v2.0.34-linux-arm64.deb",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-arm64.deb",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-arm64.deb",
         "arch": "arm64",
         "format": "deb"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-arm64.pkg.tar.zst",
+        "id": "stelliberty-v2.0.34-linux-arm64.pkg.tar.zst",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-arm64.pkg.tar.zst",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-arm64.pkg.tar.zst",
         "arch": "arm64",
         "format": "pkg.tar.zst"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-arm64.rpm",
+        "id": "stelliberty-v2.0.34-linux-arm64.rpm",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-arm64.rpm",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-arm64.rpm",
         "arch": "arm64",
         "format": "rpm"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-arm64.zip",
+        "id": "stelliberty-v2.0.34-linux-arm64.zip",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-arm64.zip",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-arm64.zip",
         "arch": "arm64",
         "format": "zip"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-x64.AppImage",
+        "id": "stelliberty-v2.0.34-linux-x64.AppImage",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-x64.AppImage",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-x64.AppImage",
         "arch": "x64",
         "format": "AppImage"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-x64.deb",
+        "id": "stelliberty-v2.0.34-linux-x64.deb",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-x64.deb",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-x64.deb",
         "arch": "x64",
         "format": "deb"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-x64.pkg.tar.zst",
+        "id": "stelliberty-v2.0.34-linux-x64.pkg.tar.zst",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-x64.pkg.tar.zst",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-x64.pkg.tar.zst",
         "arch": "x64",
         "format": "pkg.tar.zst"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-x64.rpm",
+        "id": "stelliberty-v2.0.34-linux-x64.rpm",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-x64.rpm",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-x64.rpm",
         "arch": "x64",
         "format": "rpm"
       },
       {
-        "id": "stelliberty-v2.0.33-linux-x64.zip",
+        "id": "stelliberty-v2.0.34-linux-x64.zip",
         "kind": "direct",
-        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.33/stelliberty-v2.0.33-linux-x64.zip",
+        "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.34/stelliberty-v2.0.34-linux-x64.zip",
         "arch": "x64",
         "format": "zip"
       }
@@ -6923,7 +6923,7 @@
     "platform": "windows",
     "version": "v0.6.2",
     "publishedAt": "2026-09-15T17:19:25Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -6969,7 +6969,7 @@
     "platform": "linux",
     "version": "v0.6.2",
     "publishedAt": "2026-09-15T17:19:25Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7015,7 +7015,7 @@
     "platform": "windows",
     "version": "v1.0.23",
     "publishedAt": "2026-08-22T07:46:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7062,7 +7062,7 @@
     "platform": "macos",
     "version": "v1.0.23",
     "publishedAt": "2026-08-22T07:46:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7094,7 +7094,7 @@
     "platform": "linux",
     "version": "v1.0.23",
     "publishedAt": "2026-08-22T07:46:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7140,7 +7140,7 @@
     "platform": "windows",
     "version": "v0.3.1",
     "publishedAt": "2026-05-26T16:45:16Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7173,7 +7173,7 @@
     "platform": "macos",
     "version": "v0.3.1",
     "publishedAt": "2026-05-26T16:45:16Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7206,7 +7206,7 @@
     "platform": "linux",
     "version": "v0.3.1",
     "publishedAt": "2026-05-26T16:45:16Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7239,7 +7239,7 @@
     "platform": "windows",
     "version": "v2.3.1",
     "publishedAt": "2026-06-17T10:02:35Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7299,7 +7299,7 @@
     "platform": "macos",
     "version": "v2.3.1",
     "publishedAt": "2026-06-17T10:02:35Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7331,7 +7331,7 @@
     "platform": "linux",
     "version": "v2.3.1",
     "publishedAt": "2026-06-17T10:02:35Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7412,7 +7412,7 @@
     "platform": "windows",
     "version": "1.18",
     "publishedAt": "2026-07-26T15:06:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7458,7 +7458,7 @@
     "platform": "windows",
     "version": "v3.3.6",
     "publishedAt": "2026-09-14T09:33:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7491,7 +7491,7 @@
     "platform": "windows",
     "version": "4.0.1",
     "publishedAt": "2024-12-12T08:19:14Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7517,7 +7517,7 @@
     "platform": "linux",
     "version": "4.0.1",
     "publishedAt": "2024-12-12T08:19:14Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7557,7 +7557,7 @@
     "platform": "windows",
     "version": "v0.2.2",
     "publishedAt": "2026-09-06T14:50:14Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7582,7 +7582,7 @@
     "platform": "macos",
     "version": "v0.2.2",
     "publishedAt": "2026-09-06T14:50:14Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7614,7 +7614,7 @@
     "platform": "linux",
     "version": "v0.2.2",
     "publishedAt": "2026-09-06T14:50:14Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7693,7 +7693,7 @@
     "platform": "windows",
     "version": "v2.5.7",
     "publishedAt": "2026-09-22T10:24:45Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7749,7 +7749,7 @@
     "platform": "linux",
     "version": "v2.5.7",
     "publishedAt": "2026-09-22T10:24:45Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -7992,7 +7992,7 @@
     "platform": "linux",
     "version": "v2.1.1",
     "publishedAt": "2026-09-18T14:44:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8516,7 +8516,7 @@
     "platform": "linux",
     "version": "v1.27.0",
     "publishedAt": "2026-04-17T01:12:17Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8760,7 +8760,7 @@
     "platform": "linux",
     "version": "1.9.4",
     "publishedAt": "2026-02-15T11:33:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8786,7 +8786,7 @@
     "platform": "openwrt",
     "version": "1.9.4",
     "publishedAt": "2026-02-15T11:33:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8812,7 +8812,7 @@
     "platform": "asus",
     "version": "1.9.4",
     "publishedAt": "2026-02-15T11:33:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8838,7 +8838,7 @@
     "platform": "harmonyos",
     "version": "1.7.4",
     "publishedAt": "2026-04-02T14:50:20Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8932,7 +8932,7 @@
     "platform": "android",
     "version": "v2.8.0",
     "publishedAt": "2026-09-18T16:46:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -8978,7 +8978,7 @@
     "platform": "openwrt",
     "version": "v0.47.156",
     "publishedAt": "2026-08-10T14:59:36Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -9011,7 +9011,7 @@
     "platform": "openwrt",
     "version": "26.9.16-1",
     "publishedAt": "2026-09-16T06:42:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -9051,7 +9051,7 @@
     "platform": "openwrt",
     "version": "26.9.16-1",
     "publishedAt": "2026-09-16T14:58:19Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -9128,7 +9128,7 @@
     "platform": "openwrt",
     "version": "v1.2.1",
     "publishedAt": "2026-06-03T14:38:41Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -9475,13 +9475,13 @@
   {
     "appId": "open-box",
     "platform": "openwrt",
-    "version": "v0.1.247",
-    "publishedAt": "2026-09-23T11:02:43Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "version": "v0.1.250",
+    "publishedAt": "2026-09-23T16:47:03Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
-      "url": "https://github.com/liandu2024/Open-Box/releases/tag/v0.1.247"
+      "url": "https://github.com/liandu2024/Open-Box/releases/tag/v0.1.250"
     },
     "fallback": {
       "kind": "page",
@@ -9490,16 +9490,16 @@
     "note": "仅用于 OpenWrt x86_64 或 aarch64 路由器；至少 512MB 存储和 512MB 内存，需要 Root 与相应网络依赖。",
     "downloads": [
       {
-        "id": "open-box-v0.1.247-linux-arm64.tar.gz",
+        "id": "open-box-v0.1.250-linux-arm64.tar.gz",
         "kind": "direct",
-        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.247/open-box-v0.1.247-linux-arm64.tar.gz",
+        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.250/open-box-v0.1.250-linux-arm64.tar.gz",
         "arch": "arm64",
         "format": "tar.gz"
       },
       {
-        "id": "open-box-v0.1.247-linux-x64.tar.gz",
+        "id": "open-box-v0.1.250-linux-x64.tar.gz",
         "kind": "direct",
-        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.247/open-box-v0.1.247-linux-x64.tar.gz",
+        "url": "https://github.com/liandu2024/Open-Box/releases/download/v0.1.250/open-box-v0.1.250-linux-x64.tar.gz",
         "arch": "x64",
         "format": "tar.gz"
       }
@@ -9510,7 +9510,7 @@
     "platform": "openwrt",
     "version": "v196.9",
     "publishedAt": "2026-09-07T01:44:10Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -9543,7 +9543,7 @@
     "platform": "ios",
     "version": "1.7.1",
     "publishedAt": "2026-08-22T01:50:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9607,7 +9607,7 @@
     "platform": "ios",
     "version": "10.1.8",
     "publishedAt": "2026-09-15T02:32:48Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9671,7 +9671,7 @@
     "platform": "ios",
     "version": "1.21.0",
     "publishedAt": "2026-07-24T02:09:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9761,7 +9761,7 @@
     "platform": "ios",
     "version": "2.16.0",
     "publishedAt": "2026-01-06T01:40:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9784,7 +9784,7 @@
     "platform": "ios",
     "version": "1.2.1.8",
     "publishedAt": "2026-09-13T05:51:31Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9828,7 +9828,7 @@
     "platform": "ios",
     "version": "2.4.3",
     "publishedAt": "2026-07-30T16:58:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9897,7 +9897,7 @@
     "platform": "ios",
     "version": "1.5.0",
     "publishedAt": "2026-08-29T14:12:13Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9941,7 +9941,7 @@
     "platform": "ios",
     "version": "1.8",
     "publishedAt": "2026-09-02T00:30:16Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -9985,7 +9985,7 @@
     "platform": "ios",
     "version": "1.42.0",
     "publishedAt": "2026-09-17T14:43:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10052,7 +10052,7 @@
     "platform": "ios",
     "version": "2.0",
     "publishedAt": "2026-03-06T10:28:19Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10096,7 +10096,7 @@
     "platform": "ios",
     "version": "2.0",
     "publishedAt": "2026-09-07T08:49:07Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10140,7 +10140,7 @@
     "platform": "ios",
     "version": "0.17.5",
     "publishedAt": "2026-08-07T10:40:56Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10163,7 +10163,7 @@
     "platform": "ios",
     "version": "1.0.2",
     "publishedAt": "2026-03-25T03:46:58Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10207,7 +10207,7 @@
     "platform": "ios",
     "version": "1.0.0",
     "publishedAt": "2024-10-16T21:06:54Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10251,7 +10251,7 @@
     "platform": "ios",
     "version": "0.14.3",
     "publishedAt": "2026-09-04T15:12:37Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10295,7 +10295,7 @@
     "platform": "ios",
     "version": "3.1.0",
     "publishedAt": "2026-09-08T12:56:49Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10339,7 +10339,7 @@
     "platform": "ios",
     "version": "1.0.14",
     "publishedAt": "2026-09-18T18:21:17Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10383,7 +10383,7 @@
     "platform": "ios",
     "version": "1.1.9",
     "publishedAt": "2026-08-19T09:09:27Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10427,7 +10427,7 @@
     "platform": "ios",
     "version": "1.5.0",
     "publishedAt": "2026-08-11T06:15:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10471,7 +10471,7 @@
     "platform": "android",
     "version": "v1.0.8",
     "publishedAt": "2026-08-17T10:55:08Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10520,7 +10520,7 @@
     "platform": "harmonyos",
     "version": "v1.1.0",
     "publishedAt": "2026-09-16T02:57:49Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10583,7 +10583,7 @@
     "platform": "ios",
     "version": "1.4.1",
     "publishedAt": "2026-09-14T17:52:29Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10683,7 +10683,7 @@
     "platform": "ios",
     "version": "1.2.1",
     "publishedAt": "2026-09-15T21:09:43Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -10727,7 +10727,7 @@
     "platform": "android",
     "version": "v0.8.126",
     "publishedAt": "2026-09-20T16:27:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10766,7 +10766,7 @@
     "platform": "ios",
     "version": "v0.8.126",
     "publishedAt": "2026-09-20T16:27:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10792,7 +10792,7 @@
     "platform": "windows",
     "version": "v0.8.126",
     "publishedAt": "2026-09-20T16:27:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10838,7 +10838,7 @@
     "platform": "macos",
     "version": "v0.8.126",
     "publishedAt": "2026-09-20T16:27:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10870,7 +10870,7 @@
     "platform": "linux",
     "version": "v0.8.126",
     "publishedAt": "2026-09-20T16:27:09Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -10979,7 +10979,7 @@
     "platform": "ios",
     "version": "1.0.16",
     "publishedAt": "2026-08-01T05:23:20Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11002,7 +11002,7 @@
     "platform": "ios",
     "version": "1.6",
     "publishedAt": "2026-07-04T09:02:08Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11046,7 +11046,7 @@
     "platform": "ios",
     "version": "4.2.1",
     "publishedAt": "2026-08-14T17:32:02Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11111,7 +11111,7 @@
     "platform": "ios",
     "version": "1.425",
     "publishedAt": "2026-07-24T13:47:11Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11155,7 +11155,7 @@
     "platform": "ios",
     "version": "1.12.0",
     "publishedAt": "2026-09-22T05:32:55Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11199,7 +11199,7 @@
     "platform": "ios",
     "version": "2.0.4",
     "publishedAt": "2026-09-01T22:54:35Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11243,7 +11243,7 @@
     "platform": "ios",
     "version": "4.0.41",
     "publishedAt": "2026-09-22T20:36:28Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11287,7 +11287,7 @@
     "platform": "ios",
     "version": "1.0",
     "publishedAt": "2025-01-27T08:00:00Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11310,7 +11310,7 @@
     "platform": "ios",
     "version": "2.6.4",
     "publishedAt": "2026-09-01T01:14:17Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "App Store（美国区）",
@@ -11375,7 +11375,7 @@
     "platform": "steam-deck",
     "version": "v1.3.4",
     "publishedAt": "2026-08-17T17:19:12Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -11530,7 +11530,7 @@
     "platform": "asus",
     "version": "v0.69.1",
     "publishedAt": "2026-09-01T08:47:20Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -11580,7 +11580,7 @@
     "platform": "openwrt",
     "version": "2.0.8",
     "publishedAt": "2025-09-24T01:54:01Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
@@ -11649,7 +11649,7 @@
     "platform": "android",
     "version": "v1.2.1",
     "publishedAt": "2026-09-15T18:14:18Z",
-    "lastCheckedAt": "2026-09-23T11:45:36.080Z",
+    "lastCheckedAt": "2026-09-23T17:09:20.542Z",
     "maintenance": "automatic",
     "source": {
       "label": "GitHub Release",
